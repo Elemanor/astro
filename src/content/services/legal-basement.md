@@ -1,68 +1,103 @@
 ---
-title: "Legal Basement Conversions"
-subtitle: "Create Income-Generating Second Suites"
-seo_title: "Legal Basement Toronto | Permits, Underpinning & Second Suite Conversions"
-description: "Transform your basement into legal living space in Toronto & GTA. Complete permit assistance, underpinning, separate entrances, fire code compliance. Free consultation: (437) 545-0067"
-date: 2025-01-28
+title: Legal Basement Conversions
+subtitle: Create Income-Generating Second Suites
+seo_title: 'Legal Basement Toronto | Permits, Underpinning & Second Suite Conversions'
+description: >-
+  Transform your basement into legal living space in Toronto & GTA. Complete
+  permit assistance, underpinning, separate entrances, fire code compliance.
+  Free consultation: (437) 545-0067
+date: 2025-01-28T00:00:00.000Z
 draft: false
-type: "service"
-url: "/services/legal-basement/"
-
-# Related services
+type: service
+url: /services/legal-basement/
 related_services:
-  - title: "Basement Underpinning"
-    url: "/services/basement-underpinning/"
-    description: "Achieve legal ceiling height"
-    image: "/pics/work/underpinning.webp"
-  - title: "Basement Walkouts"
-    url: "/services/basement-underpinning/"
-    description: "Create separate entrances"
-    image: "/pics/work/basement-walkout.webp"
-  - title: "Interior Waterproofing"
-    url: "/services/interior-waterproofing/"
-    description: "Ensure dry living space"
-    image: "/pics/work/interior-waterproofing.webp"
-
-# Content sections
+  - title: Basement Underpinning
+    url: /services/basement-underpinning/
+    description: Achieve legal ceiling height
+    image: /pics/work/underpinning.webp
+  - title: Basement Walkouts
+    url: /services/basement-underpinning/
+    description: Create separate entrances
+    image: /pics/work/basement-walkout.webp
+  - title: Interior Waterproofing
+    url: /services/interior-waterproofing/
+    description: Ensure dry living space
+    image: /pics/work/interior-waterproofing.webp
 sections:
-  - title: "Complete Legal Basement Solutions"
-    content: |
-      Converting your basement into a legal rental suite is one of the best investments you can make in the GTA. With rental rates averaging $1,500-$2,500 per month, your renovation pays for itself while adding significant value to your property. We handle every aspect of the conversion, from initial zoning verification through final occupancy permits.
-      
-      Our team has completed over 500 legal basement conversions across Toronto, Mississauga, Brampton, and the surrounding areas. We understand the unique requirements of each municipality and maintain strong relationships with building departments to ensure smooth permit approvals. Every project is managed by certified professionals who guarantee code compliance.
-  - title: "Full-Service Project Management"
-    content: |
-      **Permits & Approvals** - We handle all paperwork, applications, and inspections. Our in-house permit specialists navigate municipal requirements, submit professional drawings, and coordinate with city inspectors throughout the project.
-      
-      **Structural Work** - From underpinning to achieve legal ceiling height to creating separate entrances, our structural team ensures your basement meets all building codes while maximizing livable space and natural light.
-      
-      **Code Compliance** - Every element is designed to meet or exceed Ontario Building Code requirements: proper fire separation, emergency egress, sound insulation, independent HVAC systems, and separate electrical metering.
-      
-      **Turnkey Finishing** - We deliver move-in ready suites with quality finishes, modern kitchens, full bathrooms, and separate laundry. Your new tenant enjoys a comfortable, legal living space.
+  - title: Complete Legal Basement Solutions
+    content: >
+      Converting your basement into a legal rental suite is one of the best
+      investments you can make in the GTA. With rental rates averaging
+      $1,500-$2,500 per month, your renovation pays for itself while adding
+      significant value to your property. We handle every aspect of the
+      conversion, from initial zoning verification through final occupancy
+      permits.
 
-# FAQ
+
+      Our team has completed over 500 legal basement conversions across Toronto,
+      Mississauga, Brampton, and the surrounding areas. We understand the unique
+      requirements of each municipality and maintain strong relationships with
+      building departments to ensure smooth permit approvals. Every project is
+      managed by certified professionals who guarantee code compliance.
+  - title: Full-Service Project Management
+    content: >
+      **Permits & Approvals** - We handle all paperwork, applications, and
+      inspections. Our in-house permit specialists navigate municipal
+      requirements, submit professional drawings, and coordinate with city
+      inspectors throughout the project.
+
+
+      **Structural Work** - From underpinning to achieve legal ceiling height to
+      creating separate entrances, our structural team ensures your basement
+      meets all building codes while maximizing livable space and natural light.
+
+
+      **Code Compliance** - Every element is designed to meet or exceed Ontario
+      Building Code requirements: proper fire separation, emergency egress,
+      sound insulation, independent HVAC systems, and separate electrical
+      metering.
+
+
+      **Turnkey Finishing** - We deliver move-in ready suites with quality
+      finishes, modern kitchens, full bathrooms, and separate laundry. Your new
+      tenant enjoys a comfortable, legal living space.
 faq:
-  - question: "How much rental income can I expect from a legal basement?"
-    answer: |
+  - question: How much rental income can I expect from a legal basement?
+    answer: >
       Current GTA rental rates for legal basements:
+
       - **Bachelor suite**: $1,200-$1,500/month
+
       - **One bedroom**: $1,500-$2,000/month
+
       - **Two bedroom**: $2,000-$2,500/month
+
       - **Premium finishes**: Add $200-$400/month
-      
-      Legal suites command 20-30% higher rent than illegal units and attract better tenants. With proper marketing, most units rent within 2 weeks of completion.
-  - question: "What are the key requirements for a legal basement?"
-    answer: |
+
+
+      Legal suites command 20-30% higher rent than illegal units and attract
+      better tenants. With proper marketing, most units rent within 2 weeks of
+      completion.
+  - question: What are the key requirements for a legal basement?
+    answer: >
       Ontario Building Code requirements include:
+
       - **Ceiling height**: Minimum 6'11" (most areas)
+
       - **Windows**: 5.7 sq ft unobstructed opening for bedrooms
+
       - **Separate entrance**: Direct exterior access
+
       - **Fire separation**: 1-hour rating between units
+
       - **Parking**: One space per unit (varies by municipality)
+
       - **Kitchen & bathroom**: Full facilities required
-      
-      We ensure your basement meets all requirements for your specific municipality.
-  - question: "How long does the conversion process take?"
+
+
+      We ensure your basement meets all requirements for your specific
+      municipality.
+  - question: How long does the conversion process take?
     answer: |
       Typical timeline for legal basement conversion:
       - **Week 1-2**: Design and permit applications
@@ -71,31 +106,76 @@ faq:
       - **Week 9-11**: Framing, mechanical, electrical
       - **Week 12-14**: Insulation, drywall, finishing
       - **Week 15-16**: Final inspections and occupancy
-      
-      Total: 3-4 months for standard conversion, 4-5 months with underpinning.
-  - question: "Will a legal basement increase my property taxes?"
-    answer: |
-      Yes, but the increase is minimal compared to rental income:
-      - Average tax increase: $1,000-$2,000 per year
-      - Average rental income: $18,000-$30,000 per year
-      - Net benefit: $16,000-$28,000 annually
-      
-      Plus, renovation costs can be deducted as rental expenses, and the increased property value benefits you when selling.
 
+      Total: 3-4 months for standard conversion, 4-5 months with underpinning.
+  - question: Will a legal basement increase my property taxes?
+    answer: >
+      Yes, but the increase is minimal compared to rental income:
+
+      - Average tax increase: $1,000-$2,000 per year
+
+      - Average rental income: $18,000-$30,000 per year
+
+      - Net benefit: $16,000-$28,000 annually
+
+
+      Plus, renovation costs can be deducted as rental expenses, and the
+      increased property value benefits you when selling.
 schema:
-  type: "Service"
-  serviceType: "Legal Basement Conversion"
-  areaServed: "Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill"
+  type: Service
+  serviceType: Legal Basement Conversion
+  areaServed: 'Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill'
   offers:
-    - name: "Basic Legal Basement Conversion"
-      description: "Standard conversion with existing ceiling height and entrance. Includes all permits, code compliance, and basic finishes."
-      price: "$65,000-$85,000"
-    - name: "Premium Conversion with Underpinning"
-      description: "Full underpinning for height, new separate entrance, premium finishes, and two-bedroom layout."
-      price: "$100,000-$150,000"
-    - name: "Permit Services Only"
-      description: "Professional permit application and drawing services for DIY renovators."
-      price: "$5,000-$10,000"
+    - name: Basic Legal Basement Conversion
+      description: >-
+        Standard conversion with existing ceiling height and entrance. Includes
+        all permits, code compliance, and basic finishes.
+      price: '$65,000-$85,000'
+    - name: Premium Conversion with Underpinning
+      description: >-
+        Full underpinning for height, new separate entrance, premium finishes,
+        and two-bedroom layout.
+      price: '$100,000-$150,000'
+    - name: Permit Services Only
+      description: Professional permit application and drawing services for DIY renovators.
+      price: '$5,000-$10,000'
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Consultation
+    - Licensed & Insured
+    - Warranty Protection
 ---
 
 # Legal Basement Conversions - Create Income-Generating Living Space

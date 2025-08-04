@@ -1,13 +1,80 @@
 ---
-title: "French Drain Installation Toronto | 2,300+ Monthly Searches | Interior & Exterior Systems"
-description: "Expert French drain installation in Toronto targeting 2,300 monthly searches. Stop basement flooding with proven drainage solutions. Interior & exterior systems, lifetime warranty. Call (437) 545-0067."
-date: 2025-01-31
-type: "service"
-url: "/services/french-drain-installation-toronto/"
-keywords: ["french drain installation toronto", "toronto french drain", "french drain toronto cost", "french drain contractors toronto", "basement drainage toronto", "toronto waterproofing contractors", "french drain installation near me toronto", "drainage solutions toronto", "basement flooding prevention toronto", "toronto foundation drainage", "perimeter drain toronto", "weeping tile toronto", "sump pump toronto", "waterproofing toronto", "basement leak repair toronto", "toronto basement waterproofing", "drainage contractors toronto", "foundation repair toronto", "wet basement toronto", "basement flooding toronto", "emergency waterproofing toronto", "toronto drainage systems", "french drain vs weeping tile toronto", "basement water problems toronto", "toronto home drainage"]
-schema_type: "Service"
-service_area: "Toronto"
-location: "Toronto, Ontario"
+title: >-
+  French Drain Installation Toronto | 2,300+ Monthly Searches | Interior &
+  Exterior Systems
+description: >-
+  Expert French drain installation in Toronto targeting 2,300 monthly searches.
+  Stop basement flooding with proven drainage solutions. Interior & exterior
+  systems, lifetime warranty. Call (437) 545-0067.
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/french-drain-installation-toronto/
+keywords:
+  - french drain installation toronto
+  - toronto french drain
+  - french drain toronto cost
+  - french drain contractors toronto
+  - basement drainage toronto
+  - toronto waterproofing contractors
+  - french drain installation near me toronto
+  - drainage solutions toronto
+  - basement flooding prevention toronto
+  - toronto foundation drainage
+  - perimeter drain toronto
+  - weeping tile toronto
+  - sump pump toronto
+  - waterproofing toronto
+  - basement leak repair toronto
+  - toronto basement waterproofing
+  - drainage contractors toronto
+  - foundation repair toronto
+  - wet basement toronto
+  - basement flooding toronto
+  - emergency waterproofing toronto
+  - toronto drainage systems
+  - french drain vs weeping tile toronto
+  - basement water problems toronto
+  - toronto home drainage
+schema_type: Service
+service_area: Toronto
+location: 'Toronto, Ontario'
+starting_price: '$2,999'
+price_range: '$2,999 - $8,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Same Day Service
+    - Camera Inspections
+    - 10 Year Warranty
 ---
 
 # French Drain Installation Toronto - 2,300 Monthly Searches Gap Solution

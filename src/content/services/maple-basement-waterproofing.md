@@ -1,38 +1,55 @@
 ---
-title: "Maple Basement Waterproofing | Vaughan Family Home Specialists"
-subtitle: "Reliable Waterproofing Solutions for Maple's Growing Family Community"
-seo_title: "Maple Basement Waterproofing Vaughan | Family Home Foundation Protection"
-description: "Expert basement waterproofing in Maple. Specializing in family homes, suburban drainage, and community-focused service. Serving Keele Street, Major Mackenzie area. Call (437) 545-0067."
-type: "service"
-url: "/services/maple-basement-waterproofing/"
+title: Maple Basement Waterproofing | Vaughan Family Home Specialists
+subtitle: Reliable Waterproofing Solutions for Maple's Growing Family Community
+seo_title: Maple Basement Waterproofing Vaughan | Family Home Foundation Protection
+description: >-
+  Expert basement waterproofing in Maple. Specializing in family homes, suburban
+  drainage, and community-focused service. Serving Keele Street, Major Mackenzie
+  area. Call (437) 545-0067.
+type: service
+url: /services/maple-basement-waterproofing/
 related_services:
-  - title: "Vaughan Waterproofing"
-    url: "/locations/vaughan-basement-waterproofing"
-    description: "Serving all Vaughan neighborhoods"
-    image: "/images/vaughan-waterproofing.jpg"
-  - title: "Family Home Protection"
-    url: "/services/family-home-waterproofing"
-    description: "Child-safe, family-friendly solutions"
-    image: "/images/family-home-protection.jpg"
-  - title: "Suburban Drainage Solutions"
-    url: "/services/suburban-drainage-solutions"
-    description: "Managing suburban water challenges"
-    image: "/images/suburban-drainage.jpg"
+  - title: Vaughan Waterproofing
+    url: /locations/vaughan-basement-waterproofing
+    description: Serving all Vaughan neighborhoods
+    image: /images/vaughan-waterproofing.jpg
+  - title: Family Home Protection
+    url: /services/family-home-waterproofing
+    description: 'Child-safe, family-friendly solutions'
+    image: /images/family-home-protection.jpg
+  - title: Suburban Drainage Solutions
+    url: /services/suburban-drainage-solutions
+    description: Managing suburban water challenges
+    image: /images/suburban-drainage.jpg
 sections:
-  - title: "Maple's Family-Focused Waterproofing Needs"
-    content: |
-      Maple represents the heart of Vaughan's family-oriented communities, featuring predominantly single-family homes built for growing families. This established neighborhood requires waterproofing solutions that prioritize safety, minimal disruption, and long-term family protection.
+  - title: Maple's Family-Focused Waterproofing Needs
+    content: >
+      Maple represents the heart of Vaughan's family-oriented communities,
+      featuring predominantly single-family homes built for growing families.
+      This established neighborhood requires waterproofing solutions that
+      prioritize safety, minimal disruption, and long-term family protection.
+
 
       Maple's family-focused challenges:
+
       - Homes with children requiring safe work practices
+
       - Finished basements used as family recreation spaces
+
       - Busy family schedules demanding flexible timing
+
       - Clay soil creating ongoing foundation challenges
+
       - Community standards for quality and professionalism
+
       - Property values requiring proper protection and documentation
 
-      We've served over 380 Maple families, from starter homes near Keele Street to established family properties around Major Mackenzie. Our approach emphasizes safety, communication, and solutions that protect both homes and family lifestyles.
-  - title: "Family Home Water Challenges"
+
+      We've served over 380 Maple families, from starter homes near Keele Street
+      to established family properties around Major Mackenzie. Our approach
+      emphasizes safety, communication, and solutions that protect both homes
+      and family lifestyles.
+  - title: Family Home Water Challenges
     content: |
       **Recreational Basement Spaces**
       Maple families rely on basements for:
@@ -78,7 +95,7 @@ sections:
       - Retirement planning through real estate
       - Community investment and stability
       - Quality of life for growing families
-  - title: "Family-Safe Maple Solutions"
+  - title: Family-Safe Maple Solutions
     content: |
       **Child-Safe Interior Systems**
       Designed with family safety in mind:
@@ -115,7 +132,7 @@ sections:
       - Environmental responsibility in residential areas
       - Support for local schools and community events
       - Long-term neighborhood relationships
-  - title: "Maple Neighborhood Expertise"
+  - title: Maple Neighborhood Expertise
     content: |
       **Keele Street Corridor**
       Main street properties requiring:
@@ -156,7 +173,7 @@ sections:
       - Coordination with mature family schedules
       - Respect for neighborhood traditions
       - Support for aging-in-place families
-  - title: "Why Maple Families Trust DrySpace"
+  - title: Why Maple Families Trust DrySpace
     content: |
       **Family-First Approach**
       - Child safety protocols on every job
@@ -192,7 +209,7 @@ sections:
       - Temporary solutions while permanent work is completed
       - Coordination with family emergency plans
       - Support during stressful water damage events
-  - title: "Your Family's Waterproofing Project"
+  - title: Your Family's Waterproofing Project
     content: |
       **Family Consultation Process**
       - Child-friendly home assessment visits
@@ -226,58 +243,141 @@ sections:
       - Family growth accommodation planning
       - Resale support when families move
 faq:
-  - question: "Is your waterproofing work safe around children?"
-    answer: "Absolutely. Child safety is our top priority. We use non-toxic materials, secure all work areas with barriers, store equipment safely, and train crews specifically for working around families. Many of our technicians are parents themselves and understand family safety concerns."
-  - question: "How do you minimize disruption to family routines?"
-    answer: "We work around your family's schedule, including school hours, nap times, and activity schedules. We maintain clean, organized work sites, complete daily cleanup, and can adjust timing for important family events. Many families continue normal routines during our projects."
-  - question: "Can you work around my children's playroom or recreation room?"
-    answer: "Yes, protecting family recreation spaces is our specialty. We can often install systems without major disruption to finished basements, and when access is needed, we coordinate carefully to minimize impact on family spaces and restore areas quickly."
-  - question: "What about noise levels during work?"
-    answer: "We use quieter equipment when possible and schedule noisy work during appropriate hours. We coordinate with families to avoid disrupting nap times, study periods, or quiet family time. Most interior work is relatively quiet compared to exterior excavation."
-  - question: "How do you handle pets during waterproofing projects?"
-    answer: "We're very pet-friendly and work around family pets regularly. We secure work areas to keep pets safe, coordinate with pet schedules, and ensure crews are comfortable with animals. Many of our team members are pet owners and understand these concerns."
-  - question: "Can you work while we're on vacation or away?"
-    answer: "Yes, many families prefer this approach. We coordinate with neighbors, provide daily updates with photos, ensure complete security, and have the work finished when you return. This eliminates disruption to family routines entirely."
-  - question: "What financing options work for family budgets?"
-    answer: "We offer family-friendly financing including low monthly payments, seasonal payment options, and programs that work with family budgets. We understand families have many expenses and work to make proper waterproofing affordable."
-  - question: "How long will the work take?"
-    answer: "Most Maple family home projects take 3-5 days for interior systems, 5-8 days for exterior work. We provide detailed schedules, work efficiently to minimize family disruption, and can often work around key family events or schedules."
-  - question: "What warranty protection do families get?"
-    answer: "Our lifetime transferable warranty protects your family's investment for as long as you own your home and transfers to new owners if you move. This provides peace of mind for growing families and protects your home's value."
-  - question: "Do you work with homeowner associations or community standards?"
-    answer: "Yes, we understand community standards and work within neighborhood guidelines. We maintain professional appearance, coordinate with community requirements, and ensure our work reflects positively on the neighborhood."
-  - question: "Can you accommodate large family gatherings or events?"
-    answer: "Absolutely. We coordinate work schedules around family events, holidays, parties, and gatherings. Many families schedule work specifically to have dry, comfortable basements ready for family celebrations."
-  - question: "What emergency support do you provide for families?"
-    answer: "We provide 24/7 emergency response with priority service for families with young children. Our emergency crews understand the urgency of water problems when children are involved and respond quickly to restore safe, dry conditions."
+  - question: Is your waterproofing work safe around children?
+    answer: >-
+      Absolutely. Child safety is our top priority. We use non-toxic materials,
+      secure all work areas with barriers, store equipment safely, and train
+      crews specifically for working around families. Many of our technicians
+      are parents themselves and understand family safety concerns.
+  - question: How do you minimize disruption to family routines?
+    answer: >-
+      We work around your family's schedule, including school hours, nap times,
+      and activity schedules. We maintain clean, organized work sites, complete
+      daily cleanup, and can adjust timing for important family events. Many
+      families continue normal routines during our projects.
+  - question: Can you work around my children's playroom or recreation room?
+    answer: >-
+      Yes, protecting family recreation spaces is our specialty. We can often
+      install systems without major disruption to finished basements, and when
+      access is needed, we coordinate carefully to minimize impact on family
+      spaces and restore areas quickly.
+  - question: What about noise levels during work?
+    answer: >-
+      We use quieter equipment when possible and schedule noisy work during
+      appropriate hours. We coordinate with families to avoid disrupting nap
+      times, study periods, or quiet family time. Most interior work is
+      relatively quiet compared to exterior excavation.
+  - question: How do you handle pets during waterproofing projects?
+    answer: >-
+      We're very pet-friendly and work around family pets regularly. We secure
+      work areas to keep pets safe, coordinate with pet schedules, and ensure
+      crews are comfortable with animals. Many of our team members are pet
+      owners and understand these concerns.
+  - question: Can you work while we're on vacation or away?
+    answer: >-
+      Yes, many families prefer this approach. We coordinate with neighbors,
+      provide daily updates with photos, ensure complete security, and have the
+      work finished when you return. This eliminates disruption to family
+      routines entirely.
+  - question: What financing options work for family budgets?
+    answer: >-
+      We offer family-friendly financing including low monthly payments,
+      seasonal payment options, and programs that work with family budgets. We
+      understand families have many expenses and work to make proper
+      waterproofing affordable.
+  - question: How long will the work take?
+    answer: >-
+      Most Maple family home projects take 3-5 days for interior systems, 5-8
+      days for exterior work. We provide detailed schedules, work efficiently to
+      minimize family disruption, and can often work around key family events or
+      schedules.
+  - question: What warranty protection do families get?
+    answer: >-
+      Our lifetime transferable warranty protects your family's investment for
+      as long as you own your home and transfers to new owners if you move. This
+      provides peace of mind for growing families and protects your home's
+      value.
+  - question: Do you work with homeowner associations or community standards?
+    answer: >-
+      Yes, we understand community standards and work within neighborhood
+      guidelines. We maintain professional appearance, coordinate with community
+      requirements, and ensure our work reflects positively on the neighborhood.
+  - question: Can you accommodate large family gatherings or events?
+    answer: >-
+      Absolutely. We coordinate work schedules around family events, holidays,
+      parties, and gatherings. Many families schedule work specifically to have
+      dry, comfortable basements ready for family celebrations.
+  - question: What emergency support do you provide for families?
+    answer: >-
+      We provide 24/7 emergency response with priority service for families with
+      young children. Our emergency crews understand the urgency of water
+      problems when children are involved and respond quickly to restore safe,
+      dry conditions.
 schema:
-  type: "Service"
-  name: "Maple Basement Waterproofing"
+  type: Service
+  name: Maple Basement Waterproofing
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Maple"
-    - "Keele Street"
-    - "Major Mackenzie"
-    - "Maple Community Centre"
-    - "New Maple"
-    - "Maple Heights"
-    - "Thornhill Woods"
-    - "Vaughan Grove"
-    - "Family Districts"
+    - Maple
+    - Keele Street
+    - Major Mackenzie
+    - Maple Community Centre
+    - New Maple
+    - Maple Heights
+    - Thornhill Woods
+    - Vaughan Grove
+    - Family Districts
   serviceType:
-    - "Family Home Waterproofing"
-    - "Child-Safe Foundation Protection"
-    - "Recreational Space Protection"
-    - "Suburban Drainage Solutions"
-    - "Community-Focused Service"
+    - Family Home Waterproofing
+    - Child-Safe Foundation Protection
+    - Recreational Space Protection
+    - Suburban Drainage Solutions
+    - Community-Focused Service
   offers:
-    - "Child Safety Protocols"
-    - "Family Schedule Flexibility"
-    - "Community Investment"
-    - "Family-Friendly Financing"
-    - "Emergency Family Support"
+    - Child Safety Protocols
+    - Family Schedule Flexibility
+    - Community Investment
+    - Family-Friendly Financing
+    - Emergency Family Support
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Maple Family Home Waterproofing

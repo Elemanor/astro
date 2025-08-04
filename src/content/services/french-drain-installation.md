@@ -1,10 +1,60 @@
 ---
-title: "French Drain Installation Toronto | Interior & Exterior Drainage Systems"
-description: "FRENCH DRAIN experts Toronto! Stop basement flooding permanently - 2,300 monthly searches can't be wrong. Interior $8K-12K, Exterior $15K-25K. FREE quotes, lifetime warranty. Call (437) 545-0067!"
-date: 2025-01-30
-type: "service"
-url: "/services/french-drain-installation/"
-keywords: ["french drain", "french drain installation", "french drain cost", "interior french drain", "exterior french drain", "basement drainage system", "french drain toronto", "foundation drainage", "french drain install near me", "perimeter drain system"]
+title: French Drain Installation Toronto | Interior & Exterior Drainage Systems
+description: >-
+  FRENCH DRAIN experts Toronto! Stop basement flooding permanently - 2,300
+  monthly searches can't be wrong. Interior $8K-12K, Exterior $15K-25K. FREE
+  quotes, lifetime warranty. Call (437) 545-0067!
+date: 2025-01-30T00:00:00.000Z
+type: service
+url: /services/french-drain-installation/
+keywords:
+  - french drain
+  - french drain installation
+  - french drain cost
+  - interior french drain
+  - exterior french drain
+  - basement drainage system
+  - french drain toronto
+  - foundation drainage
+  - french drain install near me
+  - perimeter drain system
+starting_price: '$2,999'
+price_range: '$2,999 - $8,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Same Day Service
+    - Camera Inspections
+    - 10 Year Warranty
 ---
 
 # French Drain Installation Toronto: Complete 2025 Guide

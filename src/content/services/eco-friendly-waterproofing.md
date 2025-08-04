@@ -1,15 +1,60 @@
 ---
-title: "Eco-Friendly Waterproofing Toronto | Green Basement Solutions"
-description: "Sustainable basement waterproofing solutions in Toronto. Non-toxic materials, energy-efficient systems, recycled products. Protect your home and the environment."
-keywords: ["eco-friendly waterproofing toronto", "green basement waterproofing", "sustainable foundation repair", "non-toxic waterproofing", "environmentally friendly basement solutions"]
-author: "DrySpace Waterproofing"
-date: 2025-01-31
-lastmod: 2025-01-31
-type: "services"
-url: "/services/eco-friendly-waterproofing/"
-featured_image: "/images/eco-waterproofing.jpg"
+title: Eco-Friendly Waterproofing Toronto | Green Basement Solutions
+description: >-
+  Sustainable basement waterproofing solutions in Toronto. Non-toxic materials,
+  energy-efficient systems, recycled products. Protect your home and the
+  environment.
+keywords:
+  - eco-friendly waterproofing toronto
+  - green basement waterproofing
+  - sustainable foundation repair
+  - non-toxic waterproofing
+  - environmentally friendly basement solutions
+author: DrySpace Waterproofing
+date: 2025-01-31T00:00:00.000Z
+lastmod: 2025-01-31T00:00:00.000Z
+type: services
+url: /services/eco-friendly-waterproofing/
+featured_image: /images/eco-waterproofing.jpg
 toc: true
 draft: false
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Eco-Friendly Waterproofing Solutions in Toronto

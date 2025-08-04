@@ -1,31 +1,85 @@
 ---
-title: "Waterproofing Solutions Guide | Choose the Right System"
-subtitle: "Compare Interior vs Exterior Waterproofing Systems - Complete Decision Guide"
-seo_title: "Best Waterproofing Solutions Toronto | Interior vs Exterior Systems Guide"
-description: "Which waterproofing solution is best for your home? Compare interior vs exterior systems, costs, benefits. Expert guidance to choose the right water protection. Call: (437) 545-0067"
-date: 2025-01-31
-type: "hub"
-url: "/services/waterproofing-solutions/"
-
+title: Waterproofing Solutions Guide | Choose the Right System
+subtitle: Compare Interior vs Exterior Waterproofing Systems - Complete Decision Guide
+seo_title: Best Waterproofing Solutions Toronto | Interior vs Exterior Systems Guide
+description: >-
+  Which waterproofing solution is best for your home? Compare interior vs
+  exterior systems, costs, benefits. Expert guidance to choose the right water
+  protection. Call: (437) 545-0067
+date: 2025-01-31T00:00:00.000Z
+type: hub
+url: /services/waterproofing-solutions/
 sections:
-  - title: "Comprehensive Waterproofing Protection"
-    content: |
-      Water is your foundation's greatest enemy. From spring thaws to summer storms, Toronto homes face constant water challenges that threaten foundations, create unhealthy living conditions, and damage property. Choosing the right waterproofing solution requires understanding your options, costs, and long-term benefits.
-      
-      This comprehensive guide helps you navigate waterproofing decisions with confidence. Whether you're dealing with active leaks, planning preventive protection, or comparing solutions, we provide the expertise and options you need for lasting protection.
+  - title: Comprehensive Waterproofing Protection
+    content: >
+      Water is your foundation's greatest enemy. From spring thaws to summer
+      storms, Toronto homes face constant water challenges that threaten
+      foundations, create unhealthy living conditions, and damage property.
+      Choosing the right waterproofing solution requires understanding your
+      options, costs, and long-term benefits.
 
-  - title: "Understanding Your Waterproofing Options"
-    content: |
+
+      This comprehensive guide helps you navigate waterproofing decisions with
+      confidence. Whether you're dealing with active leaks, planning preventive
+      protection, or comparing solutions, we provide the expertise and options
+      you need for lasting protection.
+  - title: Understanding Your Waterproofing Options
+    content: >
       **The Two-Pronged Approach to Water Management**
-      
-      Effective waterproofing isn't one-size-fits-all. Your home's unique challenges - from soil conditions to water table levels - determine the best approach. Most successful waterproofing strategies combine multiple methods for comprehensive protection.
-      
-      Interior systems manage water that reaches your foundation, providing reliable protection with minimal disruption. Exterior systems stop water before it contacts your walls, offering the most complete defense. Understanding when each approach excels helps you invest wisely in your home's protection.
 
+
+      Effective waterproofing isn't one-size-fits-all. Your home's unique
+      challenges - from soil conditions to water table levels - determine the
+      best approach. Most successful waterproofing strategies combine multiple
+      methods for comprehensive protection.
+
+
+      Interior systems manage water that reaches your foundation, providing
+      reliable protection with minimal disruption. Exterior systems stop water
+      before it contacts your walls, offering the most complete defense.
+      Understanding when each approach excels helps you invest wisely in your
+      home's protection.
 schema:
-  type: "WebPage"
-  name: "Waterproofing Solutions Hub"
-  description: "Comprehensive guide to basement and foundation waterproofing solutions"
+  type: WebPage
+  name: Waterproofing Solutions Hub
+  description: Comprehensive guide to basement and foundation waterproofing solutions
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Waterproofing Solutions Guide: Choose the Right System

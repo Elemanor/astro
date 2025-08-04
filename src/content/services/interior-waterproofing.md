@@ -1,89 +1,174 @@
 ---
-title: "Interior Waterproofing Toronto | Professional Basement Solutions"
-subtitle: "Expert Interior Waterproofing & Basement Water Management Systems"
-seo_title: "Interior Waterproofing Toronto | Basement Waterproofing Cost & Services"
-description: "Professional interior waterproofing solutions for Toronto homes. French drains, sump pumps, vapor barriers. Lifetime warranty. Call (437) 545-0067."
-date: 2025-01-29
-type: "service"
-url: "/services/interior-waterproofing/"
-urgency: "high"
-service: "Interior Waterproofing"
-
-# Related services
+title: Interior Waterproofing Toronto | Professional Basement Solutions
+subtitle: Expert Interior Waterproofing & Basement Water Management Systems
+seo_title: Interior Waterproofing Toronto | Basement Waterproofing Cost & Services
+description: >-
+  Professional interior waterproofing solutions for Toronto homes. French
+  drains, sump pumps, vapor barriers. Lifetime warranty. Call (437) 545-0067.
+date: 2025-01-29T00:00:00.000Z
+type: service
+url: /services/interior-waterproofing/
+urgency: high
+service: Interior Waterproofing
 related_services:
-  - title: "Sump Pump Installation"
-    url: "/services/emergency-waterproofing/"
-    description: "High-capacity pumps with battery backup"
-    image: "/pics/work/sump-pump.webp"
-  - title: "Foundation Crack Repair"
-    url: "/services/foundation-crack-repair/"
-    description: "Stop water at the source"
-    image: "/pics/work/crack_repair.webp"
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing/"
-    description: "Complete exterior protection"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
-
-# Content sections
+  - title: Sump Pump Installation
+    url: /services/emergency-waterproofing/
+    description: High-capacity pumps with battery backup
+    image: /pics/work/sump-pump.webp
+  - title: Foundation Crack Repair
+    url: /services/foundation-crack-repair/
+    description: Stop water at the source
+    image: /pics/work/crack_repair.webp
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing/
+    description: Complete exterior protection
+    image: /pics/work/exterior-waterproofing-membrane.webp
 sections:
-  - title: "Professional Interior Waterproofing Toronto"
-    content: |
-      Interior waterproofing is often the most practical solution for Toronto homes. Our expert interior waterproofing systems work with your foundation to manage water effectively, keeping your basement dry without the need for extensive excavation.
-      
-      We install complete interior waterproofing Toronto solutions that capture moisture before it enters your living space. As experienced basement contractors Toronto, we custom-design every system for your specific foundation type and water issues. Our interior waterproofing services include comprehensive basement waterproofing Toronto cost estimates upfront.
-  - title: "Our Proven Interior System"
-    content: |
-      **French Drain Installation** - We install perimeter drainage along the inside of your foundation walls, capturing water where wall meets floor - the most common entry point.
-      
-      **Sump Pump Systems** - High-capacity pumps with battery backup ensure water removal even during power outages. Our sealed systems prevent humidity and radon gas entry.
-      
-      **Vapor Barriers** - Heavy-duty membranes create an impermeable barrier against moisture, directing any water into the drainage system while brightening your basement.
+  - title: Professional Interior Waterproofing Toronto
+    content: >
+      Interior waterproofing is often the most practical solution for Toronto
+      homes. Our expert interior waterproofing systems work with your foundation
+      to manage water effectively, keeping your basement dry without the need
+      for extensive excavation.
 
-# FAQ
+
+      We install complete interior waterproofing Toronto solutions that capture
+      moisture before it enters your living space. As experienced basement
+      contractors Toronto, we custom-design every system for your specific
+      foundation type and water issues. Our interior waterproofing services
+      include comprehensive basement waterproofing Toronto cost estimates
+      upfront.
+  - title: Our Proven Interior System
+    content: >
+      **French Drain Installation** - We install perimeter drainage along the
+      inside of your foundation walls, capturing water where wall meets floor -
+      the most common entry point.
+
+
+      **Sump Pump Systems** - High-capacity pumps with battery backup ensure
+      water removal even during power outages. Our sealed systems prevent
+      humidity and radon gas entry.
+
+
+      **Vapor Barriers** - Heavy-duty membranes create an impermeable barrier
+      against moisture, directing any water into the drainage system while
+      brightening your basement.
 faq:
-  - question: "How effective is interior waterproofing?"
-    answer: |
-      Interior waterproofing is highly effective when properly installed. Our systems:
-      - Remove 99.9% of water that enters
-      - Work in all weather conditions
-      - Last 30+ years with minimal maintenance
-      - Come with lifetime transferable warranty
-      
-      While exterior waterproofing stops water before entry, interior systems effectively manage any water that does get through.
-  - question: "How much does interior waterproofing cost in Toronto?"
-    answer: |
-      Interior waterproofing Toronto typically costs 40-60% less than exterior waterproofing Toronto solutions while providing excellent protection. Basement waterproofing Toronto cost for interior systems ranges from $70-150 per linear foot. For detailed interior waterproofing cost breakdowns and basement waterproofing cost Toronto estimates, please see our comprehensive [basement waterproofing cost guide](/services/basement-waterproofing-cost/).
-  - question: "How long does installation take?"
-    answer: |
-      Most interior waterproofing projects take:
-      - **Small basement** (< 1000 sq ft): 2-3 days
-      - **Average basement** (1000-1500 sq ft): 3-4 days
-      - **Large basement** (> 1500 sq ft): 4-5 days
-      
-      We work cleanly and efficiently. You can remain in your home during installation.
-  - question: "Will interior waterproofing damage my finished basement?"
-    answer: |
-      We specialize in working with finished basements:
-      - Minimal removal of finishes (typically just bottom 2 feet)
-      - Precise cutting to preserve most of your walls
-      - Clean installation with dust control
-      - We can often save flooring with careful planning
-      
-      Many clients combine waterproofing with planned renovations for best results.
+  - question: How effective is interior waterproofing?
+    answer: >
+      Interior waterproofing is highly effective when properly installed. Our
+      systems:
 
+      - Remove 99.9% of water that enters
+
+      - Work in all weather conditions
+
+      - Last 30+ years with minimal maintenance
+
+      - Come with lifetime transferable warranty
+
+
+      While exterior waterproofing stops water before entry, interior systems
+      effectively manage any water that does get through.
+  - question: How much does interior waterproofing cost in Toronto?
+    answer: >
+      Interior waterproofing Toronto typically costs 40-60% less than exterior
+      waterproofing Toronto solutions while providing excellent protection.
+      Basement waterproofing Toronto cost for interior systems ranges from
+      $70-150 per linear foot. For detailed interior waterproofing cost
+      breakdowns and basement waterproofing cost Toronto estimates, please see
+      our comprehensive [basement waterproofing cost
+      guide](/services/basement-waterproofing-cost/).
+  - question: How long does installation take?
+    answer: >
+      Most interior waterproofing projects take:
+
+      - **Small basement** (< 1000 sq ft): 2-3 days
+
+      - **Average basement** (1000-1500 sq ft): 3-4 days
+
+      - **Large basement** (> 1500 sq ft): 4-5 days
+
+
+      We work cleanly and efficiently. You can remain in your home during
+      installation.
+  - question: Will interior waterproofing damage my finished basement?
+    answer: >
+      We specialize in working with finished basements:
+
+      - Minimal removal of finishes (typically just bottom 2 feet)
+
+      - Precise cutting to preserve most of your walls
+
+      - Clean installation with dust control
+
+      - We can often save flooring with careful planning
+
+
+      Many clients combine waterproofing with planned renovations for best
+      results.
 schema:
-  type: "Service"
-  serviceType: "Interior Basement Waterproofing"
-  areaServed: "Greater Toronto Area"
+  type: Service
+  serviceType: Interior Basement Waterproofing
+  areaServed: Greater Toronto Area
   offers:
-    - name: "Interior French Drain System"
-      description: "Perimeter drainage system that captures water and directs it to sump pump. Includes weeping tile and drainage board. See our [cost guide](/services/basement-waterproofing-cost/) for pricing."
-    - name: "Sump Pump Installation"
-      description: "High-capacity pump system with battery backup, sealed lid, and discharge line to exterior. See our [cost guide](/services/basement-waterproofing-cost/) for pricing."
-    - name: "Vapor Barrier Installation"
-      description: "Heavy-duty plastic membrane to prevent moisture penetration through walls and floors. See our [cost guide](/services/basement-waterproofing-cost/) for pricing."
-    - name: "Complete Interior System"
-      description: "Full perimeter drainage, sump pump, vapor barriers, and dehumidification system. See our [cost guide](/services/basement-waterproofing-cost/) for pricing."
+    - name: Interior French Drain System
+      description: >-
+        Perimeter drainage system that captures water and directs it to sump
+        pump. Includes weeping tile and drainage board. See our [cost
+        guide](/services/basement-waterproofing-cost/) for pricing.
+    - name: Sump Pump Installation
+      description: >-
+        High-capacity pump system with battery backup, sealed lid, and discharge
+        line to exterior. See our [cost
+        guide](/services/basement-waterproofing-cost/) for pricing.
+    - name: Vapor Barrier Installation
+      description: >-
+        Heavy-duty plastic membrane to prevent moisture penetration through
+        walls and floors. See our [cost
+        guide](/services/basement-waterproofing-cost/) for pricing.
+    - name: Complete Interior System
+      description: >-
+        Full perimeter drainage, sump pump, vapor barriers, and dehumidification
+        system. See our [cost guide](/services/basement-waterproofing-cost/) for
+        pricing.
+starting_price: '$3,499'
+price_range: '$3,499 - $12,999'
+benefits:
+  - title: Minimal Disruption
+    description: Complete installation in 1-2 days without exterior excavation
+  - title: Cost-Effective Protection
+    description: Professional water management at a fraction of exterior waterproofing cost
+  - title: Dry Basement Guarantee
+    description: Our proven system keeps your basement dry year-round
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Perimeter Preparation
+    description: Create drainage channel along foundation walls
+    icon: hammer
+  - title: Drainage System Install
+    description: Install weeping tile connected to sump pump
+    icon: pipe
+  - title: Vapor Barrier
+    description: Apply moisture barrier to walls and floor
+    icon: shield
+  - title: Concrete Restoration
+    description: Pour new concrete for seamless finish
+    icon: concrete
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Interior Waterproofing Toronto - Basement Waterproofing Systems

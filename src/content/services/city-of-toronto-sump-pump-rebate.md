@@ -1,44 +1,66 @@
 ---
-title: "City of Toronto Sump Pump Rebate Program 2025 Guide"
-subtitle: "Get Up to $1,750 Back for Flood Protection Installation"
-seo_title: "City of Toronto Sump Pump Rebate | Basement Flooding Protection Subsidy"
-description: "Complete guide to Toronto's sump pump rebate program. Get $1,750 back for sump pump installation. Learn eligibility, application process, and approved contractors. Updated for 2025."
-type: "service"
-url: "/services/city-of-toronto-sump-pump-rebate/"
+title: City of Toronto Sump Pump Rebate Program 2025 Guide
+subtitle: 'Get Up to $1,750 Back for Flood Protection Installation'
+seo_title: City of Toronto Sump Pump Rebate | Basement Flooding Protection Subsidy
+description: >-
+  Complete guide to Toronto's sump pump rebate program. Get $1,750 back for sump
+  pump installation. Learn eligibility, application process, and approved
+  contractors. Updated for 2025.
+type: service
+url: /services/city-of-toronto-sump-pump-rebate/
 related_services:
-  - title: "Sump Pump Installation"
-    url: "/services/sump-pump-installation"
-    description: "Professional sump pump installation"
-    image: "/images/sump-pump-installation.jpg"
-  - title: "Backwater Valve Installation"
-    url: "/services/backwater-valve-installation"
-    description: "Get additional rebates"
-    image: "/images/backwater-valve.jpg"
-  - title: "Basement Waterproofing"
-    url: "/services/basement-waterproofing"
-    description: "Complete flood protection"
-    image: "/images/basement-waterproofing.jpg"
+  - title: Sump Pump Installation
+    url: /services/sump-pump-installation
+    description: Professional sump pump installation
+    image: /images/sump-pump-installation.jpg
+  - title: Backwater Valve Installation
+    url: /services/backwater-valve-installation
+    description: Get additional rebates
+    image: /images/backwater-valve.jpg
+  - title: Basement Waterproofing
+    url: /services/basement-waterproofing
+    description: Complete flood protection
+    image: /images/basement-waterproofing.jpg
 sections:
-  - title: "Toronto's Basement Flooding Protection Subsidy Program"
-    content: |
-      The City of Toronto offers significant rebates to help homeowners protect against basement flooding. Through the Basement Flooding Protection Subsidy Program, you can receive up to $1,750 for installing flood protection devices.
+  - title: Toronto's Basement Flooding Protection Subsidy Program
+    content: >
+      The City of Toronto offers significant rebates to help homeowners protect
+      against basement flooding. Through the Basement Flooding Protection
+      Subsidy Program, you can receive up to $1,750 for installing flood
+      protection devices.
+
 
       **2025 Rebate Amounts:**
+
       - Sump pump installation: Up to $1,750
+
       - Backwater valve installation: Up to $1,750
+
       - Pipe severance and capping: Up to $1,750
+
       - Combined maximum: $3,400 per property
 
+
       **Program Overview:**
-      This program helps Toronto homeowners afford critical flood protection. With increasing extreme weather, the City recognizes that basement flooding prevention is essential for protecting homes and reducing insurance claims.
+
+      This program helps Toronto homeowners afford critical flood protection.
+      With increasing extreme weather, the City recognizes that basement
+      flooding prevention is essential for protecting homes and reducing
+      insurance claims.
+
 
       **Why This Matters:**
+
       - 1 in 5 Toronto homes will experience basement flooding
+
       - Average flood damage: $43,000
+
       - Prevention costs fraction of cleanup
+
       - Insurance may not cover all damages
+
       - Rebates make protection affordable
-  - title: "Eligibility Requirements"
+  - title: Eligibility Requirements
     content: |
       **Property Eligibility:**
       To qualify for the sump pump rebate, your property must:
@@ -69,7 +91,7 @@ sections:
       - New construction homes
       - DIY installations
       - Portable pumps
-  - title: "How to Apply for the Rebate"
+  - title: How to Apply for the Rebate
     content: |
       **Step 1: Pre-Installation**
       - Confirm property eligibility
@@ -106,7 +128,7 @@ sections:
       - Made payable to property owner
       - Maximum $1,750 for sump pump
       - Can apply for multiple devices
-  - title: "Approved Installations and Costs"
+  - title: Approved Installations and Costs
     content: |
       **What's Covered by the Rebate:**
 
@@ -144,7 +166,7 @@ sections:
       - DIY labor costs
       - Finishing work
       - Damage repairs
-  - title: "Combining Rebates for Maximum Savings"
+  - title: Combining Rebates for Maximum Savings
     content: |
       **Stack Your Rebates:**
       The City allows combining rebates for comprehensive flood protection:
@@ -180,7 +202,7 @@ sections:
       - Backwater valve: 5-15% discount
       - Combined systems: Up to 20% discount
       - Annual savings: $200-500
-  - title: "Working with Approved Contractors"
+  - title: Working with Approved Contractors
     content: |
       **Choosing the Right Contractor:**
 
@@ -221,51 +243,129 @@ sections:
       - Warranty information
       - Rebate application assistance
 faq:
-  - question: "How much is the City of Toronto sump pump rebate?"
-    answer: "The City of Toronto offers up to $1,750 for sump pump installation through the Basement Flooding Protection Subsidy Program. The rebate covers 80% of installation costs up to the maximum. You can combine this with a backwater valve rebate for up to $3,400 total."
-  - question: "Who qualifies for Toronto's sump pump rebate?"
-    answer: "Toronto residential property owners qualify, including single-family homes, semis, and townhouses. The property must be within Toronto boundaries, the sump pump must be permanently installed by a licensed contractor, and you cannot have received a previous rebate for the same device."
-  - question: "How do I apply for the basement flooding subsidy?"
-    answer: "Apply online at Toronto.ca within 60 days of installation. Submit itemized invoices, proof of payment, before/after photos, and permit documentation. The City reviews applications in 4-6 weeks, with rebate cheques issued in 8-12 weeks after approval."
-  - question: "Can I install the sump pump myself and get the rebate?"
-    answer: "No, DIY installations do not qualify for the rebate. The sump pump must be installed by a licensed plumber or contractor to ensure code compliance and proper installation. The City requires professional invoices as part of the application."
-  - question: "What does the sump pump rebate cover?"
-    answer: "The rebate covers the sump pump unit, pit installation, discharge piping, check valve, electrical connection, concrete work, and labor. It can also include battery backup systems and water alarms. The rebate does not cover DIY labor or finishing work."
-  - question: "Can I get rebates for both sump pump and backwater valve?"
-    answer: "Yes, you can combine rebates for maximum flood protection. Installing both a sump pump ($1,750) and backwater valve ($1,750) can get you up to $3,400 in total rebates. Many contractors recommend both for comprehensive protection."
-  - question: "How long does the rebate process take?"
-    answer: "The complete rebate process takes 12-18 weeks: Submit application within 60 days of installation, City review takes 4-6 weeks, and rebate cheques are mailed 8-12 weeks after approval. Some applications process faster if documentation is complete."
-  - question: "Do condos qualify for the sump pump rebate?"
-    answer: "Individual condo units do not qualify as the building's flood protection is the condominium corporation's responsibility. However, condo corporations may be eligible for commercial flood protection programs. Townhouse condos may qualify if individually owned."
-  - question: "What if my sump pump installation costs less than $1,750?"
-    answer: "The rebate covers 80% of actual costs up to $1,750 maximum. If your installation costs $2,000, you receive $1,600. If it costs $1,500, you receive $1,200. Only installations costing $2,187.50 or more receive the full $1,750."
-  - question: "Does the rebate cover sump pump replacement?"
-    answer: "The rebate only covers new installations or replacement of failed sump pumps. Upgrading a working pump doesn't qualify. If your existing pump has failed, keep documentation of the failure to support your rebate application."
+  - question: How much is the City of Toronto sump pump rebate?
+    answer: >-
+      The City of Toronto offers up to $1,750 for sump pump installation through
+      the Basement Flooding Protection Subsidy Program. The rebate covers 80% of
+      installation costs up to the maximum. You can combine this with a
+      backwater valve rebate for up to $3,400 total.
+  - question: Who qualifies for Toronto's sump pump rebate?
+    answer: >-
+      Toronto residential property owners qualify, including single-family
+      homes, semis, and townhouses. The property must be within Toronto
+      boundaries, the sump pump must be permanently installed by a licensed
+      contractor, and you cannot have received a previous rebate for the same
+      device.
+  - question: How do I apply for the basement flooding subsidy?
+    answer: >-
+      Apply online at Toronto.ca within 60 days of installation. Submit itemized
+      invoices, proof of payment, before/after photos, and permit documentation.
+      The City reviews applications in 4-6 weeks, with rebate cheques issued in
+      8-12 weeks after approval.
+  - question: Can I install the sump pump myself and get the rebate?
+    answer: >-
+      No, DIY installations do not qualify for the rebate. The sump pump must be
+      installed by a licensed plumber or contractor to ensure code compliance
+      and proper installation. The City requires professional invoices as part
+      of the application.
+  - question: What does the sump pump rebate cover?
+    answer: >-
+      The rebate covers the sump pump unit, pit installation, discharge piping,
+      check valve, electrical connection, concrete work, and labor. It can also
+      include battery backup systems and water alarms. The rebate does not cover
+      DIY labor or finishing work.
+  - question: Can I get rebates for both sump pump and backwater valve?
+    answer: >-
+      Yes, you can combine rebates for maximum flood protection. Installing both
+      a sump pump ($1,750) and backwater valve ($1,750) can get you up to $3,400
+      in total rebates. Many contractors recommend both for comprehensive
+      protection.
+  - question: How long does the rebate process take?
+    answer: >-
+      The complete rebate process takes 12-18 weeks: Submit application within
+      60 days of installation, City review takes 4-6 weeks, and rebate cheques
+      are mailed 8-12 weeks after approval. Some applications process faster if
+      documentation is complete.
+  - question: Do condos qualify for the sump pump rebate?
+    answer: >-
+      Individual condo units do not qualify as the building's flood protection
+      is the condominium corporation's responsibility. However, condo
+      corporations may be eligible for commercial flood protection programs.
+      Townhouse condos may qualify if individually owned.
+  - question: 'What if my sump pump installation costs less than $1,750?'
+    answer: >-
+      The rebate covers 80% of actual costs up to $1,750 maximum. If your
+      installation costs $2,000, you receive $1,600. If it costs $1,500, you
+      receive $1,200. Only installations costing $2,187.50 or more receive the
+      full $1,750.
+  - question: Does the rebate cover sump pump replacement?
+    answer: >-
+      The rebate only covers new installations or replacement of failed sump
+      pumps. Upgrading a working pump doesn't qualify. If your existing pump has
+      failed, keep documentation of the failure to support your rebate
+      application.
 schema:
-  type: "Service"
-  name: "Toronto Sump Pump Rebate Program"
+  type: Service
+  name: Toronto Sump Pump Rebate Program
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "North York"
-    - "Scarborough"
-    - "Etobicoke"
-    - "York"
-    - "East York"
+    - Toronto
+    - North York
+    - Scarborough
+    - Etobicoke
+    - York
+    - East York
   serviceType:
-    - "Rebate Program Assistance"
-    - "Sump Pump Installation"
-    - "Flood Protection Subsidy"
-    - "Basement Protection"
-    - "Municipal Programs"
+    - Rebate Program Assistance
+    - Sump Pump Installation
+    - Flood Protection Subsidy
+    - Basement Protection
+    - Municipal Programs
   offers:
-    - "Rebate Application Help"
-    - "Code-Compliant Installation"
-    - "Documentation Support"
-    - "Permit Management"
-    - "Guaranteed Approval"
+    - Rebate Application Help
+    - Code-Compliant Installation
+    - Documentation Support
+    - Permit Management
+    - Guaranteed Approval
+starting_price: '$1,299'
+price_range: '$1,299 - $3,999'
+benefits:
+  - title: Flood Prevention
+    description: Reliable water removal prevents costly basement flooding
+  - title: Battery Backup Options
+    description: Keep pumping during power outages with backup systems
+  - title: Smart Monitoring
+    description: WiFi-enabled pumps alert you to issues before they become disasters
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Location Assessment
+    description: Determine optimal pump location for water collection
+    icon: target
+  - title: Pit Excavation
+    description: Dig sump pit to proper depth and dimensions
+    icon: shovel
+  - title: Pump Installation
+    description: 'Install pump, check valve, and discharge system'
+    icon: pump
+  - title: Testing & Training
+    description: Test system thoroughly and train on maintenance
+    icon: checklist
+hero:
+  features:
+    - Battery Backup Available
+    - WiFi Monitoring
+    - Annual Maintenance
 ---
 
 # City of Toronto Sump Pump Rebate Program Guide

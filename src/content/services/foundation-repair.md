@@ -1,8 +1,53 @@
 ---
-title: "Foundation Repair Toronto | Expert Structural Repair Services"
-description: "Professional foundation repair in Toronto. Cracks, settlement, bowing walls, structural issues. Licensed engineers, lifetime warranties. Emergency service - Call (437) 545-0067."
-url: "/services/foundation-repair/"
-keywords: "foundation repair, foundation repair toronto, foundation crack repair, foundation settlement repair, basement wall repair, structural repair, foundation repair cost, foundation leak repair, foundation repair near me"
+title: Foundation Repair Toronto | Expert Structural Repair Services
+description: >-
+  Professional foundation repair in Toronto. Cracks, settlement, bowing walls,
+  structural issues. Licensed engineers, lifetime warranties. Emergency service
+  - Call (437) 545-0067.
+url: /services/foundation-repair/
+keywords: >-
+  foundation repair, foundation repair toronto, foundation crack repair,
+  foundation settlement repair, basement wall repair, structural repair,
+  foundation repair cost, foundation leak repair, foundation repair near me
+starting_price: '$1,999'
+price_range: '$1,999 - $15,999'
+benefits:
+  - title: Structural Stability
+    description: Restore your foundation's integrity and prevent further damage
+  - title: Advanced Techniques
+    description: >-
+      Latest repair methods including epoxy injection and carbon fiber
+      reinforcement
+  - title: Long-Term Solutions
+    description: 'Address root causes, not just symptoms, for lasting repairs'
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Damage Assessment
+    description: 'Identify crack types, causes, and structural impact'
+    icon: search
+  - title: Preparation & Cleaning
+    description: Clean cracks and prepare surfaces for repair
+    icon: brush
+  - title: Repair Application
+    description: 'Apply appropriate repair method (injection, stitching, etc.)'
+    icon: syringe
+  - title: Seal & Protect
+    description: Waterproof seal and monitor for lasting results
+    icon: shield
+hero:
+  features:
+    - Structural Engineers
+    - City Permits Included
+    - Insurance Claims
 ---
 
 <script type="application/ld+json">

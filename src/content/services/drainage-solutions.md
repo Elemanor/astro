@@ -1,31 +1,83 @@
 ---
-title: "Drainage Solutions for Toronto Homes"
-subtitle: "Comprehensive Water Management Systems"
-seo_title: "Drainage Solutions Toronto | French Drains, Weeping Tile & Water Management"
-description: "Complete drainage solutions for Toronto properties. Compare French drains vs weeping tile, understand installation options, and find the right water management system. Expert installation since 1998."
-date: 2025-01-31
-type: "hub"
-url: "/services/drainage-solutions/"
-
+title: Drainage Solutions for Toronto Homes
+subtitle: Comprehensive Water Management Systems
+seo_title: 'Drainage Solutions Toronto | French Drains, Weeping Tile & Water Management'
+description: >-
+  Complete drainage solutions for Toronto properties. Compare French drains vs
+  weeping tile, understand installation options, and find the right water
+  management system. Expert installation since 1998.
+date: 2025-01-31T00:00:00.000Z
+type: hub
+url: /services/drainage-solutions/
 sections:
-  - title: "Advanced Drainage Systems"
-    content: |
-      Effective drainage is the foundation of dry basements and stable foundations. Toronto's clay soil, high water tables, and extreme weather create unique drainage challenges that require professional solutions. From French drains to comprehensive water management systems, proper drainage protects your investment.
-      
-      This guide explores proven drainage solutions, helping you understand options, compare systems, and make informed decisions about protecting your property from water damage.
+  - title: Advanced Drainage Systems
+    content: >
+      Effective drainage is the foundation of dry basements and stable
+      foundations. Toronto's clay soil, high water tables, and extreme weather
+      create unique drainage challenges that require professional solutions.
+      From French drains to comprehensive water management systems, proper
+      drainage protects your investment.
 
-  - title: "The Science of Proper Drainage"
-    content: |
+
+      This guide explores proven drainage solutions, helping you understand
+      options, compare systems, and make informed decisions about protecting
+      your property from water damage.
+  - title: The Science of Proper Drainage
+    content: >
       **Managing Water Through Engineering**
-      
-      Water follows the path of least resistance. Professional drainage systems create controlled pathways that direct water away from your foundation, preventing hydrostatic pressure, soil saturation, and structural damage. Modern drainage combines time-tested principles with advanced materials for superior performance.
-      
-      Whether addressing surface water, groundwater, or both, the right drainage system transforms water from a destructive force into a manageable resource that flows harmlessly away from your home.
 
+
+      Water follows the path of least resistance. Professional drainage systems
+      create controlled pathways that direct water away from your foundation,
+      preventing hydrostatic pressure, soil saturation, and structural damage.
+      Modern drainage combines time-tested principles with advanced materials
+      for superior performance.
+
+
+      Whether addressing surface water, groundwater, or both, the right drainage
+      system transforms water from a destructive force into a manageable
+      resource that flows harmlessly away from your home.
 schema:
-  type: "WebPage"
-  name: "Drainage Solutions Hub"
-  description: "Comprehensive guide to drainage systems for water management"
+  type: WebPage
+  name: Drainage Solutions Hub
+  description: Comprehensive guide to drainage systems for water management
+starting_price: '$1,999'
+price_range: '$1,999 - $7,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Same Day Service
+    - Camera Inspections
+    - 10 Year Warranty
 ---
 
 # Professional Drainage Solutions

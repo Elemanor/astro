@@ -1,11 +1,61 @@
 ---
-title: "Basement Window & Door Cutting Toronto | Professional Opening Installation"
-seo_title: "Basement Window Door Cutting Toronto | Egress Window Installation"
-description: "Professional basement window and door cutting in Toronto. Egress windows, walkout doors, concrete cutting. Licensed contractors. Precision work. Call (437) 545-0067!"
-date: 2025-01-31
-type: "service"
-url: "/services/basement-window-door-cutting/"
-keywords: ["basement window cutting", "basement door installation", "egress window toronto", "basement opening", "concrete cutting", "window well installation", "basement entrance", "walkout basement", "basement window installation", "door cutting concrete"]
+title: Basement Window & Door Cutting Toronto | Professional Opening Installation
+seo_title: Basement Window Door Cutting Toronto | Egress Window Installation
+description: >-
+  Professional basement window and door cutting in Toronto. Egress windows,
+  walkout doors, concrete cutting. Licensed contractors. Precision work. Call
+  (437) 545-0067!
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/basement-window-door-cutting/
+keywords:
+  - basement window cutting
+  - basement door installation
+  - egress window toronto
+  - basement opening
+  - concrete cutting
+  - window well installation
+  - basement entrance
+  - walkout basement
+  - basement window installation
+  - door cutting concrete
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Consultation
+    - Licensed & Insured
+    - Warranty Protection
 ---
 
 # Basement Window & Door Cutting Services Toronto

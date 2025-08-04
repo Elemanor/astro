@@ -1,89 +1,180 @@
 ---
-title: "Winter Basement Waterproofing Toronto | Cold Weather Specialists"
-subtitle: "Professional Winter Waterproofing Solutions"
-seo_title: "Winter Basement Waterproofing Toronto | Emergency Cold Weather Service"
-description: "Specialized winter basement waterproofing in Toronto. Ice dam prevention, frozen pipe protection, cold weather emergency repairs. Year-round service available 24/7."
-date: 2025-01-31
-type: "service"
-url: "/services/winter-basement-waterproofing/"
-keywords: ["winter basement waterproofing toronto", "cold weather waterproofing", "winter foundation repair", "emergency winter waterproofing", "ice dam prevention", "frozen pipe risks", "winter waterproofing specialists", "toronto winter basement service"]
-schema_type: "Service"
-seasonal: "winter"
-
-# Related services
+title: Winter Basement Waterproofing Toronto | Cold Weather Specialists
+subtitle: Professional Winter Waterproofing Solutions
+seo_title: Winter Basement Waterproofing Toronto | Emergency Cold Weather Service
+description: >-
+  Specialized winter basement waterproofing in Toronto. Ice dam prevention,
+  frozen pipe protection, cold weather emergency repairs. Year-round service
+  available 24/7.
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/winter-basement-waterproofing/
+keywords:
+  - winter basement waterproofing toronto
+  - cold weather waterproofing
+  - winter foundation repair
+  - emergency winter waterproofing
+  - ice dam prevention
+  - frozen pipe risks
+  - winter waterproofing specialists
+  - toronto winter basement service
+schema_type: Service
+seasonal: winter
 related_services:
-  - title: "Emergency Waterproofing"
-    url: "/services/emergency-waterproofing/"
-    description: "24/7 winter emergency response"
-    image: "/pics/work/emergency-waterproofing.webp"
-  - title: "Foundation Crack Repair"
-    url: "/services/foundation-crack-repair/"
-    description: "Winter crack injection services"
-    image: "/pics/work/crack_repair.webp"
-  - title: "Interior Waterproofing"
-    url: "/services/interior-waterproofing/"
-    description: "Year-round protection systems"
-    image: "/pics/work/interior-waterproofing.webp"
-
-# Content sections
+  - title: Emergency Waterproofing
+    url: /services/emergency-waterproofing/
+    description: 24/7 winter emergency response
+    image: /pics/work/emergency-waterproofing.webp
+  - title: Foundation Crack Repair
+    url: /services/foundation-crack-repair/
+    description: Winter crack injection services
+    image: /pics/work/crack_repair.webp
+  - title: Interior Waterproofing
+    url: /services/interior-waterproofing/
+    description: Year-round protection systems
+    image: /pics/work/interior-waterproofing.webp
 sections:
-  - title: "Why Winter Waterproofing Matters"
-    content: |
-      Toronto's harsh winters create unique basement flooding risks that most waterproofing companies won't address. Frozen pipes, ice dams, and freeze-thaw cycles can cause catastrophic flooding when other contractors are hibernating for the season. DrySpace operates year-round with specialized winter equipment and cold-weather materials designed for Toronto's challenging climate.
-      
-      Unlike fair-weather competitors, we maintain heated equipment, winter-grade materials, and emergency response capabilities throughout the coldest months. When frozen pipes burst or ice dams cause flooding at -20°C, we're the only team equipped to respond immediately with solutions that work in extreme cold.
-  - title: "Specialized Winter Services"
-    content: |
-      **Emergency Frozen Pipe Flooding** - Our heated extraction trucks and cold-weather pumps work in temperatures down to -30°C, removing flood water and preventing freeze damage to equipment.
-      
-      **Ice Dam Water Intrusion** - We stop water entry from ice dams using heated injection systems and winter-grade sealants that bond in cold conditions when standard materials fail.
-      
-      **Cold Weather Crack Repair** - Our winter-formulated polyurethane and heated injection equipment allow foundation crack repairs even when outdoor temperatures are below freezing.
-      
-      **Frozen Drain Emergency Service** - When basement drains freeze and cause backups, our thawing equipment and backup pumping systems restore drainage immediately.
+  - title: Why Winter Waterproofing Matters
+    content: >
+      Toronto's harsh winters create unique basement flooding risks that most
+      waterproofing companies won't address. Frozen pipes, ice dams, and
+      freeze-thaw cycles can cause catastrophic flooding when other contractors
+      are hibernating for the season. DrySpace operates year-round with
+      specialized winter equipment and cold-weather materials designed for
+      Toronto's challenging climate.
 
-# FAQ
+
+      Unlike fair-weather competitors, we maintain heated equipment,
+      winter-grade materials, and emergency response capabilities throughout the
+      coldest months. When frozen pipes burst or ice dams cause flooding at
+      -20°C, we're the only team equipped to respond immediately with solutions
+      that work in extreme cold.
+  - title: Specialized Winter Services
+    content: >
+      **Emergency Frozen Pipe Flooding** - Our heated extraction trucks and
+      cold-weather pumps work in temperatures down to -30°C, removing flood
+      water and preventing freeze damage to equipment.
+
+
+      **Ice Dam Water Intrusion** - We stop water entry from ice dams using
+      heated injection systems and winter-grade sealants that bond in cold
+      conditions when standard materials fail.
+
+
+      **Cold Weather Crack Repair** - Our winter-formulated polyurethane and
+      heated injection equipment allow foundation crack repairs even when
+      outdoor temperatures are below freezing.
+
+
+      **Frozen Drain Emergency Service** - When basement drains freeze and cause
+      backups, our thawing equipment and backup pumping systems restore drainage
+      immediately.
 faq:
-  - question: "Can you really waterproof basements in winter?"
-    answer: |
-      Yes, we specialize in winter waterproofing using heated equipment and cold-weather materials. Our winter services include:
-      - Interior waterproofing systems installed year-round
-      - Heated crack injection (works to -25°C)
-      - Emergency flood response with freeze-resistant equipment
-      - Winter-grade sealants and membranes
-      - Heated workspace tents for exterior work when needed
-      
-      We're one of the few Toronto contractors maintaining full winter operations with specialized cold-weather capabilities.
-  - question: "What makes winter basement problems different?"
-    answer: |
-      Winter creates unique risks other seasons don't have:
-      - **Frozen pipes** can burst and flood basements instantly
-      - **Ice dams** force water into foundations from above
-      - **Freeze-thaw cycles** expand existing cracks rapidly
-      - **Frozen drains** cause sewage backups
-      - **Snow loads** increase foundation pressure
-      
-      Standard waterproofing materials and equipment fail in cold weather, requiring specialized winter-grade solutions.
-  - question: "How much does winter waterproofing cost?"
-    answer: |
-      Winter waterproofing costs similar to regular season work:
-      - **Emergency winter service**: $500-$2,000
-      - **Winter crack injection**: $400-$1,200 per crack
-      - **Interior winterization**: $3,000-$8,000
-      - **Complete winter system**: $5,000-$12,000
-      
-      No winter surcharges - we believe year-round protection shouldn't cost extra. Emergency response within 2 hours.
-  - question: "Do you respond to winter emergencies 24/7?"
-    answer: |
-      Absolutely. Winter emergencies often happen at night or weekends when pipes freeze. Our winter emergency response:
-      - Available 24/7 including holidays
-      - Heated emergency vehicles ready
-      - 1-2 hour response in Toronto
-      - Specialized cold-weather equipment
-      - Direct insurance billing available
-      
-      We maintain the GTA's only dedicated winter waterproofing emergency service.
+  - question: Can you really waterproof basements in winter?
+    answer: >
+      Yes, we specialize in winter waterproofing using heated equipment and
+      cold-weather materials. Our winter services include:
 
+      - Interior waterproofing systems installed year-round
+
+      - Heated crack injection (works to -25°C)
+
+      - Emergency flood response with freeze-resistant equipment
+
+      - Winter-grade sealants and membranes
+
+      - Heated workspace tents for exterior work when needed
+
+
+      We're one of the few Toronto contractors maintaining full winter
+      operations with specialized cold-weather capabilities.
+  - question: What makes winter basement problems different?
+    answer: >
+      Winter creates unique risks other seasons don't have:
+
+      - **Frozen pipes** can burst and flood basements instantly
+
+      - **Ice dams** force water into foundations from above
+
+      - **Freeze-thaw cycles** expand existing cracks rapidly
+
+      - **Frozen drains** cause sewage backups
+
+      - **Snow loads** increase foundation pressure
+
+
+      Standard waterproofing materials and equipment fail in cold weather,
+      requiring specialized winter-grade solutions.
+  - question: How much does winter waterproofing cost?
+    answer: >
+      Winter waterproofing costs similar to regular season work:
+
+      - **Emergency winter service**: $500-$2,000
+
+      - **Winter crack injection**: $400-$1,200 per crack
+
+      - **Interior winterization**: $3,000-$8,000
+
+      - **Complete winter system**: $5,000-$12,000
+
+
+      No winter surcharges - we believe year-round protection shouldn't cost
+      extra. Emergency response within 2 hours.
+  - question: Do you respond to winter emergencies 24/7?
+    answer: >
+      Absolutely. Winter emergencies often happen at night or weekends when
+      pipes freeze. Our winter emergency response:
+
+      - Available 24/7 including holidays
+
+      - Heated emergency vehicles ready
+
+      - 1-2 hour response in Toronto
+
+      - Specialized cold-weather equipment
+
+      - Direct insurance billing available
+
+
+      We maintain the GTA's only dedicated winter waterproofing emergency
+      service.
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Winter Basement Waterproofing Toronto

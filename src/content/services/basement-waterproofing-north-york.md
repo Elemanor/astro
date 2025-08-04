@@ -1,187 +1,383 @@
 ---
-title: "Basement Waterproofing North York | #1 Local Specialists Since 2008"
-subtitle: "Professional Basement Waterproofing Services in North York - Clay Soil Experts"
-seo_title: "Basement Waterproofing North York | Clay Soil Specialists | Same-Day Service | Lifetime Warranty"
-description: "#1 basement waterproofing contractors in North York. 15+ years experience, 1,800+ North York homes protected, clay soil specialists, same-day estimates, lifetime warranty. Emergency service available 24/7. Call (437) 545-0067."
-date: 2025-01-31
-type: "service"
-url: "/services/basement-waterproofing-north-york/"
-keywords: ["basement waterproofing north york", "north york basement waterproofing", "basement waterproofing contractors north york", "waterproofing north york", "basement leak repair north york", "foundation waterproofing north york", "north york waterproofing companies", "basement flooding north york", "clay soil waterproofing north york"]
-schema_type: "LocalBusiness"
-priority: "high"
+title: 'Basement Waterproofing North York | #1 Local Specialists Since 2008'
+subtitle: Professional Basement Waterproofing Services in North York - Clay Soil Experts
+seo_title: >-
+  Basement Waterproofing North York | Clay Soil Specialists | Same-Day Service |
+  Lifetime Warranty
+description: >-
+  #1 basement waterproofing contractors in North York. 15+ years experience,
+  1,800+ North York homes protected, clay soil specialists, same-day estimates,
+  lifetime warranty. Emergency service available 24/7. Call (437) 545-0067.
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/basement-waterproofing-north-york/
+keywords:
+  - basement waterproofing north york
+  - north york basement waterproofing
+  - basement waterproofing contractors north york
+  - waterproofing north york
+  - basement leak repair north york
+  - foundation waterproofing north york
+  - north york waterproofing companies
+  - basement flooding north york
+  - clay soil waterproofing north york
+schema_type: LocalBusiness
+priority: high
 mobile_optimized: true
-page_speed_priority: "high"
-location: "North York"
+page_speed_priority: high
+location: North York
 local_seo_signals:
-  - "15+ years North York experience"
-  - "1,800+ North York homes protected"
-  - "Same-day estimates in North York"
-  - "North York clay soil specialists"
-  - "North York neighborhood expertise"
-  - "24/7 emergency service North York"
+  - 15+ years North York experience
+  - '1,800+ North York homes protected'
+  - Same-day estimates in North York
+  - North York clay soil specialists
+  - North York neighborhood expertise
+  - 24/7 emergency service North York
 related_services:
-  - name: "Foundation Waterproofing North York"
-    url: "/locations/north-york-foundation-repair/"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
-  - name: "French Drain Installation North York"
-    url: "/services/french-drain-installation-north-york/"
-    image: "/pics/work/interior-waterproofing.webp"
-  - name: "Clay Soil Foundation Solutions"
-    url: "/services/clay-soil-foundation-solutions/"
-    image: "/pics/work/crack_repair.webp"
+  - name: Foundation Waterproofing North York
+    url: /locations/north-york-foundation-repair/
+    image: /pics/work/exterior-waterproofing-membrane.webp
+  - name: French Drain Installation North York
+    url: /services/french-drain-installation-north-york/
+    image: /pics/work/interior-waterproofing.webp
+  - name: Clay Soil Foundation Solutions
+    url: /services/clay-soil-foundation-solutions/
+    image: /pics/work/crack_repair.webp
 north_york_neighborhoods:
-  - name: "Willowdale"
-    areas: ["Willowdale East", "Willowdale West", "Bayview Village"]
-    challenges: ["Heavy clay soil", "Seasonal movement", "Split-level homes"]
-    solutions: ["Flexible waterproofing", "Movement accommodation", "Multi-level drainage"]
-    avg_cost: "$4,200-$12,800"
-  - name: "Don Mills"
-    areas: ["Don Mills", "Flemingdon Park", "Thorncliffe Park"]
-    challenges: ["Clay expansion", "Apartment buildings", "Dense development"]
-    solutions: ["Clay-specific systems", "Multi-unit coordination", "Urban solutions"]
-    avg_cost: "$4,000-$12,200"
-  - name: "York Mills"
-    areas: ["York Mills", "Lawrence Park", "Hoggs Hollow"]
-    challenges: ["Luxury homes", "Mature landscaping", "Premium foundations"]
-    solutions: ["High-end systems", "Landscape preservation", "Premium materials"]
-    avg_cost: "$5,500-$15,500"
-  - name: "Sheppard Corridor"
-    areas: ["Sheppard West", "North York Centre", "Mel Lastman Square"]
-    challenges: ["Subway vibration", "High-rises", "Urban density"]
-    solutions: ["Vibration resistance", "High-rise expertise", "Compact systems"]
-    avg_cost: "$4,800-$13,500"
+  - name: Willowdale
+    areas:
+      - Willowdale East
+      - Willowdale West
+      - Bayview Village
+    challenges:
+      - Heavy clay soil
+      - Seasonal movement
+      - Split-level homes
+    solutions:
+      - Flexible waterproofing
+      - Movement accommodation
+      - Multi-level drainage
+    avg_cost: '$4,200-$12,800'
+  - name: Don Mills
+    areas:
+      - Don Mills
+      - Flemingdon Park
+      - Thorncliffe Park
+    challenges:
+      - Clay expansion
+      - Apartment buildings
+      - Dense development
+    solutions:
+      - Clay-specific systems
+      - Multi-unit coordination
+      - Urban solutions
+    avg_cost: '$4,000-$12,200'
+  - name: York Mills
+    areas:
+      - York Mills
+      - Lawrence Park
+      - Hoggs Hollow
+    challenges:
+      - Luxury homes
+      - Mature landscaping
+      - Premium foundations
+    solutions:
+      - High-end systems
+      - Landscape preservation
+      - Premium materials
+    avg_cost: '$5,500-$15,500'
+  - name: Sheppard Corridor
+    areas:
+      - Sheppard West
+      - North York Centre
+      - Mel Lastman Square
+    challenges:
+      - Subway vibration
+      - High-rises
+      - Urban density
+    solutions:
+      - Vibration resistance
+      - High-rise expertise
+      - Compact systems
+    avg_cost: '$4,800-$13,500'
 local_case_studies:
-  - location: "Willowdale Split-Level Home"
-    year_built: "1972"
-    challenge: "Severe clay soil movement causing recurring basement flooding during spring thaw"
-    solution: "Exterior waterproofing with clay soil-specific flexible membrane and enhanced drainage"
-    cost: "$17,200"
-    timeline: "8 days"
-    result: "No water infiltration in 5+ years, foundation movement accommodated"
-    customer: "Robert K."
-  - location: "Don Mills Townhouse Complex"
-    year_built: "1985"
-    challenge: "Multiple units experiencing basement seepage, shared foundation issues"
-    solution: "Coordinated interior waterproofing systems for 6 connected units"
-    cost: "$52,000 (total project)"
-    timeline: "12 days"
-    result: "All units dry, property value increased, insurance savings achieved"
-    customer: "Townhouse Corp"
-  - location: "York Mills Executive Home"
-    year_built: "1995"
-    challenge: "Luxury home with finished basement, water damage threatening $100k renovation"
-    solution: "Premium interior system with minimal disruption to high-end finishes"
-    cost: "$14,800"
-    timeline: "5 days"
-    result: "Basement preserved, no disruption to luxury finishes, warranty transferred to buyer"
-    customer: "Catherine L."
+  - location: Willowdale Split-Level Home
+    year_built: '1972'
+    challenge: >-
+      Severe clay soil movement causing recurring basement flooding during
+      spring thaw
+    solution: >-
+      Exterior waterproofing with clay soil-specific flexible membrane and
+      enhanced drainage
+    cost: '$17,200'
+    timeline: 8 days
+    result: 'No water infiltration in 5+ years, foundation movement accommodated'
+    customer: Robert K.
+  - location: Don Mills Townhouse Complex
+    year_built: '1985'
+    challenge: 'Multiple units experiencing basement seepage, shared foundation issues'
+    solution: Coordinated interior waterproofing systems for 6 connected units
+    cost: '$52,000 (total project)'
+    timeline: 12 days
+    result: 'All units dry, property value increased, insurance savings achieved'
+    customer: Townhouse Corp
+  - location: York Mills Executive Home
+    year_built: '1995'
+    challenge: >-
+      Luxury home with finished basement, water damage threatening $100k
+      renovation
+    solution: Premium interior system with minimal disruption to high-end finishes
+    cost: '$14,800'
+    timeline: 5 days
+    result: >-
+      Basement preserved, no disruption to luxury finishes, warranty transferred
+      to buyer
+    customer: Catherine L.
 north_york_specific_features:
-  - feature: "Clay Soil Movement Accommodation"
-    description: "Advanced flexible systems designed for North York's expansive clay soil conditions"
-    areas: ["Willowdale", "Don Mills", "Flemingdon Park"]
-  - feature: "Subway Vibration Resistance"
-    description: "Specialized waterproofing for properties near Yonge and Sheppard subway lines"
-    areas: ["North York Centre", "Sheppard West", "York Mills"]
-  - feature: "Split-Level Home Expertise"
-    description: "Complex drainage solutions for bi-level and tri-level home designs"
-    areas: ["Willowdale", "Don Mills", "Bayview Village"]
-  - feature: "Luxury Home Systems"
-    description: "Premium waterproofing solutions for high-end properties with minimal disruption"
-    areas: ["York Mills", "Lawrence Park", "Hoggs Hollow"]
+  - feature: Clay Soil Movement Accommodation
+    description: >-
+      Advanced flexible systems designed for North York's expansive clay soil
+      conditions
+    areas:
+      - Willowdale
+      - Don Mills
+      - Flemingdon Park
+  - feature: Subway Vibration Resistance
+    description: >-
+      Specialized waterproofing for properties near Yonge and Sheppard subway
+      lines
+    areas:
+      - North York Centre
+      - Sheppard West
+      - York Mills
+  - feature: Split-Level Home Expertise
+    description: Complex drainage solutions for bi-level and tri-level home designs
+    areas:
+      - Willowdale
+      - Don Mills
+      - Bayview Village
+  - feature: Luxury Home Systems
+    description: >-
+      Premium waterproofing solutions for high-end properties with minimal
+      disruption
+    areas:
+      - York Mills
+      - Lawrence Park
+      - Hoggs Hollow
 faq:
-  - question: "What makes basement waterproofing in North York different from other Toronto areas?"
-    answer: "North York's unique challenges include extensive clay soil conditions that expand and contract seasonally, split-level and bi-level home designs requiring complex drainage, basement apartments needing independent protection, mature tree root systems affecting foundations, and subway vibration impacts near transit lines. Our North York-specific solutions address these exact conditions with 15+ years of local clay soil expertise."
-  - question: "How much does basement waterproofing cost in North York?"
-    answer: "North York basement waterproofing costs vary by neighborhood and home type: Willowdale ($4,200-$12,800), Don Mills ($4,000-$12,200), York Mills ($5,500-$15,500), Sheppard Corridor ($4,800-$13,500). Clay soil conditions often require specialized materials, split-level homes need complex drainage, luxury homes demand premium solutions. We provide detailed written estimates with no hidden fees."
-  - question: "How do you handle North York's clay soil challenges?"
-    answer: "We specialize in North York's expansive clay soil with flexible waterproofing systems that accommodate seasonal movement, enhanced drainage designed for clay conditions, specialized materials proven in clay environments, and surface water management reducing clay soil pressure. Our clay soil expertise is unmatched in North York after 15+ years of local experience."
-  - question: "Can you waterproof split-level homes common in North York?"
-    answer: "Absolutely. Split-level and bi-level homes are our specialty in North York. We design multi-level drainage systems, install independent sump locations as needed, coordinate waterproofing for different foundation levels, and ensure proper water management throughout complex home designs. We've successfully waterproofed hundreds of North York split-level homes."
-  - question: "Do you work on basement apartments in North York?"
-    answer: "Yes, we specialize in basement apartment waterproofing in North York. We provide independent waterproofing systems for rental units, ensure tenant safety and comfort, maintain rental income during installation, coordinate with tenants and landlords, and provide transferable warranties for investment properties. Many North York landlords rely on us for basement apartment protection."
-  - question: "How do you handle North York building permits?"
-    answer: "We handle all permit applications with the City of Toronto for North York properties, including building permits for excavation, electrical permits for sump pumps, and plumbing permits for drainage. Our established relationships with Toronto building departments ensure smooth processing and faster project starts in North York."
-  - question: "What North York neighborhoods do you serve?"
-    answer: "We serve all North York neighborhoods including Willowdale, Don Mills, York Mills, Sheppard West, Bayview Village, Flemingdon Park, Thorncliffe Park, Lawrence Park, Hoggs Hollow, North York Centre, Mel Lastman Square area, and all surrounding North York communities with same-day service availability."
-  - question: "Can you work near North York subway lines?"
-    answer: "Yes, we have extensive experience waterproofing properties near Yonge subway line and Sheppard subway line. We use vibration-resistant waterproofing materials, specialized flexible sealing techniques, and proven methods for transit proximity properties. Our subway line expertise covers hundreds of North York properties near TTC infrastructure."
-  - question: "What warranty do you provide for North York projects?"
-    answer: "We provide comprehensive warranty coverage for all North York projects: Lifetime material warranty, 25-year labor warranty, transferable coverage for home sales, annual inspections included, 24/7 emergency support, and guaranteed local North York service throughout warranty period. Our North York warranty service is unmatched."
-  - question: "Do you offer financing for North York homeowners?"
-    answer: "Yes, we offer multiple financing options for North York residents: 0% interest for 12 months (qualified customers), extended payment plans up to 60 months, assistance with home equity coordination, help with Toronto rebate applications, and support with insurance claim documentation for North York properties."
+  - question: >-
+      What makes basement waterproofing in North York different from other
+      Toronto areas?
+    answer: >-
+      North York's unique challenges include extensive clay soil conditions that
+      expand and contract seasonally, split-level and bi-level home designs
+      requiring complex drainage, basement apartments needing independent
+      protection, mature tree root systems affecting foundations, and subway
+      vibration impacts near transit lines. Our North York-specific solutions
+      address these exact conditions with 15+ years of local clay soil
+      expertise.
+  - question: How much does basement waterproofing cost in North York?
+    answer: >-
+      North York basement waterproofing costs vary by neighborhood and home
+      type: Willowdale ($4,200-$12,800), Don Mills ($4,000-$12,200), York Mills
+      ($5,500-$15,500), Sheppard Corridor ($4,800-$13,500). Clay soil conditions
+      often require specialized materials, split-level homes need complex
+      drainage, luxury homes demand premium solutions. We provide detailed
+      written estimates with no hidden fees.
+  - question: How do you handle North York's clay soil challenges?
+    answer: >-
+      We specialize in North York's expansive clay soil with flexible
+      waterproofing systems that accommodate seasonal movement, enhanced
+      drainage designed for clay conditions, specialized materials proven in
+      clay environments, and surface water management reducing clay soil
+      pressure. Our clay soil expertise is unmatched in North York after 15+
+      years of local experience.
+  - question: Can you waterproof split-level homes common in North York?
+    answer: >-
+      Absolutely. Split-level and bi-level homes are our specialty in North
+      York. We design multi-level drainage systems, install independent sump
+      locations as needed, coordinate waterproofing for different foundation
+      levels, and ensure proper water management throughout complex home
+      designs. We've successfully waterproofed hundreds of North York
+      split-level homes.
+  - question: Do you work on basement apartments in North York?
+    answer: >-
+      Yes, we specialize in basement apartment waterproofing in North York. We
+      provide independent waterproofing systems for rental units, ensure tenant
+      safety and comfort, maintain rental income during installation, coordinate
+      with tenants and landlords, and provide transferable warranties for
+      investment properties. Many North York landlords rely on us for basement
+      apartment protection.
+  - question: How do you handle North York building permits?
+    answer: >-
+      We handle all permit applications with the City of Toronto for North York
+      properties, including building permits for excavation, electrical permits
+      for sump pumps, and plumbing permits for drainage. Our established
+      relationships with Toronto building departments ensure smooth processing
+      and faster project starts in North York.
+  - question: What North York neighborhoods do you serve?
+    answer: >-
+      We serve all North York neighborhoods including Willowdale, Don Mills,
+      York Mills, Sheppard West, Bayview Village, Flemingdon Park, Thorncliffe
+      Park, Lawrence Park, Hoggs Hollow, North York Centre, Mel Lastman Square
+      area, and all surrounding North York communities with same-day service
+      availability.
+  - question: Can you work near North York subway lines?
+    answer: >-
+      Yes, we have extensive experience waterproofing properties near Yonge
+      subway line and Sheppard subway line. We use vibration-resistant
+      waterproofing materials, specialized flexible sealing techniques, and
+      proven methods for transit proximity properties. Our subway line expertise
+      covers hundreds of North York properties near TTC infrastructure.
+  - question: What warranty do you provide for North York projects?
+    answer: >-
+      We provide comprehensive warranty coverage for all North York projects:
+      Lifetime material warranty, 25-year labor warranty, transferable coverage
+      for home sales, annual inspections included, 24/7 emergency support, and
+      guaranteed local North York service throughout warranty period. Our North
+      York warranty service is unmatched.
+  - question: Do you offer financing for North York homeowners?
+    answer: >-
+      Yes, we offer multiple financing options for North York residents: 0%
+      interest for 12 months (qualified customers), extended payment plans up to
+      60 months, assistance with home equity coordination, help with Toronto
+      rebate applications, and support with insurance claim documentation for
+      North York properties.
 schema:
-  type: "LocalBusiness"
-  name: "Basement Waterproofing North York - DrySpace"
-  alternateName: "DrySpace North York Basement Waterproofing"
-  image: "/images/basement-waterproofing-north-york.jpg"
-  logo: "/images/dryspace-north-york-logo.jpg"
+  type: LocalBusiness
+  name: Basement Waterproofing North York - DrySpace
+  alternateName: DrySpace North York Basement Waterproofing
+  image: /images/basement-waterproofing-north-york.jpg
+  logo: /images/dryspace-north-york-logo.jpg
   address:
-    type: "PostalAddress"
-    streetAddress: "789 Yonge Street"
-    addressLocality: "North York"
-    addressRegion: "ON"
-    postalCode: "M2M 3K2"
-    addressCountry: "CA"
+    type: PostalAddress
+    streetAddress: 789 Yonge Street
+    addressLocality: North York
+    addressRegion: 'ON'
+    postalCode: M2M 3K2
+    addressCountry: CA
   geo:
-    type: "GeoCoordinates"
-    latitude: "43.7615"
-    longitude: "-79.4111"
-  url: "https://dryspacewaterproofing.ca/services/basement-waterproofing-north-york/"
-  telephone: "(437) 545-0067"
-  priceRange: "$4,000-$18,000"
-  foundingDate: "2008"
-  slogan: "North York's #1 Basement Waterproofing & Clay Soil Experts Since 2008"
-  description: "Professional basement waterproofing services in North York with 15+ years experience, 1,800+ North York homes protected, clay soil specialists, same-day estimates, lifetime warranties."
-  paymentAccepted: ["Cash", "Credit Card", "Check", "Financing"]
-  currenciesAccepted: "CAD"
+    type: GeoCoordinates
+    latitude: '43.7615'
+    longitude: '-79.4111'
+  url: 'https://dryspacewaterproofing.ca/services/basement-waterproofing-north-york/'
+  telephone: (437) 545-0067
+  priceRange: '$4,000-$18,000'
+  foundingDate: '2008'
+  slogan: 'North York''s #1 Basement Waterproofing & Clay Soil Experts Since 2008'
+  description: >-
+    Professional basement waterproofing services in North York with 15+ years
+    experience, 1,800+ North York homes protected, clay soil specialists,
+    same-day estimates, lifetime warranties.
+  paymentAccepted:
+    - Cash
+    - Credit Card
+    - Check
+    - Financing
+  currenciesAccepted: CAD
   openingHoursSpecification:
-    - type: "OpeningHoursSpecification"
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-      opens: "07:00"
-      closes: "19:00"
+    - type: OpeningHoursSpecification
+      dayOfWeek:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+      opens: '07:00'
+      closes: '19:00'
   specialOpeningHoursSpecification:
-    - type: "OpeningHoursSpecification"
-      validFrom: "2024-01-01"
-      validThrough: "2025-12-31"
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-      opens: "00:00"
-      closes: "23:59"
-      description: "24/7 Emergency Service Available"
+    - type: OpeningHoursSpecification
+      validFrom: '2024-01-01'
+      validThrough: '2025-12-31'
+      dayOfWeek:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+      opens: '00:00'
+      closes: '23:59'
+      description: 24/7 Emergency Service Available
   areaServed:
-    - name: "North York"
-      type: "City"
-      description: "All North York neighborhoods and districts"
-    - name: "Willowdale"
-      type: "Neighborhood"
-    - name: "Don Mills"
-      type: "Neighborhood"
-    - name: "York Mills"
-      type: "Neighborhood"
-    - name: "Sheppard Corridor"
-      type: "Neighborhood"
-  serviceRadius: "20 km"
+    - name: North York
+      type: City
+      description: All North York neighborhoods and districts
+    - name: Willowdale
+      type: Neighborhood
+    - name: Don Mills
+      type: Neighborhood
+    - name: York Mills
+      type: Neighborhood
+    - name: Sheppard Corridor
+      type: Neighborhood
+  serviceRadius: 20 km
   hasOfferCatalog:
-    type: "OfferCatalog"
-    name: "North York Basement Waterproofing Services"
+    type: OfferCatalog
+    name: North York Basement Waterproofing Services
     itemListElement:
-      - type: "Offer"
+      - type: Offer
         itemOffered:
-          type: "Service"
-          name: "Interior Basement Waterproofing North York"
-          description: "Interior waterproofing systems for North York homes with clay soil expertise and lifetime warranty"
-        priceRange: "$4,000-$12,000"
-      - type: "Offer"
+          type: Service
+          name: Interior Basement Waterproofing North York
+          description: >-
+            Interior waterproofing systems for North York homes with clay soil
+            expertise and lifetime warranty
+        priceRange: '$4,000-$12,000'
+      - type: Offer
         itemOffered:
-          type: "Service"
-          name: "Exterior Basement Waterproofing North York"
-          description: "Complete exterior waterproofing with clay soil accommodation for North York properties"
-        priceRange: "$12,000-$22,000"
+          type: Service
+          name: Exterior Basement Waterproofing North York
+          description: >-
+            Complete exterior waterproofing with clay soil accommodation for
+            North York properties
+        priceRange: '$12,000-$22,000'
   aggregateRating:
-    type: "AggregateRating"
-    ratingValue: "4.9"
-    reviewCount: "486"
-    bestRating: "5"
-    worstRating: "1"
+    type: AggregateRating
+    ratingValue: '4.9'
+    reviewCount: '486'
+    bestRating: '5'
+    worstRating: '1'
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Basement Waterproofing North York - Clay Soil Specialists Since 2008

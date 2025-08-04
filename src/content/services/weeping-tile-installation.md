@@ -1,11 +1,63 @@
 ---
-title: "Weeping Tile Installation Toronto | #1 Drainage Contractors Since 1998"
-seo_title: "Weeping Tile Installation Toronto | Professional Drainage System Install"
-description: "Professional weeping tile installation in Toronto. ✓ Interior $3K-8K ✓ Exterior $10K-20K ✓ Same-day quotes ✓ 25-year warranty ✓ 500+ homes protected. Call (437) 545-0067 for FREE inspection!"
-date: 2025-01-30
-type: "service"
-url: "/services/weeping-tile-installation/"
-keywords: ["weeping tile", "weeping tile installation", "weeping tile replacement", "weeping tile cost", "weeping tiles", "drainage tile", "foundation drainage", "perimeter drain", "footing drain", "basement drainage system", "weeping tile toronto", "weeping tile repair"]
+title: 'Weeping Tile Installation Toronto | #1 Drainage Contractors Since 1998'
+seo_title: Weeping Tile Installation Toronto | Professional Drainage System Install
+description: >-
+  Professional weeping tile installation in Toronto. ✓ Interior $3K-8K ✓
+  Exterior $10K-20K ✓ Same-day quotes ✓ 25-year warranty ✓ 500+ homes protected.
+  Call (437) 545-0067 for FREE inspection!
+date: 2025-01-30T00:00:00.000Z
+type: service
+url: /services/weeping-tile-installation/
+keywords:
+  - weeping tile
+  - weeping tile installation
+  - weeping tile replacement
+  - weeping tile cost
+  - weeping tiles
+  - drainage tile
+  - foundation drainage
+  - perimeter drain
+  - footing drain
+  - basement drainage system
+  - weeping tile toronto
+  - weeping tile repair
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Consultation
+    - Licensed & Insured
+    - Warranty Protection
 ---
 
 # Professional Weeping Tile Installation in Toronto & GTA

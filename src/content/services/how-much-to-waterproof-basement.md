@@ -1,45 +1,66 @@
 ---
-title: "Professional Basement Waterproofing Quotes Toronto | Get Pricing"
-subtitle: "Professional waterproofing quotes and contractor pricing for basement protection"
-seo_title: "Professional Basement Waterproofing Quotes Toronto | Contractor Pricing"
-description: "Get professional basement waterproofing quotes in Toronto. Compare contractor pricing, service packages, and warranties. Ready to hire? Call (437) 545-0067 for quotes."
-type: "service"
-url: "/services/how-much-to-waterproof-basement/"
+title: Professional Basement Waterproofing Quotes Toronto | Get Pricing
+subtitle: >-
+  Professional waterproofing quotes and contractor pricing for basement
+  protection
+seo_title: Professional Basement Waterproofing Quotes Toronto | Contractor Pricing
+description: >-
+  Get professional basement waterproofing quotes in Toronto. Compare contractor
+  pricing, service packages, and warranties. Ready to hire? Call (437) 545-0067
+  for quotes.
+type: service
+url: /services/how-much-to-waterproof-basement/
 related_services:
-  - title: "Interior Waterproofing"
-    url: "/services/interior-waterproofing"
-    description: "Affordable interior solutions"
-    image: "/images/interior-waterproofing.jpg"
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing"
-    description: "Comprehensive exterior systems"
-    image: "/images/exterior-waterproofing.jpg"
-  - title: "Waterproofing Cost Calculator"
-    url: "/tools/waterproofing-cost-calculator"
-    description: "Calculate your project cost"
-    image: "/images/cost-calculator.jpg"
+  - title: Interior Waterproofing
+    url: /services/interior-waterproofing
+    description: Affordable interior solutions
+    image: /images/interior-waterproofing.jpg
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing
+    description: Comprehensive exterior systems
+    image: /images/exterior-waterproofing.jpg
+  - title: Waterproofing Cost Calculator
+    url: /tools/waterproofing-cost-calculator
+    description: Calculate your project cost
+    image: /images/cost-calculator.jpg
 sections:
-  - title: "How Much Does Basement Waterproofing Cost in Toronto?"
-    content: |
-      The question "how much to waterproof a basement" is one of our most common inquiries. In Toronto, basement waterproofing costs range from $3,000 for basic interior systems to $25,000 for comprehensive exterior solutions. Understanding these costs helps you budget effectively and choose the right solution.
+  - title: How Much Does Basement Waterproofing Cost in Toronto?
+    content: >
+      The question "how much to waterproof a basement" is one of our most common
+      inquiries. In Toronto, basement waterproofing costs range from $3,000 for
+      basic interior systems to $25,000 for comprehensive exterior solutions.
+      Understanding these costs helps you budget effectively and choose the
+      right solution.
+
 
       **2025 Average Waterproofing Costs:**
+
       - Interior waterproofing: $3,000-8,000
+
       - Exterior waterproofing: $15,000-25,000
+
       - Crack injection: $500-1,500 per crack
+
       - French drain system: $70-150 per linear foot
+
       - Sump pump installation: $2,000-3,500
 
+
       **Cost Per Square Foot:**
+
       - Interior systems: $3-7 per sq ft
+
       - Exterior systems: $100-300 per linear foot
+
       - Combined systems: $15-25 per sq ft
 
-      Most Toronto homeowners invest $7,000-15,000 for comprehensive, lasting waterproofing solutions.
-  - title: "Interior Waterproofing Costs Explained"
+
+      Most Toronto homeowners invest $7,000-15,000 for comprehensive, lasting
+      waterproofing solutions.
+  - title: Interior Waterproofing Costs Explained
     content: |
       **Basic Interior System ($3,000-5,000)**
-      
+
       **Includes:**
       - Perimeter drainage channel
       - Standard sump pump
@@ -54,7 +75,7 @@ sections:
       - Seasonal problems
 
       **Premium Interior System ($5,000-8,000)**
-      
+
       **Includes:**
       - Full perimeter WaterGuard system
       - High-capacity sump pump
@@ -79,10 +100,10 @@ sections:
       - Wall finishing system: $15-25 per sq ft
       - Window well drains: $300-500 each
       - Backwater valve: $2,000-3,000
-  - title: "Exterior Waterproofing Costs Detailed"
+  - title: Exterior Waterproofing Costs Detailed
     content: |
       **Full Exterior Waterproofing ($15,000-25,000)**
-      
+
       **Process Includes:**
       1. Complete excavation to footing
       2. Foundation cleaning and repair
@@ -112,10 +133,10 @@ sections:
       - Multiple material layers
       - Extensive restoration required
       - Permit and inspection costs
-  - title: "Cost Comparison by Method"
+  - title: Cost Comparison by Method
     content: |
       **Interior vs. Exterior Return on Investment**
-      
+
       **Interior Waterproofing:**
       - Initial cost: $5,000 average
       - Effectiveness: 85-95%
@@ -149,10 +170,10 @@ sections:
       - Mold remediation: $3,000-10,000
       - Foundation repairs: $5,000-50,000
       - Lost property value: 10-20%
-  - title: "Factors That Affect Waterproofing Costs"
+  - title: Factors That Affect Waterproofing Costs
     content: |
       **Property-Specific Factors**
-      
+
       **Foundation Type:**
       - Poured concrete: Standard pricing
       - Block foundation: Add 10-15%
@@ -183,10 +204,10 @@ sections:
       - Summer: Standard pricing
       - Fall: Possible discounts
       - Winter: Weather delays/costs
-  - title: "What's Included in Professional Waterproofing"
+  - title: What's Included in Professional Waterproofing
     content: |
       **Complete Interior System Includes:**
-      
+
       **Assessment & Design:**
       - Moisture testing
       - Problem diagnosis
@@ -224,10 +245,10 @@ sections:
       - Structural repairs beyond waterproofing
       - Landscaping beyond restoration
       - Electrical panel upgrades if needed
-  - title: "Financing Your Waterproofing Project"
+  - title: Financing Your Waterproofing Project
     content: |
       **Making Waterproofing Affordable**
-      
+
       **Payment Options:**
       - Cash discount: 3-5% savings
       - Credit cards: Points/protection
@@ -261,47 +282,124 @@ sections:
       - Prevents future claims
       - Maintains coverage eligibility
 faq:
-  - question: "How much does it cost to waterproof a basement in Toronto?"
-    answer: "Basement waterproofing in Toronto costs $3,000-8,000 for interior systems and $15,000-25,000 for exterior waterproofing. The average homeowner spends $7,000-12,000 for comprehensive protection. Costs vary based on basement size, water severity, and chosen solution."
-  - question: "Is $5,000 enough to waterproof a basement?"
-    answer: "Yes, $5,000 can cover basic interior waterproofing including drainage channels, a sump pump, and vapor barriers for an average-sized basement. This provides good protection for minor to moderate water issues. Severe problems or exterior work requires larger budgets."
-  - question: "Why is exterior waterproofing so expensive?"
-    answer: "Exterior waterproofing costs $15,000-25,000 because it requires excavating 6-8 feet deep around your entire foundation, multiple waterproof layers, new drainage systems, and extensive restoration. The comprehensive nature and heavy equipment needs drive costs higher than interior solutions."
-  - question: "Can I waterproof my basement for under $3,000?"
-    answer: "Basic waterproofing under $3,000 is possible for small basements with minor issues. This might include targeted crack repairs, partial drainage, or a basic sump pump. However, comprehensive solutions addressing root causes typically cost more."
-  - question: "How much per square foot to waterproof a basement?"
-    answer: "Interior waterproofing costs $3-7 per square foot of basement area. Exterior waterproofing is priced per linear foot of foundation ($150-250). For a 1,000 sq ft basement, expect $3,000-7,000 for interior or $15,000-25,000 for exterior solutions."
-  - question: "Does waterproofing add value to my home?"
-    answer: "Yes, professional waterproofing typically returns 60-90% of cost at sale and makes homes sell faster. A dry basement adds usable space, prevents damage, and provides buyer confidence. In Toronto's market, waterproofing can add $10,000-30,000 in value."
-  - question: "What's the cheapest way to waterproof a basement?"
-    answer: "The cheapest effective solution is interior waterproofing at $3,000-5,000. Avoid DIY paints or sealers that fail quickly. Professional interior systems cost less than exterior work while providing reliable, warrantied protection for most water problems."
-  - question: "How can I finance basement waterproofing?"
-    answer: "Financing options include: 0% interest for 12-18 months, home equity loans with tax benefits, payment plans with contractors, insurance claims for covered damage, and government subsidies up to $3,400. Most homeowners pay $150-300 monthly."
-  - question: "Is it worth waterproofing an old basement?"
-    answer: "Absolutely. Older basements often need waterproofing most, as original methods have failed. Waterproofing prevents ongoing damage, enables basement use, maintains home value, and costs far less than ignoring water problems. Age makes it more necessary, not less."
-  - question: "When is the best time to waterproof for lower costs?"
-    answer: "Late fall and winter often offer 10-15% savings due to lower demand. Spring is most expensive due to flooding concerns. Book during dry seasons for better prices. However, active water problems should be addressed immediately regardless of season."
+  - question: How much does it cost to waterproof a basement in Toronto?
+    answer: >-
+      Basement waterproofing in Toronto costs $3,000-8,000 for interior systems
+      and $15,000-25,000 for exterior waterproofing. The average homeowner
+      spends $7,000-12,000 for comprehensive protection. Costs vary based on
+      basement size, water severity, and chosen solution.
+  - question: 'Is $5,000 enough to waterproof a basement?'
+    answer: >-
+      Yes, $5,000 can cover basic interior waterproofing including drainage
+      channels, a sump pump, and vapor barriers for an average-sized basement.
+      This provides good protection for minor to moderate water issues. Severe
+      problems or exterior work requires larger budgets.
+  - question: Why is exterior waterproofing so expensive?
+    answer: >-
+      Exterior waterproofing costs $15,000-25,000 because it requires excavating
+      6-8 feet deep around your entire foundation, multiple waterproof layers,
+      new drainage systems, and extensive restoration. The comprehensive nature
+      and heavy equipment needs drive costs higher than interior solutions.
+  - question: 'Can I waterproof my basement for under $3,000?'
+    answer: >-
+      Basic waterproofing under $3,000 is possible for small basements with
+      minor issues. This might include targeted crack repairs, partial drainage,
+      or a basic sump pump. However, comprehensive solutions addressing root
+      causes typically cost more.
+  - question: How much per square foot to waterproof a basement?
+    answer: >-
+      Interior waterproofing costs $3-7 per square foot of basement area.
+      Exterior waterproofing is priced per linear foot of foundation ($150-250).
+      For a 1,000 sq ft basement, expect $3,000-7,000 for interior or
+      $15,000-25,000 for exterior solutions.
+  - question: Does waterproofing add value to my home?
+    answer: >-
+      Yes, professional waterproofing typically returns 60-90% of cost at sale
+      and makes homes sell faster. A dry basement adds usable space, prevents
+      damage, and provides buyer confidence. In Toronto's market, waterproofing
+      can add $10,000-30,000 in value.
+  - question: What's the cheapest way to waterproof a basement?
+    answer: >-
+      The cheapest effective solution is interior waterproofing at $3,000-5,000.
+      Avoid DIY paints or sealers that fail quickly. Professional interior
+      systems cost less than exterior work while providing reliable, warrantied
+      protection for most water problems.
+  - question: How can I finance basement waterproofing?
+    answer: >-
+      Financing options include: 0% interest for 12-18 months, home equity loans
+      with tax benefits, payment plans with contractors, insurance claims for
+      covered damage, and government subsidies up to $3,400. Most homeowners pay
+      $150-300 monthly.
+  - question: Is it worth waterproofing an old basement?
+    answer: >-
+      Absolutely. Older basements often need waterproofing most, as original
+      methods have failed. Waterproofing prevents ongoing damage, enables
+      basement use, maintains home value, and costs far less than ignoring water
+      problems. Age makes it more necessary, not less.
+  - question: When is the best time to waterproof for lower costs?
+    answer: >-
+      Late fall and winter often offer 10-15% savings due to lower demand.
+      Spring is most expensive due to flooding concerns. Book during dry seasons
+      for better prices. However, active water problems should be addressed
+      immediately regardless of season.
 schema:
-  type: "Service"
-  name: "Basement Waterproofing Cost Guide"
+  type: Service
+  name: Basement Waterproofing Cost Guide
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "North York"
-    - "Scarborough"
-    - "Etobicoke"
-    - "York"
-    - "East York"
-    - "GTA"
-  priceRange: "$3,000-$25,000"
+    - Toronto
+    - North York
+    - Scarborough
+    - Etobicoke
+    - York
+    - East York
+    - GTA
+  priceRange: '$3,000-$25,000'
   serviceType:
-    - "Waterproofing Cost Estimates"
-    - "Basement Protection Pricing"
-    - "Interior Waterproofing Costs"
-    - "Exterior Waterproofing Costs"
-    - "Waterproofing Financing"
+    - Waterproofing Cost Estimates
+    - Basement Protection Pricing
+    - Interior Waterproofing Costs
+    - Exterior Waterproofing Costs
+    - Waterproofing Financing
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Consultation
+    - Licensed & Insured
+    - Warranty Protection
 ---
 
 # Professional Basement Waterproofing Quotes & Contractor Pricing

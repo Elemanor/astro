@@ -1,187 +1,370 @@
 ---
-title: "Basement Waterproofing Toronto | #1 Local Contractors Since 2008"
-subtitle: "Professional Basement Waterproofing Services in Toronto - 15+ Years Experience"
-seo_title: "Basement Waterproofing Toronto | Local Experts | Same-Day Service | Lifetime Warranty"
-description: "#1 basement waterproofing contractors in Toronto. 15+ years experience, 5,000+ Toronto homes protected, same-day estimates, lifetime warranty. Emergency service available 24/7. Call (437) 545-0067."
-date: 2025-01-31
-type: "service"
-url: "/services/basement-waterproofing-toronto/"
-keywords: ["basement waterproofing toronto", "toronto basement waterproofing", "basement waterproofing contractors toronto", "waterproofing toronto", "basement leak repair toronto", "foundation waterproofing toronto", "toronto waterproofing companies", "basement flooding toronto", "toronto basement contractors"]
-schema_type: "LocalBusiness"
-priority: "high"
+title: 'Basement Waterproofing Toronto | #1 Local Contractors Since 2008'
+subtitle: Professional Basement Waterproofing Services in Toronto - 15+ Years Experience
+seo_title: >-
+  Basement Waterproofing Toronto | Local Experts | Same-Day Service | Lifetime
+  Warranty
+description: >-
+  #1 basement waterproofing contractors in Toronto. 15+ years experience, 5,000+
+  Toronto homes protected, same-day estimates, lifetime warranty. Emergency
+  service available 24/7. Call (437) 545-0067.
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/basement-waterproofing-toronto/
+keywords:
+  - basement waterproofing toronto
+  - toronto basement waterproofing
+  - basement waterproofing contractors toronto
+  - waterproofing toronto
+  - basement leak repair toronto
+  - foundation waterproofing toronto
+  - toronto waterproofing companies
+  - basement flooding toronto
+  - toronto basement contractors
+schema_type: LocalBusiness
+priority: high
 mobile_optimized: true
-page_speed_priority: "high"
-location: "Toronto"
+page_speed_priority: high
+location: Toronto
 local_seo_signals:
-  - "15+ years Toronto experience"
-  - "5,000+ Toronto homes protected"
-  - "Same-day estimates in Toronto"
-  - "Physical Toronto office location"
-  - "Toronto neighborhood expertise"
-  - "24/7 emergency service Toronto"
+  - 15+ years Toronto experience
+  - '5,000+ Toronto homes protected'
+  - Same-day estimates in Toronto
+  - Physical Toronto office location
+  - Toronto neighborhood expertise
+  - 24/7 emergency service Toronto
 related_services:
-  - name: "Foundation Waterproofing Toronto"
-    url: "/services/foundation-waterproofing-toronto/"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
-  - name: "French Drain Installation Toronto"
-    url: "/services/french-drain-installation-toronto/"
-    image: "/pics/work/interior-waterproofing.webp"
-  - name: "Emergency Basement Flooding Toronto"
-    url: "/emergency/toronto-emergency-basement-flooding/"
-    image: "/pics/work/sump-pump.webp"
+  - name: Foundation Waterproofing Toronto
+    url: /services/foundation-waterproofing-toronto/
+    image: /pics/work/exterior-waterproofing-membrane.webp
+  - name: French Drain Installation Toronto
+    url: /services/french-drain-installation-toronto/
+    image: /pics/work/interior-waterproofing.webp
+  - name: Emergency Basement Flooding Toronto
+    url: /emergency/toronto-emergency-basement-flooding/
+    image: /pics/work/sump-pump.webp
 toronto_neighborhoods:
-  - name: "Downtown Core"
-    areas: ["Financial District", "Entertainment District", "Harbourfront", "Distillery District"]
-    challenges: ["Heritage foundations", "High water table", "Limited access"]
-    solutions: ["Interior systems", "Minimal disruption techniques", "Heritage-compliant methods"]
-    avg_cost: "$6,500-$15,000"
-  - name: "North Toronto"
-    areas: ["North York", "Willowdale", "Don Mills", "York Mills"]
-    challenges: ["Clay soil movement", "Split-level homes", "Basement apartments"]
-    solutions: ["Clay-specific systems", "Multi-level drainage", "Independent apartment protection"]
-    avg_cost: "$4,500-$12,000"
-  - name: "East Toronto"
-    areas: ["Scarborough", "Beaches", "Leslieville", "Riverdale"]
-    challenges: ["Ravine properties", "Older foundations", "Drainage issues"]
-    solutions: ["Slope drainage", "Foundation restoration", "Advanced water management"]
-    avg_cost: "$4,000-$11,000"
-  - name: "West Toronto"
-    areas: ["Etobicoke", "High Park", "Junction", "Parkdale"]
-    challenges: ["Lake proximity moisture", "Mixed soil conditions", "Flood zones"]
-    solutions: ["Moisture control systems", "Flood prevention", "Multi-approach solutions"]
-    avg_cost: "$4,200-$11,500"
+  - name: Downtown Core
+    areas:
+      - Financial District
+      - Entertainment District
+      - Harbourfront
+      - Distillery District
+    challenges:
+      - Heritage foundations
+      - High water table
+      - Limited access
+    solutions:
+      - Interior systems
+      - Minimal disruption techniques
+      - Heritage-compliant methods
+    avg_cost: '$6,500-$15,000'
+  - name: North Toronto
+    areas:
+      - North York
+      - Willowdale
+      - Don Mills
+      - York Mills
+    challenges:
+      - Clay soil movement
+      - Split-level homes
+      - Basement apartments
+    solutions:
+      - Clay-specific systems
+      - Multi-level drainage
+      - Independent apartment protection
+    avg_cost: '$4,500-$12,000'
+  - name: East Toronto
+    areas:
+      - Scarborough
+      - Beaches
+      - Leslieville
+      - Riverdale
+    challenges:
+      - Ravine properties
+      - Older foundations
+      - Drainage issues
+    solutions:
+      - Slope drainage
+      - Foundation restoration
+      - Advanced water management
+    avg_cost: '$4,000-$11,000'
+  - name: West Toronto
+    areas:
+      - Etobicoke
+      - High Park
+      - Junction
+      - Parkdale
+    challenges:
+      - Lake proximity moisture
+      - Mixed soil conditions
+      - Flood zones
+    solutions:
+      - Moisture control systems
+      - Flood prevention
+      - Multi-approach solutions
+    avg_cost: '$4,200-$11,500'
 local_case_studies:
-  - location: "Rosedale Victorian Home"
-    year_built: "1895"
-    challenge: "Stone foundation with multiple leak points, heritage preservation requirements"
-    solution: "Custom interior waterproofing system with period-appropriate access methods"
-    cost: "$12,500"
-    timeline: "5 days"
-    result: "Completely dry basement while preserving heritage character"
-    customer: "Sarah M."
-  - location: "North York Split-Level"
-    year_built: "1967"
-    challenge: "Recurring flooding during storms, clay soil movement"
-    solution: "Exterior waterproofing with enhanced clay soil drainage system"
-    cost: "$18,000"
-    timeline: "8 days"
-    result: "No water infiltration in 4+ years, increased property value"
-    customer: "David L."
-  - location: "Beaches Bungalow"
-    year_built: "1952"
-    challenge: "High water table causing continuous seepage"
-    solution: "French drain system with dual sump pumps and battery backup"
-    cost: "$8,500"
-    timeline: "4 days"
-    result: "Basement apartment rental income restored"
-    customer: "Maria G."
+  - location: Rosedale Victorian Home
+    year_built: '1895'
+    challenge: >-
+      Stone foundation with multiple leak points, heritage preservation
+      requirements
+    solution: >-
+      Custom interior waterproofing system with period-appropriate access
+      methods
+    cost: '$12,500'
+    timeline: 5 days
+    result: Completely dry basement while preserving heritage character
+    customer: Sarah M.
+  - location: North York Split-Level
+    year_built: '1967'
+    challenge: 'Recurring flooding during storms, clay soil movement'
+    solution: Exterior waterproofing with enhanced clay soil drainage system
+    cost: '$18,000'
+    timeline: 8 days
+    result: 'No water infiltration in 4+ years, increased property value'
+    customer: David L.
+  - location: Beaches Bungalow
+    year_built: '1952'
+    challenge: High water table causing continuous seepage
+    solution: French drain system with dual sump pumps and battery backup
+    cost: '$8,500'
+    timeline: 4 days
+    result: Basement apartment rental income restored
+    customer: Maria G.
 toronto_specific_features:
-  - feature: "TTC Vibration Resistance"
-    description: "Specialized flexible sealants for properties near subway lines"
-    areas: ["Downtown", "Midtown", "North York"]
-  - feature: "Heritage Home Expertise"
-    description: "Preservation-compliant waterproofing for century homes"
-    areas: ["Rosedale", "Cabbagetown", "Annex", "Beaches"]
-  - feature: "Clay Soil Specialists"
-    description: "Advanced systems for Toronto's expansive clay soil conditions"
-    areas: ["North York", "Scarborough", "East York"]
-  - feature: "Ravine Lot Solutions"
-    description: "Complex drainage systems for sloped and ravine properties"
-    areas: ["Rosedale", "Moore Park", "High Park", "Scarborough Bluffs"]
+  - feature: TTC Vibration Resistance
+    description: Specialized flexible sealants for properties near subway lines
+    areas:
+      - Downtown
+      - Midtown
+      - North York
+  - feature: Heritage Home Expertise
+    description: Preservation-compliant waterproofing for century homes
+    areas:
+      - Rosedale
+      - Cabbagetown
+      - Annex
+      - Beaches
+  - feature: Clay Soil Specialists
+    description: Advanced systems for Toronto's expansive clay soil conditions
+    areas:
+      - North York
+      - Scarborough
+      - East York
+  - feature: Ravine Lot Solutions
+    description: Complex drainage systems for sloped and ravine properties
+    areas:
+      - Rosedale
+      - Moore Park
+      - High Park
+      - Scarborough Bluffs
 faq:
-  - question: "What makes basement waterproofing in Toronto different from other cities?"
-    answer: "Toronto's unique challenges include 122 days of annual precipitation, expansive clay soil that moves with seasons, aging infrastructure (many homes 50+ years old), extreme freeze-thaw cycles, and high water table in many neighborhoods. Our Toronto-specific solutions address these exact conditions with proven materials and techniques developed over 15+ years of local experience."
-  - question: "How much does basement waterproofing cost in Toronto?"
-    answer: "Toronto basement waterproofing costs vary by neighborhood and home type: Downtown/Central ($6,500-$15,000), North Toronto ($4,500-$12,000), East Toronto ($4,000-$11,000), West Toronto ($4,200-$11,500). Factors include foundation age, soil conditions, access challenges, and required permits. We provide detailed written estimates with no hidden fees."
-  - question: "Can you work during Toronto winters?"
-    answer: "Yes! Interior waterproofing works year-round regardless of weather. Exterior waterproofing can be done in winter using heated enclosures and winter-grade materials. We provide 24/7 emergency service regardless of weather conditions, with permanent solutions scheduled for optimal conditions."
-  - question: "Do you handle Toronto building permits?"
-    answer: "Absolutely. We handle all permit applications with the City of Toronto, including building permits for excavation, electrical permits for sump pumps, and plumbing permits for drainage. Our established relationships with Toronto building departments ensure smooth processing and faster project starts."
-  - question: "How do you compare with other waterproofing companies in Toronto?"
-    answer: "We offer faster Toronto response times (same-day vs 2-3 days), more focused local expertise, competitive pricing, and lifetime warranty coverage. Our Toronto-only focus means deeper neighborhood knowledge, established local relationships, and better ongoing support for Toronto homeowners."
-  - question: "What Toronto neighborhoods do you serve?"
-    answer: "We serve all Toronto neighborhoods including Downtown Core, Financial District, North York, Scarborough, Etobicoke, East York, Midtown, Uptown, Beaches, High Park, Junction, Leslieville, Riverdale, Cabbagetown, Rosedale, Forest Hill, Lawrence Park, and all surrounding areas with same-day service availability."
-  - question: "Why choose local Toronto contractors over national companies?"
-    answer: "Local Toronto contractors offer superior value: faster response times, intimate knowledge of Toronto soil/climate conditions, established relationships with local suppliers and inspectors, community accountability, no travel charges, and ongoing local presence for warranty service and support."
-  - question: "How long does basement waterproofing take in Toronto?"
-    answer: "Timeline varies by system type and Toronto-specific factors: Interior systems (2-3 days), Exterior systems (5-10 days weather permitting). Toronto projects often complete faster due to our local supplier relationships, material availability, and familiarity with city permit processes."
-  - question: "What warranty do you provide for Toronto projects?"
-    answer: "We provide comprehensive warranty coverage: Lifetime material warranty, 25-year labor warranty, transferable coverage for home sales, annual inspections included, 24/7 emergency support, and guaranteed local Toronto service throughout warranty period."
-  - question: "Do you offer financing for Toronto homeowners?"
-    answer: "Yes, we offer multiple financing options for Toronto residents: 0% interest for 12 months (qualified customers), extended payment plans up to 60 months, assistance with home equity line coordination, and help with insurance claim documentation and processing."
+  - question: What makes basement waterproofing in Toronto different from other cities?
+    answer: >-
+      Toronto's unique challenges include 122 days of annual precipitation,
+      expansive clay soil that moves with seasons, aging infrastructure (many
+      homes 50+ years old), extreme freeze-thaw cycles, and high water table in
+      many neighborhoods. Our Toronto-specific solutions address these exact
+      conditions with proven materials and techniques developed over 15+ years
+      of local experience.
+  - question: How much does basement waterproofing cost in Toronto?
+    answer: >-
+      Toronto basement waterproofing costs vary by neighborhood and home type:
+      Downtown/Central ($6,500-$15,000), North Toronto ($4,500-$12,000), East
+      Toronto ($4,000-$11,000), West Toronto ($4,200-$11,500). Factors include
+      foundation age, soil conditions, access challenges, and required permits.
+      We provide detailed written estimates with no hidden fees.
+  - question: Can you work during Toronto winters?
+    answer: >-
+      Yes! Interior waterproofing works year-round regardless of weather.
+      Exterior waterproofing can be done in winter using heated enclosures and
+      winter-grade materials. We provide 24/7 emergency service regardless of
+      weather conditions, with permanent solutions scheduled for optimal
+      conditions.
+  - question: Do you handle Toronto building permits?
+    answer: >-
+      Absolutely. We handle all permit applications with the City of Toronto,
+      including building permits for excavation, electrical permits for sump
+      pumps, and plumbing permits for drainage. Our established relationships
+      with Toronto building departments ensure smooth processing and faster
+      project starts.
+  - question: How do you compare with other waterproofing companies in Toronto?
+    answer: >-
+      We offer faster Toronto response times (same-day vs 2-3 days), more
+      focused local expertise, competitive pricing, and lifetime warranty
+      coverage. Our Toronto-only focus means deeper neighborhood knowledge,
+      established local relationships, and better ongoing support for Toronto
+      homeowners.
+  - question: What Toronto neighborhoods do you serve?
+    answer: >-
+      We serve all Toronto neighborhoods including Downtown Core, Financial
+      District, North York, Scarborough, Etobicoke, East York, Midtown, Uptown,
+      Beaches, High Park, Junction, Leslieville, Riverdale, Cabbagetown,
+      Rosedale, Forest Hill, Lawrence Park, and all surrounding areas with
+      same-day service availability.
+  - question: Why choose local Toronto contractors over national companies?
+    answer: >-
+      Local Toronto contractors offer superior value: faster response times,
+      intimate knowledge of Toronto soil/climate conditions, established
+      relationships with local suppliers and inspectors, community
+      accountability, no travel charges, and ongoing local presence for warranty
+      service and support.
+  - question: How long does basement waterproofing take in Toronto?
+    answer: >-
+      Timeline varies by system type and Toronto-specific factors: Interior
+      systems (2-3 days), Exterior systems (5-10 days weather permitting).
+      Toronto projects often complete faster due to our local supplier
+      relationships, material availability, and familiarity with city permit
+      processes.
+  - question: What warranty do you provide for Toronto projects?
+    answer: >-
+      We provide comprehensive warranty coverage: Lifetime material warranty,
+      25-year labor warranty, transferable coverage for home sales, annual
+      inspections included, 24/7 emergency support, and guaranteed local Toronto
+      service throughout warranty period.
+  - question: Do you offer financing for Toronto homeowners?
+    answer: >-
+      Yes, we offer multiple financing options for Toronto residents: 0%
+      interest for 12 months (qualified customers), extended payment plans up to
+      60 months, assistance with home equity line coordination, and help with
+      insurance claim documentation and processing.
 schema:
-  type: "LocalBusiness"
-  name: "Basement Waterproofing Toronto - DrySpace"
-  alternateName: "DrySpace Toronto Basement Waterproofing"
-  image: "/images/basement-waterproofing-toronto.jpg"
-  logo: "/images/dryspace-toronto-logo.jpg"
+  type: LocalBusiness
+  name: Basement Waterproofing Toronto - DrySpace
+  alternateName: DrySpace Toronto Basement Waterproofing
+  image: /images/basement-waterproofing-toronto.jpg
+  logo: /images/dryspace-toronto-logo.jpg
   address:
-    type: "PostalAddress"
-    streetAddress: "123 Main Street"
-    addressLocality: "Toronto"
-    addressRegion: "ON"
-    postalCode: "M5V 3A5"
-    addressCountry: "CA"
+    type: PostalAddress
+    streetAddress: 123 Main Street
+    addressLocality: Toronto
+    addressRegion: 'ON'
+    postalCode: M5V 3A5
+    addressCountry: CA
   geo:
-    type: "GeoCoordinates"
-    latitude: "43.6532"
-    longitude: "-79.3832"
-  url: "https://dryspacewaterproofing.ca/services/basement-waterproofing-toronto/"
-  telephone: "(437) 545-0067"
-  priceRange: "$4,000-$20,000"
-  foundingDate: "2008"
-  slogan: "Toronto's #1 Basement Waterproofing Experts Since 2008"
-  description: "Professional basement waterproofing services in Toronto with 15+ years experience, 5,000+ Toronto homes protected, same-day estimates, lifetime warranties."
-  paymentAccepted: ["Cash", "Credit Card", "Check", "Financing"]
-  currenciesAccepted: "CAD"
+    type: GeoCoordinates
+    latitude: '43.6532'
+    longitude: '-79.3832'
+  url: 'https://dryspacewaterproofing.ca/services/basement-waterproofing-toronto/'
+  telephone: (437) 545-0067
+  priceRange: '$4,000-$20,000'
+  foundingDate: '2008'
+  slogan: 'Toronto''s #1 Basement Waterproofing Experts Since 2008'
+  description: >-
+    Professional basement waterproofing services in Toronto with 15+ years
+    experience, 5,000+ Toronto homes protected, same-day estimates, lifetime
+    warranties.
+  paymentAccepted:
+    - Cash
+    - Credit Card
+    - Check
+    - Financing
+  currenciesAccepted: CAD
   openingHoursSpecification:
-    - type: "OpeningHoursSpecification"
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-      opens: "07:00"
-      closes: "19:00"
+    - type: OpeningHoursSpecification
+      dayOfWeek:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+      opens: '07:00'
+      closes: '19:00'
   specialOpeningHoursSpecification:
-    - type: "OpeningHoursSpecification"
-      validFrom: "2024-01-01"
-      validThrough: "2025-12-31"
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-      opens: "00:00"
-      closes: "23:59"
-      description: "24/7 Emergency Service Available"
+    - type: OpeningHoursSpecification
+      validFrom: '2024-01-01'
+      validThrough: '2025-12-31'
+      dayOfWeek:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+      opens: '00:00'
+      closes: '23:59'
+      description: 24/7 Emergency Service Available
   areaServed:
-    - name: "Toronto"
-      type: "City"
-      description: "All Toronto neighborhoods and districts"
-    - name: "Downtown Toronto"
-      type: "Neighborhood"
-    - name: "North York"
-      type: "Neighborhood"
-    - name: "Scarborough"
-      type: "Neighborhood"
-    - name: "Etobicoke"
-      type: "Neighborhood"
-  serviceRadius: "30 km"
+    - name: Toronto
+      type: City
+      description: All Toronto neighborhoods and districts
+    - name: Downtown Toronto
+      type: Neighborhood
+    - name: North York
+      type: Neighborhood
+    - name: Scarborough
+      type: Neighborhood
+    - name: Etobicoke
+      type: Neighborhood
+  serviceRadius: 30 km
   hasOfferCatalog:
-    type: "OfferCatalog"
-    name: "Toronto Basement Waterproofing Services"
+    type: OfferCatalog
+    name: Toronto Basement Waterproofing Services
     itemListElement:
-      - type: "Offer"
+      - type: Offer
         itemOffered:
-          type: "Service"
-          name: "Interior Basement Waterproofing Toronto"
-          description: "Interior waterproofing systems for Toronto homes with lifetime warranty"
-        priceRange: "$4,000-$10,000"
-      - type: "Offer"
+          type: Service
+          name: Interior Basement Waterproofing Toronto
+          description: >-
+            Interior waterproofing systems for Toronto homes with lifetime
+            warranty
+        priceRange: '$4,000-$10,000'
+      - type: Offer
         itemOffered:
-          type: "Service"
-          name: "Exterior Basement Waterproofing Toronto"
-          description: "Complete exterior waterproofing with excavation for Toronto properties"
-        priceRange: "$12,000-$25,000"
+          type: Service
+          name: Exterior Basement Waterproofing Toronto
+          description: >-
+            Complete exterior waterproofing with excavation for Toronto
+            properties
+        priceRange: '$12,000-$25,000'
   aggregateRating:
-    type: "AggregateRating"
-    ratingValue: "4.9"
-    reviewCount: "673"
-    bestRating: "5"
-    worstRating: "1"
+    type: AggregateRating
+    ratingValue: '4.9'
+    reviewCount: '673'
+    bestRating: '5'
+    worstRating: '1'
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Basement Waterproofing Toronto - Local Experts Since 2008

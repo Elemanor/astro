@@ -1,40 +1,58 @@
 ---
-title: "Crawl Space to Basement Conversion Toronto | Add Living Space"
-subtitle: "Transform Your Crawl Space into a Full-Height Basement"
-seo_title: "Crawl Space Basement Conversion Toronto | Crawl Space to Basement Cost"
-description: "Convert your crawl space to a full basement in Toronto. Create valuable living space with underpinning. 6-week completion, lifetime warranty. Expert contractors since 2010. Call (437) 545-0067."
-type: "service"
-url: "/services/crawl-space-basement-conversion/"
+title: Crawl Space to Basement Conversion Toronto | Add Living Space
+subtitle: Transform Your Crawl Space into a Full-Height Basement
+seo_title: Crawl Space Basement Conversion Toronto | Crawl Space to Basement Cost
+description: >-
+  Convert your crawl space to a full basement in Toronto. Create valuable living
+  space with underpinning. 6-week completion, lifetime warranty. Expert
+  contractors since 2010. Call (437) 545-0067.
+type: service
+url: /services/crawl-space-basement-conversion/
 related_services:
-  - title: "Basement Underpinning"
-    url: "/services/basement-underpinning"
-    description: "Professional underpinning services"
-    image: "/images/basement-underpinning.jpg"
-  - title: "Basement Lowering"
-    url: "/services/basement-lowering"
-    description: "Complete lowering solutions"
-    image: "/images/basement-lowering.jpg"
-  - title: "Foundation Underpinning"
-    url: "/services/foundation-underpinning"
-    description: "Structural foundation work"
-    image: "/images/foundation-underpinning.jpg"
+  - title: Basement Underpinning
+    url: /services/basement-underpinning
+    description: Professional underpinning services
+    image: /images/basement-underpinning.jpg
+  - title: Basement Lowering
+    url: /services/basement-lowering
+    description: Complete lowering solutions
+    image: /images/basement-lowering.jpg
+  - title: Foundation Underpinning
+    url: /services/foundation-underpinning
+    description: Structural foundation work
+    image: /images/foundation-underpinning.jpg
 sections:
-  - title: "Transform Your Crawl Space into Valuable Living Space"
-    content: |
-      That dark, musty crawl space under your home represents thousands of square feet of untapped potential. Converting a crawl space to a full basement transforms unused space into valuable living area, storage, or income-generating rental suite.
+  - title: Transform Your Crawl Space into Valuable Living Space
+    content: >
+      That dark, musty crawl space under your home represents thousands of
+      square feet of untapped potential. Converting a crawl space to a full
+      basement transforms unused space into valuable living area, storage, or
+      income-generating rental suite.
+
 
       **What is a Crawl Space?**
-      A crawl space is a shallow area under your home, typically 3-4 feet high, used for access to utilities. Unlike basements, crawl spaces can't be used for living due to limited height.
+
+      A crawl space is a shallow area under your home, typically 3-4 feet high,
+      used for access to utilities. Unlike basements, crawl spaces can't be used
+      for living due to limited height.
+
 
       **Why Convert?**
+
       - Add 600-1,500 sq ft of living space
+
       - Create legal basement apartment
+
       - Increase property value significantly
+
       - Eliminate crawl space moisture issues
+
       - Modernize your home's functionality
 
-      Our crawl space to basement conversions create full 8-9 foot ceiling heights through professional underpinning, completed in just 6 weeks.
-  - title: "The Crawl Space Conversion Process"
+
+      Our crawl space to basement conversions create full 8-9 foot ceiling
+      heights through professional underpinning, completed in just 6 weeks.
+  - title: The Crawl Space Conversion Process
     content: |
       **Step 1: Assessment and Planning (Week 1)**
       - Structural engineer evaluation
@@ -70,7 +88,7 @@ sections:
       - Pour new concrete floor
       - Install sump pump system
       - Complete final inspections
-  - title: "Unique Crawl Space Challenges"
+  - title: Unique Crawl Space Challenges
     content: |
       **Limited Access Issues**
       Crawl spaces present unique challenges:
@@ -109,7 +127,7 @@ sections:
       - Utility line management
       - HVAC system integration
       - Code compliance throughout
-  - title: "Cost Analysis: Crawl Space to Basement"
+  - title: 'Cost Analysis: Crawl Space to Basement'
     content: |
       **Conversion Costs Breakdown:**
 
@@ -138,7 +156,7 @@ sections:
       - 600 sq ft = $120,000-240,000 value
       - 1,200 sq ft = $240,000-480,000 value
       - Typical ROI: 200-350%
-  - title: "Benefits of Professional Conversion"
+  - title: Benefits of Professional Conversion
     content: |
       **Immediate Benefits:**
 
@@ -178,7 +196,7 @@ sections:
       - Improved drainage
       - Modern waterproofing
       - Code compliance
-  - title: "Why Choose Professional Conversion"
+  - title: Why Choose Professional Conversion
     content: |
       **DIY is Not an Option**
       Crawl space conversion requires:
@@ -216,53 +234,130 @@ sections:
       - Budget transparency
       - Problem resolution
 faq:
-  - question: "Can any crawl space be converted to a basement?"
-    answer: "Most crawl spaces can be converted, but factors like foundation type, soil conditions, and water table affect feasibility. Typical crawl spaces (3-4 feet high) are ideal candidates. Professional assessment determines specific possibilities and any limitations."
-  - question: "How much does crawl space to basement conversion cost?"
-    answer: "Crawl space conversion costs $51,000-98,000 depending on size. A 600 sq ft crawl space costs $51,000-70,000 to convert, while 1,200 sq ft costs $70,000-98,000. This includes underpinning, excavation, waterproofing, and new concrete floor."
-  - question: "How long does crawl space conversion take?"
-    answer: "Complete crawl space to basement conversion takes 6 weeks: Week 1 for planning and permits, Weeks 2-3 for underpinning, Week 4 for excavation, Weeks 5-6 for waterproofing and finishing. You can usually remain in your home throughout."
-  - question: "What ceiling height will I get after conversion?"
-    answer: "Crawl space conversion typically achieves 8-9 foot ceiling heights from original 3-4 foot spaces. The exact height depends on soil conditions, frost line requirements, and how deep we can safely excavate. Most conversions achieve at least 8 feet."
-  - question: "Do I need permits for crawl space conversion?"
-    answer: "Yes, crawl space conversion requires building permits, including structural, plumbing, and electrical permits. Professional engineering drawings are mandatory. We handle all permit applications and coordinate required inspections throughout the project."
-  - question: "Will conversion solve my crawl space moisture problems?"
-    answer: "Yes, proper conversion eliminates crawl space moisture issues permanently. We install comprehensive waterproofing, drainage systems, vapor barriers, and sump pumps. The new basement will be dry, comfortable, and suitable for finishing."
-  - question: "Can I create a rental unit in my converted crawl space?"
-    answer: "Yes, converted crawl spaces make excellent rental units. With 8-9 foot ceilings, you'll meet height requirements for legal apartments. Additional requirements include separate entrance, proper windows, fire separation, and kitchen/bathroom facilities."
-  - question: "Is crawl space conversion worth the investment?"
-    answer: "Crawl space conversion typically provides 200-350% ROI. Creating 600-1,200 sq ft of living space worth $200-400/sq ft adds significant value. Plus, rental income potential of $2,000-3,500/month provides ongoing returns and pays for the investment."
-  - question: "What happens to utilities during conversion?"
-    answer: "We carefully relocate all utilities including HVAC, plumbing, and electrical systems. Ductwork is reconfigured for the new ceiling height. All utility work is included in project planning and completed by licensed trades."
-  - question: "Can I stay in my home during conversion?"
-    answer: "Yes, most families stay home during crawl space conversion. The work happens below your living space with minimal disruption. There will be noise during work hours and some vibration, but your home remains fully functional throughout."
+  - question: Can any crawl space be converted to a basement?
+    answer: >-
+      Most crawl spaces can be converted, but factors like foundation type, soil
+      conditions, and water table affect feasibility. Typical crawl spaces (3-4
+      feet high) are ideal candidates. Professional assessment determines
+      specific possibilities and any limitations.
+  - question: How much does crawl space to basement conversion cost?
+    answer: >-
+      Crawl space conversion costs $51,000-98,000 depending on size. A 600 sq ft
+      crawl space costs $51,000-70,000 to convert, while 1,200 sq ft costs
+      $70,000-98,000. This includes underpinning, excavation, waterproofing, and
+      new concrete floor.
+  - question: How long does crawl space conversion take?
+    answer: >-
+      Complete crawl space to basement conversion takes 6 weeks: Week 1 for
+      planning and permits, Weeks 2-3 for underpinning, Week 4 for excavation,
+      Weeks 5-6 for waterproofing and finishing. You can usually remain in your
+      home throughout.
+  - question: What ceiling height will I get after conversion?
+    answer: >-
+      Crawl space conversion typically achieves 8-9 foot ceiling heights from
+      original 3-4 foot spaces. The exact height depends on soil conditions,
+      frost line requirements, and how deep we can safely excavate. Most
+      conversions achieve at least 8 feet.
+  - question: Do I need permits for crawl space conversion?
+    answer: >-
+      Yes, crawl space conversion requires building permits, including
+      structural, plumbing, and electrical permits. Professional engineering
+      drawings are mandatory. We handle all permit applications and coordinate
+      required inspections throughout the project.
+  - question: Will conversion solve my crawl space moisture problems?
+    answer: >-
+      Yes, proper conversion eliminates crawl space moisture issues permanently.
+      We install comprehensive waterproofing, drainage systems, vapor barriers,
+      and sump pumps. The new basement will be dry, comfortable, and suitable
+      for finishing.
+  - question: Can I create a rental unit in my converted crawl space?
+    answer: >-
+      Yes, converted crawl spaces make excellent rental units. With 8-9 foot
+      ceilings, you'll meet height requirements for legal apartments. Additional
+      requirements include separate entrance, proper windows, fire separation,
+      and kitchen/bathroom facilities.
+  - question: Is crawl space conversion worth the investment?
+    answer: >-
+      Crawl space conversion typically provides 200-350% ROI. Creating 600-1,200
+      sq ft of living space worth $200-400/sq ft adds significant value. Plus,
+      rental income potential of $2,000-3,500/month provides ongoing returns and
+      pays for the investment.
+  - question: What happens to utilities during conversion?
+    answer: >-
+      We carefully relocate all utilities including HVAC, plumbing, and
+      electrical systems. Ductwork is reconfigured for the new ceiling height.
+      All utility work is included in project planning and completed by licensed
+      trades.
+  - question: Can I stay in my home during conversion?
+    answer: >-
+      Yes, most families stay home during crawl space conversion. The work
+      happens below your living space with minimal disruption. There will be
+      noise during work hours and some vibration, but your home remains fully
+      functional throughout.
 schema:
-  type: "Service"
-  name: "Crawl Space to Basement Conversion"
+  type: Service
+  name: Crawl Space to Basement Conversion
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "North York"
-    - "Scarborough"
-    - "Etobicoke"
-    - "York"
-    - "East York"
-    - "Mississauga"
-    - "Vaughan"
+    - Toronto
+    - North York
+    - Scarborough
+    - Etobicoke
+    - York
+    - East York
+    - Mississauga
+    - Vaughan
   serviceType:
-    - "Crawl Space Conversion"
-    - "Basement Creation"
-    - "Foundation Underpinning"
-    - "Crawl Space Excavation"
-    - "Basement Lowering"
+    - Crawl Space Conversion
+    - Basement Creation
+    - Foundation Underpinning
+    - Crawl Space Excavation
+    - Basement Lowering
   offers:
-    - "Free Assessment"
-    - "6-Week Completion"
-    - "Engineering Included"
-    - "Lifetime Warranty"
-    - "Financing Available"
+    - Free Assessment
+    - 6-Week Completion
+    - Engineering Included
+    - Lifetime Warranty
+    - Financing Available
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Consultation
+    - Licensed & Insured
+    - Warranty Protection
 ---
 
 # Crawl Space to Basement Conversion Toronto

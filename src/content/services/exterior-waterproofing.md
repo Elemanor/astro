@@ -1,70 +1,103 @@
 ---
-title: "Exterior Waterproofing Toronto | Professional Foundation Waterproofing"
-subtitle: "Expert Exterior Waterproofing Toronto - Stop Water Before It Reaches Your Walls"
-seo_title: "Exterior Waterproofing Toronto | Basement Waterproofing Cost & Services"
-description: "Professional exterior foundation waterproofing in Toronto & GTA. Full excavation, waterproof membranes, drainage systems from outside. Permanent protection with lifetime warranty. Call: (437) 545-0067"
-date: 2025-01-28
+title: Exterior Waterproofing Toronto | Professional Foundation Waterproofing
+subtitle: >-
+  Expert Exterior Waterproofing Toronto - Stop Water Before It Reaches Your
+  Walls
+seo_title: Exterior Waterproofing Toronto | Basement Waterproofing Cost & Services
+description: >-
+  Professional exterior foundation waterproofing in Toronto & GTA. Full
+  excavation, waterproof membranes, drainage systems from outside. Permanent
+  protection with lifetime warranty. Call: (437) 545-0067
+date: 2025-01-28T00:00:00.000Z
 draft: false
-type: "service"
-url: "/services/exterior-waterproofing/"
-service: "Exterior Waterproofing"
-
-# Related services
+type: service
+url: /services/exterior-waterproofing/
+service: Exterior Waterproofing
 related_services:
-  - title: "Foundation Crack Repair"
-    url: "/services/foundation-crack-repair/"
-    description: "Seal cracks before waterproofing"
-    image: "/pics/work/crack_repair.webp"
-  - title: "Drainage & Grading"
-    url: "/services/drainage-grading/"
-    description: "Direct water away from foundation"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
-  - title: "Interior Waterproofing"
-    url: "/services/interior-waterproofing/"
-    description: "Interior backup protection"
-    image: "/pics/work/interior-waterproofing.webp"
-
-# Content sections
+  - title: Foundation Crack Repair
+    url: /services/foundation-crack-repair/
+    description: Seal cracks before waterproofing
+    image: /pics/work/crack_repair.webp
+  - title: Drainage & Grading
+    url: /services/drainage-grading/
+    description: Direct water away from foundation
+    image: /pics/work/exterior-waterproofing-membrane.webp
+  - title: Interior Waterproofing
+    url: /services/interior-waterproofing/
+    description: Interior backup protection
+    image: /pics/work/interior-waterproofing.webp
 sections:
-  - title: "The Gold Standard - Exterior Waterproofing Toronto"
-    content: |
-      Exterior waterproofing Toronto is the most effective way to protect your foundation. As leading basement contractors Toronto, we excavate around your home and apply waterproof membranes directly to the outside walls, creating an impenetrable barrier that stops water before it can enter.
-      
-      This comprehensive exterior basement waterproofing approach not only keeps your Toronto basement dry but also protects your foundation from water damage, freeze-thaw cycles, and deterioration. Unlike interior waterproofing alone, exterior waterproofing Toronto adds decades to your home's life.
-  - title: "Our Complete Exterior Process"
-    content: |
-      **Full Excavation** - We carefully excavate down to the footing, exposing the entire foundation wall for proper treatment.
-      
-      **Wall Preparation** - Cracks are repaired, walls are cleaned and parged smooth, creating the ideal surface for waterproofing.
-      
-      **Membrane Application** - Premium rubberized or dimpled membrane creates a seamless waterproof barrier from grade to footing.
-      
-      **Drainage System** - New weeping tile and gravel ensure water is directed away from your foundation permanently.
+  - title: The Gold Standard - Exterior Waterproofing Toronto
+    content: >
+      Exterior waterproofing Toronto is the most effective way to protect your
+      foundation. As leading basement contractors Toronto, we excavate around
+      your home and apply waterproof membranes directly to the outside walls,
+      creating an impenetrable barrier that stops water before it can enter.
 
-# FAQ
+
+      This comprehensive exterior basement waterproofing approach not only keeps
+      your Toronto basement dry but also protects your foundation from water
+      damage, freeze-thaw cycles, and deterioration. Unlike interior
+      waterproofing alone, exterior waterproofing Toronto adds decades to your
+      home's life.
+  - title: Our Complete Exterior Process
+    content: >
+      **Full Excavation** - We carefully excavate down to the footing, exposing
+      the entire foundation wall for proper treatment.
+
+
+      **Wall Preparation** - Cracks are repaired, walls are cleaned and parged
+      smooth, creating the ideal surface for waterproofing.
+
+
+      **Membrane Application** - Premium rubberized or dimpled membrane creates
+      a seamless waterproof barrier from grade to footing.
+
+
+      **Drainage System** - New weeping tile and gravel ensure water is directed
+      away from your foundation permanently.
 faq:
-  - question: "Is exterior waterproofing worth the cost?"
-    answer: |
+  - question: Is exterior waterproofing worth the cost?
+    answer: >
       Exterior waterproofing is an investment that pays dividends:
+
       - Adds 10-15% to home value
+
       - Prevents $20,000+ in water damage
+
       - Protects foundation integrity
+
       - Creates usable basement space
+
       - Comes with lifetime warranty
-      
-      For homes with serious water issues or valuable finished basements, exterior waterproofing is always worth it.
-  - question: "How much does exterior waterproofing cost in Toronto?"
-    answer: |
-      Exterior waterproofing Toronto costs typically range from $300-500 per linear foot, making it a significant investment. The basement waterproofing Toronto cost for exterior systems varies based on excavation Toronto requirements, access, soil type, and additional repairs. Exterior waterproofing costs more than interior waterproofing Toronto but provides maximum protection. For detailed exterior waterproofing Toronto pricing and cost comparisons, see our [basement waterproofing cost guide](/services/basement-waterproofing-cost/).
-  - question: "How long does exterior waterproofing take?"
-    answer: |
+
+
+      For homes with serious water issues or valuable finished basements,
+      exterior waterproofing is always worth it.
+  - question: How much does exterior waterproofing cost in Toronto?
+    answer: >
+      Exterior waterproofing Toronto costs typically range from $300-500 per
+      linear foot, making it a significant investment. The basement
+      waterproofing Toronto cost for exterior systems varies based on excavation
+      Toronto requirements, access, soil type, and additional repairs. Exterior
+      waterproofing costs more than interior waterproofing Toronto but provides
+      maximum protection. For detailed exterior waterproofing Toronto pricing
+      and cost comparisons, see our [basement waterproofing cost
+      guide](/services/basement-waterproofing-cost/).
+  - question: How long does exterior waterproofing take?
+    answer: >
       Project timeline depends on scope:
+
       - **Single Wall**: 3-5 days
+
       - **Full House**: 1-2 weeks
+
       - **Complex Projects**: 2-3 weeks
-      
-      Weather can affect timeline. We provide detailed schedules and work efficiently to minimize disruption.
-  - question: "What about my landscaping?"
+
+
+      Weather can affect timeline. We provide detailed schedules and work
+      efficiently to minimize disruption.
+  - question: What about my landscaping?
     answer: |
       We take landscaping seriously:
       - Photo documentation before work
@@ -72,8 +105,45 @@ faq:
       - Soil preservation and replacement
       - Professional restoration included
       - One-year landscape warranty
-      
+
       Most clients say their yard looks better after we're done!
+starting_price: '$8,999'
+price_range: '$8,999 - $25,999'
+benefits:
+  - title: Permanent Solution
+    description: Stop water at the source with our proven exterior membrane systems
+  - title: Foundation Protection
+    description: Prevent structural damage and extend your foundation's lifespan by decades
+  - title: Property Value Increase
+    description: Add 10-15% to your home value with professional exterior waterproofing
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Excavation & Exposure
+    description: 'Carefully excavate to foundation footing, protecting landscaping'
+    icon: shovel
+  - title: Wall Preparation
+    description: 'Clean, repair cracks, and apply waterproof parging'
+    icon: wrench
+  - title: Membrane Application
+    description: Install premium rubber or dimpled membrane system
+    icon: shield
+  - title: Drainage & Backfill
+    description: 'Install weeping tile, gravel, and carefully backfill'
+    icon: water
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Exterior Waterproofing Toronto - Professional Foundation Protection

@@ -1,32 +1,48 @@
 ---
-title: "Window Well Installation Guide | DIY & Professional Options"
-subtitle: "Complete Window Well Installation for Light, Access, and Safety"
-seo_title: "Window Well Installation | DIY Guide, Cost & Code Requirements Toronto"
-description: "Complete window well installation guide for Toronto homes. Learn about window well types, proper sizing, drainage, costs, and code requirements. DIY instructions and when to hire professionals for basement window wells."
-type: "service"
-url: "/services/window-well-diy-installation/"
+title: Window Well Installation Guide | DIY & Professional Options
+subtitle: 'Complete Window Well Installation for Light, Access, and Safety'
+seo_title: 'Window Well Installation | DIY Guide, Cost & Code Requirements Toronto'
+description: >-
+  Complete window well installation guide for Toronto homes. Learn about window
+  well types, proper sizing, drainage, costs, and code requirements. DIY
+  instructions and when to hire professionals for basement window wells.
+type: service
+url: /services/window-well-diy-installation/
 related_services:
-  - title: "Window and Door Openings"
-    url: "/services/window-door-openings"
-    description: "Professional foundation cutting for windows"
-    image: "/images/window-door-openings.jpg"
-  - title: "Basement Waterproofing"
-    url: "/services/basement-waterproofing"
-    description: "Keep water out of window wells"
-    image: "/images/basement-waterproofing.jpg"
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing"
-    description: "Complete exterior drainage solutions"
-    image: "/images/exterior-waterproofing.jpg"
+  - title: Window and Door Openings
+    url: /services/window-door-openings
+    description: Professional foundation cutting for windows
+    image: /images/window-door-openings.jpg
+  - title: Basement Waterproofing
+    url: /services/basement-waterproofing
+    description: Keep water out of window wells
+    image: /images/basement-waterproofing.jpg
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing
+    description: Complete exterior drainage solutions
+    image: /images/exterior-waterproofing.jpg
 sections:
-  - title: "Window Well Installation - Light, Access, and Safety for Your Basement"
-    content: |
-      Window wells are essential features that transform dark basements into livable spaces while providing crucial emergency exits. A properly installed window well brings natural light, ventilation, and safety to below-grade spaces. However, improper window well installation creates water problems, safety hazards, and code violations. Done right, window wells are valuable assets. Done wrong, they become expensive swimming pools attached to your foundation.
+  - title: 'Window Well Installation - Light, Access, and Safety for Your Basement'
+    content: >
+      Window wells are essential features that transform dark basements into
+      livable spaces while providing crucial emergency exits. A properly
+      installed window well brings natural light, ventilation, and safety to
+      below-grade spaces. However, improper window well installation creates
+      water problems, safety hazards, and code violations. Done right, window
+      wells are valuable assets. Done wrong, they become expensive swimming
+      pools attached to your foundation.
 
-      This guide provides exact specifications for code-compliant window well installation in Toronto. We'll cover sizing requirements, drainage essentials, proper materials, and the installation process that keeps water out while letting light in.
 
-      Whether you're creating an egress window for a bedroom or simply want more natural light, proper window well installation is critical for safety, function, and preventing water damage.
-  - title: "Ontario Building Code Requirements"
+      This guide provides exact specifications for code-compliant window well
+      installation in Toronto. We'll cover sizing requirements, drainage
+      essentials, proper materials, and the installation process that keeps
+      water out while letting light in.
+
+
+      Whether you're creating an egress window for a bedroom or simply want more
+      natural light, proper window well installation is critical for safety,
+      function, and preventing water damage.
+  - title: Ontario Building Code Requirements
     content: |
       ### Legal Requirements for Window Wells
 
@@ -65,7 +81,7 @@ sections:
       - Opening maximum 100mm (4")
       - Secured against removal
       - Cannot impede egress
-  - title: "Planning Your Window Well"
+  - title: Planning Your Window Well
     content: |
       ### Critical Pre-Installation Steps
 
@@ -104,7 +120,7 @@ sections:
       - Consider sump pump location
       - Account for grade changes
       - Winter drainage concerns
-  - title: "Window Well Sizing"
+  - title: Window Well Sizing
     content: |
       ### Getting Dimensions Right
 
@@ -143,7 +159,7 @@ sections:
       - Too shallow (water entry)
       - Ladder space forgotten
       - Future window upgrades ignored
-  - title: "Excavation Process"
+  - title: Excavation Process
     content: |
       ### Safe and Proper Digging
 
@@ -181,7 +197,7 @@ sections:
       - Cover or fence opening
       - Ladder for access
       - Never work alone
-  - title: "Drainage Installation"
+  - title: Drainage Installation
     content: |
       ### The Most Critical Component
 
@@ -221,7 +237,7 @@ sections:
       3. **Install drain pipe**: 3" minimum
       4. **Slope to connection**: 2% minimum
       5. **Test before backfill**: Critical step
-  - title: "Well Installation Steps"
+  - title: Well Installation Steps
     content: |
       ### Proper Installation Sequence
 
@@ -259,7 +275,7 @@ sections:
       - Overlap 150mm (6") minimum
       - No gaps or voids
       - Test with hose
-  - title: "Backfilling and Grading"
+  - title: Backfilling and Grading
     content: |
       ### Ensuring Proper Drainage
 
@@ -296,7 +312,7 @@ sections:
       - No water pockets
       - Positive drainage
       - Matches landscaping
-  - title: "Ladder Installation"
+  - title: Ladder Installation
     content: |
       ### Required for Deep Wells
 
@@ -343,7 +359,7 @@ sections:
       - Secure mounting
       - Clear path to top
       - Regular maintenance
-  - title: "Window Well Covers"
+  - title: Window Well Covers
     content: |
       ### Protection and Safety
 
@@ -390,7 +406,7 @@ sections:
       - Emergency operation
       - Regular testing
       - Clear instructions posted
-  - title: "Common Installation Mistakes"
+  - title: Common Installation Mistakes
     content: |
       ### What Goes Wrong
 
@@ -428,7 +444,7 @@ sections:
       - No drainage
       - Poor waterproofing
       - Clogged drains
-  - title: "Maintenance Requirements"
+  - title: Maintenance Requirements
     content: |
       ### Keeping Wells Functional
 
@@ -466,7 +482,7 @@ sections:
       - Inadequate size
       - No drainage possible
       - Safety concerns
-  - title: "DIY Cost Analysis"
+  - title: DIY Cost Analysis
     content: |
       ### Budget Breakdown
 
@@ -500,7 +516,7 @@ sections:
       - Physical demands high
       - Mistakes costly
       - No warranty
-  - title: "When to Hire Professionals"
+  - title: When to Hire Professionals
     content: |
       ### Recognizing Limitations
 
@@ -531,7 +547,7 @@ sections:
       - Mistakes very expensive
       - Time value significant
       - Peace of mind valuable
-  - title: "Safety Considerations"
+  - title: Safety Considerations
     content: |
       ### Protecting Life and Property
 
@@ -569,90 +585,186 @@ sections:
       - Regular maintenance documented
       - Insurance notification
       - Code compliance critical
-  - title: "Final Installation Tips"
-    content: |
+  - title: Final Installation Tips
+    content: >
       ### Ensuring Success
 
+
       **Planning Phase**
+
       - Measure three times
+
       - Get proper permits
+
       - Order materials early
+
       - Schedule utilities locate
+
       - Plan drainage carefully
 
+
       **Installation Phase**
+
       - Follow sequence exactly
+
       - Test drainage before backfill
+
       - Document with photos
+
       - Don't skip steps
+
       - Quality over speed
 
+
       **Critical Success Factors**
+
       - Drainage is everything
+
       - Size for future needs
+
       - Waterproofing essential
+
       - Proper attachment critical
+
       - Code compliance mandatory
 
+
       **Remember:**
+
       - Water always wins
+
       - Drainage prevents problems
+
       - Safety comes first
+
       - Codes exist for reasons
+
       - Do it right once
 
-      **Your window well is only as good as its drainage. Focus on water management and everything else falls into place.**
+
+      **Your window well is only as good as its drainage. Focus on water
+      management and everything else falls into place.**
 faq:
-  - question: "What size window well do I need for my basement window?"
-    answer: "Minimum width is window width plus 150mm (6 inches) on each side. Projection from wall should be 400-600mm (16-24 inches) for standard wells, or 760mm (30 inches) minimum for egress wells. Depth should extend 100-150mm below the window sill."
-  - question: "Do I need a permit to install a window well?"
-    answer: "Usually yes, especially for egress window wells or if you're connecting to drainage systems. Check with your local building department. Even if not required, following code requirements protects you legally and ensures safety."
-  - question: "How deep should I dig for proper window well drainage?"
-    answer: "Excavate 300mm (12 inches) below window sill level, plus another 450mm (18 inches) for drainage gravel - total depth typically 750mm (30 inches) minimum. This provides adequate drainage capacity and prevents water from reaching the window."
-  - question: "Can I install a window well without connecting to drainage?"
-    answer: "No. Ontario Building Code requires positive drainage for all window wells. Options include connecting to weeping tile, running to a sump pump, or installing a French drain system. Wells without drainage will flood."
-  - question: "When is a ladder required in a window well?"
-    answer: "Ladders are mandatory when well depth exceeds 900mm (36 inches) and for all egress window wells regardless of depth. The ladder must be permanent, with rungs maximum 300mm (12 inches) apart."
-  - question: "What type of gravel should I use in the window well?"
-    answer: "Use clear 3/4 inch (19mm) drainage stone only. Never use crusher run or any material with fines that can clog drainage. You need 450mm (18 inches) of clear stone in the bottom for proper drainage."
-  - question: "How do I prevent my window well from filling with water?"
-    answer: "Ensure positive drainage to weeping tile or sump, use only clear drainage stone, install filter fabric to prevent clogging, grade soil away from well, maintain 2% slope minimum, and keep drains clear of debris."
-  - question: "What's the best material for window wells?"
-    answer: "Galvanized steel wells are most common and durable. Composite materials resist rust but cost more. Avoid corrugated steel for permanent installation. Choose based on your budget and aesthetic preferences."
-  - question: "How much weight must a window well cover support?"
-    answer: "Building code requires covers to support minimum 1.9 kPa (40 pounds per square foot). For reference, this handles typical snow loads and prevents falls. Covers must also open easily from inside without tools."
-  - question: "Can I install a window well against my property line?"
-    answer: "Check local bylaws for setback requirements. Most municipalities require window wells to be set back from property lines. Even if allowed, consider neighbor relations and future maintenance access needs."
+  - question: What size window well do I need for my basement window?
+    answer: >-
+      Minimum width is window width plus 150mm (6 inches) on each side.
+      Projection from wall should be 400-600mm (16-24 inches) for standard
+      wells, or 760mm (30 inches) minimum for egress wells. Depth should extend
+      100-150mm below the window sill.
+  - question: Do I need a permit to install a window well?
+    answer: >-
+      Usually yes, especially for egress window wells or if you're connecting to
+      drainage systems. Check with your local building department. Even if not
+      required, following code requirements protects you legally and ensures
+      safety.
+  - question: How deep should I dig for proper window well drainage?
+    answer: >-
+      Excavate 300mm (12 inches) below window sill level, plus another 450mm (18
+      inches) for drainage gravel - total depth typically 750mm (30 inches)
+      minimum. This provides adequate drainage capacity and prevents water from
+      reaching the window.
+  - question: Can I install a window well without connecting to drainage?
+    answer: >-
+      No. Ontario Building Code requires positive drainage for all window wells.
+      Options include connecting to weeping tile, running to a sump pump, or
+      installing a French drain system. Wells without drainage will flood.
+  - question: When is a ladder required in a window well?
+    answer: >-
+      Ladders are mandatory when well depth exceeds 900mm (36 inches) and for
+      all egress window wells regardless of depth. The ladder must be permanent,
+      with rungs maximum 300mm (12 inches) apart.
+  - question: What type of gravel should I use in the window well?
+    answer: >-
+      Use clear 3/4 inch (19mm) drainage stone only. Never use crusher run or
+      any material with fines that can clog drainage. You need 450mm (18 inches)
+      of clear stone in the bottom for proper drainage.
+  - question: How do I prevent my window well from filling with water?
+    answer: >-
+      Ensure positive drainage to weeping tile or sump, use only clear drainage
+      stone, install filter fabric to prevent clogging, grade soil away from
+      well, maintain 2% slope minimum, and keep drains clear of debris.
+  - question: What's the best material for window wells?
+    answer: >-
+      Galvanized steel wells are most common and durable. Composite materials
+      resist rust but cost more. Avoid corrugated steel for permanent
+      installation. Choose based on your budget and aesthetic preferences.
+  - question: How much weight must a window well cover support?
+    answer: >-
+      Building code requires covers to support minimum 1.9 kPa (40 pounds per
+      square foot). For reference, this handles typical snow loads and prevents
+      falls. Covers must also open easily from inside without tools.
+  - question: Can I install a window well against my property line?
+    answer: >-
+      Check local bylaws for setback requirements. Most municipalities require
+      window wells to be set back from property lines. Even if allowed, consider
+      neighbor relations and future maintenance access needs.
 schema:
-  type: "Service"
-  name: "Window Well Installation Guide"
+  type: Service
+  name: Window Well Installation Guide
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "North York"
-    - "Scarborough"
-    - "Etobicoke"
-    - "East York"
-    - "York"
-    - "Mississauga"
-    - "Brampton"
-    - "Vaughan"
-    - "Richmond Hill"
-    - "Markham"
+    - Toronto
+    - North York
+    - Scarborough
+    - Etobicoke
+    - East York
+    - York
+    - Mississauga
+    - Brampton
+    - Vaughan
+    - Richmond Hill
+    - Markham
   serviceType:
-    - "Window Well Installation"
-    - "DIY Installation Guide"
-    - "Basement Windows"
-    - "Egress Solutions"
-    - "Safety Compliance"
+    - Window Well Installation
+    - DIY Installation Guide
+    - Basement Windows
+    - Egress Solutions
+    - Safety Compliance
   offers:
-    - "Installation Instructions"
-    - "Code Requirements"
-    - "Safety Guidelines"
-    - "Professional Service"
-    - "Expert Consultation"
+    - Installation Instructions
+    - Code Requirements
+    - Safety Guidelines
+    - Professional Service
+    - Expert Consultation
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Consultation
+    - Licensed & Insured
+    - Warranty Protection
 ---
 
 # Window Well DIY Installation Guide

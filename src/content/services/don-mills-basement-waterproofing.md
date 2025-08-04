@@ -1,38 +1,56 @@
 ---
-title: "Don Mills Basement Waterproofing | Mid-Century Modern Foundation Experts"
-subtitle: "Specialized Waterproofing for Don Mills' Iconic Mid-Century Homes"
-seo_title: "Don Mills Basement Waterproofing North York | Mid-Century Foundation Repair"
-description: "Expert basement waterproofing in Don Mills. Specializing in 1950s-60s construction, unique foundation designs, and preserving mid-century architectural integrity. Serving Lawrence & Don Mills area. Call (437) 545-0067."
-type: "service"
-url: "/services/don-mills-basement-waterproofing/"
+title: Don Mills Basement Waterproofing | Mid-Century Modern Foundation Experts
+subtitle: Specialized Waterproofing for Don Mills' Iconic Mid-Century Homes
+seo_title: Don Mills Basement Waterproofing North York | Mid-Century Foundation Repair
+description: >-
+  Expert basement waterproofing in Don Mills. Specializing in 1950s-60s
+  construction, unique foundation designs, and preserving mid-century
+  architectural integrity. Serving Lawrence & Don Mills area. Call (437)
+  545-0067.
+type: service
+url: /services/don-mills-basement-waterproofing/
 related_services:
-  - title: "North York Waterproofing"
-    url: "/locations/north-york-basement-waterproofing"
-    description: "Serving all North York neighborhoods"
-    image: "/images/north-york-waterproofing.jpg"
-  - title: "Mid-Century Foundation Repair"
-    url: "/services/mid-century-foundation-repair"
-    description: "Specialized solutions for 1950s-60s construction"
-    image: "/images/mid-century-foundation.jpg"
-  - title: "Radiant Floor Protection"
-    url: "/services/radiant-floor-waterproofing"
-    description: "Protecting in-floor heating systems"
-    image: "/images/radiant-floor-protection.jpg"
+  - title: North York Waterproofing
+    url: /locations/north-york-basement-waterproofing
+    description: Serving all North York neighborhoods
+    image: /images/north-york-waterproofing.jpg
+  - title: Mid-Century Foundation Repair
+    url: /services/mid-century-foundation-repair
+    description: Specialized solutions for 1950s-60s construction
+    image: /images/mid-century-foundation.jpg
+  - title: Radiant Floor Protection
+    url: /services/radiant-floor-waterproofing
+    description: Protecting in-floor heating systems
+    image: /images/radiant-floor-protection.jpg
 sections:
-  - title: "Don Mills' Mid-Century Waterproofing Challenges"
-    content: |
-      Don Mills represents Canada's first planned suburban community, featuring innovative mid-century modern architecture from the 1950s and 1960s. These homes present unique waterproofing challenges that require specialized knowledge of their original construction methods and materials.
+  - title: Don Mills' Mid-Century Waterproofing Challenges
+    content: >
+      Don Mills represents Canada's first planned suburban community, featuring
+      innovative mid-century modern architecture from the 1950s and 1960s. These
+      homes present unique waterproofing challenges that require specialized
+      knowledge of their original construction methods and materials.
+
 
       Don Mills specific challenges:
+
       - Innovative foundation designs not seen elsewhere
+
       - Original radiant heating systems in basement floors
+
       - Flat or low-slope roofs affecting drainage
+
       - Large glass walls creating unique thermal dynamics
+
       - Post-and-beam construction requiring careful excavation
+
       - Mix of custom homes and tract housing with different standards
 
-      Our team specializes in mid-century construction, having protected over 300 Don Mills homes while preserving their architectural integrity and innovative features that make this neighborhood a Canadian heritage landmark.
-  - title: "Mid-Century Construction Challenges"
+
+      Our team specializes in mid-century construction, having protected over
+      300 Don Mills homes while preserving their architectural integrity and
+      innovative features that make this neighborhood a Canadian heritage
+      landmark.
+  - title: Mid-Century Construction Challenges
     content: |
       **Innovative Foundation Systems**
       Don Mills homes featured experimental approaches:
@@ -65,7 +83,7 @@ sections:
       - Integrated planters and built-in features
       - Shared common areas and drainage
       - Preservation of heritage landscaping
-  - title: "Mid-Century Specialized Solutions"
+  - title: Mid-Century Specialized Solutions
     content: |
       **Heritage-Sensitive Interior Systems**
       Protecting mid-century features:
@@ -98,7 +116,7 @@ sections:
       - Enhanced drainage for larger openings
       - Preservation of natural light principles
       - Weather protection for architectural glass
-  - title: "Don Mills Area Expertise"
+  - title: Don Mills Area Expertise
     content: |
       **Lawrence Park Estates**
       Custom mid-century homes requiring:
@@ -139,7 +157,7 @@ sections:
       - Wildlife habitat preservation
       - Erosion control measures
       - Enhanced privacy during work
-  - title: "Why Don Mills Chooses DrySpace"
+  - title: Why Don Mills Chooses DrySpace
     content: |
       **Mid-Century Expertise**
       - Specialized knowledge of 1950s-60s construction
@@ -175,7 +193,7 @@ sections:
       - Support restoration projects
       - Maintain design documentation
       - Facilitate heritage applications
-  - title: "Your Don Mills Heritage Project"
+  - title: Your Don Mills Heritage Project
     content: |
       **Architectural Assessment**
       - Historical research of your specific home
@@ -209,58 +227,144 @@ sections:
       - Documentation for future owners
       - Heritage tax credit support
 faq:
-  - question: "What makes Don Mills homes different for waterproofing?"
-    answer: "Don Mills homes were built with innovative 1950s-60s construction techniques including radiant floor heating, unique foundation designs, and experimental materials. These require specialized knowledge to waterproof effectively while preserving their mid-century modern features and architectural integrity."
-  - question: "Can you work around radiant heating in basement floors?"
-    answer: "Yes, we specialize in protecting radiant heating systems during waterproofing. Our techniques locate heating pipes, work around them safely, and often improve system efficiency by better moisture management. We've never damaged a radiant system in hundreds of Don Mills projects."
-  - question: "Will waterproofing affect my home's heritage value?"
-    answer: "Our solutions are designed to preserve and enhance heritage value. We use reversible techniques where possible, maintain architectural integrity, and provide documentation that supports heritage applications. Many clients see increased value from properly protected vintage homes."
-  - question: "How do you handle Don Mills' unique foundation designs?"
-    answer: "Each Don Mills home was somewhat experimental, so we research your specific construction details and adapt our approach accordingly. We understand the original engineering concepts and work with them rather than against them, ensuring solutions that complement the original design."
-  - question: "What about the large basement windows common in Don Mills?"
-    answer: "Don Mills' large basement windows are a signature feature we preserve. We create custom window well solutions that maintain natural light while providing proper drainage. Our systems integrate with the mid-century design aesthetic while providing modern protection."
-  - question: "Can you work within heritage guidelines?"
-    answer: "Absolutely. We're experienced with heritage requirements and work closely with heritage consultants when needed. Our solutions typically qualify as maintenance rather than alteration, but we ensure all work respects heritage values and guidelines."
-  - question: "How long does work take in Don Mills homes?"
-    answer: "Interior systems typically take 3-5 days, accounting for the careful work required around vintage systems. Exterior projects take 5-8 days with extra time for architectural protection. We work efficiently while maintaining the high standards these special homes deserve."
-  - question: "Do you work with architects and heritage consultants?"
-    answer: "Yes, we frequently collaborate with architects specializing in mid-century homes and heritage consultants. We provide technical input for restoration projects and can coordinate our work with larger renovation efforts to ensure integrated solutions."
-  - question: "What warranty applies to vintage homes?"
-    answer: "Our lifetime transferable warranty fully covers Don Mills homes, adapted for their specific construction. We guarantee our systems will work with vintage construction methods while providing modern protection levels. Documentation supports heritage and resale value."
-  - question: "Can you help preserve other mid-century features?"
-    answer: "While waterproofing is our specialty, we often identify and help preserve other mid-century features during our work. We maintain relationships with specialists in vintage systems and can provide referrals for comprehensive mid-century home restoration."
-  - question: "How do you handle the mature landscaping?"
-    answer: "Don Mills' mature landscaping is part of its heritage character. We use specialized techniques to work around established trees and plants, coordinate with landscape historians when needed, and ensure restoration maintains the original design intent."
-  - question: "Do you offer financing for heritage home improvements?"
-    answer: "Yes, we offer flexible financing including programs specifically for heritage property owners. We understand these homes require specialized care and work to make proper maintenance affordable. Some improvements may qualify for heritage tax credits."
+  - question: What makes Don Mills homes different for waterproofing?
+    answer: >-
+      Don Mills homes were built with innovative 1950s-60s construction
+      techniques including radiant floor heating, unique foundation designs, and
+      experimental materials. These require specialized knowledge to waterproof
+      effectively while preserving their mid-century modern features and
+      architectural integrity.
+  - question: Can you work around radiant heating in basement floors?
+    answer: >-
+      Yes, we specialize in protecting radiant heating systems during
+      waterproofing. Our techniques locate heating pipes, work around them
+      safely, and often improve system efficiency by better moisture management.
+      We've never damaged a radiant system in hundreds of Don Mills projects.
+  - question: Will waterproofing affect my home's heritage value?
+    answer: >-
+      Our solutions are designed to preserve and enhance heritage value. We use
+      reversible techniques where possible, maintain architectural integrity,
+      and provide documentation that supports heritage applications. Many
+      clients see increased value from properly protected vintage homes.
+  - question: How do you handle Don Mills' unique foundation designs?
+    answer: >-
+      Each Don Mills home was somewhat experimental, so we research your
+      specific construction details and adapt our approach accordingly. We
+      understand the original engineering concepts and work with them rather
+      than against them, ensuring solutions that complement the original design.
+  - question: What about the large basement windows common in Don Mills?
+    answer: >-
+      Don Mills' large basement windows are a signature feature we preserve. We
+      create custom window well solutions that maintain natural light while
+      providing proper drainage. Our systems integrate with the mid-century
+      design aesthetic while providing modern protection.
+  - question: Can you work within heritage guidelines?
+    answer: >-
+      Absolutely. We're experienced with heritage requirements and work closely
+      with heritage consultants when needed. Our solutions typically qualify as
+      maintenance rather than alteration, but we ensure all work respects
+      heritage values and guidelines.
+  - question: How long does work take in Don Mills homes?
+    answer: >-
+      Interior systems typically take 3-5 days, accounting for the careful work
+      required around vintage systems. Exterior projects take 5-8 days with
+      extra time for architectural protection. We work efficiently while
+      maintaining the high standards these special homes deserve.
+  - question: Do you work with architects and heritage consultants?
+    answer: >-
+      Yes, we frequently collaborate with architects specializing in mid-century
+      homes and heritage consultants. We provide technical input for restoration
+      projects and can coordinate our work with larger renovation efforts to
+      ensure integrated solutions.
+  - question: What warranty applies to vintage homes?
+    answer: >-
+      Our lifetime transferable warranty fully covers Don Mills homes, adapted
+      for their specific construction. We guarantee our systems will work with
+      vintage construction methods while providing modern protection levels.
+      Documentation supports heritage and resale value.
+  - question: Can you help preserve other mid-century features?
+    answer: >-
+      While waterproofing is our specialty, we often identify and help preserve
+      other mid-century features during our work. We maintain relationships with
+      specialists in vintage systems and can provide referrals for comprehensive
+      mid-century home restoration.
+  - question: How do you handle the mature landscaping?
+    answer: >-
+      Don Mills' mature landscaping is part of its heritage character. We use
+      specialized techniques to work around established trees and plants,
+      coordinate with landscape historians when needed, and ensure restoration
+      maintains the original design intent.
+  - question: Do you offer financing for heritage home improvements?
+    answer: >-
+      Yes, we offer flexible financing including programs specifically for
+      heritage property owners. We understand these homes require specialized
+      care and work to make proper maintenance affordable. Some improvements may
+      qualify for heritage tax credits.
 schema:
-  type: "Service"
-  name: "Don Mills Basement Waterproofing"
+  type: Service
+  name: Don Mills Basement Waterproofing
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Don Mills"
-    - "Lawrence Park Estates"
-    - "Flemingdon Park"
-    - "The Donway"
-    - "Don Valley"
-    - "Don Mills Centre"
-    - "York Mills"
-    - "Duncan Mill"
-    - "Mid-Century Modern District"
+    - Don Mills
+    - Lawrence Park Estates
+    - Flemingdon Park
+    - The Donway
+    - Don Valley
+    - Don Mills Centre
+    - York Mills
+    - Duncan Mill
+    - Mid-Century Modern District
   serviceType:
-    - "Mid-Century Foundation Repair"
-    - "Heritage Basement Waterproofing"
-    - "Radiant Floor Protection"
-    - "Architectural Preservation"
-    - "Vintage System Protection"
+    - Mid-Century Foundation Repair
+    - Heritage Basement Waterproofing
+    - Radiant Floor Protection
+    - Architectural Preservation
+    - Vintage System Protection
   offers:
-    - "Heritage Expertise"
-    - "Architectural Sensitivity"
-    - "Mid-Century Specialization"
-    - "Lifetime Warranty"
-    - "Heritage Documentation"
+    - Heritage Expertise
+    - Architectural Sensitivity
+    - Mid-Century Specialization
+    - Lifetime Warranty
+    - Heritage Documentation
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Don Mills Mid-Century Basement Waterproofing

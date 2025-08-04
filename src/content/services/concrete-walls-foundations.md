@@ -1,123 +1,229 @@
 ---
-title: "Concrete Foundation Walls & Footings Toronto"
-subtitle: "Building Strong Foundations Since 2014"
-seo_title: "Concrete Foundation Walls & Footings | Toronto Foundation Specialists"
-description: "Professional concrete foundation walls, footings, and structural repairs in Toronto & GTA. Foundation replacement, underpinning, crack repair. Licensed specialists: (437) 545-0067"
-date: 2025-01-30
+title: Concrete Foundation Walls & Footings Toronto
+subtitle: Building Strong Foundations Since 2014
+seo_title: Concrete Foundation Walls & Footings | Toronto Foundation Specialists
+description: >-
+  Professional concrete foundation walls, footings, and structural repairs in
+  Toronto & GTA. Foundation replacement, underpinning, crack repair. Licensed
+  specialists: (437) 545-0067
+date: 2025-01-30T00:00:00.000Z
 draft: false
-type: "service"
-url: "/services/concrete-walls-foundations/"
-
-# Related services
+type: service
+url: /services/concrete-walls-foundations/
 related_services:
-  - title: "Foundation Underpinning"
-    url: "/services/foundation-underpinning/"
-    description: "Deepen foundations for basement conversion"
-    image: "/pics/work/underpinning.webp"
-  - title: "Foundation Repair"
-    url: "/foundation-repair/"
-    description: "Comprehensive structural solutions"
-    image: "/pics/work/crack_repair.webp"
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing/"
-    description: "Protect new foundation walls"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
-
-# Content sections
+  - title: Foundation Underpinning
+    url: /services/foundation-underpinning/
+    description: Deepen foundations for basement conversion
+    image: /pics/work/underpinning.webp
+  - title: Foundation Repair
+    url: /foundation-repair/
+    description: Comprehensive structural solutions
+    image: /pics/work/crack_repair.webp
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing/
+    description: Protect new foundation walls
+    image: /pics/work/exterior-waterproofing-membrane.webp
 sections:
-  - title: "Complete Foundation Solutions"
-    content: |
-      Your home's foundation is everything - literally. When foundation walls crack, bow, or deteriorate, your entire home is at risk. We specialize in concrete foundation work from minor repairs to complete replacements, ensuring your Toronto home stands strong for decades to come.
-      
-      Foundation problems don't improve with time. That small crack becomes structural failure. Minor bowing becomes wall collapse. What starts as a $5,000 repair becomes a $50,000 emergency. We've seen it too many times - early intervention saves homes and budgets.
-  
-  - title: "Foundation Wall Problems We Solve"
-    content: |
-      **Cracking and Movement** - Foundation cracks aren't just cosmetic concerns. Horizontal cracks indicate pressure. Vertical cracks show settlement. Step cracks in block walls signal movement. We diagnose the cause and fix it properly - not just patch the symptom.
-      
-      **Bowing and Buckling Walls** - When foundation walls bow inward, it's serious. Toronto's clay soil expands when wet, pushing against foundations with tremendous force. We install wall anchors, carbon fiber reinforcement, or rebuild sections as needed.
-      
-      **Deteriorating Concrete** - Older Toronto homes often have foundation issues from age, water damage, or poor original construction. Spalling concrete, exposed rebar, and crumbling mortar all compromise structural integrity. We restore or replace based on condition.
+  - title: Complete Foundation Solutions
+    content: >
+      Your home's foundation is everything - literally. When foundation walls
+      crack, bow, or deteriorate, your entire home is at risk. We specialize in
+      concrete foundation work from minor repairs to complete replacements,
+      ensuring your Toronto home stands strong for decades to come.
 
-  - title: "New Concrete Foundations"
-    content: |
-      Sometimes repair isn't enough. Complete replacement makes sense when deterioration exceeds 30% of wall area, multiple previous repairs have failed, or adding stories requires stronger foundations.
-      
+
+      Foundation problems don't improve with time. That small crack becomes
+      structural failure. Minor bowing becomes wall collapse. What starts as a
+      $5,000 repair becomes a $50,000 emergency. We've seen it too many times -
+      early intervention saves homes and budgets.
+  - title: Foundation Wall Problems We Solve
+    content: >
+      **Cracking and Movement** - Foundation cracks aren't just cosmetic
+      concerns. Horizontal cracks indicate pressure. Vertical cracks show
+      settlement. Step cracks in block walls signal movement. We diagnose the
+      cause and fix it properly - not just patch the symptom.
+
+
+      **Bowing and Buckling Walls** - When foundation walls bow inward, it's
+      serious. Toronto's clay soil expands when wet, pushing against foundations
+      with tremendous force. We install wall anchors, carbon fiber
+      reinforcement, or rebuild sections as needed.
+
+
+      **Deteriorating Concrete** - Older Toronto homes often have foundation
+      issues from age, water damage, or poor original construction. Spalling
+      concrete, exposed rebar, and crumbling mortar all compromise structural
+      integrity. We restore or replace based on condition.
+  - title: New Concrete Foundations
+    content: >
+      Sometimes repair isn't enough. Complete replacement makes sense when
+      deterioration exceeds 30% of wall area, multiple previous repairs have
+      failed, or adding stories requires stronger foundations.
+
+
       **The Replacement Process**:
+
       1. **Temporary Support** - We shore your home safely during work
-      2. **Sectional Removal** - Walls replaced in sections to maintain stability
+
+      2. **Sectional Removal** - Walls replaced in sections to maintain
+      stability
+
       3. **Steel Reinforcement** - Proper rebar placement for strength
+
       4. **Quality Concrete** - High-strength mixes for durability
+
       5. **Waterproofing Integration** - Built-in protection from day one
-      
-      This isn't weekend warrior work. It's structural engineering requiring expertise and experience.
 
-# FAQ
+
+      This isn't weekend warrior work. It's structural engineering requiring
+      expertise and experience.
 faq:
-  - question: "How much does foundation wall replacement cost?"
-    answer: |
+  - question: How much does foundation wall replacement cost?
+    answer: >
       Foundation costs vary by scope:
-      
+
+
       **Repair Costs:**
+
       - Crack injection: $500-1,500 per crack
+
       - Carbon fiber reinforcement: $3,000-5,000
+
       - Wall anchors: $400-600 each
+
       - Section replacement: $500-800 per linear foot
-      
+
+
       **Replacement Costs:**
+
       - Complete walls: $300-500 per linear foot
+
       - Including excavation: $500-800 per linear foot
+
       - New footings: $200-400 per linear foot
+
       - Engineering and permits: $2,000-5,000
-      
-      Foundation work isn't optional when needed. Early action costs less than emergency repairs.
 
-  - question: "When should I repair vs replace foundation walls?"
-    answer: |
+
+      Foundation work isn't optional when needed. Early action costs less than
+      emergency repairs.
+  - question: When should I repair vs replace foundation walls?
+    answer: >
       **Repair When:**
+
       - Damage is localized (less than 30% of wall)
+
       - Structure remains fundamentally sound
+
       - Underlying causes can be addressed
+
       - Cost-effective solutions exist
-      
+
+
       **Replace When:**
+
       - Widespread deterioration exists
+
       - Repairs would exceed 50% of replacement cost
+
       - Multiple systems have failed
+
       - Safety concerns exist
+
       - Adding stories or major renovations
-      
-      We assess honestly based on your situation, not what generates most revenue. Sometimes strategic repairs save tens of thousands over replacement.
 
-  - question: "How long does foundation work take?"
-    answer: |
+
+      We assess honestly based on your situation, not what generates most
+      revenue. Sometimes strategic repairs save tens of thousands over
+      replacement.
+  - question: How long does foundation work take?
+    answer: >
       Project timelines depend on scope:
-      
-      **Typical Timelines:**
-      - Crack repairs: 1-2 days
-      - Wall sections: 1-2 weeks
-      - Complete replacement: 3-4 weeks
-      - New footings: 1-2 weeks per section
-      
-      **Managing Disruption:**
-      - Most clients stay home during repairs
-      - Major replacements might require temporary relocation during critical phases
-      - We maintain safe access and protect utilities
-      - Daily cleanup minimizes impact
-      
-      We provide detailed schedules and communicate throughout the project.
 
-  - question: "What makes Toronto foundations unique?"
-    answer: |
+
+      **Typical Timelines:**
+
+      - Crack repairs: 1-2 days
+
+      - Wall sections: 1-2 weeks
+
+      - Complete replacement: 3-4 weeks
+
+      - New footings: 1-2 weeks per section
+
+
+      **Managing Disruption:**
+
+      - Most clients stay home during repairs
+
+      - Major replacements might require temporary relocation during critical
+      phases
+
+      - We maintain safe access and protect utilities
+
+      - Daily cleanup minimizes impact
+
+
+      We provide detailed schedules and communicate throughout the project.
+  - question: What makes Toronto foundations unique?
+    answer: >
       Toronto presents specific foundation challenges:
-      
-      **Clay Soil Movement** - Our clay expands when wet, shrinks when dry, creating cyclical pressure. We design repairs to handle this movement through proper drainage and flexible connections.
-      
-      **Freeze-Thaw Cycles** - Foundations must handle freezing conditions with footings below 4-foot frost line, air-entrained concrete, and proper drainage to prevent ice pressure.
-      
-      **Aging Housing Stock** - Many Toronto homes have 80-100 year old foundations built to different standards. We bring these to modern standards while respecting heritage requirements.
-      
-      **Urban Constraints** - Zero lot lines and limited access require specialized techniques and equipment for tight Toronto conditions.
+
+
+      **Clay Soil Movement** - Our clay expands when wet, shrinks when dry,
+      creating cyclical pressure. We design repairs to handle this movement
+      through proper drainage and flexible connections.
+
+
+      **Freeze-Thaw Cycles** - Foundations must handle freezing conditions with
+      footings below 4-foot frost line, air-entrained concrete, and proper
+      drainage to prevent ice pressure.
+
+
+      **Aging Housing Stock** - Many Toronto homes have 80-100 year old
+      foundations built to different standards. We bring these to modern
+      standards while respecting heritage requirements.
+
+
+      **Urban Constraints** - Zero lot lines and limited access require
+      specialized techniques and equipment for tight Toronto conditions.
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Structural Engineers
+    - City Permits Included
+    - Insurance Claims
 ---
 
 # Concrete Foundation Walls & Footings Toronto

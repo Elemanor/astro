@@ -1,11 +1,60 @@
 ---
-title: "Dimpled Membrane Waterproofing Toronto | Delta Membrane Installation"
-description: "Professional dimpled membrane installation for foundation waterproofing in Toronto. Delta membrane, drainage boards, air gap protection. Expert installers. Call: (437) 545-0067"
-date: 2025-01-31
-type: "service"
-url: "/services/dimpled-membrane-waterproofing/"
-keywords: ["dimpled membrane", "delta membrane", "foundation drainage membrane", "dimple board", "drainage mat", "foundation protection board", "air gap membrane", "delta ms", "platon membrane"]
-schema_type: "Service"
+title: Dimpled Membrane Waterproofing Toronto | Delta Membrane Installation
+description: >-
+  Professional dimpled membrane installation for foundation waterproofing in
+  Toronto. Delta membrane, drainage boards, air gap protection. Expert
+  installers. Call: (437) 545-0067
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/dimpled-membrane-waterproofing/
+keywords:
+  - dimpled membrane
+  - delta membrane
+  - foundation drainage membrane
+  - dimple board
+  - drainage mat
+  - foundation protection board
+  - air gap membrane
+  - delta ms
+  - platon membrane
+schema_type: Service
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Dimpled Membrane Waterproofing Systems

@@ -1,11 +1,59 @@
 ---
-title: "Crystalline Waterproofing for Concrete Foundations | Xypex & KIM Systems"
-description: "Crystalline waterproofing admixtures for concrete foundations in Toronto. Self-healing concrete technology with Xypex, KIM systems. Expert installation. Call: (437) 545-0067"
-date: 2025-01-31
-type: "service"
-url: "/services/crystalline-waterproofing-concrete/"
-keywords: ["crystalline waterproofing", "xypex waterproofing", "KIM waterproofing", "self healing concrete", "concrete admixture waterproofing", "crystalline concrete", "waterproof concrete foundation", "xypex admixture"]
-schema_type: "Service"
+title: Crystalline Waterproofing for Concrete Foundations | Xypex & KIM Systems
+description: >-
+  Crystalline waterproofing admixtures for concrete foundations in Toronto.
+  Self-healing concrete technology with Xypex, KIM systems. Expert installation.
+  Call: (437) 545-0067
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/crystalline-waterproofing-concrete/
+keywords:
+  - crystalline waterproofing
+  - xypex waterproofing
+  - KIM waterproofing
+  - self healing concrete
+  - concrete admixture waterproofing
+  - crystalline concrete
+  - waterproof concrete foundation
+  - xypex admixture
+schema_type: Service
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Crystalline Waterproofing for Concrete Foundations

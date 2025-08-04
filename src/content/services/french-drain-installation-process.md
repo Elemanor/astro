@@ -1,122 +1,211 @@
 ---
-title: "French Drain Installation Process | Complete Step-by-Step Guide Toronto 2025"
-subtitle: "Professional French Drain Installation Process, Timeline, Costs & Municipal Permits"
-seo_title: "French Drain Installation Process Toronto | Complete Step-by-Step Guide 2025"
-description: "Complete French drain installation process guide with 8-12 hour timeline, cost calculator, permits by municipality, materials checklist, maintenance schedule. Expert Toronto installation."
-date: 2025-01-31
-type: "service"
-url: "/services/french-drain-installation-process/"
-keywords: ["french drain installation process", "how to install french drain", "french drain installation cost", "french drain installation steps", "french drain installation timeline", "french drain permit toronto", "french drain materials calculator", "professional french drain installation", "DIY french drain installation", "french drain maintenance schedule"]
-schema_type: "HowTo"
-priority: "high"
+title: French Drain Installation Process | Complete Step-by-Step Guide Toronto 2025
+subtitle: >-
+  Professional French Drain Installation Process, Timeline, Costs & Municipal
+  Permits
+seo_title: French Drain Installation Process Toronto | Complete Step-by-Step Guide 2025
+description: >-
+  Complete French drain installation process guide with 8-12 hour timeline, cost
+  calculator, permits by municipality, materials checklist, maintenance
+  schedule. Expert Toronto installation.
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/french-drain-installation-process/
+keywords:
+  - french drain installation process
+  - how to install french drain
+  - french drain installation cost
+  - french drain installation steps
+  - french drain installation timeline
+  - french drain permit toronto
+  - french drain materials calculator
+  - professional french drain installation
+  - DIY french drain installation
+  - french drain maintenance schedule
+schema_type: HowTo
+priority: high
 related_services:
-  - name: "French Drain Installation"
-    url: "/services/french-drain-installation/"
-    image: "/pics/work/crack_repair.webp"
-  - name: "French Drain Cost Toronto"
-    url: "/cost/french-drain-cost-toronto/"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
-  - name: "Weeping Tile Installation"
-    url: "/services/weeping-tile-installation/"
-    image: "/pics/work/underpinning.webp"
-  - name: "French Drain vs Weeping Tile"
-    url: "/blog/french-drain-vs-weeping-tile-complete-guide/"
-    image: "/pics/work/interior-waterproofing.webp"
-  - name: "Basement Waterproofing"
-    url: "/services/basement-waterproofing/"
-    image: "/pics/work/basement-walkout.webp"
-  - name: "Drainage Systems"
-    url: "/services/drainage-systems/"
-    image: "/pics/work/sump-pump.webp"
+  - name: French Drain Installation
+    url: /services/french-drain-installation/
+    image: /pics/work/crack_repair.webp
+  - name: French Drain Cost Toronto
+    url: /cost/french-drain-cost-toronto/
+    image: /pics/work/exterior-waterproofing-membrane.webp
+  - name: Weeping Tile Installation
+    url: /services/weeping-tile-installation/
+    image: /pics/work/underpinning.webp
+  - name: French Drain vs Weeping Tile
+    url: /blog/french-drain-vs-weeping-tile-complete-guide/
+    image: /pics/work/interior-waterproofing.webp
+  - name: Basement Waterproofing
+    url: /services/basement-waterproofing/
+    image: /pics/work/basement-walkout.webp
+  - name: Drainage Systems
+    url: /services/drainage-systems/
+    image: /pics/work/sump-pump.webp
 installation_phases:
-  - phase: "Assessment & Design"
-    duration: "1-2 days"
-    description: "Site evaluation, soil testing, design development, permit application"
-  - phase: "Excavation & Preparation"
-    duration: "1-3 days"
-    description: "Precise excavation, utility protection, base preparation"
-  - phase: "Installation & Testing"
-    duration: "2-3 days"
-    description: "Pipe installation, gravel backfill, system testing"
-  - phase: "Restoration & Cleanup"
-    duration: "1-2 days"
-    description: "Landscape restoration, final inspection, warranty registration"
+  - phase: Assessment & Design
+    duration: 1-2 days
+    description: 'Site evaluation, soil testing, design development, permit application'
+  - phase: Excavation & Preparation
+    duration: 1-3 days
+    description: 'Precise excavation, utility protection, base preparation'
+  - phase: Installation & Testing
+    duration: 2-3 days
+    description: 'Pipe installation, gravel backfill, system testing'
+  - phase: Restoration & Cleanup
+    duration: 1-2 days
+    description: 'Landscape restoration, final inspection, warranty registration'
 cost_factors:
-  - factor: "System Type"
-    range: "$2,800-$8,500"
-    description: "Interior vs exterior installation complexity"
-  - factor: "Linear Footage"
-    range: "$45-$85/ft"
-    description: "Total length of French drain system required"
-  - factor: "Excavation Depth"
-    range: "$15-$35/ft"
-    description: "Depth requirements based on water table and soil"
-  - factor: "Permits & Inspections"
-    range: "$200-$800"
-    description: "Municipal permits and inspection fees"
+  - factor: System Type
+    range: '$2,800-$8,500'
+    description: Interior vs exterior installation complexity
+  - factor: Linear Footage
+    range: $45-$85/ft
+    description: Total length of French drain system required
+  - factor: Excavation Depth
+    range: $15-$35/ft
+    description: Depth requirements based on water table and soil
+  - factor: Permits & Inspections
+    range: $200-$800
+    description: Municipal permits and inspection fees
 materials_calculator:
-  - item: "Perforated Pipe (4\")"
-    unit: "per linear foot"
-    cost: "$3.50-$6.00"
-    description: "High-quality PVC or corrugated pipe"
-  - item: "Gravel (3/4\" clean stone)"
-    unit: "per cubic yard"
-    cost: "$35-$55"
-    description: "Angular limestone or granite aggregate"
-  - item: "Filter Fabric"
-    unit: "per square foot"
-    cost: "$0.75-$1.25"
-    description: "Non-woven geotextile fabric"
-  - item: "Sump Pump (if required)"
-    unit: "per unit"
-    cost: "$350-$850"
-    description: "High-capacity drainage pump system"
+  - item: Perforated Pipe (4")
+    unit: per linear foot
+    cost: $3.50-$6.00
+    description: High-quality PVC or corrugated pipe
+  - item: Gravel (3/4" clean stone)
+    unit: per cubic yard
+    cost: $35-$55
+    description: Angular limestone or granite aggregate
+  - item: Filter Fabric
+    unit: per square foot
+    cost: $0.75-$1.25
+    description: Non-woven geotextile fabric
+  - item: Sump Pump (if required)
+    unit: per unit
+    cost: $350-$850
+    description: High-capacity drainage pump system
 faq:
-  - question: "How long does French drain installation take?"
-    answer: "Professional French drain installation typically takes 3-7 days depending on system type and complexity. Interior systems average 3-4 days, exterior systems 5-7 days. Weather conditions can affect exterior installations."
-  - question: "What permits are required for French drain installation in Toronto?"
-    answer: "Exterior French drains typically require building permits ($200-$500). Interior installations may need electrical permits for sump pump connections ($150-$300). Professional contractors handle all permit applications and inspections."
-  - question: "How much does French drain installation cost per foot?"
-    answer: "French drain installation costs $45-$85 per linear foot in Toronto, including materials and labor. Interior systems average $45-$65/ft, exterior systems $55-$85/ft. Complex installations with challenging access may cost more."
-  - question: "Can French drains be installed in winter?"
-    answer: "Interior French drains can be installed year-round. Exterior installations are weather-dependent but possible in winter using heated enclosures and specialized techniques. Frozen ground may require hydraulic excavation equipment."
-  - question: "What materials are needed for French drain installation?"
-    answer: "Essential materials include perforated pipe, 3/4\" clean stone gravel, filter fabric, and proper discharge connections. Interior systems require sump pumps, exterior systems need proper outfall connections. Quality materials ensure 30-50 year lifespan."
-  - question: "Do I need a contractor for French drain installation?"
-    answer: "Professional installation is strongly recommended for drainage effectiveness and warranty coverage. Proper slope calculation, material selection, and system integration require specialized knowledge. DIY installations often fail due to design errors."
-  - question: "How deep should French drains be installed?"
-    answer: "French drain depth varies by application: basement protection requires installation at footing level (6-8 feet), yard drainage needs 2-4 feet depth, surface water management uses 1-3 feet. Proper depth ensures effective water collection."
-  - question: "What maintenance does a French drain require?"
-    answer: "Annual maintenance includes discharge point inspection, system flushing if needed, pump testing (interior systems), and filter fabric condition checks. Professional inspection every 2-3 years ensures optimal performance and prevents costly failures."
+  - question: How long does French drain installation take?
+    answer: >-
+      Professional French drain installation typically takes 3-7 days depending
+      on system type and complexity. Interior systems average 3-4 days, exterior
+      systems 5-7 days. Weather conditions can affect exterior installations.
+  - question: What permits are required for French drain installation in Toronto?
+    answer: >-
+      Exterior French drains typically require building permits ($200-$500).
+      Interior installations may need electrical permits for sump pump
+      connections ($150-$300). Professional contractors handle all permit
+      applications and inspections.
+  - question: How much does French drain installation cost per foot?
+    answer: >-
+      French drain installation costs $45-$85 per linear foot in Toronto,
+      including materials and labor. Interior systems average $45-$65/ft,
+      exterior systems $55-$85/ft. Complex installations with challenging access
+      may cost more.
+  - question: Can French drains be installed in winter?
+    answer: >-
+      Interior French drains can be installed year-round. Exterior installations
+      are weather-dependent but possible in winter using heated enclosures and
+      specialized techniques. Frozen ground may require hydraulic excavation
+      equipment.
+  - question: What materials are needed for French drain installation?
+    answer: >-
+      Essential materials include perforated pipe, 3/4" clean stone gravel,
+      filter fabric, and proper discharge connections. Interior systems require
+      sump pumps, exterior systems need proper outfall connections. Quality
+      materials ensure 30-50 year lifespan.
+  - question: Do I need a contractor for French drain installation?
+    answer: >-
+      Professional installation is strongly recommended for drainage
+      effectiveness and warranty coverage. Proper slope calculation, material
+      selection, and system integration require specialized knowledge. DIY
+      installations often fail due to design errors.
+  - question: How deep should French drains be installed?
+    answer: >-
+      French drain depth varies by application: basement protection requires
+      installation at footing level (6-8 feet), yard drainage needs 2-4 feet
+      depth, surface water management uses 1-3 feet. Proper depth ensures
+      effective water collection.
+  - question: What maintenance does a French drain require?
+    answer: >-
+      Annual maintenance includes discharge point inspection, system flushing if
+      needed, pump testing (interior systems), and filter fabric condition
+      checks. Professional inspection every 2-3 years ensures optimal
+      performance and prevents costly failures.
 schema:
-  type: "HowTo"
-  name: "French Drain Installation Process"
-  description: "Complete step-by-step guide to professional French drain installation process, timeline, costs, and maintenance requirements"
-  totalTime: "P5D"
+  type: HowTo
+  name: French Drain Installation Process
+  description: >-
+    Complete step-by-step guide to professional French drain installation
+    process, timeline, costs, and maintenance requirements
+  totalTime: P5D
   estimatedCost:
-    type: "MonetaryAmount"
-    currency: "CAD"
-    value: "5500"
+    type: MonetaryAmount
+    currency: CAD
+    value: '5500'
   supply:
-    - name: "Perforated drainage pipe"
-    - name: "3/4 inch clean stone gravel"
-    - name: "Filter fabric"
-    - name: "Sump pump system"
+    - name: Perforated drainage pipe
+    - name: 3/4 inch clean stone gravel
+    - name: Filter fabric
+    - name: Sump pump system
   tool:
-    - name: "Excavation equipment"
-    - name: "Compaction tools"
-    - name: "Grading equipment"
+    - name: Excavation equipment
+    - name: Compaction tools
+    - name: Grading equipment
   step:
-    - name: "Site Assessment"
-      text: "Comprehensive site evaluation including soil testing, water flow analysis, and permit requirements"
-    - name: "Design Development"
-      text: "Custom French drain system design with proper slope calculations and material specifications"
-    - name: "Excavation"
-      text: "Precise excavation following utility locates and safety protocols"
-    - name: "Installation"
-      text: "Professional pipe installation with proper grading and premium materials"
-    - name: "Testing & Restoration"
-      text: "System testing, landscape restoration, and warranty registration"
+    - name: Site Assessment
+      text: >-
+        Comprehensive site evaluation including soil testing, water flow
+        analysis, and permit requirements
+    - name: Design Development
+      text: >-
+        Custom French drain system design with proper slope calculations and
+        material specifications
+    - name: Excavation
+      text: Precise excavation following utility locates and safety protocols
+    - name: Installation
+      text: Professional pipe installation with proper grading and premium materials
+    - name: Testing & Restoration
+      text: 'System testing, landscape restoration, and warranty registration'
+starting_price: '$2,999'
+price_range: '$2,999 - $8,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Same Day Service
+    - Camera Inspections
+    - 10 Year Warranty
 ---
 
 # French Drain Installation Process - Complete Step-by-Step Guide

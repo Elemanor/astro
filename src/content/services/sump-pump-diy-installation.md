@@ -1,34 +1,51 @@
 ---
-title: "Sump Pump DIY Installation Guide"
-subtitle: "Complete Code-Compliant Installation Instructions"
-seo_title: "Sump Pump DIY Installation Toronto | Code Requirements & Guide"
-description: "Step-by-step guide for DIY sump pump installation meeting Ontario Building Code. Learn proper pit installation, electrical requirements, discharge routing, and when to call professionals. Complete instructions for reliable flood protection."
-type: "service"
-url: "/services/sump-pump-diy-installation/"
+title: Sump Pump DIY Installation Guide
+subtitle: Complete Code-Compliant Installation Instructions
+seo_title: Sump Pump DIY Installation Toronto | Code Requirements & Guide
+description: >-
+  Step-by-step guide for DIY sump pump installation meeting Ontario Building
+  Code. Learn proper pit installation, electrical requirements, discharge
+  routing, and when to call professionals. Complete instructions for reliable
+  flood protection.
+type: service
+url: /services/sump-pump-diy-installation/
 related_services:
-  - title: "Sump Pump Installation"
-    url: "/services/sump-pump-installation"
-    description: "Professional sump pump installation service"
-    image: "/images/sump-pump-installation.jpg"
-  - title: "Interior Waterproofing"
-    url: "/services/interior-waterproofing"
-    description: "Complete interior drainage systems"
-    image: "/images/interior-waterproofing.jpg"
-  - title: "Basement Drainage Guide"
-    url: "/services/basement-drainage-diy-guide"
-    description: "DIY drainage installation instructions"
-    image: "/images/basement-drainage.jpg"
+  - title: Sump Pump Installation
+    url: /services/sump-pump-installation
+    description: Professional sump pump installation service
+    image: /images/sump-pump-installation.jpg
+  - title: Interior Waterproofing
+    url: /services/interior-waterproofing
+    description: Complete interior drainage systems
+    image: /images/interior-waterproofing.jpg
+  - title: Basement Drainage Guide
+    url: /services/basement-drainage-diy-guide
+    description: DIY drainage installation instructions
+    image: /images/basement-drainage.jpg
 sections:
-  - title: "DIY Installation Guide - For Homeowners Only"
-    content: |
-      **Important Notice**: This guide is specifically for homeowners who want to install their own sump pump system. If you're looking for professional installation services, please visit our [professional sump pump installation](/services/sump-pump-installation/) page instead.
+  - title: DIY Installation Guide - For Homeowners Only
+    content: >
+      **Important Notice**: This guide is specifically for homeowners who want
+      to install their own sump pump system. If you're looking for professional
+      installation services, please visit our [professional sump pump
+      installation](/services/sump-pump-installation/) page instead.
 
-      Installing a sump pump is one of the few basement waterproofing projects suitable for experienced DIYers. Done correctly, you'll have reliable flood protection. Done wrong, you'll have an expensive hole in your floor that doesn't work when you need it most.
 
-      This guide provides exact specifications, code requirements, and step-by-step instructions for proper sump pump installation in Toronto. We'll cover what inspectors look for, common mistakes that cause failures, and when you should call professionals instead.
+      Installing a sump pump is one of the few basement waterproofing projects
+      suitable for experienced DIYers. Done correctly, you'll have reliable
+      flood protection. Done wrong, you'll have an expensive hole in your floor
+      that doesn't work when you need it most.
 
-      Remember: A sump pump is only as good as its installation. The best pump fails if installed incorrectly.
-  - title: "Ontario Building Code Requirements"
+
+      This guide provides exact specifications, code requirements, and
+      step-by-step instructions for proper sump pump installation in Toronto.
+      We'll cover what inspectors look for, common mistakes that cause failures,
+      and when you should call professionals instead.
+
+
+      Remember: A sump pump is only as good as its installation. The best pump
+      fails if installed incorrectly.
+  - title: Ontario Building Code Requirements
     content: |
       ### Legal Requirements for Sump Pump Installation
 
@@ -65,7 +82,7 @@ sections:
       - Plumbing permit sometimes required
       - Check local requirements
       - Inspections needed
-  - title: "Sump Pump Selection Guide"
+  - title: Sump Pump Selection Guide
     content: |
       ### Choosing the Right Pump
 
@@ -103,7 +120,7 @@ sections:
       - Vertical float switch
       - Thermal overload protection
       - 3-year+ warranty
-  - title: "Sump Pit Specifications"
+  - title: Sump Pit Specifications
     content: |
       ### The Foundation of Your System
 
@@ -148,7 +165,7 @@ sections:
       - Level carefully
       - Compact lightly
       - Creates drainage layer
-  - title: "Pump Installation Process"
+  - title: Pump Installation Process
     content: |
       ### Step-by-Step Installation
 
@@ -193,7 +210,7 @@ sections:
       - Slope away from pit
       - Support every 4 feet
       - Include cleanout
-  - title: "Electrical Installation"
+  - title: Electrical Installation
     content: |
       ### Critical Safety Component
 
@@ -235,7 +252,7 @@ sections:
       - Check connections
       - Test with meter
       - Document completion
-  - title: "Discharge Line Installation"
+  - title: Discharge Line Installation
     content: |
       ### Where Water Goes Matters
 
@@ -275,7 +292,7 @@ sections:
       - Alternative discharge ready
       - Heat tape if needed
       - Monitor in cold
-  - title: "Concrete Patching"
+  - title: Concrete Patching
     content: |
       ### Professional Finish
 
@@ -300,7 +317,7 @@ sections:
       - Control joints if needed
       - Slope slightly to pit
       - Seal after curing
-  - title: "Testing and Commissioning"
+  - title: Testing and Commissioning
     content: |
       ### Ensuring Proper Operation
 
@@ -331,7 +348,7 @@ sections:
       - Keep receipts
       - Photo installation
       - File warranty
-  - title: "Common DIY Mistakes"
+  - title: Common DIY Mistakes
     content: |
       ### What Goes Wrong
 
@@ -362,7 +379,7 @@ sections:
       - Pipe not supported (breaks)
       - No slope (water sits)
       - Freezes in winter (backup)
-  - title: "Backup System Options"
+  - title: Backup System Options
     content: |
       ### Don't Rely on One Pump
 
@@ -393,7 +410,7 @@ sections:
       - Tee into discharge
       - Test monthly
       - Replace batteries annually
-  - title: "Maintenance Requirements"
+  - title: Maintenance Requirements
     content: |
       ### Keeping Your Pump Working
 
@@ -424,7 +441,7 @@ sections:
       - Unusual noises
       - Reduced flow
       - Visible damage
-  - title: "When to Call Professionals"
+  - title: When to Call Professionals
     content: |
       ### Recognizing Your Limits
 
@@ -454,7 +471,7 @@ sections:
       - Warranty on work
       - Insurance if problems
       - Experience prevents mistakes
-  - title: "Troubleshooting Guide"
+  - title: Troubleshooting Guide
     content: |
       ### Common Problems and Solutions
 
@@ -485,7 +502,7 @@ sections:
       - Discharge restricted
       - Voltage drop
       - Wrong pump size
-  - title: "Final Installation Checklist"
+  - title: Final Installation Checklist
     content: |
       ### Before Calling It Complete
 
@@ -517,7 +534,7 @@ sections:
       - [ ] Photos taken
       - [ ] Receipts saved
       - [ ] Manual accessible
-  - title: "Tips for Success"
+  - title: Tips for Success
     content: |
       ### Making Your Installation Last
 
@@ -549,56 +566,131 @@ sections:
       - Maintenance prevents failure
       - Quality components matter
 faq:
-  - question: "What size sump pump do I need for my basement?"
-    answer: "Most homes need a 1/3 HP pump (2,500-3,000 GPH). If you have high water volume or a deep pit, go with 1/2 HP. Calculate based on: pit size, water inflow rate, and discharge height. When in doubt, go larger - oversizing is better than undersizing."
-  - question: "Can I install a sump pump without breaking concrete?"
-    answer: "No, proper installation requires breaking concrete to install a pit at least 18 inches wide and 30 inches deep. Surface-mounted pumps or pumps in buckets don't work effectively and don't meet code. The pit must be below floor level to collect water."
-  - question: "Do I need a permit to install a sump pump?"
-    answer: "You'll need an electrical permit for the new dedicated circuit (required by code). Some municipalities also require a plumbing permit. Check local requirements - working without permits can void insurance and cause problems during home sales."
-  - question: "Where can I discharge my sump pump water?"
-    answer: "Discharge must be at least 6 feet from your foundation, preferably 10+ feet. You can discharge to your lawn, storm sewer (if permitted), or dry well. NEVER discharge to sanitary sewers - it's illegal and results in heavy fines."
-  - question: "How deep should the sump pit be?"
-    answer: "Ontario Building Code requires minimum 30 inches deep. Deeper is better - 36-42 inches provides more capacity and prevents short cycling. The pit should extend below your foundation footings to collect water before it enters the basement."
-  - question: "Can I use an extension cord for my sump pump?"
-    answer: "No! Code requires a dedicated circuit with permanent wiring. Extension cords are fire hazards, can trip breakers under load, and may not provide proper grounding. Install a proper GFCI-protected outlet at least 4 feet above the floor."
-  - question: "Should I install a battery backup system?"
-    answer: "Yes, especially if you have a finished basement or high water table. Power failures often occur during storms when you need the pump most. Battery backups cost $600-1,200 but can prevent thousands in flood damage."
-  - question: "Why does my new sump pump run every few minutes?"
-    answer: "Short cycling usually means the pit is too small or the pump is too powerful. The pump should run for at least 10-15 seconds per cycle. If cycling is too frequent, you may need a larger pit or a pump with adjustable float settings."
-  - question: "Can I install the check valve horizontally?"
-    answer: "No, check valves must be installed vertically to work properly. Horizontal installation causes premature failure and water hammer. Install the check valve directly above the pump in the vertical discharge pipe."
-  - question: "How much does DIY sump pump installation actually cost?"
-    answer: "Total DIY cost typically runs $800-1,500: pump ($200-400), pit ($100-200), concrete work ($100), discharge piping ($100-200), electrical supplies ($200-300), tool rental ($100-200). Professional installation costs $1,500-3,000, making DIY savings $700-1,500."
+  - question: What size sump pump do I need for my basement?
+    answer: >-
+      Most homes need a 1/3 HP pump (2,500-3,000 GPH). If you have high water
+      volume or a deep pit, go with 1/2 HP. Calculate based on: pit size, water
+      inflow rate, and discharge height. When in doubt, go larger - oversizing
+      is better than undersizing.
+  - question: Can I install a sump pump without breaking concrete?
+    answer: >-
+      No, proper installation requires breaking concrete to install a pit at
+      least 18 inches wide and 30 inches deep. Surface-mounted pumps or pumps in
+      buckets don't work effectively and don't meet code. The pit must be below
+      floor level to collect water.
+  - question: Do I need a permit to install a sump pump?
+    answer: >-
+      You'll need an electrical permit for the new dedicated circuit (required
+      by code). Some municipalities also require a plumbing permit. Check local
+      requirements - working without permits can void insurance and cause
+      problems during home sales.
+  - question: Where can I discharge my sump pump water?
+    answer: >-
+      Discharge must be at least 6 feet from your foundation, preferably 10+
+      feet. You can discharge to your lawn, storm sewer (if permitted), or dry
+      well. NEVER discharge to sanitary sewers - it's illegal and results in
+      heavy fines.
+  - question: How deep should the sump pit be?
+    answer: >-
+      Ontario Building Code requires minimum 30 inches deep. Deeper is better -
+      36-42 inches provides more capacity and prevents short cycling. The pit
+      should extend below your foundation footings to collect water before it
+      enters the basement.
+  - question: Can I use an extension cord for my sump pump?
+    answer: >-
+      No! Code requires a dedicated circuit with permanent wiring. Extension
+      cords are fire hazards, can trip breakers under load, and may not provide
+      proper grounding. Install a proper GFCI-protected outlet at least 4 feet
+      above the floor.
+  - question: Should I install a battery backup system?
+    answer: >-
+      Yes, especially if you have a finished basement or high water table. Power
+      failures often occur during storms when you need the pump most. Battery
+      backups cost $600-1,200 but can prevent thousands in flood damage.
+  - question: Why does my new sump pump run every few minutes?
+    answer: >-
+      Short cycling usually means the pit is too small or the pump is too
+      powerful. The pump should run for at least 10-15 seconds per cycle. If
+      cycling is too frequent, you may need a larger pit or a pump with
+      adjustable float settings.
+  - question: Can I install the check valve horizontally?
+    answer: >-
+      No, check valves must be installed vertically to work properly. Horizontal
+      installation causes premature failure and water hammer. Install the check
+      valve directly above the pump in the vertical discharge pipe.
+  - question: How much does DIY sump pump installation actually cost?
+    answer: >-
+      Total DIY cost typically runs $800-1,500: pump ($200-400), pit ($100-200),
+      concrete work ($100), discharge piping ($100-200), electrical supplies
+      ($200-300), tool rental ($100-200). Professional installation costs
+      $1,500-3,000, making DIY savings $700-1,500.
 schema:
-  type: "Service"
-  name: "Sump Pump Installation Guide"
+  type: Service
+  name: Sump Pump Installation Guide
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "North York"
-    - "Scarborough"
-    - "Etobicoke"
-    - "East York"
-    - "York"
-    - "Mississauga"
-    - "Brampton"
-    - "Vaughan"
-    - "Richmond Hill"
-    - "Markham"
+    - Toronto
+    - North York
+    - Scarborough
+    - Etobicoke
+    - East York
+    - York
+    - Mississauga
+    - Brampton
+    - Vaughan
+    - Richmond Hill
+    - Markham
   serviceType:
-    - "DIY Installation Guide"
-    - "Sump Pump Installation"
-    - "Basement Waterproofing"
-    - "Flood Prevention"
-    - "Code Compliance Guide"
+    - DIY Installation Guide
+    - Sump Pump Installation
+    - Basement Waterproofing
+    - Flood Prevention
+    - Code Compliance Guide
   offers:
-    - "Installation Instructions"
-    - "Code Requirements"
-    - "Professional Service"
-    - "Troubleshooting Support"
-    - "Maintenance Guidance"
+    - Installation Instructions
+    - Code Requirements
+    - Professional Service
+    - Troubleshooting Support
+    - Maintenance Guidance
+starting_price: '$1,299'
+price_range: '$1,299 - $3,999'
+benefits:
+  - title: Flood Prevention
+    description: Reliable water removal prevents costly basement flooding
+  - title: Battery Backup Options
+    description: Keep pumping during power outages with backup systems
+  - title: Smart Monitoring
+    description: WiFi-enabled pumps alert you to issues before they become disasters
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Location Assessment
+    description: Determine optimal pump location for water collection
+    icon: target
+  - title: Pit Excavation
+    description: Dig sump pit to proper depth and dimensions
+    icon: shovel
+  - title: Pump Installation
+    description: 'Install pump, check valve, and discharge system'
+    icon: pump
+  - title: Testing & Training
+    description: Test system thoroughly and train on maintenance
+    icon: checklist
+hero:
+  features:
+    - Battery Backup Available
+    - WiFi Monitoring
+    - Annual Maintenance
 ---
 
 # Sump Pump DIY Installation Guide

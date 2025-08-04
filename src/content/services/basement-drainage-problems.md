@@ -1,13 +1,78 @@
 ---
-title: "Basement Drainage Problems | Problem-Solution Structure | 85/100 Effectiveness"
-description: "Basement drainage problems solutions. Problem identification → Professional solutions → Cost analysis. French drains, sump pumps, waterproofing. Call (437) 545-0067."
-date: 2025-01-31
-type: "service"
-url: "/services/basement-drainage-problems/"
-keywords: ["basement drainage problems", "basement water problems", "poor basement drainage", "basement flooding issues", "drainage system failure", "basement moisture problems", "foundation drainage issues", "basement water damage", "drainage solutions", "basement leak problems", "water in basement", "basement flooding prevention", "drainage repair", "basement waterproofing problems", "foundation water problems", "basement humidity problems", "wet basement causes", "drainage system repair", "basement water seepage", "foundation leak repair", "basement flood damage", "drainage contractor", "waterproofing solutions", "basement water removal", "emergency drainage repair"]
-schema_type: "Service"
-service_type: "basement drainage repair"
+title: Basement Drainage Problems | Problem-Solution Structure | 85/100 Effectiveness
+description: >-
+  Basement drainage problems solutions. Problem identification → Professional
+  solutions → Cost analysis. French drains, sump pumps, waterproofing. Call
+  (437) 545-0067.
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/basement-drainage-problems/
+keywords:
+  - basement drainage problems
+  - basement water problems
+  - poor basement drainage
+  - basement flooding issues
+  - drainage system failure
+  - basement moisture problems
+  - foundation drainage issues
+  - basement water damage
+  - drainage solutions
+  - basement leak problems
+  - water in basement
+  - basement flooding prevention
+  - drainage repair
+  - basement waterproofing problems
+  - foundation water problems
+  - basement humidity problems
+  - wet basement causes
+  - drainage system repair
+  - basement water seepage
+  - foundation leak repair
+  - basement flood damage
+  - drainage contractor
+  - waterproofing solutions
+  - basement water removal
+  - emergency drainage repair
+schema_type: Service
+service_type: basement drainage repair
 problem_solution_structure: true
+starting_price: '$1,999'
+price_range: '$1,999 - $7,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Same Day Service
+    - Camera Inspections
+    - 10 Year Warranty
 ---
 
 # Basement Drainage Problems - Problem → Solution → Cost Structure (85/100 Effectiveness)

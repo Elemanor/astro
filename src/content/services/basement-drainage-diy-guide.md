@@ -1,32 +1,47 @@
 ---
-title: "Basement Drainage Complete DIY Guide"
-subtitle: "Building Code Requirements and Proper Installation"
-seo_title: "Basement Drainage DIY Guide Toronto | Code Requirements & Installation"
-description: "Complete guide to installing basement drainage that meets Ontario Building Code. Learn proper pipe types, slope calculations, gravel specifications, and inspection requirements. Professional-grade instructions for DIY drainage installation."
-type: "service"
-url: "/services/basement-drainage-diy-guide/"
+title: Basement Drainage Complete DIY Guide
+subtitle: Building Code Requirements and Proper Installation
+seo_title: Basement Drainage DIY Guide Toronto | Code Requirements & Installation
+description: >-
+  Complete guide to installing basement drainage that meets Ontario Building
+  Code. Learn proper pipe types, slope calculations, gravel specifications, and
+  inspection requirements. Professional-grade instructions for DIY drainage
+  installation.
+type: service
+url: /services/basement-drainage-diy-guide/
 related_services:
-  - title: "Interior Waterproofing"
-    url: "/services/interior-waterproofing"
-    description: "Professional interior drainage systems"
-    image: "/images/interior-waterproofing.jpg"
-  - title: "Sump Pump Installation"
-    url: "/services/sump-pump-installation"
-    description: "Proper sump pump setup and connection"
-    image: "/images/sump-pump-installation.jpg"
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing"
-    description: "Complete exterior drainage solutions"
-    image: "/images/exterior-waterproofing.jpg"
+  - title: Interior Waterproofing
+    url: /services/interior-waterproofing
+    description: Professional interior drainage systems
+    image: /images/interior-waterproofing.jpg
+  - title: Sump Pump Installation
+    url: /services/sump-pump-installation
+    description: Proper sump pump setup and connection
+    image: /images/sump-pump-installation.jpg
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing
+    description: Complete exterior drainage solutions
+    image: /images/exterior-waterproofing.jpg
 sections:
-  - title: "Building Code Requirements and Proper Installation"
-    content: |
-      Installing basement drainage isn't just about keeping water out - it's about doing it right, meeting code, and passing inspection. Whether you're adding a bathroom, installing interior waterproofing, or improving existing drainage, this guide covers every requirement, specification, and inspection point you need to know.
+  - title: Building Code Requirements and Proper Installation
+    content: >
+      Installing basement drainage isn't just about keeping water out - it's
+      about doing it right, meeting code, and passing inspection. Whether you're
+      adding a bathroom, installing interior waterproofing, or improving
+      existing drainage, this guide covers every requirement, specification, and
+      inspection point you need to know.
 
-      Toronto's building code has specific requirements for basement drainage. Get it wrong and you'll fail inspection, void insurance, or worse - flood your basement. Get it right and you'll have a dry, functional basement that adds value to your home.
 
-      This guide provides exact specifications, material requirements, and step-by-step installation details that meet or exceed Ontario Building Code requirements.
-  - title: "Ontario Building Code Requirements"
+      Toronto's building code has specific requirements for basement drainage.
+      Get it wrong and you'll fail inspection, void insurance, or worse - flood
+      your basement. Get it right and you'll have a dry, functional basement
+      that adds value to your home.
+
+
+      This guide provides exact specifications, material requirements, and
+      step-by-step installation details that meet or exceed Ontario Building
+      Code requirements.
+  - title: Ontario Building Code Requirements
     content: |
       ### Minimum Standards for Basement Drainage
 
@@ -64,7 +79,7 @@ sections:
       - Backwater valve if below street
       - Primer required or deep seal
       - Accessible cleanout needed
-  - title: "Types of Drainage Pipes"
+  - title: Types of Drainage Pipes
     content: |
       ### Choosing the Right Pipe for Your Application
 
@@ -98,7 +113,7 @@ sections:
       - **Found**: Older homes
       - **Issues**: Breaks, clogs, roots
       - **Replace**: With modern PVC
-  - title: "Proper Glue and Connections"
+  - title: Proper Glue and Connections
     content: |
       ### The Right Way to Join Pipes
 
@@ -132,7 +147,7 @@ sections:
       - Never underground exterior
       - Accessible locations only
       - Two clamps minimum
-  - title: "Slope Calculations and Installation"
+  - title: Slope Calculations and Installation
     content: |
       ### Getting the Grade Right
 
@@ -169,7 +184,7 @@ sections:
       - Reverse slope sections
       - Too much slope (>4%)
       - Settling after backfill
-  - title: "Gravel Specifications"
+  - title: Gravel Specifications
     content: |
       ### The Foundation of Good Drainage
 
@@ -204,7 +219,7 @@ sections:
       7. **Cover Pipe**: 6" minimum above
       8. **Fabric Wrap**: Burrito style
       9. **Backfill**: With appropriate material
-  - title: "Concrete Work for Drains"
+  - title: Concrete Work for Drains
     content: |
       ### Protecting and Finishing Drainage
 
@@ -240,7 +255,7 @@ sections:
       - Low slump (75-100mm)
       - Proper consolidation
       - No segregation
-  - title: "Inspection Requirements"
+  - title: Inspection Requirements
     content: |
       ### What Inspectors Look For
 
@@ -280,7 +295,7 @@ sections:
       - Have permit ready
       - Know your system
       - Be present for inspection
-  - title: "Interior Drainage Systems"
+  - title: Interior Drainage Systems
     content: |
       ### Managing Water Inside Basements
 
@@ -309,7 +324,7 @@ sections:
       - Holes up (clogs immediately)
       - No cleanouts (maintenance impossible)
       - Poor sump connection
-  - title: "Exterior Drainage Systems"
+  - title: Exterior Drainage Systems
     content: |
       ### Preventing Water Entry
 
@@ -333,7 +348,7 @@ sections:
       - Proper pipe orientation
       - Quality filter fabric
       - Connect to positive drainage
-  - title: "Backwater Valve Requirements"
+  - title: Backwater Valve Requirements
     content: |
       ### Protecting Against Sewer Backup
 
@@ -356,7 +371,7 @@ sections:
       - Accessible location
       - Proper installation
       - Maintenance access
-  - title: "Sump Pump Connections"
+  - title: Sump Pump Connections
     content: |
       ### Proper Drainage Termination
 
@@ -380,7 +395,7 @@ sections:
       - No check valve
       - Undersized pipe
       - Creates icing hazard
-  - title: "Floor Drain Specifications"
+  - title: Floor Drain Specifications
     content: |
       ### Proper Installation Requirements
 
@@ -405,7 +420,7 @@ sections:
       - Deep seal trap
       - Electronic primer
       - Manual fill
-  - title: "Troubleshooting Drainage Problems"
+  - title: Troubleshooting Drainage Problems
     content: |
       ### Common Issues and Solutions
 
@@ -429,7 +444,7 @@ sections:
       - Undersized pipe
       - No cleanouts
       - Root intrusion
-  - title: "Material Shopping List"
+  - title: Material Shopping List
     content: |
       ### What You Need for DIY Drainage
 
@@ -460,7 +475,7 @@ sections:
       - Utility locates
       - Disposal plan
       - Help for concrete
-  - title: "DIY vs Professional"
+  - title: DIY vs Professional
     content: |
       ### Honest Assessment
 
@@ -493,7 +508,7 @@ sections:
       - Inspection relationships
       - Warranties included
       - Insurance if problems
-  - title: "Final Tips for Success"
+  - title: Final Tips for Success
     content: |
       ### Ensuring Your Drainage Works
 
@@ -525,56 +540,132 @@ sections:
       - Inspections protect you
       - Quality materials matter
 faq:
-  - question: "What's the minimum slope required for basement drainage?"
-    answer: "Ontario Building Code requires minimum 1% slope (1/8 inch per foot), but 2% (1/4 inch per foot) is recommended for better flow. Never exceed 4% slope as pipes can separate. Consistent slope throughout the entire run is critical."
-  - question: "Should drainage pipe holes face up or down?"
-    answer: "Holes MUST face DOWN, not up. This is the most common DIY mistake. Water enters through the gravel bed below, not from above. Holes facing up will clog immediately with sediment. Position pipes with two rows of holes at 4 and 8 o'clock."
-  - question: "Can I use corrugated black pipe for basement drainage?"
-    answer: "No. Corrugated flexible pipe is not code-compliant for permanent basement drainage. It crushes easily, clogs frequently, and has poor flow rates. Use only rigid PVC pipe - 4 inch perforated for drainage, solid for discharge lines."
-  - question: "What type of gravel should I use around drainage pipes?"
-    answer: "Use 3/4 inch (19mm) clear stone only. Never use crusher run or any gravel with fines - they'll clog your system. You need 6 inches of clear stone below the pipe and 6 inches above. This is not the place to save money."
-  - question: "Do I need a permit for basement drainage work?"
-    answer: "Yes, most drainage work requires a plumbing permit. This includes new floor drains, sump pit installation, and perimeter drainage systems. Permits ensure code compliance and protect you during resale. Work without permits may void insurance."
-  - question: "How do I connect drainage to my sump pump?"
-    answer: "Drainage pipes should enter the sump pit through properly sized holes cut 4-6 inches below the rim. Maintain slope right to the pit. Use rubber grommets to seal penetrations. Never connect drainage directly to the pump."
-  - question: "What's required for inspection to pass?"
-    answer: "Inspectors check: proper pipe size (4 inch minimum), consistent slope (1% minimum), purple primer on all PVC joints, approved materials, proper support, accessible cleanouts, and backwater valves where required. Test your system before inspection."
-  - question: "Can I discharge my sump pump into the floor drain?"
-    answer: "No, this is illegal. Sump pumps cannot discharge to sanitary sewers. They must discharge outside, 10 feet minimum from foundation, or to storm sewers where permitted. Connecting to floor drains can cause sewage backups and hefty fines."
-  - question: "How deep should interior perimeter drains be installed?"
-    answer: "Interior drains must be installed at or slightly below the footing bottom to capture water before it enters under the slab. This typically means 12-16 inches below basement floor level. Installing too shallow misses water."
-  - question: "When is a backwater valve required?"
-    answer: "Backwater valves are required for any fixture below street level or in areas prone to sewer backup. This includes most basement floor drains and plumbing fixtures. They prevent sewage from backing up into your basement during heavy rains."
+  - question: What's the minimum slope required for basement drainage?
+    answer: >-
+      Ontario Building Code requires minimum 1% slope (1/8 inch per foot), but
+      2% (1/4 inch per foot) is recommended for better flow. Never exceed 4%
+      slope as pipes can separate. Consistent slope throughout the entire run is
+      critical.
+  - question: Should drainage pipe holes face up or down?
+    answer: >-
+      Holes MUST face DOWN, not up. This is the most common DIY mistake. Water
+      enters through the gravel bed below, not from above. Holes facing up will
+      clog immediately with sediment. Position pipes with two rows of holes at 4
+      and 8 o'clock.
+  - question: Can I use corrugated black pipe for basement drainage?
+    answer: >-
+      No. Corrugated flexible pipe is not code-compliant for permanent basement
+      drainage. It crushes easily, clogs frequently, and has poor flow rates.
+      Use only rigid PVC pipe - 4 inch perforated for drainage, solid for
+      discharge lines.
+  - question: What type of gravel should I use around drainage pipes?
+    answer: >-
+      Use 3/4 inch (19mm) clear stone only. Never use crusher run or any gravel
+      with fines - they'll clog your system. You need 6 inches of clear stone
+      below the pipe and 6 inches above. This is not the place to save money.
+  - question: Do I need a permit for basement drainage work?
+    answer: >-
+      Yes, most drainage work requires a plumbing permit. This includes new
+      floor drains, sump pit installation, and perimeter drainage systems.
+      Permits ensure code compliance and protect you during resale. Work without
+      permits may void insurance.
+  - question: How do I connect drainage to my sump pump?
+    answer: >-
+      Drainage pipes should enter the sump pit through properly sized holes cut
+      4-6 inches below the rim. Maintain slope right to the pit. Use rubber
+      grommets to seal penetrations. Never connect drainage directly to the
+      pump.
+  - question: What's required for inspection to pass?
+    answer: >-
+      Inspectors check: proper pipe size (4 inch minimum), consistent slope (1%
+      minimum), purple primer on all PVC joints, approved materials, proper
+      support, accessible cleanouts, and backwater valves where required. Test
+      your system before inspection.
+  - question: Can I discharge my sump pump into the floor drain?
+    answer: >-
+      No, this is illegal. Sump pumps cannot discharge to sanitary sewers. They
+      must discharge outside, 10 feet minimum from foundation, or to storm
+      sewers where permitted. Connecting to floor drains can cause sewage
+      backups and hefty fines.
+  - question: How deep should interior perimeter drains be installed?
+    answer: >-
+      Interior drains must be installed at or slightly below the footing bottom
+      to capture water before it enters under the slab. This typically means
+      12-16 inches below basement floor level. Installing too shallow misses
+      water.
+  - question: When is a backwater valve required?
+    answer: >-
+      Backwater valves are required for any fixture below street level or in
+      areas prone to sewer backup. This includes most basement floor drains and
+      plumbing fixtures. They prevent sewage from backing up into your basement
+      during heavy rains.
 schema:
-  type: "Service"
-  name: "Basement Drainage Installation Guide"
+  type: Service
+  name: Basement Drainage Installation Guide
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "North York"
-    - "Scarborough"
-    - "Etobicoke"
-    - "East York"
-    - "York"
-    - "Mississauga"
-    - "Brampton"
-    - "Vaughan"
-    - "Richmond Hill"
-    - "Markham"
+    - Toronto
+    - North York
+    - Scarborough
+    - Etobicoke
+    - East York
+    - York
+    - Mississauga
+    - Brampton
+    - Vaughan
+    - Richmond Hill
+    - Markham
   serviceType:
-    - "Drainage Installation Guide"
-    - "DIY Basement Drainage"
-    - "Code Compliance"
-    - "Drainage Systems"
-    - "Waterproofing Support"
+    - Drainage Installation Guide
+    - DIY Basement Drainage
+    - Code Compliance
+    - Drainage Systems
+    - Waterproofing Support
   offers:
-    - "Code Requirements"
-    - "Installation Instructions"
-    - "Material Specifications"
-    - "Inspection Guidance"
-    - "Professional Support"
+    - Code Requirements
+    - Installation Instructions
+    - Material Specifications
+    - Inspection Guidance
+    - Professional Support
+starting_price: '$1,999'
+price_range: '$1,999 - $7,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Same Day Service
+    - Camera Inspections
+    - 10 Year Warranty
 ---
 
 # Basement Drainage Complete DIY Guide

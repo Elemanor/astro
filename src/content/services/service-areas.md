@@ -1,43 +1,94 @@
 ---
-title: "Service Areas - Greater Toronto Area Coverage"
-subtitle: "Professional Waterproofing & Foundation Services Throughout the GTA"
-seo_title: "Service Areas | Toronto, Mississauga, Markham & GTA Waterproofing"
-description: "DrySpace Waterproofing serves the Greater Toronto Area with professional basement waterproofing, foundation repair, and drainage solutions. Coverage map, response times, and area-specific services."
-date: 2025-01-31
-type: "page"
-url: "/services/service-areas/"
-
+title: Service Areas - Greater Toronto Area Coverage
+subtitle: Professional Waterproofing & Foundation Services Throughout the GTA
+seo_title: 'Service Areas | Toronto, Mississauga, Markham & GTA Waterproofing'
+description: >-
+  DrySpace Waterproofing serves the Greater Toronto Area with professional
+  basement waterproofing, foundation repair, and drainage solutions. Coverage
+  map, response times, and area-specific services.
+date: 2025-01-31T00:00:00.000Z
+type: page
+url: /services/service-areas/
 sections:
-  - title: "Comprehensive GTA Coverage"
-    content: |
-      DrySpace Waterproofing has served the Greater Toronto Area since 1998, providing professional waterproofing and foundation services to residential and commercial properties. Our strategic location and multiple crews ensure prompt response throughout the GTA.
-      
-      We understand each area's unique challenges - from Toronto's aging infrastructure to Mississauga's clay soil conditions. Our local expertise ensures effective solutions tailored to your neighborhood's specific needs.
+  - title: Comprehensive GTA Coverage
+    content: >
+      DrySpace Waterproofing has served the Greater Toronto Area since 1998,
+      providing professional waterproofing and foundation services to
+      residential and commercial properties. Our strategic location and multiple
+      crews ensure prompt response throughout the GTA.
 
-  - title: "Why Local Expertise Matters"
-    content: |
+
+      We understand each area's unique challenges - from Toronto's aging
+      infrastructure to Mississauga's clay soil conditions. Our local expertise
+      ensures effective solutions tailored to your neighborhood's specific
+      needs.
+  - title: Why Local Expertise Matters
+    content: >
       **Area-Specific Knowledge**
-      
-      Every neighborhood faces unique water management challenges. High water tables in certain areas, clay soil in others, and varying ages of infrastructure all require specialized approaches. Our decades of local experience mean we know exactly what works in your area.
-      
-      We maintain relationships with local permit offices, understand municipal requirements, and work seamlessly with area utilities. This local knowledge translates to faster, more efficient service for you.
 
+
+      Every neighborhood faces unique water management challenges. High water
+      tables in certain areas, clay soil in others, and varying ages of
+      infrastructure all require specialized approaches. Our decades of local
+      experience mean we know exactly what works in your area.
+
+
+      We maintain relationships with local permit offices, understand municipal
+      requirements, and work seamlessly with area utilities. This local
+      knowledge translates to faster, more efficient service for you.
 schema:
-  type: "LocalBusiness"
-  name: "DrySpace Waterproofing"
+  type: LocalBusiness
+  name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "Mississauga"
-    - "Brampton"
-    - "Vaughan"
-    - "Markham"
-    - "Richmond Hill"
-    - "Oakville"
-    - "Burlington"
-    - "Ajax"
-    - "Pickering"
-    - "Whitby"
-    - "Oshawa"
+    - Toronto
+    - Mississauga
+    - Brampton
+    - Vaughan
+    - Markham
+    - Richmond Hill
+    - Oakville
+    - Burlington
+    - Ajax
+    - Pickering
+    - Whitby
+    - Oshawa
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Consultation
+    - Licensed & Insured
+    - Warranty Protection
 ---
 
 # Greater Toronto Area Service Coverage

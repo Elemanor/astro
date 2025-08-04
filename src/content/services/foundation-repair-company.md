@@ -1,48 +1,59 @@
 ---
-title: "Foundation Repair Company Toronto | Professional Structural Solutions | DrySpace"
-description: "Toronto's trusted foundation repair company. Licensed engineers, 25+ years experience, lifetime warranties. Foundation cracks, settlement, structural repair. Call: (437) 545-0067"
-keywords: "foundation repair company, foundation repair company toronto, foundation repair business, professional foundation repair, foundation repair services toronto, structural repair company"
-date: 2025-01-31
+title: >-
+  Foundation Repair Company Toronto | Professional Structural Solutions |
+  DrySpace
+description: >-
+  Toronto's trusted foundation repair company. Licensed engineers, 25+ years
+  experience, lifetime warranties. Foundation cracks, settlement, structural
+  repair. Call: (437) 545-0067
+keywords: >-
+  foundation repair company, foundation repair company toronto, foundation
+  repair business, professional foundation repair, foundation repair services
+  toronto, structural repair company
+date: 2025-01-31T00:00:00.000Z
 draft: false
-type: "service"
-url: "/services/foundation-repair-company/"
-
-# Schema for foundation repair company
-schema_type: "LocalBusiness"
-schema_provider: "DrySpace Waterproofing"
-schema_service_type: "Foundation Repair Company"
-schema_area_served: "Toronto, Ontario, Canada"
-
-# Related company services
+type: service
+url: /services/foundation-repair-company/
+schema_type: LocalBusiness
+schema_provider: DrySpace Waterproofing
+schema_service_type: Foundation Repair Company
+schema_area_served: 'Toronto, Ontario, Canada'
 related_services:
-  - title: "Complete Foundation Services"
-    url: "/foundation-repair/"
-    description: "Full-service foundation repair solutions"
-    image: "/pics/work/underpinning.webp"
-  - title: "Emergency Foundation Service"
-    url: "/services/emergency-waterproofing/"
-    description: "24/7 emergency foundation repair response"
-    image: "/pics/work/sump-pump.webp"
-  - title: "Structural Engineering Services"
-    url: "/services/structural-reinforcement/"
-    description: "Licensed engineer assessments and solutions"
-    image: "/pics/work/wall-opening.webp"
-
-# FAQ for foundation repair company
+  - title: Complete Foundation Services
+    url: /foundation-repair/
+    description: Full-service foundation repair solutions
+    image: /pics/work/underpinning.webp
+  - title: Emergency Foundation Service
+    url: /services/emergency-waterproofing/
+    description: 24/7 emergency foundation repair response
+    image: /pics/work/sump-pump.webp
+  - title: Structural Engineering Services
+    url: /services/structural-reinforcement/
+    description: Licensed engineer assessments and solutions
+    image: /pics/work/wall-opening.webp
 faq:
-  - question: "How do I choose the best foundation repair company in Toronto?"
-    answer: |
+  - question: How do I choose the best foundation repair company in Toronto?
+    answer: >
       Choose a foundation repair company with:
+
       - Licensed structural engineers on staff
+
       - 15+ years specialized experience
+
       - Local reputation and references
+
       - Comprehensive insurance and bonding
+
       - Written warranties and guarantees
+
       - Transparent pricing with detailed estimates
+
       - Emergency service availability
-      
-      DrySpace meets all these criteria as Toronto's premier foundation repair company since 1998.
-  - question: "What services should a full-service foundation repair company offer?"
+
+
+      DrySpace meets all these criteria as Toronto's premier foundation repair
+      company since 1998.
+  - question: What services should a full-service foundation repair company offer?
     answer: |
       A complete foundation repair company should provide:
       - Foundation crack repair and injection
@@ -53,16 +64,62 @@ faq:
       - Emergency foundation repair services
       - Waterproofing integration with foundation work
       - Long-term monitoring and maintenance
-  - question: "How much should I expect to pay a foundation repair company?"
-    answer: |
+  - question: How much should I expect to pay a foundation repair company?
+    answer: >
       Foundation repair company pricing varies by service:
+
       - Crack repair: $500-$1,500 per crack
+
       - Wall stabilization: $3,000-$8,000
+
       - Foundation underpinning: $150-$300 per linear foot
+
       - Settlement repair: $10,000-$30,000
+
       - Emergency services: $1,000-$5,000
-      
-      Always get detailed written estimates from multiple companies before deciding.
+
+
+      Always get detailed written estimates from multiple companies before
+      deciding.
+starting_price: '$1,999'
+price_range: '$1,999 - $15,999'
+benefits:
+  - title: Structural Stability
+    description: Restore your foundation's integrity and prevent further damage
+  - title: Advanced Techniques
+    description: >-
+      Latest repair methods including epoxy injection and carbon fiber
+      reinforcement
+  - title: Long-Term Solutions
+    description: 'Address root causes, not just symptoms, for lasting repairs'
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Damage Assessment
+    description: 'Identify crack types, causes, and structural impact'
+    icon: search
+  - title: Preparation & Cleaning
+    description: Clean cracks and prepare surfaces for repair
+    icon: brush
+  - title: Repair Application
+    description: 'Apply appropriate repair method (injection, stitching, etc.)'
+    icon: syringe
+  - title: Seal & Protect
+    description: Waterproof seal and monitor for lasting results
+    icon: shield
+hero:
+  features:
+    - Structural Engineers
+    - City Permits Included
+    - Insurance Claims
 ---
 
 <script type="application/ld+json">

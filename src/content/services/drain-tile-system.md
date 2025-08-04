@@ -1,62 +1,172 @@
 ---
-title: "Drain Tile Installation Toronto | #1 Experts Since 1999 | Free Quote"
-subtitle: "Professional Drain Tile Systems - Interior & Exterior Installation"
-seo_title: "Drain Tile Installation Toronto | 25+ Years Experience | DrySpace"
-description: "#1 drain tile installation Toronto experts. 25+ years experience, 2,800+ happy customers. Interior & exterior drain tile systems. Licensed & insured. Call (437) 545-0067 for free quote!"
-type: "service"
-url: "/services/drain-tile-system/"
-urgency: "high"
-keywords: ["drain tile installation toronto", "drain tile system", "perimeter drain tile", "drain tile repair", "interior drain tile", "exterior drain tile", "drain tile cost toronto", "foundation drain tile", "drain tile vs french drain", "weeping tile installation"]
-schema_type: "Service"
-service_area: ["Toronto", "North York", "Scarborough", "Etobicoke", "East York", "York", "Mississauga", "Brampton", "Vaughan", "Richmond Hill", "Markham", "Oakville", "Burlington"]
-price_range: "$50 - $300 per linear foot"
-warranty: "Lifetime warranty on workmanship, 25 years on materials"
+title: 'Drain Tile Installation Toronto | #1 Experts Since 1999 | Free Quote'
+subtitle: Professional Drain Tile Systems - Interior & Exterior Installation
+seo_title: Drain Tile Installation Toronto | 25+ Years Experience | DrySpace
+description: >-
+  #1 drain tile installation Toronto experts. 25+ years experience, 2,800+ happy
+  customers. Interior & exterior drain tile systems. Licensed & insured. Call
+  (437) 545-0067 for free quote!
+type: service
+url: /services/drain-tile-system/
+urgency: high
+keywords:
+  - drain tile installation toronto
+  - drain tile system
+  - perimeter drain tile
+  - drain tile repair
+  - interior drain tile
+  - exterior drain tile
+  - drain tile cost toronto
+  - foundation drain tile
+  - drain tile vs french drain
+  - weeping tile installation
+schema_type: Service
+service_area:
+  - Toronto
+  - North York
+  - Scarborough
+  - Etobicoke
+  - East York
+  - York
+  - Mississauga
+  - Brampton
+  - Vaughan
+  - Richmond Hill
+  - Markham
+  - Oakville
+  - Burlington
+price_range: $50 - $300 per linear foot
+warranty: 'Lifetime warranty on workmanship, 25 years on materials'
 related_services:
-  - title: "French Drain Installation"
-    url: "/services/french-drain-installation"
-    description: "Professional French drain systems for comprehensive surface water management"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
-  - title: "Sump Pump Installation"
-    url: "/services/sump-pump-installation"
-    description: "Complete sump pump systems that work with drain tile for maximum basement protection"
-    image: "/pics/work/sump-pump.webp"
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing"
-    description: "Full exterior waterproofing systems including drain tile installation"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
+  - title: French Drain Installation
+    url: /services/french-drain-installation
+    description: >-
+      Professional French drain systems for comprehensive surface water
+      management
+    image: /pics/work/exterior-waterproofing-membrane.webp
+  - title: Sump Pump Installation
+    url: /services/sump-pump-installation
+    description: >-
+      Complete sump pump systems that work with drain tile for maximum basement
+      protection
+    image: /pics/work/sump-pump.webp
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing
+    description: Full exterior waterproofing systems including drain tile installation
+    image: /pics/work/exterior-waterproofing-membrane.webp
 sections:
-  - title: "Toronto's #1 Drain Tile Installation Experts - 25+ Years Experience"
-    content: |
-      **Why 2,800+ Toronto homeowners trust DrySpace for drain tile installation**
+  - title: 'Toronto''s #1 Drain Tile Installation Experts - 25+ Years Experience'
+    content: >
+      **Why 2,800+ Toronto homeowners trust DrySpace for drain tile
+      installation**
 
-      When water threatens your Toronto foundation, a professionally installed drain tile system is your most effective long-term defense. But here's what many contractors won't tell you: **drain tile isn't actually made of tiles anymore** - and understanding what modern drain tile systems really are could save you thousands in water damage.
 
-      Since 1999, we've installed over 4,000 drain tile systems across the Greater Toronto Area. From the clay soils of North York to the high water tables near Lake Ontario, we understand Toronto's unique drainage challenges better than anyone.
+      When water threatens your Toronto foundation, a professionally installed
+      drain tile system is your most effective long-term defense. But here's
+      what many contractors won't tell you: **drain tile isn't actually made of
+      tiles anymore** - and understanding what modern drain tile systems really
+      are could save you thousands in water damage.
+
+
+      Since 1999, we've installed over 4,000 drain tile systems across the
+      Greater Toronto Area. From the clay soils of North York to the high water
+      tables near Lake Ontario, we understand Toronto's unique drainage
+      challenges better than anyone.
+
 
       **What Exactly Is Drain Tile? (Most Homeowners Don't Know)**
-      Despite the name, modern "drain tile" systems use advanced perforated PVC pipes, not tiles. The term dates back to the early 1900s when clay tiles were placed end-to-end around foundations. Today's drain tile systems are sophisticated engineered drainage solutions that:
+
+      Despite the name, modern "drain tile" systems use advanced perforated PVC
+      pipes, not tiles. The term dates back to the early 1900s when clay tiles
+      were placed end-to-end around foundations. Today's drain tile systems are
+      sophisticated engineered drainage solutions that:
+
       ✓ **Collect groundwater** before it reaches your foundation walls
+
       ✓ **Channel water away** through gravity-fed drainage pipes  
+
       ✓ **Prevent hydrostatic pressure** that causes foundation cracks
+
       ✓ **Protect against flooding** during Toronto's heavy rainfall seasons
+
       ✓ **Last 25+ years** with proper installation and materials
 
+
       **Our Complete Drain Tile Installation Services:**
-      ✓ **Exterior drain tile systems** - Ultimate protection at the foundation level
-      ✓ **Interior drain tile installation** - Cost-effective basement drainage solutions
-      ✓ **Hybrid drain tile systems** - Maximum protection for severe water issues
-      ✓ **Drain tile repair & replacement** - Fix failing clay tile and old systems
-      ✓ **Integration with waterproofing** - Complete foundation protection systems
+
+      ✓ **Exterior drain tile systems** - Ultimate protection at the foundation
+      level
+
+      ✓ **Interior drain tile installation** - Cost-effective basement drainage
+      solutions
+
+      ✓ **Hybrid drain tile systems** - Maximum protection for severe water
+      issues
+
+      ✓ **Drain tile repair & replacement** - Fix failing clay tile and old
+      systems
+
+      ✓ **Integration with waterproofing** - Complete foundation protection
+      systems
+
       ✓ **Sump pump connections** - Proper water removal and discharge
-      ✓ **Emergency drain tile service** - 24/7 response for urgent drainage issues
+
+      ✓ **Emergency drain tile service** - 24/7 response for urgent drainage
+      issues
+
 
       **Every DrySpace drain tile installation includes:**
-      - **Free drainage assessment** - We identify all water sources affecting your foundation
-      - **Custom system design** - Engineered for Toronto's soil conditions and climate
-      - **Licensed contractor installation** - All work meets Ontario Building Code requirements
+
+      - **Free drainage assessment** - We identify all water sources affecting
+      your foundation
+
+      - **Custom system design** - Engineered for Toronto's soil conditions and
+      climate
+
+      - **Licensed contractor installation** - All work meets Ontario Building
+      Code requirements
+
       - **Lifetime warranty on workmanship** - Transferable to future homeowners
+
       - **25-year material warranty** - Premium PVC components that last decades
-      - **Annual maintenance program** - Keep your system operating at peak efficiency
+
+      - **Annual maintenance program** - Keep your system operating at peak
+      efficiency
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Same Day Service
+    - Camera Inspections
+    - 10 Year Warranty
 ---
 
 # Drain Tile Installation Toronto

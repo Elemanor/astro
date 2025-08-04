@@ -1,38 +1,55 @@
 ---
-title: "Mimico Basement Waterproofing | Lake Ontario Waterfront Specialists"
-subtitle: "Specialized Solutions for Mimico's Lakefront and High Water Table Challenges"
-seo_title: "Mimico Basement Waterproofing Etobicoke | Lakefront Foundation Repair"
-description: "Expert basement waterproofing in Mimico. Specializing in lakefront properties, high water table challenges, and coastal weather effects. Serving Royal York, Lake Shore Boulevard area. Call (437) 545-0067."
-type: "service"
-url: "/services/mimico-basement-waterproofing/"
+title: Mimico Basement Waterproofing | Lake Ontario Waterfront Specialists
+subtitle: Specialized Solutions for Mimico's Lakefront and High Water Table Challenges
+seo_title: Mimico Basement Waterproofing Etobicoke | Lakefront Foundation Repair
+description: >-
+  Expert basement waterproofing in Mimico. Specializing in lakefront properties,
+  high water table challenges, and coastal weather effects. Serving Royal York,
+  Lake Shore Boulevard area. Call (437) 545-0067.
+type: service
+url: /services/mimico-basement-waterproofing/
 related_services:
-  - title: "Etobicoke Waterproofing"
-    url: "/locations/etobicoke-basement-waterproofing"
-    description: "Serving all Etobicoke neighborhoods"
-    image: "/images/etobicoke-waterproofing.jpg"
-  - title: "High Water Table Solutions"
-    url: "/services/high-water-table-waterproofing"
-    description: "Specialized systems for water table challenges"
-    image: "/images/water-table-solutions.jpg"
-  - title: "Coastal Foundation Protection"
-    url: "/services/coastal-foundation-protection"
-    description: "Protection from lake effects and moisture"
-    image: "/images/coastal-protection.jpg"
+  - title: Etobicoke Waterproofing
+    url: /locations/etobicoke-basement-waterproofing
+    description: Serving all Etobicoke neighborhoods
+    image: /images/etobicoke-waterproofing.jpg
+  - title: High Water Table Solutions
+    url: /services/high-water-table-waterproofing
+    description: Specialized systems for water table challenges
+    image: /images/water-table-solutions.jpg
+  - title: Coastal Foundation Protection
+    url: /services/coastal-foundation-protection
+    description: Protection from lake effects and moisture
+    image: /images/coastal-protection.jpg
 sections:
-  - title: "Mimico's Lakefront Waterproofing Challenges"
-    content: |
-      Mimico's unique position along Lake Ontario creates some of the most challenging waterproofing conditions in the GTA. This historic lakefront community faces constant moisture challenges from lake effects, high water tables, and sandy soil conditions that require specialized expertise.
+  - title: Mimico's Lakefront Waterproofing Challenges
+    content: >
+      Mimico's unique position along Lake Ontario creates some of the most
+      challenging waterproofing conditions in the GTA. This historic lakefront
+      community faces constant moisture challenges from lake effects, high water
+      tables, and sandy soil conditions that require specialized expertise.
+
 
       Mimico's specific waterproofing challenges:
+
       - Extremely high water table due to Lake Ontario proximity
+
       - Sandy soil that allows rapid water movement
+
       - Lake effect weather creating prolonged moisture exposure
+
       - Historic homes with foundations below water table
+
       - Storm surge effects during severe weather events
+
       - Salt air corrosion affecting foundation materials
 
-      We've protected over 350 Mimico homes, from historic cottages near the waterfront to modern condos on Royal York Road. Our solutions are specifically engineered for lakefront conditions and high water table management.
-  - title: "Lakefront Water Problems"
+
+      We've protected over 350 Mimico homes, from historic cottages near the
+      waterfront to modern condos on Royal York Road. Our solutions are
+      specifically engineered for lakefront conditions and high water table
+      management.
+  - title: Lakefront Water Problems
     content: |
       **High Water Table Issues**
       Mimico's proximity to Lake Ontario creates:
@@ -73,7 +90,7 @@ sections:
       - Backflow from storm sewers
       - Flooding from multiple directions
       - Emergency water removal needs
-  - title: "Lakefront Specialized Solutions"
+  - title: Lakefront Specialized Solutions
     content: |
       **High-Capacity Interior Systems**
       Essential for high water table conditions:
@@ -106,7 +123,7 @@ sections:
       - Storm surge preparation and response
       - Coordination with emergency management
       - Flood damage mitigation and restoration
-  - title: "Mimico Neighborhood Expertise"
+  - title: Mimico Neighborhood Expertise
     content: |
       **Waterfront Properties**
       Homes near Lake Shore Boulevard require:
@@ -147,7 +164,7 @@ sections:
       - Heritage-appropriate materials
       - Coordination with heritage guidelines
       - Respect for neighborhood history
-  - title: "Why Mimico Trusts DrySpace"
+  - title: Why Mimico Trusts DrySpace
     content: |
       **Lakefront Expertise**
       - 15+ years experience with Lake Ontario effects
@@ -183,7 +200,7 @@ sections:
       - Continuous research and development
       - Partnership with engineering specialists
       - Advanced materials for harsh conditions
-  - title: "Your Mimico Lakefront Project"
+  - title: Your Mimico Lakefront Project
     content: |
       **Comprehensive Assessment**
       - Water table level evaluation
@@ -217,58 +234,143 @@ sections:
       - Maintenance and monitoring services
       - System upgrade recommendations
 faq:
-  - question: "Why do Mimico basements have more water problems than other areas?"
-    answer: "Mimico's location on Lake Ontario creates a permanently high water table, often just 2-3 feet below ground. Combined with sandy soil that transmits water quickly and lake effect weather that creates extended wet periods, basements face constant hydrostatic pressure and moisture challenges."
-  - question: "Can you waterproof a basement below the water table?"
-    answer: "Yes, this is common in Mimico. We use specialized interior systems designed for constant water pressure, including high-capacity drainage and multiple sump pumps. The key is managing water flow rather than trying to block it completely - we channel water safely away from living spaces."
-  - question: "How do lake effects impact waterproofing?"
-    answer: "Lake Ontario creates unique challenges including extended humid periods, salt air corrosion, storm surges that temporarily raise water levels, and freeze-thaw cycles. Our systems are designed with marine-grade materials and enhanced drainage to handle these harsh lakefront conditions."
-  - question: "What's different about working in sandy soil?"
-    answer: "Sandy soil allows rapid water movement but also quick drainage. Excavation requires different techniques than clay areas, and we use specialized backfill materials. Sandy soil also provides less foundation support, so we often combine waterproofing with stabilization work."
-  - question: "How do you handle emergency flooding in Mimico?"
-    answer: "We maintain 24/7 emergency response specifically for lakefront properties with response times under 2 hours. Our crews are equipped for rapid water removal, temporary protection measures, and coordination with emergency services during storm events."
-  - question: "Can sump pumps handle Mimico's water table?"
-    answer: "Standard pumps often can't. We install high-capacity systems with backup pumps and battery power for extended outages. Many Mimico homes need multiple pumps due to constant water flow. We size systems specifically for each property's water table conditions."
-  - question: "Do you work with condo buildings near the lake?"
-    answer: "Yes, we regularly work with waterfront condominiums and understand their unique challenges including shared drainage systems, building management coordination, and minimal resident disruption. We're experienced with condo board requirements and insurance needs."
-  - question: "How long does waterproofing take in sandy soil?"
-    answer: "Sandy soil actually allows faster excavation than clay, but requires more careful backfill and drainage installation. Interior systems take 3-4 days, exterior projects 4-6 days depending on water table conditions. Weather and water levels affect timing."
-  - question: "What warranty coverage applies to high water table conditions?"
-    answer: "Our lifetime transferable warranty fully covers high water table applications. We're confident in our Mimico-specific systems because they're designed for these challenging conditions. The warranty includes provisions for lakefront environmental factors."
-  - question: "Can you work during winter near the lake?"
-    answer: "Yes, though lake effect weather requires flexible scheduling. We monitor conditions closely and adjust work plans for safety and quality. Emergency services continue year-round, and we maintain heated equipment for winter operations when needed."
-  - question: "How do you protect against salt air corrosion?"
-    answer: "We use marine-grade materials designed for coastal environments, including corrosion-resistant metals and enhanced protective coatings. All materials are selected specifically for salt air exposure, and we provide additional protection for vulnerable components."
-  - question: "Do you offer financing for lakefront waterproofing?"
-    answer: "Yes, including programs specifically for coastal property owners who may need more extensive systems. We understand lakefront waterproofing often requires larger investments and work to make proper protection affordable for Mimico homeowners."
+  - question: Why do Mimico basements have more water problems than other areas?
+    answer: >-
+      Mimico's location on Lake Ontario creates a permanently high water table,
+      often just 2-3 feet below ground. Combined with sandy soil that transmits
+      water quickly and lake effect weather that creates extended wet periods,
+      basements face constant hydrostatic pressure and moisture challenges.
+  - question: Can you waterproof a basement below the water table?
+    answer: >-
+      Yes, this is common in Mimico. We use specialized interior systems
+      designed for constant water pressure, including high-capacity drainage and
+      multiple sump pumps. The key is managing water flow rather than trying to
+      block it completely - we channel water safely away from living spaces.
+  - question: How do lake effects impact waterproofing?
+    answer: >-
+      Lake Ontario creates unique challenges including extended humid periods,
+      salt air corrosion, storm surges that temporarily raise water levels, and
+      freeze-thaw cycles. Our systems are designed with marine-grade materials
+      and enhanced drainage to handle these harsh lakefront conditions.
+  - question: What's different about working in sandy soil?
+    answer: >-
+      Sandy soil allows rapid water movement but also quick drainage. Excavation
+      requires different techniques than clay areas, and we use specialized
+      backfill materials. Sandy soil also provides less foundation support, so
+      we often combine waterproofing with stabilization work.
+  - question: How do you handle emergency flooding in Mimico?
+    answer: >-
+      We maintain 24/7 emergency response specifically for lakefront properties
+      with response times under 2 hours. Our crews are equipped for rapid water
+      removal, temporary protection measures, and coordination with emergency
+      services during storm events.
+  - question: Can sump pumps handle Mimico's water table?
+    answer: >-
+      Standard pumps often can't. We install high-capacity systems with backup
+      pumps and battery power for extended outages. Many Mimico homes need
+      multiple pumps due to constant water flow. We size systems specifically
+      for each property's water table conditions.
+  - question: Do you work with condo buildings near the lake?
+    answer: >-
+      Yes, we regularly work with waterfront condominiums and understand their
+      unique challenges including shared drainage systems, building management
+      coordination, and minimal resident disruption. We're experienced with
+      condo board requirements and insurance needs.
+  - question: How long does waterproofing take in sandy soil?
+    answer: >-
+      Sandy soil actually allows faster excavation than clay, but requires more
+      careful backfill and drainage installation. Interior systems take 3-4
+      days, exterior projects 4-6 days depending on water table conditions.
+      Weather and water levels affect timing.
+  - question: What warranty coverage applies to high water table conditions?
+    answer: >-
+      Our lifetime transferable warranty fully covers high water table
+      applications. We're confident in our Mimico-specific systems because
+      they're designed for these challenging conditions. The warranty includes
+      provisions for lakefront environmental factors.
+  - question: Can you work during winter near the lake?
+    answer: >-
+      Yes, though lake effect weather requires flexible scheduling. We monitor
+      conditions closely and adjust work plans for safety and quality. Emergency
+      services continue year-round, and we maintain heated equipment for winter
+      operations when needed.
+  - question: How do you protect against salt air corrosion?
+    answer: >-
+      We use marine-grade materials designed for coastal environments, including
+      corrosion-resistant metals and enhanced protective coatings. All materials
+      are selected specifically for salt air exposure, and we provide additional
+      protection for vulnerable components.
+  - question: Do you offer financing for lakefront waterproofing?
+    answer: >-
+      Yes, including programs specifically for coastal property owners who may
+      need more extensive systems. We understand lakefront waterproofing often
+      requires larger investments and work to make proper protection affordable
+      for Mimico homeowners.
 schema:
-  type: "Service"
-  name: "Mimico Basement Waterproofing"
+  type: Service
+  name: Mimico Basement Waterproofing
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Mimico"
-    - "Mimico Beach"
-    - "Royal York"
-    - "Lake Shore Boulevard"
-    - "Humber Bay"
-    - "Mimico Creek"
-    - "Waterfront Trail"
-    - "Etobicoke Lakeshore"
-    - "Superior Avenue"
+    - Mimico
+    - Mimico Beach
+    - Royal York
+    - Lake Shore Boulevard
+    - Humber Bay
+    - Mimico Creek
+    - Waterfront Trail
+    - Etobicoke Lakeshore
+    - Superior Avenue
   serviceType:
-    - "Lakefront Waterproofing"
-    - "High Water Table Solutions"
-    - "Coastal Foundation Protection"
-    - "Emergency Water Management"
-    - "Marine Environment Waterproofing"
+    - Lakefront Waterproofing
+    - High Water Table Solutions
+    - Coastal Foundation Protection
+    - Emergency Water Management
+    - Marine Environment Waterproofing
   offers:
-    - "Lakefront Expertise"
-    - "Emergency Response"
-    - "Marine-Grade Materials"
-    - "24/7 Storm Response"
-    - "Environmental Protection"
+    - Lakefront Expertise
+    - Emergency Response
+    - Marine-Grade Materials
+    - 24/7 Storm Response
+    - Environmental Protection
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Mimico Lakefront Basement Waterproofing

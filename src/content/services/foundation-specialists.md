@@ -1,67 +1,130 @@
 ---
-title: "Foundation Specialists Toronto | Licensed Engineers & Structural Experts | DrySpace"
-description: "Toronto's leading foundation specialists. Licensed structural engineers, 25+ years experience, proven foundation repair methods. Cracks, settlement, bowing walls. Call: (437) 545-0067"
-keywords: "foundation specialists, foundation specialists toronto, structural foundation specialists, foundation repair specialists, foundation engineering specialists, toronto foundation experts"
-date: 2025-01-31
+title: >-
+  Foundation Specialists Toronto | Licensed Engineers & Structural Experts |
+  DrySpace
+description: >-
+  Toronto's leading foundation specialists. Licensed structural engineers, 25+
+  years experience, proven foundation repair methods. Cracks, settlement, bowing
+  walls. Call: (437) 545-0067
+keywords: >-
+  foundation specialists, foundation specialists toronto, structural foundation
+  specialists, foundation repair specialists, foundation engineering
+  specialists, toronto foundation experts
+date: 2025-01-31T00:00:00.000Z
 draft: false
-type: "service"
-url: "/services/foundation-specialists/"
-
-# Schema for foundation specialists
-schema_type: "Service"
-schema_provider: "DrySpace Waterproofing"
-schema_service_type: "Foundation Specialists"
-schema_area_served: "Toronto, Ontario, Canada"
-
-# Related specialist services
+type: service
+url: /services/foundation-specialists/
+schema_type: Service
+schema_provider: DrySpace Waterproofing
+schema_service_type: Foundation Specialists
+schema_area_served: 'Toronto, Ontario, Canada'
 related_services:
-  - title: "Structural Engineering"
-    url: "/services/structural-reinforcement/"
-    description: "Licensed structural engineer assessments"
-    image: "/pics/work/wall-opening.webp"
-  - title: "Foundation Crack Specialists"
-    url: "/services/foundation-crack-repair/"
-    description: "Expert crack diagnosis and repair"
-    image: "/pics/work/crack_repair.webp"
-  - title: "Settlement Specialists"
-    url: "/foundation-repair/"
-    description: "Foundation lifting and stabilization experts"
-    image: "/pics/work/underpinning.webp"
-
-# FAQ for foundation specialists
+  - title: Structural Engineering
+    url: /services/structural-reinforcement/
+    description: Licensed structural engineer assessments
+    image: /pics/work/wall-opening.webp
+  - title: Foundation Crack Specialists
+    url: /services/foundation-crack-repair/
+    description: Expert crack diagnosis and repair
+    image: /pics/work/crack_repair.webp
+  - title: Settlement Specialists
+    url: /foundation-repair/
+    description: Foundation lifting and stabilization experts
+    image: /pics/work/underpinning.webp
 faq:
-  - question: "What makes a foundation specialist different from regular contractors?"
-    answer: |
-      Foundation specialists have specialized training and focus exclusively on foundation problems:
+  - question: What makes a foundation specialist different from regular contractors?
+    answer: >
+      Foundation specialists have specialized training and focus exclusively on
+      foundation problems:
+
       - Licensed structural engineers on staff
+
       - Deep knowledge of soil conditions and foundation types
+
       - Specialized equipment and proven repair techniques
+
       - Extensive experience with complex foundation problems
+
       - Ongoing training in latest foundation technologies
-      
-      General contractors may handle foundation work occasionally, but specialists do it every day.
-  - question: "When should I call foundation specialists instead of general contractors?"
-    answer: |
+
+
+      General contractors may handle foundation work occasionally, but
+      specialists do it every day.
+  - question: When should I call foundation specialists instead of general contractors?
+    answer: >
       Call foundation specialists for:
+
       - Multiple or recurring foundation cracks
+
       - Signs of foundation settlement (uneven floors, sticking doors)
+
       - Bowing or leaning foundation walls
+
       - Water infiltration through foundation
+
       - Structural concerns or safety issues
+
       - Major foundation repair or reconstruction
-      
-      Foundation specialists have the expertise to diagnose problems accurately and provide permanent solutions.
-  - question: "How do I verify foundation specialists are qualified in Toronto?"
-    answer: |
+
+
+      Foundation specialists have the expertise to diagnose problems accurately
+      and provide permanent solutions.
+  - question: How do I verify foundation specialists are qualified in Toronto?
+    answer: >
       Verify foundation specialists have:
-      - Licensed structural engineer on staff (check with Professional Engineers Ontario)
+
+      - Licensed structural engineer on staff (check with Professional Engineers
+      Ontario)
+
       - Valid general contractor license
+
       - WSIB coverage and liability insurance
+
       - Local references from recent foundation projects
+
       - Written warranties and guarantees
+
       - Membership in professional associations
-      
+
+
       DrySpace maintains all required credentials and certifications.
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Structural Engineers
+    - City Permits Included
+    - Insurance Claims
 ---
 
 <script type="application/ld+json">

@@ -1,48 +1,70 @@
 ---
-title: "Aqua Bloc 720-38 Waterproofing Membrane | Professional Installation Toronto"
-subtitle: "Premium Elastomeric Waterproofing System for Foundation Protection"
-seo_title: "Aqua Bloc 720-38 Toronto | Professional Waterproofing Membrane Installation"
-description: "Expert Aqua Bloc 720-38 installation in Toronto. Premium rubberized asphalt membrane for superior foundation waterproofing. Certified installers, lifetime warranty. Call (437) 545-0067."
-type: "service"
-url: "/services/aqua-bloc-720-38/"
+title: Aqua Bloc 720-38 Waterproofing Membrane | Professional Installation Toronto
+subtitle: Premium Elastomeric Waterproofing System for Foundation Protection
+seo_title: Aqua Bloc 720-38 Toronto | Professional Waterproofing Membrane Installation
+description: >-
+  Expert Aqua Bloc 720-38 installation in Toronto. Premium rubberized asphalt
+  membrane for superior foundation waterproofing. Certified installers, lifetime
+  warranty. Call (437) 545-0067.
+type: service
+url: /services/aqua-bloc-720-38/
 related_services:
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing"
-    description: "Complete exterior protection systems"
-    image: "/images/exterior-waterproofing.jpg"
-  - title: "Foundation Waterproofing"
-    url: "/services/basement-waterproofing"
-    description: "Comprehensive waterproofing solutions"
-    image: "/images/basement-waterproofing.jpg"
-  - title: "Commercial Waterproofing"
-    url: "/services/commercial-waterproofing"
-    description: "Large-scale membrane applications"
-    image: "/images/commercial-waterproofing.jpg"
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing
+    description: Complete exterior protection systems
+    image: /images/exterior-waterproofing.jpg
+  - title: Foundation Waterproofing
+    url: /services/basement-waterproofing
+    description: Comprehensive waterproofing solutions
+    image: /images/basement-waterproofing.jpg
+  - title: Commercial Waterproofing
+    url: /services/commercial-waterproofing
+    description: Large-scale membrane applications
+    image: /images/commercial-waterproofing.jpg
 sections:
-  - title: "What is Aqua Bloc 720-38?"
-    content: |
-      Aqua Bloc 720-38 is a premium elastomeric waterproofing membrane manufactured by Tremco Barrier Solutions. This rubberized asphalt compound creates an impermeable barrier that bonds directly to foundation walls, providing superior protection against water infiltration for residential and commercial properties.
+  - title: What is Aqua Bloc 720-38?
+    content: >
+      Aqua Bloc 720-38 is a premium elastomeric waterproofing membrane
+      manufactured by Tremco Barrier Solutions. This rubberized asphalt compound
+      creates an impermeable barrier that bonds directly to foundation walls,
+      providing superior protection against water infiltration for residential
+      and commercial properties.
+
 
       **Key Product Features:**
+
       - 38-mil thickness for durability
+
       - Rubberized asphalt composition
+
       - Self-healing properties
+
       - Seamless application
+
       - Cold-applied system
+
       - VOC compliant
 
+
       **Performance Specifications:**
+
       - Waterproofing: 231 feet of hydrostatic head
+
       - Elongation: 1,800% for crack bridging
+
       - Adhesion: Permanent bond to concrete
+
       - Temperature range: -30°C to 70°C
+
       - Life expectancy: 30+ years
 
-      As certified Aqua Bloc installers, we ensure proper application for maximum protection and warranty coverage.
-  - title: "Benefits of Aqua Bloc 720-38 System"
+
+      As certified Aqua Bloc installers, we ensure proper application for
+      maximum protection and warranty coverage.
+  - title: Benefits of Aqua Bloc 720-38 System
     content: |
       **Superior Waterproofing Performance**
-      
+
       **Complete Protection:**
       - 100% waterproof barrier
       - No seams or joints
@@ -58,7 +80,7 @@ sections:
       - No deterioration over time
 
       **Installation Benefits**
-      
+
       **Application Advantages:**
       - Spray or roller applied
       - Bonds while tacky
@@ -74,7 +96,7 @@ sections:
       - Less labor intensive
 
       **Long-Term Value**
-      
+
       **Investment Protection:**
       - 30+ year service life
       - Reduces repair needs
@@ -88,10 +110,10 @@ sections:
       - Safe for workers
       - Environmentally responsible
       - LEED compliant
-  - title: "Professional Installation Process"
+  - title: Professional Installation Process
     content: |
       **Pre-Installation Requirements**
-      
+
       **Surface Preparation:**
       1. **Excavation** to footing level
       2. **Cleaning** - remove dirt, loose material
@@ -106,7 +128,7 @@ sections:
       - Proper drainage in place
 
       **Application Process**
-      
+
       **Step 1: First Coat Application**
       - Apply at 30-40 mils wet
       - Use airless sprayer or roller
@@ -132,7 +154,7 @@ sections:
       - Register warranty
 
       **Critical Details**
-      
+
       **Special Attention Areas:**
       - Foundation/footing joint
       - Pipe penetrations
@@ -146,10 +168,10 @@ sections:
       - Proper compaction
       - Drainage stone at base
       - Finish grade sloping away
-  - title: "Applications and Use Cases"
+  - title: Applications and Use Cases
     content: |
       **Residential Applications**
-      
+
       **New Construction:**
       - Full foundation waterproofing
       - Below-grade walls
@@ -165,7 +187,7 @@ sections:
       - Underpinning projects
 
       **Commercial Applications**
-      
+
       **Building Types:**
       - Office buildings
       - Parking structures
@@ -181,7 +203,7 @@ sections:
       - Green roofs
 
       **When Aqua Bloc 720-38 is Best**
-      
+
       **Ideal Conditions:**
       - High water tables
       - Clay soils
@@ -195,10 +217,10 @@ sections:
       - Chemical resistance important
       - Warranty requirements
       - Premium protection desired
-  - title: "Cost and Value Analysis"
+  - title: Cost and Value Analysis
     content: |
       **Aqua Bloc 720-38 Investment**
-      
+
       **Material Costs:**
       - Product: $4-6 per sq ft
       - Coverage: 25-30 sq ft/gallon
@@ -212,7 +234,7 @@ sections:
       - Total installed: $10-16 per sq ft
 
       **Cost Comparison**
-      
+
       **vs. Traditional Methods:**
       - Peel-and-stick: 20% less, shorter life
       - Bentonite: 30% less, site limitations
@@ -227,7 +249,7 @@ sections:
       - Lower lifetime cost
 
       **Return on Investment**
-      
+
       **Immediate Benefits:**
       - 100% waterproof from day one
       - No callbacks for leaks
@@ -240,10 +262,10 @@ sections:
       - Energy savings from dry basement
       - Avoided water damage costs
       - Insurance premium benefits
-  - title: "Warranty and Maintenance"
+  - title: Warranty and Maintenance
     content: |
       **Manufacturer Warranty**
-      
+
       **Tremco Coverage:**
       - 10-year material warranty
       - Performance guarantee
@@ -257,7 +279,7 @@ sections:
       - Annual maintenance checks
 
       **Our Installation Warranty**
-      
+
       **Comprehensive Coverage:**
       - Lifetime labor warranty
       - Material warranty pass-through
@@ -272,7 +294,7 @@ sections:
       - Emergency response
 
       **Maintenance Requirements**
-      
+
       **Annual Inspections:**
       - Check exposed areas
       - Verify drainage function
@@ -290,10 +312,10 @@ sections:
       - Self-maintaining system
       - Protected by drainage board
       - Permanent solution
-  - title: "Why Choose Professional Aqua Bloc Installation"
+  - title: Why Choose Professional Aqua Bloc Installation
     content: |
       **Certified Installer Benefits**
-      
+
       **Technical Expertise:**
       - Factory-trained technicians
       - Proper equipment
@@ -309,7 +331,7 @@ sections:
       - Final inspection
 
       **Common DIY Failures**
-      
+
       **Application Errors:**
       - Insufficient thickness
       - Poor surface preparation
@@ -325,7 +347,7 @@ sections:
       - Lost investment
 
       **Our Installation Advantage**
-      
+
       **Experience Matters:**
       - 500+ Aqua Bloc projects
       - All certified technicians
@@ -340,44 +362,117 @@ sections:
       - Protection installation
       - Follow-up support
 faq:
-  - question: "What makes Aqua Bloc 720-38 better than other waterproofing membranes?"
-    answer: "Aqua Bloc 720-38 offers superior crack-bridging ability (1,800% elongation), self-healing properties, seamless application, and 30+ year life expectancy. Its rubberized asphalt formula creates a permanent bond to concrete and maintains flexibility in extreme temperatures."
-  - question: "How much does Aqua Bloc 720-38 installation cost?"
-    answer: "Professional Aqua Bloc installation costs $10-16 per square foot including materials, labor, and protection board. While premium-priced, it offers superior protection and longevity compared to alternatives, making it cost-effective long-term."
-  - question: "Can Aqua Bloc 720-38 be applied in cold weather?"
-    answer: "Yes, Aqua Bloc can be applied in temperatures as low as 4°C (40°F), making it suitable for year-round installation in Toronto. The material remains workable in cold conditions, unlike many hot-applied systems."
-  - question: "How long does Aqua Bloc 720-38 last?"
-    answer: "Properly installed Aqua Bloc 720-38 has a life expectancy of 30+ years. The material maintains its waterproofing properties and flexibility throughout its service life, backed by manufacturer warranties up to 20 years."
-  - question: "Is Aqua Bloc 720-38 environmentally safe?"
-    answer: "Yes, Aqua Bloc 720-38 is VOC compliant, contains no hazardous solvents, and is safe for applicators and occupants. It's LEED compliant and doesn't off-gas after installation, making it environmentally responsible."
-  - question: "Can Aqua Bloc be applied over existing waterproofing?"
-    answer: "Generally, old waterproofing must be removed for proper adhesion. Aqua Bloc requires a clean, sound substrate to form its permanent bond. However, each situation requires professional assessment to determine the best approach."
-  - question: "What's the warranty on Aqua Bloc 720-38?"
-    answer: "Tremco offers 10-20 year material warranties depending on the installation and inspection program. We provide lifetime labor warranties on our installations, creating comprehensive coverage that's transferable to new owners."
-  - question: "How thick is Aqua Bloc 720-38 when applied?"
-    answer: "Aqua Bloc 720-38 is applied at 60 mils wet thickness, drying to 38 mils. This provides optimal waterproofing performance while maintaining flexibility. Professional installation ensures consistent thickness throughout."
-  - question: "Does Aqua Bloc 720-38 require protection board?"
-    answer: "Yes, protection board is essential to prevent damage during backfilling and provide drainage. It's a critical component of the system and included in professional installations to ensure long-term performance."
-  - question: "Can Aqua Bloc seal active leaks?"
-    answer: "While Aqua Bloc provides excellent waterproofing for new applications, active leaks must be stopped first. The surface must be merely damp, not flowing with water, for proper adhesion and performance."
+  - question: What makes Aqua Bloc 720-38 better than other waterproofing membranes?
+    answer: >-
+      Aqua Bloc 720-38 offers superior crack-bridging ability (1,800%
+      elongation), self-healing properties, seamless application, and 30+ year
+      life expectancy. Its rubberized asphalt formula creates a permanent bond
+      to concrete and maintains flexibility in extreme temperatures.
+  - question: How much does Aqua Bloc 720-38 installation cost?
+    answer: >-
+      Professional Aqua Bloc installation costs $10-16 per square foot including
+      materials, labor, and protection board. While premium-priced, it offers
+      superior protection and longevity compared to alternatives, making it
+      cost-effective long-term.
+  - question: Can Aqua Bloc 720-38 be applied in cold weather?
+    answer: >-
+      Yes, Aqua Bloc can be applied in temperatures as low as 4°C (40°F), making
+      it suitable for year-round installation in Toronto. The material remains
+      workable in cold conditions, unlike many hot-applied systems.
+  - question: How long does Aqua Bloc 720-38 last?
+    answer: >-
+      Properly installed Aqua Bloc 720-38 has a life expectancy of 30+ years.
+      The material maintains its waterproofing properties and flexibility
+      throughout its service life, backed by manufacturer warranties up to 20
+      years.
+  - question: Is Aqua Bloc 720-38 environmentally safe?
+    answer: >-
+      Yes, Aqua Bloc 720-38 is VOC compliant, contains no hazardous solvents,
+      and is safe for applicators and occupants. It's LEED compliant and doesn't
+      off-gas after installation, making it environmentally responsible.
+  - question: Can Aqua Bloc be applied over existing waterproofing?
+    answer: >-
+      Generally, old waterproofing must be removed for proper adhesion. Aqua
+      Bloc requires a clean, sound substrate to form its permanent bond.
+      However, each situation requires professional assessment to determine the
+      best approach.
+  - question: What's the warranty on Aqua Bloc 720-38?
+    answer: >-
+      Tremco offers 10-20 year material warranties depending on the installation
+      and inspection program. We provide lifetime labor warranties on our
+      installations, creating comprehensive coverage that's transferable to new
+      owners.
+  - question: How thick is Aqua Bloc 720-38 when applied?
+    answer: >-
+      Aqua Bloc 720-38 is applied at 60 mils wet thickness, drying to 38 mils.
+      This provides optimal waterproofing performance while maintaining
+      flexibility. Professional installation ensures consistent thickness
+      throughout.
+  - question: Does Aqua Bloc 720-38 require protection board?
+    answer: >-
+      Yes, protection board is essential to prevent damage during backfilling
+      and provide drainage. It's a critical component of the system and included
+      in professional installations to ensure long-term performance.
+  - question: Can Aqua Bloc seal active leaks?
+    answer: >-
+      While Aqua Bloc provides excellent waterproofing for new applications,
+      active leaks must be stopped first. The surface must be merely damp, not
+      flowing with water, for proper adhesion and performance.
 schema:
-  type: "Product"
-  name: "Aqua Bloc 720-38 Waterproofing Membrane"
+  type: Product
+  name: Aqua Bloc 720-38 Waterproofing Membrane
   brand:
-    type: "Brand"
-    name: "Tremco Barrier Solutions"
-  description: "Premium elastomeric waterproofing membrane for foundation protection"
+    type: Brand
+    name: Tremco Barrier Solutions
+  description: Premium elastomeric waterproofing membrane for foundation protection
   offers:
-    type: "Offer"
-    priceCurrency: "CAD"
-    price: "10-16 per square foot installed"
+    type: Offer
+    priceCurrency: CAD
+    price: 10-16 per square foot installed
     seller:
-      type: "Organization"
-      name: "DrySpace Waterproofing"
+      type: Organization
+      name: DrySpace Waterproofing
   aggregateRating:
-    type: "AggregateRating"
-    ratingValue: "4.9"
-    reviewCount: "127"
+    type: AggregateRating
+    ratingValue: '4.9'
+    reviewCount: '127'
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Consultation
+    - Licensed & Insured
+    - Warranty Protection
 ---
 
 # Aqua Bloc 720-38 - Premium Foundation Waterproofing

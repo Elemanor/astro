@@ -1,133 +1,294 @@
 ---
-title: "Slab & Foundation Construction | Concrete Floors Toronto"
-subtitle: "Premium concrete slab installation for basements, garages, and structural applications – level, durable, and built to last"
-description: "Professional slab and foundation construction in Toronto. Basement slabs, garage floors, structural slabs. Quality concrete work. Call (437) 545-0067."
-date: 2025-01-29
-type: "service"
-url: "/services/slab-foundation/"
-urgency: "medium"
+title: Slab & Foundation Construction | Concrete Floors Toronto
+subtitle: >-
+  Premium concrete slab installation for basements, garages, and structural
+  applications – level, durable, and built to last
+description: >-
+  Professional slab and foundation construction in Toronto. Basement slabs,
+  garage floors, structural slabs. Quality concrete work. Call (437) 545-0067.
+date: 2025-01-29T00:00:00.000Z
+type: service
+url: /services/slab-foundation/
+urgency: medium
 related_services:
-  - title: "Foundation Underpinning"
-    url: "/services/foundation-underpinning/"
-    image: "/pics/work/underpinning.webp"
-  - title: "Basement Waterproofing"
-    url: "/services/basement-waterproofing/"
-    image: "/pics/work/interior-waterproofing.webp"
-  - title: "Sump Pump Installation"
-    url: "/services/sump-pump-installation/"
-    image: "/pics/work/sump-pump.webp"
+  - title: Foundation Underpinning
+    url: /services/foundation-underpinning/
+    image: /pics/work/underpinning.webp
+  - title: Basement Waterproofing
+    url: /services/basement-waterproofing/
+    image: /pics/work/interior-waterproofing.webp
+  - title: Sump Pump Installation
+    url: /services/sump-pump-installation/
+    image: /pics/work/sump-pump.webp
 sections:
-  - title: "Professional Concrete Slab Solutions for Toronto Homes"
-    content: |
-      A properly installed concrete slab forms the foundation of comfortable, dry living spaces. In Toronto's climate, with its freeze-thaw cycles and varying soil conditions, professional slab installation makes the difference between a lifetime floor and costly failures. We specialize in basement slabs, garage floors, and structural applications, using techniques refined over 20 years of GTA projects.
-      
-      Modern slab construction goes far beyond simply pouring concrete. Today's systems incorporate vapor barriers, insulation, drainage layers, and precise reinforcement placement. For basement renovations, we often encounter 100-year-old dirt floors or deteriorating slabs poured without proper moisture protection. Our replacement process transforms these problem areas into dry, level surfaces ready for any flooring finish.
-      
-      The investment in quality slab construction pays dividends through energy efficiency, moisture control, and structural integrity. Whether you're finishing a basement, building a garage, or adding an addition, we ensure your concrete slab meets both current building codes and future needs. Our systematic approach includes soil analysis, proper base preparation, and quality concrete placement that creates floors lasting generations.
-  - title: "Advanced Techniques for Lasting Performance"
-    content: |
-      Toronto's unique challenges require specialized approaches to slab construction. The GTA's clay soils can expand and contract significantly with moisture changes, potentially causing slab cracking or heaving. We address this with properly compacted granular bases, typically 6-8 inches of clear stone that provides stable support and drainage. This foundation layer is crucial for preventing the settlement issues common in older Toronto homes.
-      
-      Moisture control represents another critical aspect of slab performance. We install 10-mil poly vapor barriers beneath all slabs, sealed at penetrations and lapped at joints. For basement applications, we often add rigid foam insulation, creating thermal breaks that prevent condensation and reduce heating costs by 15-20%. This attention to building science principles ensures comfortable, efficient spaces year-round.
-      
-      Reinforcement design varies by application but always exceeds minimum standards. Basement slabs receive 6x6 W2.9 welded wire mesh or #3 rebar at 16" centers. Garage slabs require heavier reinforcement due to vehicle loads, typically #4 rebar at 12" centers. We position reinforcement at mid-depth using chairs, ensuring proper concrete coverage for corrosion protection. Control joints are cut within 24 hours to manage cracking, creating neat, straight lines rather than random cracks.
-  - title: "Specialized Services and Innovation"
-    content: |
-      Radiant floor heating has become increasingly popular in Toronto homes, offering superior comfort and efficiency. We install hydronic tubing systems within slabs, working with mechanical contractors to ensure proper layout and controls. The thermal mass of concrete provides even heat distribution, eliminating cold spots common with forced-air systems. Installation adds $8-12 per square foot but can reduce heating costs by 20-30%.
-      
-      For garage and commercial applications, we offer specialized finishes that enhance durability and appearance. Epoxy coatings provide chemical resistance and easy cleaning, while polished concrete creates an attractive, low-maintenance surface. These finishes transform utilitarian slabs into showpiece floors, particularly popular in Toronto's condo garages and retail spaces.
-      
-      Our approach to existing slab replacement minimizes disruption while ensuring superior results. We use specialized equipment for interior demolition, controlling dust and debris. The process typically takes 5-7 days for a standard basement, including removal, base preparation, and new concrete placement. We coordinate with other trades to relocate utilities and ensure proper drainage connections, delivering turnkey solutions that prepare spaces for immediate finishing.
+  - title: Professional Concrete Slab Solutions for Toronto Homes
+    content: >
+      A properly installed concrete slab forms the foundation of comfortable,
+      dry living spaces. In Toronto's climate, with its freeze-thaw cycles and
+      varying soil conditions, professional slab installation makes the
+      difference between a lifetime floor and costly failures. We specialize in
+      basement slabs, garage floors, and structural applications, using
+      techniques refined over 20 years of GTA projects.
+
+
+      Modern slab construction goes far beyond simply pouring concrete. Today's
+      systems incorporate vapor barriers, insulation, drainage layers, and
+      precise reinforcement placement. For basement renovations, we often
+      encounter 100-year-old dirt floors or deteriorating slabs poured without
+      proper moisture protection. Our replacement process transforms these
+      problem areas into dry, level surfaces ready for any flooring finish.
+
+
+      The investment in quality slab construction pays dividends through energy
+      efficiency, moisture control, and structural integrity. Whether you're
+      finishing a basement, building a garage, or adding an addition, we ensure
+      your concrete slab meets both current building codes and future needs. Our
+      systematic approach includes soil analysis, proper base preparation, and
+      quality concrete placement that creates floors lasting generations.
+  - title: Advanced Techniques for Lasting Performance
+    content: >
+      Toronto's unique challenges require specialized approaches to slab
+      construction. The GTA's clay soils can expand and contract significantly
+      with moisture changes, potentially causing slab cracking or heaving. We
+      address this with properly compacted granular bases, typically 6-8 inches
+      of clear stone that provides stable support and drainage. This foundation
+      layer is crucial for preventing the settlement issues common in older
+      Toronto homes.
+
+
+      Moisture control represents another critical aspect of slab performance.
+      We install 10-mil poly vapor barriers beneath all slabs, sealed at
+      penetrations and lapped at joints. For basement applications, we often add
+      rigid foam insulation, creating thermal breaks that prevent condensation
+      and reduce heating costs by 15-20%. This attention to building science
+      principles ensures comfortable, efficient spaces year-round.
+
+
+      Reinforcement design varies by application but always exceeds minimum
+      standards. Basement slabs receive 6x6 W2.9 welded wire mesh or #3 rebar at
+      16" centers. Garage slabs require heavier reinforcement due to vehicle
+      loads, typically #4 rebar at 12" centers. We position reinforcement at
+      mid-depth using chairs, ensuring proper concrete coverage for corrosion
+      protection. Control joints are cut within 24 hours to manage cracking,
+      creating neat, straight lines rather than random cracks.
+  - title: Specialized Services and Innovation
+    content: >
+      Radiant floor heating has become increasingly popular in Toronto homes,
+      offering superior comfort and efficiency. We install hydronic tubing
+      systems within slabs, working with mechanical contractors to ensure proper
+      layout and controls. The thermal mass of concrete provides even heat
+      distribution, eliminating cold spots common with forced-air systems.
+      Installation adds $8-12 per square foot but can reduce heating costs by
+      20-30%.
+
+
+      For garage and commercial applications, we offer specialized finishes that
+      enhance durability and appearance. Epoxy coatings provide chemical
+      resistance and easy cleaning, while polished concrete creates an
+      attractive, low-maintenance surface. These finishes transform utilitarian
+      slabs into showpiece floors, particularly popular in Toronto's condo
+      garages and retail spaces.
+
+
+      Our approach to existing slab replacement minimizes disruption while
+      ensuring superior results. We use specialized equipment for interior
+      demolition, controlling dust and debris. The process typically takes 5-7
+      days for a standard basement, including removal, base preparation, and new
+      concrete placement. We coordinate with other trades to relocate utilities
+      and ensure proper drainage connections, delivering turnkey solutions that
+      prepare spaces for immediate finishing.
 faq:
-  - question: "What does concrete slab installation cost in Toronto?"
-    answer: |
-      Concrete slab costs in Toronto depend on type, thickness, and site conditions:
-      
+  - question: What does concrete slab installation cost in Toronto?
+    answer: >
+      Concrete slab costs in Toronto depend on type, thickness, and site
+      conditions:
+
+
       Basement Floor Slabs:
+
       - Basic 4" slab with vapor barrier: $8-10 per square foot
+
       - Insulated slab with drainage: $10-12 per square foot
+
       - Radiant heat slab: $18-22 per square foot
-      
+
+
       Garage Floor Slabs:
+
       - Standard 4" slab: $10-12 per square foot
+
       - Heavy-duty 6" slab: $12-15 per square foot
+
       - With epoxy coating: $15-20 per square foot
-      
+
+
       Additional costs:
+
       - Old slab removal: $3-5 per square foot
+
       - Excavation/base prep: $2-4 per square foot
+
       - Permits: $200-500
-      
-      A typical 600 square foot basement slab replacement costs $6,000-8,000 including removal and disposal. Larger projects often have lower per-square-foot costs due to efficiency.
-  - question: "How thick should a concrete slab be?"
-    answer: |
+
+
+      A typical 600 square foot basement slab replacement costs $6,000-8,000
+      including removal and disposal. Larger projects often have lower
+      per-square-foot costs due to efficiency.
+  - question: How thick should a concrete slab be?
+    answer: >
       Slab thickness requirements in Toronto depend on use and loads:
-      
+
+
       Residential Applications:
+
       - Basement floors: 4 inches (100mm) minimum
+
       - Garage floors: 4-5 inches for cars, 6 inches for trucks
+
       - Patios/walkways: 4 inches
+
       - Driveways: 5-6 inches
-      
+
+
       Commercial/Special Uses:
+
       - Workshop floors: 5-6 inches
+
       - Industrial: 6-8 inches or engineered
+
       - Heated slabs: 4 inches minimum above tubes
-      
-      Ontario Building Code specifies minimum 3.5 inches for residential basement slabs, but we recommend 4 inches for better performance. Thicker slabs resist cracking and provide better insulation value. Edge thickness often increases to 8-12 inches for frost protection. Our engineers calculate exact requirements based on soil conditions and intended loads.
-  - question: "Can you pour concrete in winter in Toronto?"
-    answer: |
+
+
+      Ontario Building Code specifies minimum 3.5 inches for residential
+      basement slabs, but we recommend 4 inches for better performance. Thicker
+      slabs resist cracking and provide better insulation value. Edge thickness
+      often increases to 8-12 inches for frost protection. Our engineers
+      calculate exact requirements based on soil conditions and intended loads.
+  - question: Can you pour concrete in winter in Toronto?
+    answer: >
       Yes, we pour concrete year-round in Toronto using cold weather procedures:
-      
+
+
       Winter Concrete Practices:
+
       - Heated enclosures maintain 10°C minimum
+
       - Hot water in mix design
+
       - Accelerating admixtures reduce set time
+
       - Insulation blankets for curing
+
       - Extended curing period (7 days minimum)
-      
+
+
       Temperature Thresholds:
+
       - Above 5°C: Standard procedures
+
       - 0-5°C: Cold weather precautions
+
       - Below 0°C: Full winter protection
+
       - Below -10°C: Evaluate case-by-case
-      
-      Winter pours typically add 15-25% to costs due to heating, additives, and protection measures. However, interior slabs like basements can proceed year-round with minimal impact. We monitor concrete temperature for 72 hours ensuring proper strength gain. Many clients prefer winter work for interior projects due to contractor availability and competitive pricing.
-  - question: "How long before I can use my new concrete slab?"
-    answer: |
-      Concrete gains strength progressively, with different uses allowed at various stages:
-      
+
+
+      Winter pours typically add 15-25% to costs due to heating, additives, and
+      protection measures. However, interior slabs like basements can proceed
+      year-round with minimal impact. We monitor concrete temperature for 72
+      hours ensuring proper strength gain. Many clients prefer winter work for
+      interior projects due to contractor availability and competitive pricing.
+  - question: How long before I can use my new concrete slab?
+    answer: >
+      Concrete gains strength progressively, with different uses allowed at
+      various stages:
+
+
       Timeline for Use:
+
       - 24 hours: Light foot traffic, saw-cut control joints
+
       - 3 days: Normal foot traffic, remove forms
+
       - 7 days: Light construction activity
+
       - 14 days: Vehicle traffic (driveways/garages)
+
       - 28 days: Full design strength, heavy loads
-      
+
+
       Finishing Activities:
+
       - Framing walls: 3-7 days
+
       - Installing flooring: 28 days (moisture dependent)
+
       - Epoxy coatings: 28 days minimum
+
       - Tile installation: 28 days, moisture test required
-      
-      Curing is critical for strength and durability. We use curing compounds or plastic sheeting to retain moisture for 7 days minimum. Basement slabs often require moisture testing before flooring installation – concrete releases moisture for several months. Premature loading or finishing can cause failures, so we provide detailed schedules for follow-up work.
+
+
+      Curing is critical for strength and durability. We use curing compounds or
+      plastic sheeting to retain moisture for 7 days minimum. Basement slabs
+      often require moisture testing before flooring installation – concrete
+      releases moisture for several months. Premature loading or finishing can
+      cause failures, so we provide detailed schedules for follow-up work.
 schema:
-  type: "Service"
-  serviceType: "Concrete Slab and Foundation Construction"
-  areaServed: "Greater Toronto Area"
+  type: Service
+  serviceType: Concrete Slab and Foundation Construction
+  areaServed: Greater Toronto Area
   offers:
-    - name: "Basement Floor Slabs"
-      description: "New or replacement basement concrete floors with vapor barriers and proper drainage."
-      price: "$8-$12 per square foot"
-    - name: "Garage Floor Slabs"
-      description: "Reinforced concrete garage floors with proper slope and durable finish."
-      price: "$10-$15 per square foot"
-    - name: "Structural Slabs"
-      description: "Load-bearing slabs for commercial and residential applications."
-      price: "$12-$20 per square foot"
-    - name: "Slab-on-Grade Foundations"
-      description: "Monolithic slab foundations for additions, garages, and outbuildings."
-      price: "$15-$25 per square foot"
+    - name: Basement Floor Slabs
+      description: >-
+        New or replacement basement concrete floors with vapor barriers and
+        proper drainage.
+      price: $8-$12 per square foot
+    - name: Garage Floor Slabs
+      description: Reinforced concrete garage floors with proper slope and durable finish.
+      price: $10-$15 per square foot
+    - name: Structural Slabs
+      description: Load-bearing slabs for commercial and residential applications.
+      price: $12-$20 per square foot
+    - name: Slab-on-Grade Foundations
+      description: 'Monolithic slab foundations for additions, garages, and outbuildings.'
+      price: $15-$25 per square foot
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Structural Engineers
+    - City Permits Included
+    - Insurance Claims
 ---
 
 # Slab & Foundation Construction Services

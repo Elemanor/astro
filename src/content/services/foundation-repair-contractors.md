@@ -1,47 +1,57 @@
 ---
-title: "Foundation Repair Contractors Toronto | Licensed Structural Engineers | DrySpace"
-description: "Professional foundation repair contractors in Toronto. Licensed engineers, certified technicians, proven methods. Foundation cracks, settlement, structural repair. Emergency service: (437) 545-0067"
-keywords: "foundation repair contractors, foundation repair contractors toronto, foundation specialists, foundation repair company toronto, structural foundation contractors, licensed foundation contractors"
-date: 2025-01-31
+title: >-
+  Foundation Repair Contractors Toronto | Licensed Structural Engineers |
+  DrySpace
+description: >-
+  Professional foundation repair contractors in Toronto. Licensed engineers,
+  certified technicians, proven methods. Foundation cracks, settlement,
+  structural repair. Emergency service: (437) 545-0067
+keywords: >-
+  foundation repair contractors, foundation repair contractors toronto,
+  foundation specialists, foundation repair company toronto, structural
+  foundation contractors, licensed foundation contractors
+date: 2025-01-31T00:00:00.000Z
 draft: false
-type: "service"
-url: "/services/foundation-repair-contractors/"
-
-# Schema for foundation contractors
-schema_type: "Service"
-schema_provider: "DrySpace Waterproofing"
-schema_service_type: "Foundation Repair Contractors"
-schema_area_served: "Toronto, Ontario, Canada"
-
-# Related services for contractors page
+type: service
+url: /services/foundation-repair-contractors/
+schema_type: Service
+schema_provider: DrySpace Waterproofing
+schema_service_type: Foundation Repair Contractors
+schema_area_served: 'Toronto, Ontario, Canada'
 related_services:
-  - title: "Foundation Crack Repair"
-    url: "/services/foundation-crack-repair/"
-    description: "Professional crack injection and structural repair"
-    image: "/pics/work/crack_repair.webp"
-  - title: "Structural Engineering"
-    url: "/services/structural-reinforcement/"
-    description: "Licensed engineer assessments and solutions"
-    image: "/pics/work/wall-opening.webp"
-  - title: "Emergency Foundation Repair"
-    url: "/services/emergency-waterproofing/"
-    description: "24/7 urgent foundation repair response"
-    image: "/pics/work/sump-pump.webp"
-
-# FAQ for foundation contractors
+  - title: Foundation Crack Repair
+    url: /services/foundation-crack-repair/
+    description: Professional crack injection and structural repair
+    image: /pics/work/crack_repair.webp
+  - title: Structural Engineering
+    url: /services/structural-reinforcement/
+    description: Licensed engineer assessments and solutions
+    image: /pics/work/wall-opening.webp
+  - title: Emergency Foundation Repair
+    url: /services/emergency-waterproofing/
+    description: 24/7 urgent foundation repair response
+    image: /pics/work/sump-pump.webp
 faq:
-  - question: "How do I choose the best foundation repair contractors in Toronto?"
-    answer: |
+  - question: How do I choose the best foundation repair contractors in Toronto?
+    answer: >
       Choose foundation repair contractors with:
+
       - Licensed structural engineers on staff
+
       - Proper insurance and bonding
+
       - Proven track record (10+ years experience)
+
       - Written warranties and guarantees
+
       - Local references and reviews
+
       - Transparent pricing with no hidden fees
-      
-      DrySpace meets all these criteria with 25+ years experience and over 8,000 successful foundation repairs.
-  - question: "What makes DrySpace different from other foundation contractors?"
+
+
+      DrySpace meets all these criteria with 25+ years experience and over 8,000
+      successful foundation repairs.
+  - question: What makes DrySpace different from other foundation contractors?
     answer: |
       DrySpace stands out as Toronto's premier foundation repair contractors:
       - Licensed structural engineer on staff (not just contractors)
@@ -51,17 +61,24 @@ faq:
       - 8,000+ successful foundation repairs completed
       - A+ BBB rating with 5-star Google reviews
       - Transparent pricing with written estimates
-  - question: "Do foundation repair contractors need special licenses in Toronto?"
-    answer: |
+  - question: Do foundation repair contractors need special licenses in Toronto?
+    answer: >
       Yes, professional foundation repair contractors in Toronto must have:
+
       - Valid general contractor license
+
       - WSIB workplace safety coverage
+
       - Liability insurance ($2M+ recommended)
+
       - Building permits for structural work
+
       - Structural engineer involvement for major repairs
-      
-      Always verify contractor credentials before hiring. DrySpace maintains all required licenses and insurance.
-  - question: "How much do foundation repair contractors charge in Toronto?"
+
+
+      Always verify contractor credentials before hiring. DrySpace maintains all
+      required licenses and insurance.
+  - question: How much do foundation repair contractors charge in Toronto?
     answer: |
       Foundation repair contractor costs in Toronto vary by repair type:
       - Crack injection: $500-$1,500 per crack
@@ -69,8 +86,47 @@ faq:
       - Foundation underpinning: $150-$300 per linear foot
       - Push pier installation: $1,500-$2,500 per pier
       - Complete foundation rebuild: $25,000-$75,000
-      
+
       Get multiple quotes from licensed contractors for accurate pricing.
+starting_price: '$1,999'
+price_range: '$1,999 - $15,999'
+benefits:
+  - title: Structural Stability
+    description: Restore your foundation's integrity and prevent further damage
+  - title: Advanced Techniques
+    description: >-
+      Latest repair methods including epoxy injection and carbon fiber
+      reinforcement
+  - title: Long-Term Solutions
+    description: 'Address root causes, not just symptoms, for lasting repairs'
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Damage Assessment
+    description: 'Identify crack types, causes, and structural impact'
+    icon: search
+  - title: Preparation & Cleaning
+    description: Clean cracks and prepare surfaces for repair
+    icon: brush
+  - title: Repair Application
+    description: 'Apply appropriate repair method (injection, stitching, etc.)'
+    icon: syringe
+  - title: Seal & Protect
+    description: Waterproof seal and monitor for lasting results
+    icon: shield
+hero:
+  features:
+    - Structural Engineers
+    - City Permits Included
+    - Insurance Claims
 ---
 
 <script type="application/ld+json">

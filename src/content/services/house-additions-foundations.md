@@ -1,42 +1,65 @@
 ---
-title: "House Additions & Foundation Extensions Toronto"
-subtitle: "Building Your Addition on Solid Ground"
-seo_title: "House Additions Foundation Extensions Toronto | Addition Footings"
-description: "Professional foundation work for home additions. From extending existing foundations to complete new footings, we ensure your addition stands strong for generations. The foundation makes or breaks your addition project. Free consultation."
-type: "service"
-url: "/services/house-additions-foundations/"
+title: House Additions & Foundation Extensions Toronto
+subtitle: Building Your Addition on Solid Ground
+seo_title: House Additions Foundation Extensions Toronto | Addition Footings
+description: >-
+  Professional foundation work for home additions. From extending existing
+  foundations to complete new footings, we ensure your addition stands strong
+  for generations. The foundation makes or breaks your addition project. Free
+  consultation.
+type: service
+url: /services/house-additions-foundations/
 related_services:
-  - title: "Foundation Underpinning"
-    url: "/services/foundation-underpinning"
-    description: "Create basement space under your addition"
-    image: "/images/foundation-underpinning.jpg"
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing"
-    description: "Keep your addition basement dry from day one"
-    image: "/images/exterior-waterproofing.jpg"
-  - title: "Basement Walkout"
-    url: "/services/basement-walkout"
-    description: "Add walkout access to your addition basement"
-    image: "/images/basement-walkout.jpg"
+  - title: Foundation Underpinning
+    url: /services/foundation-underpinning
+    description: Create basement space under your addition
+    image: /images/foundation-underpinning.jpg
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing
+    description: Keep your addition basement dry from day one
+    image: /images/exterior-waterproofing.jpg
+  - title: Basement Walkout
+    url: /services/basement-walkout
+    description: Add walkout access to your addition basement
+    image: /images/basement-walkout.jpg
 sections:
-  - title: "Foundation Work for Successful Additions"
-    content: |
-      Your dream addition needs more than architectural plans - it needs a foundation that properly integrates with your existing home. Poor foundation work causes addition separation, cracks throughout both structures, and expensive failures. We've built foundations for hundreds of Toronto additions, ensuring seamless integration and lasting stability.
+  - title: Foundation Work for Successful Additions
+    content: >
+      Your dream addition needs more than architectural plans - it needs a
+      foundation that properly integrates with your existing home. Poor
+      foundation work causes addition separation, cracks throughout both
+      structures, and expensive failures. We've built foundations for hundreds
+      of Toronto additions, ensuring seamless integration and lasting stability.
 
-      The foundation phase is critical. General contractors often subcontract this work to whoever's cheapest. We see the failures - additions pulling away, differential settlement, water infiltration. Your addition investment deserves proper foundation expertise from the start.
+
+      The foundation phase is critical. General contractors often subcontract
+      this work to whoever's cheapest. We see the failures - additions pulling
+      away, differential settlement, water infiltration. Your addition
+      investment deserves proper foundation expertise from the start.
+
 
       Our addition foundation services include:
+
       - Foundation extension and integration
+
       - New footing design and installation
+
       - Underpinning for basement additions
+
       - Frost wall construction
+
       - Waterproofing integration systems
+
       - Structural tie-ins to existing foundation
+
       - Excavation and backfill
+
       - Drainage system coordination
 
-      Every addition foundation is engineered for your specific soil conditions, existing structure, and new loads.
-  - title: "Types of Addition Foundations"
+
+      Every addition foundation is engineered for your specific soil conditions,
+      existing structure, and new loads.
+  - title: Types of Addition Foundations
     content: |
       **Foundation Extensions**
       When additions align with existing foundation depth:
@@ -81,42 +104,69 @@ sections:
       - Frost protection required
 
       Each type requires specific expertise for successful integration.
-  - title: "Critical Connection Details"
-    content: |
+  - title: Critical Connection Details
+    content: >
       **Where New Meets Old**
+
 
       The joint between existing and new foundations determines success:
 
+
       **Structural Connection**
+
       - Rebar dowels drilled into existing
+
       - Epoxy anchoring systems
+
       - Proper development lengths
+
       - Shear transfer considerations
+
       - Monolithic behavior goal
 
+
       **Waterproofing Continuity**
+
       - Seal cold joints completely
+
       - Membrane overlap requirements
+
       - Drainage layer continuity
+
       - No water trap zones
+
       - Integrated waterproofing systems
 
+
       **Differential Settlement Prevention**
+
       - Soil bearing verification
+
       - Compaction requirements
+
       - Underpinning when needed
+
       - Load transfer design
+
       - Monitoring during construction
 
+
       **Thermal Considerations**
+
       - Insulation continuity
+
       - Thermal break placement
+
       - Condensation prevention
+
       - Energy code compliance
+
       - Comfort optimization
 
-      Poor connections show as cracks within months. Proper connections last lifetimes.
-  - title: "The Addition Foundation Process"
+
+      Poor connections show as cracks within months. Proper connections last
+      lifetimes.
+  - title: The Addition Foundation Process
     content: |
       **Week 1: Design and Permits**
       - Site evaluation and soil assessment
@@ -147,7 +197,7 @@ sections:
       - Rough grade for drainage
 
       Most addition foundations complete in 3-4 weeks, ready for framing above.
-  - title: "Common Addition Foundation Challenges"
+  - title: Common Addition Foundation Challenges
     content: |
       **Existing Foundation Discoveries**
       Excavation often reveals:
@@ -184,7 +234,7 @@ sections:
       - Landscape integration
 
       Experience navigating these challenges ensures smooth projects.
-  - title: "Addition Types We Support"
+  - title: Addition Types We Support
     content: |
       **Kitchen Extensions**
       Popular for modern open concepts:
@@ -225,7 +275,7 @@ sections:
       - Drainage critical
       - Driveway integration
       - Code compliance issues
-  - title: "Cost Considerations"
+  - title: Cost Considerations
     content: |
       **Addition Foundation Pricing**
 
@@ -258,7 +308,7 @@ sections:
       - Enables future finishing
 
       Never compromise on foundation quality to save money.
-  - title: "Coordinating with Your Contractor"
+  - title: Coordinating with Your Contractor
     content: |
       **Working With Addition Builders**
 
@@ -295,7 +345,7 @@ sections:
       - Fixed pricing accuracy
 
       Your builder appreciates foundation specialists who deliver on schedule.
-  - title: "Maximizing Addition Potential"
+  - title: Maximizing Addition Potential
     content: |
       **Foundation Decisions That Add Value**
 
@@ -329,91 +379,190 @@ sections:
       - Professional recommendation
 
       Smart foundation decisions during construction save thousands later.
-  - title: "Ensuring Addition Success"
-    content: |
+  - title: Ensuring Addition Success
+    content: >
       **Why Foundation Expertise Matters**
 
+
       **Common Failure Modes:**
+
       - Addition separation from house
+
       - Differential settlement cracks
+
       - Water infiltration at joint
+
       - Frost heave damage
+
       - Inadequate load capacity
 
+
       **Our Prevention Methods:**
+
       - Proper engineering upfront
+
       - Quality materials throughout
+
       - Experienced installation crews
+
       - Multiple inspections
+
       - Attention to details
+
       - No shortcuts taken
 
+
       **Long-Term Performance:**
+
       - Additions that feel integral
+
       - No separation cracks
+
       - Dry basements below
+
       - Stable for decades
+
       - Protected investment
 
+
       **Client Peace of Mind:**
+
       - Professional engineering
+
       - Proper permits included
+
       - Insurance protection
+
       - Warranty coverage
+
       - Local ongoing support
 
-      Your addition should enhance your home for generations, not create problems.
+
+      Your addition should enhance your home for generations, not create
+      problems.
 faq:
-  - question: "Do I need special foundation work for my addition?"
-    answer: "Yes, additions require foundations that properly integrate with your existing home. This includes structural connections, waterproofing continuity, and matching foundation depths. Poor integration causes separation and settlement issues."
-  - question: "How much does an addition foundation cost?"
-    answer: "Basic addition foundations range from $8,000-15,000 for small additions to $30,000-50,000+ for large additions. Adding a full basement typically adds $150-200 per square foot. Costs vary based on size, depth, and soil conditions."
-  - question: "Can I add a basement under my addition?"
-    answer: "Yes, adding a basement under your addition is often cost-effective during initial construction. It requires deeper excavation and proper waterproofing but doubles your usable space. Much more expensive to add later."
-  - question: "How long does addition foundation work take?"
-    answer: "Most addition foundations complete in 3-4 weeks, including excavation, footings, walls, waterproofing, and backfill. Weather and complexity affect timeline. We coordinate with your general contractor for smooth transitions."
-  - question: "What if my existing foundation is shallow?"
-    answer: "Shallow existing foundations may require underpinning to match addition depth. We assess during excavation and provide solutions. This is common in older Toronto homes and we handle it regularly."
-  - question: "Do addition foundations need waterproofing?"
-    answer: "Absolutely. Addition foundations need complete waterproofing systems, especially at the connection to existing foundation. Poor waterproofing at joints is a common failure point. We ensure continuous protection."
-  - question: "Can you work with my contractor?"
-    answer: "Yes, we regularly work as foundation specialists for general contractors. We handle foundation design, permits, installation, and coordinate timing. Many builders prefer foundation specialists for this critical work."
-  - question: "What about permits for addition foundations?"
-    answer: "Addition foundations require building permits including engineered drawings. We prepare foundation-specific drawings and handle the permit process. Proper permits ensure code compliance and inspection approval."
-  - question: "How do you connect new foundation to existing?"
-    answer: "We drill and epoxy rebar dowels into existing foundation, creating monolithic connection. Proper structural ties prevent separation. Waterproofing membranes overlap to prevent water infiltration at joints."
-  - question: "Should I include a walkout entrance?"
-    answer: "If your lot slopes appropriately, adding a walkout entrance during construction is cost-effective. It provides separate access, natural light, and significantly increases basement value. Much harder to add later."
+  - question: Do I need special foundation work for my addition?
+    answer: >-
+      Yes, additions require foundations that properly integrate with your
+      existing home. This includes structural connections, waterproofing
+      continuity, and matching foundation depths. Poor integration causes
+      separation and settlement issues.
+  - question: How much does an addition foundation cost?
+    answer: >-
+      Basic addition foundations range from $8,000-15,000 for small additions to
+      $30,000-50,000+ for large additions. Adding a full basement typically adds
+      $150-200 per square foot. Costs vary based on size, depth, and soil
+      conditions.
+  - question: Can I add a basement under my addition?
+    answer: >-
+      Yes, adding a basement under your addition is often cost-effective during
+      initial construction. It requires deeper excavation and proper
+      waterproofing but doubles your usable space. Much more expensive to add
+      later.
+  - question: How long does addition foundation work take?
+    answer: >-
+      Most addition foundations complete in 3-4 weeks, including excavation,
+      footings, walls, waterproofing, and backfill. Weather and complexity
+      affect timeline. We coordinate with your general contractor for smooth
+      transitions.
+  - question: What if my existing foundation is shallow?
+    answer: >-
+      Shallow existing foundations may require underpinning to match addition
+      depth. We assess during excavation and provide solutions. This is common
+      in older Toronto homes and we handle it regularly.
+  - question: Do addition foundations need waterproofing?
+    answer: >-
+      Absolutely. Addition foundations need complete waterproofing systems,
+      especially at the connection to existing foundation. Poor waterproofing at
+      joints is a common failure point. We ensure continuous protection.
+  - question: Can you work with my contractor?
+    answer: >-
+      Yes, we regularly work as foundation specialists for general contractors.
+      We handle foundation design, permits, installation, and coordinate timing.
+      Many builders prefer foundation specialists for this critical work.
+  - question: What about permits for addition foundations?
+    answer: >-
+      Addition foundations require building permits including engineered
+      drawings. We prepare foundation-specific drawings and handle the permit
+      process. Proper permits ensure code compliance and inspection approval.
+  - question: How do you connect new foundation to existing?
+    answer: >-
+      We drill and epoxy rebar dowels into existing foundation, creating
+      monolithic connection. Proper structural ties prevent separation.
+      Waterproofing membranes overlap to prevent water infiltration at joints.
+  - question: Should I include a walkout entrance?
+    answer: >-
+      If your lot slopes appropriately, adding a walkout entrance during
+      construction is cost-effective. It provides separate access, natural
+      light, and significantly increases basement value. Much harder to add
+      later.
 schema:
-  type: "Service"
-  name: "House Addition Foundation Services"
+  type: Service
+  name: House Addition Foundation Services
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "North York"
-    - "Scarborough"
-    - "Etobicoke"
-    - "East York"
-    - "York"
-    - "Mississauga"
-    - "Brampton"
-    - "Vaughan"
-    - "Richmond Hill"
-    - "Markham"
+    - Toronto
+    - North York
+    - Scarborough
+    - Etobicoke
+    - East York
+    - York
+    - Mississauga
+    - Brampton
+    - Vaughan
+    - Richmond Hill
+    - Markham
   serviceType:
-    - "Addition Foundations"
-    - "Foundation Extensions"
-    - "New Footings"
-    - "Frost Walls"
-    - "Addition Basements"
+    - Addition Foundations
+    - Foundation Extensions
+    - New Footings
+    - Frost Walls
+    - Addition Basements
   offers:
-    - "Foundation Consultation"
-    - "Engineering Included"
-    - "Permit Assistance"
-    - "Licensed & Insured"
-    - "Warranty Coverage"
+    - Foundation Consultation
+    - Engineering Included
+    - Permit Assistance
+    - Licensed & Insured
+    - Warranty Coverage
+starting_price: '$1,999'
+price_range: '$1,999 - $12,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Structural Engineers
+    - City Permits Included
+    - Insurance Claims
 ---
 
 # House Additions and Foundation Extensions Toronto

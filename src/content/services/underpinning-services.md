@@ -1,14 +1,72 @@
 ---
-title: "Professional Underpinning Services Toronto | Foundation Reinforcement Experts"
-description: "Expert underpinning services in Toronto & GTA. Strengthen foundations, increase basement height, prevent settling. Licensed contractors with 25+ years experience. Call (416) 276-1570."
-keywords: ["underpinning services", "foundation underpinning", "basement underpinning", "underpinning contractors toronto", "foundation reinforcement", "underpinning cost", "underpinning process"]
-url: "/services/underpinning-services/"
-date: 2025-01-31
-categories: ["Foundation Repair"]
-tags: ["underpinning", "foundation-repair", "structural-reinforcement"]
-schema_type: "Service"
-service_area: ["Toronto", "Mississauga", "Brampton", "Markham", "Richmond Hill", "Vaughan", "North York", "Scarborough", "Etobicoke"]
-price_range: "$15,000 - $45,000"
+title: Professional Underpinning Services Toronto | Foundation Reinforcement Experts
+description: >-
+  Expert underpinning services in Toronto & GTA. Strengthen foundations,
+  increase basement height, prevent settling. Licensed contractors with 25+
+  years experience. Call (416) 276-1570.
+keywords:
+  - underpinning services
+  - foundation underpinning
+  - basement underpinning
+  - underpinning contractors toronto
+  - foundation reinforcement
+  - underpinning cost
+  - underpinning process
+url: /services/underpinning-services/
+date: 2025-01-31T00:00:00.000Z
+categories:
+  - Foundation Repair
+tags:
+  - underpinning
+  - foundation-repair
+  - structural-reinforcement
+schema_type: Service
+service_area:
+  - Toronto
+  - Mississauga
+  - Brampton
+  - Markham
+  - Richmond Hill
+  - Vaughan
+  - North York
+  - Scarborough
+  - Etobicoke
+price_range: '$15,000 - $45,000'
+benefits:
+  - title: Increased Ceiling Height
+    description: Transform your basement into livable space with proper headroom
+  - title: Engineered Solutions
+    description: Professional engineers design every underpinning project
+  - title: Municipal Compliance
+    description: We handle all permits and inspections for Toronto building codes
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Engineering & Permits
+    description: 'Structural engineer designs, city approves plans'
+    icon: blueprint
+  - title: Staged Excavation
+    description: Excavate in sections to maintain structural integrity
+    icon: construction
+  - title: Pour New Footings
+    description: Form and pour engineered concrete footings
+    icon: concrete
+  - title: Wall Extension
+    description: Build new foundation walls to desired height
+    icon: bricks
+hero:
+  features:
+    - Licensed Engineers
+    - Project Management
+    - 0% Financing
 ---
 
 # Professional Underpinning Services in Toronto & GTA

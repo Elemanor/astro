@@ -1,60 +1,92 @@
 ---
-title: "Emergency Basement Waterproofing Services | Professional Crisis Response"
-subtitle: "Comprehensive Emergency Service Solutions"
-seo_title: "Emergency Basement Waterproofing Services | Crisis Response Team"
-description: "Professional emergency waterproofing services for basement flooding crises. Complete service solutions from assessment to permanent repair. Toronto & GTA emergency contractors."
-date: 2025-01-29
-type: "service"
-url: "/services/emergency-waterproofing/"
-keywords: ["emergency basement waterproofing services", "crisis waterproofing response", "emergency waterproofing contractors", "urgent basement repair", "professional emergency waterproofing", "basement flooding after rain", "emergency flood repair", "24 hour basement flooding help"]
-schema_type: "EmergencyService"
-urgency: "immediate"
-
-# Related services
+title: Emergency Basement Waterproofing Services | Professional Crisis Response
+subtitle: Comprehensive Emergency Service Solutions
+seo_title: Emergency Basement Waterproofing Services | Crisis Response Team
+description: >-
+  Professional emergency waterproofing services for basement flooding crises.
+  Complete service solutions from assessment to permanent repair. Toronto & GTA
+  emergency contractors.
+date: 2025-01-29T00:00:00.000Z
+type: service
+url: /services/emergency-waterproofing/
+keywords:
+  - emergency basement waterproofing services
+  - crisis waterproofing response
+  - emergency waterproofing contractors
+  - urgent basement repair
+  - professional emergency waterproofing
+  - basement flooding after rain
+  - emergency flood repair
+  - 24 hour basement flooding help
+schema_type: EmergencyService
+urgency: immediate
 related_services:
-  - title: "Foundation Crack Repair"
-    url: "/services/foundation-crack-repair/"
-    description: "Stop leaks at the source"
-    image: "/pics/work/crack_repair.webp"
-  - title: "Interior Waterproofing"
-    url: "/services/interior-waterproofing/"
-    description: "Permanent water management"
-    image: "/pics/work/interior-waterproofing.webp"
-  - title: "Sump Pump Installation"
-    url: "/services/interior-waterproofing/"
-    description: "Prevent future flooding"
-    image: "/pics/work/sump-pump.webp"
-
-# Content sections
+  - title: Foundation Crack Repair
+    url: /services/foundation-crack-repair/
+    description: Stop leaks at the source
+    image: /pics/work/crack_repair.webp
+  - title: Interior Waterproofing
+    url: /services/interior-waterproofing/
+    description: Permanent water management
+    image: /pics/work/interior-waterproofing.webp
+  - title: Sump Pump Installation
+    url: /services/interior-waterproofing/
+    description: Prevent future flooding
+    image: /pics/work/sump-pump.webp
 sections:
-  - title: "24/7 Emergency Response Team"
-    content: |
-      When basement flooding strikes, every minute counts. Our emergency response teams are stationed throughout the GTA, ready to deploy within minutes of your call. We maintain fully-equipped emergency vehicles with industrial pumps, extraction equipment, and drying systems to handle any flooding situation.
-      
-      Our certified emergency technicians arrive prepared to immediately stop water intrusion, extract standing water, and begin the drying process. We work directly with insurance companies and provide complete documentation of damage and repairs. Don't let water damage escalate - our 2-hour response time ensures minimal damage to your home.
-  - title: "Complete Emergency Services"
-    content: |
-      **Immediate Water Extraction** - Our truck-mounted extraction units remove up to 5,000 gallons per hour, quickly eliminating standing water before it causes structural damage or mold growth.
-      
-      **Emergency Leak Stopping** - Using hydraulic cement, rapid-set injection materials, and temporary barriers, we stop active water entry immediately while planning permanent repairs.
-      
-      **Rapid Drying & Dehumidification** - Industrial dehumidifiers and high-velocity air movers prevent mold growth and structural damage by removing moisture within 24-48 hours.
-      
-      **Insurance Coordination** - We document all damage, provide detailed reports, and bill insurance directly when possible, making the claims process stress-free during emergencies.
+  - title: 24/7 Emergency Response Team
+    content: >
+      When basement flooding strikes, every minute counts. Our emergency
+      response teams are stationed throughout the GTA, ready to deploy within
+      minutes of your call. We maintain fully-equipped emergency vehicles with
+      industrial pumps, extraction equipment, and drying systems to handle any
+      flooding situation.
 
-# FAQ
+
+      Our certified emergency technicians arrive prepared to immediately stop
+      water intrusion, extract standing water, and begin the drying process. We
+      work directly with insurance companies and provide complete documentation
+      of damage and repairs. Don't let water damage escalate - our 2-hour
+      response time ensures minimal damage to your home.
+  - title: Complete Emergency Services
+    content: >
+      **Immediate Water Extraction** - Our truck-mounted extraction units remove
+      up to 5,000 gallons per hour, quickly eliminating standing water before it
+      causes structural damage or mold growth.
+
+
+      **Emergency Leak Stopping** - Using hydraulic cement, rapid-set injection
+      materials, and temporary barriers, we stop active water entry immediately
+      while planning permanent repairs.
+
+
+      **Rapid Drying & Dehumidification** - Industrial dehumidifiers and
+      high-velocity air movers prevent mold growth and structural damage by
+      removing moisture within 24-48 hours.
+
+
+      **Insurance Coordination** - We document all damage, provide detailed
+      reports, and bill insurance directly when possible, making the claims
+      process stress-free during emergencies.
 faq:
-  - question: "How quickly can you really respond to emergencies?"
-    answer: |
+  - question: How quickly can you really respond to emergencies?
+    answer: >
       Our emergency response times by area:
+
       - **Downtown Toronto**: 30-45 minutes
+
       - **North York/Scarborough**: 45-60 minutes
+
       - **Mississauga/Etobicoke**: 45-60 minutes
+
       - **Vaughan/Richmond Hill**: 60-90 minutes
+
       - **Extended GTA**: 90-120 minutes
-      
-      We maintain multiple crews on standby 24/7, including holidays. Our GPS dispatch system ensures the nearest available crew responds immediately.
-  - question: "What should I do while waiting for emergency service?"
+
+
+      We maintain multiple crews on standby 24/7, including holidays. Our GPS
+      dispatch system ensures the nearest available crew responds immediately.
+  - question: What should I do while waiting for emergency service?
     answer: |
       Take these immediate safety steps:
       1. **Turn off electricity** to flooded areas at breaker panel
@@ -63,77 +95,121 @@ faq:
       4. **Document damage** with photos for insurance
       5. **Keep family safe** - avoid standing water if power is on
       6. **Clear access** for our crews to work efficiently
-      
-      Our dispatcher will provide specific guidance based on your situation.
-  - question: "How much does emergency service cost?"
-    answer: |
-      Emergency service pricing:
-      - **Water Extraction**: $500-$1,500 (based on volume)
-      - **Emergency Leak Repair**: $800-$2,000
-      - **Drying Equipment**: $500-$1,000 per day
-      - **After-hours surcharge**: Included in above prices
-      
-      Most homeowner insurance covers sudden water damage. We document everything and can bill insurance directly. Payment plans available for uninsured repairs.
-  - question: "Do you provide permanent repairs after emergencies?"
-    answer: |
-      Yes, we provide complete solutions:
-      - Emergency stabilization stops immediate damage
-      - Full assessment identifies all water sources
-      - Permanent waterproofing prevents recurrence
-      - Same crew can handle entire project
-      - Warranty coverage on all permanent repairs
-      
-      Many clients upgrade to full waterproofing after emergencies to prevent future flooding. We offer priority scheduling and discounts for emergency clients.
 
+      Our dispatcher will provide specific guidance based on your situation.
+  - question: How much does emergency service cost?
+    answer: >
+      Emergency service pricing:
+
+      - **Water Extraction**: $500-$1,500 (based on volume)
+
+      - **Emergency Leak Repair**: $800-$2,000
+
+      - **Drying Equipment**: $500-$1,000 per day
+
+      - **After-hours surcharge**: Included in above prices
+
+
+      Most homeowner insurance covers sudden water damage. We document
+      everything and can bill insurance directly. Payment plans available for
+      uninsured repairs.
+  - question: Do you provide permanent repairs after emergencies?
+    answer: >
+      Yes, we provide complete solutions:
+
+      - Emergency stabilization stops immediate damage
+
+      - Full assessment identifies all water sources
+
+      - Permanent waterproofing prevents recurrence
+
+      - Same crew can handle entire project
+
+      - Warranty coverage on all permanent repairs
+
+
+      Many clients upgrade to full waterproofing after emergencies to prevent
+      future flooding. We offer priority scheduling and discounts for emergency
+      clients.
 schema:
-  type: "EmergencyService"
-  emergency_service: {
-  "@context": "https://schema.org",
-  "@type": "EmergencyService",
-  "name": "DrySpace Emergency Waterproofing",
-  "serviceType": "24/7 Emergency Basement Waterproofing",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "DrySpace Waterproofing",
-    "telephone": "+1-437-545-0067",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Toronto",
-      "addressRegion": "ON",
-      "addressCountry": "CA"
-    }
-  },
-  "areaServed": [
-    "Toronto",
-    "Mississauga",
-    "Brampton",
-    "Vaughan",
-    "Richmond Hill",
-    "Markham",
-    "North York",
-    "Scarborough",
-    "Etobicoke"
-  ],
-  "availableChannel": {
-    "@type": "ServiceChannel",
-    "servicePhone": "+1-437-545-0067",
-    "availableLanguage": "English"
-  },
-  "hoursAvailable": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "00:00",
-    "closes": "23:59"
-  }
-}
+  type: EmergencyService
+  emergency_service:
+    '@context': 'https://schema.org'
+    '@type': EmergencyService
+    name: DrySpace Emergency Waterproofing
+    serviceType: 24/7 Emergency Basement Waterproofing
+    provider:
+      '@type': LocalBusiness
+      name: DrySpace Waterproofing
+      telephone: +1-437-545-0067
+      address:
+        '@type': PostalAddress
+        addressLocality: Toronto
+        addressRegion: 'ON'
+        addressCountry: CA
+    areaServed:
+      - Toronto
+      - Mississauga
+      - Brampton
+      - Vaughan
+      - Richmond Hill
+      - Markham
+      - North York
+      - Scarborough
+      - Etobicoke
+    availableChannel:
+      '@type': ServiceChannel
+      servicePhone: +1-437-545-0067
+      availableLanguage: English
+    hoursAvailable:
+      '@type': OpeningHoursSpecification
+      dayOfWeek:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+      opens: '00:00'
+      closes: '23:59'
+starting_price: $599
+price_range: '$599 - $4,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Emergency Basement Waterproofing Services

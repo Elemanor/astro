@@ -1,262 +1,420 @@
 ---
-title: "Basement Leak Repair Near Me | Local Toronto Water Damage Experts"
-subtitle: "Find Expert Basement Leak Repair in Your Neighborhood - Fast Response"
-seo_title: "Basement Leak Repair Near Me Toronto | Emergency Water Damage Fix"
-description: "Need basement leak repair near you? Local Toronto experts with 2-hour response time. Emergency water extraction, permanent leak fixes, lifetime warranty. Call (437) 545-0067."
-date: 2025-01-31
-type: "service"
-url: "/services/basement-leak-repair-near-me/"
-keywords: ["basement leak repair near me", "basement leaking repair near me", "emergency basement repair near me", "local basement waterproofing", "water damage repair near me", "basement flooding near me", "toronto basement leak repair"]
-schema_type: "LocalBusiness"
-urgency: "high"
+title: Basement Leak Repair Near Me | Local Toronto Water Damage Experts
+subtitle: Find Expert Basement Leak Repair in Your Neighborhood - Fast Response
+seo_title: Basement Leak Repair Near Me Toronto | Emergency Water Damage Fix
+description: >-
+  Need basement leak repair near you? Local Toronto experts with 2-hour response
+  time. Emergency water extraction, permanent leak fixes, lifetime warranty.
+  Call (437) 545-0067.
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/basement-leak-repair-near-me/
+keywords:
+  - basement leak repair near me
+  - basement leaking repair near me
+  - emergency basement repair near me
+  - local basement waterproofing
+  - water damage repair near me
+  - basement flooding near me
+  - toronto basement leak repair
+schema_type: LocalBusiness
+urgency: high
 related_services:
-  - name: "Foundation Waterproofing Near Me"
-    url: "/services/foundation-waterproofing-near-me/"
-    image: "/pics/work/exterior-waterproofing-membrane.webp"
-  - name: "French Drain Installation Near Me"
-    url: "/services/french-drain-installation-near-me/"
-    image: "/pics/work/interior-waterproofing.webp"
-  - name: "Foundation Repair Near Me"
-    url: "/services/foundation-repair-near-me/"
-    image: "/pics/work/crack_repair.webp"
+  - name: Foundation Waterproofing Near Me
+    url: /services/foundation-waterproofing-near-me/
+    image: /pics/work/exterior-waterproofing-membrane.webp
+  - name: French Drain Installation Near Me
+    url: /services/french-drain-installation-near-me/
+    image: /pics/work/interior-waterproofing.webp
+  - name: Foundation Repair Near Me
+    url: /services/foundation-repair-near-me/
+    image: /pics/work/crack_repair.webp
 service_areas:
-  - name: "Downtown Toronto"
-    response_time: "30 minutes"
-    coverage: "Financial District, Entertainment District, Distillery District"
-  - name: "North York"
-    response_time: "45 minutes"
-    coverage: "Willowdale, Don Mills, York Mills, Sheppard"
-  - name: "Scarborough"
-    response_time: "45 minutes"
-    coverage: "Agincourt, Malvern, Rouge, Bendale"
-  - name: "Etobicoke"
-    response_time: "45 minutes"
-    coverage: "Mimico, New Toronto, Long Branch, Alderwood"
-  - name: "Mississauga"
-    response_time: "60 minutes"
-    coverage: "Port Credit, Square One, Meadowvale, Streetsville"
-  - name: "Markham"
-    response_time: "60 minutes"
-    coverage: "Unionville, Thornhill, Milliken, Buttonville"
+  - name: Downtown Toronto
+    response_time: 30 minutes
+    coverage: 'Financial District, Entertainment District, Distillery District'
+  - name: North York
+    response_time: 45 minutes
+    coverage: 'Willowdale, Don Mills, York Mills, Sheppard'
+  - name: Scarborough
+    response_time: 45 minutes
+    coverage: 'Agincourt, Malvern, Rouge, Bendale'
+  - name: Etobicoke
+    response_time: 45 minutes
+    coverage: 'Mimico, New Toronto, Long Branch, Alderwood'
+  - name: Mississauga
+    response_time: 60 minutes
+    coverage: 'Port Credit, Square One, Meadowvale, Streetsville'
+  - name: Markham
+    response_time: 60 minutes
+    coverage: 'Unionville, Thornhill, Milliken, Buttonville'
 sections:
-  - title: "Emergency Basement Leak Repair Near You"
-    content: |
-      When water invades your basement, you need local experts who can respond fast. Our emergency basement leak repair teams are strategically positioned throughout the GTA to provide rapid response when you search for "basement leak repair near me." With average response times under 2 hours and 24/7 availability, we're the local water damage specialists Toronto homeowners trust.
-      
+  - title: Emergency Basement Leak Repair Near You
+    content: >
+      When water invades your basement, you need local experts who can respond
+      fast. Our emergency basement leak repair teams are strategically
+      positioned throughout the GTA to provide rapid response when you search
+      for "basement leak repair near me." With average response times under 2
+      hours and 24/7 availability, we're the local water damage specialists
+      Toronto homeowners trust.
+
+
       **Your Local Response Network:**
+
       - **Downtown Toronto**: 30-minute average response
+
       - **North York**: 45-minute average response  
+
       - **Scarborough**: 45-minute average response
+
       - **Etobicoke**: 45-minute average response
+
       - **Mississauga**: 60-minute average response
+
       - **Markham**: 60-minute average response
-      
-      Our local basement leak repair specialists understand Toronto's unique challenges - from clay soil pressure to aging infrastructure. We maintain fully stocked trucks in your area, ensuring immediate access to professional-grade water extraction equipment, emergency sealants, and permanent repair materials.
-      
+
+
+      Our local basement leak repair specialists understand Toronto's unique
+      challenges - from clay soil pressure to aging infrastructure. We maintain
+      fully stocked trucks in your area, ensuring immediate access to
+      professional-grade water extraction equipment, emergency sealants, and
+      permanent repair materials.
+
+
       **Why Local Expertise Matters:**
+
       - Familiar with neighborhood soil conditions
+
       - Understand local building codes and permits
+
       - Know common basement issues in your area
+
       - Established relationships with local suppliers
+
       - Community reputation you can verify
+
       - Faster response times than distant contractors
-  - title: "Find Basement Leak Repair Services in Your Neighborhood"
-    content: |
+  - title: Find Basement Leak Repair Services in Your Neighborhood
+    content: >
       **Toronto Central & Downtown**
-      
-      Serving: Financial District, Entertainment District, Corktown, Distillery District, St. Lawrence, Harbourfront
-      
+
+
+      Serving: Financial District, Entertainment District, Corktown, Distillery
+      District, St. Lawrence, Harbourfront
+
+
       **Common Basement Issues:**
+
       - Victorian-era stone foundations with mortar deterioration
+
       - High water table from proximity to Lake Ontario
+
       - Limited access for exterior repairs
+
       - Vibration damage from nearby construction
+
       - Window well failures in below-grade units
-      
+
+
       **Local Solutions:**
+
       - Interior crack injection for heritage homes
+
       - Minimal-disruption waterproofing systems
+
       - Emergency water extraction in tight spaces
+
       - Window well repairs and covers
+
       - Sump pump systems for high water tables
-      
+
+
       **North York & Willowdale**
-      
-      Serving: Don Mills, York Mills, Sheppard West, Bayview Village, Flemingdon Park
-      
+
+
+      Serving: Don Mills, York Mills, Sheppard West, Bayview Village, Flemingdon
+      Park
+
+
       **Typical Problems:**
+
       - Clay soil expansion causing wall cracks
+
       - Split-level home drainage issues
+
       - Finished basement flooding risks
+
       - Tree root infiltration in older neighborhoods
+
       - Basement apartment water damage
-      
+
+
       **Specialized Services:**
+
       - Exterior waterproofing for clay soil conditions
+
       - French drain installation for surface water
+
       - Basement apartment protection systems
+
       - Root barrier installation
+
       - Grading corrections for proper drainage
-      
+
+
       **Scarborough & East Toronto**
-      
-      Serving: Agincourt, Malvern, Rouge Valley, Bendale, Cliffcrest, Birch Cliff
-      
+
+
+      Serving: Agincourt, Malvern, Rouge Valley, Bendale, Cliffcrest, Birch
+      Cliff
+
+
       **Regional Challenges:**
+
       - Ravine lot drainage complexities
+
       - Bluffs area soil instability
+
       - Older bungalow foundation settling
+
       - Storm sewer backup risks
+
       - High clay content soil pressure
-      
+
+
       **Expert Solutions:**
+
       - Slope stabilization and drainage
+
       - Helical pier foundation support
+
       - Storm sewer disconnect and pumping
+
       - Ravine lot waterproofing systems
+
       - Clay soil pressure relief systems
-      
+
+
       **Etobicoke & West Toronto**
-      
+
+
       Serving: Mimico, New Toronto, Long Branch, Alderwood, Rexdale, Islington
-      
+
+
       **Area-Specific Issues:**
+
       - Lake shore moisture problems
+
       - Mixed soil condition challenges
+
       - Post-war construction vulnerabilities
+
       - Proximity flooding from Humber River
+
       - Airport area ground settling
-      
+
+
       **Targeted Services:**
+
       - Lake shore moisture control systems
+
       - Flood prevention and backwater valves
+
       - Mixed foundation repair techniques
+
       - River proximity drainage solutions
+
       - Airport vibration damage repairs
-  - title: "Local Basement Leak Repair Process"
-    content: |
+  - title: Local Basement Leak Repair Process
+    content: >
       **Immediate Emergency Response (0-2 Hours)**
-      
-      When you call for basement leak repair near you, our local dispatch center immediately connects you with the closest available crew. Our GPS-enabled fleet ensures the fastest possible response to your emergency.
-      
+
+
+      When you call for basement leak repair near you, our local dispatch center
+      immediately connects you with the closest available crew. Our GPS-enabled
+      fleet ensures the fastest possible response to your emergency.
+
+
       **Step 1: Rapid Assessment**
+
       - Emergency safety evaluation
+
       - Water source identification
+
       - Damage extent documentation
+
       - Insurance claim photography
+
       - Immediate stabilization plan
-      
+
+
       **Step 2: Emergency Water Control**
+
       - Industrial water extraction (5,000+ gallons/hour)
+
       - Temporary leak sealing with hydraulic cement
+
       - Power restoration and safety measures
+
       - Contents protection and moving
+
       - Dehumidification system deployment
-      
+
+
       **Permanent Repair Process (Day 1-5)**
-      
+
+
       **Step 3: Comprehensive Diagnosis**
+
       - Thermal imaging moisture detection
+
       - Foundation structural assessment
+
       - Drainage system evaluation
+
       - Soil condition analysis
+
       - Multiple repair option development
-      
+
+
       **Step 4: Professional Repair Implementation**
+
       - Targeted crack injection for active leaks
+
       - Interior/exterior waterproofing as needed
+
       - Drainage system installation or repair
+
       - Sump pump system upgrade/installation
+
       - Preventive measures for future protection
-      
+
+
       **Step 5: Quality Assurance & Warranty**
+
       - Complete system testing
+
       - Warranty documentation and registration
+
       - Maintenance schedule establishment
+
       - 24/7 emergency support activation
+
       - Annual inspection scheduling
-  - title: "Cost of Local Basement Leak Repair Services"
-    content: |
+  - title: Cost of Local Basement Leak Repair Services
+    content: >
       **Emergency Response Pricing**
-      
+
+
       **Immediate Services:**
+
       - Emergency call-out: $150-$300
+
       - Water extraction: $500-$1,500
+
       - Temporary leak sealing: $200-$800
+
       - Emergency drying setup: $300-$600
+
       - Documentation for insurance: Included
-      
+
+
       **Permanent Repair Solutions:**
-      
+
+
       **Minor Leak Repairs:**
+
       - Single crack injection: $500-$1,200
+
       - Window well repair: $800-$2,000
+
       - Small foundation seepage: $1,000-$2,500
+
       - Drainage improvement: $1,500-$3,500
-      
+
+
       **Major Waterproofing Systems:**
+
       - Interior waterproofing: $3,000-$8,000
+
       - Exterior waterproofing: $10,000-$25,000
+
       - French drain installation: $2,500-$6,000
+
       - Complete foundation repair: $15,000-$40,000
-      
+
+
       **Local Pricing Factors:**
-      
+
+
       **Neighborhood Variables:**
+
       - **Downtown Toronto**: Premium for access challenges (+15-25%)
+
       - **North York**: Standard pricing for typical excavation
+
       - **Scarborough**: Ravine lot complexity may increase costs (+10-20%)
-      - **Etobicoke**: Lake proximity may require specialized solutions (+10-15%)
+
+      - **Etobicoke**: Lake proximity may require specialized solutions
+      (+10-15%)
+
       - **Mississauga**: Competitive pricing with good access
+
       - **Markham**: New construction typically lower costs (-5-10%)
-      
+
+
       **Cost-Saving Benefits of Local Service:**
+
       - Reduced travel time and fuel surcharges
+
       - Local supplier relationships for better material costs
+
       - Knowledge of cost-effective solutions for your area
+
       - Potential multi-neighbor discounts
+
       - Established permit relationships for faster processing
-  - title: "Why Choose Local Basement Leak Repair Experts"
+  - title: Why Choose Local Basement Leak Repair Experts
     content: |
       **DrySpace: Your Neighborhood Water Damage Specialists**
-      
+
       **Local Presence & Community Investment:**
       - Serving Toronto and GTA since 2008
       - Local office and warehouse facilities
       - Community-based technician teams
       - Established neighborhood references
       - Long-term local warranty support
-      
+
       **Neighborhood Expertise:**
       - Detailed knowledge of local soil conditions
       - Understanding of area-specific building codes
       - Familiarity with common basement issues by neighborhood
       - Established relationships with local inspectors
       - Experience with local insurance adjusters
-      
+
       **Superior Local Service:**
       - Fastest response times in the industry
       - Local inventory for immediate repairs
       - Neighborhood-specific solution development
       - Community reputation and accountability
       - Ongoing local support and maintenance
-      
+
       **Local Advantages:**
-      
+
       **Response Speed:**
       - Strategically positioned local crews
       - GPS dispatch for optimal routing
       - Pre-positioned emergency equipment
       - 24/7 local call center
       - No long-distance travel delays
-      
+
       **Cost Effectiveness:**
       - No travel time charges
       - Local supplier relationships
       - Competitive area pricing
       - Group neighborhood discounts
       - Efficient permit processing
-      
+
       **Quality Assurance:**
       - Local reputation to maintain
       - Verifiable neighborhood references  
@@ -264,65 +422,167 @@ sections:
       - Local warranty service
       - Established quality standards
 faq:
-  - question: "How do I find reliable basement leak repair near me?"
-    answer: "Look for local contractors with physical addresses in your area, 10+ years of local experience, proper licenses and insurance, and verifiable neighborhood references. Check online reviews specific to your city, ask neighbors for recommendations, and verify they offer 24/7 emergency service. Local contractors should provide free estimates and show examples of work in your area."
-  - question: "How quickly can local basement leak repair services respond?"
-    answer: "Professional local services typically respond within 2-4 hours for emergencies. In Toronto and GTA, our average response times are: Downtown (30 min), North York/Scarborough/Etobicoke (45 min), Mississauga/Markham (60 min). We maintain local crews and equipment to ensure fastest possible response when you need basement leak repair near you."
-  - question: "What's the difference between local and national basement repair companies?"
-    answer: "Local companies offer faster response times, lower costs (no travel charges), better knowledge of local soil/building conditions, established community reputation, and ongoing local support. They understand local building codes, have relationships with area inspectors, and their reputation depends on neighborhood satisfaction. National companies may have standard solutions that don't address local conditions."
-  - question: "Do local basement repair companies cost more than large chains?"
-    answer: "Local companies often cost less due to lower overhead, no franchise fees, and elimination of travel charges. They offer competitive pricing with personalized service, local supplier relationships, and knowledge of cost-effective solutions for your area's specific conditions. Many provide multi-neighbor discounts and have established relationships for faster, less expensive permit processing."
-  - question: "How do I verify a local basement repair company's credentials?"
-    answer: "Check their physical local address, verify licenses with your city/province, confirm insurance coverage, check Better Business Bureau ratings, read local online reviews, ask for recent neighborhood references, and verify warranty terms. Local companies should readily provide proof of workers' compensation, liability insurance, and local licensing."
-  - question: "What should I expect from emergency basement leak repair near me?"
-    answer: "Expect immediate response (within 2-4 hours), emergency water extraction, temporary leak stopping, safety assessment, damage documentation for insurance, and a plan for permanent repairs. Emergency services should include equipment setup, power safety checks, and protection of belongings. Most local companies offer direct insurance billing for covered damages."
-  - question: "Can local basement repair companies work with my insurance?"
-    answer: "Most established local companies work directly with insurance companies, providing detailed documentation, photos, and reports that adjusters require. They often offer direct billing for covered services, help with claim navigation, and can recommend coverage for uncovered items. Local companies understand regional insurance practices and adjuster requirements."
-  - question: "What basement problems require immediate local repair?"
-    answer: "Call for immediate local repair for: active flooding, large cracks with water flow, sudden foundation settlement, electrical hazards from water, mold growth starting, or any situation threatening safety. Local emergency services can respond fastest and provide immediate stabilization while developing permanent repair plans."
-  - question: "How long do local basement leak repairs typically take?"
-    answer: "Emergency stabilization happens immediately. Minor repairs like crack injection take 1 day, interior waterproofing takes 2-3 days, and exterior waterproofing takes 3-7 days depending on scope and weather. Local companies can often work faster due to nearby material suppliers and familiarity with local permit processes."
-  - question: "Do local basement repair companies offer warranties?"
-    answer: "Reputable local companies typically offer comprehensive warranties from 10 years to lifetime on their work. Local warranties are often more valuable because the company maintains a physical presence for ongoing service. Look for transferable warranties that add value when selling, and ensure both materials and labor are covered with local service support."
+  - question: How do I find reliable basement leak repair near me?
+    answer: >-
+      Look for local contractors with physical addresses in your area, 10+ years
+      of local experience, proper licenses and insurance, and verifiable
+      neighborhood references. Check online reviews specific to your city, ask
+      neighbors for recommendations, and verify they offer 24/7 emergency
+      service. Local contractors should provide free estimates and show examples
+      of work in your area.
+  - question: How quickly can local basement leak repair services respond?
+    answer: >-
+      Professional local services typically respond within 2-4 hours for
+      emergencies. In Toronto and GTA, our average response times are: Downtown
+      (30 min), North York/Scarborough/Etobicoke (45 min), Mississauga/Markham
+      (60 min). We maintain local crews and equipment to ensure fastest possible
+      response when you need basement leak repair near you.
+  - question: >-
+      What's the difference between local and national basement repair
+      companies?
+    answer: >-
+      Local companies offer faster response times, lower costs (no travel
+      charges), better knowledge of local soil/building conditions, established
+      community reputation, and ongoing local support. They understand local
+      building codes, have relationships with area inspectors, and their
+      reputation depends on neighborhood satisfaction. National companies may
+      have standard solutions that don't address local conditions.
+  - question: Do local basement repair companies cost more than large chains?
+    answer: >-
+      Local companies often cost less due to lower overhead, no franchise fees,
+      and elimination of travel charges. They offer competitive pricing with
+      personalized service, local supplier relationships, and knowledge of
+      cost-effective solutions for your area's specific conditions. Many provide
+      multi-neighbor discounts and have established relationships for faster,
+      less expensive permit processing.
+  - question: How do I verify a local basement repair company's credentials?
+    answer: >-
+      Check their physical local address, verify licenses with your
+      city/province, confirm insurance coverage, check Better Business Bureau
+      ratings, read local online reviews, ask for recent neighborhood
+      references, and verify warranty terms. Local companies should readily
+      provide proof of workers' compensation, liability insurance, and local
+      licensing.
+  - question: What should I expect from emergency basement leak repair near me?
+    answer: >-
+      Expect immediate response (within 2-4 hours), emergency water extraction,
+      temporary leak stopping, safety assessment, damage documentation for
+      insurance, and a plan for permanent repairs. Emergency services should
+      include equipment setup, power safety checks, and protection of
+      belongings. Most local companies offer direct insurance billing for
+      covered damages.
+  - question: Can local basement repair companies work with my insurance?
+    answer: >-
+      Most established local companies work directly with insurance companies,
+      providing detailed documentation, photos, and reports that adjusters
+      require. They often offer direct billing for covered services, help with
+      claim navigation, and can recommend coverage for uncovered items. Local
+      companies understand regional insurance practices and adjuster
+      requirements.
+  - question: What basement problems require immediate local repair?
+    answer: >-
+      Call for immediate local repair for: active flooding, large cracks with
+      water flow, sudden foundation settlement, electrical hazards from water,
+      mold growth starting, or any situation threatening safety. Local emergency
+      services can respond fastest and provide immediate stabilization while
+      developing permanent repair plans.
+  - question: How long do local basement leak repairs typically take?
+    answer: >-
+      Emergency stabilization happens immediately. Minor repairs like crack
+      injection take 1 day, interior waterproofing takes 2-3 days, and exterior
+      waterproofing takes 3-7 days depending on scope and weather. Local
+      companies can often work faster due to nearby material suppliers and
+      familiarity with local permit processes.
+  - question: Do local basement repair companies offer warranties?
+    answer: >-
+      Reputable local companies typically offer comprehensive warranties from 10
+      years to lifetime on their work. Local warranties are often more valuable
+      because the company maintains a physical presence for ongoing service.
+      Look for transferable warranties that add value when selling, and ensure
+      both materials and labor are covered with local service support.
 schema:
-  type: "LocalBusiness"
-  name: "Basement Leak Repair Near Me - DrySpace"
-  image: "/images/basement-leak-repair-near-me.jpg"
+  type: LocalBusiness
+  name: Basement Leak Repair Near Me - DrySpace
+  image: /images/basement-leak-repair-near-me.jpg
   address:
-    type: "PostalAddress"
-    addressLocality: "Toronto"
-    addressRegion: "ON"
-    addressCountry: "CA"
+    type: PostalAddress
+    addressLocality: Toronto
+    addressRegion: 'ON'
+    addressCountry: CA
   geo:
-    type: "GeoCoordinates"
-    latitude: "43.6532"
-    longitude: "-79.3832"
-  url: "https://dryspacewaterproofing.ca/services/basement-leak-repair-near-me/"
-  telephone: "(437) 545-0067"
-  priceRange: "$500-$25,000"
+    type: GeoCoordinates
+    latitude: '43.6532'
+    longitude: '-79.3832'
+  url: 'https://dryspacewaterproofing.ca/services/basement-leak-repair-near-me/'
+  telephone: (437) 545-0067
+  priceRange: '$500-$25,000'
   openingHoursSpecification:
-    - type: "OpeningHoursSpecification"
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-      opens: "00:00"
-      closes: "23:59"
+    - type: OpeningHoursSpecification
+      dayOfWeek:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+      opens: '00:00'
+      closes: '23:59'
   areaServed:
-    - name: "Toronto"
-      type: "City"
-    - name: "North York"
-      type: "City"
-    - name: "Scarborough" 
-      type: "City"
-    - name: "Etobicoke"
-      type: "City"
-    - name: "Mississauga"
-      type: "City"
-    - name: "Markham"
-      type: "City"
-    - name: "Brampton"
-      type: "City"
-    - name: "Vaughan"
-      type: "City"
-  serviceRadius: "50 km"
+    - name: Toronto
+      type: City
+    - name: North York
+      type: City
+    - name: Scarborough
+      type: City
+    - name: Etobicoke
+      type: City
+    - name: Mississauga
+      type: City
+    - name: Markham
+      type: City
+    - name: Brampton
+      type: City
+    - name: Vaughan
+      type: City
+  serviceRadius: 50 km
+starting_price: $499
+price_range: '$499 - $4,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Diagnosis
+    - Same Day Repair
+    - Warranty Included
 ---
 
 # Basement Leak Repair Near Me - Local Toronto Emergency Response

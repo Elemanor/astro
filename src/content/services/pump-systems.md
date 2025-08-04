@@ -1,31 +1,82 @@
 ---
-title: "Pump Systems for Water Management"
-subtitle: "Sump Pumps, Sewage Pumps & Backup Protection"
-seo_title: "Pump Systems Toronto | Sump Pumps, Sewage Pumps & Water Management"
-description: "Complete guide to pump systems for Toronto homes. Compare sump pumps vs sewage pumps, understand backup options, and ensure reliable water protection. Professional installation & service."
-date: 2025-01-31
-type: "hub"
-url: "/services/pump-systems/"
-
+title: Pump Systems for Water Management
+subtitle: 'Sump Pumps, Sewage Pumps & Backup Protection'
+seo_title: 'Pump Systems Toronto | Sump Pumps, Sewage Pumps & Water Management'
+description: >-
+  Complete guide to pump systems for Toronto homes. Compare sump pumps vs sewage
+  pumps, understand backup options, and ensure reliable water protection.
+  Professional installation & service.
+date: 2025-01-31T00:00:00.000Z
+type: hub
+url: /services/pump-systems/
 sections:
-  - title: "Essential Pump Protection"
-    content: |
-      When water threatens your basement, pumps provide the active protection that keeps your home dry. From managing groundwater with sump pumps to handling wastewater with sewage pumps, the right pump system is crucial for protecting your investment.
-      
-      This comprehensive guide helps you understand pump options, compare systems, and ensure reliable operation when you need it most. Whether installing new pumps or upgrading existing systems, make informed decisions for lasting protection.
+  - title: Essential Pump Protection
+    content: >
+      When water threatens your basement, pumps provide the active protection
+      that keeps your home dry. From managing groundwater with sump pumps to
+      handling wastewater with sewage pumps, the right pump system is crucial
+      for protecting your investment.
 
-  - title: "Understanding Pump Systems"
-    content: |
+
+      This comprehensive guide helps you understand pump options, compare
+      systems, and ensure reliable operation when you need it most. Whether
+      installing new pumps or upgrading existing systems, make informed
+      decisions for lasting protection.
+  - title: Understanding Pump Systems
+    content: >
       **Active Water Management Solutions**
-      
-      Pumps are the workhorses of basement water management. While drainage systems collect water, pumps actively remove it from your home. Modern pump systems combine reliability, efficiency, and backup protection to ensure continuous operation during storms, power outages, and emergencies.
-      
-      Choosing the right pump involves understanding water volume, power requirements, backup needs, and integration with your overall water management strategy.
 
+
+      Pumps are the workhorses of basement water management. While drainage
+      systems collect water, pumps actively remove it from your home. Modern
+      pump systems combine reliability, efficiency, and backup protection to
+      ensure continuous operation during storms, power outages, and emergencies.
+
+
+      Choosing the right pump involves understanding water volume, power
+      requirements, backup needs, and integration with your overall water
+      management strategy.
 schema:
-  type: "WebPage"
-  name: "Pump Systems Hub"
-  description: "Comprehensive guide to sump pumps and sewage pump systems"
+  type: WebPage
+  name: Pump Systems Hub
+  description: Comprehensive guide to sump pumps and sewage pump systems
+starting_price: '$1,299'
+price_range: '$1,299 - $3,999'
+benefits:
+  - title: Flood Prevention
+    description: Reliable water removal prevents costly basement flooding
+  - title: Battery Backup Options
+    description: Keep pumping during power outages with backup systems
+  - title: Smart Monitoring
+    description: WiFi-enabled pumps alert you to issues before they become disasters
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Location Assessment
+    description: Determine optimal pump location for water collection
+    icon: target
+  - title: Pit Excavation
+    description: Dig sump pit to proper depth and dimensions
+    icon: shovel
+  - title: Pump Installation
+    description: 'Install pump, check valve, and discharge system'
+    icon: pump
+  - title: Testing & Training
+    description: Test system thoroughly and train on maintenance
+    icon: checklist
+hero:
+  features:
+    - Battery Backup Available
+    - WiFi Monitoring
+    - Annual Maintenance
 ---
 
 # Professional Pump Systems

@@ -1,15 +1,60 @@
 ---
-title: "Condo Basement Waterproofing Toronto | High-Rise & Townhouse Solutions"
-description: "Specialized basement waterproofing for Toronto condos, townhouses & multi-unit buildings. Board approvals, minimal disruption, shared wall expertise. Call 437-545-0067."
-keywords: ["basement waterproofing for condos toronto", "condo basement leak repair", "townhouse waterproofing toronto", "multi-unit waterproofing", "condo board approved waterproofing"]
-author: "DrySpace Waterproofing"
-date: 2025-01-31
-lastmod: 2025-01-31
-type: "services"
-url: "/services/condo-basement-waterproofing/"
-featured_image: "/images/condo-waterproofing.jpg"
+title: Condo Basement Waterproofing Toronto | High-Rise & Townhouse Solutions
+description: >-
+  Specialized basement waterproofing for Toronto condos, townhouses & multi-unit
+  buildings. Board approvals, minimal disruption, shared wall expertise. Call
+  437-545-0067.
+keywords:
+  - basement waterproofing for condos toronto
+  - condo basement leak repair
+  - townhouse waterproofing toronto
+  - multi-unit waterproofing
+  - condo board approved waterproofing
+author: DrySpace Waterproofing
+date: 2025-01-31T00:00:00.000Z
+lastmod: 2025-01-31T00:00:00.000Z
+type: services
+url: /services/condo-basement-waterproofing/
+featured_image: /images/condo-waterproofing.jpg
 toc: true
 draft: false
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Condo Basement Waterproofing in Toronto

@@ -1,43 +1,93 @@
 ---
-title: "French Drain Solutions Toronto | Complete Guide & Installation"
-description: "Complete French drain solutions for Toronto homes. Expert drainage systems that stop basement flooding, manage groundwater, and protect foundations. Professional installation with lifetime warranty."
-date: 2025-01-31
-type: "service"
-url: "/services/french-drain-solutions-toronto/"
-keywords: ["french drain", "french drain toronto", "french drain installation", "basement drainage", "foundation drainage", "waterproofing toronto", "french drain cost", "interior french drain", "exterior french drain", "drainage solutions"]
+title: French Drain Solutions Toronto | Complete Guide & Installation
+description: >-
+  Complete French drain solutions for Toronto homes. Expert drainage systems
+  that stop basement flooding, manage groundwater, and protect foundations.
+  Professional installation with lifetime warranty.
+date: 2025-01-31T00:00:00.000Z
+type: service
+url: /services/french-drain-solutions-toronto/
+keywords:
+  - french drain
+  - french drain toronto
+  - french drain installation
+  - basement drainage
+  - foundation drainage
+  - waterproofing toronto
+  - french drain cost
+  - interior french drain
+  - exterior french drain
+  - drainage solutions
 schema:
-  type: "Service"
-  name: "French Drain Solutions Toronto"
+  type: Service
+  name: French Drain Solutions Toronto
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Toronto"
-    - "North York"
-    - "Scarborough"
-    - "Etobicoke"
-    - "East York"
-    - "York"
-    - "Mississauga"
-    - "Brampton"
-    - "Vaughan"
-    - "Richmond Hill"
-    - "Markham"
-    - "Burlington"
-    - "Oakville"
-    - "GTA"
+    - Toronto
+    - North York
+    - Scarborough
+    - Etobicoke
+    - East York
+    - York
+    - Mississauga
+    - Brampton
+    - Vaughan
+    - Richmond Hill
+    - Markham
+    - Burlington
+    - Oakville
+    - GTA
   serviceType:
-    - "French Drain Installation"
-    - "Interior Drainage Systems"
-    - "Exterior Drainage Systems"
-    - "Foundation Waterproofing"
-    - "Basement Water Management"
+    - French Drain Installation
+    - Interior Drainage Systems
+    - Exterior Drainage Systems
+    - Foundation Waterproofing
+    - Basement Water Management
   offers:
-    - "Free Assessment"
-    - "Professional Installation"
-    - "Lifetime Warranty"
-    - "24/7 Emergency Service"
-    - "Financing Available"
+    - Free Assessment
+    - Professional Installation
+    - Lifetime Warranty
+    - 24/7 Emergency Service
+    - Financing Available
+starting_price: '$2,999'
+price_range: '$2,999 - $8,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Same Day Service
+    - Camera Inspections
+    - 10 Year Warranty
 ---
 
 # French Drain Solutions Toronto: Complete Guide & Professional Installation

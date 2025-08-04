@@ -1,37 +1,53 @@
 ---
-title: "Bendale Basement Waterproofing | Southeast Scarborough Experts"
-subtitle: "Specialized Solutions for Bendale's Mixed Soil and Mature Neighborhoods"
-seo_title: "Bendale Basement Waterproofing | Foundation Repair Southeast Scarborough"
-description: "Expert basement waterproofing in Bendale, Scarborough. Specializing in 1960s-70s homes, mixed clay-sand soil, and tree root challenges. Local team, proven results. Call (437) 545-0067."
-type: "service"
-url: "/services/bendale-basement-waterproofing/"
+title: Bendale Basement Waterproofing | Southeast Scarborough Experts
+subtitle: Specialized Solutions for Bendale's Mixed Soil and Mature Neighborhoods
+seo_title: Bendale Basement Waterproofing | Foundation Repair Southeast Scarborough
+description: >-
+  Expert basement waterproofing in Bendale, Scarborough. Specializing in
+  1960s-70s homes, mixed clay-sand soil, and tree root challenges. Local team,
+  proven results. Call (437) 545-0067.
+type: service
+url: /services/bendale-basement-waterproofing/
 related_services:
-  - title: "Scarborough Waterproofing"
-    url: "/locations/scarborough-basement-waterproofing"
-    description: "Serving all Scarborough areas"
-    image: "/images/scarborough-waterproofing.jpg"
-  - title: "Foundation Underpinning"
-    url: "/services/foundation-underpinning"
-    description: "Common for Bendale renovations"
-    image: "/images/foundation-underpinning.jpg"
-  - title: "Exterior Waterproofing"
-    url: "/services/exterior-waterproofing"
-    description: "Best for Bendale's soil conditions"
-    image: "/images/exterior-waterproofing.jpg"
+  - title: Scarborough Waterproofing
+    url: /locations/scarborough-basement-waterproofing
+    description: Serving all Scarborough areas
+    image: /images/scarborough-waterproofing.jpg
+  - title: Foundation Underpinning
+    url: /services/foundation-underpinning
+    description: Common for Bendale renovations
+    image: /images/foundation-underpinning.jpg
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing
+    description: Best for Bendale's soil conditions
+    image: /images/exterior-waterproofing.jpg
 sections:
-  - title: "Understanding Bendale's Water Challenges"
-    content: |
-      Bendale's established neighborhoods face unique waterproofing challenges stemming from decades of development and changing environmental conditions. This mature Southeast Scarborough community requires specialized approaches for effective water management.
+  - title: Understanding Bendale's Water Challenges
+    content: >
+      Bendale's established neighborhoods face unique waterproofing challenges
+      stemming from decades of development and changing environmental
+      conditions. This mature Southeast Scarborough community requires
+      specialized approaches for effective water management.
+
 
       Key Bendale characteristics affecting waterproofing:
+
       - Mixed clay and sand soil creating unpredictable water flow
+
       - 1960s-1970s homes with aging waterproofing systems
+
       - Mature trees with extensive root systems
+
       - Original storm sewers at capacity
+
       - Mix of bungalows, splits, and two-stories
 
-      Our Bendale team has waterproofed hundreds of local homes, from the established areas near Centennial College to the family neighborhoods along Lawrence Avenue East. We understand what works in Bendale's specific conditions.
-  - title: "Common Bendale Foundation Issues"
+
+      Our Bendale team has waterproofed hundreds of local homes, from the
+      established areas near Centennial College to the family neighborhoods
+      along Lawrence Avenue East. We understand what works in Bendale's specific
+      conditions.
+  - title: Common Bendale Foundation Issues
     content: |
       **Aging Infrastructure Problems**
       Bendale homes built 50+ years ago often have:
@@ -64,7 +80,7 @@ sections:
       - Flooded carpeted areas
       - Damaged drywall and studs
       - Inadequate vapor barriers
-  - title: "Bendale-Specific Solutions"
+  - title: Bendale-Specific Solutions
     content: |
       **Comprehensive Exterior Systems**
       Ideal for Bendale's conditions:
@@ -97,7 +113,7 @@ sections:
       - Parging restoration
       - Joint repointing
       - Structural stabilization
-  - title: "Bendale Area Knowledge"
+  - title: Bendale Area Knowledge
     content: |
       **McCowan & Lawrence Area**
       Busy intersection properties need:
@@ -130,7 +146,7 @@ sections:
       - Garden restoration
       - Tree health priority
       - Property value focus
-  - title: "The Bendale Advantage with DrySpace"
+  - title: The Bendale Advantage with DrySpace
     content: |
       **Local Expertise**
       - 20+ years in Bendale
@@ -159,7 +175,7 @@ sections:
       - Use area suppliers
       - Respect neighborhood character
       - Environmental responsibility
-  - title: "Your Bendale Project"
+  - title: Your Bendale Project
     content: |
       **Initial Consultation**
       - Thorough basement inspection
@@ -193,51 +209,122 @@ sections:
       - System optimization available
       - Transfer support included
 faq:
-  - question: "Why do so many Bendale homes have basement water issues?"
-    answer: "Bendale homes are typically 50+ years old with original waterproofing systems now failing. Combined with mature tree roots, mixed soil conditions, and overwhelmed storm sewers, water problems are increasingly common without proper updates."
-  - question: "Can you waterproof without removing mature trees?"
-    answer: "Yes, we specialize in working around Bendale's mature trees. We use root barriers, careful excavation techniques, and alternative drainage routing to protect both your foundation and trees. An arborist consultation may be recommended."
-  - question: "What's the best solution for Bendale's mixed soil?"
-    answer: "Bendale's clay-sand mix requires comprehensive exterior waterproofing for best results. This includes proper membranes, drainage stone selection for mixed soil, and adequate sump pump capacity for varying water flows."
-  - question: "How long does waterproofing take in Bendale?"
-    answer: "Interior systems typically take 2-3 days. Exterior waterproofing requires 5-10 days depending on tree roots and soil conditions. We provide accurate timelines after inspection and stick to our schedules."
-  - question: "Do you handle permits in Scarborough?"
-    answer: "Yes, we manage all City of Toronto permits required for Bendale properties. This includes building permits, tree protection where needed, and any road occupation permits. We know local requirements and inspectors."
-  - question: "What about my finished basement?"
-    answer: "We frequently work with finished basements in Bendale. Interior systems can often be installed with minimal disruption. For exterior work, we document and can assist with restoration of affected areas."
-  - question: "How do you price Bendale waterproofing projects?"
-    answer: "Pricing depends on the solution type, home size, and specific challenges like tree roots. We provide detailed written quotes after inspection. Interior systems range from $3,000-8,000, exterior from $10,000-25,000 typically."
-  - question: "Is waterproofing worth it for older Bendale homes?"
-    answer: "Absolutely. Waterproofing protects your investment, prevents costly damage, enables basement use, and is often required for insurance or sale. Many Bendale homeowners see immediate quality of life improvements."
-  - question: "What warranty do you offer in Bendale?"
-    answer: "We provide a fully transferable lifetime warranty on our waterproofing systems. This covers materials and workmanship for as long as you own your home and transfers to new owners - important for resale value."
-  - question: "Can you help with insurance claims?"
-    answer: "Yes, we work regularly with insurance companies on Bendale water damage claims. We provide detailed documentation, photos, and specifications that insurance adjusters need for approval. We can bill insurance directly."
+  - question: Why do so many Bendale homes have basement water issues?
+    answer: >-
+      Bendale homes are typically 50+ years old with original waterproofing
+      systems now failing. Combined with mature tree roots, mixed soil
+      conditions, and overwhelmed storm sewers, water problems are increasingly
+      common without proper updates.
+  - question: Can you waterproof without removing mature trees?
+    answer: >-
+      Yes, we specialize in working around Bendale's mature trees. We use root
+      barriers, careful excavation techniques, and alternative drainage routing
+      to protect both your foundation and trees. An arborist consultation may be
+      recommended.
+  - question: What's the best solution for Bendale's mixed soil?
+    answer: >-
+      Bendale's clay-sand mix requires comprehensive exterior waterproofing for
+      best results. This includes proper membranes, drainage stone selection for
+      mixed soil, and adequate sump pump capacity for varying water flows.
+  - question: How long does waterproofing take in Bendale?
+    answer: >-
+      Interior systems typically take 2-3 days. Exterior waterproofing requires
+      5-10 days depending on tree roots and soil conditions. We provide accurate
+      timelines after inspection and stick to our schedules.
+  - question: Do you handle permits in Scarborough?
+    answer: >-
+      Yes, we manage all City of Toronto permits required for Bendale
+      properties. This includes building permits, tree protection where needed,
+      and any road occupation permits. We know local requirements and
+      inspectors.
+  - question: What about my finished basement?
+    answer: >-
+      We frequently work with finished basements in Bendale. Interior systems
+      can often be installed with minimal disruption. For exterior work, we
+      document and can assist with restoration of affected areas.
+  - question: How do you price Bendale waterproofing projects?
+    answer: >-
+      Pricing depends on the solution type, home size, and specific challenges
+      like tree roots. We provide detailed written quotes after inspection.
+      Interior systems range from $3,000-8,000, exterior from $10,000-25,000
+      typically.
+  - question: Is waterproofing worth it for older Bendale homes?
+    answer: >-
+      Absolutely. Waterproofing protects your investment, prevents costly
+      damage, enables basement use, and is often required for insurance or sale.
+      Many Bendale homeowners see immediate quality of life improvements.
+  - question: What warranty do you offer in Bendale?
+    answer: >-
+      We provide a fully transferable lifetime warranty on our waterproofing
+      systems. This covers materials and workmanship for as long as you own your
+      home and transfers to new owners - important for resale value.
+  - question: Can you help with insurance claims?
+    answer: >-
+      Yes, we work regularly with insurance companies on Bendale water damage
+      claims. We provide detailed documentation, photos, and specifications that
+      insurance adjusters need for approval. We can bill insurance directly.
 schema:
-  type: "Service"
-  name: "Bendale Basement Waterproofing"
+  type: Service
+  name: Bendale Basement Waterproofing
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Bendale"
-    - "McCowan and Lawrence"
-    - "Bellamy and Ellesmere"
-    - "Cedar Drive"
-    - "Centennial College Area"
-    - "Southeast Scarborough"
+    - Bendale
+    - McCowan and Lawrence
+    - Bellamy and Ellesmere
+    - Cedar Drive
+    - Centennial College Area
+    - Southeast Scarborough
   serviceType:
-    - "Basement Waterproofing"
-    - "Foundation Repair"
-    - "Tree Root Solutions"
-    - "Drainage Systems"
-    - "Sump Pump Installation"
+    - Basement Waterproofing
+    - Foundation Repair
+    - Tree Root Solutions
+    - Drainage Systems
+    - Sump Pump Installation
   offers:
-    - "Free Inspections"
-    - "Lifetime Warranty"
-    - "Insurance Billing"
-    - "Financing Options"
-    - "Emergency Service"
+    - Free Inspections
+    - Lifetime Warranty
+    - Insurance Billing
+    - Financing Options
+    - Emergency Service
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Bendale Basement Waterproofing Specialists

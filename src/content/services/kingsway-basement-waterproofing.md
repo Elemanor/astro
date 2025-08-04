@@ -1,38 +1,55 @@
 ---
-title: "Kingsway Basement Waterproofing | Luxury Home Foundation Specialists"
-subtitle: "Premium Waterproofing Solutions for Kingsway's Executive Properties"
-seo_title: "Kingsway Basement Waterproofing Etobicoke | Luxury Foundation Repair"
-description: "Expert basement waterproofing in Kingsway. Specializing in luxury homes, executive properties, and premium service standards. Serving Royal York, Prince Edward Drive area. Call (437) 545-0067."
-type: "service"
-url: "/services/kingsway-basement-waterproofing/"
+title: Kingsway Basement Waterproofing | Luxury Home Foundation Specialists
+subtitle: Premium Waterproofing Solutions for Kingsway's Executive Properties
+seo_title: Kingsway Basement Waterproofing Etobicoke | Luxury Foundation Repair
+description: >-
+  Expert basement waterproofing in Kingsway. Specializing in luxury homes,
+  executive properties, and premium service standards. Serving Royal York,
+  Prince Edward Drive area. Call (437) 545-0067.
+type: service
+url: /services/kingsway-basement-waterproofing/
 related_services:
-  - title: "Etobicoke Waterproofing"
-    url: "/locations/etobicoke-basement-waterproofing"
-    description: "Serving all Etobicoke neighborhoods"
-    image: "/images/etobicoke-waterproofing.jpg"
-  - title: "Luxury Home Waterproofing"
-    url: "/services/luxury-home-waterproofing"
-    description: "Premium service for executive properties"
-    image: "/images/luxury-waterproofing.jpg"
-  - title: "Estate Property Protection"
-    url: "/services/estate-property-waterproofing"
-    description: "Comprehensive solutions for large properties"
-    image: "/images/estate-protection.jpg"
+  - title: Etobicoke Waterproofing
+    url: /locations/etobicoke-basement-waterproofing
+    description: Serving all Etobicoke neighborhoods
+    image: /images/etobicoke-waterproofing.jpg
+  - title: Luxury Home Waterproofing
+    url: /services/luxury-home-waterproofing
+    description: Premium service for executive properties
+    image: /images/luxury-waterproofing.jpg
+  - title: Estate Property Protection
+    url: /services/estate-property-waterproofing
+    description: Comprehensive solutions for large properties
+    image: /images/estate-protection.jpg
 sections:
-  - title: "Kingsway's Premium Waterproofing Standards"
-    content: |
-      The Kingsway represents one of Toronto's most prestigious neighborhoods, featuring executive homes and luxury properties that demand the highest waterproofing standards. These valuable properties require specialized expertise, premium materials, and exceptional service quality.
+  - title: Kingsway's Premium Waterproofing Standards
+    content: >
+      The Kingsway represents one of Toronto's most prestigious neighborhoods,
+      featuring executive homes and luxury properties that demand the highest
+      waterproofing standards. These valuable properties require specialized
+      expertise, premium materials, and exceptional service quality.
+
 
       Kingsway's unique requirements:
+
       - Multi-million dollar properties requiring premium protection
+
       - Large basement spaces with complex layouts
+
       - High-end finishes and custom features to protect
+
       - Mature landscaping requiring careful preservation
+
       - Executive schedules demanding flexible timing
+
       - Property values necessitating invisible, professional work
 
-      We've protected over 200 Kingsway properties, from grand estates on Prince Edward Drive to custom homes near Royal York Golf Club. Our approach combines technical excellence with the premium service standards these properties deserve.
-  - title: "Executive Property Challenges"
+
+      We've protected over 200 Kingsway properties, from grand estates on Prince
+      Edward Drive to custom homes near Royal York Golf Club. Our approach
+      combines technical excellence with the premium service standards these
+      properties deserve.
+  - title: Executive Property Challenges
     content: |
       **Large Complex Foundations**
       Kingsway's executive homes feature:
@@ -78,7 +95,7 @@ sections:
       - Coordination with property managers
       - Compliance with neighborhood standards
       - Future-proofing for changing conditions
-  - title: "Premium Kingsway Solutions"
+  - title: Premium Kingsway Solutions
     content: |
       **Executive Interior Systems**
       Designed for luxury basements:
@@ -115,7 +132,7 @@ sections:
       - Art storage and display area protection
       - Home office and business space security
       - Recreational facility moisture control
-  - title: "Kingsway Area Expertise"
+  - title: Kingsway Area Expertise
     content: |
       **Prince Edward Drive**
       Prestigious estate properties requiring:
@@ -156,7 +173,7 @@ sections:
       - Natural habitat protection
       - Seasonal access planning
       - Premium weather protection
-  - title: "Why Kingsway Executives Choose DrySpace"
+  - title: Why Kingsway Executives Choose DrySpace
     content: |
       **Premium Service Standards**
       - White-glove service approach
@@ -192,7 +209,7 @@ sections:
       - Relationships with luxury home builders
       - Trusted by estate managers
       - Featured in luxury home publications
-  - title: "Your Executive Waterproofing Project"
+  - title: Your Executive Waterproofing Project
     content: |
       **VIP Assessment Process**
       - Comprehensive property evaluation
@@ -226,58 +243,143 @@ sections:
       - Property manager coordination
       - Resale documentation support
 faq:
-  - question: "What makes Kingsway waterproofing different from standard residential?"
-    answer: "Kingsway properties require premium service standards including executive communication, flexible scheduling, protection of luxury finishes, minimal disruption to high-end lifestyles, and integration with estate management systems. Our teams are specifically trained for luxury home environments."
-  - question: "Can you work around valuable wine collections and art?"
-    answer: "Absolutely. We specialize in protecting valuable collections during waterproofing. This includes climate control coordination, dust protection, temporary relocation assistance, and specialized techniques that maintain optimal storage conditions throughout the project."
-  - question: "How do you handle scheduling for busy executives?"
-    answer: "We offer flexible scheduling including weekend and evening work, coordination with travel schedules, expedited service when needed, and dedicated project managers who communicate according to your preferences. We adapt to your schedule, not the reverse."
-  - question: "What about discretion and privacy?"
-    answer: "We provide confidentiality agreements, use unmarked vehicles when requested, coordinate with security systems, brief crews on privacy expectations, and maintain the highest professional standards. Many clients include celebrities, executives, and public figures."
-  - question: "Can you work with our estate manager or household staff?"
-    answer: "Yes, we frequently coordinate with estate managers, housekeepers, landscapers, and other staff. We provide detailed communication protocols, respect established routines, and integrate our work with ongoing property management systems."
-  - question: "How do you protect mature landscaping?"
-    answer: "We use specialized techniques including hand excavation near specimen trees, temporary root protection systems, professional landscape restoration coordination, and work with certified arborists when needed. Many Kingsway properties have irreplaceable mature landscaping."
-  - question: "What warranty applies to luxury properties?"
-    answer: "Our enhanced lifetime warranty provides premium coverage including annual inspections, priority service, comprehensive documentation, and coverage that supports property values. We guarantee our work meets the highest standards expected in Kingsway."
-  - question: "Can you coordinate with home renovations or additions?"
-    answer: "Yes, we frequently work with architects, contractors, and designers on luxury home projects. We provide engineering input, coordinate timing with other trades, and ensure waterproofing integrates seamlessly with renovation plans."
-  - question: "How long do projects take in large Kingsway homes?"
-    answer: "Timeline depends on property size and complexity. Interior systems typically take 4-7 days, exterior projects 7-14 days. We provide detailed schedules, work efficiently to minimize disruption, and can accelerate timelines when needed for executive schedules."
-  - question: "Do you provide documentation for insurance and resale?"
-    answer: "Comprehensive documentation includes engineering reports, warranty certificates, material specifications, photo documentation, and maintenance guidelines. This documentation supports insurance claims, property valuations, and resale transactions."
-  - question: "Can you work during social events or entertaining seasons?"
-    answer: "We coordinate carefully around social calendars, holiday entertaining, and special events. Many clients schedule work during travel periods or off-seasons. We provide expedited service when timing is critical for event schedules."
-  - question: "What financing options exist for luxury home waterproofing?"
-    answer: "We offer premium financing including corporate accounts, estate management billing, extended payment terms, and coordination with property management companies. Investment-level properties often qualify for enhanced financing terms."
+  - question: What makes Kingsway waterproofing different from standard residential?
+    answer: >-
+      Kingsway properties require premium service standards including executive
+      communication, flexible scheduling, protection of luxury finishes, minimal
+      disruption to high-end lifestyles, and integration with estate management
+      systems. Our teams are specifically trained for luxury home environments.
+  - question: Can you work around valuable wine collections and art?
+    answer: >-
+      Absolutely. We specialize in protecting valuable collections during
+      waterproofing. This includes climate control coordination, dust
+      protection, temporary relocation assistance, and specialized techniques
+      that maintain optimal storage conditions throughout the project.
+  - question: How do you handle scheduling for busy executives?
+    answer: >-
+      We offer flexible scheduling including weekend and evening work,
+      coordination with travel schedules, expedited service when needed, and
+      dedicated project managers who communicate according to your preferences.
+      We adapt to your schedule, not the reverse.
+  - question: What about discretion and privacy?
+    answer: >-
+      We provide confidentiality agreements, use unmarked vehicles when
+      requested, coordinate with security systems, brief crews on privacy
+      expectations, and maintain the highest professional standards. Many
+      clients include celebrities, executives, and public figures.
+  - question: Can you work with our estate manager or household staff?
+    answer: >-
+      Yes, we frequently coordinate with estate managers, housekeepers,
+      landscapers, and other staff. We provide detailed communication protocols,
+      respect established routines, and integrate our work with ongoing property
+      management systems.
+  - question: How do you protect mature landscaping?
+    answer: >-
+      We use specialized techniques including hand excavation near specimen
+      trees, temporary root protection systems, professional landscape
+      restoration coordination, and work with certified arborists when needed.
+      Many Kingsway properties have irreplaceable mature landscaping.
+  - question: What warranty applies to luxury properties?
+    answer: >-
+      Our enhanced lifetime warranty provides premium coverage including annual
+      inspections, priority service, comprehensive documentation, and coverage
+      that supports property values. We guarantee our work meets the highest
+      standards expected in Kingsway.
+  - question: Can you coordinate with home renovations or additions?
+    answer: >-
+      Yes, we frequently work with architects, contractors, and designers on
+      luxury home projects. We provide engineering input, coordinate timing with
+      other trades, and ensure waterproofing integrates seamlessly with
+      renovation plans.
+  - question: How long do projects take in large Kingsway homes?
+    answer: >-
+      Timeline depends on property size and complexity. Interior systems
+      typically take 4-7 days, exterior projects 7-14 days. We provide detailed
+      schedules, work efficiently to minimize disruption, and can accelerate
+      timelines when needed for executive schedules.
+  - question: Do you provide documentation for insurance and resale?
+    answer: >-
+      Comprehensive documentation includes engineering reports, warranty
+      certificates, material specifications, photo documentation, and
+      maintenance guidelines. This documentation supports insurance claims,
+      property valuations, and resale transactions.
+  - question: Can you work during social events or entertaining seasons?
+    answer: >-
+      We coordinate carefully around social calendars, holiday entertaining, and
+      special events. Many clients schedule work during travel periods or
+      off-seasons. We provide expedited service when timing is critical for
+      event schedules.
+  - question: What financing options exist for luxury home waterproofing?
+    answer: >-
+      We offer premium financing including corporate accounts, estate management
+      billing, extended payment terms, and coordination with property management
+      companies. Investment-level properties often qualify for enhanced
+      financing terms.
 schema:
-  type: "Service"
-  name: "Kingsway Basement Waterproofing"
+  type: Service
+  name: Kingsway Basement Waterproofing
   provider:
-    type: "Organization"
-    name: "DrySpace Waterproofing"
+    type: Organization
+    name: DrySpace Waterproofing
   areaServed:
-    - "Kingsway"
-    - "Prince Edward Drive"
-    - "Royal York Road"
-    - "Islington Golf Club"
-    - "Humber Valley"
-    - "Etobicoke Creek"
-    - "Kingsway Park"
-    - "South Kingsway"
-    - "Executive Estates"
+    - Kingsway
+    - Prince Edward Drive
+    - Royal York Road
+    - Islington Golf Club
+    - Humber Valley
+    - Etobicoke Creek
+    - Kingsway Park
+    - South Kingsway
+    - Executive Estates
   serviceType:
-    - "Luxury Home Waterproofing"
-    - "Executive Property Protection"
-    - "Estate Waterproofing"
-    - "Premium Foundation Services"
-    - "VIP Basement Protection"
+    - Luxury Home Waterproofing
+    - Executive Property Protection
+    - Estate Waterproofing
+    - Premium Foundation Services
+    - VIP Basement Protection
   offers:
-    - "Executive Service Standards"
-    - "Premium Materials"
-    - "Flexible Scheduling"
-    - "Enhanced Warranty"
-    - "Concierge Service"
+    - Executive Service Standards
+    - Premium Materials
+    - Flexible Scheduling
+    - Enhanced Warranty
+    - Concierge Service
+starting_price: '$2,999'
+price_range: '$2,999 - $18,999'
+benefits:
+  - title: Expert Diagnosis
+    description: Thorough assessment identifies all issues and the best solutions
+  - title: Quality Materials
+    description: Premium products from trusted manufacturers ensure lasting results
+  - title: Clean Worksite
+    description: We protect your property and leave it cleaner than we found it
+  - title: Lifetime Transferable Warranty
+    description: >-
+      Our comprehensive warranty protects your investment and transfers to new
+      homeowners
+  - title: Licensed & Insured Professionals
+    description: >-
+      Fully certified technicians with $2M liability insurance for your peace of
+      mind
+  - title: 24/7 Emergency Service
+    description: Round-the-clock support when water damage can't wait
+process_steps:
+  - title: Free Inspection
+    description: Comprehensive assessment of your specific needs
+    icon: search
+  - title: Custom Solution
+    description: Tailored approach designed for your property
+    icon: lightbulb
+  - title: Professional Installation
+    description: Expert implementation with attention to detail
+    icon: wrench
+  - title: Quality Assurance
+    description: Thorough testing and lifetime warranty protection
+    icon: shield
+hero:
+  features:
+    - Free Estimates
+    - Lifetime Warranty
+    - Emergency 24/7
 ---
 
 # Kingsway Executive Basement Waterproofing
