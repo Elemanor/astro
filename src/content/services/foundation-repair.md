@@ -48,6 +48,37 @@ hero:
     - Structural Engineers
     - City Permits Included
     - Insurance Claims
+faq:
+  - question: What causes foundation cracks?
+    answer: >-
+      Foundation cracks result from settling, soil pressure, freeze-thaw cycles,
+      water damage, or poor construction. Early repair prevents water
+      infiltration and structural issues.
+  - question: Are foundation cracks serious?
+    answer: >-
+      It depends on the type. Vertical hairline cracks are often cosmetic, while
+      horizontal or widening cracks indicate structural issues requiring
+      immediate attention.
+  - question: What foundation repair method is best?
+    answer: >-
+      The best method depends on crack type and cause. We use epoxy injection
+      for structural cracks, polyurethane for active leaks, and carbon fiber for
+      reinforcement.
+  - question: Is foundation repair permanent?
+    answer: >-
+      When properly diagnosed and repaired, foundation fixes are permanent. We
+      address the underlying cause, not just symptoms, and back our work with
+      comprehensive warranties.
+related_services:
+  - title: Foundation Waterproofing
+    url: /services/foundation-waterproofing-toronto/
+    description: Protect repaired foundations
+  - title: Basement Underpinning
+    url: /services/basement-underpinning/
+    description: Strengthen and lower foundations
+  - title: Wall Reinforcement
+    url: /services/wall-reinforcement/
+    description: Structural wall support
 ---
 
 <script type="application/ld+json">

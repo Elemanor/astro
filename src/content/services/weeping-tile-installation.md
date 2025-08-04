@@ -58,6 +58,38 @@ hero:
     - Free Consultation
     - Licensed & Insured
     - Warranty Protection
+faq:
+  - question: >-
+      How much does Weeping Tile Installation Toronto | #1 Drainage Contractors
+      Since 1998 cost?
+    answer: >-
+      Costs vary based on project scope and specific requirements. We provide
+      free on-site assessments and detailed quotes with transparent pricing and
+      no hidden fees.
+  - question: How long does the project take?
+    answer: >-
+      Timeline depends on project size and complexity. Most projects complete
+      within 1-5 days. We provide accurate schedules and work efficiently to
+      minimize disruption.
+  - question: Do you offer warranties?
+    answer: >-
+      Yes, we provide comprehensive warranties on all work. This includes
+      lifetime warranties on materials and extended labor warranties, all fully
+      transferable.
+  - question: Do you handle permits?
+    answer: >-
+      Yes, we manage all necessary permits and inspections. Our team ensures
+      full compliance with local building codes and regulations.
+related_services:
+  - title: Basement Waterproofing
+    url: /services/basement-waterproofing-toronto/
+    description: Complete moisture protection
+  - title: Foundation Repair
+    url: /services/foundation-repair/
+    description: Structural solutions
+  - title: Drainage Solutions
+    url: /services/drainage-solutions/
+    description: Water management systems
 ---
 
 # Professional Weeping Tile Installation in Toronto & GTA

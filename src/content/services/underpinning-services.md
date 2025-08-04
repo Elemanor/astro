@@ -67,6 +67,37 @@ hero:
     - Licensed Engineers
     - Project Management
     - 0% Financing
+faq:
+  - question: How long does basement underpinning take?
+    answer: >-
+      Typical underpinning projects take 2-4 weeks depending on size and
+      complexity. We work in sections to maintain structural integrity
+      throughout the process.
+  - question: Can I live in my home during underpinning?
+    answer: >-
+      Yes, most homeowners stay during underpinning. There's noise and dust
+      during work hours, but the home remains safe and habitable throughout the
+      project.
+  - question: Does underpinning require permits?
+    answer: >-
+      Yes, underpinning requires building permits and engineering approval. We
+      handle all permit applications and ensure full compliance with local
+      building codes.
+  - question: What ceiling height can I achieve with underpinning?
+    answer: >-
+      Most underpinning projects achieve 8-9 foot ceilings from original 6-7
+      feet. The exact height depends on existing structure and local code
+      requirements.
+related_services:
+  - title: Foundation Repair
+    url: /services/foundation-repair/
+    description: Fix existing foundation issues
+  - title: Basement Walkout
+    url: /services/basement-walkout/
+    description: Create exterior access
+  - title: Structural Reinforcement
+    url: /services/structural-reinforcement/
+    description: Strengthen load capacity
 ---
 
 # Professional Underpinning Services in Toronto & GTA

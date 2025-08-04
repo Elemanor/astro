@@ -72,6 +72,36 @@ hero:
     - Battery Backup Available
     - WiFi Monitoring
     - Annual Maintenance
+faq:
+  - question: How often should sump pumps be replaced?
+    answer: >-
+      Sump pumps typically last 7-10 years with proper maintenance. We recommend
+      annual inspections and testing to ensure reliability when you need it
+      most.
+  - question: Do I need a battery backup sump pump?
+    answer: >-
+      Yes, battery backup is essential in Toronto. Power outages often coincide
+      with severe storms when pumping is critical. Backup systems prevent
+      flooding during outages.
+  - question: What size sump pump do I need?
+    answer: >-
+      Pump size depends on water volume, pit size, and discharge height. Our
+      experts calculate the exact capacity needed for your specific situation.
+  - question: Can I install a sump pump myself?
+    answer: >-
+      While possible, professional installation ensures proper sizing,
+      placement, electrical safety, and code compliance. DIY mistakes can lead
+      to flooding and void insurance coverage.
+related_services:
+  - title: Interior Waterproofing
+    url: /services/interior-waterproofing/
+    description: Complete drainage systems
+  - title: Battery Backup Systems
+    url: /services/emergency-waterproofing/
+    description: Power outage protection
+  - title: French Drain Installation
+    url: /services/french-drain-installation/
+    description: Efficient water collection
 ---
 
 # Emergency Sump Pump Repair Toronto - 92/100 Effectiveness Score

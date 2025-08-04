@@ -78,6 +78,37 @@ hero:
     - Same Day Service
     - Camera Inspections
     - 10 Year Warranty
+faq:
+  - question: How do I know if I have drainage problems?
+    answer: >-
+      Signs include water pooling near foundation, basement moisture, soggy
+      lawns, and erosion. Early correction prevents foundation damage and
+      basement flooding.
+  - question: What's the difference between French drains and surface drains?
+    answer: >-
+      French drains handle subsurface water through perforated pipes in gravel.
+      Surface drains collect rainwater runoff. Many properties benefit from both
+      systems.
+  - question: How long do drainage systems last?
+    answer: >-
+      Quality drainage systems last 20-30 years. Factors affecting lifespan
+      include pipe material, soil conditions, and maintenance. We use premium
+      materials for maximum longevity.
+  - question: Can poor drainage damage my foundation?
+    answer: >-
+      Yes, poor drainage is a leading cause of foundation problems. Water
+      accumulation causes soil expansion, foundation pressure, cracks, and
+      eventual structural damage.
+related_services:
+  - title: Exterior Waterproofing
+    url: /services/exterior-waterproofing/
+    description: Complete moisture protection
+  - title: Sump Pump Installation
+    url: /services/sump-pump-installation/
+    description: Remove collected water
+  - title: Foundation Grading
+    url: /services/drainage-grading/
+    description: Proper slope management
 ---
 
 # Professional Drainage Solutions

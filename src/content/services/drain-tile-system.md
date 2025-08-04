@@ -167,6 +167,28 @@ hero:
     - Same Day Service
     - Camera Inspections
     - 10 Year Warranty
+faq:
+  - question: >-
+      How much does Drain Tile Installation Toronto | #1 Experts Since 1999 |
+      Free Quote cost?
+    answer: >-
+      Costs vary based on project scope and specific requirements. We provide
+      free on-site assessments and detailed quotes with transparent pricing and
+      no hidden fees.
+  - question: How long does the project take?
+    answer: >-
+      Timeline depends on project size and complexity. Most projects complete
+      within 1-5 days. We provide accurate schedules and work efficiently to
+      minimize disruption.
+  - question: Do you offer warranties?
+    answer: >-
+      Yes, we provide comprehensive warranties on all work. This includes
+      lifetime warranties on materials and extended labor warranties, all fully
+      transferable.
+  - question: Do you handle permits?
+    answer: >-
+      Yes, we manage all necessary permits and inspections. Our team ensures
+      full compliance with local building codes and regulations.
 ---
 
 # Drain Tile Installation Toronto
