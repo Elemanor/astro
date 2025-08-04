@@ -1,0 +1,396 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/north-york-basement-leak-repair.md
+// Migration date: 2025-08-04T15:30:57.833Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// North York area data
+const northyorkData = {
+  // Location Info
+  cityName: "North York",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "North York Basement Leak Repair | Location-Service Combo | 90/100 Effectiveness",
+  description: "Professional basement leak repair in North York. Clay soil specialists, Don Valley drainage experts. Emergency service, permanent solutions. Call (437) 545-0067.",
+  keywords: [
+    "north york basement leak repair",
+    "basement leak repair north york",
+    "north york waterproofing",
+    "basement leaks north york",
+    "foundation leak repair north york",
+    "north york basement contractors",
+    "waterproofing north york",
+    "basement water damage north york",
+    "leak repair near me north york",
+    "north york foundation repair",
+    "basement flooding north york",
+    "emergency leak repair north york",
+    "north york basement water",
+    "basement seepage north york",
+    "north york drainage contractors"
+  ],
+  
+  // Stats
+  population: "655,913",
+  homesServed: "500+",
+  yearsInArea: "15+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "820mm",
+    freezeThawCycles: "34-39/year",
+    floodRisk: "Moderate",
+    snowfall: "118cm",
+    avgHumidity: "80%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Willowdale",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Don Mills",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "York Mills",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Bayview Village",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Flemingdon Park",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Thorncliffe Park",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Victoria Park",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Bathurst Manor",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Parkwoods",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Henry Farm",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Willowdale Family Home",
+      "challenges": [
+        "* Persistent basement leaks, multiple failed repair attempts",
+        "*Previous"
+      ],
+      "solutions": [
+        "* Two contractors, temporary fixes failed",
+        "*DrySpace approach:** Complete interior drainage with clay soil optimization",
+        "*Investment:** $8,400",
+        "*Result:** 3 years completely dry through North York's wettest seasons",
+        "*Homeowner:** \"Finally found experts who understand North York's clay soil\""
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Don Mills Executive Property",
+      "challenges": [
+        "* Finished basement, high-end renovation at risk",
+        "*Complications:** Ravine lot drainage, aesthetic preservation requirements",
+        "*DrySpace"
+      ],
+      "solutions": [
+        "* Interior system maintaining basement aesthetics",
+        "*"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "York Mills Heritage Home",
+      "challenges": [
+        "* 1950s construction, foundation settling, heritage considerations",
+        "*Issue:** Multiple leak sources, structural concerns",
+        "*DrySpace system:** Comprehensive interior/exterior approach",
+        "*Investment:** $18,200",
+        "*Success:** Complete leak elimination while preserving home character",
+        "*Family testimonial:** \"Experts in North York's unique foundation challenges\""
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Bayview Village New Construction",
+      "challenges": [
+        "* New home, builder warranty issue, preventive repair",
+        "*Requirements:** Work with builder, maintain warranty coverage",
+        "*DrySpace approach:** Targeted repair preserving all warranties",
+        "*Cost:** $3,200",
+        "*Result:** Leak eliminated, builder relationship maintained",
+        "*Homeowner comment:** \"Professional approach respecting builder relationships\""
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "Local Soil Conditions",
+      "description": "North York's soil composition creates unique foundation challenges",
+      "solution": "Soil-specific waterproofing systems and drainage solutions",
+      "icon": "🏔️"
+    },
+    {
+      "issue": "Weather Extremes",
+      "description": "Freeze-thaw cycles and heavy rainfall affect basements",
+      "solution": "Climate-adapted waterproofing with proper drainage",
+      "icon": "🌧️"
+    },
+    {
+      "issue": "Urban Development",
+      "description": "Changes in local drainage patterns from development",
+      "solution": "Modern drainage systems to handle increased water flow",
+      "icon": "🏗️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$3,000",
+      "max": "$8,000"
+    },
+    "exterior": {
+      "min": "$10,000",
+      "max": "$25,000"
+    },
+    "emergency": {
+      "min": "$3,200",
+      "max": "$6,800"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "City of Toronto Basement Flooding Protection Subsidy",
+      "amount": "Up to $3,400",
+      "eligibility": "Installation of flood protection devices",
+      "deadline": "Ongoing - first come, first served"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$3,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$10,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$3,200",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in North York?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for North York homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in North York?",
+      "answer": "We maintain crews throughout North York for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in North York?",
+      "answer": "Yes, we handle all necessary permits and inspections required by North York building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "North York",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "25 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/images/hero-damages/wetcove.webp" 
+    alt="Wet basement damage at wall-floor joint"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Common wet basement problem areas
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/images/hero-damages/mold.webp" 
+    alt="Mold growth from moisture problems"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Moisture leads to mold growth
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...northyorkData} />

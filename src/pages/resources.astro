@@ -1,0 +1,229 @@
+---
+import { getEntry } from 'astro:content';
+import MainLayout from '../layouts/MainLayout.astro';
+import Hero from '../components/ui/Hero.astro';
+import Section from '../components/ui/Section.astro';
+import Grid from '../components/ui/Grid.astro';
+import AstroCard from '../components/ui/AstroCard.astro';
+import AstroButton from '../components/ui/AstroButton.astro';
+import { 
+  Calculator, 
+  BookOpen, 
+  DollarSign, 
+  Home,
+  Video,
+  HelpCircle,
+  Gift,
+  Phone,
+  ArrowRight,
+  FileText,
+  Tool
+} from 'lucide-react';
+
+const resourcesPage = await getEntry('pages', 'resources');
+const { Content } = await resourcesPage.render();
+
+const resourceCategories = [
+  {
+    title: "Calculators & Tools",
+    icon: Calculator,
+    description: "Interactive tools to help you plan",
+    links: [
+      { title: "Waterproofing Cost Calculator", href: "/tools/basement-waterproofing-calculator/" },
+      { title: "Problem Diagnostic Tool", href: "/tools/basement-problem-diagnostic/" },
+      { title: "Financing Calculator", href: "/services/basement-waterproofing-financing/" },
+    ]
+  },
+  {
+    title: "Complete Guides",
+    icon: BookOpen,
+    description: "In-depth educational content",
+    links: [
+      { title: "Ultimate Waterproofing Guide", href: "/guides/basement-waterproofing-ultimate-guide/" },
+      { title: "DIY vs Professional Guide", href: "/guides/diy-vs-professional-waterproofing/" },
+      { title: "Emergency Water Guide", href: "/emergency/flooded-basement-emergency-guide/" },
+    ]
+  },
+  {
+    title: "Cost Information",
+    icon: DollarSign,
+    description: "Transparent pricing details",
+    links: [
+      { title: "Waterproofing Costs", href: "/cost/basement-waterproofing-cost-toronto/" },
+      { title: "Foundation Repair Costs", href: "/cost/foundation-repair-cost/" },
+      { title: "Underpinning Costs", href: "/cost/basement-underpinning-cost/" },
+    ]
+  },
+  {
+    title: "Service Comparisons",
+    icon: Home,
+    description: "Compare your options",
+    links: [
+      { title: "Interior vs Exterior", href: "/compare/interior-vs-exterior-waterproofing/" },
+      { title: "French Drain vs Weeping Tile", href: "/compare/french-drain-vs-weeping-tile/" },
+      { title: "All Methods Compared", href: "/compare/basement-waterproofing-methods/" },
+    ]
+  },
+];
+
+const additionalResources = [
+  {
+    icon: Video,
+    title: "Video Library",
+    description: "Watch installation videos",
+    href: "/videos/"
+  },
+  {
+    icon: HelpCircle,
+    title: "FAQs",
+    description: "Common questions answered",
+    href: "/faq/basement-waterproofing-faq/"
+  },
+  {
+    icon: Gift,
+    title: "Rebates",
+    description: "Save with rebates",
+    href: "/waterproofing-rebates-2025/"
+  }
+];
+---
+
+<MainLayout title={resourcesPage.data.seo_title || resourcesPage.data.title} description={resourcesPage.data.description}>
+  <!-- Hero Section -->
+  <Hero
+    title="Waterproofing Resources & Guides"
+    subtitle="Everything you need to know about protecting your home"
+    description="Access calculators, guides, cost information, and expert resources to make informed decisions"
+    badge="DrySpace Resource Center"
+    alignment="center"
+    size="small"
+  />
+  
+  <!-- Resource Categories -->
+  <Section spacing="large">
+    <Grid columns={2}>
+      {resourceCategories.map((category) => (
+        <AstroCard class="h-full hover:shadow-lg transition-shadow">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                {category.title === "Calculators & Tools" && <Calculator className="h-6 w-6 text-primary" client:load />}
+                {category.title === "Complete Guides" && <BookOpen className="h-6 w-6 text-primary" client:load />}
+                {category.title === "Cost Information" && <DollarSign className="h-6 w-6 text-primary" client:load />}
+                {category.title === "Service Comparisons" && <Home className="h-6 w-6 text-primary" client:load />}
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold mb-2">{category.title}</h3>
+              <p class="text-muted-foreground mb-4">{category.description}</p>
+              <ul class="space-y-3">
+                {category.links.map((link) => (
+                  <li>
+                    <a 
+                      href={link.href} 
+                      class="flex items-center text-primary hover:text-primary/80 font-medium transition-colors"
+                    >
+                      <ArrowRight className="h-4 w-4 mr-2" client:load />
+                      {link.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </AstroCard>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Additional Resources -->
+  <Section 
+    title="More Resources"
+    background="muted"
+    centered
+  >
+    <Grid columns={3}>
+      {additionalResources.map((resource) => (
+        <AstroCard class="text-center hover:shadow-lg transition-shadow">
+          {resource.title === "Video Library" && <Video className="h-12 w-12 text-primary mx-auto mb-4" client:load />}
+          {resource.title === "FAQs" && <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" client:load />}
+          {resource.title === "Rebates" && <Gift className="h-12 w-12 text-primary mx-auto mb-4" client:load />}
+          <h3 class="font-bold text-lg mb-2">{resource.title}</h3>
+          <p class="text-muted-foreground text-sm mb-4">{resource.description}</p>
+          <AstroButton 
+            href={resource.href} 
+            variant="outline" 
+            size="sm" 
+            class="w-full"
+          >
+            View Resource
+          </AstroButton>
+        </AstroCard>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Quick Access Tools -->
+  <Section>
+    <div class="bg-gradient-to-r from-primary/5 to-primary/10 rounded-lg p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <Tool className="h-8 w-8 text-primary" client:load />
+        <h2 class="text-2xl font-bold">Quick Access Tools</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <h3 class="font-semibold mb-3 flex items-center gap-2">
+            <Calculator className="h-5 w-5 text-primary" client:load />
+            Instant Cost Estimate
+          </h3>
+          <p class="text-muted-foreground text-sm mb-4">
+            Get a ballpark figure for your waterproofing project in minutes
+          </p>
+          <AstroButton href="/tools/basement-waterproofing-calculator/" variant="secondary" size="sm" class="w-full">
+            Calculate Now
+          </AstroButton>
+        </div>
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <h3 class="font-semibold mb-3 flex items-center gap-2">
+            <FileText className="h-5 w-5 text-primary" client:load />
+            Problem Diagnosis
+          </h3>
+          <p class="text-muted-foreground text-sm mb-4">
+            Identify your basement issues and get recommended solutions
+          </p>
+          <AstroButton href="/tools/basement-problem-diagnostic/" variant="secondary" size="sm" class="w-full">
+            Start Diagnosis
+          </AstroButton>
+        </div>
+      </div>
+    </div>
+  </Section>
+  
+  <!-- CTA Section -->
+  <Section background="primary" spacing="large">
+    <div class="text-center space-y-6">
+      <h2 class="text-3xl font-bold text-white">Need Personal Assistance?</h2>
+      <p class="text-xl text-white/90 max-w-2xl mx-auto">
+        Our experts are ready to help you find the right solution for your specific needs
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <AstroButton 
+          href="/contact/" 
+          size="lg"
+          class="bg-white text-primary hover:bg-gray-100"
+        >
+          Get Free Consultation
+        </AstroButton>
+        <AstroButton 
+          href="tel:437-545-0067" 
+          variant="outline" 
+          size="lg"
+          class="border-white text-white hover:bg-white/10"
+        >
+          <Phone className="h-5 w-5" client:load />
+          (437) 545-0067
+        </AstroButton>
+      </div>
+    </div>
+  </Section>
+</MainLayout>

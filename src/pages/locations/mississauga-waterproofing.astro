@@ -1,0 +1,378 @@
+---
+// Mississauga Service Area Page
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Mississauga-specific data
+const mississaugaData = {
+  // Location Info
+  cityName: "Mississauga",
+  provinceName: "Ontario",
+  regionName: "Peel Region",
+  
+  // SEO
+  title: "Mississauga Basement Waterproofing | #1 Local Experts | Same-Day Service",
+  description: "Expert basement waterproofing in Mississauga. Serving Port Credit to Meadowvale with 24/7 emergency service. Up to $3,000 in Peel Region rebates. Free quotes: (437) 545-0067",
+  keywords: [
+    "basement waterproofing mississauga",
+    "mississauga waterproofing contractors",
+    "peel region waterproofing",
+    "mississauga basement repair",
+    "port credit waterproofing",
+    "streetsville basement waterproofing",
+    "meadowvale water damage",
+    "mississauga foundation repair"
+  ],
+  
+  // Stats
+  population: "717,961",
+  homesServed: "2,500+",
+  yearsInArea: "20+",
+  responseTime: "45 minutes",
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      name: "Port Credit & Lakeview",
+      challenges: [
+        "High water table from Lake Ontario",
+        "Sandy soil conditions",
+        "Older homes with aging foundations",
+        "Storm surge flooding risk"
+      ],
+      solutions: [
+        "Dual sump pump systems",
+        "Advanced drainage solutions",
+        "Foundation reinforcement",
+        "Flood prevention barriers"
+      ],
+      avgCost: "$4,500 - $7,500"
+    },
+    {
+      name: "Streetsville Heritage District",
+      challenges: [
+        "100+ year old stone foundations",
+        "Heritage preservation requirements",
+        "Limited excavation options",
+        "Original mortar deterioration"
+      ],
+      solutions: [
+        "Interior injection systems",
+        "Heritage-compliant methods",
+        "Minimal disruption techniques",
+        "Specialized restoration"
+      ],
+      avgCost: "$6,000 - $10,000"
+    },
+    {
+      name: "Meadowvale & Erin Mills",
+      challenges: [
+        "Expansive clay soil",
+        "Newer homes with warranty concerns",
+        "Poor original grading",
+        "Rapid development drainage issues"
+      ],
+      solutions: [
+        "Exterior membrane systems",
+        "Professional regrading",
+        "French drain installation",
+        "Warranty-compliant repairs"
+      ],
+      avgCost: "$8,000 - $15,000"
+    },
+    {
+      name: "Square One & City Centre",
+      challenges: [
+        "High-rise condo parking garages",
+        "Commercial property requirements",
+        "Heavy traffic vibrations",
+        "Underground utility conflicts"
+      ],
+      solutions: [
+        "Commercial-grade injection",
+        "Parking deck coatings",
+        "Vibration-resistant sealing",
+        "Utility coordination"
+      ],
+      avgCost: "$3,000 - $8,000"
+    },
+    {
+      name: "Cooksville & Dixie",
+      challenges: [
+        "Mixed residential/commercial areas",
+        "Varying foundation types",
+        "Urban flooding hotspots",
+        "Aging infrastructure"
+      ],
+      solutions: [
+        "Customized approaches",
+        "Backwater valve installation",
+        "Comprehensive drainage",
+        "Infrastructure upgrades"
+      ],
+      avgCost: "$5,000 - $12,000"
+    },
+    {
+      name: "Clarkson & Lorne Park",
+      challenges: [
+        "Premium property protection",
+        "Landscaping preservation",
+        "High aesthetic standards",
+        "Creek proximity flooding"
+      ],
+      solutions: [
+        "Invisible repair methods",
+        "Landscape-friendly drainage",
+        "Premium materials",
+        "Creek flood management"
+      ],
+      avgCost: "$10,000 - $20,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      issue: "Peel Clay Soil",
+      description: "Mississauga's expansive clay soil swells when wet and shrinks when dry, causing foundation movement and cracks",
+      solution: "We install specialized drainage systems and use flexible sealants designed for clay soil movement",
+      icon: "🏔️"
+    },
+    {
+      issue: "Lake Ontario Water Table",
+      description: "Properties near the lake face high water tables, especially in Port Credit and Lakeview areas",
+      solution: "Dual sump pump systems with battery backup and advanced French drain networks",
+      icon: "🌊"
+    },
+    {
+      issue: "Urban Flooding",
+      description: "Rapid development has overwhelmed storm sewers, causing urban flooding during heavy rains",
+      solution: "Backwater valves, enhanced drainage, and flood prevention systems eligible for rebates",
+      icon: "🌧️"
+    },
+    {
+      issue: "Aging Infrastructure",
+      description: "45% of Mississauga homes built before 1990 have outdated waterproofing systems",
+      solution: "Complete system upgrades with modern materials and lifetime warranties",
+      icon: "🏗️"
+    }
+  ],
+  
+  // Weather Stats
+  weatherStats: {
+    annualRainfall: "846mm",
+    freezeThawCycles: "35-40/year",
+    floodRisk: "Moderate-High",
+    snowfall: "121cm"
+  },
+  
+  // Pricing
+  priceRanges: {
+    interior: { min: "$3,500", max: "$8,000" },
+    exterior: { min: "$12,000", max: "$25,000" },
+    emergency: { min: "$500", max: "$2,500" }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "Region of Peel Flood Prevention Subsidy",
+      "amount": "Up to $3,000",
+      "eligibility": "Backwater valves, sump pumps, foundation drain disconnection",
+      "deadline": "Annual program - apply early"
+    }
+  ],
+  
+  // Case Studies
+  caseStudies: [
+    {
+      neighborhood: "Port Credit Heritage Home",
+      challenge: "1920s home with stone foundation, recurring flooding from high water table",
+      solution: "Interior French drain system with dual sump pumps and battery backup",
+      cost: "$7,500",
+      timeline: "3 days",
+      result: "Zero flooding in 3 years, $450,000 property value protected"
+    },
+    {
+      neighborhood: "Meadowvale Executive Home",
+      challenge: "New build with foundation cracks from clay soil movement",
+      solution: "Exterior excavation with flexible membrane and proper grading",
+      cost: "$18,000",
+      timeline: "5 days",
+      result: "Builder warranty preserved, permanent solution implemented"
+    },
+    {
+      neighborhood: "Square One Condo",
+      challenge: "Underground parking seepage affecting 50+ units",
+      solution: "Commercial-grade crystalline injection system",
+      cost: "$6,000 per unit",
+      timeline: "2 weeks total",
+      result: "Complete elimination of water infiltration"
+    }
+  ],
+  
+  // Services
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "French drains, sump pumps, vapor barriers",
+      startingPrice: "$3,500",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation, membrane application, drainage",
+      startingPrice: "$12,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Injection sealing for cracks and joints",
+      startingPrice: "$600/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete system with battery backup",
+      startingPrice: "$1,800",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 flooding response and mitigation",
+      startingPrice: "$500",
+      timeline: "2 hours",
+      warranty: "N/A"
+    }
+  ],
+  
+  // Competitor Comparison
+  competitorComparison: [
+    {
+      feature: "Response Time",
+      us: "45 minutes average",
+      others: "2-3 days"
+    },
+    {
+      feature: "Peel Region Rebate Processing",
+      us: "We handle all paperwork",
+      others: "DIY application"
+    },
+    {
+      feature: "Local Mississauga Team",
+      us: "20+ years in Mississauga",
+      others: "Toronto-based"
+    },
+    {
+      feature: "Emergency Service",
+      us: "24/7/365 availability",
+      others: "Business hours only"
+    },
+    {
+      feature: "Warranty",
+      us: "Lifetime transferable",
+      others: "5-10 years limited"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      question: "How much does basement waterproofing cost in Mississauga?",
+      answer: "Costs range from $3,500-$8,000 for interior systems and $12,000-$25,000 for exterior waterproofing. Factors include your neighborhood (Port Credit properties near the lake often need more extensive work), foundation type, and severity of water issues. We provide free assessments and can help you access up to $3,000 in Peel Region rebates."
+    },
+    {
+      question: "What rebates are available for Mississauga homeowners?",
+      answer: "Peel Region offers several rebates: up to $1,500 for backwater valves, $750 for sump pumps with battery backup, and up to $3,000 total for qualifying flood prevention measures. Seniors and residents with disabilities may qualify for an additional 15% assistance. We handle all rebate paperwork as part of our service."
+    },
+    {
+      question: "Why is my Mississauga basement leaking?",
+      answer: "Common causes in Mississauga include: expansive clay soil (especially in Meadowvale/Erin Mills), high water tables near Lake Ontario (Port Credit/Lakeview), aging foundations in older neighborhoods (Streetsville/Cooksville), and overwhelmed storm sewers causing backups. Our free inspection identifies your specific issues."
+    },
+    {
+      question: "Do you serve all Mississauga neighborhoods?",
+      answer: "Yes! We serve all Mississauga areas including Port Credit, Streetsville, Meadowvale, Erin Mills, Square One, Cooksville, Lakeview, Clarkson, Lorne Park, Dixie, Malton, and Churchill Meadows. Our average response time is 45 minutes anywhere in Mississauga."
+    },
+    {
+      question: "How long does waterproofing take in Mississauga?",
+      answer: "Timeline depends on the solution: interior waterproofing takes 2-3 days, exterior waterproofing 4-5 days, crack repairs same day, and sump pump installation 1 day. We work year-round and coordinate with Mississauga's building department for any required permits."
+    },
+    {
+      question: "Is basement waterproofing worth it in Mississauga?",
+      answer: "Absolutely. With Mississauga property values averaging $1.2M+, protecting your foundation is critical. Waterproofing prevents costly damage, maintains property value, enables basement finishing, and often pays for itself through rebates and prevented damage. Many insurance companies also offer premium reductions."
+    }
+  ],
+  
+  // Reviews
+  reviews: [
+    {
+      name: "Sarah M.",
+      neighborhood: "Port Credit",
+      rating: 5,
+      text: "After years of spring flooding, DrySpace finally solved our water problems. They handled all the Peel rebate paperwork and saved us $2,500. Highly recommend!",
+      date: "October 2024",
+      verified: true
+    },
+    {
+      name: "David L.",
+      neighborhood: "Meadowvale",
+      rating: 5,
+      text: "New house started showing foundation cracks after just 2 years. DrySpace's solution preserved our builder warranty and fixed the clay soil issues permanently.",
+      date: "September 2024",
+      verified: true
+    },
+    {
+      name: "The Patel Family",
+      neighborhood: "Streetsville",
+      rating: 5,
+      text: "Our 1890s heritage home needed special care. The team was incredibly respectful of the historical features while solving our basement water issues.",
+      date: "August 2024",
+      verified: true
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Sat 7AM-7PM",
+  address: {
+    city: "Mississauga",
+    province: "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "45 minutes average"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/process/waterproofing.webp" 
+    alt="Waterproofing process in progress"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Professional waterproofing process
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/work/basement-walkout.webp" 
+    alt="Basement walkout construction"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Basement walkout adds value and access
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...mississaugaData} />

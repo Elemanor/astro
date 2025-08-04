@@ -1,0 +1,284 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+import Hero from '../../components/ui/Hero.astro';
+import Section from '../../components/ui/Section.astro';
+import Grid from '../../components/ui/Grid.astro';
+import ContentCard from '../../components/ui/ContentCard.astro';
+import AstroButton from '../../components/ui/AstroButton.astro';
+import AstroCard from '../../components/ui/AstroCard.astro';
+import AstroBadge from '../../components/ui/AstroBadge.astro';
+import { 
+  Shield, 
+  Droplets, 
+  Home, 
+  Wrench,
+  Clock,
+  Award,
+  Phone,
+  ArrowRight,
+  CheckCircle
+} from 'lucide-react';
+
+// Get all services
+const services = await getCollection('services');
+
+// Define core services
+const coreServices = [
+  {
+    title: "Basement Waterproofing",
+    description: "Complete interior and exterior waterproofing solutions to keep your basement dry year-round",
+    href: "/services/basement-waterproofing-toronto/",
+    icon: Droplets,
+    features: ["Interior Systems", "Exterior Membranes", "Lifetime Warranty"]
+  },
+  {
+    title: "Foundation Repair",
+    description: "Expert crack repair, foundation stabilization, and structural reinforcement services",
+    href: "/services/foundation-repair/",
+    icon: Home,
+    features: ["Crack Injection", "Wall Reinforcement", "Settlement Repair"]
+  },
+  {
+    title: "Sump Pump Installation",
+    description: "Professional sump pump systems with battery backup for maximum protection",
+    href: "/services/sump-pump-installation/",
+    icon: Shield,
+    features: ["Dual Pump Systems", "Battery Backup", "Smart Monitoring"]
+  },
+  {
+    title: "French Drain Systems",
+    description: "Advanced drainage solutions to redirect water away from your foundation",
+    href: "/services/french-drain-installation/",
+    icon: Wrench,
+    features: ["Interior Drains", "Exterior Systems", "Grading Solutions"]
+  }
+];
+
+// Define specialty services
+const specialtyServices = [
+  { title: "Basement Underpinning", href: "/services/basement-underpinning/" },
+  { title: "Emergency Waterproofing", href: "/services/emergency-waterproofing/" },
+  { title: "Commercial Waterproofing", href: "/services/commercial-waterproofing/" },
+  { title: "Concrete Repair", href: "/services/concrete-repair/" },
+  { title: "Weeping Tile Installation", href: "/services/weeping-tile-installation/" },
+  { title: "Window Well Installation", href: "/services/basement-window-door-cutting/" },
+  { title: "Backwater Valve Installation", href: "/services/backwater-valve-installation/" },
+  { title: "Crawl Space Conversion", href: "/services/crawl-space-basement-conversion/" }
+];
+
+// Service areas
+const serviceAreas = [
+  "Toronto", "Mississauga", "Brampton", "Vaughan", 
+  "Richmond Hill", "Oakville", "Burlington", "Hamilton"
+];
+---
+
+<MainLayout 
+  title="Waterproofing Services Toronto | Foundation Repair & Drainage Solutions" 
+  description="Professional waterproofing services in Toronto & GTA. Interior/exterior waterproofing, foundation repair, sump pumps, French drains. 25+ years experience, lifetime warranty."
+>
+  <!-- Hero Section -->
+  <Hero
+    title="Professional Waterproofing Services"
+    subtitle="Protecting Toronto homes since 2014"
+    description="Complete basement waterproofing, foundation repair, and drainage solutions with lifetime warranty protection"
+    badge="Licensed & Insured"
+    primaryCTA={{ text: "Get Free Quote", href: "/contact/" }}
+    secondaryCTA={{ text: "Call (437) 545-0067", href: "tel:437-545-0067" }}
+    alignment="center"
+  />
+  
+  <!-- Trust Indicators -->
+  <Section spacing="small" background="muted">
+    <Grid columns={4} gap="small">
+      <div class="text-center">
+        <Shield className="h-8 w-8 text-primary mx-auto mb-2" client:load />
+        <p class="font-semibold">Licensed & Insured</p>
+        <p class="text-sm text-muted-foreground">WSIB Coverage</p>
+      </div>
+      <div class="text-center">
+        <Award className="h-8 w-8 text-primary mx-auto mb-2" client:load />
+        <p class="font-semibold">25+ Years</p>
+        <p class="text-sm text-muted-foreground">Experience</p>
+      </div>
+      <div class="text-center">
+        <Clock className="h-8 w-8 text-primary mx-auto mb-2" client:load />
+        <p class="font-semibold">24/7 Emergency</p>
+        <p class="text-sm text-muted-foreground">Service Available</p>
+      </div>
+      <div class="text-center">
+        <Home className="h-8 w-8 text-primary mx-auto mb-2" client:load />
+        <p class="font-semibold">5000+ Homes</p>
+        <p class="text-sm text-muted-foreground">Protected</p>
+      </div>
+    </Grid>
+  </Section>
+  
+  <!-- Core Services -->
+  <Section 
+    title="Our Core Services" 
+    subtitle="Comprehensive waterproofing solutions for every need"
+    centered
+  >
+    <Grid columns={2}>
+      {coreServices.map((service) => (
+        <AstroCard class="hover:shadow-lg transition-shadow">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center">
+                {service.title === "Basement Waterproofing" && <Droplets className="h-7 w-7 text-primary" client:load />}
+                {service.title === "Foundation Repair" && <Home className="h-7 w-7 text-primary" client:load />}
+                {service.title === "Sump Pump Installation" && <Shield className="h-7 w-7 text-primary" client:load />}
+                {service.title === "French Drain Systems" && <Wrench className="h-7 w-7 text-primary" client:load />}
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold mb-2">{service.title}</h3>
+              <p class="text-muted-foreground mb-4">{service.description}</p>
+              <ul class="space-y-2 mb-4">
+                {service.features.map(feature => (
+                  <li class="flex items-center gap-2 text-sm">
+                    <CheckCircle className="h-4 w-4 text-secondary flex-shrink-0" client:load />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <AstroButton href={service.href} variant="outline" size="sm" class="w-full">
+                Learn More
+                <ArrowRight className="h-4 w-4 ml-2" client:load />
+              </AstroButton>
+            </div>
+          </div>
+        </AstroCard>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Specialty Services -->
+  <Section 
+    title="Specialty Services"
+    subtitle="Additional solutions for specific waterproofing needs"
+    background="muted"
+  >
+    <Grid columns={4}>
+      {specialtyServices.map((service) => (
+        <AstroCard class="text-center hover:shadow-md transition-shadow">
+          <h4 class="font-semibold mb-3">{service.title}</h4>
+          <AstroButton href={service.href} variant="ghost" size="sm" class="w-full">
+            View Details
+          </AstroButton>
+        </AstroCard>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Service Process -->
+  <Section>
+    <div class="bg-gradient-to-r from-primary/5 to-primary/10 rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-center mb-8">Our Service Process</h2>
+      <Grid columns={4}>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+            1
+          </div>
+          <h3 class="font-semibold mb-2">Free Inspection</h3>
+          <p class="text-sm text-muted-foreground">
+            Thorough assessment of your waterproofing needs
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+            2
+          </div>
+          <h3 class="font-semibold mb-2">Custom Solution</h3>
+          <p class="text-sm text-muted-foreground">
+            Tailored plan with transparent pricing
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+            3
+          </div>
+          <h3 class="font-semibold mb-2">Professional Work</h3>
+          <p class="text-sm text-muted-foreground">
+            Expert installation by certified technicians
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+            4
+          </div>
+          <h3 class="font-semibold mb-2">Lifetime Protection</h3>
+          <p class="text-sm text-muted-foreground">
+            Comprehensive warranty and ongoing support
+          </p>
+        </div>
+      </Grid>
+    </div>
+  </Section>
+  
+  <!-- Service Areas -->
+  <Section background="muted">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold mb-4">Serving the Greater Toronto Area</h2>
+      <p class="text-muted-foreground mb-8">
+        Professional waterproofing services available throughout the GTA
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {serviceAreas.map(area => (
+          <AstroBadge variant="secondary" size="lg">
+            {area}
+          </AstroBadge>
+        ))}
+      </div>
+      <AstroButton href="/locations/" variant="outline" class="mt-8">
+        View All Service Areas
+      </AstroButton>
+    </div>
+  </Section>
+  
+  <!-- CTA Section -->
+  <Section background="primary" spacing="large">
+    <div class="text-center space-y-6">
+      <h2 class="text-3xl font-bold text-white">
+        Ready to Protect Your Home?
+      </h2>
+      <p class="text-xl text-white/90 max-w-2xl mx-auto">
+        Get a free inspection and quote from Toronto's trusted waterproofing experts
+      </p>
+      <div class="flex items-center justify-center gap-8 text-white/80 text-sm">
+        <div class="flex items-center gap-2">
+          <CheckCircle className="h-5 w-5" client:load />
+          <span>Free Inspection</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <CheckCircle className="h-5 w-5" client:load />
+          <span>Written Quote</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <CheckCircle className="h-5 w-5" client:load />
+          <span>No Obligation</span>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <AstroButton 
+          href="/contact/" 
+          size="lg"
+          class="bg-white text-primary hover:bg-gray-100"
+        >
+          Schedule Free Inspection
+        </AstroButton>
+        <AstroButton 
+          href="tel:437-545-0067" 
+          variant="outline" 
+          size="lg"
+          class="border-white text-white hover:bg-white/10"
+        >
+          <Phone className="h-5 w-5" client:load />
+          (437) 545-0067
+        </AstroButton>
+      </div>
+    </div>
+  </Section>
+</MainLayout>

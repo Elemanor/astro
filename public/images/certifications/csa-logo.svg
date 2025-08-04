@@ -1,0 +1,5 @@
+<svg width="150" height="80" viewBox="0 0 150 80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="150" height="80" fill="#CC0000" rx="8"/>
+  <text x="75" y="45" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">CSA</text>
+  <text x="75" y="60" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">CANADIAN STANDARDS</text>
+</svg>

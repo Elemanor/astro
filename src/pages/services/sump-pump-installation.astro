@@ -1,0 +1,727 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/sump-pump-installation/
+// Migration date: 2025-08-04T15:14:30.126Z
+
+import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "Sump Pump Guide Toronto",
+  serviceTitle: "Sump Pump Toronto | Complete Guide + Installation | DrySpace",
+  serviceSubtitle: "Professional Sump Pump Installation & Emergency Repair Service",
+  serviceDescription: "Complete sump pump guide for Toronto homeowners. Learn types, installation, maintenance + get professional service. 25+ years experience, 3,500+ installations. Free assessment: (437) 545-0067",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [
+    {
+      "label": "What is a Sump Pump? Complete Guide for Toronto Homeowners",
+      "href": "#what-is-a-sump-pump-complete-guide-for-toronto-homeowners"
+    },
+    {
+      "label": "Types of Sump Pumps: Which is Right for Your Toronto Home?",
+      "href": "#types-of-sump-pumps-which-is-right-for-your-toronto-home"
+    },
+    {
+      "label": "When Do You Need a Sump Pump? 10 Warning Signs for Toronto Homeowners",
+      "href": "#when-do-you-need-a-sump-pump-10-warning-signs-for-toronto-homeowners"
+    },
+    {
+      "label": "Why Toronto Homeowners Choose DrySpace for Sump Pump Installation",
+      "href": "#why-toronto-homeowners-choose-dryspace-for-sump-pump-installation"
+    },
+    {
+      "label": "Complete Sump Pump Services Throughout the GTA",
+      "href": "#complete-sump-pump-services-throughout-the-gta"
+    },
+    {
+      "label": "Toronto Service Areas - We Come to You",
+      "href": "#toronto-service-areas-we-come-to-you"
+    },
+    {
+      "label": "Toronto Sump Pump Installation Pricing",
+      "href": "#toronto-sump-pump-installation-pricing"
+    },
+    {
+      "label": "Related Basement Water Management Services",
+      "href": "#related-basement-water-management-services"
+    },
+    {
+      "label": "Emergency Sump Pump Service - Available 24/7",
+      "href": "#emergency-sump-pump-service-available-24-7"
+    },
+    {
+      "label": "Why Professional Installation Matters",
+      "href": "#why-professional-installation-matters"
+    }
+  ],
+  
+  relatedServices: [
+    {
+      "url": "/services/interior-waterproofing",
+      "description": "Complete interior drainage systems that channel water directly to your sump pump for maximum flood protection",
+      "image": "/pics/work/interior-waterproofing.webp"
+    },
+    {
+      "url": "/services/emergency-waterproofing",
+      "description": "24/7 emergency sump pump replacement and basement flooding response throughout Toronto",
+      "image": "/pics/work/sump-pump.webp"
+    },
+    {
+      "url": "/services/french-drain-installation",
+      "description": "Professional French drain systems that work with sump pumps for complete water management",
+      "image": "/pics/work/exterior-waterproofing-membrane.webp"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "What exactly is a sump pump and how does it work?",
+      "answer": "A sump pump is an automatic water removal device installed in your basement's lowest point (sump pit). When groundwater or surface water enters the pit, a float switch activates the pump motor, which forces water up through discharge pipes and away from your foundation. The system cycles automatically - pumping when water levels rise, shutting off when levels drop. It's your home's first line of defense against basement flooding, operating 24/7 to prevent water damage."
+    },
+    {
+      "question": "What are the main types of sump pumps available?",
+      "answer": "There are four main types: 1) Submersible pumps (most popular) - sit underwater in the pit, quieter and more efficient. 2) Pedestal pumps - motor above water, less expensive but noisier. 3) Battery backup pumps - activate during power outages when flooding risk is highest. 4) Water-powered backup pumps - use city water pressure, no electricity needed. Most Toronto homes benefit from submersible primary pumps with battery backup for complete protection."
+    },
+    {
+      "question": "How do I know if I need a sump pump in my Toronto home?",
+      "answer": "Key warning signs include: water stains or dampness in basement, musty odors, white chalky deposits (efflorescence) on walls, neighbors having sump pumps, living in high-risk areas (The Beaches, Don Valley, Etobicoke South), planning basement renovations, or insurance requirements. Toronto's clay soil, high water table, and extreme weather make sump pumps essential for most properties. Even minor moisture indicates groundwater pressure that will worsen over time."
+    },
+    {
+      "question": "How much does sump pump installation cost in Toronto?",
+      "answer": "Professional sump pump installation in Toronto ranges from $1,200-$4,500 depending on system complexity. Basic installations start around $1,200, standard systems with battery backup cost $2,800-$3,500, and premium systems for challenging conditions can reach $4,500. We provide transparent, no-surprise pricing with detailed written estimates. Emergency installations cost 20-30% more due to urgency. Financing options available with 0% interest for 12 months."
+    },
+    {
+      "question": "What size sump pump do I need for my home?",
+      "answer": "Pump size depends on your basement area, water volume, and local conditions. Small homes (under 1,200 sq ft) typically need 25-35 GPM capacity. Average homes (1,200-2,000 sq ft) require 35-50 GPM. Large homes (over 2,000 sq ft) need 50-75 GPM. Problem properties may require 75+ GPM. Professional assessment considers soil type, water table depth, existing drainage, and Toronto's specific climate challenges to determine exact requirements."
+    },
+    {
+      "question": "How long do sump pumps last in Toronto's climate?",
+      "answer": "Quality sump pumps last 7-10 years with proper maintenance in Toronto's freeze-thaw climate. Premium cast iron pumps can last 10-15 years. Cheaper pumps typically fail in 3-5 years. Toronto's clay soil and seasonal water variations affect pump lifespan - pumps that run constantly wear faster. Our maintenance program extends pump life by 40% through preventive care and early problem detection."
+    },
+    {
+      "question": "Do I really need a battery backup sump pump in Toronto?",
+      "answer": "Absolutely yes if you have a finished basement or would suffer significant damage from flooding. Toronto's storm patterns often cause power outages exactly when pumps are needed most. Ice storms, summer thunderstorms, and grid overload during peak demand create power failures during flooding events. Battery backup systems automatically activate during outages, providing 4-8 hours of pumping capacity. Many Toronto insurance companies now require backup systems for basement coverage."
+    },
+    {
+      "question": "What are common sump pump problems and how to fix them?",
+      "answer": "Common problems include: 1) Won't start - check power, float switch, and clogs. 2) Runs constantly - likely undersized pump or failed check valve. 3) Strange noises - debris in impeller or worn bearings. 4) Short cycling - float switch issues or small pit. 5) Frozen discharge - Toronto winter problem requiring insulation. 6) Backup system failure - usually dead batteries. Most issues are preventable with regular maintenance. Call professionals for electrical problems or repeated failures."
+    },
+    {
+      "question": "Why is my sump pump running constantly?",
+      "answer": "Constant running usually indicates an undersized pump, failed check valve, or extremely high water table. In Toronto's clay soil, seasonal water table changes can overwhelm undersized systems. A failed check valve allows water to flow back into the pit, causing endless cycling. We diagnose the root cause and provide permanent solutions, not temporary fixes. Constant running burns out pumps quickly and dramatically increases electrical costs."
+    },
+    {
+      "question": "Can I install a sump pump myself or do I need a professional?",
+      "answer": "While DIY installation is possible, 90% of sump pump failures result from improper installation. Professional installation ensures correct pump sizing, optimal pit placement, code-compliant electrical work, and proper discharge routing. Toronto building codes require permits for most installations. Our licensed technicians guarantee proper installation with lifetime warranty on workmanship. DIY mistakes often cost more to fix than professional installation would have cost initially."
+    },
+    {
+      "question": "What maintenance does a sump pump need?",
+      "answer": "Sump pumps need monthly testing during wet seasons and annual professional maintenance. Monthly: pour water in pit to test operation, check discharge flow, verify backup battery status. Annual professional service includes pump cleaning, float switch testing, check valve inspection, battery replacement, and discharge line verification. Our maintenance customers experience 90% fewer emergency failures and their pumps last 40% longer."
+    },
+    {
+      "question": "How do I choose the right sump pump for my Toronto home?",
+      "answer": "Consider these factors: 1) Water volume needs based on basement size and local water table. 2) Pump type - submersible for most homes, pedestal for budget constraints. 3) Backup systems - battery backup essential for Toronto's storm patterns. 4) Brand quality - cast iron construction for durability. 5) Professional installation - ensures proper sizing and code compliance. 6) Budget - balance initial cost with long-term reliability. We provide personalized recommendations based on your specific property conditions."
+    },
+    {
+      "question": "Will a sump pump increase my Toronto home's value?",
+      "answer": "Yes - homes with professional sump pump systems sell 20% faster and command 3-5% higher prices in Toronto's market. Buyers appreciate documented flood protection, especially given Toronto's increasing extreme weather. Home inspectors flag missing sump pumps as concerns in flood-prone areas. Insurance companies offer premium discounts for homes with proper water management systems. The investment typically pays for itself through increased resale value and insurance savings."
+    },
+    {
+      "question": "How much water can different sump pumps handle?",
+      "answer": "1/3 HP pumps handle 35-40 gallons per minute (suitable for most Toronto homes). 1/2 HP pumps move 50-60 GPM (recommended for high water volume areas). 3/4 HP pumps handle 70-85 GPM (for problem properties or commercial applications). We calculate your specific water volume needs based on basement size, soil conditions, and local water table levels. Proper sizing prevents system overload during extreme weather events."
+    },
+    {
+      "question": "What happens if the power goes out during a Toronto storm?",
+      "answer": "Without battery backup, your sump pump stops working exactly when you need it most. Toronto's storm patterns frequently cause power outages during heavy rainfall. Battery backup systems automatically activate during outages, providing 4-8 hours of continuous pumping. Marine-grade batteries handle Toronto's temperature extremes. Smart systems send smartphone alerts when operating on backup power. Generator connections provide unlimited runtime for extended outages."
+    },
+    {
+      "question": "Where does sump pump water discharge in Toronto?",
+      "answer": "Sump pump discharge must comply with Toronto municipal bylaws. Water typically discharges to the street, storm sewer connection, or designated drainage area at least 6 feet from your foundation and 3 feet from property lines. Some Toronto neighborhoods prohibit direct street discharge. We handle all permit applications and ensure code compliance. Improper discharge can result in fines and neighbor disputes."
+    },
+    {
+      "question": "How deep should a sump pit be in Toronto?",
+      "answer": "Standard Toronto installations require pits 24-30 inches deep and 18-22 inches wide. Depth depends on your water table level, pump cycling requirements, and basement floor thickness. Toronto's clay soil often requires deeper pits to reach proper drainage levels. Deeper isn't always better - excessive depth can cause pump cycling issues. We determine optimal pit depth based on site-specific conditions and pump specifications."
+    },
+    {
+      "question": "Do Toronto building codes require permits for sump pump installation?",
+      "answer": "Most Toronto sump pump installations require building permits, especially for new electrical connections or discharge modifications. Electrical work requires ESA permits. Some areas require discharge permits. We handle all permit applications and inspections as part of our service. Unpermitted work can cause insurance claim denials and complicate future home sales. Professional installation ensures code compliance and proper documentation."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = `<h2 id="what-is-a-sump-pump-complete-guide-for-toronto-homeowners">What is a Sump Pump? Complete Guide for Toronto Homeowners</h2>
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/services/drains/drains.webp" alt="French drain installation" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Effective drainage solutions</figcaption>
+</figure>
+<p>A <strong>sump pump</strong> is a mechanical device designed to remove water that accumulates in your basement's lowest point (called a sump pit or sump basin). Think of it as your home's automatic water removal system - when water levels rise, the pump activates and pushes water away from your foundation through a discharge pipe.</p>
+
+<p><strong>How Sump Pumps Work:</strong></p>
+
+<li><strong>Water Collection</strong> - Groundwater, surface water, or interior drainage flows into the sump pit</li>
+<li><strong>Automatic Activation</strong> - A float switch triggers the pump when water reaches a preset level  </li>
+<li><strong>Water Removal</strong> - The pump motor forces water up through discharge pipes</li>
+<li><strong>Safe Disposal</strong> - Water exits your property away from the foundation</li>
+<li><strong>Cycle Completion</strong> - Pump shuts off when water level drops, ready for the next cycle</li>
+
+<p><strong>Why Toronto Homes Need Sump Pumps:</strong></p>
+
+Toronto's unique geography creates perfect conditions for basement water problems:
+<ul><li><strong>High water tables</strong> near Lake Ontario and rivers</li>
+<li><strong>Clay soil</strong> that acts like a bowl, trapping water around foundations</li>
+<li><strong>Extreme weather</strong> with intense storms and rapid spring thaws</li>
+<li><strong>Aging infrastructure</strong> that can't handle modern storm volumes</li>
+<li><strong>Urban development</strong> that increases surface water runoff</li>
+
+<p></ul>Without proper water management, these conditions lead to basement flooding, mold growth, foundation damage, and thousands in repair costs.</p>
+
+
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/work/sump-pump.webp" alt="Sump pump installation" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Reliable sump pump systems</figcaption>
+</figure><h2 id="types-of-sump-pumps-which-is-right-for-your-toronto-home">Types of Sump Pumps: Which is Right for Your Toronto Home?</h2>
+<p>### Submersible Sump Pumps (Most Popular Choice)</p>
+
+<p><strong>Best for 85% of Toronto homes</strong></p>
+
+<p>Submersible pumps sit completely underwater in the sump pit, making them the preferred choice for most residential applications.</p>
+
+<strong>Advantages:</strong>
+<ul><li><strong>Quieter operation</strong> - Water muffles motor noise</li>
+<li><strong>Better cooling</strong> - Water prevents motor overheating</li>
+<li><strong>Space-saving</strong> - Entire unit fits in pit</li>
+<li><strong>Superior performance</strong> - More efficient water movement</li>
+<li><strong>Longer lifespan</strong> - Premium models last 10-15 years</li>
+<li><strong>Cold weather protection</strong> - Submerged components won't freeze</li>
+
+</ul><strong>Disadvantages:</strong>
+<ul><li><strong>Higher initial cost</strong> - 30-40% more than pedestal pumps</li>
+<li><strong>More complex maintenance</strong> - Must remove from pit for service</li>
+<li><strong>Electrical concerns</strong> - Submerged motor requires proper sealing</li>
+
+<p></ul><strong>Best for:</strong> Standard Toronto homes with finished basements, properties with high water volume, homeowners prioritizing quiet operation</p>
+
+<p>### Pedestal Sump Pumps (Budget Option)</p>
+
+<p><strong>Good choice when cost is primary concern</strong></p>
+
+<p>Pedestal pumps have motors mounted above the sump pit on a pedestal, with only the pump base underwater.</p>
+
+<strong>Advantages:</strong>
+<ul><li><strong>Lower cost</strong> - 30-40% less than submersible models</li>
+<li><strong>Easy maintenance</strong> - Motor accessible without removal</li>
+<li><strong>Longer motor life</strong> - Not submerged, less wear on electrical parts</li>
+<li><strong>DIY-friendly</strong> - Simpler for homeowner maintenance</li>
+<li><strong>Shallow pit compatibility</strong> - Works in pits as shallow as 18 inches</li>
+
+</ul><strong>Disadvantages:</strong>
+<ul><li><strong>Noisier operation</strong> - Motor noise echoes in basement</li>
+<li><strong>Takes basement space</strong> - Pedestal reduces headroom</li>
+<li><strong>Lower capacity</strong> - Generally 20-30% less flow than submersible</li>
+<li><strong>Aesthetic issues</strong> - Visible equipment in finished spaces</li>
+
+<p></ul><strong>Best for:</strong> Unfinished basements, budget-conscious homeowners, properties with shallow water tables, temporary solutions</p>
+
+<p>### Battery Backup Sump Pumps (Essential Protection)</p>
+
+<p><strong>Critical for Toronto's storm patterns</strong></p>
+
+<p>Battery backup systems automatically activate when primary pumps fail or power goes out - exactly when flooding is most likely.</p>
+
+<strong>Why Every Toronto Home Needs Backup:</strong>
+<ul><li><strong>Storm power outages</strong> - When you need pumps most</li>
+<li><strong>Ice storm protection</strong> - Multi-day outages common in winter</li>
+<li><strong>Grid overload</strong> - Summer storms stress electrical systems</li>
+<li><strong>Insurance requirements</strong> - Many policies now require backup systems</li>
+
+</ul><strong>Battery Backup Features:</strong>
+<ul><li><strong>Marine-grade batteries</strong> - Deep cycle AGM batteries that won't spill</li>
+<li><strong>Automatic switching</strong> - Instant activation during power failure</li>
+<li><strong>High pumping capacity</strong> - 20-40 GPM depending on model</li>
+<li><strong>Extended runtime</strong> - 4-8 hours continuous operation</li>
+<li><strong>Status monitoring</strong> - LED indicators and audible alarms</li>
+<li><strong>Professional maintenance</strong> - Annual battery replacement programs</li>
+
+<p></ul><strong>Best for:</strong> Finished basements, homes with valuable contents, properties in storm-prone areas, insurance compliance</p>
+
+<p>### Water-Powered Backup Pumps (Specialized Applications)</p>
+
+<p><strong>Unique solution for specific Toronto situations</strong></p>
+
+<p>Water-powered backups use city water pressure to create suction that removes sump water - no electricity required.</p>
+
+<strong>When Water-Powered Makes Sense:</strong>
+<ul><li><strong>No electrical backup possible</strong> - Locations where batteries won't work</li>
+<li><strong>Extended outage protection</strong> - Unlimited runtime during multi-day outages</li>
+<li><strong>Frozen discharge prevention</strong> - Water flow prevents freeze-ups</li>
+<li><strong>High reliability needs</strong> - No batteries to maintain or replace</li>
+
+</ul><strong>Considerations:</strong>
+<ul><li><strong>Water usage costs</strong> - Uses 1 gallon city water per gallon pumped</li>
+<li><strong>Plumbing requirements</strong> - Needs dedicated water supply line</li>
+<li><strong>Lower capacity</strong> - Typically 15-25 GPM maximum</li>
+<li><strong>City approval</strong> - May require permits in some Toronto areas</li>
+
+<p></ul><strong>Best for:</strong> Rural properties, homes with unreliable power, backup to battery systems, extreme reliability requirements</p>
+
+<h2 id="when-do-you-need-a-sump-pump-10-warning-signs-for-toronto-homeowners">When Do You Need a Sump Pump? 10 Warning Signs for Toronto Homeowners</h2>
+<p>Recognizing early warning signs prevents expensive flood damage. Here are the key indicators that your Toronto home needs sump pump protection:</p>
+
+<p><strong>1. Water Stains or Moisture in Basement</strong>
+Even minor stains indicate groundwater pressure. Toronto's clay soil holds water against foundations, creating constant moisture problems that worsen over time.</p>
+
+<p><strong>2. Musty Basement Odors</strong>
+Persistent musty smells mean chronic moisture - perfect conditions for mold growth costing $5,000-$15,000 to remediate.</p>
+
+<p><strong>3. Efflorescence (White Chalky Deposits)</strong>
+White residue on foundation walls proves repeated water penetration, causing ongoing structural damage.</p>
+
+<p><strong>4. Your Neighbors Have Sump Pumps</strong>
+Groundwater doesn't respect property lines. If surrounding homes need pumps, yours does too.</p>
+
+<strong>5. High-Risk Toronto Neighborhoods</strong>
+<ul><li>The Beaches (high water table)</li>
+<li>Etobicoke South (low elevation)</li>
+<li>Don Valley (flood zone)</li>
+<li>Scarborough Bluffs (clay soil)</li>
+<li>Toronto Islands (water surrounded)</li>
+
+<p></ul><strong>6. Planning Basement Renovations</strong>
+Never finish a basement without flood protection. Insurance often refuses coverage for unprotected finished basements.</p>
+
+<p><strong>7. Recent Interior Waterproofing Installation</strong>
+Drainage systems collect water but need pumps to remove it. Collection without removal creates indoor pools.</p>
+
+<p><strong>8. Frequent Power Outages</strong>
+If your area loses power during storms, battery backup protection becomes essential.</p>
+
+<p><strong>9. Aging Sump Pump (7+ Years)</strong>
+Pumps aren't "install and forget" systems. After 7-10 years, failure rates increase dramatically.</p>
+
+<p><strong>10. Insurance Requirements</strong>
+Many Toronto insurers now require functioning sump pumps, annual maintenance records, and professional installation certificates for basement coverage.</p>
+
+<p>When basement flooding threatens your Toronto home, a professionally installed sump pump is your most critical line of defense. But here's what most homeowners don't realize: <strong>90% of sump pump failures are due to improper installation, not equipment failure.</strong> That's why our sump pump installations integrate seamlessly with [interior waterproofing systems](/services/interior-waterproofing/) and complement [foundation crack repairs](/services/foundation-crack-repair/) for comprehensive basement water management.</p>
+
+<h2 id="why-toronto-homeowners-choose-dryspace-for-sump-pump-installation">Why Toronto Homeowners Choose DrySpace for Sump Pump Installation</h2>
+<p>✅ <strong>25+ Years Toronto Experience</strong> - We understand GTA's unique water challenges  
+✅ <strong>3,500+ Successful Installations</strong> - Proven track record throughout Toronto  
+✅ <strong>Licensed & Insured Technicians</strong> - All work meets Ontario Building Code  
+✅ <strong>Lifetime Warranty on Workmanship</strong> - Transferable to future homeowners  
+✅ <strong>24/7 Emergency Service</strong> - Available when you need us most  
+✅ <strong>Free On-Site Assessments</strong> - No obligation, transparent pricing  
+✅ <strong>Battery Backup Systems</strong> - Protection during power outages  
+✅ <strong>Annual Maintenance Programs</strong> - Keep your system running perfectly</p>
+
+<h2 id="complete-sump-pump-services-throughout-the-gta">Complete Sump Pump Services Throughout the GTA</h2>
+### New Sump Pump Installation
+<ul><li><strong>Custom system design</strong> based on your specific water volume needs</li>
+<li><strong>Professional installation</strong> by licensed technicians</li>
+<li><strong>Premium components</strong> - Cast iron pumps, reinforced pits, quality discharge systems</li>
+<li><strong>Code-compliant electrical work</strong> with GFCI protection</li>
+<li><strong>Battery backup integration</strong> for storm protection</li>
+
+</ul>### Emergency Sump Pump Replacement
+<ul><li><strong>Under 2-hour response time</strong> throughout Toronto</li>
+<li><strong>Same-day installation</strong> when your pump fails</li>
+<li><strong>Fully stocked service vehicles</strong> with replacement pumps</li>
+<li><strong>24/7/365 availability</strong> - No extra charges for emergencies</li>
+<li><strong>Temporary pumping</strong> to prevent damage while we work</li>
+
+</ul>### Sump Pump Repair & Maintenance
+<ul><li><strong>Annual maintenance programs</strong> prevent 85% of failures</li>
+<li><strong>Battery replacement services</strong> for backup systems</li>
+<li><strong>Performance monitoring</strong> and system optimization</li>
+<li><strong>Emergency repair service</strong> when problems develop</li>
+<li><strong>Upgrade consultations</strong> for aging systems</li></ul>
+
+<h2 id="toronto-service-areas-we-come-to-you">Toronto Service Areas - We Come to You</h2>
+<p>We provide professional sump pump installation throughout the Greater Toronto Area:</p>
+
+<p><strong>Toronto Proper:</strong> Downtown, North York, Scarborough, Etobicoke, East York, York  
+<strong>905 Region:</strong> Mississauga, Brampton, Vaughan, Richmond Hill, Markham, Oakville, Burlington  
+<strong>Specialized Areas:</strong> The Beaches, Don Valley, Riverdale, The Annex, Leslieville</p>
+
+<p>[View complete service area coverage and neighborhood-specific expertise →](/services/service-areas/)</p>
+
+<h2 id="toronto-sump-pump-installation-pricing">Toronto Sump Pump Installation Pricing</h2>
+<p><strong>Transparent, competitive pricing with no hidden fees:</strong></p>
+
+<ul><li><strong>Basic Installation:</strong> $1,200-$1,800 (Standard 1/3 HP system)</li>
+<li><strong>Complete System:</strong> $1,800-$2,800 (Premium pump with backup)</li>
+<li><strong>Ultimate Protection:</strong> $2,800-$4,500 (Battery backup with monitoring)</li>
+
+</ul><strong>Every installation includes:</strong>
+<ul><li>Free on-site assessment and detailed estimate</li>
+<li>All permits and inspections handled for you</li>
+<li>Lifetime warranty on workmanship</li>
+<li>10-year warranty on equipment</li>
+<li>Annual maintenance program enrollment</li>
+
+<p></ul><strong>Financing Available:</strong> 0% interest for 12 months, extended payment plans up to 60 months</p>
+
+<p>[Get your free, no-obligation quote today →](/contact/)</p>
+
+<h2 id="related-basement-water-management-services">Related Basement Water Management Services</h2>
+### Complete Waterproofing Solutions
+<ul><li><strong>[Interior Waterproofing Systems](/services/interior-waterproofing/)</strong> - Complete drainage systems that channel water directly to your sump pump for maximum flood protection</li>
+<li><strong>[French Drain Installation](/services/french-drain-installation/)</strong> - Professional drainage systems that work seamlessly with sump pump systems</li>
+<li><strong>[Emergency Waterproofing](/services/emergency-waterproofing/)</strong> - 24/7 response for basement flooding and sump pump failures</li>
+
+</ul>### Basement Enhancement Services
+<ul><li><strong>[Basement Underpinning](/services/basement-underpinning/)</strong> - Lower your basement with upgraded sump systems</li>
+<li><strong>[Foundation Crack Repair](/services/foundation-crack-repair/)</strong> - Stop water entry at the source</li>
+<li><strong>[Backwater Valve Installation](/services/backwater-valve-installation/)</strong> - Prevent sewer backup during storms</li>
+
+</ul>### Cost and Planning Resources
+<ul><li><strong>[Sump Pump Installation Cost Guide](/cost/sump-pump-installation-cost/)</strong> - Detailed 2025 pricing information</li>
+<li><strong>[Waterproofing Cost Calculator](/tools/waterproofing-cost-calculator/)</strong> - Estimate your project investment</li>
+<li><strong>[Toronto Sump Pump Rebate Program](/toronto-sump-pump-rebate/)</strong> - City of Toronto financial assistance</li></ul>
+
+<h2 id="emergency-sump-pump-service-available-24-7">Emergency Sump Pump Service - Available 24/7</h2>
+<p><strong>When your sump pump fails, every minute counts.</strong> We maintain emergency response throughout the GTA with:</p>
+
+<ul><li><strong>Under 2-hour response time</strong> to emergency calls</li>
+<li><strong>Fully equipped service vehicles</strong> with replacement pumps</li>
+<li><strong>Same-day installation</strong> to prevent further damage</li>
+<li><strong>Temporary pumping services</strong> while we work</li>
+<li><strong>No emergency surcharges</strong> - fair pricing even during crises</li>
+
+<p></ul><strong>Emergency Hotline: (437) 545-0067</strong> - Available 24/7/365</p>
+
+<h2 id="why-professional-installation-matters">Why Professional Installation Matters</h2>
+<p><strong>Don't risk your home to DIY installation or the lowest bidder.</strong> Professional sump pump installation ensures:</p>
+
+<ul><li><strong>Proper sizing</strong> based on actual water volume calculations</li>
+<li><strong>Optimal pit placement</strong> at the lowest drainage point</li>
+<li><strong>Code-compliant electrical work</strong> with proper GFCI protection</li>
+<li><strong>Correct discharge routing</strong> that complies with Toronto bylaws</li>
+<li><strong>Integration with existing systems</strong> for complete protection</li>
+<li><strong>Lifetime warranty</strong> on workmanship and installation</li>
+
+<p></ul><strong>The cost of professional installation is 90% less than the average flood cleanup.</strong> Protect your Toronto home with expert installation from DrySpace Waterproofing.</p>
+
+<p>---</p>
+
+<p><strong>Ready to protect your Toronto home from basement flooding?</strong></p>
+
+<p><strong>Call (437) 545-0067 for your free sump pump assessment</strong></p>
+
+<p>✅ <strong>Free on-site consultation</strong>  
+✅ <strong>Same-day quotes available</strong>  
+✅ <strong>Licensed & insured technicians</strong>  
+✅ <strong>Lifetime warranty included</strong>  
+✅ <strong>Financing options available</strong></p>
+
+<p><em>Don't wait for the next storm. Professional sump pump installation prevents disasters and protects your family's safety and financial security.</em></p>`;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {
+  "keywords": [
+    "sump pump",
+    "sump pump installation toronto",
+    "sump pump types",
+    "sump pump repair toronto",
+    "battery backup sump pump",
+    "sump pump maintenance",
+    "toronto sump pump contractors"
+  ],
+  "schema": {
+    "type": "Service",
+    "name": "Sump Pump Services Toronto",
+    "description": "Complete sump pump guide and professional services for Toronto homeowners. Installation, repair, maintenance, and expert advice. 25+ years experience, 3,500+ successful installations, lifetime warranty.",
+    "provider": {
+      "type": "LocalBusiness",
+      "name": "DrySpace Waterproofing",
+      "url": "https://dryspacewaterproofing.ca",
+      "telephone": "+14375450067",
+      "email": "info@dryspacewaterproofing.ca",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "addressCountry": "CA",
+        "postalCode": "M1P 2V8"
+      },
+      "priceRange": "$1200-$4500",
+      "paymentAccepted": [
+        "Cash",
+        "Check",
+        "Credit Card",
+        "Financing"
+      ],
+      "currenciesAccepted": "CAD",
+      "aggregateRating": {
+        "type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "2800",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    "areaServed": [
+      {
+        "type": "City",
+        "name": "Toronto"
+      },
+      {
+        "type": "City",
+        "name": "North York"
+      },
+      {
+        "type": "City",
+        "name": "Scarborough"
+      },
+      {
+        "type": "City",
+        "name": "Etobicoke"
+      },
+      {
+        "type": "City",
+        "name": "East York"
+      },
+      {
+        "type": "City",
+        "name": "York"
+      },
+      {
+        "type": "City",
+        "name": "Mississauga"
+      },
+      {
+        "type": "City",
+        "name": "Brampton"
+      },
+      {
+        "type": "City",
+        "name": "Vaughan"
+      },
+      {
+        "type": "City",
+        "name": "Richmond Hill"
+      },
+      {
+        "type": "City",
+        "name": "Markham"
+      },
+      {
+        "type": "City",
+        "name": "Oakville"
+      },
+      {
+        "type": "City",
+        "name": "Burlington"
+      }
+    ],
+    "serviceType": [
+      "Sump Pump Installation",
+      "Sump Pump Repair",
+      "Battery Backup Sump Pump Installation",
+      "Emergency Sump Pump Replacement",
+      "Sump Pump Maintenance",
+      "Sump Pump System Design",
+      "Commercial Sump Pump Installation",
+      "Sump Pump Inspection"
+    ],
+    "hasOfferCatalog": {
+      "type": "OfferCatalog",
+      "name": "Sump Pump Installation Services",
+      "itemListElement": [
+        {
+          "type": "Offer",
+          "itemOffered": {
+            "type": "Service",
+            "name": "Basic Sump Pump Installation",
+            "description": "Standard 1/3 HP submersible pump installation with 5-year warranty"
+          },
+          "price": "1200",
+          "priceCurrency": "CAD",
+          "availability": "InStock"
+        },
+        {
+          "type": "Offer",
+          "itemOffered": {
+            "type": "Service",
+            "name": "Premium Sump Pump System",
+            "description": "Complete system with battery backup and 10-year warranty"
+          },
+          "price": "3500",
+          "priceCurrency": "CAD",
+          "availability": "InStock"
+        }
+      ]
+    },
+    "offers": {
+      "type": "Offer",
+      "name": "Professional Sump Pump Installation",
+      "description": "Complete sump pump installation with lifetime warranty on workmanship",
+      "price": "1200-4500",
+      "priceCurrency": "CAD",
+      "availability": "InStock",
+      "validFrom": "2025-01-01",
+      "priceValidUntil": "2025-12-31",
+      "includesObject": [
+        "Free On-Site Assessment",
+        "Professional Installation",
+        "Lifetime Warranty on Workmanship",
+        "10-Year Equipment Warranty",
+        "24/7 Emergency Support",
+        "Annual Maintenance Program"
+      ],
+      "warranty": {
+        "type": "WarrantyPromise",
+        "durationOfWarranty": "P10Y",
+        "warrantyScope": "Complete system coverage including parts and labor"
+      }
+    },
+    "additionalProperty": [
+      {
+        "type": "PropertyValue",
+        "name": "Years in Business",
+        "value": "25+"
+      },
+      {
+        "type": "PropertyValue",
+        "name": "Installations Completed",
+        "value": "3500+"
+      },
+      {
+        "type": "PropertyValue",
+        "name": "Customer Satisfaction",
+        "value": "98%"
+      },
+      {
+        "type": "PropertyValue",
+        "name": "Emergency Response Time",
+        "value": "Under 2 hours"
+      }
+    ],
+    "openingHours": "Mo-Su 00:00-23:59",
+    "availableLanguage": [
+      "English",
+      "French"
+    ],
+    "slogan": "Toronto's #1 Sump Pump Installation Experts Since 1999"
+  }
+};
+---
+
+<ServicePageTemplateV3 {...serviceData}>
+  <div slot="mainContent" set:html={mainContent} />
+</ServicePageTemplateV3>
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

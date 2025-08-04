@@ -1,0 +1,272 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/bench-footing-vs-underpinning/
+// Migration date: 2025-08-04T15:14:29.468Z
+
+import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "Bench Footing vs Underpinning Toronto",
+  serviceTitle: "Bench Footing vs Underpinning Toronto | Basement Underpinning Cost Comparison",
+  serviceSubtitle: "Compare Underpinning Cost Toronto vs Bench Pinning for Basement Lowering",
+  serviceDescription: "Complete guide comparing bench footing and underpinning for basement lowering. Understand space loss, real costs, engineering differences, and which method is right for your Toronto home. Honest expert comparison with real calculations.",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [
+    {
+      "label": "Quick Comparison",
+      "href": "#quick-comparison"
+    },
+    {
+      "label": "Service Areas",
+      "href": "#service-areas"
+    }
+  ],
+  
+  relatedServices: [
+    {
+      "url": "/services/foundation-underpinning",
+      "description": "Full basement lowering with no space loss",
+      "image": "/images/foundation-underpinning.jpg"
+    },
+    {
+      "url": "/services/underpinning-process-guide",
+      "description": "Detailed week-by-week underpinning process",
+      "image": "/images/underpinning-process.jpg"
+    },
+    {
+      "url": "/services/basement-waterproofing",
+      "description": "Essential protection for any basement lowering",
+      "image": "/images/basement-waterproofing.jpg"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "What's the main difference between bench footing and underpinning?",
+      "answer": "Underpinning digs under your foundation to maintain full floor space while gaining height. Bench footing creates angled concrete 'benches' along walls, losing significant floor space (typically 30-40% for 2-foot lowering) but costing less upfront."
+    },
+    {
+      "question": "How much space do I lose with bench footing?",
+      "answer": "For every foot of lowering, bench footing requires 1.5 feet of horizontal bench width. A 2-foot lowering creates 3-foot wide benches around your entire basement. In a 1,200 sq ft basement, you'd lose about 420 square feet (35%)."
+    },
+    {
+      "question": "Is bench footing really cheaper than underpinning?",
+      "answer": "Only in upfront costs. Bench footing saves about 25-30% initially, but when you calculate cost per usable square foot, underpinning often costs less. Plus, lost space value can exceed the initial savings."
+    },
+    {
+      "question": "Can I remove bench footing later?",
+      "answer": "No. Bench footings are permanent structural elements. Removing them would compromise your foundation stability. The cost to remove and then underpin exceeds original underpinning by 50% or more."
+    },
+    {
+      "question": "When does bench footing make sense?",
+      "answer": "Bench footing works for: minor height increases (6-12 inches), utility/storage spaces where center height matters most, extreme budget constraints with no finishing plans, or when engineering specifically requires it."
+    },
+    {
+      "question": "How long does each method take?",
+      "answer": "Industry standard: underpinning takes 8-12 weeks, bench footing 6-8 weeks. However, we complete both methods in under 5 weeks, so there's no time advantage to choosing bench footing with us."
+    },
+    {
+      "question": "What about the 45-degree rule?",
+      "answer": "Building code requires bench footing angles to follow the 45-degree rule - an imaginary line from your existing footing must pass through the bench at 45 degrees or less. This ensures stability but creates the space-eating angle."
+    },
+    {
+      "question": "How does each method affect home value?",
+      "answer": "Underpinning typically adds $100+ per square foot in value. Bench footing adds less due to compromised space. Real estate listings must disclose 'height restrictions' with bench footing, affecting buyer interest."
+    },
+    {
+      "question": "Can I finish a bench footed basement?",
+      "answer": "Yes, but with limitations. Furniture placement is restricted, room layouts are compromised, and the angled benches remain visible or need creative covering. It never achieves the clean look of an underpinned basement."
+    },
+    {
+      "question": "Which method do you recommend?",
+      "answer": "In 90% of cases, underpinning is the better investment. It maintains full space, adds more value, and you won't regret it later. We only recommend bench footing for specific situations like minor height needs or severe budget constraints."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = `<h2 id="quick-comparison">Quick Comparison</h2>
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/services/basement waterproofing/dryspace_exterior_waterproofing_warranty.jpg" alt="Professional exterior waterproofing installation" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Our waterproofing comes with lifetime warranty</figcaption>
+</figure>
+<strong>Underpinning:</strong>
+<ul><li>✓ Full floor space maintained</li>
+<li>✓ Maximum value increase</li>
+<li>✓ Clean vertical walls</li>
+<li>✗ Higher upfront cost</li>
+
+</ul><strong>Bench Footing:</strong>
+<ul><li>✓ Lower initial cost</li>
+<li>✗ Loses 30-40% floor space</li>
+<li>✗ Permanent angled benches</li>
+<li>✗ Limited use potential</li></ul>
+
+
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/work/interior-waterproofing.webp" alt="Interior basement waterproofing system" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Interior drainage prevents water damage</figcaption>
+</figure><h2 id="service-areas">Service Areas</h2>
+<p><strong>Service Areas:</strong> Toronto, North York, Scarborough, Etobicoke, East York, York, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and surrounding areas.</p>
+
+<p><em>Remember: You only lower your basement once. The method you choose affects your home forever. Choose wisely. Call for an honest assessment with real calculations for your specific basement.</em></p>`;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {
+  "schema": {
+    "type": "Service",
+    "name": "Basement Lowering Comparison Guide",
+    "provider": {
+      "type": "Organization",
+      "name": "DrySpace Waterproofing"
+    },
+    "areaServed": [
+      "Toronto",
+      "North York",
+      "Scarborough",
+      "Etobicoke",
+      "East York",
+      "York",
+      "Mississauga",
+      "Brampton",
+      "Vaughan",
+      "Richmond Hill",
+      "Markham"
+    ],
+    "serviceType": [
+      "Basement Underpinning",
+      "Bench Footing",
+      "Basement Lowering",
+      "Foundation Engineering",
+      "Basement Height Increase"
+    ],
+    "offers": [
+      "Free Consultation",
+      "Honest Recommendations",
+      "5-Week Completion",
+      "Both Methods Available",
+      "Engineering Included"
+    ]
+  }
+};
+---
+
+<ServicePageTemplateV3 {...serviceData}>
+  <div slot="mainContent" set:html={mainContent} />
+</ServicePageTemplateV3>
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

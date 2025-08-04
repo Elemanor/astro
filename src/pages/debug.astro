@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+
+const services = await getCollection('services');
+const locations = await getCollection('locations');
+const blog = await getCollection('blog');
+const guides = await getCollection('guides');
+---
+
+<html>
+<head>
+  <title>Debug - Available Routes</title>
+</head>
+<body style="font-family: monospace; padding: 20px;">
+  <h1>Available Routes</h1>
+  
+  <h2>Services ({services.length})</h2>
+  <ul>
+    {services.slice(0, 10).map(item => (
+      <li>
+        <a href={`/services/${item.id}/`}>/services/{item.id}/</a>
+      </li>
+    ))}
+  </ul>
+  
+  <h2>Locations ({locations.length})</h2>
+  <ul>
+    {locations.slice(0, 10).map(item => (
+      <li>
+        <a href={`/locations/${item.id}/`}>/locations/{item.id}/</a>
+      </li>
+    ))}
+  </ul>
+  
+  <h2>Blog ({blog.length})</h2>
+  <ul>
+    {blog.slice(0, 10).map(item => (
+      <li>
+        <a href={`/blog/${item.id}/`}>/blog/{item.id}/</a>
+      </li>
+    ))}
+  </ul>
+  
+  <h2>Guides ({guides.length})</h2>
+  <ul>
+    {guides.slice(0, 10).map(item => (
+      <li>
+        <a href={`/guides/${item.id}/`}>/guides/{item.id}/</a>
+      </li>
+    ))}
+  </ul>
+</body>
+</html>

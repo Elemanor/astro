@@ -1,0 +1,104 @@
+/* ============================================ 
+   HERO CONTAINER POSITION ADJUSTMENTS
+   ============================================ */
+
+/* Lift the entire hero section container by 3% */
+.hero {
+    position: relative !important;
+    transform: translateY(-3%) !important;
+    margin-top: -0.75% !important; /* Minimal compensation for the lift */
+    transition: transform 0.3s ease;
+}
+
+/* Also reduce top padding slightly */
+.hero {
+    padding-top: 3rem !important; /* Slight reduction from default */
+}
+
+/* Adjust the hero container padding */
+.hero .hero-container {
+    padding-top: 3rem !important; /* Keep comfortable padding */
+    padding-bottom: 3.5rem !important;
+}
+
+/* Ensure the following section doesn't have a gap */
+.hero + section {
+    position: relative !important;
+    z-index: 20 !important;
+    margin-top: -0.5rem !important; /* Very slight pull up */
+}
+
+/* Mobile adjustments */
+@media only screen and (max-width: 47.9375rem) {
+    .hero {
+        transform: translateY(-2.5%) !important; /* Slightly less on mobile */
+        margin-top: -0.5% !important;
+    }
+    
+    .hero .hero-container {
+        padding-top: 2rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    
+    .hero + section {
+        margin-top: -0.25rem !important;
+    }
+}
+
+/* Tablet adjustments */
+@media only screen and (min-width: 48rem) and (max-width: 63.9375rem) {
+    .hero {
+        transform: translateY(-2.75%) !important;
+        margin-top: -0.6% !important;
+    }
+    
+    .hero .hero-container {
+        padding-top: 2.5rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .hero + section {
+        margin-top: -0.375rem !important;
+    }
+}
+
+/* Desktop only: Lift ONLY main hero image 50% up */
+@media only screen and (min-width: 64rem) {
+    .hero .visual-section .main-visual img {
+        transform: translateY(-50%) !important;
+        position: relative !important;
+    }
+    
+    /* Lift damage examples by 30% */
+    .hero .visual-section .damage-examples {
+        transform: translateY(-30%) !important;
+        position: relative !important;
+    }
+    
+    /* Adjust container to handle lifted main image on desktop */
+    .hero .visual-section .main-visual {
+        margin-bottom: -25% !important;
+        overflow: visible !important;
+    }
+    
+    /* Adjust severity badges for lifted image */
+    .hero .visual-section .main-visual .severity-badges {
+        bottom: 50% !important;
+    }
+}
+
+/* Mobile and Tablet: Keep all images in normal position */
+@media only screen and (max-width: 63.9375rem) {
+    .hero .visual-section .main-visual img,
+    .hero .visual-section .damage-examples {
+        transform: none !important;
+    }
+    
+    .hero .visual-section .main-visual {
+        margin-bottom: 0 !important;
+    }
+    
+    .hero .visual-section .main-visual .severity-badges {
+        bottom: 10% !important;
+    }
+}

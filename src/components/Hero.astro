@@ -1,0 +1,55 @@
+---
+const heroImage = '/images/optimized/dryspace_hero_desktop.webp';
+const heroImageMobile = '/images/optimized/dryspace_hero_mobile.webp';
+---
+
+<section class="relative min-h-[600px] overflow-hidden">
+  <picture>
+    <source media="(max-width: 768px)" srcset={heroImageMobile} />
+    <source srcset={heroImage} />
+    <img 
+      src={heroImage} 
+      alt="DrySpace Waterproofing professionals at work" 
+      class="absolute inset-0 w-full h-full object-cover -z-10" 
+      loading="eager" 
+    />
+  </picture>
+  
+  <div class="relative h-full flex items-center bg-gradient-to-r from-black/70 to-black/30">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl">
+        Toronto's Trusted Foundation Repair & Waterproofing Experts
+      </h1>
+      <p class="text-lg md:text-xl text-white/90 mb-8">
+        24/7 Emergency Service • Lifetime Warranty • Free Inspection
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 mb-8">
+        <a 
+          href="tel:+14375450067" 
+          class="inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-md hover:bg-orange-700 transition-colors"
+        >
+          📞 Call Now: (437) 545-0067
+        </a>
+        <a 
+          href="/contact/" 
+          class="inline-flex items-center justify-center px-6 py-3 bg-gray-600 text-white font-semibold rounded-md hover:bg-gray-700 transition-colors"
+        >
+          Get Free Quote
+        </a>
+      </div>
+      
+      <div class="flex flex-wrap gap-4">
+        <div class="bg-white/10 border border-white/30 text-white px-4 py-2 rounded-md text-sm">
+          ✓ Licensed & Insured
+        </div>
+        <div class="bg-white/10 border border-white/30 text-white px-4 py-2 rounded-md text-sm">
+          ✓ 25+ Years Experience
+        </div>
+        <div class="bg-white/10 border border-white/30 text-white px-4 py-2 rounded-md text-sm">
+          ✓ Lifetime Warranty
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

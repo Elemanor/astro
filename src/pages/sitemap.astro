@@ -1,0 +1,213 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../layouts/MainLayout.astro';
+import Hero from '../components/ui/Hero.astro';
+import Section from '../components/ui/Section.astro';
+import AstroCard from '../components/ui/AstroCard.astro';
+import { FileText, Wrench, MapPin, BookOpen, HelpCircle, Home } from 'lucide-react';
+
+// Get all content collections
+const services = await getCollection('services');
+const locations = await getCollection('locations');
+const guides = await getCollection('guides');
+const blogs = await getCollection('blog');
+const pages = await getCollection('pages');
+const problems = await getCollection('problems');
+
+// Sort collections
+const sortedServices = services.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sortedLocations = locations.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sortedGuides = guides.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sortedBlogs = blogs.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+const sortedPages = pages.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sortedProblems = problems.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+// Main pages
+const mainPages = [
+  { title: 'Home', href: '/', icon: Home },
+  { title: 'Services', href: '/services/', icon: Wrench },
+  { title: 'Locations', href: '/locations/', icon: MapPin },
+  { title: 'Blog', href: '/blog/', icon: FileText },
+  { title: 'Guides', href: '/guides/', icon: BookOpen },
+  { title: 'Resources', href: '/resources', icon: HelpCircle },
+  { title: 'Contact', href: '/contact/', icon: Home }
+];
+---
+
+<MainLayout 
+  title="Sitemap | DrySpace Waterproofing" 
+  description="Complete sitemap of DrySpace Waterproofing website. Find all our services, locations, guides, and resources."
+>
+  <!-- Hero Section -->
+  <Hero
+    title="Sitemap"
+    subtitle="Navigate our complete website"
+    description="Find all pages, services, locations, and resources available on our site"
+    badge="Site Navigation"
+    alignment="center"
+    size="small"
+  />
+  
+  <!-- Main Pages -->
+  <Section>
+    <h2 class="text-2xl font-bold mb-6">Main Pages</h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      {mainPages.map(page => (
+        <a 
+          href={page.href} 
+          class="flex items-center gap-3 p-4 bg-muted rounded-lg hover:bg-muted/80 transition-colors"
+        >
+          {page.title === 'Home' && <Home className="h-5 w-5 text-primary" client:load />}
+          {page.title === 'Services' && <Wrench className="h-5 w-5 text-primary" client:load />}
+          {page.title === 'Locations' && <MapPin className="h-5 w-5 text-primary" client:load />}
+          {page.title === 'Blog' && <FileText className="h-5 w-5 text-primary" client:load />}
+          {page.title === 'Guides' && <BookOpen className="h-5 w-5 text-primary" client:load />}
+          {page.title === 'Resources' && <HelpCircle className="h-5 w-5 text-primary" client:load />}
+          {page.title === 'Contact' && <Home className="h-5 w-5 text-primary" client:load />}
+          <span class="font-medium">{page.title}</span>
+        </a>
+      ))}
+    </div>
+  </Section>
+  
+  <!-- Services -->
+  <Section background="muted">
+    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+      <Wrench className="h-6 w-6 text-primary" client:load />
+      Services ({sortedServices.length})
+    </h2>
+    <div class="grid md:grid-cols-3 gap-3">
+      {sortedServices.map(service => {
+        const url = service.data.url || `/services/${service.id}/`;
+        return (
+          <a href={url} class="text-sm hover:text-primary transition-colors">
+            {service.data.title}
+          </a>
+        );
+      })}
+    </div>
+  </Section>
+  
+  <!-- Locations -->
+  <Section>
+    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+      <MapPin className="h-6 w-6 text-primary" client:load />
+      Service Locations ({sortedLocations.length})
+    </h2>
+    <div class="grid md:grid-cols-3 gap-3">
+      {sortedLocations.map(location => {
+        const url = location.data.url || `/locations/${location.id}/`;
+        return (
+          <a href={url} class="text-sm hover:text-primary transition-colors">
+            {location.data.title}
+          </a>
+        );
+      })}
+    </div>
+  </Section>
+  
+  <!-- Guides & Blog -->
+  <Section background="muted">
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Guides -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+          <BookOpen className="h-6 w-6 text-secondary" client:load />
+          Guides ({sortedGuides.length})
+        </h2>
+        <div class="space-y-2">
+          {sortedGuides.slice(0, 15).map(guide => {
+            const url = guide.data.url || `/guides/${guide.id}/`;
+            return (
+              <a href={url} class="block text-sm hover:text-secondary transition-colors">
+                {guide.data.title}
+              </a>
+            );
+          })}
+          {sortedGuides.length > 15 && (
+            <a href="/guides/" class="block text-sm font-medium text-secondary hover:underline">
+              View all {sortedGuides.length} guides →
+            </a>
+          )}
+        </div>
+      </div>
+      
+      <!-- Blog -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+          <FileText className="h-6 w-6 text-primary" client:load />
+          Recent Blog Posts
+        </h2>
+        <div class="space-y-2">
+          {sortedBlogs.slice(0, 10).map(post => {
+            const url = post.data.url || `/blog/${post.id}/`;
+            return (
+              <a href={url} class="block text-sm hover:text-primary transition-colors">
+                {post.data.title}
+              </a>
+            );
+          })}
+          <a href="/blog/" class="block text-sm font-medium text-primary hover:underline">
+            View all blog posts →
+          </a>
+        </div>
+      </div>
+    </div>
+  </Section>
+  
+  <!-- Other Pages -->
+  <Section>
+    <h2 class="text-2xl font-bold mb-6">Additional Pages</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Problem Pages -->
+      {sortedProblems.length > 0 && (
+        <div>
+          <h3 class="font-semibold mb-3">Common Problems</h3>
+          <div class="space-y-2">
+            {sortedProblems.map(problem => {
+              const url = problem.data.url || `/problems/${problem.id}/`;
+              return (
+                <a href={url} class="block text-sm hover:text-primary transition-colors">
+                  {problem.data.title}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      )}
+      
+      <!-- Info Pages -->
+      <div>
+        <h3 class="font-semibold mb-3">Information Pages</h3>
+        <div class="space-y-2">
+          {sortedPages.map(page => {
+            const url = `/${page.id.replace('.md', '')}`;
+            return (
+              <a href={url} class="block text-sm hover:text-primary transition-colors">
+                {page.data.title}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  </Section>
+  
+  <!-- Footer Links -->
+  <Section background="muted">
+    <AstroCard>
+      <div class="text-center space-y-4">
+        <h2 class="text-xl font-bold">Quick Links</h2>
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+          <a href="/privacy-policy" class="hover:text-primary transition-colors">Privacy Policy</a>
+          <span class="text-muted-foreground">•</span>
+          <a href="/terms-of-service" class="hover:text-primary transition-colors">Terms of Service</a>
+          <span class="text-muted-foreground">•</span>
+          <a href="/sitemap.xml" class="hover:text-primary transition-colors">XML Sitemap</a>
+          <span class="text-muted-foreground">•</span>
+          <a href="/contact/" class="hover:text-primary transition-colors">Contact Us</a>
+        </div>
+      </div>
+    </AstroCard>
+  </Section>
+</MainLayout>

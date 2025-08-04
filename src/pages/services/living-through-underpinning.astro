@@ -1,0 +1,287 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/living-through-underpinning/
+// Migration date: 2025-08-04T15:14:30.006Z
+
+import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "What to Expect While Your House Is Being Underpinned",
+  serviceTitle: "Living Through Underpinning Toronto | What to Expect During Construction",
+  serviceSubtitle: "Living Through Construction - The Honest Reality",
+  serviceDescription: "Honest guide about living in your home during underpinning construction. Learn about noise levels, dust control, daily schedules, disruptions, and coping strategies. Real expectations for the 3-5 week construction process.",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [
+    {
+      "label": "Daily Schedule",
+      "href": "#daily-schedule"
+    },
+    {
+      "label": "Noise Levels",
+      "href": "#noise-levels"
+    },
+    {
+      "label": "Key Survival Tips",
+      "href": "#key-survival-tips"
+    },
+    {
+      "label": "Service Areas",
+      "href": "#service-areas"
+    }
+  ],
+  
+  relatedServices: [
+    {
+      "url": "/services/foundation-underpinning",
+      "description": "Professional underpinning services",
+      "image": "/images/foundation-underpinning.jpg"
+    },
+    {
+      "url": "/services/underpinning-process-guide",
+      "description": "Week-by-week construction process",
+      "image": "/images/underpinning-process.jpg"
+    },
+    {
+      "url": "/services/bench-footing-vs-underpinning",
+      "description": "Understanding your options",
+      "image": "/images/bench-footing.jpg"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "How loud is underpinning construction really?",
+      "answer": "Jackhammering reaches 90-100 dB (like a lawnmower) for 2-4 hours per section. The excavation conveyor runs at 70-80 dB (vacuum cleaner level) most of the day. Concrete days add mixer noise at 80-85 dB for 2-3 hours. It's loud but manageable with planning."
+    },
+    {
+      "question": "Can I stay in my home during underpinning?",
+      "answer": "Yes, most people stay home during underpinning. The intense phase lasts 2-3 weeks. Consider temporary accommodation if you work nights, have a newborn, or are sensitive to noise/dust. Many people work from home successfully by setting up in the quietest room."
+    },
+    {
+      "question": "What time does construction start and end?",
+      "answer": "Toronto bylaws permit construction from 7:00 AM to 7:00 PM weekdays, 9:00 AM to 7:00 PM Saturdays. Most crews work 7:00 AM to 4:00 PM with 30 minutes cleanup. No Sunday work unless emergency. Workers arrive around 6:45 AM to prepare."
+    },
+    {
+      "question": "How bad is the dust during underpinning?",
+      "answer": "Concrete breaking creates the most dust. Professional contractors use plastic barriers, negative air machines, and water misting, but some dust escapes. Expect to change furnace filters weekly, wipe surfaces daily, and find dust in unexpected places despite best efforts."
+    },
+    {
+      "question": "Will underpinning damage my sidewalks and landscaping?",
+      "answer": "Professional contractors protect sidewalks with plywood and plastic sheeting. Some lawn damage occurs from equipment and foot traffic. Good contractors restore landscaping at project end. Document existing conditions and ensure restoration is in your contract."
+    },
+    {
+      "question": "What utilities might be disrupted during underpinning?",
+      "answer": "Water may be shut off for 2-4 hours occasionally with 24-hour notice. Power interruptions are brief and rare. Gas and sewer typically maintain service. Internet/cable lines need protection. Keep contractor's cell number for emergencies."
+    },
+    {
+      "question": "How much vibration is normal during underpinning?",
+      "answer": "Jackhammering causes noticeable vibration throughout the house - pictures may shift and you'll feel it in your feet. This is normal and within structural tolerance. Contractors install crack monitors and stop work if unusual movement occurs."
+    },
+    {
+      "question": "How do contractors transport concrete to my basement?",
+      "answer": "When pumping isn't possible, workers use wheelbarrows - typically 100+ trips per pour. This creates a 'wheelbarrow highway' along your property for 3-4 hours. Expect constant traffic, rumbling sounds, and workers calling out. Pathways are protected with plywood."
+    },
+    {
+      "question": "Should I remove valuables during underpinning?",
+      "answer": "Secure fragile items and remove valuable wall hangings in work areas. Vibration can shift items on shelves. Important documents and electronics should be protected from dust. Consider storing extremely valuable or irreplaceable items off-site during construction."
+    },
+    {
+      "question": "How do I maintain good relations with neighbors during construction?",
+      "answer": "Inform neighbors before work starts, provide contractor contact information, and apologize in advance for inconvenience. Share the timeline and address concerns quickly. Good contractors minimize street blockage and clean up daily. Consider a small gesture like a gift card after completion."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = `<h2 id="daily-schedule">Daily Schedule</h2>
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/services/basement waterproofing/dryspace_exterior_waterproofing_warranty.jpg" alt="Professional exterior waterproofing installation" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Our waterproofing comes with lifetime warranty</figcaption>
+</figure>
+<p><strong>6:45 AM</strong> - Crew arrives  
+<strong>7:00 AM</strong> - Work begins (jackhammering)  
+<strong>12:00 PM</strong> - Lunch break (quiet hour)  
+<strong>4:00 PM</strong> - Major work ends  
+<strong>4:30 PM</strong> - Site cleaned and secured</p>
+
+
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/work/interior-waterproofing.webp" alt="Interior basement waterproofing system" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Interior drainage prevents water damage</figcaption>
+</figure><h2 id="noise-levels">Noise Levels</h2>
+<ul><li><strong>Jackhammering</strong>: 90-100 dB (lawnmower)</li>
+<li><strong>Conveyor</strong>: 70-80 dB (vacuum cleaner)</li>
+<li><strong>Concrete mixer</strong>: 80-85 dB</li>
+<li><strong>Duration</strong>: 2-3 weeks intense phase</li></ul>
+
+<h2 id="key-survival-tips">Key Survival Tips</h2>
+<p>✓ Plan to be out during loudest hours  
+✓ Set up quiet room away from work  
+✓ Change furnace filters weekly  
+✓ Communicate concerns promptly  
+✓ Remember it's temporary</p>
+
+<h2 id="service-areas">Service Areas</h2>
+<p><strong>Service Areas:</strong> Toronto, North York, Scarborough, Etobicoke, East York, York, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and surrounding areas.</p>
+
+<p><em>Living through underpinning is challenging but manageable with proper expectations and good contractors. The noise, dust, and disruption are real but temporary. Your transformed basement and increased home value make these few weeks of chaos a worthwhile investment.</em></p>`;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {
+  "schema": {
+    "type": "Service",
+    "name": "Living Through Underpinning Guide",
+    "provider": {
+      "type": "Organization",
+      "name": "DrySpace Waterproofing"
+    },
+    "areaServed": [
+      "Toronto",
+      "North York",
+      "Scarborough",
+      "Etobicoke",
+      "East York",
+      "York",
+      "Mississauga",
+      "Brampton",
+      "Vaughan",
+      "Richmond Hill",
+      "Markham"
+    ],
+    "serviceType": [
+      "Construction Planning",
+      "Homeowner Guidance",
+      "Underpinning Support",
+      "Project Management",
+      "Customer Care"
+    ],
+    "offers": [
+      "Detailed Planning",
+      "Clear Communication",
+      "Property Protection",
+      "Professional Service",
+      "Disruption Minimization"
+    ]
+  }
+};
+---
+
+<ServicePageTemplateV3 {...serviceData}>
+  <div slot="mainContent" set:html={mainContent} />
+</ServicePageTemplateV3>
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

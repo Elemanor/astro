@@ -1,0 +1,298 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/richmond-hill-basement-waterproofing.md
+// Migration date: 2025-08-04T15:30:57.929Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Richmond Hill area data
+const richmondhillData = {
+  // Location Info
+  cityName: "Richmond Hill",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Richmond Hill Basement Waterproofing - Premium Home Protection Services",
+  description: "Expert basement waterproofing in Richmond Hill. Specializing in luxury homes, ravine properties, heritage preservation. Licensed & insured. Call (437) 545-0067",
+  keywords: [
+    "richmond hill basement waterproofing",
+    "basement waterproofing richmond hill",
+    "richmond hill foundation repair",
+    "luxury home waterproofing",
+    "ravine lot waterproofing"
+  ],
+  
+  // Stats
+  population: "202,022",
+  homesServed: "500+",
+  yearsInArea: "15+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "830mm",
+    freezeThawCycles: "33-39/year",
+    floodRisk: "Low to Moderate",
+    snowfall: "105cm",
+    avgHumidity: "76%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Oak Ridges",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Langstaff",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Jefferson",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Richvale",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Mill Pond",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Crosby",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Premium Property Considerations",
+      "challenges": [
+        "Local water issues",
+        "Foundation challenges"
+      ],
+      "solutions": [
+        "**Extensive landscaping** preservation",
+        "**Architectural features** protection",
+        "**Minimal disruption** requirements",
+        "**Aesthetic considerations** paramount",
+        "**Property value** preservation critical"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Oak Ridges Modern Estate",
+      "challenges": [
+        "* Natural springs under foundation",
+        "*"
+      ],
+      "solutions": [
+        "* Spring diversion and management system",
+        "*Investment:** $35,000",
+        "*Result:** Permanent spring control"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "Local Soil Conditions",
+      "description": "Richmond Hill's soil composition creates unique foundation challenges",
+      "solution": "Soil-specific waterproofing systems and drainage solutions",
+      "icon": "🏔️"
+    },
+    {
+      "issue": "Weather Extremes",
+      "description": "Freeze-thaw cycles and heavy rainfall affect basements",
+      "solution": "Climate-adapted waterproofing with proper drainage",
+      "icon": "🌧️"
+    },
+    {
+      "issue": "Urban Development",
+      "description": "Changes in local drainage patterns from development",
+      "solution": "Modern drainage systems to handle increased water flow",
+      "icon": "🏗️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$3,000",
+      "max": "$8,000"
+    },
+    "exterior": {
+      "min": "$10,000",
+      "max": "$25,000"
+    },
+    "emergency": {
+      "min": "$15,000",
+      "max": "$50,000"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "York Region Flood Reduction Program",
+      "amount": "Up to $3,000",
+      "eligibility": "Basement flood prevention measures",
+      "deadline": "Program reopens annually in spring"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$3,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$10,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$15,000",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Richmond Hill?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Richmond Hill homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Richmond Hill?",
+      "answer": "We maintain crews throughout Richmond Hill for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Richmond Hill?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Richmond Hill building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Richmond Hill",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "60 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/services/drains/drains.webp" 
+    alt="French drain installation for proper drainage"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Effective drainage solutions
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/process/waterproofing.webp" 
+    alt="Waterproofing process in progress"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Professional waterproofing process
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...richmondhillData} />

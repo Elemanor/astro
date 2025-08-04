@@ -1,0 +1,266 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/underpinning-diy-guide/
+// Migration date: 2025-08-04T15:14:30.176Z
+
+import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "Underpinning DIY Guide - Code Requirements and Reality Check",
+  serviceTitle: "Underpinning DIY Guide Toronto | Why You Need Professionals",
+  serviceSubtitle: "Why This Guide Exists (And Why You Shouldn't DIY)",
+  serviceDescription: "Comprehensive guide showing why underpinning is NOT a DIY project. Learn the code requirements, engineering complexity, and real dangers. Understand the process to make an informed decision to hire professionals.",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [
+    {
+      "label": "Critical Warning",
+      "href": "#critical-warning"
+    },
+    {
+      "label": "Service Areas",
+      "href": "#service-areas"
+    }
+  ],
+  
+  relatedServices: [
+    {
+      "url": "/services/foundation-underpinning",
+      "description": "Professional underpinning services done safely",
+      "image": "/images/foundation-underpinning.jpg"
+    },
+    {
+      "url": "/services/underpinning-process-guide",
+      "description": "How professionals safely underpin foundations",
+      "image": "/images/underpinning-process.jpg"
+    },
+    {
+      "url": "/services/structural-reinforcement",
+      "description": "Professional structural solutions",
+      "image": "/images/structural-reinforcement.jpg"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "Can I legally underpin my own house in Toronto?",
+      "answer": "While not explicitly illegal for homeowners, you MUST obtain permits, hire a structural engineer, and pass multiple inspections. The engineering alone costs $5,000-10,000. Without proper permits and engineering, it's illegal and your insurance is void."
+    },
+    {
+      "question": "How much would DIY underpinning actually save?",
+      "answer": "Nothing. Professional underpinning costs about $40,000. DIY costs include: engineering ($5,000-10,000), permits ($2,000-5,000), equipment rental ($20,000+), materials ($10,000+), and disposal ($5,000+). Total: $35,000-50,000, with catastrophic risk."
+    },
+    {
+      "question": "What happens if my DIY underpinning fails?",
+      "answer": "Consequences include: house collapse (partial or total), insurance claim denial, criminal charges if anyone is injured, lawsuits from damage, mortgage called due, property becomes unsaleable, and potential bankruptcy. The city can also condemn your home."
+    },
+    {
+      "question": "Why is the 3-4 foot excavation rule so important?",
+      "answer": "Excavating more than 3-4 feet at once removes too much support, risking immediate collapse. Your house weighs 100+ tons - that weight must be continuously supported. Professional contractors never exceed this limit and never excavate adjacent sections."
+    },
+    {
+      "question": "Can I hire day laborers to help with underpinning?",
+      "answer": "This dramatically increases liability. If someone is injured or killed, you face criminal charges and lawsuits. Professional contractors carry $5 million insurance and worker's compensation. One injury could cost you everything."
+    },
+    {
+      "question": "What engineering is actually required for underpinning?",
+      "answer": "Required engineering includes: load calculations, soil analysis, excavation sequencing, shoring design, footing specifications, reinforcement schedules, and monitoring protocols. This requires a structural engineer, costing $5,000-10,000 minimum."
+    },
+    {
+      "question": "Why can't I just dig carefully and pour concrete?",
+      "answer": "Underpinning isn't just digging and pouring. It requires: sequential excavation planning, continuous load support, engineered concrete mix, proper reinforcement, structural connections, waterproofing integration, and precise backfilling. One mistake causes catastrophic failure."
+    },
+    {
+      "question": "What special equipment do professionals use?",
+      "answer": "Professionals use: engineered shoring systems, hydraulic jacks, laser monitoring equipment, concrete pumps, compaction equipment, and specialized excavation tools. Renting this equipment costs $20,000+ and requires training to operate safely."
+    },
+    {
+      "question": "Is underpinning covered by homeowner's insurance?",
+      "answer": "Insurance specifically excludes earth movement and foundation work. If your DIY underpinning fails, insurance won't cover the damage. Worse, attempting it yourself may void your entire policy, leaving you completely unprotected."
+    },
+    {
+      "question": "After reading this, should I attempt DIY underpinning?",
+      "answer": "Absolutely not. This guide exists to show why underpinning requires professionals. The cost savings are minimal to negative, while risks include total home loss, criminal charges, and bankruptcy. Hire insured professionals with experience and proper equipment."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = `<h2 id="critical-warning">Critical Warning</h2>
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/services/basement waterproofing/dryspace_exterior_waterproofing_warranty.jpg" alt="Professional exterior waterproofing installation" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Our waterproofing comes with lifetime warranty</figcaption>
+</figure>
+<p>⚠️ <strong>Underpinning is NOT a DIY project</strong>  
+⚠️ <strong>Risk of catastrophic collapse</strong>  
+⚠️ <strong>Criminal charges possible</strong>  
+⚠️ <strong>Insurance void without permits</strong>  
+⚠️ <strong>No cost savings vs professionals</strong></p>
+
+
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/work/interior-waterproofing.webp" alt="Interior basement waterproofing system" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Interior drainage prevents water damage</figcaption>
+</figure><h2 id="service-areas">Service Areas</h2>
+<p><strong>Service Areas:</strong> Toronto, North York, Scarborough, Etobicoke, East York, York, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and surrounding areas.</p>
+
+<p><em>If this guide convinced you NOT to DIY underpinning, it succeeded. Call professionals who carry insurance, have experience, and deliver guaranteed results. Your house will thank you.</em></p>`;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {
+  "schema": {
+    "type": "Service",
+    "name": "Underpinning Information Guide",
+    "provider": {
+      "type": "Organization",
+      "name": "DrySpace Waterproofing"
+    },
+    "areaServed": [
+      "Toronto",
+      "North York",
+      "Scarborough",
+      "Etobicoke",
+      "East York",
+      "York",
+      "Mississauga",
+      "Brampton",
+      "Vaughan",
+      "Richmond Hill",
+      "Markham"
+    ],
+    "serviceType": [
+      "Underpinning Information",
+      "Building Code Education",
+      "Safety Warnings",
+      "Professional Recommendations",
+      "Risk Assessment"
+    ],
+    "offers": [
+      "Professional Underpinning",
+      "Safety Information",
+      "Code Requirements",
+      "Risk Education",
+      "Expert Consultation"
+    ]
+  }
+};
+---
+
+<ServicePageTemplateV3 {...serviceData}>
+  <div slot="mainContent" set:html={mainContent} />
+</ServicePageTemplateV3>
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

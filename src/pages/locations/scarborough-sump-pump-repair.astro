@@ -1,0 +1,220 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/scarborough-sump-pump-repair.md
+// Migration date: 2025-08-04T15:30:57.979Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Scarborough area data
+const scarboroughData = {
+  // Location Info
+  cityName: "Scarborough",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Sump Pump Repair Scarborough | 24/7 Emergency Service Near Me",
+  description: "URGENT: Don't wait for flooding! 24/7 sump pump repair in Scarborough. Same-day service, all brands. Clay soil specialists. Emergency pump failure response. Call: (437) 545-0067",
+  keywords: "sump pump repair scarborough, emergency sump pump scarborough, sump pump service near me, scarborough pump repair, sump pump replacement scarborough, basement pump repair",
+  
+  // Stats
+  population: "632,098",
+  homesServed: "500+",
+  yearsInArea: "15+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "835mm",
+    freezeThawCycles: "35-40/year",
+    floodRisk: "Moderate (bluffs area high)",
+    snowfall: "125cm",
+    avgHumidity: "82%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Downtown Unknown City",
+      "challenges": [
+        "Urban water table",
+        "Aging infrastructure",
+        "Limited access"
+      ],
+      "solutions": [
+        "Interior waterproofing",
+        "Injection systems",
+        "Minimal disruption"
+      ],
+      "avgCost": "$5,000 - $12,000"
+    },
+    {
+      "name": "North Unknown City",
+      "challenges": [
+        "Clay soil",
+        "New development",
+        "Poor drainage"
+      ],
+      "solutions": [
+        "Exterior waterproofing",
+        "French drains",
+        "Proper grading"
+      ],
+      "avgCost": "$8,000 - $20,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "**Excessive Runtime**",
+      "description": "Clay soil holds water longer, overworking pumps",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "🏔️"
+    },
+    {
+      "issue": "**Sediment Buildup**",
+      "description": "Clay particles clog pumps faster than sandy soil",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "🌧️"
+    },
+    {
+      "issue": "**Hydrostatic Pressure**",
+      "description": "Expanded clay creates extreme foundation pressure",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "⚠️"
+    },
+    {
+      "issue": "**Freeze-Thaw Damage**",
+      "description": "Clay expansion can crack pump housings",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "💧"
+    },
+    {
+      "issue": "*Result**",
+      "description": "Scarborough pumps fail 3x more often than sandy soil areas",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "🏔️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$3,000",
+      "max": "$8,000"
+    },
+    "exterior": {
+      "min": "$10,000",
+      "max": "$25,000"
+    },
+    "emergency": {
+      "min": "$800",
+      "max": "$1,500"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "City of Toronto Basement Flooding Protection Subsidy",
+      "amount": "Up to $3,400",
+      "eligibility": "Installation of flood protection devices",
+      "deadline": "Ongoing - first come, first served"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$3,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$10,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$800",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Scarborough?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Scarborough homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Scarborough?",
+      "answer": "We maintain crews throughout Scarborough for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Scarborough?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Scarborough building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Scarborough",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "15 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/services/basement waterproofing/dryspace_exterior_waterproofing_warranty.jpg" 
+    alt="Professional exterior waterproofing installation with warranty"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Our exterior waterproofing comes with a lifetime warranty
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/work/exterior-waterproofing-membrane.webp" 
+    alt="Waterproofing membrane being applied to foundation"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    High-quality waterproofing membrane installation
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...scarboroughData} />

@@ -1,0 +1,266 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/frost-line-foundation-depth/
+// Migration date: 2025-08-04T15:14:29.933Z
+
+import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "Frost Line and Foundation Depth - Toronto Guide",
+  serviceTitle: "Frost Line Toronto | Foundation Depth Requirements Guide",
+  serviceSubtitle: "Understanding Toronto's 4-Foot Frost Line Requirements",
+  serviceDescription: "Complete guide to Toronto's frost line and foundation depth requirements. Learn why foundations must extend 4 feet below grade, how frost heave damages shallow foundations, and solutions for frost protection. Essential reading for Toronto homeowners.",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [
+    {
+      "label": "Key Facts",
+      "href": "#key-facts"
+    },
+    {
+      "label": "Service Areas",
+      "href": "#service-areas"
+    }
+  ],
+  
+  relatedServices: [
+    {
+      "url": "/services/foundation-underpinning",
+      "description": "Permanent solution for shallow foundations",
+      "image": "/images/foundation-underpinning.jpg"
+    },
+    {
+      "url": "/services/foundation-construction",
+      "description": "New foundations built to proper depth",
+      "image": "/images/foundation-construction.jpg"
+    },
+    {
+      "url": "/services/exterior-waterproofing",
+      "description": "Protect foundations from water and frost",
+      "image": "/images/exterior-waterproofing.jpg"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "What is Toronto's official frost line depth?",
+      "answer": "Toronto's frost line is 4 feet (1.2 meters) below grade. This is the minimum depth required by Ontario Building Code for all foundations, footings, and water lines to prevent frost damage. This depth is based on historical weather data and soil conditions."
+    },
+    {
+      "question": "Why do foundations need to be below the frost line?",
+      "answer": "When water in soil freezes, it expands 9% with forces up to 50,000 pounds per square foot. This 'frost heave' can lift foundations, causing cracks, structural damage, and uneven settling. Foundations below the frost line avoid this destructive freeze-thaw cycle."
+    },
+    {
+      "question": "What happens if my foundation is too shallow?",
+      "answer": "Shallow foundations experience annual frost heave - lifting in winter, settling in spring. This causes progressive damage: cracks widen yearly, doors/windows stick, walls separate, and eventually major structural repairs are needed. Century homes often have this problem."
+    },
+    {
+      "question": "How can I tell if frost is affecting my foundation?",
+      "answer": "Signs include: seasonal cracks that open/close, doors/windows that stick in winter, vertical cracks in foundation walls, heaved concrete walkways/driveways, and gaps between additions and main house. Damage typically worsens each year."
+    },
+    {
+      "question": "Can I fix a shallow foundation without underpinning?",
+      "answer": "Temporary measures include improving drainage, installing insulation, and managing surface water. However, these are band-aids. Underpinning to proper depth is the only permanent solution for foundations above the frost line."
+    },
+    {
+      "question": "Do all parts of my foundation need to be 4 feet deep?",
+      "answer": "Yes, all footings must extend below frost line. This includes house foundations, attached garages, porches, decks, and additions. Shallow sections create weak points where frost damage concentrates."
+    },
+    {
+      "question": "How does Toronto's climate affect frost damage?",
+      "answer": "Toronto experiences 50+ freeze-thaw cycles annually, making it worse than consistently cold climates. Each cycle moves foundations slightly. Winnipeg freezes once and stays frozen - less damaging than our constant temperature swings."
+    },
+    {
+      "question": "What about frost protection for water lines?",
+      "answer": "Water service lines must be below 4 feet to prevent freezing. Municipal connections are typically 5-6 feet deep. Shallow lines risk freezing, requiring expensive emergency repairs. Heat trace and insulation help but aren't substitutes for proper depth."
+    },
+    {
+      "question": "Is climate change affecting frost line requirements?",
+      "answer": "Current code still requires 4 feet, but climate change brings more extreme temperature swings and freeze-thaw cycles. Some engineers recommend exceeding minimums. Focus on excellent drainage becomes even more critical with volatile weather patterns."
+    },
+    {
+      "question": "Does insurance cover frost damage to foundations?",
+      "answer": "Usually not. Most policies exclude gradual deterioration, earth movement, and frost heave. They may cover sudden collapse but not progressive damage. Document all issues and maintenance to support any claims. Prevention is your best protection."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = `<h2 id="key-facts">Key Facts</h2>
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/services/foundation repair/foundation repair.webp" alt="Foundation repair work in progress" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Expert foundation repair services</figcaption>
+</figure>
+<p>✓ Toronto Frost Line: 4 feet (1.2m)  
+✓ Required for all foundations  
+✓ 50+ freeze-thaw cycles annually  
+✓ 9% expansion when water freezes  
+✓ Up to 50,000 lbs/sq ft force</p>
+
+
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/work/crack_repair.webp" alt="Foundation crack repair injection" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Professional crack repair</figcaption>
+</figure><h2 id="service-areas">Service Areas</h2>
+<p><strong>Service Areas:</strong> Toronto, North York, Scarborough, Etobicoke, East York, York, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and surrounding areas.</p>
+
+<p><em>Remember: Toronto's frost line is 4 feet. Anything shallower risks expensive damage. When in doubt, go deeper - your foundation will thank you for generations.</em></p>`;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {
+  "schema": {
+    "type": "Service",
+    "name": "Frost Line and Foundation Guide",
+    "provider": {
+      "type": "Organization",
+      "name": "DrySpace Waterproofing"
+    },
+    "areaServed": [
+      "Toronto",
+      "North York",
+      "Scarborough",
+      "Etobicoke",
+      "East York",
+      "York",
+      "Mississauga",
+      "Brampton",
+      "Vaughan",
+      "Richmond Hill",
+      "Markham"
+    ],
+    "serviceType": [
+      "Foundation Assessment",
+      "Frost Protection",
+      "Foundation Repair",
+      "Underpinning Services",
+      "Drainage Solutions"
+    ],
+    "offers": [
+      "Professional Assessment",
+      "Frost Damage Solutions",
+      "Foundation Depth Verification",
+      "Underpinning Services",
+      "Expert Consultation"
+    ]
+  }
+};
+---
+
+<ServicePageTemplateV3 {...serviceData}>
+  <div slot="mainContent" set:html={mainContent} />
+</ServicePageTemplateV3>
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

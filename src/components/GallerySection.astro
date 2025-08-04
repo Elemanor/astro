@@ -1,0 +1,84 @@
+---
+import GalleryTabs from './GalleryTabs';
+
+// Gallery Section from Hugo
+const galleries = {
+  waterproofing: [
+    {
+      src: "/pics/work/interior-waterproofing.webp",
+      alt: "Interior waterproofing installation",
+      caption: "Interior Waterproofing System - Scarborough Bungalow",
+      featured: false
+    },
+    {
+      src: "/pics/work/exterior-waterproofing-membrane.webp",
+      alt: "Exterior waterproofing membrane",
+      caption: "Exterior Waterproofing - 1960s home with block foundation",
+      featured: true
+    },
+    {
+      src: "/pics/work/sump-pump.webp",
+      alt: "Sump pump system installation",
+      caption: "Battery Backup Sump Pump Installation",
+      featured: false
+    }
+  ],
+  foundation: [
+    {
+      src: "/pics/work/underpinning.webp",
+      alt: "Foundation underpinning",
+      caption: "Riverdale Victorian - 5'8\" to 8' height transformation",
+      featured: true
+    },
+    {
+      src: "/pics/work/basement-walkout.webp",
+      alt: "Basement walkout construction",
+      caption: "Trinity Bellwoods Semi - Complex party wall underpinning",
+      featured: false
+    }
+  ],
+  cracks: [
+    {
+      src: "/pics/work/crack_repair.webp",
+      alt: "Foundation crack repair",
+      caption: "Foundation Crack Injection - Saved thousands vs full waterproofing",
+      featured: true
+    }
+  ],
+  walls: [
+    {
+      src: "/pics/work/wall-opening.webp",
+      alt: "Wall opening installation",
+      caption: "Complete Basement Transformation - Underpinning + Waterproofing",
+      featured: false
+    }
+  ]
+};
+
+const stats = [
+  { number: "500+", label: "Basements Waterproofed" },
+  { number: "300+", label: "Underpinning Projects" },
+  { number: "200+", label: "Foundation Repairs" },
+  { number: "100%", label: "Customer Satisfaction" }
+];
+---
+
+<section id="gallery-404" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <span class="text-blue-600 font-semibold uppercase tracking-wider">Featured Projects</span>
+      <h2 class="text-4xl font-bold mt-2">Recent Basement Transformations</h2>
+    </div>
+
+    <GalleryTabs galleries={galleries} client:load />
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+      {stats.map((stat) => (
+        <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+          <span class="text-3xl font-bold text-blue-600 block">{stat.number}</span>
+          <span class="text-gray-600 mt-2 block">{stat.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

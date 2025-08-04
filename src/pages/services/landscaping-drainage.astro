@@ -1,0 +1,265 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/landscaping-drainage/
+// Migration date: 2025-08-04T15:14:29.979Z
+
+import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "Professional Landscaping & Drainage Toronto",
+  serviceTitle: "Landscaping & Drainage Solutions Toronto | Foundation Protection",
+  serviceSubtitle: "Protecting Your Foundation While Beautifying Your Property",
+  serviceDescription: "Complete landscape grading, drainage systems, and restoration after construction. From fixing water pooling to total yard transformation, we ensure water flows away from your foundation while creating beautiful outdoor spaces. Free drainage assessment.",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [
+    {
+      "label": "Our Drainage Services",
+      "href": "#our-drainage-services"
+    },
+    {
+      "label": "Service Areas",
+      "href": "#service-areas"
+    }
+  ],
+  
+  relatedServices: [
+    {
+      "url": "/services/exterior-waterproofing",
+      "description": "Complete foundation protection working with proper drainage",
+      "image": "/images/exterior-waterproofing.jpg"
+    },
+    {
+      "url": "/services/sump-pump-installation",
+      "description": "Interior water management complementing exterior drainage",
+      "image": "/images/sump-pump-installation.jpg"
+    },
+    {
+      "url": "/services/foundation-underpinning",
+      "description": "Restore landscaping after major foundation work",
+      "image": "/images/foundation-underpinning.jpg"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "How much slope do I need away from my foundation?",
+      "answer": "Proper grading requires minimum 6 inches of drop in the first 10 feet from your foundation (2% slope). This ensures water flows away effectively. Steeper slopes may be needed in heavy clay soils."
+    },
+    {
+      "question": "What's the difference between surface drainage and French drains?",
+      "answer": "Surface drainage uses grading and slopes to direct water away on top of the ground. French drains are underground perforated pipes in gravel that collect and redirect subsurface water. Many properties need both."
+    },
+    {
+      "question": "How long do French drains last?",
+      "answer": "Properly installed French drains with quality materials last 30-50 years. Key factors include using rigid PVC pipe (not corrugated), proper filter fabric, clean gravel, and correct slope."
+    },
+    {
+      "question": "Can I install drainage myself?",
+      "answer": "While possible, proper drainage requires understanding slopes, soil types, and water management. Poor installation often makes problems worse. Professional installation ensures lasting solutions and code compliance."
+    },
+    {
+      "question": "Why is my yard always wet?",
+      "answer": "Toronto's clay soil doesn't drain naturally. Common causes include poor grading, high water tables, neighbor runoff, or inadequate drainage systems. We identify specific causes and implement targeted solutions."
+    },
+    {
+      "question": "Do downspout extensions really help?",
+      "answer": "Absolutely. Downspouts dumping water near foundations cause many basement water problems. Extending them minimum 6 feet from foundation (preferably 10+) significantly reduces water issues."
+    },
+    {
+      "question": "How much does drainage work cost?",
+      "answer": "Basic regrading starts around $1,500-3,000. French drains typically cost $40-60 per linear foot installed. Complete drainage solutions range $5,000-15,000 depending on property size and complexity."
+    },
+    {
+      "question": "When is the best time for drainage work?",
+      "answer": "Spring through fall is ideal for drainage work. Spring reveals winter damage, summer allows proper compaction, and fall prepares for winter. Frozen ground makes winter work difficult and expensive."
+    },
+    {
+      "question": "Will drainage work damage my existing landscaping?",
+      "answer": "Some disruption is inevitable, but we minimize damage and include restoration in our pricing. We preserve valuable plants when possible and restore or improve landscaping after drainage installation."
+    },
+    {
+      "question": "Do I need permits for drainage work?",
+      "answer": "Major grading changes and connections to storm sewers require permits. French drains on your property typically don't. We handle all permit requirements and ensure code compliance."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = `<h2 id="our-drainage-services">Our Drainage Services</h2>
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/services/foundation repair/foundation repair.webp" alt="Foundation repair work in progress" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Expert foundation repair services</figcaption>
+</figure>
+<p>✓ Proper Grading & Slope  
+✓ French Drain Systems  
+✓ Landscape Restoration  
+✓ Foundation Protection</p>
+
+
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/work/crack_repair.webp" alt="Foundation crack repair injection" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Professional crack repair</figcaption>
+</figure><h2 id="service-areas">Service Areas</h2>
+<p><strong>Service Areas:</strong> Toronto, North York, Scarborough, Etobicoke, East York, York, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and surrounding areas.</p>
+
+<p><em>Professional drainage requires understanding water flow, soil conditions, and foundation protection. Choose contractors who see the complete picture, not just the surface.</em></p>`;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {
+  "schema": {
+    "type": "Service",
+    "name": "Landscaping and Drainage Services",
+    "provider": {
+      "type": "Organization",
+      "name": "DrySpace Waterproofing"
+    },
+    "areaServed": [
+      "Toronto",
+      "North York",
+      "Scarborough",
+      "Etobicoke",
+      "East York",
+      "York",
+      "Mississauga",
+      "Brampton",
+      "Vaughan",
+      "Richmond Hill",
+      "Markham"
+    ],
+    "serviceType": [
+      "Landscape Grading",
+      "French Drain Installation",
+      "Drainage Solutions",
+      "Foundation Protection",
+      "Landscape Restoration"
+    ],
+    "offers": [
+      "Free Drainage Assessment",
+      "Complete Solutions",
+      "Licensed & Insured",
+      "Warranty Coverage",
+      "Maintenance Programs"
+    ]
+  }
+};
+---
+
+<ServicePageTemplateV3 {...serviceData}>
+  <div slot="mainContent" set:html={mainContent} />
+</ServicePageTemplateV3>
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

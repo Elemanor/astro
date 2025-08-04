@@ -1,0 +1,123 @@
+---
+import CTAButton from './CTAButton';
+
+// About Section from Hugo
+const features = [
+  "Fixed timelines - waterproofing in a week, underpinning in 5 weeks",
+  "Local expertise in every Toronto neighborhood",
+  "Comprehensive warranties on all work",
+  "Licensed, insured, and bonded"
+];
+
+const certifications = [
+  { icon: "building", text: "Since 2014" },
+  { icon: "shield", text: "Licensed" },
+  { icon: "shield", text: "Insured" }
+];
+---
+
+<section id="about-us" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Image Section -->
+      <div class="relative">
+        <picture class="block">
+          <source media="(max-width: 600px)" srcset="/images/dryspace_excellence.jpg" />
+          <source media="(min-width: 601px)" srcset="/images/dryspace_excellence.jpg" />
+          <img 
+            loading="lazy" 
+            decoding="async" 
+            src="/images/dryspace_excellence.jpg" 
+            alt="DrySpace Waterproofing excellence in foundation repair" 
+            width="630" 
+            height="704"
+            class="rounded-lg shadow-xl w-full"
+          />
+        </picture>
+        <div class="absolute bottom-8 left-8 bg-white rounded-lg shadow-lg p-6">
+          <span class="text-4xl font-bold text-blue-600 counter" data-count="12847">0</span>
+          <span class="block text-gray-600 mt-2">Foundations Repaired</span>
+        </div>
+      </div>
+      
+      <!-- Content Section -->
+      <div class="space-y-8">
+        <div>
+          <span class="text-blue-600 font-semibold uppercase tracking-wider">Why Toronto Homeowners Choose Us</span>
+          <h2 class="text-4xl font-bold mt-2 mb-4">One Contractor, Complete Solutions</h2>
+          <p class="text-gray-700 mb-4">
+            Most contractors do one thing. Waterproofers waterproof. Underpinners underpin. When you need both - or aren't sure what you need - you're stuck coordinating multiple trades. We handle everything basement-related under one roof.
+          </p>
+          <p class="text-gray-700 mb-6">
+            This matters because basement problems are often interconnected. That crack letting water in? It might indicate foundation settlement. Planning to underpin for a rental suite? You'll need proper waterproofing too. We see the complete picture and address all issues correctly.
+          </p>
+        </div>
+
+        <ul class="space-y-3">
+          {features.map((feature) => (
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-700">{feature}</span>
+            </li>
+          ))}
+        </ul>
+
+        <CTAButton className="bg-blue-600 hover:bg-blue-700" client:load />
+        
+        <div class="flex gap-6">
+          {certifications.map((cert) => (
+            <div class="flex items-center gap-2 text-gray-600">
+              <svg class="w-6 h-6 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                {cert.icon === "building" ? (
+                  <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                  <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 1 1 0 000 2H6a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 00-2 2v1a2 2 0 002 2 1 1 0 001 1h0a1 1 0 001-1v-1a2 2 0 00-2-2h2a2 2 0 002-2V7a2 2 0 00-2-2h2a1 1 0 100-2H6a2 2 0 00-2 2z" clip-rule="evenodd"/>
+                ) : (
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                )}
+              </svg>
+              <span class="font-semibold">{cert.text}</span>
+            </div>
+          ))}
+        </div>
+
+        <!-- Investment Protection Box -->
+        <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6 border-l-4 border-blue-600">
+          <div class="mb-2 text-blue-600 font-semibold">Protecting Your Investment</div>
+          <h3 class="text-2xl font-bold mb-3">Smart Investment Protection</h3>
+          <p class="text-gray-700">
+            Your home represents security - financial and personal. Basement problems threaten both. Water damage compounds quickly. Unusable space wastes potential. Foundation issues worsen over time. Professional basement work isn't an expense - it's protection. Whether waterproofing to prevent damage or underpinning to create income, you're investing in your home's future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Counter animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const counter = document.querySelector('.counter');
+      const target = parseInt(counter.getAttribute('data-count'));
+      const duration = 2000;
+      const increment = target / (duration / 16);
+      let current = 0;
+      
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            counter.textContent = Math.floor(current).toLocaleString();
+          }, 16);
+          observer.disconnect();
+        }
+      });
+      
+      observer.observe(counter);
+    });
+  </script>
+</section>

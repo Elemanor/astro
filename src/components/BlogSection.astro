@@ -1,0 +1,98 @@
+---
+// Blog Section from Hugo
+const articles = [
+  {
+    category: "Waterproofing",
+    title: "Interior vs Exterior Waterproofing: Which is Right for Your Toronto Home?",
+    description: "Understanding the pros and cons of each waterproofing method for Toronto's unique climate and soil conditions...",
+    link: "/blog/basement-waterproofing-guide/",
+    linkText: "Learn about waterproofing options",
+    date: "15 Jan, 2025",
+    readTime: "5 min read",
+    image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    category: "Underpinning",
+    title: "Is Your Basement Rental-Ready? Complete Underpinning Guide",
+    description: "Transform your low basement into legal rental income. Ceiling height requirements, permits, and ROI explained...",
+    link: "/services/legal-basement/",
+    linkText: "Explore rental conversion options",
+    date: "08 Jan, 2025",
+    readTime: "7 min read",
+    image: "https://images.pexels.com/photos/3760613/pexels-photo-3760613.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    category: "Guides",
+    title: "Complete Interior vs Exterior Waterproofing Comparison",
+    description: "Detailed comparison of waterproofing methods, costs, effectiveness, and which is best for your Toronto home...",
+    link: "/guides/interior-vs-exterior-waterproofing/",
+    linkText: "Read complete guide",
+    date: "Expert Guide",
+    readTime: "15 min read",
+    image: "https://images.pexels.com/photos/1249610/pexels-photo-1249610.jpeg?auto=compress&cs=tinysrgb&w=800"
+  }
+];
+---
+
+<section id="blog-985" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row justify-between items-center mb-12">
+      <div>
+        <span class="text-blue-600 font-semibold uppercase tracking-wider">Resources & Insights</span>
+        <h2 class="text-4xl font-bold mt-2">Basement Tips & Expert Advice</h2>
+      </div>
+      <div class="flex gap-4 mt-6 lg:mt-0">
+        <a href="/blog/" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+          View All Articles
+        </a>
+        <a href="/guides/" class="inline-flex items-center px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors">
+          Browse Guides
+        </a>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {articles.map((article) => (
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <div class="relative">
+            <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold z-10">
+              {article.category}
+            </span>
+            <picture>
+              <source media="(max-width: 600px)" srcset={article.image.replace('w=800', 'w=600')} />
+              <source media="(min-width: 601px)" srcset={article.image} />
+              <img 
+                loading="lazy" 
+                decoding="async" 
+                src={article.image} 
+                alt={article.title}
+                class="w-full h-64 object-cover"
+              />
+            </picture>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              {article.date}
+              <span class="mx-2">•</span>
+              {article.readTime}
+            </div>
+            <h3 class="text-xl font-bold mb-3 line-clamp-2">{article.title}</h3>
+            <p class="text-gray-700 mb-4 line-clamp-3">{article.description}</p>
+            <a href={article.link} class="inline-flex items-center text-blue-600 font-semibold hover:gap-3 gap-2 transition-all">
+              {article.linkText}
+              <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

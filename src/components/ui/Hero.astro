@@ -1,0 +1,147 @@
+---
+import AstroButton from './AstroButton.astro';
+import AstroBadge from './AstroBadge.astro';
+import { Phone, ArrowRight, CheckCircle } from 'lucide-react';
+
+export interface Props {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  badge?: string;
+  image?: string;
+  imageAlt?: string;
+  features?: string[];
+  primaryCTA?: {
+    text: string;
+    href: string;
+  };
+  secondaryCTA?: {
+    text: string;
+    href: string;
+  };
+  size?: 'default' | 'small' | 'large';
+  alignment?: 'left' | 'center';
+}
+
+const {
+  title,
+  subtitle,
+  description,
+  badge,
+  image,
+  imageAlt,
+  features = [],
+  primaryCTA,
+  secondaryCTA,
+  size = 'default',
+  alignment = 'center'
+} = Astro.props;
+
+const sizes = {
+  small: 'py-12 md:py-16',
+  default: 'py-16 md:py-24',
+  large: 'py-24 md:py-32'
+};
+
+const textSizes = {
+  small: 'text-3xl md:text-4xl',
+  default: 'text-4xl md:text-5xl lg:text-6xl',
+  large: 'text-5xl md:text-6xl lg:text-7xl'
+};
+---
+
+<section class={`relative overflow-hidden ${sizes[size]} bg-gradient-to-br from-slate-50 to-slate-100`}>
+  {/* Background pattern */}
+  <div class="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
+  
+  <div class="container mx-auto px-4 md:px-6 relative">
+    <div class={`grid md:grid-cols-2 gap-12 items-center ${image ? '' : 'md:grid-cols-1'}`}>
+      {/* Content */}
+      <div class={`space-y-6 ${alignment === 'center' && !image ? 'text-center max-w-4xl mx-auto' : ''}`}>
+        {badge && (
+          <AstroBadge variant="secondary" class="inline-flex">
+            {badge}
+          </AstroBadge>
+        )}
+        
+        <h1 class={`font-bold text-foreground ${textSizes[size]} leading-tight`}>
+          {title}
+        </h1>
+        
+        {subtitle && (
+          <p class="text-xl md:text-2xl text-muted-foreground font-medium">
+            {subtitle}
+          </p>
+        )}
+        
+        {description && (
+          <p class="text-lg text-muted-foreground">
+            {description}
+          </p>
+        )}
+        
+        {features.length > 0 && (
+          <ul class="space-y-3">
+            {features.map(feature => (
+              <li class="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" client:load />
+                <span class="text-foreground">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+        
+        {(primaryCTA || secondaryCTA) && (
+          <div class={`flex gap-4 pt-4 ${alignment === 'center' && !image ? 'justify-center' : ''}`}>
+            {primaryCTA && (
+              <AstroButton 
+                href={primaryCTA.href} 
+                size="lg"
+                class="gap-2"
+              >
+                {primaryCTA.text}
+                <ArrowRight className="h-5 w-5" client:load />
+              </AstroButton>
+            )}
+            
+            {secondaryCTA && (
+              <AstroButton 
+                href={secondaryCTA.href} 
+                variant="outline"
+                size="lg"
+                class="gap-2"
+              >
+                <Phone className="h-5 w-5" client:load />
+                {secondaryCTA.text}
+              </AstroButton>
+            )}
+          </div>
+        )}
+      </div>
+      
+      {/* Image */}
+      {image && (
+        <div class="relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src={image} 
+              alt={imageAlt || title}
+              class="w-full h-auto"
+              loading="eager"
+            />
+          </div>
+          
+          {/* Decorative elements */}
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl"></div>
+          <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-secondary/20 rounded-full blur-xl"></div>
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  .bg-grid-slate-200\/50 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(0 0 0 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+</style>

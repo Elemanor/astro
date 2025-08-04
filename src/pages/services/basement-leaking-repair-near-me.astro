@@ -1,0 +1,931 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/basement-leaking-repair-near-me/
+// Migration date: 2025-08-04T15:14:29.345Z
+
+import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "Basement Leaking Repair Near Me",
+  serviceTitle: "Basement Leaking Repair Near Me Toronto | Local Experts Since 1999",
+  serviceSubtitle: "Stop Basement Leaking Now - 25+ Years Serving Your Neighborhood",
+  serviceDescription: "Toronto's #1 basement leaking repair specialists in your area. 3,500+ local repairs, 30-90 min response, lifetime warranty. Licensed experts since 1999. (437) 545-0067.",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [
+    {
+      "label": "Why Toronto Homeowners Choose Local DrySpace Experts",
+      "href": "#why-toronto-homeowners-choose-local-dryspace-experts"
+    },
+    {
+      "label": "Local Emergency Basement Leaking Repair Network",
+      "href": "#local-emergency-basement-leaking-repair-network"
+    },
+    {
+      "label": "Emergency Basement Leaking Repair Process",
+      "href": "#emergency-basement-leaking-repair-process"
+    },
+    {
+      "label": "Emergency Basement Leaking Repair Costs",
+      "href": "#emergency-basement-leaking-repair-costs"
+    },
+    {
+      "label": "Emergency Financing & Insurance",
+      "href": "#emergency-financing-insurance"
+    },
+    {
+      "label": "Signs You Need Emergency Basement Leaking Repair",
+      "href": "#signs-you-need-emergency-basement-leaking-repair"
+    },
+    {
+      "label": "Local Emergency Success Stories",
+      "href": "#local-emergency-success-stories"
+    },
+    {
+      "label": "Get Local Toronto Basement Leaking Repair Now",
+      "href": "#get-local-toronto-basement-leaking-repair-now"
+    },
+    {
+      "label": "Related Emergency Services",
+      "href": "#related-emergency-services"
+    },
+    {
+      "label": "Emergency Service Area Coverage",
+      "href": "#emergency-service-area-coverage"
+    }
+  ],
+  
+  relatedServices: [
+    {
+      "title": "Foundation Waterproofing Near Me",
+      "url": "/services/foundation-waterproofing-near-me/",
+      "description": "Professional foundation waterproofing near me services",
+      "image": "/pics/work/exterior-waterproofing-membrane.webp"
+    },
+    {
+      "title": "Basement Water Damage Repair",
+      "url": "/services/basement-leak-repair-near-me/",
+      "description": "Professional basement water damage repair services",
+      "image": "/pics/work/interior-waterproofing.webp"
+    },
+    {
+      "title": "Emergency Waterproofing",
+      "url": "/services/emergency-waterproofing/",
+      "description": "Professional emergency waterproofing services",
+      "image": "/pics/work/crack_repair.webp"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "How fast can local basement leaking repair contractors respond near me?",
+      "answer": "As your neighborhood basement specialists since 1999, we maintain local crews throughout Toronto for rapid response: Downtown/Central (30 min), North York/Scarborough/Etobicoke (45 min), Mississauga/Markham (60-90 min). Unlike distant contractors, our trucks are already in your area. 25+ years serving your neighbors with 2-hour response guarantee anywhere in GTA."
+    },
+    {
+      "question": "What Toronto homeowners should do while waiting for local basement repair?",
+      "answer": "Safety first - shut off electricity to affected basement areas. Move valuables to higher ground and take photos for insurance. Don't use regular vacuums on standing water. Identify water source but don't attempt DIY repairs - Toronto's clay soil and foundation types require professional expertise. Our local crews carry specialized equipment for Toronto-specific basement problems."
+    },
+    {
+      "question": "What do local Toronto basement leaking repairs cost compared to other contractors?",
+      "answer": "Our local Toronto pricing is competitive: emergency water control $600-$2,000, leak stopping $300-$1,500, permanent repairs $1,000-$25,000. As established local contractors (since 1999), we don't charge travel fees like distant companies. Emergency call-out $200-$350 applies to repair costs. Transparent pricing, insurance direct billing, financing available."
+    },
+    {
+      "question": "Do local Toronto contractors work weekends and holidays for basement emergencies?",
+      "answer": "Yes - as local Toronto specialists since 1999, we provide 24/7 service every day including weekends and statutory holidays. Water damage doesn't respect business hours, and neither do we. Our local crews are positioned throughout Toronto neighborhoods for immediate response. Weekend/holiday surcharges ($100-$300) but immediate property protection is our priority."
+    },
+    {
+      "question": "Can local Toronto experts stop basement leaking immediately upon arrival?",
+      "answer": "Yes - our local crews carry Toronto-specific repair materials including hydraulic cement for clay soil conditions, professional sealants for heritage foundations, and high-capacity pumps. 25+ years experience with Toronto basement types means we stop most leaking within the first hour. Permanent solutions follow emergency control."
+    },
+    {
+      "question": "Do Toronto insurance companies cover local basement leaking repairs?",
+      "answer": "Most Toronto insurance policies cover emergency water extraction and temporary repairs. As established local contractors since 1999, we work with all major Canadian insurers including Intact, Aviva, TD, State Farm, and Co-operators. We provide detailed documentation, direct billing when possible, and help navigate claims. Our local reputation helps with insurance approval."
+    },
+    {
+      "question": "What causes basement leaking in Toronto homes specifically?",
+      "answer": "Toronto-specific causes include: clay soil expansion/contraction cracking foundations, high water table from Lake Ontario proximity, overwhelmed 1960s-80s subdivision drainage, heritage home stone foundation deterioration, construction vibration from ongoing development, spring thaw pressure, and summer storm overwhelm. Our 25+ years local experience quickly identifies Toronto-specific problems."
+    },
+    {
+      "question": "Do local Toronto basement contractors guarantee their repair work?",
+      "answer": "Yes - all our emergency repairs include 30-day warranty, with permanent repairs carrying 10-year to lifetime warranties. As established Toronto contractors since 1999, our reputation depends on standing behind our work. Unlike fly-by-night contractors, we'll be here to honor warranties. 3,500+ completed local repairs demonstrate our commitment to Toronto homeowners."
+    },
+    {
+      "question": "Which Toronto neighborhoods do you serve for basement leaking repair?",
+      "answer": "We're local Toronto specialists serving every neighborhood: Downtown Core, The Beaches, Rosedale, Forest Hill, North York (Willowdale, Don Mills), Scarborough (Agincourt, Bendale), Etobicoke (Mimico, New Toronto), plus Mississauga, Markham, Brampton, Vaughan. 25+ years serving these exact neighborhoods means we understand your specific area's foundation challenges."
+    },
+    {
+      "question": "Do local Toronto contractors prevent future leaking or just fix current problems?",
+      "answer": "As neighborhood specialists since 1999, we focus on comprehensive solutions, not just quick fixes. During emergency response, we stop immediate water AND identify root causes specific to Toronto conditions (clay soil, water table, heritage foundations). We develop long-term prevention plans and can upgrade emergency repairs to permanent waterproofing systems using our 25+ years Toronto experience."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = `<h2 id="why-toronto-homeowners-choose-local-dryspace-experts">Why Toronto Homeowners Choose Local DrySpace Experts</h2>
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/services/basement waterproofing/dryspace_exterior_waterproofing_warranty.jpg" alt="Professional exterior waterproofing installation" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Our waterproofing comes with lifetime warranty</figcaption>
+</figure>
+<p>### Your Neighborhood Basement Leaking Specialists Since 1999</p>
+
+<strong>When you search "basement leaking repair near me," you want:</strong>
+<ul><li><strong>Local reputation</strong> you can verify with neighbors</li>
+<li><strong>Neighborhood experience</strong> with your soil type and home style</li>
+<li><strong>Fast response</strong> from contractors already in your area</li>
+<li><strong>Licensed professionals</strong> who know Toronto building codes</li>
+<li><strong>Warranty protection</strong> from established local business</li>
+<li><strong>Fair pricing</strong> without hidden travel charges</li>
+
+<p></ul>### Over 3,500 Toronto Basement Repairs Completed</p>
+
+<strong>Our Local Track Record:</strong>
+<ul><li><strong>1,200+ repairs</strong> in Downtown/Central Toronto</li>
+<li><strong>850+ repairs</strong> in North York neighborhoods  </li>
+<li><strong>650+ repairs</strong> in Scarborough communities</li>
+<li><strong>480+ repairs</strong> in Etobicoke areas</li>
+<li><strong>320+ repairs</strong> in Mississauga/West GTA</li>
+
+<p></ul>### Signs You Need Basement Leaking Repair</p>
+
+<strong>Common Toronto Basement Leaking Problems:</strong>
+<ul><li><strong>Foundation cracks</strong> from clay soil expansion/contraction</li>
+<li><strong>Window well leaking</strong> during heavy Toronto storms</li>
+<li><strong>Floor seepage</strong> from high water table (especially near lake)</li>
+<li><strong>Wall moisture</strong> in older Toronto homes (pre-1960s)</li>
+<li><strong>Sump pump failures</strong> during spring thaw and summer storms</li>
+<li><strong>Mortar joint leaking</strong> in century homes with stone foundations</li>
+
+<p></ul><strong>Our Emergency Promise:</strong>
+✓ <strong>Fastest Response</strong>: Local crews positioned throughout GTA  
+✓ <strong>Immediate Water Stop</strong>: Professional equipment to halt leaking  
+✓ <strong>Property Protection</strong>: Save your belongings and basement contents  
+✓ <strong>Insurance Support</strong>: Complete documentation for successful claims  
+✓ <strong>24/7 Availability</strong>: No overtime charges for true emergencies</p>
+
+
+<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/pics/work/interior-waterproofing.webp" alt="Interior basement waterproofing system" style="width: 100%; height: auto; display: block;" />
+  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Interior drainage prevents water damage</figcaption>
+</figure><h2 id="local-emergency-basement-leaking-repair-network">Local Emergency Basement Leaking Repair Network</h2>
+<p>### Toronto Central Emergency Response
+<strong>Coverage Area:</strong> Downtown, Financial District, Entertainment District, Harbourfront, Distillery District</p>
+
+<p><strong>Average Response Time:</strong> 30 minutes
+<strong>Emergency Crews:</strong> 3 teams with specialized downtown equipment</p>
+
+<strong>Common Emergency Scenarios:</strong>
+<ul><li>Heritage stone foundation sudden leaking</li>
+<li>High-rise basement/parking garage flooding</li>
+<li>Limited access emergency extractions</li>
+<li>Below-grade condo unit water intrusion</li>
+<li>Construction vibration-induced cracking</li>
+
+</ul><strong>Emergency Equipment On-Site:</strong>
+<ul><li>Compact high-capacity extractors for tight spaces</li>
+<li>Heritage-appropriate emergency sealants</li>
+<li>Narrow-access dehumidification systems</li>
+<li>Emergency lighting for underground areas</li>
+<li>Building management coordination protocols</li>
+
+<p></ul>### North York Emergency Response  
+<strong>Coverage Area:</strong> Willowdale, Don Mills, York Mills, Sheppard, Bayview Village</p>
+
+<p><strong>Average Response Time:</strong> 45 minutes
+<strong>Emergency Crews:</strong> 2 teams with clay soil expertise</p>
+
+<strong>Typical Emergency Calls:</strong>
+<ul><li>Clay soil pressure causing wall cracks</li>
+<li>Split-level home drainage failures</li>
+<li>Basement apartment flooding</li>
+<li>Tree root-related foundation damage</li>
+<li>Subdivision drainage overwhelm</li>
+
+</ul><strong>Specialized Emergency Tools:</strong>
+<ul><li>Clay soil pressure relief equipment</li>
+<li>Multi-level pumping systems</li>
+<li>Basement apartment protection barriers</li>
+<li>Root cutting emergency tools</li>
+<li>Subdivision-wide coordination resources</li>
+
+<p></ul>### Scarborough Emergency Response
+<strong>Coverage Area:</strong> Agincourt, Malvern, Rouge Valley, Bendale, Cliffcrest</p>
+
+<p><strong>Average Response Time:</strong> 45 minutes  
+<strong>Emergency Crews:</strong> 2 teams with ravine lot experience</p>
+
+<strong>Regional Emergency Challenges:</strong>
+<ul><li>Ravine lot complex drainage failures</li>
+<li>Bluffs area soil instability flooding</li>
+<li>Older home foundation settlement</li>
+<li>Storm sewer overflow situations</li>
+<li>Clay subsoil extreme pressure events</li>
+
+</ul><strong>Slope-Specific Emergency Equipment:</strong>
+<ul><li>Ravine access pumping systems</li>
+<li>Slope stabilization emergency measures</li>
+<li>Foundation support emergency systems</li>
+<li>Storm overflow management tools</li>
+<li>Clay pressure emergency relief equipment</li>
+
+<p></ul>### Etobicoke Emergency Response
+<strong>Coverage Area:</strong> Mimico, New Toronto, Long Branch, Alderwood, Rexdale</p>
+
+<p><strong>Average Response Time:</strong> 45 minutes
+<strong>Emergency Crews:</strong> 2 teams with lake shore experience</p>
+
+<strong>West Toronto Specific Emergencies:</strong>
+<ul><li>Lake shore high moisture emergencies</li>
+<li>Humber River proximity flooding</li>
+<li>Mixed soil condition complications</li>
+<li>Post-war home foundation failures</li>
+<li>Airport vibration-related damage</li>
+
+</ul><strong>Lake Shore Emergency Specialties:</strong>
+<ul><li>High-moisture extraction systems</li>
+<li>River flood emergency barriers</li>
+<li>Mixed foundation emergency repairs</li>
+<li>Vibration-resistant sealing methods</li>
+<li>Lake shore moisture control systems</li>
+
+<p></ul>### Mississauga Emergency Response
+<strong>Coverage Area:</strong> Port Credit, Square One, Meadowvale, Streetsville, Clarkson</p>
+
+<p><strong>Average Response Time:</strong> 60 minutes
+<strong>Emergency Crews:</strong> 2 teams with suburban expertise</p>
+
+<strong>Suburban Emergency Scenarios:</strong>
+<ul><li>New construction settlement leaking</li>
+<li>Large lot drainage system failures</li>
+<li>Finished basement flooding protection</li>
+<li>Subdivision-wide water table issues</li>
+<li>Modern home foundation problems</li>
+
+<p></ul>### Markham Emergency Response  
+<strong>Coverage Area:</strong> Unionville, Thornhill, Milliken, Buttonville, Cornell</p>
+
+<p><strong>Average Response Time:</strong> 90 minutes
+<strong>Emergency Crews:</strong> 1 team with new home experience</p>
+
+<strong>North GTA Emergency Issues:</strong>
+<ul><li>New home warranty foundation leaking</li>
+<li>Subdivision drainage inadequacies</li>
+<li>Basement apartment rental issues</li>
+<li>Modern construction defects</li>
+<li>Developer drainage responsibility questions</li></ul>
+
+<h2 id="emergency-basement-leaking-repair-process">Emergency Basement Leaking Repair Process</h2>
+<p>### Phase 1: Immediate Response (0-30 Minutes)</p>
+
+<strong>Emergency Dispatch Protocol:</strong>
+<li><strong>Call received</strong>: Emergency operator assessment</li>
+<li><strong>Crew dispatch</strong>: GPS routing to nearest available team</li>
+<li><strong>Customer update</strong>: Text confirmation with arrival time</li>
+<li><strong>Equipment check</strong>: Verify emergency supplies loaded</li>
+<li><strong>Safety briefing</strong>: Hazard assessment preparation</li>
+
+<strong>First 15 Minutes On-Site:</strong>
+<ul><li><strong>Safety assessment</strong>: Electrical, structural, air quality</li>
+<li><strong>Water source identification</strong>: Locate all leak points</li>
+<li><strong>Emergency water control</strong>: Deploy extraction equipment immediately</li>
+<li><strong>Contents protection</strong>: Move valuables to safe areas</li>
+<li><strong>Initial documentation</strong>: Insurance-quality photos</li>
+
+<p></ul>### Phase 2: Water Control (30-60 Minutes)</p>
+
+<strong>Immediate Leak Stopping:</strong>
+<ul><li><strong>Hydraulic cement application</strong>: Stop active flowing water</li>
+<li><strong>Emergency crack injection</strong>: Seal visible foundation cracks</li>
+<li><strong>Temporary barriers</strong>: Redirect water flow away from vulnerable areas</li>
+<li><strong>Pump deployment</strong>: High-capacity water removal (6,000+ gallons/hour)</li>
+<li><strong>Dehumification setup</strong>: Begin moisture extraction from air</li>
+
+</ul><strong>Damage Assessment:</strong>
+<ul><li><strong>Thermal imaging</strong>: Detect hidden moisture in walls/floors</li>
+<li><strong>Structural evaluation</strong>: Check for immediate safety concerns</li>
+<li><strong>Moisture mapping</strong>: Document all affected areas</li>
+<li><strong>Contents inventory</strong>: List damaged items for insurance</li>
+<li><strong>Repair planning</strong>: Develop immediate stabilization strategy</li>
+
+<p></ul>### Phase 3: Stabilization (1-4 Hours)</p>
+
+<strong>Complete Water Extraction:</strong>
+<ul><li><strong>Floor water removal</strong>: Extract all standing water</li>
+<li><strong>Wall moisture extraction</strong>: Remove water from wall cavities</li>
+<li><strong>Hidden moisture detection</strong>: Find water behind finishes</li>
+<li><strong>Air movement setup</strong>: Accelerate drying process</li>
+<li><strong>Progress monitoring</strong>: Verify effective water removal</li>
+
+</ul><strong>Emergency Repairs:</strong>
+<ul><li><strong>Critical crack sealing</strong>: Permanent emergency repairs</li>
+<li><strong>Drainage improvements</strong>: Clear or install emergency drains</li>
+<li><strong>Sump pump service</strong>: Repair or install backup systems</li>
+<li><strong>Ventilation enhancement</strong>: Improve air circulation</li>
+<li><strong>Temporary waterproofing</strong>: Protect until permanent repairs</li></ul>
+
+<h2 id="emergency-basement-leaking-repair-costs">Emergency Basement Leaking Repair Costs</h2>
+<p>### Immediate Emergency Services</p>
+
+<strong>Emergency Response Fees:</strong>
+<ul><li><strong>24/7 Emergency dispatch</strong>: $200-$350 (applied to repair costs)</li>
+<li><strong>After-hours surcharge</strong>: $100-$200 (evenings 6PM-8AM)</li>
+<li><strong>Weekend emergency</strong>: $150-$250 (Saturday/Sunday)</li>
+<li><strong>Holiday emergency</strong>: $200-$300 (statutory holidays)</li>
+<li><strong>Rush assessment</strong>: Included with emergency service call</li>
+
+</ul><strong>Critical Water Control:</strong>
+<ul><li><strong>Emergency water extraction</strong>: $600-$2,000</li>
+  </ul>- Basement up to 500 sq ft: $600-$1,000
+  - Large basement 500-1000 sq ft: $1,000-$1,500
+  - Extensive flooding 1000+ sq ft: $1,500-$2,000
+<ul><li><strong>Immediate leak stopping</strong>: $300-$1,200</li>
+  </ul>- Single crack hydraulic cement: $300-$600
+  - Multiple leak points: $600-$1,200
+<ul><li><strong>Emergency equipment rental</strong>: $400-$800</li>
+  </ul>- Dehumidifiers and air movers: 3-7 day rental
+
+<p>### Same-Day Emergency Repairs</p>
+
+<strong>Minor Emergency Repairs:</strong>
+<ul><li><strong>Single foundation crack</strong>: $600-$1,500</li>
+<li><strong>Window well emergency</strong>: $800-$2,500  </li>
+<li><strong>Small floor area seepage</strong>: $1,000-$3,000</li>
+<li><strong>Emergency sump repair</strong>: $400-$1,200</li>
+<li><strong>Basic drainage clearing</strong>: $300-$800</li>
+
+</ul><strong>Major Emergency Repairs:</strong>
+<ul><li><strong>Multiple wall leaks</strong>: $2,000-$5,000</li>
+<li><strong>Emergency interior system</strong>: $4,000-$10,000</li>
+<li><strong>Foundation stabilization</strong>: $3,000-$8,000</li>
+<li><strong>Complete emergency drainage</strong>: $5,000-$12,000</li>
+<li><strong>Full flood recovery</strong>: $8,000-$20,000</li>
+
+<p></ul>### Local Area Pricing</p>
+
+<strong>Toronto Central Premium Zone:</strong>
+<ul><li>Standard rates + 15-20% for access challenges</li>
+<li>Equipment delivery surcharge: $200-$500</li>
+<li>Heritage building care: +10-15% for specialized work</li>
+<li>High-rise coordination: $150-$300 administrative fee</li>
+
+</ul><strong>Suburban Standard Zone (North York, Scarborough, Etobicoke):</strong>
+<ul><li>Base emergency pricing as listed above</li>
+<li>Standard equipment access included</li>
+<li>No premium for typical foundation types</li>
+<li>Multi-neighbor discounts available: 5-10% off</li>
+
+</ul><strong>Extended GTA Zone (Mississauga, Markham, Brampton, Vaughan):</strong>
+<ul><li>Base rates + 5-10% travel surcharge</li>
+<li>Response time adjustment: +$100-$200 for longer distances</li>
+<li>Bulk area discounts: 10-15% for multiple same-area emergencies</li></ul>
+
+<h2 id="emergency-financing-insurance">Emergency Financing & Insurance</h2>
+<p>### Insurance Coverage Support</p>
+
+<strong>Direct Insurance Billing Available For:</strong>
+<ul><li>Intact Insurance</li>
+<li>Aviva Canada</li>
+<li>TD Insurance</li>
+<li>State Farm Canada</li>
+<li>Co-operators Insurance</li>
+<li>Wawanesa Insurance</li>
+<li>Most major Canadian insurers</li>
+
+</ul><strong>Typically Covered Emergency Services:</strong>
+<ul><li>✓ Emergency water extraction</li>
+<li>✓ Temporary leak stopping  </li>
+<li>✓ Contents protection and moving</li>
+<li>✓ Emergency drying equipment</li>
+<li>✓ Structural safety measures</li>
+
+</ul><strong>Emergency Payment Options:</strong>
+<ul><li><strong>Insurance direct billing</strong>: Most major insurers</li>
+<li><strong>Emergency credit terms</strong>: Up to 30 days payment</li>
+<li><strong>Credit card accepted</strong>: Visa, MasterCard, American Express  </li>
+<li><strong>Payment plans available</strong>: 0% interest for qualified applicants</li>
+<li><strong>Work now, pay later</strong>: Emergency protection first, billing second</li></ul>
+
+<h2 id="signs-you-need-emergency-basement-leaking-repair">Signs You Need Emergency Basement Leaking Repair</h2>
+<p>### Call Immediately For 🚨</p>
+
+<strong>Active Water Emergency:</strong>
+<ul><li>Water flowing through cracks or walls</li>
+<li>Standing water accumulating on basement floor  </li>
+<li>Water bubbling up through floor cracks</li>
+<li>Basement flooding during or after storms</li>
+<li>Sump pump overwhelmed or not working</li>
+
+</ul><strong>Safety Hazards:</strong>
+<ul><li>Water near electrical outlets, panels, or appliances</li>
+<li>Structural cracking with water seepage</li>
+<li>Sewage backup into basement areas</li>
+<li>Gas line exposure due to water damage</li>
+<li>Mold odor with visible moisture</li>
+
+</ul><strong>High-Risk Situations:</strong>
+<ul><li>Finished basement with active leaking</li>
+<li>Water affecting furnace, hot water heater, or electrical</li>
+<li>Basement apartment with tenant safety concerns</li>
+<li>Contents damage occurring (furniture, electronics, documents)</li>
+<li>Previous repairs failing during storms</li>
+
+<p></ul>### Don't Wait - Act Fast For:</p>
+
+<strong>Progressive Damage Signs:</strong>
+<ul><li>New cracks appearing with each storm</li>
+<li>Increasing water volume with each rain</li>
+<li>Musty odors getting stronger</li>
+<li>White powder (efflorescence) on walls</li>
+<li>Paint peeling or bubbling from moisture</li>
+
+</ul><strong>Seasonal Emergency Triggers:</strong>
+<ul><li>Spring snowmelt causing pressure</li>
+<li>Summer storm basement flooding</li>
+<li>Fall freeze-thaw foundation damage</li>
+<li>Winter ice dam basement leaking</li></ul>
+
+<h2 id="local-emergency-success-stories">Local Emergency Success Stories</h2>
+<p>### Real Emergency Responses</p>
+
+<p><strong>Willowdale Clay Soil Crisis - January 2025</strong>
+> <em>"At 2:15 AM during the ice storm, water started gushing through our basement wall. Called DrySpace emergency line and crew arrived at 2:53 AM - 38 minutes! They worked through the night stopping the water and extracting everything. Professional, fast, and saved our finished basement."</em>
+> 
+> <strong>Emergency Response:</strong> 38 minutes  
+> <strong>Problem:</strong> Clay soil pressure + ice storm  
+> <strong>Solution:</strong> Emergency hydraulic cement + extraction  
+> <strong>Result:</strong> Zero permanent damage, dry basement</p>
+
+<p><strong>Scarborough Ravine Emergency - December 2024</strong>
+> <em>"Heavy rain at 4 AM caused massive basement flooding from our ravine lot drainage. Emergency crew arrived with pumps and had water under control by 6 AM. They worked with our slope and saved thousands in damage."</em>
+> 
+> <strong>Emergency Response:</strong> 45 minutes  
+> <strong>Problem:</strong> Ravine drainage failure + storm  
+> <strong>Solution:</strong> High-capacity pumping + temporary drainage  
+> <strong>Result:</strong> Contents saved, permanent system installed</p>
+
+<p><strong>Downtown Condo Crisis - November 2024</strong>
+> <em>"Underground parking level flooded at 6 PM Friday. DrySpace coordinated with building management and had professional crew working within 45 minutes. Respectful, efficient, and solved our crisis."</em>
+> 
+> <strong>Emergency Response:</strong> 45 minutes  
+> <strong>Problem:</strong> High water table + building drainage failure  
+> <strong>Solution:</strong> Professional extraction + emergency barriers  
+> <strong>Result:</strong> Resident units protected, building systems saved</p>
+
+<h2 id="get-local-toronto-basement-leaking-repair-now">Get Local Toronto Basement Leaking Repair Now</h2>
+<div class="local-service-cta-section">
+<h3>🏡 Need "Basement Leaking Repair Near Me"? Call Toronto's Local Experts!</h3>
+
+<p><strong>Don't settle for distant contractors - choose neighborhood specialists:</strong></p>
+
+<p><div class="local-action-steps">
+<div class="step">
+<strong>1. Call Your Local Experts</strong>
+<p>25+ years serving Toronto neighborhoods</p>
+<a href="tel:4375450067" class="local-expert-phone">📞 (437) 545-0067</a>
+</div></p>
+
+<p><div class="step">
+<strong>2. Fast Local Response</strong>
+<p>Crews already in your area</p>
+<span class="local-response-time">⏰ 30-90 Minutes</span>
+</div></p>
+
+<p><div class="step">
+<strong>3. Neighborhood Knowledge</strong>
+<p>We know your area's specific challenges</p>
+<span class="local-expertise">✓ 3,500+ Local Repairs</span>
+</div>
+</div></p>
+
+<strong>Why Choose Local Toronto Specialists:</strong>
+<ul><li>✅ <strong>Neighborhood reputation</strong> - 2,800+ satisfied Toronto homeowners</li>
+<li>✅ <strong>Local expertise</strong> - 25+ years understanding Toronto soil and foundations</li>
+<li>✅ <strong>Established business</strong> - we'll be here to honor warranties</li>
+<li>✅ <strong>No travel fees</strong> - trucks already positioned in your area</li>
+<li>✅ <strong>Insurance relationships</strong> - work with all major Toronto insurers</li>
+<li>✅ <strong>Licensed & insured</strong> - full Ontario contractor credentials</li>
+
+<p></ul><div class="local-contact-methods">
+<a href="tel:4375450067" class="local-call">🏡 CALL LOCAL EXPERTS: (437) 545-0067</a>
+<a href="/contact/" class="local-quote">📊 Get Free Local Quote</a>
+</div></p>
+
+<p><p class="local-service-note">
+<strong>Serving Your Toronto Neighborhood Since 1999:</strong> Downtown, North York, Scarborough, Etobicoke, Mississauga, Markham and beyond. When you search "basement leaking repair near me," you want contractors who actually know your area - that's us.
+</p>
+</div></p>
+
+<h2 id="related-emergency-services">Related Emergency Services</h2>
+<strong>Find More Emergency Help Near You:</strong>
+<ul><li>[Emergency Waterproofing](/services/emergency-waterproofing/) - Complete emergency water damage response</li>
+<li>[Foundation Repair Near Me](/services/foundation-repair-near-me/) - Emergency structural foundation support</li>
+<li>[Basement Leak Repair Near Me](/services/basement-leak-repair-near-me/) - Comprehensive leak repair services</li>
+
+</ul><strong>Toronto Area Emergency Coverage:</strong>
+<ul><li>[Toronto Emergency Waterproofing](/locations/toronto-emergency-waterproofing/) - Central Toronto emergency teams</li>
+<li>[North York Basement Waterproofing](/locations/north-york-basement-waterproofing/) - North Toronto emergency coverage  </li>
+<li>[Mississauga Basement Waterproofing](/locations/mississauga-basement-waterproofing/) - West GTA emergency service</li>
+<li>[Markham Basement Waterproofing](/locations/markham-basement-waterproofing/) - North GTA emergency response</li></ul>
+
+<h2 id="emergency-service-area-coverage">Emergency Service Area Coverage</h2>
+<p>### Complete GTA Emergency Response</p>
+
+<p><strong>Toronto Core Emergency Zones:</strong>
+Downtown Core, Financial District, Entertainment District, Harbourfront, St. Lawrence Market, Distillery District, Corktown, Regent Park, Moss Park, Garden District, Church-Wellesley</p>
+
+<p><strong>North Toronto Emergency Coverage:</strong>
+North York Centre, Willowdale, Don Mills, York Mills, Bayview Village, Flemingdon Park, Thorncliffe Park, Leaside, Lawrence Park, Forest Hill</p>
+
+<p><strong>East Toronto Emergency Areas:</strong>  
+Scarborough Centre, Agincourt, Malvern, Rouge Valley, Bendale, Cliffcrest, Birch Cliff, The Beaches, Leslieville, Riverdale, East York</p>
+
+<p><strong>West Toronto Emergency Zones:</strong>
+Etobicoke Centre, Mimico, New Toronto, Long Branch, Alderwood, Rexdale, Islington, High Park, The Junction, Parkdale, Liberty Village</p>
+
+<p><strong>Extended GTA Emergency Service:</strong>
+Mississauga, Brampton, Vaughan, Richmond Hill, Markham, Pickering, Ajax, Whitby, Oakville, Burlington, Milton</p>
+
+### Emergency Response Time Commitments
+<ul><li><strong>Priority Zone</strong> (Toronto Core): 30-45 minutes maximum</li>
+<li><strong>Standard Zone</strong> (Inner GTA): 45-75 minutes maximum  </li>
+<li><strong>Extended Zone</strong> (Outer GTA): 75-120 minutes maximum</li>
+<li><strong>Emergency Guarantee</strong>: Never more than 2 hours anywhere in service area</li>
+
+<p></ul>---</p>
+
+<p><em>DrySpace Emergency Waterproofing - Your Local Basement Leaking Emergency Specialists. Serving Toronto and GTA with fastest response times, professional emergency equipment, and expert water damage control since 2008.</em></p>
+
+<p><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Basement Leaking Repair Near Me - Toronto Local Experts - DrySpace",
+  "image": "https://dryspacewaterproofing.ca/images/basement-leaking-repair-toronto-local.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Toronto",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.6532,
+    "longitude": -79.3832
+  },
+  "url": "https://dryspacewaterproofing.ca/services/basement-leaking-repair-near-me/",
+  "telephone": "437-545-0067",
+  "priceRange": "$600-$25,000",
+  "foundingDate": "1999",
+  "slogan": "Toronto's Most Trusted Local Basement Specialists Since 1999",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "serviceArea": [
+    {
+      "@type": "City",
+      "name": "Toronto"
+    },
+    {
+      "@type": "City", 
+      "name": "North York" 
+    },
+    {
+      "@type": "City",
+      "name": "Scarborough"
+    },
+    {
+      "@type": "City",
+      "name": "Etobicoke" 
+    },
+    {
+      "@type": "City",
+      "name": "Mississauga"
+    },
+    {
+      "@type": "City",
+      "name": "Markham"
+    },
+    {
+      "@type": "City",
+      "name": "Brampton"
+    },
+    {
+      "@type": "City",
+      "name": "Vaughan"
+    }
+  ],
+  "areaServed": {
+    "@type": "GeoCircle", 
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.6532,
+      "longitude": -79.3832
+    },
+    "geoRadius": "50000"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "2800"
+  },
+  "knowsAbout": [
+    "Toronto clay soil conditions",
+    "heritage foundation repair", 
+    "high water table management",
+    "GTA neighborhood drainage",
+    "Toronto building codes",
+    "local permit requirements"
+  ],
+  "hasCredential": [
+    "Licensed Ontario contractor",
+    "WSIB registered", 
+    "Insured waterproofing specialist",
+    "25+ years Toronto experience"
+  ],
+  "service": {
+    "@type": "Service",
+    "name": "Local Basement Leaking Repair",
+    "description": "Comprehensive basement leaking repair services by Toronto neighborhood specialists. 3,500+ local repairs completed since 1999 with lifetime warranties."
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Local Basement Leaking Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Emergency Water Extraction",
+          "description": "Professional water removal with local Toronto expertise"
+        },
+        "priceRange": "$600-$2,000"
+      },
+      {
+        "@type": "Offer", 
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Foundation Leak Sealing",
+          "description": "Permanent leak repairs for Toronto foundation types"
+        },
+        "priceRange": "$300-$1,200"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Comprehensive Waterproofing",
+          "description": "Complete basement waterproofing systems for Toronto homes"
+        },
+        "priceRange": "$1,000-$25,000"
+      }
+    ]
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Local Neighborhood Service",
+      "description": "Established contractors serving your Toronto neighborhood since 1999"
+    },
+    {
+      "@type": "Offer", 
+      "name": "Insurance Direct Billing",
+      "description": "Direct billing with all major Toronto insurance companies"
+    },
+    {
+      "@type": "Offer",
+      "name": "Lifetime Warranty",
+      "description": "Lifetime warranty on workmanship backed by 25+ years local business"
+    }
+  ]
+}
+</script></p>`;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {
+  "keywords": [
+    "basement leaking repair near me",
+    "basement leaking repair Toronto",
+    "local basement water repair",
+    "neighborhood basement contractors",
+    "Toronto basement leak specialists",
+    "basement repair in my area",
+    "certified basement waterproofing near me",
+    "residential basement leak repair",
+    "professional basement water damage",
+    "basement contractors Toronto"
+  ],
+  "schema": {
+    "type": "LocalBusiness",
+    "name": "Basement Leaking Repair Near Me - Toronto Local Experts - DrySpace",
+    "image": "/images/basement-leaking-repair-toronto-local.jpg",
+    "address": {
+      "type": "PostalAddress",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "type": "GeoCoordinates",
+      "latitude": "43.6532",
+      "longitude": "-79.3832"
+    },
+    "url": "https://dryspacewaterproofing.ca/services/basement-leaking-repair-near-me/",
+    "telephone": "(437) 545-0067",
+    "priceRange": "$600-$25,000",
+    "availableLanguage": [
+      "English"
+    ],
+    "foundingDate": "1999",
+    "slogan": "Toronto's Most Trusted Local Basement Specialists Since 1999",
+    "openingHoursSpecification": [
+      {
+        "type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "areaServed": [
+      {
+        "name": "Toronto",
+        "type": "City"
+      },
+      {
+        "name": "North York",
+        "type": "City"
+      },
+      {
+        "name": "Scarborough",
+        "type": "City"
+      },
+      {
+        "name": "Etobicoke",
+        "type": "City"
+      },
+      {
+        "name": "Mississauga",
+        "type": "City"
+      },
+      {
+        "name": "Markham",
+        "type": "City"
+      },
+      {
+        "name": "Brampton",
+        "type": "City"
+      },
+      {
+        "name": "Vaughan",
+        "type": "City"
+      }
+    ],
+    "serviceRadius": "50 km",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2,800"
+    },
+    "knowsAbout": [
+      "Toronto clay soil conditions",
+      "heritage foundation repair",
+      "high water table management",
+      "GTA neighborhood drainage"
+    ],
+    "hasCredential": [
+      "Licensed Ontario contractor",
+      "WSIB registered",
+      "Insured waterproofing specialist"
+    ],
+    "yearlyRevenue": "established local business since 1999"
+  }
+};
+---
+
+<ServicePageTemplateV3 {...serviceData}>
+  <div slot="mainContent" set:html={mainContent} />
+</ServicePageTemplateV3>
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

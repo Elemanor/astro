@@ -1,0 +1,232 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+import Hero from '../../components/ui/Hero.astro';
+import Section from '../../components/ui/Section.astro';
+import Grid from '../../components/ui/Grid.astro';
+import ContentCard from '../../components/ui/ContentCard.astro';
+import AstroButton from '../../components/ui/AstroButton.astro';
+import AstroCard from '../../components/ui/AstroCard.astro';
+import { DollarSign, Calculator, TrendingUp, Phone, ArrowRight } from 'lucide-react';
+
+// Get all cost pages
+const costPages = await getCollection('cost');
+
+// Sort by importance/popularity
+const sortedCostPages = costPages.sort((a, b) => {
+  const priority = ['basement-waterproofing-cost-toronto', 'foundation-repair-cost', 'sump-pump-installation-cost'];
+  const aIndex = priority.findIndex(p => a.id.includes(p));
+  const bIndex = priority.findIndex(p => b.id.includes(p));
+  
+  if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+  if (aIndex !== -1) return -1;
+  if (bIndex !== -1) return 1;
+  
+  return a.data.title.localeCompare(b.data.title);
+});
+
+// Get featured cost guides
+const featuredGuides = sortedCostPages.slice(0, 3);
+
+// Average cost ranges (for display)
+const costRanges = [
+  { service: "Interior Waterproofing", range: "$3,000 - $8,000" },
+  { service: "Exterior Waterproofing", range: "$8,000 - $25,000" },
+  { service: "Foundation Crack Repair", range: "$500 - $3,000" },
+  { service: "Sump Pump Installation", range: "$1,500 - $3,500" },
+  { service: "French Drain System", range: "$4,000 - $12,000" },
+  { service: "Basement Underpinning", range: "$35,000 - $85,000" }
+];
+---
+
+<MainLayout 
+  title="Waterproofing Cost Guides | Pricing & Estimates Toronto" 
+  description="Comprehensive cost guides for basement waterproofing, foundation repair, and drainage solutions in Toronto. Get accurate pricing information and free quotes."
+>
+  <!-- Hero Section -->
+  <Hero
+    title="Waterproofing Cost Guides"
+    subtitle="Transparent pricing for Toronto homeowners"
+    description="Detailed cost breakdowns, factors affecting price, and ways to save on your waterproofing project"
+    badge="2025 Pricing"
+    alignment="center"
+    size="small"
+  />
+  
+  <!-- Quick Cost Ranges -->
+  <Section spacing="small" background="muted">
+    <h2 class="text-2xl font-bold text-center mb-8">Average Cost Ranges</h2>
+    <Grid columns={3} gap="small">
+      {costRanges.map(item => (
+        <div class="text-center">
+          <p class="font-semibold text-sm mb-1">{item.service}</p>
+          <p class="text-xl font-bold text-primary">{item.range}</p>
+        </div>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Featured Cost Guides -->
+  <Section 
+    title="Popular Cost Guides"
+    subtitle="Most requested pricing information"
+  >
+    <Grid columns={3}>
+      {featuredGuides.map(guide => {
+        const url = guide.data.url || `/cost/${guide.id}/`;
+        return (
+          <ContentCard
+            title={guide.data.title}
+            description={guide.data.description}
+            href={url}
+            type="guide"
+          />
+        );
+      })}
+    </Grid>
+  </Section>
+  
+  <!-- Cost Calculator CTA -->
+  <Section background="primary" spacing="small">
+    <div class="text-center space-y-6">
+      <Calculator className="h-16 w-16 text-white mx-auto" client:load />
+      <h2 class="text-3xl font-bold text-white">Calculate Your Project Cost</h2>
+      <p class="text-xl text-white/90 max-w-2xl mx-auto">
+        Use our free cost calculator to get an instant estimate for your waterproofing project
+      </p>
+      <AstroButton 
+        href="/tools/basement-waterproofing-calculator/" 
+        size="lg"
+        class="bg-white text-primary hover:bg-gray-100"
+      >
+        Launch Cost Calculator
+        <Calculator className="h-5 w-5 ml-2" client:load />
+      </AstroButton>
+    </div>
+  </Section>
+  
+  <!-- All Cost Guides -->
+  <Section>
+    <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+      <DollarSign className="h-6 w-6 text-primary" client:load />
+      All Cost Guides
+    </h2>
+    <Grid columns={2}>
+      {sortedCostPages.map(page => {
+        const url = page.data.url || `/cost/${page.id}/`;
+        return (
+          <AstroCard class="hover:shadow-lg transition-shadow">
+            <h3 class="font-semibold text-lg mb-2">
+              <a href={url} class="hover:text-primary transition-colors">
+                {page.data.title}
+              </a>
+            </h3>
+            <p class="text-muted-foreground text-sm mb-4">
+              {page.data.description}
+            </p>
+            <a href={url} class="text-primary hover:text-primary/80 font-medium text-sm inline-flex items-center gap-1">
+              View Cost Guide
+              <ArrowRight className="h-4 w-4" client:load />
+            </a>
+          </AstroCard>
+        );
+      })}
+    </Grid>
+  </Section>
+  
+  <!-- Factors Affecting Cost -->
+  <Section background="muted">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">Factors That Affect Waterproofing Costs</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <AstroCard>
+          <h3 class="font-semibold mb-3 flex items-center gap-2">
+            <TrendingUp className="h-5 w-5 text-primary" client:load />
+            Project Scope
+          </h3>
+          <ul class="space-y-2 text-sm text-muted-foreground">
+            <li>• Size of affected area</li>
+            <li>• Severity of water damage</li>
+            <li>• Interior vs. exterior work</li>
+            <li>• Additional repairs needed</li>
+          </ul>
+        </AstroCard>
+        
+        <AstroCard>
+          <h3 class="font-semibold mb-3 flex items-center gap-2">
+            <TrendingUp className="h-5 w-5 text-primary" client:load />
+            Site Conditions
+          </h3>
+          <ul class="space-y-2 text-sm text-muted-foreground">
+            <li>• Accessibility of work area</li>
+            <li>• Soil type and conditions</li>
+            <li>• Existing foundation type</li>
+            <li>• Local water table level</li>
+          </ul>
+        </AstroCard>
+        
+        <AstroCard>
+          <h3 class="font-semibold mb-3 flex items-center gap-2">
+            <TrendingUp className="h-5 w-5 text-primary" client:load />
+            Materials & Methods
+          </h3>
+          <ul class="space-y-2 text-sm text-muted-foreground">
+            <li>• Quality of materials used</li>
+            <li>• Waterproofing method chosen</li>
+            <li>• Warranty level selected</li>
+            <li>• Additional features (backup pumps, etc.)</li>
+          </ul>
+        </AstroCard>
+        
+        <AstroCard>
+          <h3 class="font-semibold mb-3 flex items-center gap-2">
+            <TrendingUp className="h-5 w-5 text-primary" client:load />
+            Timing & Location
+          </h3>
+          <ul class="space-y-2 text-sm text-muted-foreground">
+            <li>• Emergency vs. scheduled work</li>
+            <li>• Seasonal demand fluctuations</li>
+            <li>• Your specific neighborhood</li>
+            <li>• Permit requirements</li>
+          </ul>
+        </AstroCard>
+      </div>
+    </div>
+  </Section>
+  
+  <!-- Get Quote CTA -->
+  <Section>
+    <AstroCard class="bg-gradient-to-r from-secondary/10 to-secondary/20 border-secondary/30">
+      <div class="text-center space-y-6">
+        <h2 class="text-3xl font-bold">Get Your Accurate Quote</h2>
+        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+          Every project is unique. Get a personalized quote based on your specific needs and property conditions.
+        </p>
+        <div class="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto my-8">
+          <div class="text-center">
+            <p class="text-3xl font-bold text-secondary">Free</p>
+            <p class="text-sm text-muted-foreground">Inspection & Quote</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold text-secondary">24hr</p>
+            <p class="text-sm text-muted-foreground">Quote Turnaround</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold text-secondary">0%</p>
+            <p class="text-sm text-muted-foreground">Financing Available</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <AstroButton href="/contact/" size="lg" variant="secondary">
+            Request Free Quote
+            <ArrowRight className="h-5 w-5 ml-2" client:load />
+          </AstroButton>
+          <AstroButton href="tel:437-545-0067" size="lg" variant="outline">
+            <Phone className="h-5 w-5 mr-2" client:load />
+            (437) 545-0067
+          </AstroButton>
+        </div>
+      </div>
+    </AstroCard>
+  </Section>
+</MainLayout>

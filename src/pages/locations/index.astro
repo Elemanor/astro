@@ -1,0 +1,303 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+import Hero from '../../components/ui/Hero.astro';
+import Section from '../../components/ui/Section.astro';
+import Grid from '../../components/ui/Grid.astro';
+import ContentCard from '../../components/ui/ContentCard.astro';
+import AstroButton from '../../components/ui/AstroButton.astro';
+import AstroCard from '../../components/ui/AstroCard.astro';
+import AstroBadge from '../../components/ui/AstroBadge.astro';
+import { 
+  MapPin, 
+  Phone, 
+  Clock,
+  Shield,
+  Users,
+  Award,
+  ArrowRight,
+  CheckCircle,
+  Map
+} from 'lucide-react';
+
+// Get all locations
+const locations = await getCollection('locations');
+
+// Define major service areas with details
+const majorAreas = [
+  {
+    name: "Toronto",
+    description: "Serving all Toronto neighborhoods including Downtown, North York, Scarborough, and Etobicoke",
+    href: "/locations/toronto-basement-waterproofing/",
+    stats: { projects: "2000+", response: "30 min" }
+  },
+  {
+    name: "Mississauga",
+    description: "Complete waterproofing services for Mississauga homes and businesses",
+    href: "/locations/mississauga-basement-waterproofing/",
+    stats: { projects: "800+", response: "45 min" }
+  },
+  {
+    name: "Brampton",
+    description: "Professional foundation repair and waterproofing throughout Brampton",
+    href: "/locations/brampton-basement-waterproofing/",
+    stats: { projects: "600+", response: "45 min" }
+  },
+  {
+    name: "Vaughan",
+    description: "Expert waterproofing solutions for Vaughan residential and commercial properties",
+    href: "/locations/vaughan-basement-waterproofing/",
+    stats: { projects: "500+", response: "40 min" }
+  },
+  {
+    name: "Richmond Hill",
+    description: "Trusted waterproofing services in Richmond Hill and surrounding areas",
+    href: "/locations/richmond-hill-basement-waterproofing/",
+    stats: { projects: "400+", response: "45 min" }
+  },
+  {
+    name: "Oakville",
+    description: "Premium waterproofing and foundation services for Oakville homes",
+    href: "/locations/oakville-basement-waterproofing/",
+    stats: { projects: "350+", response: "50 min" }
+  }
+];
+
+// Secondary service areas
+const secondaryAreas = [
+  { name: "Burlington", href: "/locations/burlington-basement-waterproofing/" },
+  { name: "Hamilton", href: "/locations/hamilton-basement-waterproofing/" },
+  { name: "Markham", href: "/locations/markham-basement-waterproofing/" },
+  { name: "Newmarket", href: "/locations/newmarket-basement-waterproofing/" },
+  { name: "Ajax", href: "/locations/ajax-basement-waterproofing/" },
+  { name: "Pickering", href: "/locations/pickering-basement-waterproofing/" }
+];
+
+// Toronto neighborhoods
+const torontoNeighborhoods = [
+  "North York", "Scarborough", "Etobicoke", "East York", 
+  "Downtown", "Midtown", "West End", "East End"
+];
+
+// Service coverage map data
+const coverageStats = [
+  { label: "Cities Served", value: "20+" },
+  { label: "Service Radius", value: "100 km" },
+  { label: "Response Time", value: "< 1 hour" },
+  { label: "Emergency 24/7", value: "Yes" }
+];
+---
+
+<MainLayout 
+  title="Service Areas | Waterproofing Services Across Toronto & GTA" 
+  description="Professional waterproofing services throughout Toronto, Mississauga, Brampton, Vaughan, and the Greater Toronto Area. Local experts, fast response, lifetime warranty."
+>
+  <!-- Hero Section -->
+  <Hero
+    title="Serving the Greater Toronto Area"
+    subtitle="Local waterproofing experts in your neighborhood"
+    description="Fast response times, local knowledge, and professional service across Toronto and the GTA"
+    badge="All GTA Locations"
+    alignment="center"
+    size="small"
+  />
+  
+  <!-- Coverage Stats -->
+  <Section spacing="small" background="muted">
+    <Grid columns={4} gap="small">
+      {coverageStats.map((stat) => (
+        <div class="text-center">
+          <p class="text-3xl font-bold text-primary">{stat.value}</p>
+          <p class="text-sm text-muted-foreground mt-1">{stat.label}</p>
+        </div>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Major Service Areas -->
+  <Section 
+    title="Major Service Areas" 
+    subtitle="Primary locations with dedicated local teams"
+    centered
+  >
+    <Grid columns={3}>
+      {majorAreas.map((area) => (
+        <AstroCard class="hover:shadow-lg transition-shadow">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <MapPin className="h-6 w-6 text-primary" client:load />
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold mb-2">{area.name}</h3>
+              <p class="text-muted-foreground text-sm mb-4">{area.description}</p>
+              <div class="flex gap-4 text-sm mb-4">
+                <div>
+                  <span class="font-semibold text-primary">{area.stats.projects}</span>
+                  <span class="text-muted-foreground"> projects</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-primary">{area.stats.response}</span>
+                  <span class="text-muted-foreground"> response</span>
+                </div>
+              </div>
+              <AstroButton href={area.href} variant="outline" size="sm" class="w-full">
+                View {area.name} Services
+                <ArrowRight className="h-4 w-4 ml-2" client:load />
+              </AstroButton>
+            </div>
+          </div>
+        </AstroCard>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Toronto Neighborhoods -->
+  <Section background="muted">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Toronto Neighborhoods We Serve</h2>
+      <p class="text-muted-foreground mb-8">
+        Complete coverage across all Toronto districts with local teams in each area
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {torontoNeighborhoods.map(neighborhood => (
+          <AstroBadge variant="secondary" size="lg">
+            <MapPin className="h-4 w-4 mr-1" client:load />
+            {neighborhood}
+          </AstroBadge>
+        ))}
+      </div>
+    </div>
+  </Section>
+  
+  <!-- Secondary Areas -->
+  <Section>
+    <h2 class="text-2xl font-bold text-center mb-8">Additional Service Areas</h2>
+    <Grid columns={3}>
+      {secondaryAreas.map((area) => (
+        <AstroCard class="text-center hover:shadow-md transition-shadow">
+          <MapPin className="h-8 w-8 text-primary mx-auto mb-3" client:load />
+          <h3 class="font-semibold mb-3">{area.name}</h3>
+          <AstroButton href={area.href} variant="ghost" size="sm">
+            View Details
+          </AstroButton>
+        </AstroCard>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Why Choose Local -->
+  <Section background="gradient" className="bg-gradient-to-br from-primary/5 to-secondary/5">
+    <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Why Choose Local Experts?</h2>
+        <div class="space-y-4">
+          <div class="flex gap-4">
+            <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" client:load />
+            <div>
+              <h3 class="font-semibold mb-1">Faster Response Times</h3>
+              <p class="text-muted-foreground">
+                Local teams mean we can reach you quickly, especially in emergencies
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <Users className="h-6 w-6 text-primary flex-shrink-0 mt-1" client:load />
+            <div>
+              <h3 class="font-semibold mb-1">Community Reputation</h3>
+              <p class="text-muted-foreground">
+                Years of serving your neighbors with quality workmanship
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <Shield className="h-6 w-6 text-primary flex-shrink-0 mt-1" client:load />
+            <div>
+              <h3 class="font-semibold mb-1">Local Knowledge</h3>
+              <p class="text-muted-foreground">
+                We understand local soil conditions, weather patterns, and building codes
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <Award className="h-6 w-6 text-primary flex-shrink-0 mt-1" client:load />
+            <div>
+              <h3 class="font-semibold mb-1">Trusted Service</h3>
+              <p class="text-muted-foreground">
+                Licensed, insured, and committed to your community
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <AstroCard class="bg-white/80 backdrop-blur">
+        <div class="text-center space-y-4">
+          <Map className="h-16 w-16 text-primary mx-auto" client:load />
+          <h3 class="text-2xl font-bold">Not Sure If We Service Your Area?</h3>
+          <p class="text-muted-foreground">
+            We cover all of the GTA and surrounding regions. Contact us to confirm service availability in your specific location.
+          </p>
+          <div class="pt-4 space-y-3">
+            <AstroButton href="/contact/" size="lg" class="w-full">
+              Check Service Availability
+            </AstroButton>
+            <AstroButton href="tel:437-545-0067" variant="outline" size="lg" class="w-full">
+              <Phone className="h-5 w-5 mr-2" client:load />
+              Call (437) 545-0067
+            </AstroButton>
+          </div>
+        </div>
+      </AstroCard>
+    </div>
+  </Section>
+  
+  <!-- Emergency Service CTA -->
+  <Section background="destructive" spacing="small">
+    <div class="text-center space-y-4">
+      <h2 class="text-3xl font-bold text-white">
+        24/7 Emergency Service Across the GTA
+      </h2>
+      <p class="text-white/90 text-lg max-w-2xl mx-auto">
+        Water damage emergency? We have teams on standby throughout the Greater Toronto Area
+      </p>
+      <div class="flex items-center justify-center gap-6 text-white/80 text-sm">
+        <div class="flex items-center gap-2">
+          <CheckCircle className="h-5 w-5" client:load />
+          <span>30-60 min response</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <CheckCircle className="h-5 w-5" client:load />
+          <span>24/7 availability</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <CheckCircle className="h-5 w-5" client:load />
+          <span>All GTA coverage</span>
+        </div>
+      </div>
+      <AstroButton 
+        href="tel:437-545-0067" 
+        size="lg"
+        class="bg-white text-destructive hover:bg-gray-100"
+      >
+        <Phone className="h-5 w-5" client:load />
+        Call Emergency Line Now
+      </AstroButton>
+    </div>
+  </Section>
+  
+  <!-- Final CTA -->
+  <Section spacing="large">
+    <div class="text-center space-y-6">
+      <h2 class="text-3xl font-bold">Find Your Local Waterproofing Expert</h2>
+      <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+        Get connected with your neighborhood team for fast, professional service
+      </p>
+      <AstroButton href="/contact/" size="lg" variant="secondary" class="gap-2">
+        Get Free Local Quote
+        <ArrowRight className="h-5 w-5" client:load />
+      </AstroButton>
+    </div>
+  </Section>
+</MainLayout>

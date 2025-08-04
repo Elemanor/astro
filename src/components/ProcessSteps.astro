@@ -1,0 +1,66 @@
+---
+// Process Steps Section from Hugo
+const steps = [
+  {
+    number: "01",
+    title: "Free Inspection & Assessment",
+    description: "Every project starts with listening. What are your basement goals? During consultation, we inspect inside and outside thoroughly, identify all existing issues, and discuss your plans. No sales pressure - just straightforward advice about what your basement needs."
+  },
+  {
+    number: "02",
+    title: "Clear Solutions & Transparent Pricing",
+    description: "We explain viable options clearly and provide detailed written estimates. Our quotes include clear pricing and note any factors that could affect final cost. The right solution depends on your specific situation, goals, and budget."
+  },
+  {
+    number: "03",
+    title: "Professional Execution & Warranty",
+    description: "Most waterproofing completes within a week. Underpinning typically finishes in under 5 weeks. We explain the work, stick to timelines, and keep disruption minimal. All work backed by comprehensive warranties."
+  }
+];
+---
+
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Image Section -->
+      <div class="order-2 lg:order-1">
+        <picture>
+          <source media="(max-width: 600px)" srcset="/pics/process/waterproofing.webp" />
+          <source media="(min-width: 601px)" srcset="/pics/process/waterproofing.webp" />
+          <img 
+            loading="lazy" 
+            decoding="async" 
+            src="/pics/process/waterproofing.webp" 
+            alt="DrySpace Waterproofing process" 
+            class="rounded-lg shadow-xl w-full"
+          />
+        </picture>
+      </div>
+
+      <!-- Content Section -->
+      <div class="order-1 lg:order-2">
+        <div class="mb-8">
+          <span class="text-blue-600 font-semibold uppercase tracking-wider">The Consultation Process</span>
+          <h2 class="text-4xl font-bold mt-2 mb-4">Understanding Your Needs</h2>
+          <div class="inline-flex items-center bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg font-semibold">
+            ⏱️ Fixed Timelines, Real Results
+          </div>
+        </div>
+
+        <ul class="space-y-6">
+          {steps.map((step) => (
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                {step.number}
+              </span>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold mb-2">{step.title}</h3>
+                <p class="text-gray-700">{step.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

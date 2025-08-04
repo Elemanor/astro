@@ -1,0 +1,255 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/load-bearing-wall-removal/
+// Migration date: 2025-08-04T15:14:30.019Z
+
+import ServicePageTemplateV2 from '../../templates/ServicePageTemplateV2.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "Load Bearing Wall Removal & Beam Installation",
+  serviceTitle: "Load Bearing Wall Removal Toronto | Structural Beam Installation",
+  serviceSubtitle: "Open Your Space Without Compromising Structure",
+  serviceDescription: "Transform cramped layouts into open concept living. Professional load bearing wall removal with engineered beam and post solutions. From kitchen openings to complete floor plans, we create the space you want safely. Professional engineering included.",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [
+    {
+      "label": "Our Structural Services",
+      "href": "#our-structural-services"
+    },
+    {
+      "label": "Service Areas",
+      "href": "#service-areas"
+    }
+  ],
+  
+  relatedServices: [
+    {
+      "url": "/services/structural-reinforcement",
+      "description": "Comprehensive structural support for your home",
+      "image": "/images/structural-reinforcement.jpg"
+    },
+    {
+      "url": "/services/wall-reinforcement",
+      "description": "Strengthen existing walls and structures",
+      "image": "/images/wall-reinforcement.jpg"
+    },
+    {
+      "url": "/services/foundation-construction",
+      "description": "New foundations and structural footings",
+      "image": "/images/foundation-construction.jpg"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "How do I know if my wall is load bearing?",
+      "answer": "Load bearing walls typically run perpendicular to floor joists, sit under walls on the floor above, or support the center of the house. However, only professional assessment can definitively determine if a wall is structural. We provide thorough evaluations before any work begins."
+    },
+    {
+      "question": "How long does load bearing wall removal take?",
+      "answer": "The actual structural work typically takes 2-3 days. However, the complete project timeline is 2-4 weeks including engineering, permits, and finishing work. Most disruption occurs during the 2-3 day installation period."
+    },
+    {
+      "question": "Do I need a permit to remove a load bearing wall?",
+      "answer": "Yes, removing any load bearing wall requires a building permit in Toronto. This includes engineered drawings and structural calculations. We handle the entire permit process including applications and inspections."
+    },
+    {
+      "question": "Can I live in my home during the work?",
+      "answer": "Yes, most clients stay in their homes. The actual removal and beam installation takes just 2-3 days with temporary supports in place. We maintain safe conditions and clean up daily to minimize disruption."
+    },
+    {
+      "question": "What's the difference between steel and wood beams?",
+      "answer": "Steel beams offer maximum strength with minimal size, ideal for long spans and flush ceilings. Engineered wood beams are more economical for moderate spans and easier to work with. We recommend based on your specific loads and preferences."
+    },
+    {
+      "question": "How much does it cost to remove a load bearing wall?",
+      "answer": "Basic 10-12 foot removals typically cost $5,000-10,000 including engineering, permits, beam, and installation. Longer spans or complex projects range $10,500-18,500. Additional costs may include footings, mechanical rerouting, and finishing."
+    },
+    {
+      "question": "Will removing a wall damage my home?",
+      "answer": "When done properly with engineering and temporary supports, wall removal doesn't damage your home. Poor execution can cause cracks, sagging, and structural failure. Professional installation ensures safety and prevents problems."
+    },
+    {
+      "question": "Can any load bearing wall be removed?",
+      "answer": "Most load bearing walls can be removed with proper beam installation. However, some situations make removal impractical or extremely expensive. Our engineers assess feasibility during consultation."
+    },
+    {
+      "question": "What about electrical and plumbing in the wall?",
+      "answer": "We coordinate with licensed trades to relocate any utilities in the wall. This includes electrical wiring, plumbing pipes, HVAC ducts, and gas lines. Proper permits cover all work."
+    },
+    {
+      "question": "Do I need posts with the beam?",
+      "answer": "Yes, beams require proper support at each end, typically with posts that transfer loads to footings below. We strategically place posts to minimize visual impact while ensuring structural integrity."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = `<h2 id="our-structural-services">Our Structural Services</h2>
+<p>✓ Professional Engineering  
+✓ Beam & Post Installation  
+✓ Permit Management  
+✓ Minimal Disruption</p>
+
+<h2 id="service-areas">Service Areas</h2>
+<p><strong>Service Areas:</strong> Toronto, North York, Scarborough, Etobicoke, East York, York, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and surrounding areas.</p>
+
+<p><em>Load bearing wall removal requires professional engineering, proper permits, and experienced installation. Don't risk your home's structure - choose qualified contractors who understand the complexities.</em></p>`;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {
+  "schema": {
+    "type": "Service",
+    "name": "Load Bearing Wall Removal Services",
+    "provider": {
+      "type": "Organization",
+      "name": "DrySpace Waterproofing"
+    },
+    "areaServed": [
+      "Toronto",
+      "North York",
+      "Scarborough",
+      "Etobicoke",
+      "East York",
+      "York",
+      "Mississauga",
+      "Brampton",
+      "Vaughan",
+      "Richmond Hill",
+      "Markham"
+    ],
+    "serviceType": [
+      "Load Bearing Wall Removal",
+      "Structural Beam Installation",
+      "Open Concept Renovation",
+      "Structural Engineering",
+      "Beam and Post Installation"
+    ],
+    "offers": [
+      "Professional Engineering",
+      "Permit Management",
+      "Free Consultation",
+      "Licensed & Insured",
+      "Warranty Coverage"
+    ]
+  }
+};
+---
+
+<ServicePageTemplateV2 {...serviceData} mainContent={mainContent} />
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

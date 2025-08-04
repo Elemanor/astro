@@ -1,0 +1,104 @@
+---
+import HeroButtons from './HeroButtons';
+// Complete Hero Section from Hugo
+---
+
+<section class="hero bg-gradient-to-b from-gray-50 to-white">
+  <div class="container mx-auto px-4 py-12 lg:py-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Content Section -->
+      <div class="space-y-8">
+        <h1 class="text-4xl lg:text-5xl font-bold leading-tight">
+          Toronto's Basement Specialists<br>
+          <span class="text-red-600">Solving Foundation Problems Since 2014</span>
+        </h1>
+
+        <p class="text-lg text-gray-700">
+          Whether your basement needs waterproofing, underpinning, or foundation repair, you've found Toronto's most trusted contractor. One call solves your basement problems permanently.
+        </p>
+
+        <!-- Problems Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-start space-x-3 bg-white p-4 rounded-lg shadow-sm">
+            <div class="text-blue-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">
+                <a href="/services/foundation-crack-repair/" class="hover:text-blue-600">Wall Cracks</a>
+              </h3>
+              <p class="text-sm text-gray-600">Horizontal, stair-step, vertical</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3 bg-white p-4 rounded-lg shadow-sm">
+            <div class="text-orange-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l5.59-5.59L19 10l-7 7z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">Sinking/Settling</h3>
+              <p class="text-sm text-gray-600">Uneven floors, gaps</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3 bg-white p-4 rounded-lg shadow-sm">
+            <div class="text-red-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">Bowing Walls</h3>
+              <p class="text-sm text-gray-600">Inward movement, bulging</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3 bg-white p-4 rounded-lg shadow-sm">
+            <div class="text-blue-500">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64s-.78-4.08-2.34-5.64z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">Water Damage</h3>
+              <p class="text-sm text-gray-600">Flooding, seepage, mold</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <HeroButtons client:load />
+      </div>
+
+      <!-- Visual Section -->
+      <div class="space-y-4">
+        <div class="relative">
+          <img 
+            src="/pics/hero/dryspace_hero_desktop.jpg" 
+            alt="Foundation repair work in progress"
+            class="rounded-lg shadow-xl w-full"
+          />
+          <div class="absolute top-4 right-4 space-y-2">
+            <div class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+              ⚠️ Severe Damage
+            </div>
+            <div class="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+              ⚡ Fast Response
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 gap-2">
+          <img src="/images/hero-damages/crack.webp" alt="Foundation crack" class="rounded shadow-md hover:scale-105 transition-transform cursor-pointer" />
+          <img src="/images/hero-damages/spalling.webp" alt="Wall damage" class="rounded shadow-md hover:scale-105 transition-transform cursor-pointer" />
+          <img src="/images/hero-damages/wetcove.webp" alt="Basement leak" class="rounded shadow-md hover:scale-105 transition-transform cursor-pointer" />
+          <img src="/images/hero-damages/Efflorescence.webp" alt="Structural damage" class="rounded shadow-md hover:scale-105 transition-transform cursor-pointer" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

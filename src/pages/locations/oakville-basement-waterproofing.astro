@@ -1,0 +1,311 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/oakville-basement-waterproofing.md
+// Migration date: 2025-08-04T15:30:57.876Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Oakville area data
+const oakvilleData = {
+  // Location Info
+  cityName: "Oakville",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Oakville Basement Waterproofing - Luxury Home Protection Experts",
+  description: "Premium basement waterproofing in Oakville. Specializing in lakefront properties, luxury estates, wine cellars. Discreet professional service. Call (437) 545-0067",
+  keywords: [
+    "oakville basement waterproofing",
+    "basement waterproofing oakville",
+    "oakville foundation repair",
+    "luxury waterproofing oakville",
+    "lakefront waterproofing"
+  ],
+  
+  // Stats
+  population: "211,382",
+  homesServed: "500+",
+  yearsInArea: "15+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "785mm",
+    freezeThawCycles: "30-35/year",
+    floodRisk: "Low (except lakefront)",
+    snowfall: "108cm",
+    avgHumidity: "78%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Old Oakville",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Lorne Park",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Bronte",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Glen Abbey",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Morrison",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Eastlake",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Lakefront Property Expertise",
+      "challenges": [
+        "**Fluctuating lake levels** affecting water tables",
+        "**Sandy soil conditions** allowing water movement",
+        "**Hydrostatic pressure** from lake proximity",
+        "**Storm surge** considerations",
+        "**Year-round high moisture** levels"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Old Oakville Heritage Estate",
+      "challenges": [
+        "* 1920s mansion, limestone foundation",
+        "*"
+      ],
+      "solutions": [
+        "* Preservation-focused interior upgrade",
+        "*Investment:** $48,000",
+        "*Result:** Modern protection, heritage maintained"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Glen Abbey Golf Course Estate",
+      "challenges": [
+        "* Ravine runoff, theater protection",
+        "*"
+      ],
+      "solutions": [
+        "* Engineered exterior with landscape integration",
+        "*Investment:** $62,000",
+        "*Result:** Dry luxury spaces, grounds enhanced"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "Local Soil Conditions",
+      "description": "Oakville's soil composition creates unique foundation challenges",
+      "solution": "Soil-specific waterproofing systems and drainage solutions",
+      "icon": "🏔️"
+    },
+    {
+      "issue": "Weather Extremes",
+      "description": "Freeze-thaw cycles and heavy rainfall affect basements",
+      "solution": "Climate-adapted waterproofing with proper drainage",
+      "icon": "🌧️"
+    },
+    {
+      "issue": "Urban Development",
+      "description": "Changes in local drainage patterns from development",
+      "solution": "Modern drainage systems to handle increased water flow",
+      "icon": "🏗️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$3,000",
+      "max": "$8,000"
+    },
+    "exterior": {
+      "min": "$40,000",
+      "max": "$100,000"
+    },
+    "emergency": {
+      "min": "$20,000",
+      "max": "$60,000"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "Halton Region Basement Flooding Prevention Subsidy",
+      "amount": "Up to $3,000",
+      "eligibility": "Backwater valves, sump pumps, downspout disconnection",
+      "deadline": "Apply before September 30 annually"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$3,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$40,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$20,000",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Oakville?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Oakville homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Oakville?",
+      "answer": "We maintain crews throughout Oakville for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Oakville?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Oakville building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Oakville",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "60 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/images/about-foundation-repair-desktop.jpg" 
+    alt="Foundation repair experts at work"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Trusted foundation repair specialists
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/work/exterior-waterproofing-membrane.webp" 
+    alt="Waterproofing membrane being applied to foundation"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    High-quality waterproofing membrane installation
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...oakvilleData} />

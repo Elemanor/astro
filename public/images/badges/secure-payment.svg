@@ -1,0 +1,5 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" fill="#F3F4F6" rx="20" stroke="#E5E7EB" stroke-width="2"/>
+  <path d="M20 10 L20 15 C20 22 24 28 30 30 C36 28 40 22 40 15 L40 10 L30 8 Z" fill="#10B981"/>
+  <text x="65" y="25" font-family="Arial, sans-serif" font-size="12" fill="#374151">Secure Payment</text>
+</svg>

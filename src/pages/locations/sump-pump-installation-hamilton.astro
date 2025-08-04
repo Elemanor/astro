@@ -1,0 +1,233 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/sump-pump-installation-hamilton.md
+// Migration date: 2025-08-04T15:30:57.996Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Unknown City area data
+const hamiltonData = {
+  // Location Info
+  cityName: "Hamilton",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Sump Pump Installation Hamilton | Expert Service & Emergency Repairs",
+  description: "Professional sump pump installation in Hamilton. Emergency repairs, backup systems, Hamilton Mountain specialists. Licensed plumbers & waterproofing experts. Call (416) 276-1570.",
+  keywords: [
+    "sump pump installation hamilton",
+    "hamilton sump pump repair",
+    "sump pump hamilton",
+    "basement flooding prevention hamilton",
+    "hamilton emergency sump pump"
+  ],
+  
+  // Stats
+  population: "569,353",
+  homesServed: "500+",
+  yearsInArea: "15+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "910mm",
+    freezeThawCycles: "40-45/year",
+    floodRisk: "High (escarpment runoff)",
+    snowfall: "113cm",
+    avgHumidity: "77%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Pedestal Sump Pumps",
+      "challenges": [
+        "Local water issues",
+        "Foundation challenges"
+      ],
+      "solutions": [
+        "*",
+        "Motor above water level for easier maintenance",
+        "Lower initial"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Hamilton Mountain Installations",
+      "challenges": [
+        "*",
+        "Surface water runoff from uphill properties",
+        "Rocky soil conditions affecting pit excavation",
+        "Elevation changes creating complex drainage patterns",
+        "Access challenges for equipment and materials",
+        "*Mountain Installation"
+      ],
+      "solutions": [
+        "*",
+        "**Surface drainage integration** with sump systems",
+        "**Rock excavation expertise** for proper pit installation",
+        "**Slope management** preventing water accumulation",
+        "**Specialized equipment** for difficult access properties"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Making Sump Pump Installation Affordable",
+      "challenges": [
+        "Local water issues",
+        "Foundation challenges"
+      ],
+      "solutions": [
+        "*",
+        "**Extended payment plans** up to 36 months",
+        "**Seasonal payment options** aligned with installation timing",
+        "**Insurance claim assistance** for storm damage installations",
+        "**Emergency service financing** for urgent installations"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "Local Soil Conditions",
+      "description": "Unknown City's soil composition creates unique foundation challenges",
+      "solution": "Soil-specific waterproofing systems and drainage solutions",
+      "icon": "🏔️"
+    },
+    {
+      "issue": "Weather Extremes",
+      "description": "Freeze-thaw cycles and heavy rainfall affect basements",
+      "solution": "Climate-adapted waterproofing with proper drainage",
+      "icon": "🌧️"
+    },
+    {
+      "issue": "Urban Development",
+      "description": "Changes in local drainage patterns from development",
+      "solution": "Modern drainage systems to handle increased water flow",
+      "icon": "🏗️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$3,000",
+      "max": "$8,000"
+    },
+    "exterior": {
+      "min": "$10,000",
+      "max": "$25,000"
+    },
+    "emergency": {
+      "min": "$1,500",
+      "max": "$2,500"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "Hamilton Protective Plumbing Program",
+      "amount": "Up to $2,000",
+      "eligibility": "Backwater valve and sump pump installation",
+      "deadline": "Check city website for availability"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$3,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$10,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$1,500",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Unknown City?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Unknown City homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Unknown City?",
+      "answer": "We maintain crews throughout Unknown City for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Unknown City?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Unknown City building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Unknown City",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "60 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/work/underpinning.webp" 
+    alt="Foundation underpinning for structural support"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Underpinning strengthens your foundation
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/images/hero-damages/wetcove.webp" 
+    alt="Wet basement damage at wall-floor joint"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Common wet basement problem areas
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...hamiltonData} />

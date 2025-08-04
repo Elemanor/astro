@@ -1,0 +1,94 @@
+---
+// Dynamic service page that applies template to all service markdown files
+import { getCollection } from 'astro:content';
+import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+
+// Get all service entries
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  
+  return services.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { data } = entry;
+
+// Helper function to generate TOC from markdown headings
+function generateTOC(content: string) {
+  const headingRegex = /^##\s+(.+)$/gm;
+  const toc = [];
+  let match;
+  
+  while ((match = headingRegex.exec(content)) !== null) {
+    const heading = match[1];
+    const id = heading.toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-')      // Replace spaces with hyphens
+      .trim();
+    
+    toc.push({
+      label: heading,
+      href: `#${id}`
+    });
+  }
+  
+  return toc;
+}
+
+// Extract data from frontmatter with defaults
+const serviceName = data.title || "Professional Service";
+const serviceTitle = data.meta_title || `${data.title} Toronto | DrySpace Waterproofing`;
+const serviceSubtitle = data.tagline || data.hero?.subtitle || "Professional Waterproofing & Foundation Solutions";
+const serviceDescription = data.description || data.excerpt || "";
+
+// Hero configuration
+const heroBadge = data.hero?.badge || data.badge;
+const heroImage = data.hero?.image || data.image;
+const heroFeatures = data.hero?.features || data.features || [];
+
+// Pricing information
+const startingPrice = data.pricing?.starting_price || data.starting_price;
+const priceRange = data.pricing?.price_range || data.price_range;
+
+// Process steps
+const processSteps = data.process_steps || data.process || [];
+
+// Benefits
+const benefits = data.benefits || [];
+
+// Related services
+const relatedServices = data.related_services?.map(service => ({
+  title: service.title,
+  url: service.url || `/services/${service.slug || service.title.toLowerCase().replace(/\s+/g, '-')}/`,
+  description: service.description || "",
+  image: service.image
+})) || [];
+
+// FAQs
+const serviceFaqs = data.faq || data.faqs || [];
+---
+
+<ServicePageTemplateV3
+  serviceName={serviceName}
+  serviceTitle={serviceTitle}
+  serviceSubtitle={serviceSubtitle}
+  serviceDescription={serviceDescription}
+  heroBadge={heroBadge}
+  heroImage={heroImage}
+  heroFeatures={heroFeatures}
+  startingPrice={startingPrice}
+  priceRange={priceRange}
+  processSteps={processSteps}
+  benefits={benefits}
+  relatedServices={relatedServices}
+  serviceFaqs={serviceFaqs}
+>
+  <Fragment slot="mainContent">
+    <Content />
+  </Fragment>
+</ServicePageTemplateV3>
+

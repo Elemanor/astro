@@ -1,0 +1,1820 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WhyChooseUs from '../../components/WhyChooseUs.astro';
+import ReviewsSection from '../../components/ReviewsSection.astro';
+import EmergencyCTA from '../../components/EmergencyCTA.astro';
+import TrustSignals from '../../components/TrustSignals.astro';
+
+// Service data
+const serviceName = "Sump Pump Installation";
+const serviceTitle = "Sump Pump Guide Toronto | Installation, Repair & Maintenance Experts";
+const serviceSubtitle = "Professional Sump Pump Installation & Emergency Repair Service";
+const serviceDescription = "Complete sump pump guide for Toronto homeowners. Learn types, installation, maintenance + get professional service. 25+ years experience, 3,500+ installations. Free assessment - (437) 545-0067";
+const startingPrice = "$1,200";
+const priceRange = "$1,200 - $4,500";
+
+// Related services
+const relatedServices = [
+  {
+    title: "Interior Waterproofing Systems",
+    url: "/services/interior-waterproofing",
+    description: "Complete interior drainage systems that channel water directly to your sump pump for maximum flood protection",
+    image: "/pics/work/interior-waterproofing.webp"
+  },
+  {
+    title: "Emergency Waterproofing",
+    url: "/services/emergency-waterproofing",
+    description: "24/7 emergency sump pump replacement and basement flooding response throughout Toronto",
+    image: "/pics/work/sump-pump.webp"
+  },
+  {
+    title: "French Drain Installation",
+    url: "/services/french-drain-installation",
+    description: "Professional French drain systems that work with sump pumps for complete water management",
+    image: "/pics/work/exterior-waterproofing-membrane.webp"
+  }
+];
+
+// All 18 FAQs
+const serviceFaqs = [
+  {
+    question: "What exactly is a sump pump and how does it work?",
+    answer: "A sump pump is an automatic water removal device installed in your basement's lowest point (sump pit). When groundwater or surface water enters the pit, a float switch activates the pump motor, which forces water up through discharge pipes and away from your foundation. The system cycles automatically - pumping when water levels rise, shutting off when levels drop. It's your home's first line of defense against basement flooding, operating 24/7 to prevent water damage."
+  },
+  {
+    question: "What are the main types of sump pumps available?",
+    answer: "There are four main types - 1) Submersible pumps (most popular) - sit underwater in the pit, quieter and more efficient. 2) Pedestal pumps - motor above water, less expensive but noisier. 3) Battery backup pumps - activate during power outages when flooding risk is highest. 4) Water-powered backup pumps - use city water pressure, no electricity needed. Most Toronto homes benefit from submersible primary pumps with battery backup for complete protection."
+  },
+  {
+    question: "How do I know if I need a sump pump in my Toronto home?",
+    answer: "Key warning signs include - water stains or dampness in basement, musty odors, white chalky deposits (efflorescence) on walls, neighbors having sump pumps, living in high-risk areas (The Beaches, Don Valley, Etobicoke South), planning basement renovations, or insurance requirements. Toronto's clay soil, high water table, and extreme weather make sump pumps essential for most properties. Even minor moisture indicates groundwater pressure that will worsen over time."
+  },
+  {
+    question: "How much does sump pump installation cost in Toronto?",
+    answer: "Professional sump pump installation in Toronto ranges from $1,200-$4,500 depending on system complexity. Basic installations start around $1,200, standard systems with battery backup cost $2,800-$3,500, and premium systems for challenging conditions can reach $4,500. We provide transparent, no-surprise pricing with detailed written estimates. Emergency installations cost 20-30% more due to urgency. Financing options available with 0% interest for 12 months."
+  },
+  {
+    question: "Do I really need a battery backup sump pump in Toronto?",
+    answer: "Absolutely yes if you have a finished basement or would suffer significant damage from flooding. Toronto's storm patterns often cause power outages exactly when pumps are needed most. Ice storms, summer thunderstorms, and grid overload during peak demand create power failures during flooding events. Battery backup systems automatically activate during outages, providing 4-8 hours of pumping capacity. Many Toronto insurance companies now require backup systems for basement coverage."
+  },
+  {
+    question: "What maintenance does a sump pump need?",
+    answer: "Sump pumps need monthly testing during wet seasons and annual professional maintenance. Monthly - pour water in pit to test operation, check discharge flow, verify backup battery status. Annual professional service includes pump cleaning, float switch testing, check valve inspection, battery replacement, and discharge line verification. Our maintenance customers experience 90% fewer emergency failures and their pumps last 40% longer."
+  },
+  {
+    question: "Can I install a sump pump myself or do I need a professional?",
+    answer: "While DIY installation is possible, 90% of sump pump failures result from improper installation. Professional installation ensures correct pump sizing, optimal pit placement, code-compliant electrical work, and proper discharge routing. Toronto building codes require permits for most installations. Our licensed technicians guarantee proper installation with lifetime warranty on workmanship. DIY mistakes often cost more to fix than professional installation would have cost initially."
+  },
+  {
+    question: "How long do sump pumps last in Toronto's climate?",
+    answer: "Quality sump pumps last 7-10 years with proper maintenance in Toronto's freeze-thaw climate. Premium cast iron pumps can last 10-15 years. Cheaper pumps typically fail in 3-5 years. Toronto's clay soil and seasonal water variations affect pump lifespan - pumps that run constantly wear faster. Our maintenance program extends pump life by 40% through preventive care and early problem detection."
+  },
+  {
+    question: "What happens during a sump pump inspection?",
+    answer: "Our comprehensive sump pump inspection includes - visual examination of pump and pit condition, float switch operation testing, check valve functionality verification, discharge line flow measurement, electrical connection safety check, battery backup system testing (if present), water volume capacity assessment, and maintenance recommendations. We provide written reports with photos documenting any issues found. Inspections take 30-45 minutes and include free estimates for any needed repairs."
+  },
+  {
+    question: "Can a sump pump handle sewage backup?",
+    answer: "No, standard sump pumps are designed only for groundwater and cannot handle sewage. Sewage contains solids and bacteria that will damage regular pumps and create health hazards. For sewage backup protection, you need a separate sewage ejector pump or backwater valve installation. Many Toronto homes need both systems - sump pumps for groundwater and backwater valves for sewage protection. We install both systems and can assess your specific needs."
+  },
+  {
+    question: "Where does sump pump water discharge go?",
+    answer: "In Toronto, sump pump discharge must follow strict municipal bylaws. Water typically discharges to - your property's surface (lawn or garden) at least 6 feet from foundation, storm sewer connections (where permitted with proper permits), or drainage swales leading away from your home. Discharge to sanitary sewers is illegal and subject to heavy fines. We ensure your installation meets all City of Toronto requirements and obtain necessary permits."
+  },
+  {
+    question: "How loud are sump pumps when running?",
+    answer: "Noise levels vary by pump type. Submersible pumps are quietest (40-50 decibels, like a quiet library) because water muffles motor noise. Pedestal pumps are louder (60-70 decibels, like normal conversation) since the motor sits above water. Quality pumps with proper installation minimize vibration noise. Battery backup pumps may be slightly louder but only run during emergencies. We recommend submersible pumps for finished basements where noise matters."
+  },
+  {
+    question: "What size sump pump do I need for my Toronto home?",
+    answer: "Pump sizing depends on multiple factors including basement size, water table depth, soil type, drainage area, and historical water volume. Most Toronto homes need 1/3 HP pumps (2,200-2,500 GPH capacity) for average conditions. Larger homes or high water tables may require 1/2 HP pumps (3,000-4,000 GPH). We never guess - our free assessment includes precise calculations to ensure your pump handles peak water flow with 25% safety margin."
+  },
+  {
+    question: "Do sump pumps increase home value?",
+    answer: "Yes, professionally installed sump pumps increase Toronto home values by protecting against water damage and demonstrating proactive maintenance. Real estate data shows homes with sump pumps sell faster and for 2-5% more than comparable homes without. Buyers especially value battery backup systems and maintenance records. Many buyers now require sump pump installation as a condition of sale. The investment pays for itself through increased value and insurance savings."
+  },
+  {
+    question: "What are signs my sump pump is failing?",
+    answer: "Warning signs of sump pump failure include - pump running constantly without moving water, unusual noises (grinding, rattling, or gurgling), visible rust or corrosion on pump housing, pump not activating when water enters pit, reduced water flow from discharge pipe, frequent cycling on and off, pump age exceeding 7 years, or electrical burning smell. Any of these signs require immediate professional inspection to prevent flooding. We offer free emergency assessments."
+  },
+  {
+    question: "Does homeowner's insurance cover sump pump installation?",
+    answer: "Most insurance policies don't cover sump pump installation costs, but having one can significantly reduce premiums and ensure flood damage coverage. Many Toronto insurers now offer 5-15% discounts for homes with professionally installed sump pumps, especially with battery backup. Some policies require sump pumps for basement coverage. We provide installation certificates and documentation needed for insurance claims. Check your specific policy or contact your broker for details."
+  },
+  {
+    question: "Can sump pumps prevent mold growth?",
+    answer: "Yes, sump pumps are crucial for mold prevention by eliminating the moisture mold needs to grow. By removing water before it enters your basement, sump pumps maintain humidity below 50% - the threshold for mold growth. This prevents the musty odors, health issues, and expensive remediation associated with mold. Combined with proper ventilation and dehumidification, sump pumps create an environment where mold cannot thrive, protecting your family's health and home value."
+  },
+  {
+    question: "What's included in your sump pump warranty?",
+    answer: "Our comprehensive warranty package includes - lifetime warranty on all installation workmanship (transferable to new owners), 10-year warranty on premium pump components, 5-year warranty on battery backup systems, 2-year warranty on electrical components, free first-year maintenance check, and 24/7 emergency support. Warranty covers all defects in materials and workmanship. Regular maintenance keeps warranty valid. We handle all warranty claims directly - no dealing with manufacturers."
+  }
+];
+---
+
+<BaseLayout title={serviceName + " Toronto | Professional Installation | DrySpace"} description={serviceDescription}>
+  <Header />
+  
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li aria-current="page">Sump Pump Installation</li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Service Hero Section -->
+  <section class="service-hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">{serviceTitle}</h1>
+        <p class="hero-subtitle">{serviceSubtitle}</p>
+        <p class="hero-description">{serviceDescription}</p>
+        
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-value">{startingPrice}</span>
+            <span class="stat-label">Starting Price</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">3,500+</span>
+            <span class="stat-label">Installations</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">25+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">Lifetime</span>
+            <span class="stat-label">Warranty</span>
+          </div>
+        </div>
+        
+        <div class="hero-cta">
+          <a href="/quote/" class="btn btn-primary">Get Free Quote</a>
+          <a href="tel:4375450067" class="btn btn-outline">📞 (437) 545-0067</a>
+        </div>
+        
+        <div class="trust-badges">
+          <span class="badge">✓ Free Assessment</span>
+          <span class="badge">✓ Licensed Plumbers</span>
+          <span class="badge">✓ Same Day Service</span>
+          <span class="badge">✓ 24/7 Emergency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table of Contents -->
+  <section class="table-of-contents">
+    <div class="container">
+      <div class="toc-card">
+        <h2>What's Covered in This Complete Guide</h2>
+        <ul>
+          <li><a href="#experts">Toronto's #1 Sump Pump Installation Experts</a></li>
+          <li><a href="#why-toronto">Why Toronto Homes Need Professional Sump Pump Installation</a></li>
+          <li><a href="#installation-process">Our Proven 7-Step Installation Process</a></li>
+          <li><a href="#pump-types">Types of Sump Pumps We Install</a></li>
+          <li><a href="#warning-signs">10 Warning Signs You Need a Sump Pump</a></li>
+          <li><a href="#emergency-service">24/7 Emergency Sump Pump Replacement</a></li>
+          <li><a href="#common-problems">Common Problems & Solutions</a></li>
+          <li><a href="#maintenance">Sump Pump Maintenance Guide</a></li>
+          <li><a href="#water-management">Complete Water Management Systems</a></li>
+          <li><a href="#buying-guide">Sump Pump Buying Guide</a></li>
+          <li><a href="#pricing">Toronto Installation Pricing</a></li>
+          <li><a href="#choose-system">How to Choose the Perfect System</a></li>
+          <li><a href="#emergency-prep">Emergency Preparedness</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details Section - All 13 Sections -->
+  <section class="service-details">
+    <div class="container">
+      <div class="content-grid">
+        <div class="main-content">
+          <!-- Section 1: Toronto's #1 Experts -->
+          <h2 id="experts">Toronto's #1 Sump Pump Installation Experts - 25+ Years Experience</h2>
+          <p><strong>Why 2,800+ Toronto homeowners trust DrySpace for sump pump installation</strong></p>
+          
+          <p>When basement flooding threatens your Toronto home, a professionally installed sump pump is your first and most critical line of defense. But here's what most homeowners don't realize - <strong>90% of sump pump failures are due to improper installation, not equipment failure.</strong></p>
+          
+          <p>Since 1999, we've installed over 3,500 sump pump systems across the Greater Toronto Area. From the high water tables in Etobicoke's lakefront neighborhoods to the spring flood zones near the Don Valley, we understand Toronto's unique water challenges better than anyone.</p>
+          
+          <div class="service-features">
+            <h3>Our Complete Sump Pump Installation Services</h3>
+            <ul>
+              <li>✓ <strong>Professional system design</strong> - Custom-sized for your specific water volume</li>
+              <li>✓ <strong>Primary & backup pump installation</strong> - Dual protection when you need it most</li>
+              <li>✓ <strong>Battery backup systems</strong> - Operates during power outages (when flooding is most likely)</li>
+              <li>✓ <strong>Proper discharge routing</strong> - Code-compliant drainage away from your foundation</li>
+              <li>✓ <strong>Sealed pit installation</strong> - Prevents odors, moisture, and radon infiltration</li>
+              <li>✓ <strong>24/7 emergency replacement</strong> - Same-day service when your pump fails</li>
+              <li>✓ <strong>Annual maintenance programs</strong> - Preventive care to avoid emergency situations</li>
+              <li>✓ <strong>Integration with waterproofing</strong> - Complete basement water management systems</li>
+            </ul>
+          </div>
+          
+          <div class="installation-includes">
+            <h3>Every DrySpace sump pump installation includes</h3>
+            <ul>
+              <li><strong>Free on-site assessment</strong> - We calculate your exact water volume needs</li>
+              <li><strong>Licensed technician installation</strong> - All work meets Ontario Building Code</li>
+              <li><strong>Lifetime warranty on workmanship</strong> - Transferable to future homeowners</li>
+              <li><strong>10-year pump warranty</strong> - Premium components that last</li>
+              <li><strong>24/7 emergency support</strong> - We're here when you need us most</li>
+            </ul>
+          </div>
+
+          <!-- Section 2: Why Toronto Needs Sump Pumps -->
+          <h2 id="why-toronto">Why Toronto Homes NEED Professional Sump Pump Installation</h2>
+          <p><strong>Toronto's Unique Water Challenges Make Sump Pumps Essential</strong></p>
+          
+          <h3>High Water Tables Throughout the GTA</h3>
+          <p>Neighborhoods like The Beaches, Long Branch, and parts of Mississauga sit on water tables just 3-6 feet below ground. During spring thaw and heavy rains, this groundwater pushes against your foundation with tremendous force. Without a properly sized sump pump, hydrostatic pressure will find every crack and joint in your foundation.</p>
+          
+          <h3>Clay Soil = Natural Water Bowl</h3>
+          <p>Toronto's notorious clay soil is both a blessing and a curse. While it provides excellent foundation support, it acts like an impermeable bowl around your home. Rain and snowmelt can't drain naturally, creating persistent moisture problems that only worsen over time. Professional sump pump installation is the only reliable solution to manage this trapped water.</p>
+          
+          <h3>Extreme Weather is the New Normal</h3>
+          <p>Climate change has intensified Toronto's weather patterns:</p>
+          <ul>
+            <li><strong>Summer storms</strong> now regularly dump 50mm+ of rain in under an hour</li>
+            <li><strong>Spring thaws</strong> release massive volumes of water in days, not weeks</li>
+            <li><strong>Flash flooding</strong> occurs even in traditionally "safe" neighborhoods</li>
+            <li><strong>Urban heat island effect</strong> increases localized storm intensity</li>
+          </ul>
+          
+          <h3>Aging Infrastructure Can't Keep Up</h3>
+          <p>Toronto's storm sewer system was designed for the city of 1960, not today's mega-city. Combined sewers in older neighborhoods regularly overflow during heavy rains. While the city upgrades infrastructure, homeowners need independent protection NOW.</p>
+          
+          <h3>Insurance Requirements Are Changing</h3>
+          <p>Many Toronto insurance companies now require:</p>
+          <ul>
+            <li>Proof of functioning sump pump for basement coverage</li>
+            <li>Annual maintenance records for claims processing</li>
+            <li>Battery backup systems for full protection</li>
+            <li>Professional installation certificates</li>
+          </ul>
+          
+          <div class="cost-warning">
+            <h3>The Cost of Inaction</h3>
+            <p>We've seen too many Toronto families face:</p>
+            <ul>
+              <li>$15,000-$50,000 in flood damage cleanup</li>
+              <li>$5,000-$15,000 in mold remediation costs</li>
+              <li>Months in temporary housing during repairs</li>
+              <li>Lost family heirlooms and irreplaceable items</li>
+              <li>Decreased property values from flood history</li>
+            </ul>
+            <p class="highlight">A professional sump pump installation costing $2,000-$4,000 prevents ALL of these disasters.</p>
+          </div>
+
+          <!-- Section 3: Installation Process -->
+          <h2 id="installation-process">Our Proven 7-Step Sump Pump Installation Process</h2>
+          <p><strong>Why Professional Installation Makes All the Difference</strong></p>
+          
+          <p>After 25+ years and 3,500+ installations, we've perfected our sump pump installation process. Here's exactly what happens when you choose DrySpace:</p>
+          
+          <div class="process-steps">
+            <div class="step">
+              <h3>Step 1 - Comprehensive Site Assessment (FREE)</h3>
+              <p>Our licensed technicians perform detailed evaluation:</p>
+              <ul>
+                <li><strong>Water volume calculations</strong> - We measure actual flow rates during wet conditions</li>
+                <li><strong>Soil analysis</strong> - Clay content affects drainage and pit design</li>
+                <li><strong>Foundation inspection</strong> - Identify potential water entry points</li>
+                <li><strong>Electrical assessment</strong> - Ensure adequate power for pump and backup systems</li>
+                <li><strong>Discharge planning</strong> - Map optimal routing to comply with Toronto bylaws</li>
+                <li><strong>Budget consultation</strong> - Transparent pricing with multiple options</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 2 - Permit Acquisition & Planning</h3>
+              <p>We handle all bureaucracy:</p>
+              <ul>
+                <li>Building permit applications</li>
+                <li>Electrical permit coordination</li>
+                <li>City of Toronto discharge approvals</li>
+                <li>Utility locates and marking</li>
+                <li>Material ordering and scheduling</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 3 - Premium Component Selection</h3>
+              <p>We use only the highest quality materials:</p>
+              <ul>
+                <li><strong>Reinforced polymer pits</strong> - Won't crack or shift like cheap alternatives</li>
+                <li><strong>Cast iron or stainless steel pumps</strong> - Sized 20% above calculated needs</li>
+                <li><strong>Professional check valves</strong> - Prevent backflow and water hammer</li>
+                <li><strong>Schedule 40 PVC discharge pipes</strong> - Rigid pipes that won't collapse</li>
+                <li><strong>GFCI electrical connections</strong> - Code-compliant safety features</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 4 - Expert Installation</h3>
+              <p>Our certified technicians ensure reliability:</p>
+              <ul>
+                <li><strong>Precise pit excavation</strong> - Laser-level accuracy for proper drainage</li>
+                <li><strong>Proper pit depth</strong> - Optimized for your specific pump cycling</li>
+                <li><strong>Secure pump mounting</strong> - Prevents vibration and premature wear</li>
+                <li><strong>Professional electrical work</strong> - Licensed electricians handle all connections</li>
+                <li><strong>Freeze-resistant discharge</strong> - Prevents winter blockages</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 5 - Battery Backup Integration</h3>
+              <p>Essential protection during storms (when power fails most):</p>
+              <ul>
+                <li><strong>Marine-grade batteries</strong> - Deep cycle batteries that last</li>
+                <li><strong>Automatic switching</strong> - Seamless transition during outages</li>
+                <li><strong>High-capacity pumping</strong> - 4-8 hours of continuous operation</li>
+                <li><strong>Status monitoring</strong> - Audible alarms and indicator lights</li>
+                <li><strong>Annual replacement program</strong> - We handle all maintenance</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 6 - Complete System Testing</h3>
+              <p>We don't leave until everything works perfectly:</p>
+              <ul>
+                <li><strong>Primary pump testing</strong> - Multiple cycling under load</li>
+                <li><strong>Backup system verification</strong> - Power interruption simulation</li>
+                <li><strong>Discharge flow confirmation</strong> - Proper drainage away from foundation</li>
+                <li><strong>Electrical safety testing</strong> - GFCI and grounding verification</li>
+                <li><strong>Customer education</strong> - We show you how everything works</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 7 - Ongoing Support & Maintenance</h3>
+              <p>Your installation includes:</p>
+              <ul>
+                <li><strong>Lifetime warranty on workmanship</strong> - Transferable to future owners</li>
+                <li><strong>10-year pump warranty</strong> - Premium components that last</li>
+                <li><strong>Annual maintenance programs</strong> - Keep your system ready</li>
+                <li><strong>24/7 emergency support</strong> - We're always here when you need us</li>
+                <li><strong>Insurance documentation</strong> - Proper certificates for claims</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="compliance-note">
+            <p><strong>Every installation meets or exceeds:</strong></p>
+            <ul>
+              <li>Ontario Building Code requirements</li>
+              <li>Electrical Safety Authority standards</li>
+              <li>City of Toronto municipal bylaws</li>
+              <li>Manufacturer specifications</li>
+              <li>Insurance company requirements</li>
+            </ul>
+          </div>
+
+          <!-- Section 4: Types of Sump Pumps -->
+          <h2 id="pump-types">Types of Sump Pumps We Install - Choose the Right System for Your Toronto Home</h2>
+          <p><strong>Not All Sump Pumps Are Created Equal - Here's What You Need to Know</strong></p>
+          
+          <h3>1. Submersible Sump Pumps (Most Popular Choice)</h3>
+          <p>Submersible pumps sit completely underwater in your sump pit. They're our most recommended option for Toronto homes because:</p>
+          <ul>
+            <li><strong>Quieter operation</strong> - Water muffles motor noise (40-50 decibels)</li>
+            <li><strong>More efficient cooling</strong> - Being submerged prevents overheating</li>
+            <li><strong>Space-saving design</strong> - Entire unit fits in the pit</li>
+            <li><strong>Longer lifespan</strong> - Protected from debris and air exposure</li>
+            <li><strong>Better performance</strong> - Can handle more water volume and debris</li>
+          </ul>
+          <p><strong>Best for:</strong> Finished basements, homes with regular water issues, noise-sensitive areas</p>
+          <p><strong>Investment:</strong> $350-$800 for pump only (installation additional)</p>
+
+          <h3>2. Pedestal Sump Pumps (Budget Option)</h3>
+          <p>Pedestal pumps have the motor mounted above the pit on a pedestal. While less expensive, they have limitations:</p>
+          <ul>
+            <li><strong>Louder operation</strong> - Motor noise isn't muffled (60-70 decibels)</li>
+            <li><strong>Easier maintenance access</strong> - Motor is above water line</li>
+            <li><strong>Lower initial cost</strong> - 30-40% less than submersible</li>
+            <li><strong>Visible motor</strong> - Takes up basement space</li>
+            <li><strong>Shorter lifespan</strong> - More exposure to moisture and debris</li>
+          </ul>
+          <p><strong>Best for:</strong> Unfinished basements, budget-conscious installations, shallow pits</p>
+          <p><strong>Investment:</strong> $150-$350 for pump only</p>
+
+          <h3>3. Battery Backup Sump Pumps (Essential Protection)</h3>
+          <p>Battery backup systems activate automatically during power outages - exactly when flooding risk is highest:</p>
+          <ul>
+            <li><strong>Automatic activation</strong> - Kicks in instantly when power fails</li>
+            <li><strong>4-8 hours runtime</strong> - Depending on water volume</li>
+            <li><strong>DC power operation</strong> - Runs on deep-cycle marine batteries</li>
+            <li><strong>Status monitoring</strong> - Alarms alert you to activation</li>
+            <li><strong>Dual pump protection</strong> - Can also activate if primary fails</li>
+          </ul>
+          <p><strong>Best for:</strong> ALL Toronto homes - power outages during storms are common</p>
+          <p><strong>Investment:</strong> $600-$1,200 including battery</p>
+
+          <h3>4. Water-Powered Backup Pumps (No Electricity Needed)</h3>
+          <p>These ingenious systems use municipal water pressure to pump water - no electricity required:</p>
+          <ul>
+            <li><strong>No battery maintenance</strong> - Uses city water pressure</li>
+            <li><strong>Unlimited runtime</strong> - Works as long as water pressure exists</li>
+            <li><strong>Simple mechanism</strong> - Fewer parts to fail</li>
+            <li><strong>Higher water usage</strong> - Uses 1 gallon city water per 2 gallons pumped</li>
+            <li><strong>Requires adequate pressure</strong> - Needs 40+ PSI to function</li>
+          </ul>
+          <p><strong>Best for:</strong> Homes with excellent water pressure, backup to battery systems</p>
+          <p><strong>Investment:</strong> $300-$600 for pump only</p>
+
+          <h3>5. Combination Systems (Maximum Protection)</h3>
+          <p>For ultimate protection, we often install combination systems:</p>
+          <ul>
+            <li><strong>Primary submersible pump</strong> - Handles normal water flow</li>
+            <li><strong>Battery backup pump</strong> - Activates during power outages</li>
+            <li><strong>High water alarm</strong> - Alerts you before flooding occurs</li>
+            <li><strong>Wi-Fi monitoring</strong> - Check status from anywhere</li>
+            <li><strong>Dual discharge lines</strong> - Prevents single point of failure</li>
+          </ul>
+          <p><strong>Best for:</strong> High-value finished basements, homes in flood-prone areas</p>
+          <p><strong>Investment:</strong> $2,500-$4,500 complete</p>
+
+          <div class="pump-comparison">
+            <h3>Quick Comparison Guide</h3>
+            <table>
+              <tr>
+                <th>Pump Type</th>
+                <th>Best For</th>
+                <th>Noise Level</th>
+                <th>Lifespan</th>
+                <th>Cost</th>
+              </tr>
+              <tr>
+                <td>Submersible</td>
+                <td>Most homes</td>
+                <td>Quiet</td>
+                <td>10-15 years</td>
+                <td>$$$</td>
+              </tr>
+              <tr>
+                <td>Pedestal</td>
+                <td>Budget installs</td>
+                <td>Moderate</td>
+                <td>5-10 years</td>
+                <td>$</td>
+              </tr>
+              <tr>
+                <td>Battery Backup</td>
+                <td>All homes</td>
+                <td>Quiet</td>
+                <td>5-7 years</td>
+                <td>$$</td>
+              </tr>
+              <tr>
+                <td>Water-Powered</td>
+                <td>High pressure homes</td>
+                <td>Silent</td>
+                <td>10+ years</td>
+                <td>$$</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Section 5: Warning Signs -->
+          <h2 id="warning-signs">10 Warning Signs You Need a Sump Pump NOW - Don't Wait for Disaster</h2>
+          <p><strong>Recognize These Red Flags Before It's Too Late</strong></p>
+
+          <div class="warning-sign">
+            <h3>1. Water Stains or Efflorescence on Basement Walls</h3>
+            <p>Those white, chalky deposits aren't just cosmetic issues - they're minerals left behind by evaporating water. This proves water is actively penetrating your foundation. Even if your basement seems dry now, these stains indicate hydrostatic pressure that WILL eventually cause flooding without proper drainage.</p>
+          </div>
+
+          <div class="warning-sign">
+            <h3>2. Musty Odors or "Damp" Smell in Basement</h3>
+            <p>That characteristic musty smell means moisture is already present, even if you can't see it. Mold and mildew can begin growing in just 24-48 hours. By the time you smell it, spores are already spreading. A sump pump eliminates the moisture source before health issues develop.</p>
+          </div>
+
+          <div class="warning-sign">
+            <h3>3. Cracks in Foundation Walls or Floor</h3>
+            <p>Water pressure doesn't just seep - it actively damages your foundation. Those hairline cracks will expand each freeze-thaw cycle. We've seen foundations shift dramatically in just 2-3 seasons once water infiltration begins. Sump pumps relieve the pressure causing these cracks.</p>
+          </div>
+
+          <div class="warning-sign">
+            <h3>4. Neighbors Have Sump Pumps</h3>
+            <p>If multiple neighbors have sump pumps, your area has water table issues. Groundwater doesn't respect property lines - if they need pumps, you do too. We often see entire neighborhoods affected by the same underground water patterns.</p>
+          </div>
+
+          <div class="warning-sign">
+            <h3>5. Living in High-Risk Toronto Neighborhoods</h3>
+            <p>Certain areas face significantly higher flooding risk:</p>
+            <ul>
+              <li><strong>The Beaches</strong> - High water table from Lake Ontario</li>
+              <li><strong>Long Branch/Mimico</strong> - Lakefront water pressure</li>
+              <li><strong>Don Valley corridor</strong> - Natural floodplain</li>
+              <li><strong>Black Creek area</strong> - Historic flooding zone</li>
+              <li><strong>Etobicoke Creek vicinity</strong> - Regular overflows</li>
+              <li><strong>Parts of Scarborough</strong> - Clay soil and poor drainage</li>
+            </ul>
+          </div>
+
+          <div class="warning-sign">
+            <h3>6. Basement Floods During Heavy Rain</h3>
+            <p>This is the most obvious sign - but waiting for flooding means damage is already done. If water enters during storms, you need immediate protection. Every flood weakens your foundation and creates perfect conditions for mold growth.</p>
+          </div>
+
+          <div class="warning-sign">
+            <h3>7. Planning Basement Renovation</h3>
+            <p>Before investing thousands in finishing your basement, ensure it stays dry. We've seen beautiful $50,000 renovations destroyed by single floods. Installing a sump pump BEFORE renovating protects your investment and may be required for permits.</p>
+          </div>
+
+          <div class="warning-sign">
+            <h3>8. Insurance Company Requirements</h3>
+            <p>Many Toronto insurers now require sump pumps for basement coverage. Some won't even quote policies without proof of professional installation. Don't wait for renewal surprises - get protected now and potentially lower your premiums.</p>
+          </div>
+
+          <div class="warning-sign">
+            <h3>9. Gutters Overflow or Poor Yard Drainage</h3>
+            <p>If water pools near your foundation or gutters can't handle rainfall, that water will find its way inside. While fixing drainage helps, Toronto's clay soil means you still need interior protection. Sump pumps handle water that surface drainage misses.</p>
+          </div>
+
+          <div class="warning-sign">
+            <h3>10. Home Built Before 1990</h3>
+            <p>Older homes often lack modern waterproofing systems. Building codes have evolved significantly - what was acceptable in 1970 doesn't meet today's standards. Retrofitting with a sump pump brings older homes up to current protection levels.</p>
+          </div>
+
+          <div class="action-box">
+            <h3>See Any of These Signs? Act NOW!</h3>
+            <p>Water damage compounds exponentially. What starts as minor seepage becomes major flooding. Every season you wait increases repair costs and health risks.</p>
+            <a href="/quote/" class="btn btn-primary">Get Free Assessment Today</a>
+          </div>
+
+          <!-- Section 6: Emergency Service -->
+          <h2 id="emergency-service">24/7 Emergency Sump Pump Service - When Disaster Strikes, We're Here</h2>
+          <p><strong>Toronto's Fastest Emergency Response When Your Pump Fails</strong></p>
+
+          <h3>When to Call Our Emergency Line</h3>
+          <ul>
+            <li><strong>Pump stopped working</strong> during active flooding</li>
+            <li><strong>Backup system failed</strong> during power outage</li>
+            <li><strong>Water rising faster</strong> than pump can handle</li>
+            <li><strong>Burning smell</strong> or electrical issues from pump</li>
+            <li><strong>Forecast shows</strong> major storm approaching</li>
+          </ul>
+
+          <div class="emergency-response">
+            <h3>Our Emergency Response Process</h3>
+            <div class="response-timeline">
+              <div class="timeline-item">
+                <h4>0-15 Minutes: Emergency Triage</h4>
+                <ul>
+                  <li>Answer your call 24/7/365</li>
+                  <li>Assess immediate danger level</li>
+                  <li>Provide temporary mitigation steps</li>
+                  <li>Dispatch nearest technician</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h4>30-90 Minutes: On-Site Arrival</h4>
+                <ul>
+                  <li>Technician arrives with full equipment</li>
+                  <li>Immediate water removal begins</li>
+                  <li>Diagnose pump failure cause</li>
+                  <li>Implement temporary solutions</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h4>2-4 Hours: Problem Resolution</h4>
+                <ul>
+                  <li>Install new pump if needed</li>
+                  <li>Repair existing system if possible</li>
+                  <li>Ensure proper operation</li>
+                  <li>Document for insurance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3>Emergency Equipment We Carry</h3>
+          <ul>
+            <li><strong>Multiple pump sizes</strong> - Ready for any situation</li>
+            <li><strong>Portable generators</strong> - Power during outages</li>
+            <li><strong>High-capacity pumps</strong> - Remove water fast</li>
+            <li><strong>Emergency batteries</strong> - Instant backup power</li>
+            <li><strong>Temporary discharge hoses</strong> - Route water immediately</li>
+          </ul>
+
+          <div class="emergency-stats">
+            <h3>Our Emergency Service Record</h3>
+            <ul>
+              <li>Average response time: <strong>67 minutes</strong></li>
+              <li>Pumps in stock: <strong>50+ units</strong></li>
+              <li>Emergency calls handled: <strong>2,400+</strong></li>
+              <li>Success rate: <strong>99.5%</strong></li>
+            </ul>
+          </div>
+
+          <div class="emergency-prevention">
+            <h3>Prevent Emergency Situations</h3>
+            <p>While we're always ready for emergencies, prevention is better:</p>
+            <ul>
+              <li><strong>Annual maintenance</strong> - Catch problems early</li>
+              <li><strong>Battery backup systems</strong> - Automatic protection</li>
+              <li><strong>High water alarms</strong> - Early warning systems</li>
+              <li><strong>Secondary pumps</strong> - Redundant protection</li>
+              <li><strong>Regular testing</strong> - Monthly pump checks</li>
+            </ul>
+          </div>
+
+          <!-- Section 7: Common Problems -->
+          <h2 id="common-problems">Common Sump Pump Problems & Professional Solutions</h2>
+          <p><strong>Don't Let These Issues Turn Into Disasters</strong></p>
+
+          <div class="problem-solution">
+            <h3>Problem 1: Pump Runs Constantly</h3>
+            <p><strong>Causes:</strong></p>
+            <ul>
+              <li>Incorrect pump sizing (too small for water volume)</li>
+              <li>High water table creating continuous flow</li>
+              <li>Stuck float switch keeping pump activated</li>
+              <li>Check valve failure causing backflow</li>
+            </ul>
+            <p><strong>Our Solution:</strong> Complete system evaluation, proper pump sizing, float adjustment, check valve replacement. We ensure your pump cycles properly to prevent burnout.</p>
+          </div>
+
+          <div class="problem-solution">
+            <h3>Problem 2: Pump Won't Start</h3>
+            <p><strong>Causes:</strong></p>
+            <ul>
+              <li>Power supply issues (tripped breaker, GFCI fault)</li>
+              <li>Seized impeller from debris</li>
+              <li>Burned out motor from overuse</li>
+              <li>Float switch failure</li>
+            </ul>
+            <p><strong>Our Solution:</strong> Electrical diagnosis, impeller cleaning/replacement, motor testing, float switch adjustment. Most issues fixable same-day.</p>
+          </div>
+
+          <div class="problem-solution">
+            <h3>Problem 3: Unusual Noises</h3>
+            <p><strong>Causes:</strong></p>
+            <ul>
+              <li>Worn bearings creating grinding sounds</li>
+              <li>Damaged impeller hitting housing</li>
+              <li>Loose discharge pipes vibrating</li>
+              <li>Air in system causing gurgling</li>
+            </ul>
+            <p><strong>Our Solution:</strong> Complete pump inspection, bearing replacement, impeller repair, pipe securing, system bleeding. Quiet operation restored.</p>
+          </div>
+
+          <div class="problem-solution">
+            <h3>Problem 4: Frequent Cycling</h3>
+            <p><strong>Causes:</strong></p>
+            <ul>
+              <li>Pit too small for water volume</li>
+              <li>Float switch set incorrectly</li>
+              <li>Liner shifted reducing capacity</li>
+              <li>Multiple water sources overwhelming system</li>
+            </ul>
+            <p><strong>Our Solution:</strong> Pit evaluation and potential enlargement, float adjustment, liner repair, additional drainage integration.</p>
+          </div>
+
+          <div class="problem-solution">
+            <h3>Problem 5: Frozen Discharge Lines</h3>
+            <p><strong>Causes:</strong></p>
+            <ul>
+              <li>Improper slope allowing water to freeze</li>
+              <li>Discharge too close to house</li>
+              <li>No freeze protection installed</li>
+              <li>Inadequate insulation</li>
+            </ul>
+            <p><strong>Our Solution:</strong> Reroute discharge with proper slope, install freeze-resistant fittings, add insulation, create alternative winter discharge.</p>
+          </div>
+
+          <!-- Section 8: Maintenance Guide -->
+          <h2 id="maintenance">Complete Sump Pump Maintenance Guide - Protect Your Investment</h2>
+          <p><strong>Proper Maintenance Extends Pump Life by 40% and Prevents 90% of Failures</strong></p>
+
+          <h3>Monthly Maintenance Tasks (DIY)</h3>
+          <ol>
+            <li><strong>Test pump operation</strong> - Pour 5 gallons of water into pit</li>
+            <li><strong>Listen for unusual sounds</strong> - Grinding, rattling, or excessive vibration</li>
+            <li><strong>Check discharge flow</strong> - Ensure water exits properly outside</li>
+            <li><strong>Inspect power cord</strong> - Look for fraying or damage</li>
+            <li><strong>Test GFCI outlet</strong> - Press test/reset buttons</li>
+            <li><strong>Verify backup battery</strong> - Check charge indicator lights</li>
+          </ol>
+
+          <h3>Quarterly Tasks</h3>
+          <ol>
+            <li><strong>Clean pump intake</strong> - Remove debris from bottom screen</li>
+            <li><strong>Check float operation</strong> - Manually lift to trigger pump</li>
+            <li><strong>Inspect check valve</strong> - Listen for water backflow</li>
+            <li><strong>Clear pit debris</strong> - Remove sediment buildup</li>
+            <li><strong>Test high water alarm</strong> - If installed</li>
+          </ol>
+
+          <h3>Annual Professional Service</h3>
+          <p>Our comprehensive annual maintenance includes:</p>
+          <ul>
+            <li><strong>Complete pump disassembly</strong> - Clean all components</li>
+            <li><strong>Impeller inspection</strong> - Check for wear or damage</li>
+            <li><strong>Bearing lubrication</strong> - Extend motor life</li>
+            <li><strong>Electrical testing</strong> - Verify proper amperage draw</li>
+            <li><strong>Float switch calibration</strong> - Optimize cycling</li>
+            <li><strong>Battery replacement</strong> - For backup systems</li>
+            <li><strong>Discharge line cleaning</strong> - Prevent blockages</li>
+            <li><strong>System performance report</strong> - Document condition</li>
+          </ul>
+
+          <div class="maintenance-benefits">
+            <h3>Benefits of Our Maintenance Program</h3>
+            <ul>
+              <li>Priority emergency service</li>
+              <li>15% discount on repairs</li>
+              <li>Extended warranty coverage</li>
+              <li>Annual battery replacement included</li>
+              <li>Pump life extended 40% average</li>
+              <li>90% fewer emergency failures</li>
+            </ul>
+          </div>
+
+          <div class="maintenance-calendar">
+            <h3>Seasonal Maintenance Schedule</h3>
+            <h4>Spring (March-May)</h4>
+            <ul>
+              <li>Heavy testing during thaw season</li>
+              <li>Clear winter debris from discharge</li>
+              <li>Verify system after winter dormancy</li>
+            </ul>
+            <h4>Summer (June-August)</h4>
+            <ul>
+              <li>Prepare for storm season</li>
+              <li>Test backup systems thoroughly</li>
+              <li>Clean intake screens</li>
+            </ul>
+            <h4>Fall (September-November)</h4>
+            <ul>
+              <li>Annual professional service</li>
+              <li>Battery replacement if needed</li>
+              <li>Prepare for winter conditions</li>
+            </ul>
+            <h4>Winter (December-February)</h4>
+            <ul>
+              <li>Monitor for ice blockages</li>
+              <li>Ensure discharge remains clear</li>
+              <li>Check heating in pump area</li>
+            </ul>
+          </div>
+
+          <!-- Section 9: Water Management Systems -->
+          <h2 id="water-management">Complete Basement Water Management Systems</h2>
+          <p><strong>Sump Pumps Work Best as Part of Comprehensive Protection</strong></p>
+
+          <h3>Interior Drainage Systems</h3>
+          <p>Your sump pump is only as effective as the drainage feeding it:</p>
+          <ul>
+            <li><strong>Perimeter drain tile</strong> - Captures water along foundation walls</li>
+            <li><strong>Under-slab drainage</strong> - Manages water beneath basement floor</li>
+            <li><strong>French drains</strong> - Direct surface water to pump</li>
+            <li><strong>Channel drains</strong> - Prevent water entry at doors/windows</li>
+          </ul>
+
+          <h3>Exterior Water Management</h3>
+          <p>Reduce the load on your sump pump:</p>
+          <ul>
+            <li><strong>Proper grading</strong> - Slope soil away from foundation</li>
+            <li><strong>Gutter maintenance</strong> - Ensure downspouts discharge properly</li>
+            <li><strong>Window well covers</strong> - Prevent direct water entry</li>
+            <li><strong>Foundation waterproofing</strong> - External moisture barriers</li>
+          </ul>
+
+          <h3>Backup & Redundancy Systems</h3>
+          <p>Never rely on single point of failure:</p>
+          <ul>
+            <li><strong>Battery backup pumps</strong> - Power outage protection</li>
+            <li><strong>Water-powered backups</strong> - No electricity needed</li>
+            <li><strong>High water alarms</strong> - Early warning systems</li>
+            <li><strong>Secondary pumps</strong> - Handle extreme events</li>
+            <li><strong>Generator connections</strong> - Extended power backup</li>
+          </ul>
+
+          <h3>Smart Monitoring Systems</h3>
+          <p>Modern technology for peace of mind:</p>
+          <ul>
+            <li><strong>Wi-Fi alerts</strong> - Monitor from anywhere</li>
+            <li><strong>Pump cycle tracking</strong> - Identify problems early</li>
+            <li><strong>Power failure notifications</strong> - Immediate alerts</li>
+            <li><strong>Water level sensors</strong> - Multiple monitoring points</li>
+            <li><strong>Automatic shut-off valves</strong> - Prevent supply line floods</li>
+          </ul>
+
+          <!-- Section 10: Buying Guide -->
+          <h2 id="buying-guide">Ultimate Sump Pump Buying Guide for Toronto Homeowners</h2>
+          <p><strong>Everything You Need to Know Before Investing in Flood Protection</strong></p>
+
+          <h3>Step 1: Calculate Your Water Management Needs</h3>
+          <p>Proper sizing is critical - undersized pumps fail prematurely, oversized pumps cycle too frequently:</p>
+          <ul>
+            <li><strong>Measure pit dimensions</strong> - Depth and diameter affect capacity</li>
+            <li><strong>Estimate water volume</strong> - During heavy rain events</li>
+            <li><strong>Consider discharge height</strong> - Vertical lift reduces capacity</li>
+            <li><strong>Account for friction loss</strong> - Long discharge runs need more power</li>
+            <li><strong>Add safety margin</strong> - Size 25% above calculated needs</li>
+          </ul>
+
+          <h3>Step 2: Choose Your Pump Type</h3>
+          <div class="pump-selector">
+            <h4>Choose Submersible If:</h4>
+            <ul>
+              <li>You have a finished basement</li>
+              <li>Noise is a concern</li>
+              <li>You want maximum reliability</li>
+              <li>Budget allows for premium option</li>
+            </ul>
+            <h4>Choose Pedestal If:</h4>
+            <ul>
+              <li>Budget is primary concern</li>
+              <li>Pit is too shallow for submersible</li>
+              <li>Easy maintenance access needed</li>
+              <li>Basement is unfinished</li>
+            </ul>
+          </div>
+
+          <h3>Step 3: Essential Features to Look For</h3>
+          <ul>
+            <li><strong>Cast iron or stainless steel construction</strong> - Avoid plastic pumps</li>
+            <li><strong>Mechanical float switch</strong> - More reliable than pressure sensors</li>
+            <li><strong>Minimum 1/3 HP motor</strong> - 1/2 HP for high water tables</li>
+            <li><strong>Oil-filled motor</strong> - Better cooling and longer life</li>
+            <li><strong>Top suction design</strong> - Reduces clogging</li>
+            <li><strong>10+ foot power cord</strong> - Reach dedicated outlet</li>
+          </ul>
+
+          <h3>Step 4: Don't Forget These Components</h3>
+          <ul>
+            <li><strong>Check valve</strong> - Prevents backflow ($30-50)</li>
+            <li><strong>Proper discharge pipe</strong> - 1.5" minimum diameter</li>
+            <li><strong>Pit liner</strong> - If not pre-existing ($50-150)</li>
+            <li><strong>Sealed pit cover</strong> - Reduces odors/radon ($40-80)</li>
+            <li><strong>GFCI outlet</strong> - Code requirement ($20-40)</li>
+          </ul>
+
+          <h3>Step 5: Budget Considerations</h3>
+          <table class="cost-breakdown">
+            <tr>
+              <th>System Type</th>
+              <th>Equipment Cost</th>
+              <th>Installation</th>
+              <th>Total Investment</th>
+            </tr>
+            <tr>
+              <td>Basic Pedestal</td>
+              <td>$150-350</td>
+              <td>$800-1,200</td>
+              <td>$950-1,550</td>
+            </tr>
+            <tr>
+              <td>Quality Submersible</td>
+              <td>$350-800</td>
+              <td>$1,000-1,500</td>
+              <td>$1,350-2,300</td>
+            </tr>
+            <tr>
+              <td>With Battery Backup</td>
+              <td>$900-1,500</td>
+              <td>$1,200-2,000</td>
+              <td>$2,100-3,500</td>
+            </tr>
+            <tr>
+              <td>Complete System</td>
+              <td>$1,500-2,500</td>
+              <td>$1,500-2,500</td>
+              <td>$3,000-5,000</td>
+            </tr>
+          </table>
+
+          <h3>Brands We Trust & Install</h3>
+          <ul>
+            <li><strong>Zoeller</strong> - Industry gold standard, American-made</li>
+            <li><strong>Liberty Pumps</strong> - Excellent reliability, good value</li>
+            <li><strong>Wayne</strong> - Wide selection, solid warranty</li>
+            <li><strong>Ridgid</strong> - Professional grade, lifetime warranty</li>
+            <li><strong>Superior Pump</strong> - Budget-friendly, decent quality</li>
+          </ul>
+
+          <!-- Section 11: Pricing -->
+          <h2 id="pricing">Toronto Sump Pump Installation Pricing - Transparent, Fair, No Surprises</h2>
+          <p><strong>Detailed Pricing Breakdown for Every Budget</strong></p>
+
+          <h3>Basic Installation - Starting at $1,200</h3>
+          <p>Perfect for simple installations in newer homes:</p>
+          <ul>
+            <li>Quality pedestal or basic submersible pump</li>
+            <li>Standard pit installation (up to 3 feet deep)</li>
+            <li>Basic discharge routing (up to 20 feet)</li>
+            <li>GFCI outlet if existing electrical nearby</li>
+            <li>Check valve and standard fittings</li>
+            <li>2-year warranty on pump</li>
+            <li>1-year warranty on labor</li>
+          </ul>
+
+          <h3>Standard Installation - $2,000-$3,000</h3>
+          <p>Our most popular option for comprehensive protection:</p>
+          <ul>
+            <li>Premium submersible pump (1/3 or 1/2 HP)</li>
+            <li>Professional-grade pit liner</li>
+            <li>Complete discharge system with freeze protection</li>
+            <li>Dedicated electrical circuit if needed</li>
+            <li>Sealed pit cover for radon/odor control</li>
+            <li>5-year warranty on pump</li>
+            <li>Lifetime warranty on installation</li>
+          </ul>
+
+          <h3>Premium System - $3,000-$4,500</h3>
+          <p>Maximum protection for high-value basements:</p>
+          <ul>
+            <li>High-capacity primary pump (3/4 HP)</li>
+            <li>Battery backup system with monitoring</li>
+            <li>Dual discharge lines</li>
+            <li>High water alarm system</li>
+            <li>Smart monitoring capability</li>
+            <li>10-year warranty on pumps</li>
+            <li>Lifetime warranty on all work</li>
+            <li>First year maintenance included</li>
+          </ul>
+
+          <h3>Factors Affecting Price</h3>
+          <ul>
+            <li><strong>Pit depth required</strong> - Deeper = more labor</li>
+            <li><strong>Concrete thickness</strong> - Some basements need jackhammering</li>
+            <li><strong>Discharge complexity</strong> - Longer runs cost more</li>
+            <li><strong>Electrical work needed</strong> - New circuits add cost</li>
+            <li><strong>Permit requirements</strong> - Varies by municipality</li>
+            <li><strong>Emergency timing</strong> - Rush service costs 20-30% more</li>
+          </ul>
+
+          <div class="financing-options">
+            <h3>Flexible Payment Options</h3>
+            <ul>
+              <li><strong>0% financing</strong> - 12 months same as cash</li>
+              <li><strong>Low monthly payments</strong> - Up to 60 months</li>
+              <li><strong>Senior discounts</strong> - 10% off installation</li>
+              <li><strong>Multiple pump discount</strong> - 15% off second pump</li>
+              <li><strong>Insurance direct billing</strong> - We handle paperwork</li>
+            </ul>
+          </div>
+
+          <div class="value-proposition">
+            <h3>Why Our Prices Represent Outstanding Value</h3>
+            <ul>
+              <li>All prices include complete installation - no hidden fees</li>
+              <li>Premium components only - no corner cutting</li>
+              <li>Licensed, insured professionals - not handymen</li>
+              <li>Lifetime warranty on workmanship - transferable</li>
+              <li>24/7 emergency support included</li>
+              <li>Free first-year maintenance check</li>
+            </ul>
+          </div>
+
+          <!-- Section 12: How to Choose -->
+          <h2 id="choose-system">How to Choose the Perfect Sump Pump System for Your Toronto Home</h2>
+          <p><strong>Make the Right Decision with This Step-by-Step Guide</strong></p>
+
+          <h3>Step 1: Assess Your Risk Level</h3>
+          <div class="risk-assessment">
+            <h4>High Risk (Need Premium System)</h4>
+            <ul>
+              <li>Previous basement flooding</li>
+              <li>High water table area</li>
+              <li>Finished basement with high value</li>
+              <li>Critical equipment in basement</li>
+              <li>Home office or living space below grade</li>
+            </ul>
+            <h4>Medium Risk (Standard System Adequate)</h4>
+            <ul>
+              <li>Occasional moisture issues</li>
+              <li>Neighbors have pumps</li>
+              <li>Partially finished basement</li>
+              <li>Some storage in basement</li>
+              <li>Clay soil with poor drainage</li>
+            </ul>
+            <h4>Lower Risk (Basic System Sufficient)</h4>
+            <ul>
+              <li>Dry basement historically</li>
+              <li>Good natural drainage</li>
+              <li>Unfinished basement</li>
+              <li>Minimal basement use</li>
+              <li>Sandy soil conditions</li>
+            </ul>
+          </div>
+
+          <h3>Step 2: Consider Your Home's Specific Needs</h3>
+          <ul>
+            <li><strong>Basement usage</strong> - Finished spaces need better protection</li>
+            <li><strong>Property value</strong> - Higher values justify premium systems</li>
+            <li><strong>Family health concerns</strong> - Mold sensitivity requires dry conditions</li>
+            <li><strong>Work from home</strong> - Can't afford flooding disruptions</li>
+            <li><strong>Irreplaceable items</strong> - Family memories need protection</li>
+          </ul>
+
+          <h3>Step 3: Match System to Your Situation</h3>
+          <div class="system-matcher">
+            <h4>If You Have:</h4>
+            <ul>
+              <li><strong>Finished basement + high water table</strong> = Premium system with dual pumps</li>
+              <li><strong>Average home + occasional moisture</strong> = Standard submersible with backup</li>
+              <li><strong>Older home + tight budget</strong> = Basic system with upgrade path</li>
+              <li><strong>New home + preventive mindset</strong> = Standard system with monitoring</li>
+              <li><strong>Chronic flooding + previous damage</strong> = Complete water management system</li>
+            </ul>
+          </div>
+
+          <h3>Step 4: Think Long-Term Value</h3>
+          <p>Consider total cost of ownership, not just initial price:</p>
+          <ul>
+            <li><strong>Cheaper pumps fail faster</strong> - Replace every 3-5 years</li>
+            <li><strong>Quality pumps last longer</strong> - 10-15 years with maintenance</li>
+            <li><strong>Backup systems prevent disasters</strong> - One flood costs more than backup</li>
+            <li><strong>Professional installation</strong> - Prevents costly mistakes</li>
+            <li><strong>Regular maintenance</strong> - Extends life by 40%</li>
+          </ul>
+
+          <h3>Our Recommendation Process</h3>
+          <ol>
+            <li><strong>Free consultation</strong> - Discuss your specific needs</li>
+            <li><strong>Professional assessment</strong> - Evaluate water risks</li>
+            <li><strong>Custom system design</strong> - Tailored to your home</li>
+            <li><strong>Multiple options</strong> - Choose what fits your budget</li>
+            <li><strong>No pressure</strong> - Take time to decide</li>
+          </ol>
+
+          <!-- Section 13: Emergency Preparedness -->
+          <h2 id="emergency-prep">Emergency Preparedness - Be Ready When Disaster Strikes</h2>
+          <p><strong>Your Complete Flood Emergency Action Plan</strong></p>
+
+          <h3>Before the Storm - Preparation Checklist</h3>
+          <ul>
+            <li>✓ Test primary pump operation monthly</li>
+            <li>✓ Verify backup battery charge level</li>
+            <li>✓ Clear debris from pit and intake</li>
+            <li>✓ Check discharge line for blockages</li>
+            <li>✓ Stock emergency supplies (see below)</li>
+            <li>✓ Know location of main water shutoff</li>
+            <li>✓ Have emergency numbers ready</li>
+            <li>✓ Review insurance coverage</li>
+          </ul>
+
+          <h3>Emergency Supply Kit</h3>
+          <p>Keep these items in waterproof container:</p>
+          <ul>
+            <li><strong>Portable sump pump</strong> - Manual backup option</li>
+            <li><strong>Extension cords</strong> - Heavy duty, outdoor rated</li>
+            <li><strong>Garden hose</strong> - For emergency discharge</li>
+            <li><strong>Wet/dry vacuum</strong> - Quick water removal</li>
+            <li><strong>Sandbags</strong> - Divert water flow</li>
+            <li><strong>Plastic sheeting</strong> - Protect valuables</li>
+            <li><strong>Battery-powered radio</strong> - Weather updates</li>
+            <li><strong>Flashlights & batteries</strong> - Power outage lighting</li>
+          </ul>
+
+          <h3>During Flooding Event</h3>
+          <ol>
+            <li><strong>Safety first</strong> - Never enter flooded area with power on</li>
+            <li><strong>Call emergency service</strong> - (437) 545-0067 for immediate help</li>
+            <li><strong>Document damage</strong> - Photos for insurance</li>
+            <li><strong>Move valuables up</strong> - Get items off floor</li>
+            <li><strong>Monitor pump operation</strong> - Watch for problems</li>
+            <li><strong>Check backup activation</strong> - If power fails</li>
+          </ol>
+
+          <h3>After the Flood</h3>
+          <ul>
+            <li><strong>Professional inspection</strong> - Ensure pump wasn't damaged</li>
+            <li><strong>Service backup battery</strong> - Replace if heavily used</li>
+            <li><strong>Clean and disinfect</strong> - Prevent mold growth</li>
+            <li><strong>File insurance claim</strong> - We provide documentation</li>
+            <li><strong>Upgrade protection</strong> - Learn from experience</li>
+          </ul>
+
+          <div class="emergency-plan">
+            <h3>Create Your Family Emergency Plan</h3>
+            <ul>
+              <li>Assign responsibilities to family members</li>
+              <li>Practice emergency procedures</li>
+              <li>Establish meeting point if evacuation needed</li>
+              <li>Keep important documents in waterproof storage</li>
+              <li>Maintain current home inventory</li>
+            </ul>
+          </div>
+
+          <div class="professional-tip">
+            <h3>Professional Tip</h3>
+            <p>The best emergency plan is prevention. Homes with properly maintained sump pumps and battery backup systems rarely experience flooding emergencies. Our maintenance program members report 90% fewer emergency calls than non-maintained systems.</p>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sticky-sidebar">
+            <div class="quote-form">
+              <h3>Get Your Free Quote</h3>
+              <p>Professional assessment with no obligation</p>
+              <a href="/quote/" class="btn btn-primary w-full">Request Quote</a>
+            </div>
+            
+            <div class="emergency-box">
+              <h3>⚠️ Emergency Service</h3>
+              <p>Sump pump failure? We offer 24/7 emergency service</p>
+              <a href="tel:4375450067" class="btn btn-destructive w-full">Call Emergency Line</a>
+            </div>
+
+            <div class="price-box">
+              <h3>Investment Range</h3>
+              <p class="price-range">{priceRange}</p>
+              <ul class="price-factors">
+                <li>Type of pump selected</li>
+                <li>Battery backup system</li>
+                <li>Pit depth required</li>
+                <li>Discharge complexity</li>
+              </ul>
+              <p class="financing">0% Financing Available</p>
+            </div>
+
+            <div class="trust-indicators">
+              <h3>Why Trust DrySpace?</h3>
+              <ul>
+                <li>✓ Licensed & Insured</li>
+                <li>✓ 5,000+ Pumps Installed</li>
+                <li>✓ Lifetime Warranty</li>
+                <li>✓ 24/7 Emergency Service</li>
+                <li>✓ Free Inspections</li>
+                <li>✓ BBB A+ Rating</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete FAQ Section with all 18 FAQs -->
+  <section class="service-faq">
+    <div class="container">
+      <h2>Frequently Asked Questions About Sump Pumps - Complete Guide</h2>
+      <div class="faq-grid">
+        {serviceFaqs.map((faq, index) => (
+          <div class="faq-item">
+            <h3><span class="faq-number">{index + 1}.</span> {faq.question}</h3>
+            <p>{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+      <div class="more-questions">
+        <p>Have more questions? Our experts are ready to help!</p>
+        <a href="tel:4375450067" class="btn btn-primary">Call (437) 545-0067</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="related-services">
+    <div class="container">
+      <h2>Complete Basement Water Management Solutions</h2>
+      <p class="section-intro">Sump pumps work best as part of a comprehensive water management system. Explore our related services:</p>
+      <div class="services-grid">
+        {relatedServices.map((service) => (
+          <div class="service-card">
+            <img src={service.image} alt={service.title} />
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+            <a href={service.url} class="service-link">Learn More →</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <WhyChooseUs />
+
+  <!-- Customer Reviews -->
+  <ReviewsSection />
+
+  <!-- Trust Signals -->
+  <TrustSignals />
+
+  <!-- Emergency CTA -->
+  <EmergencyCTA />
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Global Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    background: #f7fafc;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .breadcrumb ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  .breadcrumb li:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.5rem;
+    color: #cbd5e0;
+  }
+  
+  .breadcrumb a {
+    color: #4a5568;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    color: #f97316;
+  }
+
+  /* Table of Contents */
+  .table-of-contents {
+    padding: 2rem 0;
+    background: #f7fafc;
+  }
+  
+  .toc-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .toc-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a202c;
+  }
+  
+  .toc-card ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .toc-card li {
+    padding: 0.5rem;
+  }
+  
+  .toc-card a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .toc-card a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hero Section */
+  .service-hero {
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    padding: 6rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .hero-content {
+    max-width: 800px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: #f97316;
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f97316;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    display: block;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .trust-badges {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  /* Main Content */
+  .service-details {
+    padding: 4rem 0;
+    background: #fff;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @media (min-width: 1024px) {
+    .content-grid {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  .main-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem;
+    color: #1a202c;
+  }
+  
+  .main-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    color: #1a202c;
+  }
+
+  .main-content h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem;
+    color: #1a202c;
+  }
+
+  .main-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .main-content ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .main-content li {
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+
+  .main-content strong {
+    color: #1a202c;
+    font-weight: 600;
+  }
+
+  /* Service Features */
+  .service-features {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  .installation-includes {
+    background: #e0f2fe;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  /* Cost Warning */
+  .cost-warning {
+    background: #fef2f2;
+    border: 2px solid #dc2626;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  .cost-warning .highlight {
+    font-weight: 700;
+    color: #dc2626;
+    font-size: 1.125rem;
+  }
+
+  /* Process Steps */
+  .process-steps {
+    margin: 2rem 0;
+  }
+  
+  .step {
+    background: #f7fafc;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid #f97316;
+  }
+  
+  .step h3 {
+    color: #1a202c;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .compliance-note {
+    background: #e0f2fe;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  th {
+    background: #f7fafc;
+    font-weight: 600;
+    color: #1a202c;
+  }
+
+  /* Special Sections */
+  .warning-sign,
+  .problem-solution {
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.25rem;
+  }
+
+  .emergency-response,
+  .emergency-stats,
+  .maintenance-benefits,
+  .financing-options,
+  .value-proposition {
+    background: #f0fdf4;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .action-box {
+    background: #fef3c7;
+    border: 2px solid #f59e0b;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  /* FAQ Section */
+  .service-faq {
+    background: #f7fafc;
+    padding: 4rem 0;
+  }
+
+  .service-faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1a202c;
+  }
+
+  .faq-grid {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .faq-number {
+    color: #f97316;
+    font-weight: 700;
+  }
+
+  .faq-item h3 {
+    color: #1a202c;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .faq-item p {
+    color: #4a5568;
+    line-height: 1.7;
+  }
+
+  .more-questions {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .more-questions p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #4a5568;
+  }
+
+  /* Related Services */
+  .related-services {
+    padding: 4rem 0;
+  }
+
+  .related-services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a202c;
+  }
+
+  .section-intro {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #4a5568;
+    margin-bottom: 3rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: #f7fafc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .service-card h3 {
+    padding: 1rem 1.5rem 0.5rem;
+    color: #1a202c;
+    font-size: 1.25rem;
+  }
+
+  .service-card p {
+    padding: 0 1.5rem;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+
+  .service-link {
+    display: inline-block;
+    padding: 0.5rem 1.5rem 1.5rem;
+    color: #f97316;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .service-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Sidebar */
+  .sticky-sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+
+  .quote-form,
+  .emergency-box,
+  .price-box,
+  .trust-indicators {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .emergency-box {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+  }
+
+  .price-box {
+    background: #fff;
+    border: 2px solid #f97316;
+  }
+
+  .quote-form h3,
+  .emergency-box h3,
+  .price-box h3,
+  .trust-indicators h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #1a202c;
+  }
+
+  .quote-form p,
+  .emergency-box p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .price-range {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #f97316;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .price-factors {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+  }
+
+  .price-factors li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+  }
+
+  .financing {
+    text-align: center;
+    font-weight: 600;
+    color: #10b981;
+    margin-top: 1rem;
+  }
+
+  .trust-indicators ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .trust-indicators li {
+    padding: 0.5rem 0;
+    color: #4a5568;
+    font-size: 0.875rem;
+  }
+
+  /* Utility Classes */
+  .w-full {
+    width: 100%;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .btn-primary {
+    background-color: #f97316;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #ea580c;
+  }
+
+  .btn-outline {
+    border: 2px solid white;
+    color: white;
+  }
+
+  .btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-destructive {
+    background-color: #dc2626;
+    color: white;
+  }
+
+  .btn-destructive:hover {
+    background-color: #b91c1c;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .hero-description {
+      font-size: 1rem;
+    }
+    
+    .stat-value {
+      font-size: 1.5rem;
+    }
+    
+    .main-content h2 {
+      font-size: 1.5rem;
+    }
+
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .toc-card ul {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,208 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/hamilton-basement-waterproofing.md
+// Migration date: 2025-08-04T15:30:57.744Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Hamilton area data
+const hamiltonData = {
+  // Location Info
+  cityName: "Hamilton",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Hamilton Basement Waterproofing | Foundation Repair Specialists | DrySpace",
+  description: "Professional basement waterproofing in Hamilton. Foundation repair, sump pumps, French drains. Serving Hamilton Mountain, Downtown, and surrounding areas. Call (416) 276-1570.",
+  keywords: [
+    "hamilton basement waterproofing",
+    "basement waterproofing hamilton",
+    "hamilton foundation repair",
+    "waterproofing contractors hamilton",
+    "wet basement hamilton",
+    "basement flooding hamilton"
+  ],
+  
+  // Stats
+  population: "569,353",
+  homesServed: "500+",
+  yearsInArea: "25+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "910mm",
+    freezeThawCycles: "40-45/year",
+    floodRisk: "High (escarpment runoff)",
+    snowfall: "113cm",
+    avgHumidity: "77%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Escarpment Geography",
+      "challenges": [
+        "*Hamilton Mountain Properties:**",
+        "**Elevated terrain** with potential for surface water runoff",
+        "**Clay and limestone soils** that affect drainage patterns",
+        "**Slope management** requiring specialized grading"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Hamilton Mountain",
+      "challenges": [
+        "*",
+        "Elevated properties with runoff management needs",
+        "Rock and clay soil combinations affecting drainage",
+        "Exposure to wind-driven precipitation",
+        "Freeze-thaw damage on escarpment properties",
+        "*Our"
+      ],
+      "solutions": [
+        "*",
+        "Comprehensive exterior drainage systems",
+        "Slope management and grading corrections",
+        "High-performance membrane systems",
+        "Integrated landscape drainage"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "*Our Solutions",
+      "description": "**",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "🏔️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$8,000",
+      "max": "$15,000"
+    },
+    "exterior": {
+      "min": "$8,000",
+      "max": "$15,000"
+    },
+    "emergency": {
+      "min": "$500",
+      "max": "$2,500"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "Hamilton Protective Plumbing Program",
+      "amount": "Up to $2,000",
+      "eligibility": "Backwater valve and sump pump installation",
+      "deadline": "Check city website for availability"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$8,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$8,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$500",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Hamilton?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Hamilton homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Hamilton?",
+      "answer": "We maintain crews throughout Hamilton for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Hamilton?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Hamilton building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Hamilton",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "60 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/work/underpinning.webp" 
+    alt="Foundation underpinning for structural support"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Underpinning strengthens your foundation
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/images/hero-damages/crack.webp" 
+    alt="Foundation crack allowing water entry"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Cracks need immediate attention
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...hamiltonData} />

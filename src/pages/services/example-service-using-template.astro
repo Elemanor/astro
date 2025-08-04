@@ -1,0 +1,179 @@
+---
+// Example of how to use the ServicePageTemplate
+import ServicePageTemplate from '../../templates/ServicePageTemplate.astro';
+
+// Service-specific data
+const serviceData = {
+  serviceName: "Foundation Repair",
+  serviceTitle: "Foundation Repair Toronto | Expert Solutions for Your Home",
+  serviceSubtitle: "Professional Foundation Repair & Structural Solutions",
+  serviceDescription: "Comprehensive foundation repair services in Toronto. From crack repairs to full foundation restoration. 25+ years experience, lifetime warranty. Free inspection - (437) 545-0067",
+  
+  startingPrice: "$500",
+  priceRange: "$500 - $15,000",
+  
+  heroStats: [
+    { value: "$500", label: "Starting Price" },
+    { value: "2,500+", label: "Foundations Repaired" },
+    { value: "25+", label: "Years Experience" },
+    { value: "Lifetime", label: "Warranty" }
+  ],
+  
+  tableOfContents: [
+    { label: "Types of Foundation Problems", href: "#foundation-problems" },
+    { label: "Our Repair Process", href: "#repair-process" },
+    { label: "Warning Signs", href: "#warning-signs" },
+    { label: "Repair Methods", href: "#repair-methods" },
+    { label: "Cost Factors", href: "#cost-factors" },
+    { label: "Warranty Information", href: "#warranty" }
+  ],
+  
+  relatedServices: [
+    {
+      title: "Basement Waterproofing",
+      url: "/services/basement-waterproofing",
+      description: "Protect your foundation with professional waterproofing solutions",
+      image: "/images/services/waterproofing.jpg"
+    },
+    {
+      title: "Foundation Crack Repair",
+      url: "/services/foundation-crack-repair",
+      description: "Expert crack injection and sealing services",
+      image: "/images/services/crack-repair.jpg"
+    },
+    {
+      title: "Underpinning Services",
+      url: "/services/underpinning",
+      description: "Strengthen and stabilize your foundation",
+      image: "/images/services/underpinning.jpg"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      question: "How do I know if I need foundation repair?",
+      answer: "Common signs include cracks in walls or floors, doors and windows that stick, uneven floors, and water seepage. If you notice any of these issues, it's important to get a professional inspection to determine the extent of the problem."
+    },
+    {
+      question: "How much does foundation repair cost in Toronto?",
+      answer: "Foundation repair costs vary widely based on the type and extent of damage. Minor crack repairs start around $500, while major structural repairs can range from $5,000 to $15,000 or more. We provide free inspections and detailed quotes."
+    },
+    {
+      question: "How long does foundation repair take?",
+      answer: "The timeline depends on the scope of work. Minor repairs can be completed in 1-2 days, while major foundation work may take 1-2 weeks. We'll provide a detailed timeline during your consultation."
+    }
+  ]
+};
+
+// Main content as HTML string
+const mainContent = `
+  <h2 id="foundation-problems">Common Foundation Problems in Toronto</h2>
+  <p>Toronto's unique soil conditions and climate create specific foundation challenges:</p>
+  <ul>
+    <li><strong>Settling and Sinking</strong> - Clay soil expands and contracts with moisture changes</li>
+    <li><strong>Foundation Cracks</strong> - Freeze-thaw cycles cause concrete to crack</li>
+    <li><strong>Water Damage</strong> - High water tables lead to hydrostatic pressure</li>
+    <li><strong>Structural Movement</strong> - Age and environmental factors cause shifting</li>
+  </ul>
+
+  <h2 id="repair-process">Our Foundation Repair Process</h2>
+  <p>We follow a systematic approach to ensure lasting repairs:</p>
+  <ol>
+    <li><strong>Comprehensive Inspection</strong> - Identify all issues and root causes</li>
+    <li><strong>Custom Solution Design</strong> - Develop a repair plan specific to your needs</li>
+    <li><strong>Professional Installation</strong> - Expert execution by certified technicians</li>
+    <li><strong>Quality Verification</strong> - Ensure all repairs meet our high standards</li>
+    <li><strong>Lifetime Warranty</strong> - Stand behind our work with comprehensive coverage</li>
+  </ol>
+
+  <h2 id="warning-signs">Warning Signs You Need Foundation Repair</h2>
+  <div class="warning-signs-grid">
+    <div class="warning-sign">
+      <h3>Interior Signs</h3>
+      <ul>
+        <li>Cracks in walls or ceilings</li>
+        <li>Doors and windows that stick</li>
+        <li>Uneven or sloping floors</li>
+        <li>Gaps between walls and floors</li>
+      </ul>
+    </div>
+    <div class="warning-sign">
+      <h3>Exterior Signs</h3>
+      <ul>
+        <li>Cracks in foundation walls</li>
+        <li>Brick or siding separation</li>
+        <li>Chimney leaning or tilting</li>
+        <li>Concrete flaking or deterioration</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 id="repair-methods">Foundation Repair Methods We Use</h2>
+  <h3>Crack Injection</h3>
+  <p>For minor to moderate cracks, we use polyurethane or epoxy injection to seal and strengthen the concrete.</p>
+
+  <h3>Underpinning</h3>
+  <p>For serious structural issues, underpinning extends the foundation depth to more stable soil layers.</p>
+
+  <h3>Wall Anchors</h3>
+  <p>Bowing or leaning walls can be stabilized with our wall anchor systems.</p>
+
+  <h3>Drainage Solutions</h3>
+  <p>Many foundation problems stem from water issues. We install proper drainage to protect your foundation.</p>
+
+  <h2 id="cost-factors">Factors Affecting Foundation Repair Costs</h2>
+  <ul>
+    <li><strong>Extent of Damage</strong> - More extensive damage requires more comprehensive repairs</li>
+    <li><strong>Repair Method</strong> - Different techniques have varying costs</li>
+    <li><strong>Accessibility</strong> - Hard-to-reach areas may increase labor costs</li>
+    <li><strong>Soil Conditions</strong> - Challenging soil may require additional stabilization</li>
+    <li><strong>Permit Requirements</strong> - Some repairs require municipal permits</li>
+  </ul>
+
+  <h2 id="warranty">Our Lifetime Warranty Protection</h2>
+  <p>We stand behind our work with Toronto's most comprehensive warranty:</p>
+  <ul>
+    <li>Lifetime warranty on structural repairs</li>
+    <li>Transferable to new homeowners</li>
+    <li>No hidden conditions or fine print</li>
+    <li>24/7 emergency support included</li>
+  </ul>
+`;
+---
+
+<ServicePageTemplate {...serviceData} mainContent={mainContent} />
+
+<style>
+  /* Additional styles specific to this service page */
+  .warning-signs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .warning-sign {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .warning-sign h3 {
+    color: #1a202c;
+    margin-bottom: 1rem;
+  }
+
+  .warning-sign ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .warning-sign li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .warning-sign li:last-child {
+    border-bottom: none;
+  }
+</style>

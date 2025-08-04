@@ -1,0 +1,251 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/",
+      "weight": 1
+    },
+    {
+      "name": "About",
+      "url": "/about/",
+      "weight": 2
+    },
+    {
+      "name": "Foundation Repair",
+      "url": "/foundation-repair/",
+      "weight": 3,
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Crack Repair",
+          "url": "/services/foundation-crack-repair/"
+        },
+        {
+          "name": "Settlement Repair",
+          "url": "/services/foundation-settlement-repair/"
+        },
+        {
+          "name": "Wall Reinforcement",
+          "url": "/services/wall-reinforcement/"
+        },
+        {
+          "name": "Basement Underpinning",
+          "url": "/services/basement-underpinning/"
+        },
+        {
+          "name": "Underpinning Services",
+          "url": "/services/underpinning-services/"
+        },
+        {
+          "name": "Foundation Construction",
+          "url": "/services/foundation-construction/"
+        },
+        {
+          "name": "Structural Reinforcement",
+          "url": "/services/structural-reinforcement/"
+        }
+      ]
+    },
+    {
+      "name": "Waterproofing",
+      "url": "/basement-waterproofing/",
+      "weight": 4,
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Interior Waterproofing",
+          "url": "/services/interior-waterproofing/"
+        },
+        {
+          "name": "Exterior Waterproofing",
+          "url": "/services/exterior-waterproofing/"
+        },
+        {
+          "name": "Waterproofing Cost Guide",
+          "url": "/services/basement-waterproofing-cost/"
+        },
+        {
+          "name": "Stop Water Through Walls",
+          "url": "/guides/how-to-stop-water-coming-through-basement-walls/"
+        },
+        {
+          "name": "Best Waterproofing Method",
+          "url": "/guides/best-basement-waterproofing-method/"
+        },
+        {
+          "name": "24/7 Emergency Service",
+          "url": "/services/emergency-waterproofing/"
+        },
+        {
+          "name": "Waterstop Installation",
+          "url": "/services/waterstop-installation/"
+        }
+      ]
+    },
+    {
+      "name": "Concrete Services",
+      "url": "/services/concrete-works/",
+      "weight": 5,
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Concrete Repair",
+          "url": "/services/concrete-repair/"
+        },
+        {
+          "name": "Concrete Block Walls",
+          "url": "/services/concrete-block-walls/"
+        },
+        {
+          "name": "Retaining Walls",
+          "url": "/services/retaining-walls/"
+        },
+        {
+          "name": "Slab Foundation",
+          "url": "/services/slab-foundation/"
+        },
+        {
+          "name": "Formwork Construction",
+          "url": "/services/formwork-construction/"
+        }
+      ]
+    },
+    {
+      "name": "Other Services",
+      "url": "#",
+      "weight": 6,
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Legal Basement",
+          "url": "/services/legal-basement/"
+        },
+        {
+          "name": "Drainage & Grading",
+          "url": "/services/drainage-grading/"
+        },
+        {
+          "name": "Excavation & Shoring",
+          "url": "/services/excavation-shoring/"
+        },
+        {
+          "name": "Leaky Basement Repair",
+          "url": "/services/leaky-basement-repair/"
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "url": "#",
+      "weight": 7,
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "All Guides",
+          "url": "/guides/"
+        },
+        {
+          "name": "Spring Maintenance",
+          "url": "/guides/spring-foundation-maintenance-guide/"
+        },
+        {
+          "name": "Summer Maintenance",
+          "url": "/guides/summer-foundation-maintenance-guide/"
+        },
+        {
+          "name": "Fall Maintenance",
+          "url": "/guides/fall-foundation-maintenance-guide/"
+        },
+        {
+          "name": "Winter Maintenance",
+          "url": "/guides/winter-foundation-maintenance-guide/"
+        },
+        {
+          "name": "Cost Calculator",
+          "url": "/tools/waterproofing-cost-calculator/"
+        },
+        {
+          "name": "Blog",
+          "url": "/blog/"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact/",
+      "weight": 8
+    }
+  ],
+  "footer": {
+    "services": [
+      {
+        "name": "Foundation Repair",
+        "url": "/foundation-repair/"
+      },
+      {
+        "name": "Basement Waterproofing",
+        "url": "/basement-waterproofing/"
+      },
+      {
+        "name": "Concrete Works",
+        "url": "/services/concrete-works/"
+      },
+      {
+        "name": "Emergency Service",
+        "url": "/services/emergency-waterproofing/"
+      }
+    ],
+    "locations": [
+      {
+        "name": "Toronto",
+        "url": "/locations/toronto-basement-waterproofing/"
+      },
+      {
+        "name": "Mississauga",
+        "url": "/locations/mississauga-basement-waterproofing/"
+      },
+      {
+        "name": "Markham",
+        "url": "/locations/markham-basement-waterproofing/"
+      },
+      {
+        "name": "Brampton",
+        "url": "/locations/foundation-repair-brampton/"
+      },
+      {
+        "name": "Vaughan",
+        "url": "/locations/waterproofing-vaughan/"
+      },
+      {
+        "name": "Richmond Hill",
+        "url": "/locations/waterproofing-richmond-hill/"
+      },
+      {
+        "name": "Hamilton",
+        "url": "/locations/hamilton-basement-waterproofing/"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Pricing Guide",
+        "url": "/services/basement-waterproofing-cost/"
+      },
+      {
+        "name": "All Guides",
+        "url": "/guides/"
+      },
+      {
+        "name": "Blog",
+        "url": "/blog/"
+      },
+      {
+        "name": "Waterproofing Rebates",
+        "url": "/waterproofing-rebates-2025/"
+      },
+      {
+        "name": "Why Choose DrySpace",
+        "url": "/compare/why-choose-dryspace/"
+      }
+    ]
+  }
+}

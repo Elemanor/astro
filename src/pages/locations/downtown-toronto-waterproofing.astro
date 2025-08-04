@@ -1,0 +1,349 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/downtown-toronto-waterproofing.md
+// Migration date: 2025-08-04T15:30:57.654Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Downtown Toronto area data
+const torontoData = {
+  // Location Info
+  cityName: "Toronto",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Downtown Toronto Basement Waterproofing | Financial District Emergency Waterproofing",
+  description: "Expert basement waterproofing in Downtown Toronto. Serving Financial District, Entertainment District, King Street, Queen Street. Emergency response, historic building specialists. Call (437) 545-0067.",
+  keywords: [
+    "downtown toronto waterproofing",
+    "financial district basement waterproofing",
+    "toronto core waterproofing",
+    "king street waterproofing",
+    "queen street basement repair",
+    "entertainment district waterproofing"
+  ],
+  
+  // Stats
+  population: "2,794,356",
+  homesServed: "500+",
+  yearsInArea: "15+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "831mm",
+    freezeThawCycles: "35-40/year",
+    floodRisk: "Moderate to High",
+    snowfall: "121cm",
+    avgHumidity: "81%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Financial District",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Entertainment District",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "King Street West",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Queen Street West",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "St. Lawrence Market",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "CityPlace",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Harbourfront",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Financial District",
+      "challenges": [
+        ""
+      ],
+      "solutions": [
+        "Result: Complete water elimination, heritage status preserved, $2M insurance claim avoided"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Entertainment District",
+      "challenges": [
+        ""
+      ],
+      "solutions": [
+        "Result: Zero closures for water issues, successful venue operations for 6 years"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "King Street West",
+      "challenges": [
+        ""
+      ],
+      "solutions": [
+        "wide interior system with individual unit control",
+        "Result: 100% dry units, $15M development successfully completed"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Queen Street West",
+      "challenges": [
+        ""
+      ],
+      "solutions": [
+        "Result: Art collection saved, studios operating continuously, property value doubled"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "CityPlace & Harbourfront",
+      "challenges": [
+        "story condo with flooding 3-level parking garage",
+        ""
+      ],
+      "solutions": [
+        "Result: Eliminated flooding, reduced insurance premiums, increased property values"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "*Success Story**",
+      "description": "**Bay Street Banking Building (1885)**",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "🌧️"
+    },
+    {
+      "issue": "Challenge",
+      "description": "Historic vault flooding threatening heritage designation",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "⚠️"
+    },
+    {
+      "issue": "Solution",
+      "description": "Interior crystalline treatment with heritage board approval",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "💧"
+    },
+    {
+      "issue": "Result",
+      "description": "Complete water elimination, heritage status preserved, $2M insurance claim avoided",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "🏔️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$15,000",
+      "max": "$75,000"
+    },
+    "exterior": {
+      "min": "$10,000",
+      "max": "$25,000"
+    },
+    "emergency": {
+      "min": "$15,000",
+      "max": "$75,000"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "City of Toronto Basement Flooding Protection Subsidy",
+      "amount": "Up to $3,400",
+      "eligibility": "Installation of flood protection devices including backwater valves, sump pumps",
+      "deadline": "Ongoing - first come, first served"
+    },
+    {
+      "name": "Toronto Water Rebate Program",
+      "amount": "$1,750 per device",
+      "eligibility": "Backwater valve installation for properties at risk",
+      "deadline": "Check city website for current status"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$15,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$10,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$15,000",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Downtown Toronto?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Downtown Toronto homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Downtown Toronto?",
+      "answer": "We maintain crews throughout Downtown Toronto for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Downtown Toronto?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Downtown Toronto building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Downtown Toronto",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "15 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/process/waterproofing.webp" 
+    alt="Waterproofing process in progress"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Professional waterproofing process
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/work/interior-waterproofing.webp" 
+    alt="Interior basement waterproofing system installation"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Interior drainage system prevents water damage
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...torontoData} />

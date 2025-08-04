@@ -1,0 +1,597 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import RelatedContent from '../../components/RelatedContent.astro';
+import AstroCard from '../../components/ui/AstroCard.astro';
+import AstroButton from '../../components/ui/AstroButton.astro';
+import AstroBadge from '../../components/ui/AstroBadge.astro';
+import { Phone, Calendar, Clock, ChevronRight, BookOpen, Lightbulb, FileText, Wrench } from 'lucide-react';
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog');
+  
+  return blogPosts.map(post => {
+    const slug = post.data.url 
+      ? post.data.url.replace('/blog/', '').replace(/\/$/, '')
+      : post.id;
+    
+    return {
+      params: { slug },
+      props: { post }
+    };
+  });
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Get all posts for navigation
+const allPosts = await getCollection('blog');
+
+// Organize posts by category
+const postsByCategory = allPosts.reduce((acc, p) => {
+  const categories = p.data.categories || ['Uncategorized'];
+  categories.forEach(cat => {
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push({
+      title: p.data.title,
+      url: p.data.url || `/blog/${p.id}/`,
+      isCurrent: p.id === post.id
+    });
+  });
+  return acc;
+}, {});
+
+// Get related content
+const relatedPosts = allPosts
+  .filter(p => p.id !== post.id)
+  .filter(p => {
+    const currentCategories = post.data.categories || [];
+    const postCategories = p.data.categories || [];
+    return currentCategories.some(cat => postCategories.includes(cat));
+  })
+  .slice(0, 5)
+  .map(p => ({
+    href: p.data.url || `/blog/${p.id}/`,
+    title: p.data.title,
+    description: p.data.description,
+    type: 'blog'
+  }));
+
+// Get services and guides for cross-linking
+const services = await getCollection('services');
+const guides = await getCollection('guides');
+
+// Find related content based on keywords
+const keywords = (post.data.tags || []).concat(post.data.categories || []);
+const relatedServices = services
+  .filter(s => {
+    const serviceTags = s.data.tags || [];
+    return keywords.some(k => 
+      s.data.title.toLowerCase().includes(k.toLowerCase()) ||
+      serviceTags.some(t => t.toLowerCase().includes(k.toLowerCase()))
+    );
+  })
+  .slice(0, 3)
+  .map(s => ({
+    title: s.data.title,
+    url: s.data.url || `/services/${s.id}/`,
+    type: 'service'
+  }));
+
+const relatedGuides = guides
+  .filter(g => {
+    const guideTags = g.data.tags || [];
+    return keywords.some(k => 
+      g.data.title.toLowerCase().includes(k.toLowerCase()) ||
+      guideTags.some(t => t.toLowerCase().includes(k.toLowerCase()))
+    );
+  })
+  .slice(0, 3)
+  .map(g => ({
+    title: g.data.title,
+    url: g.data.url || `/guides/${g.id}/`,
+    type: 'guide'
+  }));
+---
+
+<MainLayout title={post.data.title} description={post.data.description}>
+  <!-- Skip to main content link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <div class="min-h-screen bg-background">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Breadcrumbs -->
+      <Breadcrumbs current={post.data.title} />
+      
+      <!-- 3-Column Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-[250px_1fr] xl:grid-cols-[250px_1fr_300px] gap-8 mt-8">
+        <!-- Left Sidebar - Blog Navigation -->
+        <aside class="hidden lg:block" aria-label="Blog navigation">
+          <div class="sticky top-8 space-y-6">
+            <!-- All Articles Card -->
+            <AstroCard class="bg-gradient-to-b from-slate-50 to-slate-100 border-0">
+              <h3 class="text-lg font-semibold mb-4 pb-2 border-b-2 border-primary flex items-center gap-2">
+                <BookOpen className="h-5 w-5 text-primary" client:load />
+                All Articles
+              </h3>
+              
+              <!-- Category Navigation -->
+              <nav aria-label="Articles by category" class="space-y-6">
+                {Object.entries(postsByCategory).map(([category, posts]) => (
+                  <div class="space-y-2">
+                    <h4 class="text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-2">
+                      <ChevronRight className="h-3 w-3 text-primary" client:load />
+                      {category}
+                    </h4>
+                    <ul class="space-y-1">
+                      {posts.slice(0, 5).map(p => (
+                        <li>
+                          <a 
+                            href={p.url}
+                            aria-current={p.isCurrent ? 'page' : undefined}
+                            class={`
+                              block px-3 py-2 text-sm rounded-md transition-all relative
+                              ${p.isCurrent 
+                                ? 'bg-primary/10 text-primary font-medium' 
+                                : 'text-muted-foreground hover:text-primary hover:bg-primary/5 hover:translate-x-1'
+                              }
+                            `}
+                          >
+                            {p.isCurrent && (
+                              <span aria-hidden="true" class="absolute left-0 top-1/2 -translate-y-1/2 text-primary font-bold">→</span>
+                            )}
+                            <span class={p.isCurrent ? 'ml-4' : ''}>
+                              {p.title}
+                            </span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </nav>
+            </AstroCard>
+            
+            <!-- Quick Links -->
+            <AstroCard class="bg-primary/5 border-primary/20">
+              <nav aria-label="Quick navigation">
+                <h4 class="text-xs font-bold text-primary uppercase tracking-wider mb-3 flex items-center gap-2">
+                  <Lightbulb className="h-4 w-4" client:load />
+                  Quick Links
+                </h4>
+                <div class="space-y-2">
+                  <AstroButton href="/services/" variant="secondary" size="sm" class="w-full justify-start">
+                    All Services
+                  </AstroButton>
+                  <AstroButton href="/guides/" variant="secondary" size="sm" class="w-full justify-start">
+                    DIY Guides
+                  </AstroButton>
+                  <AstroButton href="/contact/" variant="secondary" size="sm" class="w-full justify-start">
+                    Get Quote
+                  </AstroButton>
+                </div>
+              </nav>
+            </AstroCard>
+          </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main id="main-content" class="min-w-0">
+          <!-- Article Header -->
+          <header class="mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              {post.data.title}
+            </h1>
+            
+            <div class="flex flex-wrap gap-4 items-center text-sm text-muted-foreground">
+              {post.data.date && (
+                <time datetime={post.data.date} class="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" client:load />
+                  <span class="sr-only">Published on</span>
+                  {new Date(post.data.date).toLocaleDateString('en-CA', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                  })}
+                </time>
+              )}
+              
+              {post.data.categories && post.data.categories.length > 0 && (
+                <div class="flex gap-2 flex-wrap">
+                  {post.data.categories.map(cat => (
+                    <AstroBadge variant="secondary" class="text-xs">
+                      {cat}
+                    </AstroBadge>
+                  ))}
+                </div>
+              )}
+            </div>
+          </header>
+          
+          <!-- Mobile Table of Contents -->
+          <nav class="lg:hidden mb-6 bg-muted/50 rounded-lg p-4" aria-label="Table of contents">
+            <details class="group">
+              <summary class="cursor-pointer font-semibold text-lg flex items-center justify-between">
+                <span class="flex items-center gap-2">
+                  <FileText className="h-5 w-5 text-primary" client:load />
+                  Table of Contents
+                </span>
+                <ChevronRight className="h-5 w-5 transition-transform group-open:rotate-90" client:load />
+              </summary>
+              <div class="mt-4 space-y-2" id="toc-list-mobile">
+                <!-- Will be populated by JavaScript -->
+              </div>
+            </details>
+          </nav>
+          
+          <!-- Article Content -->
+          <article class="prose prose-lg max-w-none 
+            prose-headings:font-bold prose-headings:text-foreground
+            prose-p:text-foreground prose-p:leading-relaxed
+            prose-a:text-primary prose-a:underline-offset-4 hover:prose-a:underline
+            prose-strong:text-foreground prose-strong:font-semibold
+            prose-ul:list-disc prose-ul:pl-6
+            prose-ol:list-decimal prose-ol:pl-6
+            prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-4 prose-blockquote:italic
+            prose-img:rounded-lg prose-img:shadow-lg
+            prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
+            prose-pre:bg-muted prose-pre:p-4 prose-pre:rounded-lg
+          ">
+            <Content />
+          </article>
+          
+          <!-- Mobile Key Points -->
+          <AstroCard class="xl:hidden mt-8 bg-gradient-to-b from-orange-50 to-orange-100 border-orange-200">
+            <section aria-label="Article key points">
+              <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                <Lightbulb className="h-5 w-5 text-orange-600" client:load />
+                Key Points from This Article
+              </h3>
+              <div id="points-list-mobile" class="space-y-3">
+                <!-- Will be populated by JavaScript -->
+              </div>
+            </section>
+          </AstroCard>
+          
+          <!-- Call to Action -->
+          <AstroCard class="mt-12 bg-gradient-to-br from-emerald-50 to-emerald-100 border-emerald-200">
+            <div class="text-center space-y-4">
+              <h3 class="text-2xl font-bold text-emerald-900">Need Professional Help?</h3>
+              <p class="text-emerald-700">
+                While our guides provide valuable information, some issues require professional expertise.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <AstroButton href="tel:437-545-0067" variant="default" size="lg" class="gap-2">
+                  <Phone className="h-5 w-5" client:load />
+                  Call (437) 545-0067
+                </AstroButton>
+                <AstroButton href="/contact/" variant="outline" size="lg">
+                  Get Free Quote
+                </AstroButton>
+              </div>
+            </div>
+          </AstroCard>
+          
+          <!-- Related Articles -->
+          {relatedPosts.length > 0 && (
+            <div class="mt-12">
+              <RelatedContent 
+                title="Related Articles"
+                items={relatedPosts.slice(0, 3)}
+                layout="grid"
+              />
+            </div>
+          )}
+        </main>
+        
+        <!-- Right Sidebar - Context & Related Content -->
+        <aside class="hidden xl:block" aria-label="Article context and related content">
+          <div class="sticky top-24 space-y-6 max-h-[calc(100vh-8rem)] overflow-y-auto">
+            <!-- Table of Contents (desktop) -->
+            <AstroCard class="bg-gradient-to-b from-slate-50 to-slate-100 border-0">
+              <nav aria-label="In this article">
+                <h3 class="text-lg font-semibold mb-4 pb-2 border-b-2 border-accent flex items-center gap-2">
+                  <FileText className="h-5 w-5 text-accent" client:load />
+                  In This Article
+                </h3>
+                <div class="space-y-2" id="toc-list">
+                  <!-- Will be populated by JavaScript -->
+                </div>
+              </nav>
+            </AstroCard>
+            
+            <!-- Key Points -->
+            <AstroCard class="bg-gradient-to-b from-orange-50 to-orange-100 border-orange-200">
+              <section aria-live="polite" aria-label="Key points for current section">
+                <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                  <Lightbulb className="h-5 w-5 text-orange-600" client:load />
+                  Key Points
+                </h3>
+                <div id="points-list" class="space-y-3 max-h-96 overflow-y-auto">
+                  <p class="text-sm text-muted-foreground italic">Scroll to see key points from the current section...</p>
+                </div>
+              </section>
+            </AstroCard>
+            
+            <!-- Related Services -->
+            {relatedServices.length > 0 && (
+              <AstroCard>
+                <nav aria-label="Related services">
+                  <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                    <Wrench className="h-5 w-5 text-secondary" client:load />
+                    Related Services
+                  </h3>
+                  <ul class="space-y-2">
+                    {relatedServices.map(service => (
+                      <li>
+                        <a 
+                          href={service.url}
+                          class="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                        >
+                          {service.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </AstroCard>
+            )}
+            
+            <!-- Related Guides -->
+            {relatedGuides.length > 0 && (
+              <AstroCard>
+                <nav aria-label="Related guides">
+                  <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                    <BookOpen className="h-5 w-5 text-secondary" client:load />
+                    Related Guides
+                  </h3>
+                  <ul class="space-y-2">
+                    {relatedGuides.map(guide => (
+                      <li>
+                        <a 
+                          href={guide.url}
+                          class="text-sm text-muted-foreground hover:text-secondary transition-colors"
+                        >
+                          {guide.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </AstroCard>
+            )}
+            
+            <!-- Quick Contact -->
+            <AstroCard class="bg-gradient-to-b from-primary/10 to-primary/20 border-primary/30">
+              <div class="text-center space-y-4">
+                <h3 class="text-lg font-semibold">Get Expert Help</h3>
+                <p class="text-sm text-muted-foreground">Questions about this topic?</p>
+                <AstroButton href="tel:437-545-0067" variant="default" size="sm" class="w-full gap-2">
+                  <Phone className="h-4 w-4" client:load />
+                  (437) 545-0067
+                </AstroButton>
+                <AstroButton href="/contact/" variant="outline" size="sm" class="w-full">
+                  Get Free Quote
+                </AstroButton>
+              </div>
+            </AstroCard>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Generate table of contents and extract key points
+    document.addEventListener('DOMContentLoaded', () => {
+      const content = document.querySelector('article');
+      const tocList = document.getElementById('toc-list');
+      const tocListMobile = document.getElementById('toc-list-mobile');
+      const pointsList = document.getElementById('points-list');
+      const pointsListMobile = document.getElementById('points-list-mobile');
+      
+      if (content) {
+        const headings = content.querySelectorAll('h2');
+        const sections = [];
+        const allKeyPoints = [];
+        
+        // Process headings and extract content
+        headings.forEach((heading, index) => {
+          // Add ID if missing
+          if (!heading.id) {
+            heading.id = `section-${index + 1}`;
+          }
+          
+          // Get content until next heading
+          let nextElement = heading.nextElementSibling;
+          let sectionContent = [];
+          let keyPoints = [];
+          
+          while (nextElement && nextElement.tagName !== 'H2') {
+            // Collect important content
+            if (nextElement.tagName === 'P') {
+              const text = nextElement.textContent;
+              sectionContent.push(text);
+              
+              // Extract important points
+              if (text.toLowerCase().includes('important') || 
+                  text.toLowerCase().includes('warning') || 
+                  text.toLowerCase().includes('note')) {
+                const point = {
+                  text: text.substring(0, 150) + '...',
+                  type: 'warning',
+                  section: heading.textContent
+                };
+                keyPoints.push(point);
+                allKeyPoints.push(point);
+              }
+              
+              // Extract sentences with numbers (statistics, costs, etc.)
+              if (text.match(/\d+%|\$\d+|\d+\s*(years?|months?|days?|hours?)/i)) {
+                const point = {
+                  text: text.substring(0, 150) + '...',
+                  type: 'stat',
+                  section: heading.textContent
+                };
+                keyPoints.push(point);
+                allKeyPoints.push(point);
+              }
+            }
+            
+            // Extract lists as key points
+            if (nextElement.tagName === 'UL' || nextElement.tagName === 'OL') {
+              const items = nextElement.querySelectorAll('li');
+              items.forEach((item, idx) => {
+                if (idx < 3) { // Limit to first 3 items
+                  const point = {
+                    text: item.textContent.trim(),
+                    type: 'list',
+                    section: heading.textContent
+                  };
+                  keyPoints.push(point);
+                  allKeyPoints.push(point);
+                }
+              });
+            }
+            
+            nextElement = nextElement.nextElementSibling;
+          }
+          
+          sections.push({
+            id: heading.id,
+            title: heading.textContent,
+            content: sectionContent.join(' '),
+            keyPoints: keyPoints.slice(0, 5)
+          });
+        });
+        
+        // Generate TOC HTML
+        function createTOCHTML(containerId) {
+          const container = document.getElementById(containerId);
+          if (!container) return;
+          
+          sections.forEach(section => {
+            const link = document.createElement('a');
+            link.href = `#${section.id}`;
+            link.textContent = section.title;
+            link.className = 'block px-3 py-2 text-sm rounded-md text-muted-foreground hover:text-accent hover:bg-accent/5 transition-all';
+            link.dataset.sectionId = section.id;
+            
+            link.addEventListener('click', (e) => {
+              e.preventDefault();
+              document.getElementById(section.id).scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+              });
+            });
+            
+            container.appendChild(link);
+          });
+        }
+        
+        createTOCHTML('toc-list');
+        createTOCHTML('toc-list-mobile');
+        
+        // Scroll tracking and key points update
+        let currentSection = null;
+        
+        function updateActiveSection() {
+          const scrollPosition = window.scrollY + 100;
+          
+          sections.forEach(section => {
+            const element = document.getElementById(section.id);
+            if (element) {
+              const rect = element.getBoundingClientRect();
+              const top = rect.top + window.scrollY;
+              
+              if (scrollPosition >= top) {
+                currentSection = section.id;
+              }
+            }
+          });
+          
+          // Update active TOC item
+          document.querySelectorAll('#toc-list a, #toc-list-mobile a').forEach(a => {
+            if (a.dataset.sectionId === currentSection) {
+              a.classList.add('text-accent', 'font-medium', 'bg-accent/10');
+              a.classList.remove('text-muted-foreground');
+            } else {
+              a.classList.remove('text-accent', 'font-medium', 'bg-accent/10');
+              a.classList.add('text-muted-foreground');
+            }
+          });
+          
+          // Update key points
+          const section = sections.find(s => s.id === currentSection);
+          if (section && pointsList) {
+            pointsList.innerHTML = '';
+            
+            if (section.keyPoints.length > 0) {
+              section.keyPoints.forEach(point => {
+                const div = document.createElement('div');
+                let bgClass = 'bg-white';
+                let borderClass = 'border-blue-500';
+                let textClass = 'text-slate-700';
+                
+                if (point.type === 'warning') {
+                  bgClass = 'bg-amber-50';
+                  borderClass = 'border-amber-500';
+                  textClass = 'text-amber-900';
+                } else if (point.type === 'stat') {
+                  bgClass = 'bg-green-50';
+                  borderClass = 'border-green-500';
+                  textClass = 'text-green-900';
+                }
+                
+                div.className = `p-3 ${bgClass} border-l-4 ${borderClass} ${textClass} text-sm rounded shadow-sm`;
+                div.textContent = point.text;
+                pointsList.appendChild(div);
+              });
+            } else {
+              const p = document.createElement('p');
+              p.className = 'text-sm text-muted-foreground italic';
+              p.textContent = 'Scroll to see key points from the current section...';
+              pointsList.appendChild(p);
+            }
+          }
+        }
+        
+        // Initial update
+        updateActiveSection();
+        
+        // Populate mobile key points
+        if (pointsListMobile && allKeyPoints.length > 0) {
+          allKeyPoints.slice(0, 10).forEach(point => {
+            const div = document.createElement('div');
+            let bgClass = 'bg-white';
+            let borderClass = 'border-blue-500';
+            
+            if (point.type === 'warning') {
+              bgClass = 'bg-amber-50';
+              borderClass = 'border-amber-500';
+            } else if (point.type === 'stat') {
+              bgClass = 'bg-green-50';
+              borderClass = 'border-green-500';
+            }
+            
+            div.className = `p-3 ${bgClass} border-l-4 ${borderClass} rounded text-sm`;
+            div.innerHTML = `
+              <p class="font-medium text-xs text-muted-foreground mb-1">${point.section}</p>
+              <p>${point.text}</p>
+            `;
+            pointsListMobile.appendChild(div);
+          });
+        }
+        
+        // Update on scroll
+        let scrollTimer;
+        window.addEventListener('scroll', () => {
+          clearTimeout(scrollTimer);
+          scrollTimer = setTimeout(updateActiveSection, 50);
+        });
+      }
+    });
+  </script>
+</MainLayout>

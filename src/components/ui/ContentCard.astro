@@ -1,0 +1,127 @@
+---
+import AstroCard from './AstroCard.astro';
+import AstroBadge from './AstroBadge.astro';
+import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react';
+
+export interface Props {
+  title: string;
+  description?: string;
+  href: string;
+  image?: string;
+  date?: string;
+  readTime?: string;
+  categories?: string[];
+  tags?: string[];
+  type?: 'blog' | 'guide' | 'service' | 'location';
+  featured?: boolean;
+}
+
+const { 
+  title, 
+  description, 
+  href, 
+  image,
+  date,
+  readTime,
+  categories = [],
+  tags = [],
+  type = 'blog',
+  featured = false
+} = Astro.props;
+
+const typeColors = {
+  blog: 'primary',
+  guide: 'secondary', 
+  service: 'accent',
+  location: 'default'
+};
+
+const typeLabels = {
+  blog: 'Article',
+  guide: 'Guide',
+  service: 'Service',
+  location: 'Location'
+};
+---
+
+<a href={href} class="block group">
+  <AstroCard class={`
+    h-full transition-all duration-200 
+    hover:shadow-lg hover:-translate-y-1
+    ${featured ? 'ring-2 ring-primary ring-offset-2' : ''}
+  `}>
+    {image && (
+      <div class="aspect-video relative overflow-hidden rounded-t-lg -m-6 mb-4">
+        <img 
+          src={image} 
+          alt={title}
+          loading="lazy"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div class="absolute top-2 right-2">
+          <AstroBadge variant={typeColors[type]}>
+            {typeLabels[type]}
+          </AstroBadge>
+        </div>
+      </div>
+    )}
+    
+    <div class="space-y-3">
+      {/* Meta information */}
+      <div class="flex flex-wrap gap-3 text-sm text-muted-foreground">
+        {date && (
+          <span class="flex items-center gap-1">
+            <Calendar className="h-3.5 w-3.5" client:load />
+            {new Date(date).toLocaleDateString('en-CA', { 
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric'
+            })}
+          </span>
+        )}
+        
+        {readTime && (
+          <span class="flex items-center gap-1">
+            <Clock className="h-3.5 w-3.5" client:load />
+            {readTime}
+          </span>
+        )}
+      </div>
+      
+      {/* Title */}
+      <h3 class="text-xl font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
+        {title}
+      </h3>
+      
+      {/* Description */}
+      {description && (
+        <p class="text-muted-foreground line-clamp-3">
+          {description}
+        </p>
+      )}
+      
+      {/* Categories/Tags */}
+      {(categories.length > 0 || tags.length > 0) && (
+        <div class="flex flex-wrap gap-2">
+          {categories.slice(0, 2).map(cat => (
+            <AstroBadge variant="secondary" class="text-xs">
+              {cat}
+            </AstroBadge>
+          ))}
+          {tags.slice(0, 2).map(tag => (
+            <span class="inline-flex items-center gap-1 text-xs text-muted-foreground">
+              <Tag className="h-3 w-3" client:load />
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+      
+      {/* Read more link */}
+      <div class="flex items-center gap-2 text-sm font-medium text-primary group-hover:gap-3 transition-all">
+        Read more
+        <ArrowRight className="h-4 w-4" client:load />
+      </div>
+    </div>
+  </AstroCard>
+</a>

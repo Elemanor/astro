@@ -1,0 +1,325 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/mississauga-basement-waterproofing.md
+// Migration date: 2025-08-04T15:30:57.782Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Mississauga area data
+const mississaugaData = {
+  // Location Info
+  cityName: "Mississauga",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Mississauga Basement Waterproofing | #1 Local Experts | 25-Year Warranty",
+  description: "FLOOD ALERT: Mississauga basements at risk! Expert waterproofing from Port Credit to Streetsville. FREE emergency quotes, $3,400 rebates, lifetime warranty. Don't wait - call (437) 545-0067!",
+  keywords: [
+    "basement waterproofing mississauga",
+    "mississauga waterproofing rebates",
+    "peel region waterproofing",
+    "mississauga basement contractors"
+  ],
+  
+  // Stats
+  population: "717,961",
+  homesServed: "500+",
+  yearsInArea: "30+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "800mm",
+    freezeThawCycles: "32-38/year",
+    floodRisk: "Moderate",
+    snowfall: "113cm",
+    avgHumidity: "79%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Port Credit",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Streetsville",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Meadowvale",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Erin Mills",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Cooksville",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Lakeview",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Clarkson",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Port Credit & Lakeview",
+      "challenges": [
+        "* High water table, lake proximity",
+        "*"
+      ],
+      "solutions": [
+        "* Dual sump pump systems with battery backup",
+        "*"
+      ],
+      "avgCost": "$4,500-$7,500"
+    },
+    {
+      "name": "Streetsville Heritage District",
+      "challenges": [
+        "* 100+ year old foundations",
+        "*"
+      ],
+      "solutions": [
+        "* Interior injection + drainage",
+        "*"
+      ],
+      "avgCost": "$6,000-$10,000"
+    },
+    {
+      "name": "Meadowvale & Erin Mills",
+      "challenges": [
+        "* Clay soil expansion",
+        "*"
+      ],
+      "solutions": [
+        "* Exterior membrane + proper grading",
+        "*"
+      ],
+      "avgCost": "$8,000-$15,000"
+    },
+    {
+      "name": "Square One Area Condos",
+      "challenges": [
+        "* Underground parking seepage",
+        "*"
+      ],
+      "solutions": [
+        "* Commercial-grade injection systems",
+        "*"
+      ],
+      "avgCost": "$3,000-$8,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "<li>✓ Average response time",
+      "description": "45 minutes</li>",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "🏔️"
+    },
+    {
+      "issue": "<a href=\"tel",
+      "description": "4375450067\" class=\"herocta\">Call (437) 545-0067 - Free Quote</a>",
+      "solution": "Professional assessment and customized waterproofing solution",
+      "icon": "🏔️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$3,500",
+      "max": "$6,500"
+    },
+    "exterior": {
+      "min": "$12,000",
+      "max": "$25,000"
+    },
+    "emergency": {
+      "min": "$2,000",
+      "max": "$3,000"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "Region of Peel Flood Prevention Subsidy",
+      "amount": "Up to $3,000",
+      "eligibility": "Backwater valves, sump pumps, foundation drain disconnection",
+      "deadline": "Annual program - apply early"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$3,500",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$12,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$2,000",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Mississauga?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Mississauga homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Mississauga?",
+      "answer": "We maintain crews throughout Mississauga for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Mississauga?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Mississauga building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Mississauga",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "60 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/process/waterproofing.webp" 
+    alt="Waterproofing process in progress"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Professional waterproofing process
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/services/legal-basement/leagal-basement.webp" 
+    alt="Legal basement conversion project"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Create legal basement apartments
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...mississaugaData} />

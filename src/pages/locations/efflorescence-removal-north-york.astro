@@ -1,0 +1,462 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/efflorescence-removal-north-york.md
+// Migration date: 2025-08-04T15:30:57.673Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Wall Specialists area data
+const wallspecialistsData = {
+  // Location Info
+  cityName: "Wall Specialists",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Efflorescence Removal North York | Concrete & Basement Wall Specialists",
+  description: "Professional efflorescence removal in North York. Concrete foundation specialists, clay soil moisture experts, Don Valley watershed knowledge. Serving Willowdale, Sheppard, Finch areas. Call (437) 545-0067",
+  keywords: [
+    "efflorescence removal north york",
+    "efflorescence north york",
+    "basement efflorescence north york",
+    "concrete efflorescence removal",
+    "north york foundation repair"
+  ],
+  
+  // Stats
+  population: "",
+  homesServed: "500+",
+  yearsInArea: "15+",
+  responseTime: "60 minutes",
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Willowdale",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Sheppard West",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Finch",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Don Mills",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "York Mills",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Bayview Village",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Thornhill",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "North York Centre",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Flemingdon Park",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Victoria Park",
+      "challenges": [
+        "Water table issues",
+        "Drainage problems",
+        "Foundation concerns"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage systems",
+        "Foundation repair"
+      ],
+      "avgCost": "$4,000 - $12,000"
+    },
+    {
+      "name": "Don Valley Watershed Impact",
+      "challenges": [
+        "**Don River tributary network** affects groundwater throughout area",
+        "**East Don River** influences eastern North York neighborhoods",
+        "**West Don River** impacts central and western areas",
+        "**Seasonal flood patterns** increase moisture infiltration",
+        "**High water table** during spring melt and heavy rain periods"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Willowdale & Sheppard West",
+      "challenges": [
+        "* High-density condos + clay soil + aging concrete",
+        "**Building age:** Many 1970s-1980s concrete structures",
+        "**Clay soil depth:** 8-15 feet of dense Halton Till",
+        "**Moisture sources:** Clay saturation plus infrastructure aging",
+        "**Common locations:** Underground parking, basement walls, foundation walls",
+        "**Mineral content:** High calcium carbonate from original concrete mixes",
+        "**Treatment approach:** Comprehensive moisture control plus mineral removal",
+        "**Investment range:** $1,200-$3,500 per treatment area"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$1,200-$3,500"
+    },
+    {
+      "name": "Don Mills & Flemingdon Park",
+      "challenges": [
+        "* Don River proximity + mixed-age buildings + clay",
+        "**Watershed influence:** Direct Don River tributary effects",
+        "**Soil conditions:** Clay with seasonal water table fluctuations",
+        "**Building types:** Mix of vintage and modern concrete construction",
+        "**Efflorescence severity:** Often extensive due to multiple moisture sources",
+        "**Treatment complexity:** Requires watershed-aware moisture management",
+        "**Professional"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$1,500-$4,200"
+    },
+    {
+      "name": "York Mills & Bayview Village",
+      "challenges": [
+        "* Upscale homes + mature landscapes + clay moisture",
+        "**Property characteristics:** Larger homes, finished basements, mature trees",
+        "**Clay conditions:** Dense clay with poor natural drainage",
+        "**Moisture complexity:** Irrigation, clay saturation, foundation age",
+        "**Aesthetic requirements:** High-end finishes require careful treatment",
+        "**Treatment sophistication:** Premium methods preserving property value",
+        "**Investment:** $1,800-$5,000"
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$1,800-$5,000"
+    },
+    {
+      "name": "Finch & North York Centre",
+      "challenges": [
+        "* High-rise density + subway effects + clay soil",
+        "**Urban intensity:** High-density development affects moisture patterns",
+        "**Subway proximity:** TTC infrastructure may affect groundwater flow",
+        "**Clay soil stress:** Heavy construction on clay creates moisture pressure",
+        "**Building height:** Taller structures experience different moisture dynamics",
+        "**Treatment access:** Often requires specialized equipment for height/access",
+        "**Commercial-grade"
+      ],
+      "solutions": [
+        "* $2,000-$6,000"
+      ],
+      "avgCost": "$2,000-$6,000"
+    },
+    {
+      "name": "Willowdale Condo Underground Parking",
+      "challenges": [
+        "* Severe efflorescence throughout parking garage, resident complaints",
+        "*Previous attempts:** Two failed treatments by general contractors",
+        "*Complexity:** Active leaks, poor ventilation, ongoing moisture sources",
+        "*DrySpace"
+      ],
+      "solutions": [
+        "* Comprehensive moisture control plus specialized treatment",
+        "*Investment:** $18,500 for complete garage treatment",
+        "*Results:** 2 years completely efflorescence-free, improved property values",
+        "*Property manager:** \"Finally found experts who understand condo complexes\""
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Don Mills Executive Home",
+      "challenges": [
+        "* Don River proximity, clay soil, maintaining high-end aesthetics",
+        "*DrySpace approach:** Premium treatment preserving luxury finishes",
+        "*Cost:** $4,800 including moisture control and aesthetic restoration",
+        "*Outcome:** Perfect aesthetic results, basement usable again",
+        "*Homeowner feedback:** \"Treatment quality matches our property standards\""
+      ],
+      "solutions": [
+        "Professional waterproofing",
+        "Drainage solutions"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "York Mills Heritage Property",
+      "challenges": [
+        "Local water issues",
+        "Foundation challenges"
+      ],
+      "solutions": [
+        "* Heritage-compatible treatments preserving original concrete",
+        "*Investment:** $5,200 including heritage consultation and specialized techniques",
+        "*Result:** Efflorescence eliminated while preserving heritage character",
+        "*Heritage committee:** \"Appropriate treatment respecting property's historic value\""
+      ],
+      "avgCost": "$5,000 - $15,000"
+    },
+    {
+      "name": "Our North York Commitment",
+      "challenges": [
+        "Local water issues",
+        "Foundation challenges"
+      ],
+      "solutions": [
+        "*",
+        "**Clay soil expertise:** 25+ years managing North York's challenging moisture conditions",
+        "**Advanced treatment technology:** Professional-grade solutions for lasting results",
+        "**Comprehensive approach:** Addressing causes, not just symptoms",
+        "**Long-term warranty:** Confidence in our treatment effectiveness",
+        "**Ongoing support:** Maintenance and monitoring programs for continued protection"
+      ],
+      "avgCost": "$5,000 - $15,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "Local Soil Conditions",
+      "description": "Wall Specialists's soil composition creates unique foundation challenges",
+      "solution": "Soil-specific waterproofing systems and drainage solutions",
+      "icon": "🏔️"
+    },
+    {
+      "issue": "Weather Extremes",
+      "description": "Freeze-thaw cycles and heavy rainfall affect basements",
+      "solution": "Climate-adapted waterproofing with proper drainage",
+      "icon": "🌧️"
+    },
+    {
+      "issue": "Urban Development",
+      "description": "Changes in local drainage patterns from development",
+      "solution": "Modern drainage systems to handle increased water flow",
+      "icon": "🏗️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$3,000",
+      "max": "$8,000"
+    },
+    "exterior": {
+      "min": "$800",
+      "max": "$1,500"
+    },
+    "emergency": {
+      "min": "$1200",
+      "max": "$12000"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "Municipal Waterproofing Subsidy",
+      "amount": "Up to $3,000",
+      "eligibility": "Flood prevention measures for residential properties",
+      "deadline": "While funding lasts"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$3,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$800",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$1200",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Wall Specialists?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Wall Specialists homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Wall Specialists?",
+      "answer": "We maintain crews throughout Wall Specialists for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Wall Specialists?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Wall Specialists building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Wall Specialists",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "60 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/images/hero-damages/spalling.webp" 
+    alt="Concrete spalling and deterioration"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Spalling concrete needs repair
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/work/underpinning.webp" 
+    alt="Foundation underpinning for structural support"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Underpinning strengthens your foundation
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...wallspecialistsData} />

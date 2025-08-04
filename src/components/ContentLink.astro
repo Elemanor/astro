@@ -1,0 +1,65 @@
+---
+export interface Props {
+  href: string;
+  type?: 'blog' | 'guide' | 'service' | 'location' | 'tool' | 'default';
+  class?: string;
+  external?: boolean;
+}
+
+const { href, type = 'default', class: className = '', external = false } = Astro.props;
+
+// Determine link type from URL if not specified
+let linkType = type;
+if (type === 'default' && href.startsWith('/')) {
+  if (href.startsWith('/blog/')) linkType = 'blog';
+  else if (href.startsWith('/guides/')) linkType = 'guide';
+  else if (href.startsWith('/services/')) linkType = 'service';
+  else if (href.startsWith('/locations/')) linkType = 'location';
+  else if (href.startsWith('/tools/')) linkType = 'tool';
+}
+
+// Style configuration for each link type
+const styles = {
+  blog: 'text-blue-600 hover:text-blue-800 underline decoration-blue-300 hover:decoration-blue-600',
+  guide: 'text-green-600 hover:text-green-800 underline decoration-green-300 hover:decoration-green-600',
+  service: 'text-purple-600 hover:text-purple-800 underline decoration-purple-300 hover:decoration-purple-600',
+  location: 'text-orange-600 hover:text-orange-800 underline decoration-orange-300 hover:decoration-orange-600',
+  tool: 'text-teal-600 hover:text-teal-800 underline decoration-teal-300 hover:decoration-teal-600',
+  default: 'text-blue-600 hover:text-blue-800 underline'
+};
+
+// Icons for each type
+const icons = {
+  blog: '📝',
+  guide: '📖',
+  service: '🔧',
+  location: '📍',
+  tool: '🧮'
+};
+
+const finalStyle = `${styles[linkType]} font-medium transition-all duration-200 ${className}`;
+const icon = icons[linkType] || '';
+const externalProps = external ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+---
+
+<a 
+  href={href} 
+  class={finalStyle}
+  {...externalProps}
+>
+  {icon && <span class="mr-1">{icon}</span>}
+  <slot />
+  {external && <span class="ml-1">↗</span>}
+</a>
+
+<style>
+  a {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+  
+  a:hover {
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+  }
+</style>

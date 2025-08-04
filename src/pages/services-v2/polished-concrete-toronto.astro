@@ -1,0 +1,177 @@
+---
+// Migrated from markdown to V2 template
+// Original file: /services/polished-concrete-toronto/
+// Migration date: 2025-08-04T15:14:30.060Z
+
+import ServicePageTemplateV2 from '../../templates/ServicePageTemplateV2.astro';
+
+// Service data extracted from original markdown
+const serviceData = {
+  serviceName: "Polished Concrete Toronto",
+  serviceTitle: "Polished Concrete Toronto | Basement Floors, Cost & Installation",
+  serviceSubtitle: "Professional Polished Concrete Flooring for Toronto Homes & Businesses",
+  serviceDescription: "Expert polished concrete Toronto services for basements, garages, and commercial spaces. Durable, modern flooring solutions. Free estimates: (437) 545-0067",
+  
+  
+  
+  
+  heroStats: [
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "5,000+",
+      "label": "Homes Protected"
+    },
+    {
+      "value": "100%",
+      "label": "Satisfaction Rate"
+    },
+    {
+      "value": "Lifetime",
+      "label": "Warranty"
+    }
+  ],
+  
+  tableOfContents: [],
+  
+  relatedServices: [
+    {
+      "url": "/services/concrete-repair/",
+      "description": "Fix cracks before polishing",
+      "image": "/pics/work/concrete-repair.webp"
+    },
+    {
+      "url": "/services/interior-waterproofing/",
+      "description": "Ensure dry floors before polishing",
+      "image": "/pics/work/interior-waterproofing.webp"
+    },
+    {
+      "url": "/services/basement-renovations/",
+      "description": "Complete basement transformations",
+      "image": "/pics/work/basement-renovation.webp"
+    }
+  ],
+  
+  serviceFaqs: [
+    {
+      "question": "How much does polished concrete cost in Toronto?",
+      "answer": "Polished concrete Toronto costs typically range from $3-8 per square foot, depending on the level of polish and preparation needed. Basic grinding and sealing starts at $3/sq ft, while high-gloss polished concrete with decorative options can reach $8/sq ft. This is often more affordable than traditional flooring when considering longevity."
+    },
+    {
+      "question": "Is polished concrete good for Toronto basements?",
+      "answer": "Yes, polished concrete is excellent for Toronto basements. It's moisture-resistant, won't harbor mold, and handles our temperature fluctuations well. When combined with proper basement waterproofing, polished concrete Toronto floors provide a durable, low-maintenance solution that brightens basement spaces."
+    },
+    {
+      "question": "How long does polished concrete last?",
+      "answer": "Properly installed polished concrete Toronto floors can last 20+ years with minimal maintenance. Unlike carpet or laminate that needs replacement every 5-10 years, polished concrete only requires occasional resealing. This makes it one of the most cost-effective flooring options for Toronto homes and businesses."
+    },
+    {
+      "question": "Can existing concrete be polished?",
+      "answer": "Most existing concrete floors can be polished, but condition matters. We assess for cracks, levelness, and moisture issues. Minor repairs are normal, but severely damaged concrete may need an overlay first. Our polished concrete Toronto experts provide free assessments to determine feasibility."
+    }
+  ]
+};
+
+// Main content extracted and converted from markdown
+const mainContent = ``;
+
+// Additional data from original frontmatter (for reference)
+const originalMetadata = {};
+---
+
+<ServicePageTemplateV2 {...serviceData} mainContent={mainContent} />
+
+<style>
+  /* Preserved styles from original page */
+  :global(.toronto-hero-banner) {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  :global(.trust-signals-toronto) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.trust-signals-toronto span) {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  :global(.toronto-service-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  :global(.toronto-area-card) {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  :global(.toronto-area-card h3) {
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.cost-range) {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  :global(.toronto-cta-section) {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  :global(.toronto-primary-cta) {
+    background: #f97316;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  :global(.toronto-secondary-cta) {
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  :global(.toronto-guarantee-badges) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  :global(.toronto-guarantee-badges span) {
+    color: #10b981;
+    font-weight: 600;
+  }
+</style>

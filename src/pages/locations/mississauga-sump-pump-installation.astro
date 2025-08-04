@@ -1,0 +1,208 @@
+---
+// Migrated from: /mnt/c/Users/Pavel/Desktop/New folder/dryspace-astro/src/content/locations/mississauga-sump-pump-installation.md
+// Migration date: 2025-08-04T15:30:57.799Z
+import ServiceAreaTemplate from '../../templates/ServiceAreaTemplate.astro';
+
+// Mississauga area data
+const mississaugaData = {
+  // Location Info
+  cityName: "Mississauga",
+  provinceName: "Ontario",
+  regionName: "",
+  
+  // SEO
+  title: "Sump Pump Installation Mississauga | Professional Flood Protection",
+  description: "Expert sump pump installation in Mississauga, ON. Protect your home from flooding with certified installers, battery backup systems, and 24/7 service. Call 416-893-5000.",
+  keywords: "sump pump installation Mississauga, sump pump repair Mississauga, basement flooding Mississauga, backup sump pump, flood prevention Mississauga",
+  
+  // Stats
+  population: "717,961",
+  homesServed: "500+",
+  yearsInArea: "15+",
+  responseTime: "60 minutes",
+  // Weather Statistics
+  weatherStats: {
+    annualRainfall: "800mm",
+    freezeThawCycles: "32-38/year",
+    floodRisk: "Moderate",
+    snowfall: "113cm",
+    avgHumidity: "79%"
+  },
+  
+  // Neighborhoods
+  neighborhoods: [
+    {
+      "name": "Downtown Unknown City",
+      "challenges": [
+        "Urban water table",
+        "Aging infrastructure",
+        "Limited access"
+      ],
+      "solutions": [
+        "Interior waterproofing",
+        "Injection systems",
+        "Minimal disruption"
+      ],
+      "avgCost": "$5,000 - $12,000"
+    },
+    {
+      "name": "North Unknown City",
+      "challenges": [
+        "Clay soil",
+        "New development",
+        "Poor drainage"
+      ],
+      "solutions": [
+        "Exterior waterproofing",
+        "French drains",
+        "Proper grading"
+      ],
+      "avgCost": "$8,000 - $20,000"
+    }
+  ],
+  
+  // Local Challenges
+  localChallenges: [
+    {
+      "issue": "Local Soil Conditions",
+      "description": "Mississauga's soil composition creates unique foundation challenges",
+      "solution": "Soil-specific waterproofing systems and drainage solutions",
+      "icon": "🏔️"
+    },
+    {
+      "issue": "Weather Extremes",
+      "description": "Freeze-thaw cycles and heavy rainfall affect basements",
+      "solution": "Climate-adapted waterproofing with proper drainage",
+      "icon": "🌧️"
+    },
+    {
+      "issue": "Urban Development",
+      "description": "Changes in local drainage patterns from development",
+      "solution": "Modern drainage systems to handle increased water flow",
+      "icon": "🏗️"
+    }
+  ],
+  
+  // Pricing
+  priceRanges: {
+    "interior": {
+      "min": "$3,000",
+      "max": "$8,000"
+    },
+    "exterior": {
+      "min": "$10,000",
+      "max": "$25,000"
+    },
+    "emergency": {
+      "min": "$500",
+      "max": "$2,500"
+    }
+  },
+  
+  // Rebates
+  rebates: [
+    {
+      "name": "Region of Peel Flood Prevention Subsidy",
+      "amount": "Up to $3,000",
+      "eligibility": "Backwater valves, sump pumps, foundation drain disconnection",
+      "deadline": "Annual program - apply early"
+    }
+  ],
+  
+  // Services (standard set)
+  services: [
+    {
+      name: "Interior Waterproofing",
+      description: "Complete interior drainage and waterproofing systems",
+      startingPrice: "$3,000",
+      timeline: "2-3 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Exterior Waterproofing",
+      description: "Full excavation and exterior membrane application",
+      startingPrice: "$10,000",
+      timeline: "4-5 days",
+      warranty: "Lifetime"
+    },
+    {
+      name: "Foundation Crack Repair",
+      description: "Professional crack injection and sealing",
+      startingPrice: "$500/crack",
+      timeline: "Same day",
+      warranty: "10 years"
+    },
+    {
+      name: "Sump Pump Installation",
+      description: "Complete sump pump system with battery backup",
+      startingPrice: "$1,500",
+      timeline: "1 day",
+      warranty: "5 years"
+    },
+    {
+      name: "Emergency Water Removal",
+      description: "24/7 emergency flooding response",
+      startingPrice: "$500",
+      timeline: "Within 2 hours",
+      warranty: "Service guarantee"
+    }
+  ],
+  
+  // FAQs
+  localFaqs: [
+    {
+      "question": "How much does basement waterproofing cost in Mississauga?",
+      "answer": "Costs vary based on the solution needed. Interior waterproofing typically ranges from $3,000-$8,000, while exterior systems range from $10,000-$25,000. We provide free inspections and detailed quotes for Mississauga homeowners."
+    },
+    {
+      "question": "How quickly can you respond to emergencies in Mississauga?",
+      "answer": "We maintain crews throughout Mississauga for rapid response. Our average emergency response time is 60 minutes, with 24/7 availability for urgent water issues."
+    },
+    {
+      "question": "Do you handle permits in Mississauga?",
+      "answer": "Yes, we handle all necessary permits and inspections required by Mississauga building departments. Our established relationships ensure smooth project approval."
+    }
+  ],
+  
+  // Business Info
+  businessHours: "24/7 Emergency Service | Office: Mon-Fri 7AM-6PM",
+  address: {
+    "city": "Mississauga",
+    "province": "ON"
+  },
+  
+  // Emergency
+  emergencyNumber: "(437) 545-0067",
+  emergencyResponseTime: "60 minutes"
+,
+  
+  // Images
+  contentImages: `
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/pics/services/basement waterproofing/dryspace_exterior_waterproofing_warranty.jpg" 
+    alt="Professional exterior waterproofing installation with warranty"
+    class="w-full h-auto"
+    loading="eager"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Our exterior waterproofing comes with a lifetime warranty
+  </figcaption>
+</figure>
+
+<figure class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src="/images/hero-damages/Efflorescence.webp" 
+    alt="Efflorescence white powder on basement walls"
+    class="w-full h-auto"
+    loading="lazy"
+  />
+  <figcaption class="bg-gray-100 px-4 py-2 text-sm text-gray-700 text-center">
+    Efflorescence indicates moisture problems
+  </figcaption>
+</figure>`
+
+};
+---
+
+<ServiceAreaTemplate {...mississaugaData} />
