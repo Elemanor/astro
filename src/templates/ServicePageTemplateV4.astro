@@ -1,0 +1,116 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ServiceHero from '../components/services/ServiceHero.astro';
+import ServiceTrustSignals from '../components/services/ServiceTrustSignals.astro';
+import ServiceMainContent from '../components/services/ServiceMainContent.astro';
+import ServiceProcessSteps from '../components/services/ServiceProcessSteps.astro';
+import ServiceBenefits from '../components/services/ServiceBenefits.astro';
+import ServicePricingCTA from '../components/services/ServicePricingCTA.astro';
+import ServiceFAQ from '../components/services/ServiceFAQ.astro';
+import ServiceRelated from '../components/services/ServiceRelated.astro';
+import ServiceFinalCTA from '../components/services/ServiceFinalCTA.astro';
+
+export interface Props {
+  // Basic Service Info
+  serviceName: string;
+  serviceTitle: string;
+  serviceSubtitle: string;
+  serviceDescription: string;
+  
+  // Hero
+  heroBadge?: string;
+  heroImage?: string;
+  heroFeatures?: string[];
+  
+  // Pricing
+  startingPrice?: string;
+  priceRange?: string;
+  
+  // Service Details
+  processSteps?: Array<{
+    title: string;
+    description: string;
+    icon?: string;
+  }>;
+  
+  benefits?: Array<{
+    title: string;
+    description: string;
+  }>;
+  
+  // Related Content
+  relatedServices?: Array<{
+    title: string;
+    url: string;
+    description: string;
+    image?: string;
+  }>;
+  
+  // FAQs
+  serviceFaqs?: Array<{
+    question: string;
+    answer: string;
+  }>;
+  
+  // Main content
+  mainContent?: string;
+}
+
+const {
+  serviceName,
+  serviceTitle,
+  serviceSubtitle,
+  serviceDescription,
+  heroBadge,
+  heroImage,
+  heroFeatures = [],
+  startingPrice,
+  priceRange,
+  processSteps = [],
+  benefits = [],
+  relatedServices = [],
+  serviceFaqs = [],
+  mainContent
+} = Astro.props;
+---
+
+<MainLayout title={serviceTitle} description={serviceDescription}>
+  <!-- Hero Section -->
+  <ServiceHero
+    serviceName={serviceName}
+    subtitle={serviceSubtitle}
+    description={serviceDescription}
+    badge={heroBadge}
+    image={heroImage}
+    features={heroFeatures}
+  />
+  
+  <!-- Trust Signals -->
+  <ServiceTrustSignals />
+  
+  <!-- Main Content -->
+  <ServiceMainContent>
+    <slot name="mainContent" />
+  </ServiceMainContent>
+  
+  <!-- Process Steps -->
+  <ServiceProcessSteps steps={processSteps} />
+  
+  <!-- Benefits -->
+  <ServiceBenefits benefits={benefits} />
+  
+  <!-- Pricing CTA -->
+  <ServicePricingCTA 
+    startingPrice={startingPrice}
+    priceRange={priceRange}
+  />
+  
+  <!-- FAQs -->
+  <ServiceFAQ faqs={serviceFaqs} />
+  
+  <!-- Related Services -->
+  <ServiceRelated services={relatedServices} />
+  
+  <!-- Final CTA -->
+  <ServiceFinalCTA />
+</MainLayout>

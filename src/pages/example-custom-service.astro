@@ -1,0 +1,122 @@
+---
+// Example: Custom Service Page Using Individual Components
+import MainLayout from '../layouts/MainLayout.astro';
+import ServiceHero from '../components/services/ServiceHero.astro';
+import ServiceTrustSignals from '../components/services/ServiceTrustSignals.astro';
+import ServiceBenefits from '../components/services/ServiceBenefits.astro';
+import ServicePricingCTA from '../components/services/ServicePricingCTA.astro';
+import ServiceFinalCTA from '../components/services/ServiceFinalCTA.astro';
+import Section from '../components/ui/Section.astro';
+import Grid from '../components/ui/Grid.astro';
+import AstroCard from '../components/ui/AstroCard.astro';
+
+// Custom trust signals for this page
+const customTrustSignals = [
+  { icon: 'shield', text: 'Toronto Licensed' },
+  { icon: 'award', text: 'HomeStars Winner' },
+  { icon: 'clock', text: '2-Hour Response' },
+  { icon: 'check', text: 'Price Match' }
+];
+
+// Two-tier benefits structure
+const primaryBenefits = [
+  { 
+    title: "Industry-Leading Warranty", 
+    description: "Lifetime transferable warranty that actually protects you" 
+  },
+  { 
+    title: "True 24/7 Service", 
+    description: "Real emergency response, not just an answering service" 
+  }
+];
+
+const secondaryBenefits = [
+  { title: "Licensed Engineers", description: "P.Eng oversight on every project" },
+  { title: "Insurance Direct Billing", description: "We handle the paperwork" },
+  { title: "No Subcontractors", description: "Our own trained employees only" },
+  { title: "Clean Job Sites", description: "Respect for your property" }
+];
+---
+
+<MainLayout 
+  title="Custom Service Example - Modular Components" 
+  description="Example of using individual service components"
+>
+  <!-- Hero with custom features -->
+  <ServiceHero
+    serviceName="Premium Waterproofing Package"
+    subtitle="Complete Protection with Our Best-in-Class Solution"
+    description="Combining exterior and interior waterproofing for maximum protection"
+    badge="PREMIUM"
+    features={["All-Inclusive", "Lifetime Warranty", "0% Financing"]}
+  />
+  
+  <!-- Custom trust signals -->
+  <ServiceTrustSignals signals={customTrustSignals} />
+  
+  <!-- Custom content section -->
+  <Section>
+    <div class="max-w-4xl mx-auto text-center space-y-4">
+      <h2 class="text-3xl font-bold">Why Premium Protection Matters</h2>
+      <p class="text-lg text-muted-foreground">
+        When it comes to protecting your largest investment, cutting corners isn't an option. 
+        Our premium package combines the best of both worlds - exterior and interior waterproofing - 
+        ensuring your basement stays dry no matter what nature throws at it.
+      </p>
+    </div>
+  </Section>
+  
+  <!-- Primary benefits (2 columns, larger) -->
+  <Section 
+    title="Two Layers of Protection" 
+    subtitle="Why our premium package outperforms standard solutions"
+    background="muted"
+  >
+    <Grid columns={2} gap="large">
+      {primaryBenefits.map(benefit => (
+        <AstroCard class="p-8">
+          <h3 class="text-2xl font-bold mb-4">{benefit.title}</h3>
+          <p class="text-lg text-muted-foreground">{benefit.description}</p>
+        </AstroCard>
+      ))}
+    </Grid>
+  </Section>
+  
+  <!-- Pricing before secondary benefits for emphasis -->
+  <ServicePricingCTA
+    startingPrice="$12,999"
+    priceRange="$12,999 - $34,999"
+    title="Investment in Peace of Mind"
+    subtitle="Flexible financing available - protect now, pay over time"
+  />
+  
+  <!-- Secondary benefits (4 columns, compact) -->
+  <ServiceBenefits
+    benefits={secondaryBenefits}
+    title="The DrySpace Difference"
+    subtitle="What sets our premium service apart"
+    columns={4}
+  />
+  
+  <!-- Custom testimonial section -->
+  <Section background="muted">
+    <div class="max-w-3xl mx-auto">
+      <AstroCard class="p-8 text-center">
+        <p class="text-xl italic mb-4">
+          "The premium package seemed expensive at first, but after seeing homes in our 
+          neighborhood deal with repeated flooding, we're grateful we chose the best protection. 
+          Five years later, our basement is still bone dry."
+        </p>
+        <p class="font-semibold">- Sarah M., North York</p>
+      </AstroCard>
+    </div>
+  </Section>
+  
+  <!-- Different final CTA -->
+  <ServiceFinalCTA
+    title="Premium Protection Starts with a Free Assessment"
+    subtitle="Our engineers will design a custom solution for your home"
+    primaryCTA={{ text: "Book Engineering Consultation", href: "/contact/" }}
+    emergencyNotice="Spring slots filling fast - book now for priority scheduling"
+  />
+</MainLayout>

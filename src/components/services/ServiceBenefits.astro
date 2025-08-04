@@ -1,0 +1,46 @@
+---
+import Section from '../ui/Section.astro';
+import Grid from '../ui/Grid.astro';
+import AstroCard from '../ui/AstroCard.astro';
+import { CheckCircle } from 'lucide-react';
+
+export interface Benefit {
+  title: string;
+  description: string;
+}
+
+export interface Props {
+  benefits: Benefit[];
+  title?: string;
+  subtitle?: string;
+  columns?: number;
+}
+
+const {
+  benefits,
+  title = "Why Choose Our Service",
+  subtitle = "Experience the difference with our professional approach",
+  columns = 3
+} = Astro.props;
+---
+
+{benefits.length > 0 && (
+  <Section
+    title={title}
+    subtitle={subtitle}
+  >
+    <Grid columns={columns}>
+      {benefits.map(benefit => (
+        <AstroCard>
+          <div class="flex gap-4">
+            <CheckCircle className="h-6 w-6 text-secondary flex-shrink-0 mt-1" client:load />
+            <div>
+              <h3 class="font-semibold mb-2">{benefit.title}</h3>
+              <p class="text-muted-foreground text-sm">{benefit.description}</p>
+            </div>
+          </div>
+        </AstroCard>
+      ))}
+    </Grid>
+  </Section>
+)}
