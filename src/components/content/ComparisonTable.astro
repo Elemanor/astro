@@ -1,0 +1,75 @@
+---
+export interface ComparisonItem {
+  feature: string;
+  options: (string | boolean | { text: string; highlight?: boolean })[];
+}
+
+export interface Props {
+  title?: string;
+  headers: string[];
+  items: ComparisonItem[];
+  highlightColumn?: number;
+  class?: string;
+}
+
+const { 
+  title,
+  headers,
+  items,
+  highlightColumn,
+  class: className = ''
+} = Astro.props;
+---
+
+<div class={`comparison-table my-8 ${className}`}>
+  {title && <h3 class="text-2xl font-bold mb-6">{title}</h3>}
+  
+  <div class="overflow-x-auto">
+    <table class="w-full border-collapse">
+      <thead>
+        <tr class="border-b-2 border-border">
+          <th class="text-left py-3 px-4 font-semibold">Feature</th>
+          {headers.map((header, index) => (
+            <th class={`text-center py-3 px-4 font-semibold ${
+              highlightColumn === index ? 'bg-primary/5' : ''
+            }`}>
+              {header}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {items.map((item, rowIndex) => (
+          <tr class={`border-b ${rowIndex % 2 === 0 ? 'bg-muted/30' : ''}`}>
+            <td class="py-3 px-4 font-medium">{item.feature}</td>
+            {item.options.map((option, colIndex) => {
+              const isHighlighted = highlightColumn === colIndex;
+              let content = '';
+              let cellClass = `text-center py-3 px-4 ${isHighlighted ? 'bg-primary/5' : ''}`;
+              
+              if (typeof option === 'boolean') {
+                content = option ? '✓' : '✗';
+                cellClass += option ? ' text-green-600' : ' text-red-600';
+              } else if (typeof option === 'object') {
+                content = option.text;
+                if (option.highlight) cellClass += ' font-semibold text-primary';
+              } else {
+                content = option;
+              }
+              
+              return (
+                <td class={cellClass}>
+                  {content}
+                </td>
+              );
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="mt-4 text-sm text-muted-foreground">
+    <p>✓ = Included | ✗ = Not included</p>
+  </div>
+</div>

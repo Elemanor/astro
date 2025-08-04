@@ -1,5 +1,5 @@
 ---
-title: "Mississauga Basement Waterproofing | #1 Local Experts | 25-Year Warranty"
+title: "Mississauga Basement Waterproofing | Top Local Experts | 25-Year Warranty"
 description: "FLOOD ALERT: Mississauga basements at risk! Expert waterproofing from Port Credit to Streetsville. FREE emergency quotes, $3,400 rebates, lifetime warranty. Don't wait - call (437) 545-0067!"
 date: 2025-01-29
 type: "location"

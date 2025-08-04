@@ -1,0 +1,99 @@
+---
+import { ArrowRight, ExternalLink, FileText, Download } from 'lucide-react';
+
+export interface ServiceLink {
+  text: string;
+  href: string;
+  type?: 'internal' | 'external' | 'document' | 'download';
+  description?: string;
+}
+
+export interface Props {
+  title?: string;
+  links: ServiceLink[];
+  variant?: 'list' | 'cards' | 'inline';
+  class?: string;
+}
+
+const { 
+  title,
+  links,
+  variant = 'list',
+  class: className = ''
+} = Astro.props;
+---
+
+<div class={`service-links my-8 ${className}`}>
+  {title && <h3 class="text-2xl font-bold mb-4">{title}</h3>}
+  
+  {variant === 'list' && (
+    <ul class="space-y-3">
+      {links.map(link => (
+        <li>
+          <a 
+            href={link.href} 
+            class="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors group"
+            target={link.type === 'external' ? '_blank' : undefined}
+            rel={link.type === 'external' ? 'noopener noreferrer' : undefined}
+          >
+            {link.type === 'external' && <ExternalLink className="h-4 w-4" client:load />}
+            {link.type === 'document' && <FileText className="h-4 w-4" client:load />}
+            {link.type === 'download' && <Download className="h-4 w-4" client:load />}
+            {(!link.type || link.type === 'internal') && <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" client:load />}
+            <span class="font-medium">{link.text}</span>
+          </a>
+          {link.description && (
+            <p class="text-sm text-muted-foreground ml-6 mt-1">{link.description}</p>
+          )}
+        </li>
+      ))}
+    </ul>
+  )}
+  
+  {variant === 'cards' && (
+    <div class="grid gap-4 md:grid-cols-2">
+      {links.map(link => (
+        <a 
+          href={link.href}
+          class="block p-5 rounded-lg border hover:border-primary hover:bg-primary/5 transition-all group"
+          target={link.type === 'external' ? '_blank' : undefined}
+          rel={link.type === 'external' ? 'noopener noreferrer' : undefined}
+        >
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h4 class="font-semibold group-hover:text-primary transition-colors">
+                {link.text}
+              </h4>
+              {link.description && (
+                <p class="text-sm text-muted-foreground mt-1">{link.description}</p>
+              )}
+            </div>
+            <div class="text-muted-foreground group-hover:text-primary transition-colors">
+              {link.type === 'external' && <ExternalLink className="h-5 w-5" client:load />}
+              {link.type === 'document' && <FileText className="h-5 w-5" client:load />}
+              {link.type === 'download' && <Download className="h-5 w-5" client:load />}
+              {(!link.type || link.type === 'internal') && <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" client:load />}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+  
+  {variant === 'inline' && (
+    <div class="flex flex-wrap gap-x-6 gap-y-2">
+      {links.map(link => (
+        <a 
+          href={link.href}
+          class="inline-flex items-center gap-1 text-primary hover:text-primary/80 transition-colors group"
+          target={link.type === 'external' ? '_blank' : undefined}
+          rel={link.type === 'external' ? 'noopener noreferrer' : undefined}
+        >
+          <span class="font-medium">{link.text}</span>
+          {link.type === 'external' && <ExternalLink className="h-3 w-3" client:load />}
+          {(!link.type || link.type === 'internal') && <ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" client:load />}
+        </a>
+      ))}
+    </div>
+  )}
+</div>

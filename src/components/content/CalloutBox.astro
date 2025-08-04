@@ -1,0 +1,81 @@
+---
+import { AlertCircle, Info, CheckCircle, AlertTriangle, Phone, Calendar } from 'lucide-react';
+
+export interface Props {
+  type?: 'info' | 'warning' | 'success' | 'error' | 'tip' | 'call' | 'appointment';
+  title?: string;
+  icon?: boolean;
+  class?: string;
+}
+
+const { 
+  type = 'info',
+  title,
+  icon = true,
+  class: className = ''
+} = Astro.props;
+
+const typeStyles = {
+  info: {
+    container: 'bg-blue-50 border-blue-200 text-blue-900',
+    icon: 'text-blue-600',
+    title: 'text-blue-900'
+  },
+  warning: {
+    container: 'bg-yellow-50 border-yellow-200 text-yellow-900',
+    icon: 'text-yellow-600',
+    title: 'text-yellow-900'
+  },
+  success: {
+    container: 'bg-green-50 border-green-200 text-green-900',
+    icon: 'text-green-600',
+    title: 'text-green-900'
+  },
+  error: {
+    container: 'bg-red-50 border-red-200 text-red-900',
+    icon: 'text-red-600',
+    title: 'text-red-900'
+  },
+  tip: {
+    container: 'bg-primary/10 border-primary/20 text-foreground',
+    icon: 'text-primary',
+    title: 'text-foreground'
+  },
+  call: {
+    container: 'bg-primary text-white border-primary',
+    icon: 'text-white',
+    title: 'text-white'
+  },
+  appointment: {
+    container: 'bg-secondary text-secondary-foreground border-secondary',
+    icon: 'text-secondary-foreground',
+    title: 'text-secondary-foreground'
+  }
+};
+
+const style = typeStyles[type];
+---
+
+<div class={`callout-box my-6 p-6 rounded-lg border-2 ${style.container} ${className}`}>
+  <div class="flex gap-4">
+    {icon && (
+      <div class={`flex-shrink-0 ${style.icon}`}>
+        {type === 'info' && <Info className="h-6 w-6" client:load />}
+        {type === 'warning' && <AlertTriangle className="h-6 w-6" client:load />}
+        {type === 'success' && <CheckCircle className="h-6 w-6" client:load />}
+        {type === 'error' && <AlertCircle className="h-6 w-6" client:load />}
+        {type === 'tip' && <Info className="h-6 w-6" client:load />}
+        {type === 'call' && <Phone className="h-6 w-6" client:load />}
+        {type === 'appointment' && <Calendar className="h-6 w-6" client:load />}
+      </div>
+    )}
+    <div class="flex-1">
+      {title && (
+        <h4 class={`font-semibold text-lg mb-2 ${style.title}`}>{title}</h4>
+      )}
+      <div class="prose prose-sm max-w-none">
+        <slot />
+      </div>
+    </div>
+  </div>
+</div>

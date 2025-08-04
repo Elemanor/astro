@@ -1,5 +1,5 @@
 ---
-title: 'Waterproofing Toronto | #1 Basement & Foundation Experts Since 1999'
+title: 'Waterproofing Toronto | Top Basement & Foundation Experts Since 1999'
 subtitle: >-
   Complete waterproofing services for Toronto homes - Interior, exterior, French
   drains & emergency flooding. Licensed & insured.

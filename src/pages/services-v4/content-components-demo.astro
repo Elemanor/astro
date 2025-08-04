@@ -1,0 +1,315 @@
+---
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import ProcessList from '../../components/content/ProcessList.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import ComparisonTable from '../../components/content/ComparisonTable.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import Timeline from '../../components/content/Timeline.astro';
+import QuestionAnswer from '../../components/content/QuestionAnswer.astro';
+import ServiceLinks from '../../components/content/ServiceLinks.astro';
+import VideoEmbed from '../../components/content/VideoEmbed.astro';
+
+const pageData = {
+  title: "Content Components Demo",
+  serviceName: "Waterproofing Services Demo",
+  description: "This page demonstrates all the content components available for structuring service page content",
+  heroProps: {
+    serviceName: "Content Components Demo",
+    subtitle: "Professional Waterproofing Solutions",
+    description: "Demonstrating structured content components for better semantic HTML",
+    image: "/images/services/exterior-waterproofing-hero.jpg",
+    features: [
+      "Component-based content",
+      "Semantic HTML structure",
+      "Better SEO & accessibility",
+      "Consistent styling"
+    ]
+  },
+  processSteps: [
+    {
+      title: "Assessment",
+      description: "We evaluate your property thoroughly",
+      icon: "search"
+    },
+    {
+      title: "Planning",
+      description: "Custom solution design for your needs",
+      icon: "target"
+    },
+    {
+      title: "Execution",
+      description: "Professional implementation",
+      icon: "hammer"
+    },
+    {
+      title: "Warranty",
+      description: "Lifetime protection guarantee",
+      icon: "shield"
+    }
+  ],
+  caseStudies: [
+    {
+      title: "Downtown Toronto Office",
+      description: "Complete basement waterproofing",
+      results: ["100% dry basement", "Increased property value"],
+      image: "/images/case-studies/office-building.jpg"
+    }
+  ],
+  faqs: [
+    {
+      question: "How long does waterproofing take?",
+      answer: "Most projects complete in 3-5 days"
+    },
+    {
+      question: "What's your warranty?",
+      answer: "We offer a lifetime transferable warranty"
+    }
+  ],
+  relatedServices: [
+    {
+      title: "Interior Waterproofing",
+      href: "/services/interior-waterproofing/",
+      description: "Inside solutions for dry basements"
+    },
+    {
+      title: "Foundation Repair",
+      href: "/services/foundation-repair/",
+      description: "Structural foundation solutions"
+    }
+  ]
+};
+---
+
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    <!-- Content Section Examples -->
+    <ContentSection title="Overview" subtitle="Professional Waterproofing Services">
+      <p>This demonstrates the ContentSection component with a title and subtitle. Use this for major content sections that need clear hierarchy.</p>
+    </ContentSection>
+
+    <ContentSection variant="highlight" title="Important Notice">
+      <p>This is a highlighted content section. Perfect for drawing attention to key information or special offers.</p>
+    </ContentSection>
+
+    <!-- Process List Example -->
+    <ProcessList 
+      title="Our Waterproofing Process"
+      items={[
+        {
+          title: "Initial Inspection",
+          subtitle: "Free comprehensive assessment",
+          description: "Our certified technicians examine your property inside and out",
+          items: ["Check foundation walls", "Assess drainage systems", "Identify water entry points"]
+        },
+        {
+          title: "Solution Design",
+          subtitle: "Custom waterproofing plan",
+          description: "We create a tailored solution for your specific needs"
+        },
+        {
+          title: "Professional Installation",
+          subtitle: "Expert implementation",
+          description: "Our experienced team executes the plan with precision"
+        }
+      ]}
+    />
+
+    <!-- Feature Grid Examples -->
+    <FeatureGrid 
+      title="Key Benefits"
+      variant="cards"
+      columns={3}
+      features={[
+        {
+          title: "Lifetime Warranty",
+          description: "Transferable warranty that protects your investment",
+          highlight: true
+        },
+        {
+          title: "24/7 Emergency Service",
+          description: "Round-the-clock support when you need it most"
+        },
+        {
+          title: "Certified Technicians",
+          description: "Fully licensed and insured professionals"
+        }
+      ]}
+    />
+
+    <FeatureGrid 
+      title="What's Included"
+      variant="list"
+      columns={2}
+      features={[
+        { title: "Foundation excavation to footing level" },
+        { title: "Cleaning and preparation of foundation walls" },
+        { title: "Application of waterproof membrane" },
+        { title: "Installation of drainage board" },
+        { title: "New weeping tile system" },
+        { title: "Backfilling and landscape restoration" }
+      ]}
+    />
+
+    <!-- Comparison Table Example -->
+    <ComparisonTable 
+      title="Waterproofing Method Comparison"
+      headers={["Interior", "Exterior", "Hybrid"]}
+      highlightColumn={1}
+      items={[
+        {
+          feature: "Excavation Required",
+          options: [false, true, true]
+        },
+        {
+          feature: "Disruption Level",
+          options: ["Minimal", "Moderate", "Moderate"]
+        },
+        {
+          feature: "Cost Range",
+          options: ["$3,000-$8,000", "$8,000-$15,000", "$12,000-$20,000"]
+        },
+        {
+          feature: "Effectiveness",
+          options: ["Good", { text: "Excellent", highlight: true }, { text: "Best", highlight: true }]
+        },
+        {
+          feature: "Warranty",
+          options: ["25 years", "Lifetime", "Lifetime"]
+        }
+      ]}
+    />
+
+    <!-- Callout Box Examples -->
+    <CalloutBox type="tip" title="Pro Tip">
+      <p>Spring is the best time for exterior waterproofing. The ground has thawed but the water table is still manageable.</p>
+    </CalloutBox>
+
+    <CalloutBox type="warning" title="Warning Signs">
+      <p>If you notice any of these signs, contact us immediately:</p>
+      <ul>
+        <li>Water stains on basement walls</li>
+        <li>Musty odors or visible mold</li>
+        <li>Cracks in foundation walls</li>
+      </ul>
+    </CalloutBox>
+
+    <CalloutBox type="call" title="Get Your Free Inspection">
+      <p>Call us at <strong>1-800-WET-GONE</strong> or book online for a comprehensive property assessment.</p>
+    </CalloutBox>
+
+    <!-- Timeline Examples -->
+    <Timeline 
+      title="Project Timeline"
+      variant="vertical"
+      items={[
+        {
+          title: "Day 1: Excavation",
+          description: "Careful excavation around foundation",
+          duration: "6-8 hours"
+        },
+        {
+          title: "Day 2-3: Waterproofing",
+          description: "Apply membrane and install drainage",
+          duration: "2 days"
+        },
+        {
+          title: "Day 4: Backfilling",
+          description: "Replace soil and begin restoration",
+          duration: "4-6 hours"
+        },
+        {
+          title: "Day 5: Completion",
+          description: "Final landscaping and cleanup",
+          duration: "3-4 hours",
+          milestone: true
+        }
+      ]}
+    />
+
+    <!-- Question & Answer Examples -->
+    <ContentSection title="Common Questions">
+      <QuestionAnswer 
+        question="How do I know if I need exterior waterproofing?"
+        variant="card"
+      >
+        <p>Exterior waterproofing is recommended if you have:</p>
+        <ul>
+          <li>Recurring basement flooding</li>
+          <li>Foundation cracks with water seepage</li>
+          <li>Failed interior waterproofing systems</li>
+        </ul>
+      </QuestionAnswer>
+
+      <QuestionAnswer 
+        question="Will you damage my landscaping?"
+        answer="We take great care to preserve your landscaping. All plants are carefully removed and replanted after the project."
+        variant="inline"
+      />
+
+      <QuestionAnswer 
+        question="What's the ROI on waterproofing?"
+        variant="chat"
+      >
+        <p>Waterproofing typically returns 30% of the investment in increased home value, plus prevents costly water damage that can exceed $50,000.</p>
+      </QuestionAnswer>
+    </ContentSection>
+
+    <!-- Video Embed Example -->
+    <VideoEmbed 
+      title="How Exterior Waterproofing Works"
+      videoId="dQw4w9WgXcQ"
+      platform="youtube"
+      description="Watch our team perform a complete exterior waterproofing installation from start to finish."
+      caption="Video duration: 5:42"
+    />
+
+    <!-- Service Links Examples -->
+    <ServiceLinks 
+      title="Related Resources"
+      variant="cards"
+      links={[
+        {
+          text: "Waterproofing Cost Calculator",
+          href: "/tools/cost-calculator/",
+          description: "Get an instant estimate for your project",
+          type: "internal"
+        },
+        {
+          text: "Download Warranty Information",
+          href: "/downloads/warranty.pdf",
+          description: "Full warranty terms and conditions",
+          type: "download"
+        },
+        {
+          text: "City Rebate Programs",
+          href: "https://toronto.ca/rebates",
+          description: "Save up to $3,400 on waterproofing",
+          type: "external"
+        },
+        {
+          text: "Maintenance Guide",
+          href: "/guides/maintenance/",
+          description: "Keep your waterproofing system working perfectly",
+          type: "document"
+        }
+      ]}
+    />
+
+    <ServiceLinks 
+      title="Quick Links"
+      variant="inline"
+      links={[
+        { text: "Interior Waterproofing", href: "/services/interior-waterproofing/" },
+        { text: "Sump Pump Installation", href: "/services/sump-pump-installation/" },
+        { text: "Foundation Repair", href: "/services/foundation-repair/" },
+        { text: "Emergency Services", href: "/emergency/" }
+      ]}
+    />
+
+    <ContentSection variant="info" centered>
+      <p>This demo page shows how to use semantic content components instead of plain markdown. Each component provides structure, styling, and better SEO.</p>
+    </ContentSection>
+  </ServiceMainContent>
+</ServicePageTemplateV4>

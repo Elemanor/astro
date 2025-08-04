@@ -1,0 +1,110 @@
+---
+export interface TimelineItem {
+  date?: string;
+  title: string;
+  description?: string;
+  duration?: string;
+  milestone?: boolean;
+}
+
+export interface Props {
+  title?: string;
+  items: TimelineItem[];
+  variant?: 'vertical' | 'horizontal';
+  class?: string;
+}
+
+const { 
+  title,
+  items,
+  variant = 'vertical',
+  class: className = ''
+} = Astro.props;
+---
+
+<div class={`timeline-container my-8 ${className}`}>
+  {title && <h3 class="text-2xl font-bold mb-6">{title}</h3>}
+  
+  {variant === 'vertical' && (
+    <div class="relative">
+      <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-border"></div>
+      
+      <div class="space-y-8">
+        {items.map((item, index) => (
+          <div class="relative flex items-start gap-6">
+            <div class={`
+              relative z-10 w-8 h-8 rounded-full flex items-center justify-center
+              ${item.milestone 
+                ? 'bg-primary text-white' 
+                : 'bg-background border-2 border-primary'
+              }
+            `}>
+              <span class="text-sm font-bold">
+                {item.milestone ? '★' : index + 1}
+              </span>
+            </div>
+            
+            <div class="flex-1 pb-4">
+              <div class="flex items-baseline gap-3 mb-2">
+                <h4 class="text-lg font-semibold">{item.title}</h4>
+                {(item.date || item.duration) && (
+                  <span class="text-sm text-muted-foreground">
+                    {item.date || item.duration}
+                  </span>
+                )}
+              </div>
+              {item.description && (
+                <p class="text-muted-foreground">{item.description}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+  
+  {variant === 'horizontal' && (
+    <div class="overflow-x-auto">
+      <div class="flex items-start gap-4 min-w-max pb-4">
+        {items.map((item, index) => (
+          <>
+            <div class="flex flex-col items-center gap-2 min-w-[200px]">
+              <div class={`
+                w-12 h-12 rounded-full flex items-center justify-center
+                ${item.milestone 
+                  ? 'bg-primary text-white' 
+                  : 'bg-background border-2 border-primary'
+                }
+              `}>
+                <span class="font-bold">
+                  {item.milestone ? '★' : index + 1}
+                </span>
+              </div>
+              
+              <div class="text-center">
+                <h4 class="font-semibold">{item.title}</h4>
+                {(item.date || item.duration) && (
+                  <p class="text-sm text-muted-foreground mt-1">
+                    {item.date || item.duration}
+                  </p>
+                )}
+                {item.description && (
+                  <p class="text-sm text-muted-foreground mt-2">
+                    {item.description}
+                  </p>
+                )}
+              </div>
+            </div>
+            
+            {index < items.length - 1 && (
+              <div class="flex items-center h-12">
+                <div class="w-20 h-0.5 bg-border"></div>
+                <div class="w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-4 border-l-border"></div>
+              </div>
+            )}
+          </>
+        ))}
+      </div>
+    </div>
+  )}
+</div>

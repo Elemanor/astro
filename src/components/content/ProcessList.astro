@@ -1,0 +1,58 @@
+---
+export interface ProcessItem {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  items?: string[];
+}
+
+export interface Props {
+  title?: string;
+  items: ProcessItem[];
+  numbered?: boolean;
+  class?: string;
+}
+
+const { 
+  title,
+  items,
+  numbered = true,
+  class: className = ''
+} = Astro.props;
+---
+
+<div class={`process-list my-8 ${className}`}>
+  {title && <h3 class="text-2xl font-bold mb-6">{title}</h3>}
+  
+  <div class="space-y-6">
+    {items.map((item, index) => (
+      <div class="relative pl-8">
+        {numbered && (
+          <span class="absolute left-0 top-0 w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
+            {index + 1}
+          </span>
+        )}
+        
+        <div class="space-y-2">
+          <h4 class="text-xl font-semibold">{item.title}</h4>
+          
+          {item.subtitle && (
+            <p class="text-lg text-muted-foreground">{item.subtitle}</p>
+          )}
+          
+          {item.description && (
+            <p class="text-base text-muted-foreground">{item.description}</p>
+          )}
+          
+          {item.items && item.items.length > 0 && (
+            <ul class="list-disc list-inside space-y-1 text-muted-foreground ml-4">
+              {item.items.map(subItem => (
+                <li>{subItem}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

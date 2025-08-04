@@ -75,22 +75,27 @@ const iconMap = {
   centered
 >
   <Grid columns={steps.length > 3 ? 4 : steps.length}>
-    {steps.map((step, index) => {
-      const IconComponent = iconMap[step.icon] || Wrench;
-      return (
-        <div class="text-center space-y-4">
-          <div class="relative">
-            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-              <IconComponent className="h-8 w-8 text-primary" client:load />
-            </div>
-            <span class="absolute -top-2 -right-2 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
-              {index + 1}
-            </span>
+    {steps.map((step, index) => (
+      <div class="text-center space-y-4">
+        <div class="relative">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+            {step.icon === 'wrench' && <Wrench className="h-8 w-8 text-primary" client:load />}
+            {step.icon === 'search' && <Search className="h-8 w-8 text-primary" client:load />}
+            {step.icon === 'shield' && <Shield className="h-8 w-8 text-primary" client:load />}
+            {step.icon === 'hammer' && <Hammer className="h-8 w-8 text-primary" client:load />}
+            {step.icon === 'target' && <Target className="h-8 w-8 text-primary" client:load />}
+            {step.icon === 'shovel' && <Shovel className="h-8 w-8 text-primary" client:load />}
+            {step.icon === 'check' && <CheckCircle className="h-8 w-8 text-primary" client:load />}
+            {(step.icon === 'lightbulb' || step.icon === 'water' || step.icon === 'syringe' || step.icon === 'brush' || step.icon === 'pump' || step.icon === 'checklist' || step.icon === 'concrete' || step.icon === 'pipe' || step.icon === 'blueprint' || step.icon === 'construction' || step.icon === 'bricks') && <Wrench className="h-8 w-8 text-primary" client:load />}
+            {!step.icon && <Wrench className="h-8 w-8 text-primary" client:load />}
           </div>
-          <h3 class="text-lg font-semibold">{step.title}</h3>
-          <p class="text-muted-foreground text-sm">{step.description}</p>
+          <span class="absolute -top-2 -right-2 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
+            {index + 1}
+          </span>
         </div>
-      );
-    })}
+        <h3 class="text-lg font-semibold">{step.title}</h3>
+        <p class="text-muted-foreground text-sm">{step.description}</p>
+      </div>
+    ))}
   </Grid>
 </Section>

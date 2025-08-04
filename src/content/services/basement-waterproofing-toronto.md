@@ -1,5 +1,5 @@
 ---
-title: 'Basement Waterproofing Toronto | #1 Local Contractors Since 2008'
+title: 'Basement Waterproofing Toronto | Top Local Contractors Since 2008'
 subtitle: Professional Basement Waterproofing Services in Toronto - 15+ Years Experience
 seo_title: >-
   Basement Waterproofing Toronto | Local Experts | Same-Day Service | Lifetime

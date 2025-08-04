@@ -1,5 +1,5 @@
 ---
-title: 'Basement Waterproofing North York | #1 Local Specialists Since 2008'
+title: 'Basement Waterproofing North York | Top Local Specialists Since 2008'
 subtitle: Professional Basement Waterproofing Services in North York - Clay Soil Experts
 seo_title: >-
   Basement Waterproofing North York | Clay Soil Specialists | Same-Day Service |
