@@ -10,187 +10,26 @@
         "description": {
           "type": "string"
         },
-        "date": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "integer",
-              "format": "unix-time"
-            }
-          ]
-        },
-        "type": {
+        "city": {
           "type": "string"
         },
-        "url": {
+        "province": {
           "type": "string"
         },
-        "keywords": {
-          "anyOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "location": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "object",
-              "properties": {
-                "city": {
-                  "type": "string"
-                },
-                "region": {
-                  "type": "string"
-                },
-                "postal_codes": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "neighborhoods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              },
-              "required": [
-                "city",
-                "region"
-              ],
-              "additionalProperties": false
-            }
-          ]
-        },
-        "service_areas": {
+        "serviceArea": {
           "type": "array",
           "items": {
             "type": "string"
           }
         },
-        "schema_type": {
-          "type": "string"
-        },
-        "city": {
-          "type": "string"
-        },
-        "region": {
-          "type": "string",
-          "default": "ON"
-        },
-        "province": {
-          "type": "string"
-        },
-        "postalCode": {
-          "type": "string"
-        },
-        "phone": {
-          "type": "string"
-        },
-        "last_updated": {
-          "type": "string"
-        },
-        "latitude": {
-          "type": "number"
-        },
-        "longitude": {
-          "type": "number"
+        "featured": {
+          "type": "boolean"
         },
         "image": {
           "type": "string"
         },
-        "canonical": {
+        "imageAlt": {
           "type": "string"
-        },
-        "schema": {},
-        "subtitle": {
-          "type": "string"
-        },
-        "seo_title": {
-          "type": "string"
-        },
-        "related_services": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "title": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "url": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "image": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "url"
-            ],
-            "additionalProperties": false
-          }
-        },
-        "sections": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "title": {
-                "type": "string"
-              },
-              "content": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "title",
-              "content"
-            ],
-            "additionalProperties": false
-          }
-        },
-        "faq": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "question": {
-                "type": "string"
-              },
-              "answer": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "question",
-              "answer"
-            ],
-            "additionalProperties": false
-          }
         },
         "$schema": {
           "type": "string"
@@ -198,7 +37,8 @@
       },
       "required": [
         "title",
-        "description"
+        "description",
+        "city"
       ],
       "additionalProperties": false
     }

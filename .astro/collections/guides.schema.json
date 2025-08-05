@@ -10,44 +10,18 @@
         "description": {
           "type": "string"
         },
-        "date": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "integer",
-              "format": "unix-time"
-            }
-          ]
-        },
-        "type": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        },
         "category": {
           "type": "string"
         },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "image": {
+        "readTime": {
           "type": "string"
         },
-        "canonical": {
+        "lastUpdated": {
           "type": "string"
         },
-        "schema": {},
+        "author": {
+          "type": "string"
+        },
         "$schema": {
           "type": "string"
         }
