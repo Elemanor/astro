@@ -4,7 +4,7 @@ description: "Professional dimpled membrane installation for foundation waterpro
 date: 2025-01-31
 type: "service"
 url: "/services/dimpled-membrane-waterproofing/"
-keywords: ["dimpled membrane", "delta membrane", "foundation drainage membrane", "dimple board", "drainage mat", "foundation protection board", "air gap membrane", "delta ms", "platon membrane"]
+keywords: "dimpled membrane, delta membrane, foundation drainage membrane, dimple board, drainage mat, foundation protection board, air gap membrane, delta ms, platon membrane"
 schema_type: "Service"
 ---
 

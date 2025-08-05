@@ -1,7 +1,7 @@
 ---
 title: "Basement Humidity Control Toronto | Dehumidification & Moisture Solutions"
 description: "Expert basement humidity control in Toronto. Permanent solutions for damp basements, musty odors, and high humidity. Dehumidification systems & moisture barriers. Call 437-545-0067."
-keywords: ["basement humidity control toronto", "basement dehumidification", "moisture control basement", "damp basement solutions", "basement humidity problems"]
+keywords: "basement humidity control toronto, basement dehumidification, moisture control basement, damp basement solutions, basement humidity problems"
 author: "DrySpace Waterproofing"
 date: 2025-01-31
 lastmod: 2025-01-31

@@ -6,7 +6,7 @@ description: "Expert basement leak repair in Toronto. Emergency leak detection, 
 date: 2025-01-31
 type: "service"
 url: "/services/basement-leak-repair/"
-keywords: ["basement leak repair", "basement leak repair toronto", "basement leak repair toronto on", "basement water leak repair", "foundation leak repair", "emergency basement leak repair", "professional basement leak repair", "basement leak detection", "basement leak repair cost", "basement leak repair near me"]
+keywords: "basement leak repair, basement leak repair toronto, basement leak repair toronto on, basement water leak repair, foundation leak repair, emergency basement leak repair, professional basement leak repair, basement leak detection, basement leak repair cost, basement leak repair near me"
 schema_type: "Service"
 urgency: "high"
 canonical: "https://dryspacewaterproofing.ca/services/basement-leak-repair/"

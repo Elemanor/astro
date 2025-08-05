@@ -4,7 +4,7 @@ description: "Expert efflorescence treatment in Toronto. We don't just remove wh
 date: 2025-01-30
 type: "service"
 url: "/services/basement-efflorescence-treatment/"
-keywords: ["efflorescence", "efflorescence basement", "white powder basement walls", "efflorescence treatment", "basement efflorescence", "efflorescence removal toronto", "white chalky powder basement", "mineral deposits basement walls", "salt deposits concrete", "basement wall white residue"]
+keywords: "efflorescence, efflorescence basement, white powder basement walls, efflorescence treatment, basement efflorescence, efflorescence removal toronto, white chalky powder basement, mineral deposits basement walls, salt deposits concrete, basement wall white residue"
 ---
 
 # Basement Efflorescence Treatment - Complete Guide

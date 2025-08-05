@@ -8,7 +8,7 @@ draft: false
 type: "service"
 url: "/services/basement-underpinning/"
 urgency: "high"
-keywords: ["underpinning", "basement underpinning", "underpinning Toronto", "basement lowering", "underpinning cost", "foundation underpinning"]
+keywords: "underpinning, basement underpinning, underpinning Toronto, basement lowering, underpinning cost, foundation underpinning"
 
 # Schema markup
 schema:

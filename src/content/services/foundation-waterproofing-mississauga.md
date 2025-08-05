@@ -6,7 +6,7 @@ description: "#1 foundation waterproofing contractors in Mississauga. 15+ years 
 date: 2025-01-31
 type: "service"
 url: "/services/foundation-waterproofing-mississauga/"
-keywords: ["foundation waterproofing mississauga", "mississauga foundation waterproofing", "foundation waterproofing contractors mississauga", "waterproofing mississauga", "foundation repair mississauga", "basement waterproofing mississauga", "mississauga waterproofing companies", "foundation leak repair mississauga"]
+keywords: "foundation waterproofing mississauga, mississauga foundation waterproofing, foundation waterproofing contractors mississauga, waterproofing mississauga, foundation repair mississauga, basement waterproofing mississauga, mississauga waterproofing companies, foundation leak repair mississauga"
 schema_type: "LocalBusiness"
 priority: "high"
 mobile_optimized: true

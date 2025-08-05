@@ -6,7 +6,7 @@ description: "#1 drain tile installation Toronto experts. 25+ years experience, 
 type: "service"
 url: "/services/drain-tile-system/"
 urgency: "high"
-keywords: ["drain tile installation toronto", "drain tile system", "perimeter drain tile", "drain tile repair", "interior drain tile", "exterior drain tile", "drain tile cost toronto", "foundation drain tile", "drain tile vs french drain", "weeping tile installation"]
+keywords: "drain tile installation toronto, drain tile system, perimeter drain tile, drain tile repair, interior drain tile, exterior drain tile, drain tile cost toronto, foundation drain tile, drain tile vs french drain, weeping tile installation"
 schema_type: "Service"
 service_area: ["Toronto", "North York", "Scarborough", "Etobicoke", "East York", "York", "Mississauga", "Brampton", "Vaughan", "Richmond Hill", "Markham", "Oakville", "Burlington"]
 price_range: "$50 - $300 per linear foot"

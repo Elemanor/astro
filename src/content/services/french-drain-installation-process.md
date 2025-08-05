@@ -6,7 +6,7 @@ description: "Complete French drain installation process guide with 8-12 hour ti
 date: 2025-01-31
 type: "service"
 url: "/services/french-drain-installation-process/"
-keywords: ["french drain installation process", "how to install french drain", "french drain installation cost", "french drain installation steps", "french drain installation timeline", "french drain permit toronto", "french drain materials calculator", "professional french drain installation", "DIY french drain installation", "french drain maintenance schedule"]
+keywords: "french drain installation process, how to install french drain, french drain installation cost, french drain installation steps, french drain installation timeline, french drain permit toronto, french drain materials calculator, professional french drain installation, DIY french drain installation, french drain maintenance schedule"
 schema_type: "HowTo"
 priority: "high"
 related_services:

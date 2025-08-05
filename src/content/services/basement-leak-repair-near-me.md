@@ -6,7 +6,7 @@ description: "Need basement leak repair near you? Local Toronto experts with 2-h
 date: 2025-01-31
 type: "service"
 url: "/services/basement-leak-repair-near-me/"
-keywords: ["basement leak repair near me", "basement leaking repair near me", "emergency basement repair near me", "local basement waterproofing", "water damage repair near me", "basement flooding near me", "toronto basement leak repair"]
+keywords: "basement leak repair near me, basement leaking repair near me, emergency basement repair near me, local basement waterproofing, water damage repair near me, basement flooding near me, toronto basement leak repair"
 schema_type: "LocalBusiness"
 urgency: "high"
 related_services:

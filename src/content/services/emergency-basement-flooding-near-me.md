@@ -6,7 +6,7 @@ description: "Emergency basement flooding response near you in Toronto. 24/7 imm
 date: 2025-01-31
 type: "emergency"
 url: "/services/emergency-basement-flooding-near-me/"
-keywords: ["emergency basement flooding near me", "basement flooding emergency toronto", "24 hour basement flooding", "emergency flood cleanup near me", "basement flood response near me", "emergency water removal toronto", "flooded basement emergency"]
+keywords: "emergency basement flooding near me, basement flooding emergency toronto, 24 hour basement flooding, emergency flood cleanup near me, basement flood response near me, emergency water removal toronto, flooded basement emergency"
 schema_type: "EmergencyService"
 priority: "critical"
 related_services:

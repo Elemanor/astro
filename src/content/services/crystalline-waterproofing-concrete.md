@@ -4,7 +4,7 @@ description: "Crystalline waterproofing admixtures for concrete foundations in T
 date: 2025-01-31
 type: "service"
 url: "/services/crystalline-waterproofing-concrete/"
-keywords: ["crystalline waterproofing", "xypex waterproofing", "KIM waterproofing", "self healing concrete", "concrete admixture waterproofing", "crystalline concrete", "waterproof concrete foundation", "xypex admixture"]
+keywords: "crystalline waterproofing, xypex waterproofing, KIM waterproofing, self healing concrete, concrete admixture waterproofing, crystalline concrete, waterproof concrete foundation, xypex admixture"
 schema_type: "Service"
 ---
 

@@ -4,7 +4,7 @@ description: "FREE MONEY: Get up to $3,400 Toronto rebate for backwater valve! P
 date: 2025-01-30
 type: "service"
 url: "/services/backwater-valve-toronto-rebate/"
-keywords: ["backwater valve toronto rebate", "backwater valve installation", "backwater valve toronto", "sewage backup prevention", "backflow preventer", "mainline backwater valve", "sewer backup valve", "city of toronto basement flooding protection subsidy", "basement flooding protection subsidy program", "toronto sump pump rebate", "sewage check valve"]
+keywords: "backwater valve toronto rebate, backwater valve installation, backwater valve toronto, sewage backup prevention, backflow preventer, mainline backwater valve, sewer backup valve, city of toronto basement flooding protection subsidy, basement flooding protection subsidy program, toronto sump pump rebate, sewage check valve"
 ---
 
 # Backwater Valve Toronto Rebate & Installation Guide

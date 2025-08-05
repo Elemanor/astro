@@ -4,7 +4,7 @@ description: "Emergency sump pump repair Toronto. 24/7 emergency response, high 
 date: 2025-01-31
 type: "service"
 url: "/services/emergency-sump-pump-repair/"
-keywords: ["emergency sump pump repair", "sump pump repair toronto", "emergency sump pump service", "24 hour sump pump repair", "sump pump not working", "sump pump emergency", "toronto sump pump repair", "emergency plumber sump pump", "sump pump flooding", "basement flooding sump pump", "sump pump failure", "emergency drainage repair", "sump pump replacement emergency", "waterproofing emergency", "basement water emergency", "sump pump backup battery", "emergency waterproofing toronto", "flooded basement repair", "sump pump maintenance emergency", "pump repair near me", "emergency basement repair", "water damage emergency", "sump pump installation emergency", "toronto emergency plumbing", "gta sump pump repair"]
+keywords: "emergency sump pump repair, sump pump repair toronto, emergency sump pump service, 24 hour sump pump repair, sump pump not working, sump pump emergency, toronto sump pump repair, emergency plumber sump pump, sump pump flooding, basement flooding sump pump, sump pump failure, emergency drainage repair, sump pump replacement emergency, waterproofing emergency, basement water emergency, sump pump backup battery, emergency waterproofing toronto, flooded basement repair, sump pump maintenance emergency, pump repair near me, emergency basement repair, water damage emergency, sump pump installation emergency, toronto emergency plumbing, gta sump pump repair"
 schema_type: "EmergencyService"
 service_area: "Greater Toronto Area"
 emergency: true

@@ -6,7 +6,7 @@ description: "Find expert basement waterproofing contractors near you in Toronto
 date: 2025-01-31
 type: "service"
 url: "/services/basement-waterproofing-near-me/"
-keywords: ["basement waterproofing near me", "waterproofing contractors near me", "basement waterproofing toronto", "local basement waterproofing", "waterproofing near me", "basement leak repair near me", "foundation waterproofing near me"]
+keywords: "basement waterproofing near me, waterproofing contractors near me, basement waterproofing toronto, local basement waterproofing, waterproofing near me, basement leak repair near me, foundation waterproofing near me"
 schema_type: "LocalBusiness"
 priority: "high"
 related_services:

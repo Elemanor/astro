@@ -1,7 +1,7 @@
 ---
 title: "Condo Basement Waterproofing Toronto | High-Rise & Townhouse Solutions"
 description: "Specialized basement waterproofing for Toronto condos, townhouses & multi-unit buildings. Board approvals, minimal disruption, shared wall expertise. Call 437-545-0067."
-keywords: ["basement waterproofing for condos toronto", "condo basement leak repair", "townhouse waterproofing toronto", "multi-unit waterproofing", "condo board approved waterproofing"]
+keywords: "basement waterproofing for condos toronto, condo basement leak repair, townhouse waterproofing toronto, multi-unit waterproofing, condo board approved waterproofing"
 author: "DrySpace Waterproofing"
 date: 2025-01-31
 lastmod: 2025-01-31

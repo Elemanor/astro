@@ -6,7 +6,7 @@ description: "#1 basement waterproofing contractors in Toronto. 15+ years experi
 date: 2025-01-31
 type: "service"
 url: "/services/basement-waterproofing-toronto/"
-keywords: ["basement waterproofing toronto", "toronto basement waterproofing", "basement waterproofing contractors toronto", "waterproofing toronto", "basement leak repair toronto", "foundation waterproofing toronto", "toronto waterproofing companies", "basement flooding toronto", "toronto basement contractors"]
+keywords: "basement waterproofing toronto, toronto basement waterproofing, basement waterproofing contractors toronto, waterproofing toronto, basement leak repair toronto, foundation waterproofing toronto, toronto waterproofing companies, basement flooding toronto, toronto basement contractors"
 schema_type: "LocalBusiness"
 priority: "high"
 mobile_optimized: true

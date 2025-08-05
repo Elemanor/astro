@@ -6,7 +6,7 @@ description: "Professional emergency waterproofing services for basement floodin
 date: 2025-01-29
 type: "service"
 url: "/services/emergency-waterproofing/"
-keywords: ["emergency basement waterproofing services", "crisis waterproofing response", "emergency waterproofing contractors", "urgent basement repair", "professional emergency waterproofing", "basement flooding after rain", "emergency flood repair", "24 hour basement flooding help"]
+keywords: "emergency basement waterproofing services, crisis waterproofing response, emergency waterproofing contractors, urgent basement repair, professional emergency waterproofing, basement flooding after rain, emergency flood repair, 24 hour basement flooding help"
 schema_type: "EmergencyService"
 urgency: "immediate"
 

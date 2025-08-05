@@ -5,7 +5,7 @@ description: "Emergency basement waterproofing Toronto 24/7. Flooding response i
 date: 2025-01-31
 type: "service"
 url: "/services/emergency-basement-waterproofing-24-7/"
-keywords: ["emergency basement waterproofing", "24 hour waterproofing toronto", "emergency waterproofing service", "basement flooding emergency", "emergency leak repair"]
+keywords: "emergency basement waterproofing, 24 hour waterproofing toronto, emergency waterproofing service, basement flooding emergency, emergency leak repair"
 urgency: "critical"
 service_type: "emergency"
 location: "GTA"

@@ -4,7 +4,7 @@ description: "Basement drainage problems solutions. Problem identification → P
 date: 2025-01-31
 type: "service"
 url: "/services/basement-drainage-problems/"
-keywords: ["basement drainage problems", "basement water problems", "poor basement drainage", "basement flooding issues", "drainage system failure", "basement moisture problems", "foundation drainage issues", "basement water damage", "drainage solutions", "basement leak problems", "water in basement", "basement flooding prevention", "drainage repair", "basement waterproofing problems", "foundation water problems", "basement humidity problems", "wet basement causes", "drainage system repair", "basement water seepage", "foundation leak repair", "basement flood damage", "drainage contractor", "waterproofing solutions", "basement water removal", "emergency drainage repair"]
+keywords: "basement drainage problems, basement water problems, poor basement drainage, basement flooding issues, drainage system failure, basement moisture problems, foundation drainage issues, basement water damage, drainage solutions, basement leak problems, water in basement, basement flooding prevention, drainage repair, basement waterproofing problems, foundation water problems, basement humidity problems, wet basement causes, drainage system repair, basement water seepage, foundation leak repair, basement flood damage, drainage contractor, waterproofing solutions, basement water removal, emergency drainage repair"
 schema_type: "Service"
 service_type: "basement drainage repair"
 problem_solution_structure: true

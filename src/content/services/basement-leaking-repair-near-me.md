@@ -6,7 +6,7 @@ description: "Toronto's #1 basement leaking repair specialists in your area. 3,5
 date: 2025-01-31
 type: "service"
 url: "/services/basement-leaking-repair-near-me/"
-keywords: ["basement leaking repair near me", "basement leaking repair Toronto", "local basement water repair", "neighborhood basement contractors", "Toronto basement leak specialists", "basement repair in my area", "certified basement waterproofing near me", "residential basement leak repair", "professional basement water damage", "basement contractors Toronto"]
+keywords: "basement leaking repair near me, basement leaking repair Toronto, local basement water repair, neighborhood basement contractors, Toronto basement leak specialists, basement repair in my area, certified basement waterproofing near me, residential basement leak repair, professional basement water damage, basement contractors Toronto"
 schema_type: "EmergencyService"
 urgency: "critical"
 emergency_service: true

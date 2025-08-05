@@ -4,7 +4,7 @@ description: "Expert French drain installation in Toronto targeting 2,300 monthl
 date: 2025-01-31
 type: "service"
 url: "/services/french-drain-installation-toronto/"
-keywords: ["french drain installation toronto", "toronto french drain", "french drain toronto cost", "french drain contractors toronto", "basement drainage toronto", "toronto waterproofing contractors", "french drain installation near me toronto", "drainage solutions toronto", "basement flooding prevention toronto", "toronto foundation drainage", "perimeter drain toronto", "weeping tile toronto", "sump pump toronto", "waterproofing toronto", "basement leak repair toronto", "toronto basement waterproofing", "drainage contractors toronto", "foundation repair toronto", "wet basement toronto", "basement flooding toronto", "emergency waterproofing toronto", "toronto drainage systems", "french drain vs weeping tile toronto", "basement water problems toronto", "toronto home drainage"]
+keywords: "french drain installation toronto, toronto french drain, french drain toronto cost, french drain contractors toronto, basement drainage toronto, toronto waterproofing contractors, french drain installation near me toronto, drainage solutions toronto, basement flooding prevention toronto, toronto foundation drainage, perimeter drain toronto, weeping tile toronto, sump pump toronto, waterproofing toronto, basement leak repair toronto, toronto basement waterproofing, drainage contractors toronto, foundation repair toronto, wet basement toronto, basement flooding toronto, emergency waterproofing toronto, toronto drainage systems, french drain vs weeping tile toronto, basement water problems toronto, toronto home drainage"
 schema_type: "Service"
 service_area: "Toronto"
 location: "Toronto, Ontario"

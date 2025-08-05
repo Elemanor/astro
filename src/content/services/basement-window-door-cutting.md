@@ -5,7 +5,7 @@ description: "Professional basement window and door cutting in Toronto. Egress w
 date: 2025-01-31
 type: "service"
 url: "/services/basement-window-door-cutting/"
-keywords: ["basement window cutting", "basement door installation", "egress window toronto", "basement opening", "concrete cutting", "window well installation", "basement entrance", "walkout basement", "basement window installation", "door cutting concrete"]
+keywords: "basement window cutting, basement door installation, egress window toronto, basement opening, concrete cutting, window well installation, basement entrance, walkout basement, basement window installation, door cutting concrete"
 ---
 
 # Basement Window & Door Cutting Services Toronto

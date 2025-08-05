@@ -6,7 +6,7 @@ description: "Complete sump pump guide for Toronto homeowners. Learn types, inst
 type: "service"
 url: "/services/sump-pump-installation/"
 urgency: "high"
-keywords: ["sump pump", "sump pump installation toronto", "sump pump types", "sump pump repair toronto", "battery backup sump pump", "sump pump maintenance", "toronto sump pump contractors"]
+keywords: "sump pump, sump pump installation toronto, sump pump types, sump pump repair toronto, battery backup sump pump, sump pump maintenance, toronto sump pump contractors"
 schema_type: "Service"
 service_area: ["Toronto", "North York", "Scarborough", "Etobicoke", "East York", "York", "Mississauga", "Brampton", "Vaughan", "Richmond Hill", "Markham", "Oakville", "Burlington"]
 price_range: "$1,200 - $4,500"

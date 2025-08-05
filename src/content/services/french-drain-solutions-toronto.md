@@ -4,7 +4,7 @@ description: "Complete French drain solutions for Toronto homes. Expert drainage
 date: 2025-01-31
 type: "service"
 url: "/services/french-drain-solutions-toronto/"
-keywords: ["french drain", "french drain toronto", "french drain installation", "basement drainage", "foundation drainage", "waterproofing toronto", "french drain cost", "interior french drain", "exterior french drain", "drainage solutions"]
+keywords: "french drain, french drain toronto, french drain installation, basement drainage, foundation drainage, waterproofing toronto, french drain cost, interior french drain, exterior french drain, drainage solutions"
 schema:
   type: "Service"
   name: "French Drain Solutions Toronto"

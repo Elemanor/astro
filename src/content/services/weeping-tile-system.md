@@ -6,7 +6,7 @@ description: "Professional weeping tile installation Toronto. 25+ years experien
 type: "service"
 url: "/services/weeping-tile-system/"
 urgency: "high"
-keywords: ["weeping tile installation toronto", "weeping tile system", "foundation drainage", "perimeter weeping tile", "weeping tile repair", "interior weeping tile", "exterior weeping tile", "weeping tile cost toronto", "foundation weeping tile", "weeping tile vs french drain", "drain tile installation"]
+keywords: "weeping tile installation toronto, weeping tile system, foundation drainage, perimeter weeping tile, weeping tile repair, interior weeping tile, exterior weeping tile, weeping tile cost toronto, foundation weeping tile, weeping tile vs french drain, drain tile installation"
 schema_type: "Service"
 service_area: ["Toronto", "North York", "Scarborough", "Etobicoke", "East York", "York", "Mississauga", "Brampton", "Vaughan", "Richmond Hill", "Markham", "Oakville", "Burlington"]
 price_range: "$50 - $300 per linear foot"

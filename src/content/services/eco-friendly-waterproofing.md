@@ -1,7 +1,7 @@
 ---
 title: "Eco-Friendly Waterproofing Toronto | Green Basement Solutions"
 description: "Sustainable basement waterproofing solutions in Toronto. Non-toxic materials, energy-efficient systems, recycled products. Protect your home and the environment."
-keywords: ["eco-friendly waterproofing toronto", "green basement waterproofing", "sustainable foundation repair", "non-toxic waterproofing", "environmentally friendly basement solutions"]
+keywords: "eco-friendly waterproofing toronto, green basement waterproofing, sustainable foundation repair, non-toxic waterproofing, environmentally friendly basement solutions"
 author: "DrySpace Waterproofing"
 date: 2025-01-31
 lastmod: 2025-01-31

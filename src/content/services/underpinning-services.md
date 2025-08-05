@@ -1,7 +1,7 @@
 ---
 title: "Professional Underpinning Services Toronto | Foundation Reinforcement Experts"
 description: "Expert underpinning services in Toronto & GTA. Strengthen foundations, increase basement height, prevent settling. Licensed contractors with 25+ years experience. Call (416) 276-1570."
-keywords: ["underpinning services", "foundation underpinning", "basement underpinning", "underpinning contractors toronto", "foundation reinforcement", "underpinning cost", "underpinning process"]
+keywords: "underpinning services, foundation underpinning, basement underpinning, underpinning contractors toronto, foundation reinforcement, underpinning cost, underpinning process"
 url: "/services/underpinning-services/"
 date: 2025-01-31
 categories: ["Foundation Repair"]

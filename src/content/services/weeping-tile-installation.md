@@ -5,7 +5,7 @@ description: "Professional weeping tile installation in Toronto. ✓ Interior $3
 date: 2025-01-30
 type: "service"
 url: "/services/weeping-tile-installation/"
-keywords: ["weeping tile", "weeping tile installation", "weeping tile replacement", "weeping tile cost", "weeping tiles", "drainage tile", "foundation drainage", "perimeter drain", "footing drain", "basement drainage system", "weeping tile toronto", "weeping tile repair"]
+keywords: "weeping tile, weeping tile installation, weeping tile replacement, weeping tile cost, weeping tiles, drainage tile, foundation drainage, perimeter drain, footing drain, basement drainage system, weeping tile toronto, weeping tile repair"
 ---
 
 # Professional Weeping Tile Installation in Toronto & GTA

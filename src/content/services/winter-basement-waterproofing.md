@@ -6,7 +6,7 @@ description: "Specialized winter basement waterproofing in Toronto. Ice dam prev
 date: 2025-01-31
 type: "service"
 url: "/services/winter-basement-waterproofing/"
-keywords: ["winter basement waterproofing toronto", "cold weather waterproofing", "winter foundation repair", "emergency winter waterproofing", "ice dam prevention", "frozen pipe risks", "winter waterproofing specialists", "toronto winter basement service"]
+keywords: "winter basement waterproofing toronto, cold weather waterproofing, winter foundation repair, emergency winter waterproofing, ice dam prevention, frozen pipe risks, winter waterproofing specialists, toronto winter basement service"
 schema_type: "Service"
 seasonal: "winter"
 

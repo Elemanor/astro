@@ -6,7 +6,7 @@ description: "Need French drain installation near you? Local Toronto drainage ex
 date: 2025-01-31
 type: "service"
 url: "/services/french-drain-installation-near-me/"
-keywords: ["french drain installation near me", "french drain install near me", "drainage contractors near me", "basement drainage near me", "local french drain installation", "yard drainage near me", "toronto french drain installation"]
+keywords: "french drain installation near me, french drain install near me, drainage contractors near me, basement drainage near me, local french drain installation, yard drainage near me, toronto french drain installation"
 schema_type: "LocalBusiness"
 priority: "high"
 related_services:

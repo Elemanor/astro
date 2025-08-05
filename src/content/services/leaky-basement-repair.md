@@ -6,7 +6,7 @@ description: "Professional basement leak repair in Toronto & GTA. Emergency leak
 date: 2025-01-29
 type: "service"
 url: "/services/leaky-basement-repair/"
-keywords: ["basement leak repair", "leaky basement repair", "basement leak repair near me", "leaky basement toronto", "basement leak repair toronto", "emergency basement leak", "wet basement repair", "fix basement leak", "basement leaking repair"]
+keywords: "basement leak repair, leaky basement repair, basement leak repair near me, leaky basement toronto, basement leak repair toronto, emergency basement leak, wet basement repair, fix basement leak, basement leaking repair"
 schema_type: "Service"
 urgency: "high"
 related_services:

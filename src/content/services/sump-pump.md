@@ -6,7 +6,7 @@ description: "SUMP PUMP emergency? 24/7 Toronto service! Installation $1,200-4,5
 type: "service"
 url: "/services/sump-pump/"
 urgency: "high"
-keywords: ["sump pump", "sump pump toronto", "sump pump installation", "sump pump repair", "what is a sump pump", "how does a sump pump work", "sump pump cost", "battery backup sump pump", "sump pump maintenance", "sump pump types", "emergency sump pump service"]
+keywords: "sump pump, sump pump toronto, sump pump installation, sump pump repair, what is a sump pump, how does a sump pump work, sump pump cost, battery backup sump pump, sump pump maintenance, sump pump types, emergency sump pump service"
 schema_type: "Service"
 service_area: ["Toronto", "North York", "Scarborough", "Etobicoke", "East York", "York", "Mississauga", "Brampton", "Vaughan", "Richmond Hill", "Markham", "Oakville", "Burlington", "Ajax", "Pickering", "Newmarket", "Aurora", "Hamilton"]
 price_range: "$1,200 - $4,500"

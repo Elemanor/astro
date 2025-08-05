@@ -6,7 +6,7 @@ description: "#1 basement waterproofing contractors in North York. 15+ years exp
 date: 2025-01-31
 type: "service"
 url: "/services/basement-waterproofing-north-york/"
-keywords: ["basement waterproofing north york", "north york basement waterproofing", "basement waterproofing contractors north york", "waterproofing north york", "basement leak repair north york", "foundation waterproofing north york", "north york waterproofing companies", "basement flooding north york", "clay soil waterproofing north york"]
+keywords: "basement waterproofing north york, north york basement waterproofing, basement waterproofing contractors north york, waterproofing north york, basement leak repair north york, foundation waterproofing north york, north york waterproofing companies, basement flooding north york, clay soil waterproofing north york"
 schema_type: "LocalBusiness"
 priority: "high"
 mobile_optimized: true

@@ -6,7 +6,7 @@ description: "Canada's first smart basement water monitoring system! IoT sensors
 type: "service"
 url: "/services/smart-water-monitoring/"
 urgency: "high"
-keywords: ["smart basement monitoring toronto", "IoT water sensors", "basement flood prevention technology", "smart home water detection", "water monitoring app toronto", "basement sensor system", "flood prediction technology", "smart waterproofing toronto"]
+keywords: "smart basement monitoring toronto, IoT water sensors, basement flood prevention technology, smart home water detection, water monitoring app toronto, basement sensor system, flood prediction technology, smart waterproofing toronto"
 schema_type: "Service"
 service_area: ["Toronto", "North York", "Scarborough", "Etobicoke", "East York", "York", "Mississauga", "Brampton", "Vaughan", "Richmond Hill", "Markham", "Oakville", "Burlington"]
 price_range: "$899 - $2,499"

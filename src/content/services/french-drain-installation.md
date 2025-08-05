@@ -4,7 +4,7 @@ description: "FRENCH DRAIN experts Toronto! Stop basement flooding permanently -
 date: 2025-01-30
 type: "service"
 url: "/services/french-drain-installation/"
-keywords: ["french drain", "french drain installation", "french drain cost", "interior french drain", "exterior french drain", "basement drainage system", "french drain toronto", "foundation drainage", "french drain install near me", "perimeter drain system"]
+keywords: "french drain, french drain installation, french drain cost, interior french drain, exterior french drain, basement drainage system, french drain toronto, foundation drainage, french drain install near me, perimeter drain system"
 ---
 
 # French Drain Installation Toronto: Complete 2025 Guide

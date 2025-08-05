@@ -4,7 +4,7 @@ description: "Aqua Bloc 720-38 waterproofing membrane installation in Toronto. P
 date: 2025-01-31
 type: "service"
 url: "/services/aqua-bloc-720-38-waterproofing-membrane/"
-keywords: ["aqua bloc 720-38", "aqua bloc waterproofing", "aqua bloc membrane", "720-38 waterproofing", "elastomeric waterproofing membrane", "foundation waterproofing membrane", "aqua bloc toronto"]
+keywords: "aqua bloc 720-38, aqua bloc waterproofing, aqua bloc membrane, 720-38 waterproofing, elastomeric waterproofing membrane, foundation waterproofing membrane, aqua bloc toronto"
 schema_type: "Product"
 ---
 

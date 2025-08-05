@@ -4,7 +4,7 @@ description: "Specialized waterproofing for condos and townhouses in Toronto & G
 date: 2025-01-31
 type: "service"
 url: "/services/condo-townhouse-waterproofing/"
-keywords: ["condo waterproofing toronto", "townhouse waterproofing", "basement waterproofing condo", "townhome water damage", "shared wall waterproofing", "condo foundation repair", "multi unit waterproofing"]
+keywords: "condo waterproofing toronto, townhouse waterproofing, basement waterproofing condo, townhome water damage, shared wall waterproofing, condo foundation repair, multi unit waterproofing"
 schema_type: "Service"
 ---
 

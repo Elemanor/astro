@@ -6,7 +6,7 @@ description: "Need foundation waterproofing near you? Toronto's #1 local experts
 date: 2025-01-31
 type: "service"
 url: "/services/foundation-waterproofing-near-me/"
-keywords: ["foundation waterproofing near me", "waterproofing contractors near me", "local waterproofing company", "foundation sealing near me", "basement waterproofing near me", "emergency waterproofing near me", "foundation repair near me", "waterproofing services nearby", "local foundation experts", "toronto foundation waterproofing"]
+keywords: "foundation waterproofing near me, waterproofing contractors near me, local waterproofing company, foundation sealing near me, basement waterproofing near me, emergency waterproofing near me, foundation repair near me, waterproofing services nearby, local foundation experts, toronto foundation waterproofing"
 schema_type: "LocalBusiness"
 priority: "critical"
 mobile_optimized: true

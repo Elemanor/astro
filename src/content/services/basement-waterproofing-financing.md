@@ -1,7 +1,7 @@
 ---
 title: "Basement Waterproofing Financing Toronto | Flexible Payment Options"
 description: "Affordable basement waterproofing financing options in Toronto. 0% interest plans, monthly payments from $99, instant approvals. Protect your home now, pay over time."
-keywords: ["basement waterproofing financing toronto", "waterproofing payment plans", "foundation repair financing", "basement repair loans toronto"]
+keywords: "basement waterproofing financing toronto, waterproofing payment plans, foundation repair financing, basement repair loans toronto"
 author: "DrySpace Waterproofing"
 date: 2025-01-31
 lastmod: 2025-01-31

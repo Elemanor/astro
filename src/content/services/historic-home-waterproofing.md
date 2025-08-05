@@ -1,7 +1,7 @@
 ---
 title: "Historic Home Waterproofing Toronto | Heritage Foundation Preservation"
 description: "Specialized waterproofing for Toronto's historic homes. Preserve original character while protecting foundations. Stone, brick & rubble foundation experts. Call 437-545-0067."
-keywords: ["historic home waterproofing toronto", "heritage home foundation repair", "century home waterproofing", "stone foundation waterproofing", "Victorian home basement repair"]
+keywords: "historic home waterproofing toronto, heritage home foundation repair, century home waterproofing, stone foundation waterproofing, Victorian home basement repair"
 author: "DrySpace Waterproofing"
 date: 2025-01-31
 lastmod: 2025-01-31
