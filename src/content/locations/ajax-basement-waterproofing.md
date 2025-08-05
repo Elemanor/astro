@@ -2,6 +2,7 @@
 title: "Ajax Basement Waterproofing | Local Experts Serving Durham Region"
 seo_title: "Ajax Basement Waterproofing Services | Foundation Repair & Flooding Solutions"
 description: "Professional basement waterproofing in Ajax, ON. Local experts serving Ajax, Pickering & Durham Region. Same-day service, lifetime warranty. Call: 416-893-5000"
+city: "Ajax"
 keywords: ["ajax basement waterproofing", "basement waterproofing ajax ontario", "ajax foundation repair", "waterproofing contractors ajax", "ajax basement flooding solutions"]
 author: "DrySpace Waterproofing"
 date: 2025-01-31

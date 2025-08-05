@@ -1,6 +1,7 @@
 ---
 title: "Mississauga Foundation Repair - Expert Structural Solutions & Waterproofing"
 description: "Professional foundation repair in Mississauga. Cracks, settlement, bowing walls. Licensed structural experts. Lifetime warranty. Call (437) 545-0067"
+city: "Mississauga"
 date: 2025-01-31
 type: "location"
 url: "/mississauga-foundation-repair/"

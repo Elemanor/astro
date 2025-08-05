@@ -1,6 +1,7 @@
 ---
 title: "Vaughan Basement Waterproofing - Expert Solutions & Same-Day Service"
 description: "Professional basement waterproofing in Vaughan. Specializing in clay soil challenges, new construction issues. 24/7 emergency service. Call (437) 545-0067"
+city: "Vaughan"
 date: 2025-01-31
 type: "location"
 url: "/vaughan-basement-waterproofing/"

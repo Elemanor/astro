@@ -1,6 +1,7 @@
 ---
 title: "Brampton Basement Waterproofing | Emergency Service | $0 Down Financing"
 description: "Brampton waterproofing specialists! Emergency 24/7 service, $0 down financing, 25-year warranty. 300+ local homes protected. Call (437) 545-0067"
+city: "Brampton"
 date: 2025-01-31
 type: "location"
 url: "/brampton-basement-waterproofing/"

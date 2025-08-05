@@ -1,6 +1,7 @@
 ---
 title: "North York Basement Waterproofing | Willowdale, Don Mills, York Mills Specialists"
 description: "Expert basement waterproofing in North York. Serving Willowdale, Don Mills, York Mills, Lawrence Park, Bayview Village. Luxury home specialists, clay soil experts. Call (437) 545-0067."
+city: "North York"
 keywords: ["north york basement waterproofing", "willowdale waterproofing", "don mills basement repair", "york mills waterproofing", "north york foundation repair", "bayview village basement waterproofing"]
 date: 2024-01-29
 type: "location"

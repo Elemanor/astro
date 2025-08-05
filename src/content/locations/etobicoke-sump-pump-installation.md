@@ -1,6 +1,7 @@
 ---
 title: "Etobicoke Sump Pump Installation - High Water Table Experts | 24/7 Service"
 description: "Professional sump pump installation in Etobicoke. High water table specialists, battery backup systems, emergency service. Serving Mimico, Islington, Rexdale. Call (437) 545-0067"
+city: "Etobicoke"
 date: 2025-01-31
 type: "location"
 url: "/locations/etobicoke-sump-pump-installation/"

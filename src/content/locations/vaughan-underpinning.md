@@ -1,6 +1,7 @@
 ---
 title: "Underpinning Vaughan | Foundation Lowering & Basement Excavation Experts"
 description: "Professional underpinning contractors in Vaughan. Basement lowering, foundation strengthening, structural support. Licensed engineers, 25-year warranty. Call: (437) 545-0067"
+city: "Vaughan"
 date: 2025-01-31
 type: "location"
 url: "/locations/vaughan-underpinning/"

@@ -1,6 +1,7 @@
 ---
 title: "French Drain Installation Vaughan | Location-Service Excellence | Clay Soil Specialists"
 description: "Expert French drain installation in Vaughan. Clay soil specialists, Humber River watershed experts. Woodbridge, Thornhill, Concord service. Call (437) 545-0067."
+city: "Vaughan"
 date: 2025-01-31
 type: "location"
 url: "/locations/vaughan-french-drain-installation/"

@@ -1,6 +1,7 @@
 ---
 title: "Hamilton Foundation Repair | Crack Repair & Underpinning Specialists | DrySpace"
 description: "Expert foundation repair in Hamilton. Crack repair, underpinning, settling foundations. Hamilton Mountain & downtown specialists. Licensed contractors. Call (416) 276-1570."
+city: "Hamilton"
 keywords: ["hamilton foundation repair", "foundation repair hamilton", "foundation crack repair hamilton", "underpinning hamilton", "foundation contractors hamilton", "settling foundation hamilton"]
 url: "/locations/hamilton-foundation-repair/"
 date: 2025-01-31

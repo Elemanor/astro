@@ -1,6 +1,7 @@
 ---
 title: "Foundation Repair North York | Expert Structural Solutions | 25-Year Warranty"
 description: "Professional foundation repair in North York. Settlement repair, crack injection, underpinning, wall reinforcement. Serving Willowdale, Don Mills, Bayview Village. Free inspection: (437) 545-0067"
+city: "North York"
 date: 2025-01-31
 type: "location"
 url: "/locations/north-york-foundation-repair/"

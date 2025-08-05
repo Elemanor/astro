@@ -2,6 +2,7 @@
 title: "Pickering Basement Waterproofing | Nuclear Safety Zone Water Experts"
 seo_title: "Pickering Basement Waterproofing Services | Foundation Repair & Nuclear Area Specialists"
 description: "Professional basement waterproofing in Pickering, ON. Nuclear area water table experts serving Frenchman's Bay to North Pickering. Same-day service, lifetime warranty. Call: 416-893-5000"
+city: "Pickering"
 keywords: ["pickering basement waterproofing", "waterproofing pickering ontario", "basement waterproofing contractors pickering", "pickering foundation repair", "frenchman's bay waterproofing"]
 author: "DrySpace Waterproofing"
 date: 2025-01-31

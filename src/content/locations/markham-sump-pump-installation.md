@@ -1,6 +1,7 @@
 ---
 title: "Markham Sump Pump Installation - Expert Service & Battery Backup Systems"
 description: "Professional sump pump installation in Markham. High water table experts, battery backup systems, 24/7 service. Licensed installers. Call (437) 545-0067"
+city: "Markham"
 date: 2025-01-31
 type: "location"
 url: "/markham-sump-pump-installation/"

@@ -1,6 +1,7 @@
 ---
 title: "Markham Basement Waterproofing | Licensed Experts | Same-Day Service"
 description: "EMERGENCY: Markham basement flooding? FREE 24/7 response! Licensed waterproofing experts, lifetime warranty, $3,400 rebates, 0% financing. Unionville to Cornell - call (437) 545-0067 NOW!"
+city: "Markham"
 date: 2025-01-29
 type: "location"
 url: "/locations/markham-basement-waterproofing/"

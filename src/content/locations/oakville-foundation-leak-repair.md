@@ -1,6 +1,7 @@
 ---
 title: "Foundation Leak Repair Oakville | Expert Crack Sealing Near Me"
 description: "URGENT: Foundation leaking in Oakville? Don't wait! Professional crack sealing, leak repair, emergency service. Lakefront specialists. 25-year warranty. Call: (437) 545-0067"
+city: "Oakville"
 keywords: "foundation leak repair oakville, foundation crack sealing oakville, basement leak repair near me, oakville foundation repair, emergency leak repair oakville"
 ---
 

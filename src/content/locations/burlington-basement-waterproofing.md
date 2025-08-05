@@ -1,6 +1,7 @@
 ---
 title: "Burlington Basement Waterproofing - Escarpment & Lakefront Experts"
 description: "Professional basement waterproofing in Burlington. Specializing in escarpment properties, lake proximity, older homes. 24/7 service. Call (437) 545-0067"
+city: "Burlington"
 date: 2025-01-31
 type: "location"
 url: "/burlington-basement-waterproofing/"

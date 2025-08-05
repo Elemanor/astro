@@ -3,6 +3,7 @@ title: "Basement Renovations Etobicoke | Expert Contractors & Services"
 subtitle: "Professional Basement Renovations in Etobicoke - Underpinning, Waterproofing & Finishing"
 seo_title: "Basement Renovations Etobicoke | Basement Contractors & Underpinning"
 description: "Expert basement renovations Etobicoke. Professional contractors for basement underpinning, waterproofing, and finishing. Serving all Etobicoke neighborhoods. Free quotes."
+city: "Etobicoke"
 date: 2025-01-31
 draft: false
 type: "location"

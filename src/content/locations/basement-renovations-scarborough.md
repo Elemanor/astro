@@ -3,6 +3,7 @@ title: "Basement Renovations Scarborough | Professional Contractors & Services"
 subtitle: "Expert Basement Renovations in Scarborough - Underpinning, Waterproofing & Finishing"
 seo_title: "Basement Renovations Scarborough | Contractors, Cost & Underpinning Services"
 description: "Professional basement renovations Scarborough. Expert basement contractors for underpinning, waterproofing, and finishing. Serving all Scarborough neighborhoods. Free estimates."
+city: "Scarborough"
 date: 2025-01-31
 draft: false
 type: "location"

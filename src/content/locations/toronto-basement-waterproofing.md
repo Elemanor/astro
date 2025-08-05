@@ -1,6 +1,7 @@
 ---
 title: "Basement Waterproofing Toronto | Local Waterproofing Near Me"
 description: "Professional basement waterproofing near you in Toronto. Local contractors with 2-hour response, interior & exterior solutions, lifetime warranties. Call (437) 545-0067."
+city: "Toronto"
 date: 2024-01-29
 type: "location"
 url: "/toronto-basement-waterproofing/"

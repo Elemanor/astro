@@ -1,6 +1,7 @@
 ---
 title: "Scarborough Sump Pump Installation - Clay Soil & Creek Watershed Experts"
 description: "Professional sump pump installation in Scarborough. Clay soil specialists, creek watershed experts, battery backup systems. Serving Agincourt, Malvern, Cliffcrest. Call (437) 545-0067"
+city: "Scarborough"
 date: 2025-01-31
 type: "location"
 url: "/locations/scarborough-sump-pump-installation/"

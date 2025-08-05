@@ -1,6 +1,7 @@
 ---
 title: "Basement Waterproofing North York | Expert Waterproofing Contractors | 24/7 Emergency Service"
 description: "Professional basement waterproofing in North York. Serving Willowdale, Don Mills, York Mills, Bayview Village with luxury solutions, lifetime warranties & emergency response. Call (437) 545-0067."
+city: "North York"
 keywords: "basement waterproofing north york, north york basement waterproofing, waterproofing contractors north york, basement waterproofing willowdale, don mills waterproofing, york mills basement waterproofing, bayview village waterproofing, north york emergency waterproofing"
 ---
 

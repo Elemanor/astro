@@ -1,6 +1,7 @@
 ---
 title: "North York Basement Leak Repair | Location-Service Combo | 90/100 Effectiveness"
 description: "Professional basement leak repair in North York. Clay soil specialists, Don Valley drainage experts. Emergency service, permanent solutions. Call (437) 545-0067."
+city: "North York"
 date: 2025-01-31
 type: "location"
 url: "/locations/north-york-basement-leak-repair/"

@@ -1,6 +1,7 @@
 ---
 title: "Sump Pump Installation Hamilton | Expert Service & Emergency Repairs"
 description: "Professional sump pump installation in Hamilton. Emergency repairs, backup systems, Hamilton Mountain specialists. Licensed plumbers & waterproofing experts. Call (416) 276-1570."
+city: "Hamilton"
 keywords: ["sump pump installation hamilton", "hamilton sump pump repair", "sump pump hamilton", "basement flooding prevention hamilton", "hamilton emergency sump pump"]
 url: "/locations/sump-pump-installation-hamilton/"
 date: 2025-01-31

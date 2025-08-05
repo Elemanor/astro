@@ -1,6 +1,7 @@
 ---
 title: "Foundation Repair Etobicoke | Expert Structural Solutions | 25-Year Warranty"
 description: "Professional foundation repair in Etobicoke. Settlement repair, crack injection, underpinning, wall reinforcement. Serving all Etobicoke neighborhoods. Free inspection: (437) 545-0067"
+city: "Etobicoke"
 date: 2025-01-31
 type: "location"
 url: "/locations/etobicoke-foundation-repair/"

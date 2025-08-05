@@ -1,6 +1,7 @@
 ---
 title: "Efflorescence Removal North York | Concrete & Basement Wall Specialists"
 description: "Professional efflorescence removal in North York. Concrete foundation specialists, clay soil moisture experts, Don Valley watershed knowledge. Serving Willowdale, Sheppard, Finch areas. Call (437) 545-0067"
+city: "North York"
 date: 2025-01-31
 type: "location"
 url: "/locations/efflorescence-removal-north-york/"

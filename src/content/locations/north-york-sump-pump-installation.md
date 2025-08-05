@@ -1,6 +1,7 @@
 ---
 title: "North York Sump Pump Installation - Expert Service & Battery Backup Systems"
 description: "Professional sump pump installation in North York. Clay soil experts, battery backup systems, 24/7 service. Serving Willowdale, Don Mills, Bayview Village. Call (437) 545-0067"
+city: "North York"
 date: 2025-01-31
 type: "location"
 url: "/locations/north-york-sump-pump-installation/"

@@ -1,6 +1,7 @@
 ---
 title: "Weeping Tile Installation & Repair Oakville | Clay Soil & Ravine Specialists"
 description: "Professional weeping tile installation and repair in Oakville. Clay soil drainage experts, ravine property specialists, Heritage District experience. Serving all Oakville neighborhoods. Call (437) 545-0067"
+city: "Oakville"
 date: 2025-01-31
 type: "location"
 url: "/locations/weeping-tile-oakville/"

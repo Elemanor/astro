@@ -1,6 +1,7 @@
 ---
 title: "East York Basement Waterproofing | Leaside, Riverdale, Danforth Specialists"
 description: "Expert basement waterproofing in East York. Serving Leaside, Riverdale, East Danforth, O'Connor-Woodbine. Don Valley specialists, affordable solutions. Call (437) 545-0067."
+city: "East York"
 keywords: ["east york basement waterproofing", "leaside waterproofing", "riverdale basement repair", "danforth waterproofing", "east york foundation repair", "woodbine waterproofing"]
 date: 2024-01-29
 type: "location"

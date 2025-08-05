@@ -1,6 +1,7 @@
 ---
 title: "French Drain Installation Etobicoke | Expert Drainage Solutions Near Me"
 description: "Professional French drain installation in Etobicoke. Expert contractors specializing in Humber River drainage, lakefront properties, and clay soil management. 24/7 emergency drainage services. Call: (437) 545-0067"
+city: "Etobicoke"
 keywords: "French drain installation Etobicoke, french drain contractors etobicoke, drainage solutions etobicoke, french drain near me, etobicoke drainage systems, basement drainage etobicoke, yard drainage etobicoke"
 ---
 

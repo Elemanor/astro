@@ -1,6 +1,7 @@
 ---
 title: "Oakville Basement Waterproofing - Luxury Home Protection Experts"
 description: "Premium basement waterproofing in Oakville. Specializing in lakefront properties, luxury estates, wine cellars. Discreet professional service. Call (437) 545-0067"
+city: "Oakville"
 date: 2025-01-31
 type: "location"
 url: "/oakville-basement-waterproofing/"

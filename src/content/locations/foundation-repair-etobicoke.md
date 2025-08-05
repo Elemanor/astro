@@ -1,6 +1,7 @@
 ---
 title: "Foundation Repair Etobicoke | Expert Structural Contractors | 25-Year Warranty"
 description: "Professional foundation repair Etobicoke. Expert contractors for settlement, cracks, underpinning. Serving Islington, Mimico, Kingsway, Royal York. Emergency service: (437) 545-0067"
+city: "Etobicoke"
 date: 2025-01-31
 type: "location"
 url: "/locations/foundation-repair-etobicoke/"

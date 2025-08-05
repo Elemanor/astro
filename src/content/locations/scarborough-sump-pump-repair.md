@@ -1,6 +1,7 @@
 ---
 title: "Sump Pump Repair Scarborough | 24/7 Emergency Service Near Me"
 description: "URGENT: Don't wait for flooding! 24/7 sump pump repair in Scarborough. Same-day service, all brands. Clay soil specialists. Emergency pump failure response. Call: (437) 545-0067"
+city: "Scarborough"
 keywords: "sump pump repair scarborough, emergency sump pump scarborough, sump pump service near me, scarborough pump repair, sump pump replacement scarborough, basement pump repair"
 ---
 

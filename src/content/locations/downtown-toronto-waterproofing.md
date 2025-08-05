@@ -1,6 +1,7 @@
 ---
 title: "Downtown Toronto Basement Waterproofing | Financial District Emergency Waterproofing"
 description: "Expert basement waterproofing in Downtown Toronto. Serving Financial District, Entertainment District, King Street, Queen Street. Emergency response, historic building specialists. Call (437) 545-0067."
+city: "Toronto"
 keywords: ["downtown toronto waterproofing", "financial district basement waterproofing", "toronto core waterproofing", "king street waterproofing", "queen street basement repair", "entertainment district waterproofing"]
 date: 2024-01-29
 type: "location"

@@ -1,6 +1,7 @@
 ---
 title: "Etobicoke Basement Waterproofing - West Toronto's Foundation Protection Experts"
 description: "Professional basement waterproofing throughout Etobicoke. Specializing in lakefront properties, Humber River challenges, and post-war home restoration. 24/7 service from Long Branch to Rexdale."
+city: "Etobicoke"
 keywords: "Etobicoke basement waterproofing, Humber River flooding, lakefront foundation protection, Etobicoke foundation repair, west Toronto waterproofing"
 ---
 

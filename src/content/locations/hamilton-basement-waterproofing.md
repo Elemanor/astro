@@ -1,6 +1,7 @@
 ---
 title: "Hamilton Basement Waterproofing | Foundation Repair Specialists | DrySpace"
 description: "Professional basement waterproofing in Hamilton. Foundation repair, sump pumps, French drains. Serving Hamilton Mountain, Downtown, and surrounding areas. Call (416) 276-1570."
+city: "Hamilton"
 keywords: ["hamilton basement waterproofing", "basement waterproofing hamilton", "hamilton foundation repair", "waterproofing contractors hamilton", "wet basement hamilton", "basement flooding hamilton"]
 url: "/locations/hamilton-basement-waterproofing/"
 date: 2025-01-31

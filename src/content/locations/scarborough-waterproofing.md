@@ -1,6 +1,7 @@
 ---
 title: "Scarborough Basement Waterproofing | Bluffs, Agincourt, Malvern Specialists"
 description: "Expert basement waterproofing in Scarborough. Serving Scarborough Bluffs, Agincourt, Malvern, Bendale. Bluff erosion specialists, diverse community service. Call (437) 545-0067."
+city: "Scarborough"
 keywords: ["scarborough basement waterproofing", "scarborough bluffs waterproofing", "agincourt waterproofing", "malvern basement repair", "scarborough foundation repair", "bendale waterproofing"]
 date: 2024-01-29
 type: "location"

@@ -1,6 +1,7 @@
 ---
 title: "Foundation Repair Scarborough | Clay Soil Experts | 25-Year Warranty"
 description: "Professional foundation repair in Scarborough. Clay soil specialists, settlement repair, crack injection, underpinning. Serving Agincourt, Malvern, Cliffcrest. Free inspection: (437) 545-0067"
+city: "Scarborough"
 date: 2025-01-31
 type: "location"
 url: "/locations/scarborough-foundation-repair/"

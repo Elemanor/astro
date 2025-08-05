@@ -1,6 +1,7 @@
 ---
 title: "Richmond Hill Basement Waterproofing - Premium Home Protection Services"
 description: "Expert basement waterproofing in Richmond Hill. Specializing in luxury homes, ravine properties, heritage preservation. Licensed & insured. Call (437) 545-0067"
+city: "Richmond Hill"
 date: 2025-01-31
 type: "location"
 url: "/richmond-hill-basement-waterproofing/"

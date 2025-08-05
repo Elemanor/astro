@@ -1,6 +1,7 @@
 ---
 title: "Waterproofing Contractors Scarborough | Expert Basement Waterproofing | 24/7 Emergency"
 description: "Professional waterproofing contractors in Scarborough. Expert basement waterproofing serving Agincourt, Malvern, Cliffcrest, Rouge. Clay soil specialists. Call (437) 545-0067"
+city: "Scarborough"
 date: 2025-01-31
 type: "location"
 url: "/locations/waterproofing-contractors-scarborough/"

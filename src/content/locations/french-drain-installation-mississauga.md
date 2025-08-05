@@ -1,6 +1,7 @@
 ---
 title: "French Drain Installation Mississauga | Clay Soil & High Water Table Experts"
 description: "Professional French drain installation in Mississauga. Clay soil specialists, Credit River watershed experts, Peel Region approved. Serving Port Credit, Streetsville, Meadowvale. Call (437) 545-0067"
+city: "Mississauga"
 date: 2025-01-31
 type: "location"
 url: "/locations/french-drain-installation-mississauga/"

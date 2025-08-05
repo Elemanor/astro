@@ -1,6 +1,7 @@
 ---
 title: "Waterproofing Contractors Scarborough | Professional Basement Solutions"
 description: "Trusted waterproofing contractors in Scarborough. Professional basement waterproofing, foundation repair, and drainage solutions. Licensed & insured contractors serving all Scarborough neighborhoods. Call: (437) 545-0067"
+city: "Scarborough"
 keywords: "waterproofing contractors scarborough, scarborough waterproofing contractors, basement waterproofing contractors scarborough, foundation contractors scarborough, professional waterproofing scarborough, licensed waterproofing contractors"
 ---
 

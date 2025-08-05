@@ -1,6 +1,7 @@
 ---
 title: "Etobicoke Basement Waterproofing | Mississauga Border, High Park, Mimico Specialists"
 description: "Expert basement waterproofing in Etobicoke. Serving High Park, Mimico, The Kingsway, Islington, Long Branch. Lake proximity specialists, creek systems expertise. Call (437) 545-0067."
+city: "Etobicoke"
 keywords: ["etobicoke basement waterproofing", "high park waterproofing", "mimico basement repair", "kingsway waterproofing", "islington waterproofing", "long branch basement waterproofing"]
 date: 2024-01-29
 type: "location"

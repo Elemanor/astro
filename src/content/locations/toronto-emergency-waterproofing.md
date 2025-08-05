@@ -1,6 +1,7 @@
 ---
 title: "Toronto Emergency Flood Response | Local 30-Min Response Team"
 description: "Toronto emergency flood response with 30-minute arrival guarantee. Local emergency crews stationed across Toronto. Rapid flood response and water extraction."
+city: "Toronto"
 date: 2025-01-31
 type: "location"
 url: "/toronto-emergency-waterproofing/"

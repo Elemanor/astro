@@ -1,6 +1,7 @@
 ---
 title: "Basement Waterproofing Newmarket | Local Experts Since 1999"
 description: "Basement waterproofing Newmarket specialists. Expert solutions for Holland Marsh water tables, clay soil. Aurora & East Gwillimbury included. Free estimate: (437) 545-0067"
+city: "Newmarket"
 date: 2025-01-31
 type: "location"
 url: "/newmarket-basement-waterproofing/"
