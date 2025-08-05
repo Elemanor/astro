@@ -1,0 +1,186 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Navigation } from '../../components/Navigation';
+import Footer from '../../components/Footer.astro';
+import StickyCTA from '../../components/StickyCTA.astro';
+import { ScrollAnimation } from '../../components/ScrollAnimation';
+import { Button } from '../../components/ui/button';
+import { getCollection } from 'astro:content';
+
+const blogPosts = await getCollection('blog');
+const sortedPosts = blogPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+// Categories for filtering
+const categories = [
+  "All",
+  "DIY Guides",
+  "Waterproofing Guides",
+  "Maintenance Tips",
+  "Industry News"
+];
+---
+
+<BaseLayout 
+  title="Waterproofing Blog & Resources | DrySpace Toronto"
+  description="Expert waterproofing guides, DIY tips, and maintenance advice for Toronto homeowners. Learn how to protect your basement from water damage."
+>
+  <Navigation client:load />
+  
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-gray-50 to-white pt-24 pb-12 lg:pt-32 lg:pb-20">
+    <div class="absolute inset-0 opacity-5" 
+         style="background-image: radial-gradient(circle at 1px 1px, black 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            Waterproofing Resources & Guides
+          </h1>
+          <p class="text-xl text-gray-600 mb-8">
+            Expert tips, DIY guides, and industry insights to help protect your Toronto home from water damage.
+          </p>
+          
+          <!-- Category Filter -->
+          <div class="flex flex-wrap justify-center gap-2 mb-8">
+            {categories.map((category) => (
+              <button class={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                category === "All" 
+                  ? "bg-primary text-white" 
+                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+              }`}>
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+      </ScrollAnimation>
+    </div>
+  </section>
+  
+  <!-- Featured Post -->
+  {sortedPosts.length > 0 && sortedPosts[0].data.featured && (
+    <section class="py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <a href={`/blog/${sortedPosts[0].slug}`} class="block">
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+              <div class="grid lg:grid-cols-2">
+                <div class="h-64 lg:h-full bg-gray-300">
+                  {sortedPosts[0].data.image && (
+                    <img 
+                      src={sortedPosts[0].data.image} 
+                      alt={sortedPosts[0].data.imageAlt || sortedPosts[0].data.title}
+                      class="w-full h-full object-cover"
+                    />
+                  )}
+                </div>
+                <div class="p-8 lg:p-12">
+                  <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium mb-4">
+                    Featured Article
+                  </span>
+                  <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                    {sortedPosts[0].data.title}
+                  </h2>
+                  <p class="text-gray-600 mb-6">
+                    {sortedPosts[0].data.description}
+                  </p>
+                  <div class="flex items-center gap-4 text-sm text-gray-500">
+                    <span>{sortedPosts[0].data.author}</span>
+                    <span>•</span>
+                    <span>{new Date(sortedPosts[0].data.date).toLocaleDateString()}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </ScrollAnimation>
+      </div>
+    </section>
+  )}
+  
+  <!-- Blog Grid -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {sortedPosts.slice(sortedPosts[0]?.data.featured ? 1 : 0).map((post, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
+              <a href={`/blog/${post.slug}`} class="block flex-1 flex flex-col">
+                <div class="h-48 bg-gray-300">
+                  {post.data.image && (
+                    <img 
+                      src={post.data.image} 
+                      alt={post.data.imageAlt || post.data.title}
+                      class="w-full h-full object-cover"
+                    />
+                  )}
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                  {post.data.category && (
+                    <span class="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium mb-3 self-start">
+                      {post.data.category}
+                    </span>
+                  )}
+                  <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">
+                    {post.data.title}
+                  </h3>
+                  <p class="text-gray-600 mb-4 flex-1">
+                    {post.data.description}
+                  </p>
+                  <div class="flex items-center justify-between text-sm text-gray-500">
+                    <span>{new Date(post.data.date).toLocaleDateString()}</span>
+                    <span class="flex items-center gap-1 text-primary font-medium">
+                      Read more
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </ScrollAnimation>
+        ))}
+      </div>
+      
+      {sortedPosts.length === 0 && (
+        <div class="text-center py-12">
+          <p class="text-gray-600">No blog posts available yet. Check back soon!</p>
+        </div>
+      )}
+    </div>
+  </section>
+  
+  <!-- Newsletter CTA -->
+  <section class="bg-primary text-white py-16 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <ScrollAnimation animation="zoomIn" client:visible>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+          Stay Informed & Protected
+        </h2>
+        <p class="text-xl mb-8 opacity-90">
+          Get monthly waterproofing tips, seasonal reminders, and exclusive offers delivered to your inbox.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            class="flex-1 px-6 py-3 rounded-lg text-gray-900"
+            required
+          />
+          <Button type="submit" variant="secondary" size="lg">
+            Subscribe
+          </Button>
+        </form>
+        <p class="mt-4 text-sm opacity-75">
+          Unsubscribe anytime. We respect your privacy.
+        </p>
+      </ScrollAnimation>
+    </div>
+  </section>
+  
+  <Footer />
+  <StickyCTA />
+</BaseLayout>

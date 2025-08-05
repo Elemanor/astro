@@ -1,0 +1,271 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Navigation } from '../../components/Navigation';
+import Footer from '../../components/Footer.astro';
+import StickyCTA from '../../components/StickyCTA.astro';
+import { ScrollAnimation } from '../../components/ScrollAnimation';
+import { Button } from '../../components/ui/button';
+import { getCollection } from 'astro:content';
+
+const guides = await getCollection('guides');
+const sortedGuides = guides.sort((a, b) => {
+  // You can sort by date if you add dates to guides
+  return a.data.title.localeCompare(b.data.title);
+});
+
+// Guide categories
+const categories = [
+  {
+    name: "Foundation Care",
+    icon: "foundation",
+    description: "Identify and prevent foundation problems",
+    guides: [
+      { title: "Identifying Foundation Problems Early", link: "/guides/foundation-problems" },
+      { title: "Critical Foundation Cracks Guide", link: "/guides/critical-foundation-cracks" },
+      { title: "Foundation Repair Cost Guide 2025", link: "/guides/foundation-repair-costs" }
+    ]
+  },
+  {
+    name: "Waterproofing",
+    icon: "water",
+    description: "Complete waterproofing solutions and methods",
+    guides: [
+      { title: "Waterproofing Methods Compared", link: "/guides/waterproofing-methods" },
+      { title: "Interior vs Exterior Waterproofing", link: "/guides/interior-vs-exterior" },
+      { title: "Waterproofing Membrane Guide", link: "/guides/waterproofing-membranes" }
+    ]
+  },
+  {
+    name: "Maintenance",
+    icon: "tools",
+    description: "Keep your basement dry year-round",
+    guides: [
+      { title: "Seasonal Maintenance Checklist", link: "/guides/seasonal-maintenance" },
+      { title: "Sump Pump Maintenance Guide", link: "/guides/sump-pump-maintenance" },
+      { title: "Drainage System Care", link: "/guides/drainage-maintenance" }
+    ]
+  },
+  {
+    name: "Emergency",
+    icon: "alert",
+    description: "What to do in water emergencies",
+    guides: [
+      { title: "Basement Flooding Emergency Guide", link: "/guides/flooding-emergency" },
+      { title: "Spring Thaw Preparation", link: "/guides/spring-thaw" },
+      { title: "Insurance Claims for Water Damage", link: "/guides/insurance-claims" }
+    ]
+  }
+];
+---
+
+<BaseLayout 
+  title="Waterproofing Guides & Resources | Expert Help for Toronto Homeowners"
+  description="Comprehensive guides on basement waterproofing, foundation repair, and water damage prevention. Expert advice for Toronto homeowners."
+>
+  <Navigation client:load />
+  
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-50 to-white pt-24 pb-12 lg:pt-32 lg:pb-20">
+    <div class="absolute inset-0 opacity-5" 
+         style="background-image: radial-gradient(circle at 1px 1px, blue 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            Expert Waterproofing Guides
+          </h1>
+          <p class="text-xl text-gray-600 mb-8">
+            Everything you need to know about protecting your Toronto home from water damage. Written by professionals, designed for homeowners.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" class="text-lg px-8">
+              Download All Guides (PDF)
+            </Button>
+            <Button size="lg" variant="outline" class="text-lg px-8">
+              Get Expert Help
+            </Button>
+          </div>
+        </div>
+      </ScrollAnimation>
+    </div>
+  </section>
+  
+  <!-- Featured Guide -->
+  <section class="py-12 -mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+          <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-2 text-center">
+            <span class="text-sm font-semibold">📚 Most Popular Guide</span>
+          </div>
+          <div class="p-8 lg:p-12">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                  How to Identify Foundation Problems Early
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  Learn to spot the warning signs of foundation issues before they become expensive repairs. This comprehensive guide covers crack types, causes, and when to call professionals.
+                </p>
+                <div class="flex items-center gap-6 mb-6 text-sm text-gray-500">
+                  <span class="flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    10 min read
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    15,847 downloads
+                  </span>
+                </div>
+                <a href="/guides/foundation-problems" class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                  Read Guide
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="relative">
+                <img src="/images/guides/foundation-cracks.jpg" alt="Foundation crack types" class="rounded-lg shadow-lg" />
+                <div class="absolute -bottom-4 -right-4 bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold shadow-lg">
+                  Save $1000s with early detection!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ScrollAnimation>
+    </div>
+  </section>
+  
+  <!-- Guide Categories -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Browse Guides by Category
+        </h2>
+      </ScrollAnimation>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        {categories.map((category, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <div class="flex items-start gap-4 mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">{category.name}</h3>
+                  <p class="text-gray-600 mb-4">{category.description}</p>
+                  
+                  <ul class="space-y-3">
+                    {category.guides.map((guide) => (
+                      <li>
+                        <a href={guide.link} class="flex items-center justify-between group">
+                          <span class="text-blue-600 group-hover:text-blue-700 font-medium">
+                            {guide.title}
+                          </span>
+                          <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    </div>
+  </section>
+  
+  <!-- Quick Reference Section -->
+  <section class="bg-gray-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Quick Reference Guides
+        </h2>
+      </ScrollAnimation>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <ScrollAnimation animation="fadeUp" delay={0.1} client:visible>
+          <a href="/guides/emergency-checklist" class="block bg-red-50 border-2 border-red-200 rounded-lg p-6 hover:border-red-300 transition-colors">
+            <div class="flex items-center gap-3 mb-3">
+              <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+              <h3 class="text-xl font-bold text-red-900">Emergency Checklist</h3>
+            </div>
+            <p class="text-red-700">What to do when water enters your basement</p>
+          </a>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+          <a href="/guides/cost-calculator" class="block bg-green-50 border-2 border-green-200 rounded-lg p-6 hover:border-green-300 transition-colors">
+            <div class="flex items-center gap-3 mb-3">
+              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+              <h3 class="text-xl font-bold text-green-900">Cost Calculator</h3>
+            </div>
+            <p class="text-green-700">Estimate your waterproofing project costs</p>
+          </a>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="fadeUp" delay={0.3} client:visible>
+          <a href="/guides/diy-vs-pro" class="block bg-blue-50 border-2 border-blue-200 rounded-lg p-6 hover:border-blue-300 transition-colors">
+            <div class="flex items-center gap-3 mb-3">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <h3 class="text-xl font-bold text-blue-900">DIY vs Professional</h3>
+            </div>
+            <p class="text-blue-700">When to tackle it yourself vs calling experts</p>
+          </a>
+        </ScrollAnimation>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Newsletter CTA -->
+  <section class="bg-primary text-white py-16 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <ScrollAnimation animation="zoomIn" client:visible>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+          Get New Guides & Tips Monthly
+        </h2>
+        <p class="text-xl mb-8 opacity-90">
+          Join 5,000+ Toronto homeowners staying informed about basement protection
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            class="flex-1 px-6 py-3 rounded-lg text-gray-900"
+            required
+          />
+          <Button type="submit" variant="secondary" size="lg">
+            Subscribe Free
+          </Button>
+        </form>
+        <p class="mt-4 text-sm opacity-75">
+          Unsubscribe anytime. We never share your email.
+        </p>
+      </ScrollAnimation>
+    </div>
+  </section>
+  
+  <Footer />
+  <StickyCTA />
+</BaseLayout>

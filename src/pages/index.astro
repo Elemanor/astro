@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Navigation } from '../components/Navigation';
+import HeroSection from '../components/HeroSection.astro';
+import { ProblemCards } from '../components/ProblemCards';
+import ProcessSection from '../components/ProcessSection.astro';
+import TestimonialsSection from '../components/TestimonialsSection.astro';
+import { FAQSection } from '../components/FAQSection';
+import CTASection from '../components/CTASection.astro';
+import Footer from '../components/Footer.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+import { ScrollAnimation } from '../components/ScrollAnimation';
+import '../styles/globals.css';
+---
+
+<BaseLayout 
+  title="DrySpace Waterproofing - Toronto's Trusted Basement Waterproofing Experts"
+  description="Professional basement waterproofing services in Toronto & GTA. Lifetime warranty, 24/7 emergency service, 0% financing. Fix foundation cracks, leaks & water damage permanently."
+>
+  <!-- Navigation -->
+  <Navigation client:load />
+  
+  <main>
+    <!-- Hero Section with Video Background -->
+    <HeroSection />
+    
+    <!-- Sump Pump Featured Section -->
+    <section class="bg-primary text-white py-6 sm:py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-center sm:text-left">
+              <h2 class="text-xl sm:text-2xl font-bold mb-1">
+                <span class="text-yellow-300">⚡ FEATURED:</span> Professional Sump Pump Installation
+              </h2>
+              <p class="text-sm sm:text-base opacity-90">
+                Protect your basement from flooding with our triple-protection system
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center gap-3">
+              <div class="text-center sm:text-right">
+                <div class="text-2xl sm:text-3xl font-bold text-yellow-300">From $2,800</div>
+                <div class="text-xs sm:text-sm opacity-90">Lifetime Warranty Available</div>
+              </div>
+              <a 
+                href="/services/sump-pump-installation-toronto" 
+                class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2"
+              >
+                Learn More
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </ScrollAnimation>
+      </div>
+    </section>
+    
+    <!-- Services/Problem Cards Section -->
+    <section class="py-8 sm:py-12 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <div class="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 class="font-montserrat text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light">
+              Common Issues We <span class="font-semibold">Resolve</span>
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              From minor cracks to major flooding, we have the expertise and technology to solve any waterproofing challenge
+            </p>
+          </div>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+          <ProblemCards client:visible />
+        </ScrollAnimation>
+      </div>
+    </section>
+    
+    <!-- Process Section -->
+    <ProcessSection />
+    
+    <!-- Stats Section -->
+    <section class="py-12 sm:py-16 bg-primary text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <ScrollAnimation animation="zoomIn" client:visible>
+            <div>
+              <div class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">25+</div>
+              <div class="text-sm sm:text-base opacity-90">Years Experience</div>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animation="zoomIn" delay={0.1} client:visible>
+            <div>
+              <div class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">12,847</div>
+              <div class="text-sm sm:text-base opacity-90">Homes Protected</div>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animation="zoomIn" delay={0.2} client:visible>
+            <div>
+              <div class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">100%</div>
+              <div class="text-sm sm:text-base opacity-90">Satisfaction Rate</div>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animation="zoomIn" delay={0.3} client:visible>
+            <div>
+              <div class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">4.9★</div>
+              <div class="text-sm sm:text-base opacity-90">Google Rating</div>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <TestimonialsSection />
+    
+    <!-- Service Areas -->
+    <section class="py-12 sm:py-16 lg:py-24 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-light mb-4">
+              Serving <span class="font-bold">Greater Toronto Area</span>
+            </h2>
+            <p class="text-lg text-gray-600">
+              Fast, reliable waterproofing services across the GTA
+            </p>
+          </div>
+        </ScrollAnimation>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          {['Toronto', 'North York', 'Scarborough', 'Etobicoke', 'Mississauga', 'Brampton', 'Vaughan', 'Richmond Hill', 'Markham', 'Pickering', 'Ajax', 'Whitby'].map((area, index) => (
+            <ScrollAnimation animation="fadeUp" delay={index * 0.05} client:visible>
+              <div class="bg-white rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 class="font-semibold">{area}</h3>
+                <p class="text-sm text-gray-600 mt-1">Same day service</p>
+              </div>
+            </ScrollAnimation>
+          ))}
+        </div>
+      </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <ScrollAnimation animation="fadeUp" client:visible>
+      <FAQSection client:visible />
+    </ScrollAnimation>
+    
+    <!-- Final CTA Section -->
+    <CTASection />
+  </main>
+  
+  <!-- Footer -->
+  <Footer />
+  
+  <!-- Sticky Mobile CTA -->
+  <StickyCTA />
+</BaseLayout>
+
+<style>
+  /* Ensure smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

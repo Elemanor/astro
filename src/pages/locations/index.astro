@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const locations = await getCollection('locations');
+const locationsByCity = locations.reduce((acc, location) => {
+  const city = location.data.city || 'Other';
+  if (!acc[city]) acc[city] = [];
+  acc[city].push(location);
+  return acc;
+}, {});
+---
+
+<BaseLayout 
+  title="Service Areas | Basement Waterproofing Locations in GTA"
+  description="We provide basement waterproofing, foundation repair, and drainage solutions across the Greater Toronto Area. Find our services in your city."
+>
+  <div class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold text-center mb-8">Our Service Areas</h1>
+    <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+      Professional basement waterproofing and foundation repair services throughout the Greater Toronto Area
+    </p>
+
+    <div class="grid gap-8">
+      {Object.entries(locationsByCity).map(([city, cityLocations]) => (
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-bold mb-4">{city}</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {cityLocations.map((location) => (
+              <a 
+                href={`/locations/${location.slug}/`}
+                class="block p-4 bg-gray-50 rounded hover:bg-primary hover:text-white transition-colors"
+              >
+                <h3 class="font-semibold">{location.data.title}</h3>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
