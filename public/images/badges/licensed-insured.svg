@@ -1,6 +1,0 @@
-<svg width="140" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
-  <rect width="140" height="40" fill="#F3F4F6" rx="20" stroke="#E5E7EB" stroke-width="2"/>
-  <circle cx="25" cy="20" r="10" fill="#3B82F6"/>
-  <path d="M25 15 L25 25 M20 20 L30 20" stroke="white" stroke-width="2"/>
-  <text x="75" y="25" font-family="Arial, sans-serif" font-size="12" fill="#374151">Licensed & Insured</text>
-</svg>

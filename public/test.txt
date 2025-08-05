@@ -1,3 +1,0 @@
-This is a test file for Cloudflare Pages deployment.
-If you can see this, static files are being served correctly.
-Timestamp: 2025-07-29
