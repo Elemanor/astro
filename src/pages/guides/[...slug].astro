@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import GuideLayout from '../../components/GuideLayout.astro';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides');
@@ -13,11 +14,23 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { Content } = await guide.render();
+const data = guide.data;
 ---
 
-<BaseLayout title={guide.data.title} description={guide.data.description}>
-  <article class="container mx-auto px-4 py-8 max-w-4xl prose prose-lg max-w-none">
-    <h1 class="text-4xl font-bold mb-8 text-gray-900">{guide.data.title}</h1>
-    <Content />
-  </article>
+<BaseLayout 
+  title={data.title} 
+  description={data.description}
+>
+  <div class="container mx-auto px-4 py-8">
+    <GuideLayout
+      title={data.title}
+      description={data.description}
+      category={data.category}
+      readTime={data.readTime}
+      lastUpdated={data.lastUpdated}
+      author={data.author}
+    >
+      <Content />
+    </GuideLayout>
+  </div>
 </BaseLayout>

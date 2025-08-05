@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ServicePageLayout from '../../components/ServicePageLayout.astro';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -13,11 +14,26 @@ export async function getStaticPaths() {
 
 const { service } = Astro.props;
 const { Content } = await service.render();
+const data = service.data;
 ---
 
-<BaseLayout title={service.data.title} description={service.data.description}>
-  <article class="container mx-auto px-4 py-8 max-w-4xl prose prose-lg max-w-none">
-    <h1 class="text-4xl font-bold mb-8 text-gray-900">{service.data.title}</h1>
-    <Content />
-  </article>
+<BaseLayout 
+  title={data.seo_title || data.title} 
+  description={data.description}
+  keywords={data.keywords}
+>
+  <div class="container mx-auto px-4 py-8">
+    <ServicePageLayout
+      title={data.title}
+      subtitle={data.subtitle}
+      description={data.description}
+      relatedServices={data.related_services}
+      neighborhoods={data.toronto_neighborhoods}
+      caseStudies={data.local_case_studies}
+      features={data.toronto_specific_features}
+      faqs={data.faq}
+    >
+      <Content />
+    </ServicePageLayout>
+  </div>
 </BaseLayout>

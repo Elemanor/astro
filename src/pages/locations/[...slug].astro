@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import LocationPageLayout from '../../components/LocationPageLayout.astro';
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
@@ -12,13 +13,22 @@ export async function getStaticPaths() {
 
 const { location } = Astro.props;
 const { Content } = await location.render();
+const data = location.data;
 ---
 
-<BaseLayout title={location.data.title} description={location.data.description}>
-  <article class="container mx-auto px-4 py-8 max-w-4xl">
-    <h1 class="text-4xl font-bold mb-8">{location.data.title}</h1>
-    <div class="prose prose-lg max-w-none">
+<BaseLayout 
+  title={data.title} 
+  description={data.description}
+  keywords={data.keywords ? data.keywords.join(', ') : ''}
+>
+  <div class="container mx-auto px-4 py-8">
+    <LocationPageLayout
+      title={data.title}
+      description={data.description}
+      city={data.city}
+      serviceAreas={data.service_areas || data.serviceArea}
+    >
       <Content />
-    </div>
-  </article>
+    </LocationPageLayout>
+  </div>
 </BaseLayout>

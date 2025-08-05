@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ScrollAnimation } from '../components/ScrollAnimation';
+---
+
+<BaseLayout 
+  title="Our Process - DrySpace Waterproofing Toronto"
+  description="Learn about our proven 6-step waterproofing process. From inspection to lifetime warranty, see how we protect Toronto homes."
+>
+  <section class="py-12 bg-gradient-to-b from-white to-gray-50">
+    <div class="container mx-auto px-4">
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Our Proven Waterproofing Process
+          </h1>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            With over 15 years of experience and 5,000+ homes protected, we've perfected our process to deliver lasting results
+          </p>
+        </div>
+      </ScrollAnimation>
+
+      <!-- Process Steps -->
+      <div class="max-w-5xl mx-auto">
+        {[
+          {
+            step: "1",
+            title: "Free Inspection & Assessment",
+            description: "Our certified inspectors thoroughly examine your basement, foundation, and drainage systems.",
+            features: ["Moisture reading analysis", "Foundation crack mapping", "Drainage evaluation", "Digital photo documentation"],
+            icon: "🔍",
+            time: "45-60 minutes"
+          },
+          {
+            step: "2",
+            title: "Custom Solution Design",
+            description: "We create a tailored waterproofing plan specific to your home's needs and budget.",
+            features: ["Detailed written quote", "Multiple solution options", "3D drainage diagrams", "Warranty details"],
+            icon: "📋",
+            time: "Same day"
+          },
+          {
+            step: "3",
+            title: "Preparation & Protection",
+            description: "We protect your property and prepare the work area for minimal disruption.",
+            features: ["Floor & wall protection", "Furniture moving assistance", "Dust control measures", "Clear access paths"],
+            icon: "🛡️",
+            time: "Day 1"
+          },
+          {
+            step: "4",
+            title: "Professional Installation",
+            description: "Our certified technicians install your waterproofing system with precision.",
+            features: ["Licensed technicians", "Quality materials only", "Daily progress updates", "Clean work environment"],
+            icon: "🔨",
+            time: "2-5 days"
+          },
+          {
+            step: "5",
+            title: "Quality Testing & Inspection",
+            description: "We thoroughly test all systems and ensure everything meets our high standards.",
+            features: ["Water flow testing", "Pump operation verification", "Seal integrity checks", "Final moisture readings"],
+            icon: "✅",
+            time: "Final day"
+          },
+          {
+            step: "6",
+            title: "Lifetime Warranty & Support",
+            description: "Your protection continues with our comprehensive warranty and ongoing support.",
+            features: ["Lifetime material warranty", "25-year labor warranty", "Annual inspections", "24/7 emergency support"],
+            icon: "🏆",
+            time: "Forever"
+          }
+        ].map((step, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8 hover:shadow-xl transition-shadow">
+              <div class="flex items-start gap-6">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                    {step.step}
+                  </div>
+                </div>
+                <div class="flex-grow">
+                  <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-2xl font-bold text-gray-900 flex items-center gap-3">
+                      <span class="text-3xl">{step.icon}</span>
+                      {step.title}
+                    </h3>
+                    <span class="text-sm bg-gray-100 px-3 py-1 rounded-full text-gray-600">
+                      {step.time}
+                    </span>
+                  </div>
+                  <p class="text-gray-600 mb-4">{step.description}</p>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {step.features.map(feature => (
+                      <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-sm text-gray-700">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+
+      <!-- CTA Section -->
+      <ScrollAnimation animation="zoomIn" client:visible>
+        <div class="text-center mt-16 bg-primary text-white rounded-xl p-8">
+          <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <p class="text-xl mb-6 opacity-90">
+            Join over 5,000 Toronto homeowners who trust DrySpace
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:4375450067" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Call Now: (437) 545-0067
+            </a>
+            <a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+              Schedule Free Inspection
+            </a>
+          </div>
+        </div>
+      </ScrollAnimation>
+    </div>
+  </section>
+</BaseLayout>
