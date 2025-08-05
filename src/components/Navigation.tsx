@@ -59,18 +59,26 @@ export function Navigation() {
                   Sump Pumps
                 </Button>
               </a>
-              <Button variant="outline" size="sm" className="rounded-full whitespace-nowrap">
-                Services
-              </Button>
-              <Button variant="outline" size="sm" className="rounded-full whitespace-nowrap">
-                Our Process
-              </Button>
-              <Button variant="outline" size="sm" className="rounded-full whitespace-nowrap">
-                Reviews
-              </Button>
-              <Button size="sm" className="rounded-full whitespace-nowrap">
-                Get Quote
-              </Button>
+              <a href="/services">
+                <Button variant="outline" size="sm" className="rounded-full whitespace-nowrap">
+                  Services
+                </Button>
+              </a>
+              <a href="/process">
+                <Button variant="outline" size="sm" className="rounded-full whitespace-nowrap">
+                  Our Process
+                </Button>
+              </a>
+              <a href="/reviews">
+                <Button variant="outline" size="sm" className="rounded-full whitespace-nowrap">
+                  Reviews
+                </Button>
+              </a>
+              <a href="/contact">
+                <Button size="sm" className="rounded-full whitespace-nowrap">
+                  Get Quote
+                </Button>
+              </a>
               <Button 
                 variant="outline" 
                 size="sm" 
@@ -94,12 +102,16 @@ export function Navigation() {
               D<span className="font-bold">S</span>
             </a>
             <div className="flex items-center gap-2">
-              <Button size="sm" className="rounded-full">
-                Quote
-              </Button>
-              <Button size="sm" variant="destructive" className="rounded-full">
-                <Phone className="w-4 h-4" />
-              </Button>
+              <a href="/contact">
+                <Button size="sm" className="rounded-full">
+                  Quote
+                </Button>
+              </a>
+              <a href="tel:4375450067">
+                <Button size="sm" variant="destructive" className="rounded-full">
+                  <Phone className="w-4 h-4" />
+                </Button>
+              </a>
               <Button 
                 variant="ghost" 
                 size="icon"
@@ -161,17 +173,26 @@ export function Navigation() {
                       </div>
                     )}
                   </div>
-                  {['Process', 'Warranty', 'About', 'Reviews'].map((item) => (
-                    <Button key={item} variant="ghost" className="font-medium">
-                      {item}
-                    </Button>
+                  {[
+                    { label: 'Process', href: '/process' },
+                    { label: 'Warranty', href: '/warranty' },
+                    { label: 'About', href: '/about' },
+                    { label: 'Reviews', href: '/reviews' }
+                  ].map((item) => (
+                    <a key={item.label} href={item.href}>
+                      <Button variant="ghost" className="font-medium" asChild>
+                        <span>{item.label}</span>
+                      </Button>
+                    </a>
                   ))}
                 </div>
                 
                 <div className="flex items-center gap-4">
-                  <Button className="font-semibold">
-                    Book Free Inspection
-                  </Button>
+                  <a href="/contact">
+                    <Button className="font-semibold">
+                      Book Free Inspection
+                    </Button>
+                  </a>
                   <a href="tel:4375450067" className="text-red-600 font-bold text-sm hover:text-red-700">
                     <div className="flex items-center gap-2">
                       <Phone className="w-4 h-4" />
