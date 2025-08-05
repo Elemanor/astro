@@ -1,0 +1,284 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ScrollAnimation } from '../components/ScrollAnimation';
+
+const resources = [
+  {
+    category: "Maintenance Guides",
+    icon: "🔧",
+    items: [
+      {
+        title: "Complete Waterproofing Maintenance Guide",
+        description: "Essential maintenance tasks to keep your waterproofing system working perfectly",
+        link: "/resources/maintenance-guide",
+        type: "Guide"
+      },
+      {
+        title: "Seasonal Maintenance Checklist",
+        description: "What to check each season to prevent water damage",
+        link: "/resources/seasonal-checklist",
+        type: "Checklist"
+      },
+      {
+        title: "Sump Pump Care Guide",
+        description: "How to maintain your sump pump for maximum lifespan",
+        link: "/resources/sump-pump-maintenance",
+        type: "Guide"
+      }
+    ]
+  },
+  {
+    category: "Educational Resources",
+    icon: "📚",
+    items: [
+      {
+        title: "Understanding Foundation Cracks",
+        description: "Learn about different crack types and when to worry",
+        link: "/guides/foundation-problems",
+        type: "Article"
+      },
+      {
+        title: "Basement Waterproofing 101",
+        description: "Everything you need to know about waterproofing methods",
+        link: "/guides/waterproofing-basics",
+        type: "Guide"
+      },
+      {
+        title: "Toronto Building Codes",
+        description: "Understanding waterproofing requirements in Toronto",
+        link: "/guides/toronto-building-codes",
+        type: "Reference"
+      }
+    ]
+  },
+  {
+    category: "Cost & Planning",
+    icon: "💰",
+    items: [
+      {
+        title: "2025 Waterproofing Cost Guide",
+        description: "Detailed pricing for all waterproofing services",
+        link: "/resources/cost-guide-2025",
+        type: "PDF"
+      },
+      {
+        title: "Toronto Rebate Programs",
+        description: "How to get up to $3,400 in city rebates",
+        link: "/resources/toronto-rebates",
+        type: "Guide"
+      },
+      {
+        title: "Insurance Coverage Guide",
+        description: "What insurance covers for water damage",
+        link: "/resources/insurance-guide",
+        type: "Article"
+      }
+    ]
+  },
+  {
+    category: "Emergency Resources",
+    icon: "🚨",
+    items: [
+      {
+        title: "Flooding Emergency Checklist",
+        description: "What to do when your basement floods",
+        link: "/resources/emergency-checklist",
+        type: "Checklist"
+      },
+      {
+        title: "Water Damage Prevention",
+        description: "Prevent water damage before it happens",
+        link: "/resources/prevention-guide",
+        type: "Guide"
+      },
+      {
+        title: "24/7 Emergency Contacts",
+        description: "Important numbers for water emergencies",
+        link: "/emergency",
+        type: "Contact"
+      }
+    ]
+  }
+];
+---
+
+<BaseLayout 
+  title="Resources - DrySpace Waterproofing Toronto"
+  description="Free waterproofing resources, guides, and tools. Learn about maintenance, costs, emergency procedures, and more from Toronto's waterproofing experts."
+>
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <!-- Hero Section -->
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Waterproofing Resources & Guides
+          </h1>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Free resources to help you understand, maintain, and protect your home from water damage
+          </p>
+        </div>
+      </ScrollAnimation>
+
+      <!-- Quick Tools -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <ScrollAnimation animation="zoomIn" client:visible>
+          <a href="/tools/waterproofing-cost-calculator" class="bg-gradient-to-br from-primary to-blue-600 text-white rounded-xl p-6 hover:shadow-xl transition-shadow group">
+            <div class="text-4xl mb-3">💰</div>
+            <h3 class="text-xl font-bold mb-2">Cost Calculator</h3>
+            <p class="opacity-90">Get instant waterproofing estimates</p>
+            <div class="mt-4 flex items-center gap-2 text-sm">
+              <span>Try it now</span>
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </a>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="zoomIn" delay={0.1} client:visible>
+          <a href="/tools/basement-problem-diagnostic" class="bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl p-6 hover:shadow-xl transition-shadow group">
+            <div class="text-4xl mb-3">🔍</div>
+            <h3 class="text-xl font-bold mb-2">Problem Diagnostic</h3>
+            <p class="opacity-90">Identify your basement issues</p>
+            <div class="mt-4 flex items-center gap-2 text-sm">
+              <span>Start diagnostic</span>
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </a>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="zoomIn" delay={0.2} client:visible>
+          <a href="/resources/maintenance-guide" class="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-xl p-6 hover:shadow-xl transition-shadow group">
+            <div class="text-4xl mb-3">📖</div>
+            <h3 class="text-xl font-bold mb-2">Maintenance Guide</h3>
+            <p class="opacity-90">Keep your system working perfectly</p>
+            <div class="mt-4 flex items-center gap-2 text-sm">
+              <span>Read guide</span>
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </a>
+        </ScrollAnimation>
+      </div>
+
+      <!-- Resource Categories -->
+      {resources.map((category, catIndex) => (
+        <div class="mb-12">
+          <ScrollAnimation animation="fadeUp" client:visible>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="text-3xl">{category.icon}</span>
+              <h2 class="text-2xl font-bold text-gray-900">{category.category}</h2>
+            </div>
+          </ScrollAnimation>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            {category.items.map((item, index) => (
+              <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+                <a href={item.link} class="bg-white rounded-lg shadow hover:shadow-lg transition-all p-6 group">
+                  <div class="flex items-start justify-between mb-3">
+                    <h3 class="font-bold text-lg text-gray-900 group-hover:text-primary transition-colors pr-2">
+                      {item.title}
+                    </h3>
+                    <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded flex-shrink-0">
+                      {item.type}
+                    </span>
+                  </div>
+                  <p class="text-gray-600 text-sm mb-4">{item.description}</p>
+                  <div class="flex items-center gap-2 text-primary text-sm font-semibold">
+                    <span>Learn more</span>
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </a>
+              </ScrollAnimation>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <!-- Download Section -->
+      <div class="bg-gray-50 rounded-xl p-8 mb-12">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Free Downloads</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow">
+              <div class="flex items-start gap-4">
+                <div class="text-3xl">📄</div>
+                <div class="flex-grow">
+                  <h3 class="font-bold text-lg mb-2">Homeowner's Waterproofing Checklist</h3>
+                  <p class="text-sm text-gray-600 mb-3">Annual inspection checklist to catch problems early</p>
+                  <button class="bg-primary text-white px-4 py-2 rounded text-sm font-semibold hover:bg-primary/90 transition-colors">
+                    Download PDF
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow">
+              <div class="flex items-start gap-4">
+                <div class="text-3xl">📊</div>
+                <div class="flex-grow">
+                  <h3 class="font-bold text-lg mb-2">2025 Waterproofing Cost Guide</h3>
+                  <p class="text-sm text-gray-600 mb-3">Detailed pricing for all services in Toronto</p>
+                  <button class="bg-primary text-white px-4 py-2 rounded text-sm font-semibold hover:bg-primary/90 transition-colors">
+                    Download PDF
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
+      </div>
+
+      <!-- Newsletter Signup -->
+      <div class="bg-primary text-white rounded-xl p-8 mb-12">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">Stay Informed</h2>
+            <p class="mb-6 opacity-90">
+              Get seasonal maintenance reminders and waterproofing tips delivered to your inbox
+            </p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                class="flex-grow px-4 py-2 rounded-lg text-gray-900"
+                required
+              />
+              <button type="submit" class="bg-white text-primary px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Subscribe
+              </button>
+            </form>
+            <p class="text-xs mt-4 opacity-70">
+              We respect your privacy. Unsubscribe anytime.
+            </p>
+          </div>
+        </ScrollAnimation>
+      </div>
+
+      <!-- CTA Section -->
+      <ScrollAnimation animation="zoomIn" client:visible>
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Need Professional Help?
+          </h2>
+          <p class="text-xl text-gray-600 mb-6">
+            Our experts are ready to solve your waterproofing challenges
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:4375450067" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              Call Now: (437) 545-0067
+            </a>
+            <a href="/contact" class="bg-white text-primary border-2 border-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all">
+              Schedule Free Inspection
+            </a>
+          </div>
+        </div>
+      </ScrollAnimation>
+    </div>
+  </section>
+</BaseLayout>

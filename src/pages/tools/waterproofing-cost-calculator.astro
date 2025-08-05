@@ -1,0 +1,297 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ScrollAnimation } from '../../components/ScrollAnimation';
+---
+
+<BaseLayout 
+  title="Waterproofing Cost Calculator - Get Instant Estimates"
+  description="Calculate accurate waterproofing costs for your Toronto home. Free instant estimates based on your specific needs and property details."
+>
+  <section class="py-12">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <!-- Hero Section -->
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <span>💰</span> Free Cost Calculator
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Waterproofing Cost Calculator
+          </h1>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Get instant, accurate estimates for your basement waterproofing project
+          </p>
+        </div>
+      </ScrollAnimation>
+
+      <!-- Calculator Form -->
+      <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+        <form id="cost-calculator">
+          <!-- Step 1: Property Details -->
+          <div class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Property Information</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Home Age
+                </label>
+                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                  <option value="">Select age range</option>
+                  <option value="new">Less than 10 years</option>
+                  <option value="medium">10-30 years</option>
+                  <option value="old">30-50 years</option>
+                  <option value="vintage">Over 50 years</option>
+                </select>
+              </div>
+              
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Basement Size (sq ft)
+                </label>
+                <input 
+                  type="number" 
+                  placeholder="e.g., 1000"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                />
+              </div>
+              
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Foundation Type
+                </label>
+                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                  <option value="">Select type</option>
+                  <option value="poured">Poured Concrete</option>
+                  <option value="block">Concrete Block</option>
+                  <option value="stone">Stone/Rubble</option>
+                  <option value="brick">Brick</option>
+                </select>
+              </div>
+              
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Basement Finishing
+                </label>
+                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                  <option value="">Select status</option>
+                  <option value="unfinished">Unfinished</option>
+                  <option value="partial">Partially Finished</option>
+                  <option value="finished">Fully Finished</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Problem Details -->
+          <div class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Water Issues</h2>
+            
+            <div class="space-y-4">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" class="mt-1" value="flooding">
+                <div>
+                  <span class="font-medium">Active Flooding</span>
+                  <p class="text-sm text-gray-600">Water pooling or flooding during rain</p>
+                </div>
+              </label>
+              
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" class="mt-1" value="cracks">
+                <div>
+                  <span class="font-medium">Foundation Cracks</span>
+                  <p class="text-sm text-gray-600">Visible cracks with water seepage</p>
+                </div>
+              </label>
+              
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" class="mt-1" value="moisture">
+                <div>
+                  <span class="font-medium">Moisture/Dampness</span>
+                  <p class="text-sm text-gray-600">Damp walls, musty smell, or efflorescence</p>
+                </div>
+              </label>
+              
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" class="mt-1" value="drainage">
+                <div>
+                  <span class="font-medium">Poor Drainage</span>
+                  <p class="text-sm text-gray-600">Water pooling around foundation</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Solution Preferences -->
+          <div class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Preferred Solutions</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+              <label class="flex items-center gap-3 cursor-pointer p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                <input type="radio" name="solution" value="interior" checked>
+                <div>
+                  <span class="font-medium">Interior Waterproofing</span>
+                  <p class="text-sm text-gray-600">Less invasive, works year-round</p>
+                </div>
+              </label>
+              
+              <label class="flex items-center gap-3 cursor-pointer p-4 bg-gray-50 rounded-lg hover:bg-gray-100">
+                <input type="radio" name="solution" value="exterior">
+                <div>
+                  <span class="font-medium">Exterior Waterproofing</span>
+                  <p class="text-sm text-gray-600">Most comprehensive protection</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Calculate Button -->
+          <button 
+            type="submit"
+            class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+          >
+            Calculate My Estimate
+          </button>
+        </form>
+      </div>
+
+      <!-- Results Section (Hidden initially) -->
+      <div class="hidden" id="results">
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h2 class="text-2xl font-bold mb-6">Your Waterproofing Estimate</h2>
+          
+          <!-- Price Range -->
+          <div class="bg-primary/10 rounded-lg p-6 mb-6">
+            <div class="text-center">
+              <p class="text-gray-600 mb-2">Estimated Cost Range</p>
+              <p class="text-4xl font-bold text-primary">$4,500 - $8,500</p>
+              <p class="text-sm text-gray-600 mt-2">Based on your inputs and Toronto market rates</p>
+            </div>
+          </div>
+
+          <!-- Breakdown -->
+          <div class="mb-6">
+            <h3 class="font-bold text-lg mb-4">Cost Breakdown</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between py-2 border-b">
+                <span>Interior Drainage System</span>
+                <span class="font-semibold">$3,000 - $5,000</span>
+              </div>
+              <div class="flex justify-between py-2 border-b">
+                <span>Sump Pump Installation</span>
+                <span class="font-semibold">$1,200 - $2,500</span>
+              </div>
+              <div class="flex justify-between py-2 border-b">
+                <span>Crack Repairs</span>
+                <span class="font-semibold">$300 - $1,000</span>
+              </div>
+              <div class="flex justify-between py-2 font-bold">
+                <span>Total Estimate</span>
+                <span class="text-primary">$4,500 - $8,500</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Factors -->
+          <div class="bg-gray-50 rounded-lg p-6 mb-6">
+            <h3 class="font-bold mb-3">Factors Affecting Your Cost:</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-gray-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                <span>1,000 sq ft basement size</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-gray-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                <span>Poured concrete foundation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-gray-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                <span>Active water issues requiring immediate attention</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Save Options -->
+          <div class="bg-green-50 rounded-lg p-6 mb-6">
+            <h3 class="font-bold text-green-900 mb-3">Ways to Save:</h3>
+            <ul class="space-y-2 text-sm text-green-800">
+              <li>• City of Toronto rebate program: Save up to $3,400</li>
+              <li>• 0% financing available for 12 months</li>
+              <li>• Bundle services for 10% discount</li>
+              <li>• Off-season scheduling (winter) saves 5-10%</li>
+            </ul>
+          </div>
+
+          <!-- Next Steps -->
+          <div class="text-center pt-6 border-t">
+            <h3 class="text-xl font-bold mb-4">Get Your Exact Quote</h3>
+            <p class="text-gray-600 mb-6">This estimate is based on typical projects. Get a precise quote with our free inspection.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:4375450067" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                Call Now: (437) 545-0067
+              </a>
+              <a href="/contact" class="bg-white text-primary border-2 border-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all">
+                Schedule Free Inspection
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="text-center text-sm text-gray-600">
+          <p>* This is an estimate only. Actual costs may vary based on specific conditions and requirements.</p>
+        </div>
+      </div>
+
+      <!-- Benefits -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <div class="text-center">
+            <div class="text-3xl mb-3">🎯</div>
+            <h3 class="font-bold mb-2">Accurate Estimates</h3>
+            <p class="text-sm text-gray-600">Based on thousands of Toronto projects</p>
+          </div>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="fadeUp" delay={0.1} client:visible>
+          <div class="text-center">
+            <div class="text-3xl mb-3">⚡</div>
+            <h3 class="font-bold mb-2">Instant Results</h3>
+            <p class="text-sm text-gray-600">No waiting for callbacks or emails</p>
+          </div>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+          <div class="text-center">
+            <div class="text-3xl mb-3">🔒</div>
+            <h3 class="font-bold mb-2">No Obligations</h3>
+            <p class="text-sm text-gray-600">Use freely without sales pressure</p>
+          </div>
+        </ScrollAnimation>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('cost-calculator');
+      const results = document.getElementById('results');
+      
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show results
+        results.classList.remove('hidden');
+        
+        // Scroll to results
+        results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</BaseLayout>
