@@ -3,18 +3,68 @@
 // Original file: /services/don-mills-basement-waterproofing/
 // Migration date: 2025-08-04T15:14:29.621Z
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import { Star, Phone, MapPin, Home } from 'lucide-react';
 
-// Service data extracted from original markdown
-const serviceData = {
+// Service data converted to V4 format
+const pageData = {
   serviceName: "Don Mills Basement Waterproofing",
-  serviceTitle: "Don Mills Basement Waterproofing North York | Mid-Century Foundation Repair",
+  serviceTitle: "Don Mills Basement Waterproofing | Licensed Mid-Century Specialists | North York",
   serviceSubtitle: "Specialized Waterproofing for Don Mills' Iconic Mid-Century Homes",
-  serviceDescription: "Expert basement waterproofing in Don Mills. Specializing in 1950s-60s construction, unique foundation designs, and preserving mid-century architectural integrity. Serving Lawrence & Don Mills area. Call (437) 545-0067.",
-  
-  
-  
-  
+  serviceDescription: "Expert basement waterproofing in Don Mills. Specializing in 1950s-60s construction, unique foundation designs, and preserving mid-century architectural integrity. Licensed, insured, lifetime warranty. Call (437) 545-0067.",
+  heroBadge: "Mid-Century Specialists",
+  heroImage: "/images/services/don-mills-waterproofing-hero.jpg",
+  heroFeatures: [
+    "Local North York team",
+    "Mid-century home specialists", 
+    "Unique foundation experts",
+    "Lifetime warranty"
+  ],
+  startingPrice: "$7,500",
+  priceRange: "$7,500-$14,000",
+  processSteps: [
+    {
+      title: "Mid-Century Assessment",
+      description: "Understanding Don Mills' unique 1950s-60s foundation designs",
+      icon: "search"
+    },
+    {
+      title: "Architecture-Aware Design",
+      description: "Solutions that preserve mid-century architectural integrity",
+      icon: "clipboard"
+    },
+    {
+      title: "Expert Installation",
+      description: "Professional installation by mid-century foundation specialists",
+      icon: "wrench"
+    },
+    {
+      title: "Heritage Protection",
+      description: "Ongoing support with architectural integrity preservation",
+      icon: "shield"
+    }
+  ],
+  benefits: [
+    {
+      title: "Mid-Century Foundation Expertise",
+      description: "Specialized knowledge of 1950s-60s unique foundation designs"
+    },
+    {
+      title: "Architectural Preservation",
+      description: "Waterproofing methods that maintain mid-century character"
+    },
+    {
+      title: "Don Valley Drainage",
+      description: "Understanding of Don Mills' unique topography and drainage patterns"
+    },
+    {
+      title: "Local North York Team",
+      description: "Fast response times and ongoing local support in Don Mills area"
+    }
+  ],
   heroStats: [
     {
       "value": "25+",
@@ -170,9 +220,64 @@ const originalMetadata = {
 };
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="gradient"
+      title="Don Mills Basement Waterproofing Specialists"
+      subtitle="Expert solutions for mid-century homes & unique foundations"
+      centered
+    >
+      <p class="text-xl">
+        Don Mills' iconic mid-century homes from the 1950s-60s feature unique foundation designs that require 
+        specialized waterproofing expertise. Our North York team understands these architectural features and 
+        provides solutions that preserve the integrity of these important heritage properties.
+      </p>
+    </ContentSection>
+
+    <!-- Local Expertise CTA -->
+    <CalloutBox 
+      type="info" 
+      title="Mid-Century Foundation Specialists"
+      animate={true}
+    >
+      <p>Don Mills' unique 1950s-60s foundation designs require specialized expertise. Our team understands mid-century construction and preserves architectural character while providing modern protection.</p>
+      <p class="mt-4"><strong>Local Don Mills Team: (437) 545-0067</strong></p>
+    </CalloutBox>
+
+    <!-- Final CTA -->
+    <ContentSection 
+      variant="gradient"
+      title="Protect Your Don Mills Home Today"
+      subtitle="Mid-century expertise, lifetime protection"
+      centered
+      fullWidth
+    >
+      <div class="mt-8 space-y-6 text-center">
+        <p class="text-xl max-w-2xl mx-auto">
+          Don't let water damage compromise your mid-century home's architectural significance and value. 
+          Our specialized team provides waterproofing solutions that preserve Don Mills' unique character.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-full shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5">
+            <MapPin className="h-5 w-5 mr-2" />
+            Free Don Mills Assessment
+          </a>
+          <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-primary bg-white rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            <Phone className="h-5 w-5 mr-2" />
+            (437) 545-0067
+          </a>
+        </div>
+        <p class="text-sm opacity-80">
+          Local Don Mills team • Mid-century specialists • Architectural preservation • Lifetime warranty
+        </p>
+      </div>
+    </ContentSection>
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>
 
 <style>
   /* Preserved styles from original page */

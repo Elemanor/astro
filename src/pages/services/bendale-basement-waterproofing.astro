@@ -3,18 +3,72 @@
 // Original file: /services/bendale-basement-waterproofing/
 // Migration date: 2025-08-04T15:14:29.478Z
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import ProcessList from '../../components/content/ProcessList.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import QuestionAnswer from '../../components/content/QuestionAnswer.astro';
+import ServiceLinks from '../../components/content/ServiceLinks.astro';
+import { Star, Phone, MapPin, Home } from 'lucide-react';
 
-// Service data extracted from original markdown
-const serviceData = {
+// Service data converted to V4 format
+const pageData = {
   serviceName: "Bendale Basement Waterproofing",
-  serviceTitle: "Bendale Basement Waterproofing | Foundation Repair Southeast Scarborough",
-  serviceSubtitle: "Specialized Solutions for Bendale's Mixed Soil and Mature Neighborhoods",
-  serviceDescription: "Expert basement waterproofing in Bendale, Scarborough. Specializing in 1960s-70s homes, mixed clay-sand soil, and tree root challenges. Local team, proven results. Call (437) 545-0067.",
-  
-  
-  
-  
+  serviceTitle: "Bendale Basement Waterproofing | Licensed Local Contractors | Southeast Scarborough",
+  serviceSubtitle: "Specialized Solutions for Bendale's Mixed Soil & Mature Neighborhoods",
+  serviceDescription: "Expert basement waterproofing in Bendale, Scarborough. Specializing in 1960s-70s homes, mixed clay-sand soil, and tree root challenges. Licensed, insured, lifetime warranty. Call (437) 545-0067.",
+  heroBadge: "Local Bendale Team",
+  heroImage: "/images/services/bendale-waterproofing-hero.jpg",
+  heroFeatures: [
+    "Local Scarborough team",
+    "Mixed soil specialists", 
+    "Mature home expertise",
+    "Lifetime warranty"
+  ],
+  startingPrice: "$8,000",
+  priceRange: "$8,000-$15,000",
+  processSteps: [
+    {
+      title: "Local Assessment",
+      description: "Understanding Bendale's unique soil and drainage challenges",
+      icon: "search"
+    },
+    {
+      title: "Custom Design",
+      description: "Waterproofing solutions designed for mixed soil conditions",
+      icon: "clipboard"
+    },
+    {
+      title: "Expert Installation",
+      description: "Professional installation by local Bendale contractors",
+      icon: "wrench"
+    },
+    {
+      title: "Lifetime Protection",
+      description: "Ongoing support and lifetime warranty coverage",
+      icon: "shield"
+    }
+  ],
+  benefits: [
+    {
+      title: "Mixed Soil Expertise",
+      description: "Specialized knowledge of Bendale's clay-sand soil combinations"
+    },
+    {
+      title: "Mature Home Specialists",
+      description: "Experience with 1960s-1970s foundations common in the area"
+    },
+    {
+      title: "Tree Root Management",
+      description: "Solutions for established tree root interference with drainage"
+    },
+    {
+      title: "Local Team & Support",
+      description: "Fast response times and ongoing local support"
+    }
+  ],
   heroStats: [
     {
       "value": "25+",
@@ -33,15 +87,14 @@ const serviceData = {
       "label": "Warranty"
     }
   ],
-  
   tableOfContents: [
     {
-      "label": "Your Local Bendale Water Management Experts",
-      "href": "#your-local-bendale-water-management-experts"
+      "label": "Why Bendale Needs Specialized Waterproofing",
+      "href": "#why-bendale-needs-specialized-waterproofing"
     },
     {
-      "label": "Bendale Service Area",
-      "href": "#bendale-service-area"
+      "label": "Service Areas",
+      "href": "#service-areas"
     }
   ],
   
@@ -159,9 +212,64 @@ const originalMetadata = {
 };
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="gradient"
+      title="Bendale Basement Waterproofing Specialists"
+      subtitle="Local expertise for Bendale's unique challenges"
+      centered
+    >
+      <p class="text-xl">
+        Bendale homes face unique waterproofing challenges due to mixed clay-sand soil conditions and 
+        the area's mature housing stock from the 1960s-70s. Our local Scarborough team specializes in 
+        these specific conditions, providing tailored solutions that work with Bendale's geography and drainage patterns.
+      </p>
+    </ContentSection>
+
+    <!-- Local Expertise CTA -->
+    <CalloutBox 
+      type="info" 
+      title="Bendale Mixed Soil Specialists"
+      animate={true}
+    >
+      <p>Bendale's unique clay-sand soil mixture creates specific drainage challenges. Our local team has specialized experience with these conditions and knows exactly how to protect your home.</p>
+      <p class="mt-4"><strong>Local Bendale Team: (437) 545-0067</strong></p>
+    </CalloutBox>
+
+    <!-- Final CTA -->
+    <ContentSection 
+      variant="gradient"
+      title="Protect Your Bendale Home Today"
+      subtitle="Local expertise, lifetime protection"
+      centered
+      fullWidth
+    >
+      <div class="mt-8 space-y-6 text-center">
+        <p class="text-xl max-w-2xl mx-auto">
+          Don't let Bendale's mixed soil and mature tree challenges damage your basement. 
+          Our local team has the specialized knowledge to protect your home permanently.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-full shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5">
+            <MapPin className="h-5 w-5 mr-2" />
+            Free Bendale Assessment
+          </a>
+          <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-primary bg-white rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            <Phone className="h-5 w-5 mr-2" />
+            (437) 545-0067
+          </a>
+        </div>
+        <p class="text-sm opacity-80">
+          Local Bendale team • Mixed soil specialists • Lifetime warranty
+        </p>
+      </div>
+    </ContentSection>
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>
 
 <style>
   /* Preserved styles from original page */

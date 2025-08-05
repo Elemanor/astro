@@ -1046,7 +1046,7 @@ function checkAvailability() {
   const zone3 = /^L[4-7][A-Z]\d[A-Z]\d$/; // Outer GTA
   
   if (zone1.test(postal)) {
-    result.innerHTML = \`
+    result.innerHTML = `
       <div class="availability-response zone-1">
         <h4>✅ PRIORITY ZONE 1 SERVICE</h4>
         <p><strong>Emergency Response:</strong> 2 hours guaranteed</p>
@@ -1054,9 +1054,9 @@ function checkAvailability() {
         <p><strong>Service Level:</strong> Premium local coverage</p>
         <a href="tel:4375450067" class="quick-call">📞 CALL NOW: (437) 545-0067</a>
       </div>
-    \`;
+    `;
   } else if (zone2.test(postal)) {
-    result.innerHTML = \`
+    result.innerHTML = `
       <div class="availability-response zone-2">
         <h4>✅ PRIORITY ZONE 2 SERVICE</h4>
         <p><strong>Emergency Response:</strong> 3 hours guaranteed</p>
@@ -1064,9 +1064,9 @@ function checkAvailability() {
         <p><strong>Service Level:</strong> Standard local coverage</p>
         <a href="tel:4375450067" class="quick-call">📞 CALL NOW: (437) 545-0067</a>
       </div>
-    \`;
+    `;
   } else if (zone3.test(postal)) {
-    result.innerHTML = \`
+    result.innerHTML = `
       <div class="availability-response zone-3">
         <h4>✅ EXTENDED SERVICE AREA</h4>
         <p><strong>Emergency Response:</strong> 4 hours guaranteed</p>
@@ -1074,15 +1074,15 @@ function checkAvailability() {
         <p><strong>Service Level:</strong> Extended GTA coverage</p>
         <a href="tel:4375450067" class="quick-call">📞 CALL NOW: (437) 545-0067</a>
       </div>
-    \`;
+    `;
   } else {
-    result.innerHTML = \`
+    result.innerHTML = `
       <div class="availability-response">
         <h4>📞 CALL FOR SERVICE AVAILABILITY</h4>
         <p>Service may be available in your area</p>
         <a href="tel:4375450067" class="quick-call">📞 CALL NOW: (437) 545-0067</a>
       </div>
-    \`;
+    `;
   }
 }
 

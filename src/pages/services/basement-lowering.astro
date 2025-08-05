@@ -3,18 +3,72 @@
 // Original file: /services/basement-lowering/
 // Migration date: 2025-08-04T15:14:29.355Z
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import ProcessList from '../../components/content/ProcessList.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import QuestionAnswer from '../../components/content/QuestionAnswer.astro';
+import ServiceLinks from '../../components/content/ServiceLinks.astro';
+import { Star, Phone, MapPin, Home, DollarSign } from 'lucide-react';
 
-// Service data extracted from original markdown
-const serviceData = {
+// Service data converted to V4 format
+const pageData = {
   serviceName: "Basement Lowering Toronto",
-  serviceTitle: "Basement Lowering Toronto | Cost, Process & Professional Service",
+  serviceTitle: "Basement Lowering Toronto | Licensed Contractors | Cost, Process & Service",
   serviceSubtitle: "Transform Low Ceilings into Valuable Living Space",
-  serviceDescription: "Expert basement lowering in Toronto. Convert 6-foot crawlspaces into full-height basements. Underpinning and benching options. Free consultation. Call (437) 545-0067.",
-  
-  
-  
-  
+  serviceDescription: "Expert basement lowering in Toronto. Convert 6-foot crawlspaces into full-height basements. Underpinning and benching options. Licensed engineers, lifetime warranty. Free consultation. Call (437) 545-0067.",
+  heroBadge: "Licensed Engineers",
+  heroImage: "/images/services/basement-lowering-hero.jpg",
+  heroFeatures: [
+    "Licensed structural engineers",
+    "Full underpinning service", 
+    "Add valuable living space",
+    "Lifetime warranty"
+  ],
+  startingPrice: "$350/linear foot",
+  priceRange: "$45,000-$85,000",
+  processSteps: [
+    {
+      title: "Structural Assessment",
+      description: "Licensed engineers evaluate basement lowering feasibility",
+      icon: "search"
+    },
+    {
+      title: "Permits & Engineering",
+      description: "Handle all City of Toronto permits and structural drawings",
+      icon: "clipboard"
+    },
+    {
+      title: "Underpinning Process",
+      description: "Systematic excavation and foundation lowering",
+      icon: "wrench"
+    },
+    {
+      title: "Complete Finishing",
+      description: "New floors, waterproofing, and basement completion",
+      icon: "shield"
+    }
+  ],
+  benefits: [
+    {
+      title: "Add Living Space",
+      description: "Gain 600-1200 sq ft of usable basement space"
+    },
+    {
+      title: "Increase Property Value",
+      description: "Add $150,000-300,000 to your home's market value"
+    },
+    {
+      title: "Rental Income Potential",
+      description: "Create legal basement apartments earning $1,800-2,500/month"
+    },
+    {
+      title: "Structural Enhancement",
+      description: "Stronger foundation meeting modern building codes"
+    }
+  ],
   heroStats: [
     {
       "value": "25+",
@@ -171,9 +225,70 @@ const originalMetadata = {
 };
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="gradient"
+      title="Professional Basement Lowering Toronto"
+      subtitle="Transform your low-ceiling basement into valuable living space"
+      centered
+    >
+      <p class="text-xl">
+        Convert your 6-foot crawlspace into a full-height basement with our professional underpinning services. 
+        Our licensed engineers and experienced contractors provide complete basement lowering solutions that add 
+        significant value to your Toronto home while creating usable living space.
+      </p>
+    </ContentSection>
+
+    <!-- Key Benefits -->
+    <CalloutBox 
+      type="info" 
+      title="Basement Lowering Investment"
+      animate={true}
+    >
+      <p class="mb-4">Transform your basement with professional lowering services:</p>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Add $150,000-300,000 to your home's value</li>
+        <li>Create 600-1200 sq ft of usable living space</li>
+        <li>Enable legal basement apartment rentals</li>
+        <li>Licensed engineers and structural guarantees</li>
+      </ul>
+      <p class="mt-4"><strong>Free Engineering Consultation: (437) 545-0067</strong></p>
+    </CalloutBox>
+
+    <!-- Final CTA -->
+    <ContentSection 
+      variant="gradient"
+      title="Transform Your Basement Today"
+      subtitle="Professional basement lowering with licensed engineers"
+      centered
+      fullWidth
+    >
+      <div class="mt-8 space-y-6 text-center">
+        <p class="text-xl max-w-2xl mx-auto">
+          Don't let a low ceiling limit your home's potential. Our basement lowering experts can transform 
+          your cramped crawlspace into valuable living space.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-full shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5">
+            <Home className="h-5 w-5 mr-2" />
+            Free Engineering Consultation
+          </a>
+          <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-primary bg-white rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            <Phone className="h-5 w-5 mr-2" />
+            (437) 545-0067
+          </a>
+        </div>
+        <p class="text-sm opacity-80">
+          Licensed engineers • Professional underpinning • All permits handled • Lifetime warranty
+        </p>
+      </div>
+    </ContentSection>
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>
 
 <style>
   /* Preserved styles from original page */

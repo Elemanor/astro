@@ -3,18 +3,68 @@
 // Original file: /services/cliffcrest-basement-waterproofing/
 // Migration date: 2025-08-04T15:14:29.495Z
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import { Star, Phone, MapPin, Home } from 'lucide-react';
 
-// Service data extracted from original markdown
-const serviceData = {
+// Service data converted to V4 format
+const pageData = {
   serviceName: "Cliffcrest Basement Waterproofing",
-  serviceTitle: "Cliffcrest Basement Waterproofing | Scarborough Bluffs Foundation Experts",
-  serviceSubtitle: "Expert Solutions for Cliffcrest's Slope Drainage and High Water Table",
-  serviceDescription: "Specialized basement waterproofing for Cliffcrest homes near Scarborough Bluffs. Expert in slope drainage, high water tables, and sandy soil conditions. 24/7 service. Call (437) 545-0067.",
-  
-  
-  
-  
+  serviceTitle: "Cliffcrest Basement Waterproofing | Licensed Bluffs Specialists | East Scarborough",
+  serviceSubtitle: "Expert Solutions for Cliffcrest's Slope Drainage & High Water Table",
+  serviceDescription: "Specialized basement waterproofing for Cliffcrest homes near Scarborough Bluffs. Expert in slope drainage, high water tables, and sandy soil conditions. Licensed, insured, lifetime warranty. Call (437) 545-0067.",
+  heroBadge: "Bluffs Specialists",
+  heroImage: "/images/services/cliffcrest-waterproofing-hero.jpg",
+  heroFeatures: [
+    "Local Scarborough team",
+    "Bluffs drainage specialists", 
+    "High water table experts",
+    "Lifetime warranty"
+  ],
+  startingPrice: "$9,000",
+  priceRange: "$9,000-$18,000",
+  processSteps: [
+    {
+      title: "Bluffs Assessment",
+      description: "Understanding Cliffcrest's unique slope and water table challenges",
+      icon: "search"
+    },
+    {
+      title: "Slope Design",
+      description: "Waterproofing solutions designed for challenging bluffs terrain",
+      icon: "clipboard"
+    },
+    {
+      title: "Expert Installation",
+      description: "Professional installation by bluffs-experienced contractors",
+      icon: "wrench"
+    },
+    {
+      title: "Water Table Protection",
+      description: "Ongoing support with high water table monitoring and warranty",
+      icon: "shield"
+    }
+  ],
+  benefits: [
+    {
+      title: "Bluffs Drainage Expertise",
+      description: "Specialized knowledge of Scarborough Bluffs unique drainage patterns"
+    },
+    {
+      title: "High Water Table Solutions",
+      description: "Experience managing elevated groundwater near Lake Ontario"
+    },
+    {
+      title: "Sandy Soil Specialists",
+      description: "Expert handling of eastern Scarborough's sandy soil conditions"
+    },
+    {
+      title: "Local Team & Support",
+      description: "Fast response times and ongoing support from Scarborough base"
+    }
+  ],
   heroStats: [
     {
       "value": "25+",
@@ -160,9 +210,64 @@ const originalMetadata = {
 };
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="gradient"
+      title="Cliffcrest Basement Waterproofing Specialists"
+      subtitle="Expert solutions for Scarborough Bluffs properties"
+      centered
+    >
+      <p class="text-xl">
+        Cliffcrest properties near the Scarborough Bluffs face unique challenges including steep slopes, 
+        high water tables, and sandy soil conditions. Our local team specializes in these specific 
+        geographical conditions, providing waterproofing solutions that protect against bluffs-area challenges.
+      </p>
+    </ContentSection>
+
+    <!-- Local Expertise CTA -->
+    <CalloutBox 
+      type="info" 
+      title="Scarborough Bluffs Specialists"
+      animate={true}
+    >
+      <p>Cliffcrest's proximity to the Scarborough Bluffs creates unique drainage and high water table challenges. Our team has specialized experience with bluffs properties and underground springs.</p>
+      <p class="mt-4"><strong>Local Cliffcrest Team: (437) 545-0067</strong></p>
+    </CalloutBox>
+
+    <!-- Final CTA -->
+    <ContentSection 
+      variant="gradient"
+      title="Protect Your Cliffcrest Home Today"
+      subtitle="Bluffs expertise, lifetime protection"
+      centered
+      fullWidth
+    >
+      <div class="mt-8 space-y-6 text-center">
+        <p class="text-xl max-w-2xl mx-auto">
+          Don't let Cliffcrest's challenging bluffs terrain and high water table damage your basement. 
+          Our specialized team has the expertise to protect homes against unique geographical challenges.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-full shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5">
+            <MapPin className="h-5 w-5 mr-2" />
+            Free Cliffcrest Assessment
+          </a>
+          <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-primary bg-white rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            <Phone className="h-5 w-5 mr-2" />
+            (437) 545-0067
+          </a>
+        </div>
+        <p class="text-sm opacity-80">
+          Local Cliffcrest team • Bluffs specialists • High water table experts • Lifetime warranty
+        </p>
+      </div>
+    </ContentSection>
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>
 
 <style>
   /* Preserved styles from original page */

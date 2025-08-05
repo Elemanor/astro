@@ -1,25 +1,31 @@
 ---
-import { CheckCircle, Circle } from 'lucide-react';
+import { CheckCircle, Circle, Star, Zap, Shield, Award, TrendingUp, Users } from 'lucide-react';
 
 export interface Feature {
   title: string;
   description?: string;
   highlight?: boolean;
+  icon?: 'check' | 'star' | 'zap' | 'shield' | 'award' | 'trending' | 'users';
+  image?: string;
 }
 
 export interface Props {
   title?: string;
+  subtitle?: string;
   features: Feature[];
   columns?: 1 | 2 | 3 | 4;
-  variant?: 'list' | 'cards' | 'compact';
+  variant?: 'list' | 'cards' | 'compact' | 'bento' | 'gradient';
+  backgroundPattern?: boolean;
   class?: string;
 }
 
 const { 
   title,
+  subtitle,
   features,
   columns = 2,
   variant = 'list',
+  backgroundPattern = false,
   class: className = ''
 } = Astro.props;
 
@@ -31,57 +37,197 @@ const gridClasses = {
 };
 ---
 
-<div class={`feature-grid my-8 ${className}`}>
-  {title && <h3 class="text-2xl font-bold mb-6">{title}</h3>}
+<div class={`feature-grid my-12 ${backgroundPattern ? 'relative' : ''} ${className}`}>
+  {backgroundPattern && (
+    <div class="absolute inset-0 opacity-5 pointer-events-none">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 20% 80%, #1e40af 0%, transparent 50%), radial-gradient(circle at 80% 20%, #7c3aed 0%, transparent 50%);"></div>
+    </div>
+  )}
   
-  {variant === 'list' && (
-    <div class={`grid ${gridClasses[columns]} gap-4`}>
-      {features.map(feature => (
-        <div class="flex gap-3">
-          <CheckCircle 
-            className={`h-5 w-5 mt-1 flex-shrink-0 ${
-              feature.highlight ? 'text-primary' : 'text-secondary'
-            }`} 
-            client:load 
-          />
-          <div>
-            <p class={`font-semibold ${feature.highlight ? 'text-primary' : ''}`}>
-              {feature.title}
-            </p>
-            {feature.description && (
-              <p class="text-sm text-muted-foreground mt-1">{feature.description}</p>
+  <div class="relative z-10">
+    {(title || subtitle) && (
+      <div class="text-center mb-12">
+        {title && <h3 class="text-3xl md:text-4xl font-bold mb-4">{title}</h3>}
+        {subtitle && <p class="text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>}
+      </div>
+    )}
+    
+    {variant === 'list' && (
+      <div class={`grid ${gridClasses[columns]} gap-6`}>
+        {features.map(feature => (
+          <div class="flex gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors">
+            <div class={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center ${
+              feature.highlight 
+                ? 'bg-primary text-white' 
+                : 'bg-secondary/10 text-secondary'
+            }`}>
+              {feature.icon === 'star' && <Star className="h-6 w-6" client:load />}
+              {feature.icon === 'zap' && <Zap className="h-6 w-6" client:load />}
+              {feature.icon === 'shield' && <Shield className="h-6 w-6" client:load />}
+              {feature.icon === 'award' && <Award className="h-6 w-6" client:load />}
+              {feature.icon === 'trending' && <TrendingUp className="h-6 w-6" client:load />}
+              {feature.icon === 'users' && <Users className="h-6 w-6" client:load />}
+              {(!feature.icon || feature.icon === 'check') && <CheckCircle className="h-6 w-6" client:load />}
+            </div>
+            <div class="flex-1">
+              <p class={`font-semibold text-lg ${feature.highlight ? 'text-primary' : ''}`}>
+                {feature.title}
+              </p>
+              {feature.description && (
+                <p class="text-muted-foreground mt-1">{feature.description}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+    
+    {variant === 'cards' && (
+      <div class={`grid ${gridClasses[columns]} gap-8`}>
+        {features.map(feature => (
+          <div class={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 ${
+            feature.highlight 
+              ? 'bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/20' 
+              : 'bg-white'
+          }`}>
+            {feature.image && (
+              <div class="h-48 overflow-hidden">
+                <img 
+                  src={feature.image} 
+                  alt={feature.title}
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+            )}
+            
+            <div class="p-8">
+              <div class={`inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6 ${
+                feature.highlight 
+                  ? 'bg-primary text-white' 
+                  : 'bg-gradient-to-br from-secondary/10 to-secondary/5'
+              }`}>
+                {feature.icon === 'star' && <Star className="h-8 w-8" client:load />}
+                {feature.icon === 'zap' && <Zap className="h-8 w-8" client:load />}
+                {feature.icon === 'shield' && <Shield className="h-8 w-8" client:load />}
+                {feature.icon === 'award' && <Award className="h-8 w-8" client:load />}
+                {feature.icon === 'trending' && <TrendingUp className="h-8 w-8" client:load />}
+                {feature.icon === 'users' && <Users className="h-8 w-8" client:load />}
+                {(!feature.icon || feature.icon === 'check') && <CheckCircle className="h-8 w-8" client:load />}
+              </div>
+              
+              <h4 class="font-bold text-xl mb-3">{feature.title}</h4>
+              {feature.description && (
+                <p class="text-muted-foreground leading-relaxed">{feature.description}</p>
+              )}
+            </div>
+            
+            {feature.highlight && (
+              <div class="absolute top-4 right-4">
+                <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
+              </div>
             )}
           </div>
-        </div>
-      ))}
-    </div>
-  )}
-  
-  {variant === 'cards' && (
-    <div class={`grid ${gridClasses[columns]} gap-6`}>
-      {features.map(feature => (
-        <div class={`p-6 rounded-lg border ${
-          feature.highlight ? 'border-primary bg-primary/5' : 'bg-muted/50'
-        }`}>
-          <h4 class="font-semibold text-lg mb-2">{feature.title}</h4>
-          {feature.description && (
-            <p class="text-muted-foreground">{feature.description}</p>
-          )}
-        </div>
-      ))}
-    </div>
-  )}
-  
-  {variant === 'compact' && (
-    <ul class={`grid ${gridClasses[columns]} gap-2`}>
-      {features.map(feature => (
-        <li class="flex items-center gap-2">
-          <Circle className="h-2 w-2 text-primary" client:load />
-          <span class={feature.highlight ? 'font-semibold text-primary' : ''}>
-            {feature.title}
-          </span>
-        </li>
-      ))}
-    </ul>
-  )}
+        ))}
+      </div>
+    )}
+    
+    {variant === 'compact' && (
+      <div class="bg-muted/30 rounded-2xl p-8">
+        <ul class={`grid ${gridClasses[columns]} gap-4`}>
+          {features.map(feature => (
+            <li class="flex items-center gap-3 group">
+              <div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Circle className="h-3 w-3 text-primary" client:load />
+              </div>
+              <span class={`${feature.highlight ? 'font-semibold text-primary' : ''} group-hover:text-primary transition-colors`}>
+                {feature.title}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+    
+    {variant === 'bento' && (
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[240px]">
+        {features.map((feature, index) => {
+          const isLarge = index === 0 || index === 3;
+          return (
+            <div class={`group relative overflow-hidden rounded-2xl p-8 ${
+              isLarge ? 'md:col-span-2 md:row-span-2' : ''
+            } ${
+              feature.highlight 
+                ? 'bg-gradient-to-br from-primary to-primary/80 text-white' 
+                : 'bg-gradient-to-br from-gray-100 to-gray-50'
+            } hover:shadow-2xl transition-all cursor-pointer`}>
+              <div class="relative z-10 h-full flex flex-col">
+                <div class={`inline-flex items-center justify-center w-14 h-14 rounded-xl mb-4 ${
+                  feature.highlight ? 'bg-white/20' : 'bg-white shadow-md'
+                }`}>
+                  {feature.icon === 'star' && <Star className={`h-7 w-7 ${feature.highlight ? 'text-white' : 'text-primary'}`} client:load />}
+                  {feature.icon === 'zap' && <Zap className={`h-7 w-7 ${feature.highlight ? 'text-white' : 'text-primary'}`} client:load />}
+                  {feature.icon === 'shield' && <Shield className={`h-7 w-7 ${feature.highlight ? 'text-white' : 'text-primary'}`} client:load />}
+                  {feature.icon === 'award' && <Award className={`h-7 w-7 ${feature.highlight ? 'text-white' : 'text-primary'}`} client:load />}
+                  {feature.icon === 'trending' && <TrendingUp className={`h-7 w-7 ${feature.highlight ? 'text-white' : 'text-primary'}`} client:load />}
+                  {feature.icon === 'users' && <Users className={`h-7 w-7 ${feature.highlight ? 'text-white' : 'text-primary'}`} client:load />}
+                  {(!feature.icon || feature.icon === 'check') && <CheckCircle className={`h-7 w-7 ${feature.highlight ? 'text-white' : 'text-primary'}`} client:load />}
+                </div>
+                
+                <h4 class={`font-bold ${isLarge ? 'text-2xl' : 'text-xl'} mb-2`}>
+                  {feature.title}
+                </h4>
+                
+                {feature.description && isLarge && (
+                  <p class={`${feature.highlight ? 'text-white/90' : 'text-muted-foreground'} leading-relaxed flex-grow`}>
+                    {feature.description}
+                  </p>
+                )}
+              </div>
+              
+              <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+          );
+        })}
+      </div>
+    )}
+    
+    {variant === 'gradient' && (
+      <div class={`grid ${gridClasses[columns]} gap-6`}>
+        {features.map((feature, index) => {
+          const gradients = [
+            'from-blue-500 to-cyan-500',
+            'from-purple-500 to-pink-500',
+            'from-green-500 to-emerald-500',
+            'from-orange-500 to-red-500',
+            'from-indigo-500 to-purple-500',
+            'from-teal-500 to-green-500'
+          ];
+          const gradient = gradients[index % gradients.length];
+          
+          return (
+            <div class="group relative overflow-hidden rounded-2xl p-8 bg-white shadow-lg hover:shadow-2xl transition-all">
+              <div class={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+              
+              <div class="relative z-10">
+                <div class={`inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br ${gradient} text-white mb-6 shadow-lg`}>
+                  {feature.icon === 'star' && <Star className="h-7 w-7" client:load />}
+                  {feature.icon === 'zap' && <Zap className="h-7 w-7" client:load />}
+                  {feature.icon === 'shield' && <Shield className="h-7 w-7" client:load />}
+                  {feature.icon === 'award' && <Award className="h-7 w-7" client:load />}
+                  {feature.icon === 'trending' && <TrendingUp className="h-7 w-7" client:load />}
+                  {feature.icon === 'users' && <Users className="h-7 w-7" client:load />}
+                  {(!feature.icon || feature.icon === 'check') && <CheckCircle className="h-7 w-7" client:load />}
+                </div>
+                
+                <h4 class="font-bold text-xl mb-3">{feature.title}</h4>
+                {feature.description && (
+                  <p class="text-muted-foreground leading-relaxed">{feature.description}</p>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    )}
+  </div>
 </div>

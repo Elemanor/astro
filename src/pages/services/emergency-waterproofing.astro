@@ -1,735 +1,543 @@
 ---
-// Migrated from markdown to V2 template
-// Original file: /services/emergency-waterproofing/
-// Migration date: 2025-08-04T15:14:29.706Z
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import ProcessList from '../../components/content/ProcessList.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import Timeline from '../../components/content/Timeline.astro';
+import QuestionAnswer from '../../components/content/QuestionAnswer.astro';
+import ServiceLinks from '../../components/content/ServiceLinks.astro';
+import VideoEmbed from '../../components/content/VideoEmbed.astro';
+import { Star, Phone, Shield, Clock, AlertTriangle, Zap } from 'lucide-react';
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
-
-// Service data extracted from original markdown
-const serviceData = {
-  serviceName: "Emergency Basement Waterproofing Services",
-  serviceTitle: "Emergency Basement Waterproofing Services | Crisis Response Team",
-  serviceSubtitle: "Comprehensive Emergency Service Solutions",
+// Service data for V4 template
+const pageData = {
+  serviceName: "Emergency Basement Waterproofing",
+  serviceTitle: "Emergency Basement Waterproofing Services | 24/7 Crisis Response",
+  serviceSubtitle: "Professional Emergency Response Team - Available 24/7",
   serviceDescription: "Professional emergency waterproofing services for basement flooding crises. Complete service solutions from assessment to permanent repair. Toronto & GTA emergency contractors.",
+  heroBadge: "24/7 Emergency Service",
+  heroImage: "/images/services/emergency-waterproofing-hero.jpg",
+  heroFeatures: [
+    "2-hour response time",
+    "24/7 availability",
+    "Insurance direct billing",
+    "Complete water extraction",
+    "Immediate leak stopping"
+  ],
+  startingPrice: "Emergency Response",
+  priceRange: "Insurance Covered",
   
-  
-  
-  
-  heroStats: [
+  processSteps: [
     {
-      "value": "25+",
-      "label": "Years Experience"
+      title: "Emergency Dispatch",
+      description: "2-hour response time with fully equipped emergency vehicles",
+      icon: "zap"
     },
     {
-      "value": "5,000+",
-      "label": "Homes Protected"
+      title: "Immediate Assessment",
+      description: "Rapid evaluation of damage and water source identification",
+      icon: "search"
     },
     {
-      "value": "100%",
-      "label": "Satisfaction Rate"
+      title: "Water Extraction",
+      description: "Industrial pumps remove up to 5,000 gallons per hour",
+      icon: "droplets"
     },
     {
-      "value": "Lifetime",
-      "label": "Warranty"
+      title: "Permanent Repair",
+      description: "Complete solution to prevent future flooding emergencies",
+      icon: "shield"
     }
   ],
   
-  tableOfContents: [
+  benefits: [
     {
-      "label": "⚡ Immediate Emergency Steps",
-      "href": "#immediate-emergency-steps"
+      title: "2-Hour Response Time",
+      description: "Fastest emergency response in the GTA with fully equipped vehicles"
     },
     {
-      "label": "Our Emergency Response Process",
-      "href": "#our-emergency-response-process"
+      title: "24/7 Availability",
+      description: "Round-the-clock emergency service every day of the year"
     },
     {
-      "label": "Emergency Services Available 24/7",
-      "href": "#emergency-services-available-24-7"
+      title: "Insurance Direct Billing",
+      description: "We handle all insurance paperwork and bill directly when possible"
     },
     {
-      "label": "Common Emergency Situations We Handle",
-      "href": "#common-emergency-situations-we-handle"
+      title: "Complete Water Extraction",
+      description: "Industrial equipment removes thousands of gallons quickly"
     },
     {
-      "label": "Real Emergency Response Examples",
-      "href": "#real-emergency-response-examples"
+      title: "Immediate Leak Stopping",
+      description: "Rapid-set materials stop active water entry within minutes"
     },
     {
-      "label": "Emergency Response Coverage Areas",
-      "href": "#emergency-response-coverage-areas"
-    },
-    {
-      "label": "Why Choose DrySpace for Emergencies?",
-      "href": "#why-choose-dryspace-for-emergencies"
-    },
-    {
-      "label": "Emergency Pricing & Payment",
-      "href": "#emergency-pricing-payment"
-    },
-    {
-      "label": "Prevent Future Emergencies",
-      "href": "#prevent-future-emergencies"
-    },
-    {
-      "label": "Customer Emergency Reviews",
-      "href": "#customer-emergency-reviews"
-    },
-    {
-      "label": "Emergency FAQ",
-      "href": "#emergency-faq"
-    },
-    {
-      "label": "Additional Emergency Resources",
-      "href": "#additional-emergency-resources"
+      title: "Prevent Mold Growth",
+      description: "Fast drying prevents mold and structural damage"
     }
   ],
   
   relatedServices: [
     {
-      "url": "/services/foundation-crack-repair/",
-      "description": "Stop leaks at the source",
-      "image": "/pics/work/crack_repair.webp"
+      title: "Foundation Crack Repair",
+      url: "/services/foundation-crack-repair/",
+      description: "Stop leaks at the source with permanent crack repair",
+      image: "/images/services/crack-repair.jpg"
     },
     {
-      "url": "/services/interior-waterproofing/",
-      "description": "Permanent water management",
-      "image": "/pics/work/interior-waterproofing.webp"
+      title: "Interior Waterproofing",
+      url: "/services/interior-waterproofing/",
+      description: "Permanent water management systems",
+      image: "/images/services/interior-waterproofing.jpg"
     },
     {
-      "url": "/services/interior-waterproofing/",
-      "description": "Prevent future flooding",
-      "image": "/pics/work/sump-pump.webp"
+      title: "Sump Pump Installation",
+      url: "/services/sump-pump-installation/",
+      description: "Prevent future flooding with backup systems",
+      image: "/images/services/sump-pump.jpg"
     }
   ],
   
   serviceFaqs: [
     {
-      "question": "How quickly can you really respond to emergencies?",
-      "answer": "Our emergency response times by area:\n- **Downtown Toronto**: 30-45 minutes\n- **North York/Scarborough**: 45-60 minutes\n- **Mississauga/Etobicoke**: 45-60 minutes\n- **Vaughan/Richmond Hill**: 60-90 minutes\n- **Extended GTA**: 90-120 minutes\n\nWe maintain multiple crews on standby 24/7, including holidays. Our GPS dispatch system ensures the nearest available crew responds immediately.\n"
+      question: "How quickly can you really respond to emergencies?",
+      answer: "Our emergency response times: Downtown Toronto (30-45 minutes), North York/Scarborough (45-60 minutes), Mississauga/Etobicoke (45-60 minutes), Hamilton/Burlington (60-90 minutes). We maintain emergency vehicles throughout the GTA for rapid response."
     },
     {
-      "question": "What should I do while waiting for emergency service?",
-      "answer": "Take these immediate safety steps:\n1. **Turn off electricity** to flooded areas at breaker panel\n2. **Stop water source** if possible (main shutoff valve)\n3. **Move valuables** to dry areas\n4. **Document damage** with photos for insurance\n5. **Keep family safe** - avoid standing water if power is on\n6. **Clear access** for our crews to work efficiently\n\nOur dispatcher will provide specific guidance based on your situation.\n"
+      question: "What should I do while waiting for emergency service?",
+      answer: "Turn off electricity to affected areas, move valuables to higher ground, try to identify the water source, document damage with photos for insurance, and avoid contact with contaminated water. Do NOT attempt repairs yourself."
     },
     {
-      "question": "How much does emergency service cost?",
-      "answer": "Emergency service pricing:\n- **Water Extraction**: $500-$1,500 (based on volume)\n- **Emergency Leak Repair**: $800-$2,000\n- **Drying Equipment**: $500-$1,000 per day\n- **After-hours surcharge**: Included in above prices\n\nMost homeowner insurance covers sudden water damage. We document everything and can bill insurance directly. Payment plans available for uninsured repairs.\n"
+      question: "Will insurance cover emergency waterproofing services?",
+      answer: "Most home insurance policies cover sudden water damage and emergency mitigation services. We work directly with insurance companies, provide detailed documentation, and can often bill directly to expedite the process."
     },
     {
-      "question": "Do you provide permanent repairs after emergencies?",
-      "answer": "Yes, we provide complete solutions:\n- Emergency stabilization stops immediate damage\n- Full assessment identifies all water sources\n- Permanent waterproofing prevents recurrence\n- Same crew can handle entire project\n- Warranty coverage on all permanent repairs\n\nMany clients upgrade to full waterproofing after emergencies to prevent future flooding. We offer priority scheduling and discounts for emergency clients.\n"
+      question: "Can you provide permanent solutions during emergencies?",
+      answer: "Yes! Our emergency vehicles carry permanent repair materials. We can often complete crack injection, sump pump installation, and other permanent repairs during the same visit, preventing future emergencies."
     }
   ]
 };
 
-// Main content extracted and converted from markdown
-const mainContent = `<h2 id="immediate-emergency-steps">⚡ Immediate Emergency Steps</h2>
-<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="/pics/services/basement waterproofing/dryspace_exterior_waterproofing_warranty.jpg" alt="Professional exterior waterproofing installation" style="width: 100%; height: auto; display: block;" />
-  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Our waterproofing comes with lifetime warranty</figcaption>
-</figure>
-<div class="emergency-steps">
-<div class="step urgent">
-<h3>1. Ensure Safety First</h3>
-<ul>
-<ul><li>Turn OFF electricity to flooded area</li>
-<li>Avoid standing water if power is on</li>
-<li>Watch for structural damage</li>
-<li>Keep children and pets away</li>
-</ul></ul>
-</div>
-
-<div class="step">
-<h3>2. Stop Water Source</h3>
-<ul>
-<ul><li>Shut off main water valve</li>
-<li>Clear blocked drains if safe</li>
-<li>Move water away from foundation</li>
-<li>Document everything for insurance</li>
-</ul></ul>
-</div>
-
-<div class="step">
-<h3>3. Call Us Immediately</h3>
-<ul>
-<ul><li>24/7 emergency crews ready</li>
-<li>2-hour response guarantee</li>
-<li>Professional equipment on trucks</li>
-<li>Direct insurance billing available</li>
-</ul></ul>
-</div>
-</div>
-
-
-<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="/pics/work/interior-waterproofing.webp" alt="Interior basement waterproofing system" style="width: 100%; height: auto; display: block;" />
-  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Interior drainage prevents water damage</figcaption>
-</figure><h2 id="our-emergency-response-process">Our Emergency Response Process</h2>
-### ⏱️ 0-30 Minutes: Your Call
-<ul><li>Emergency dispatcher assessment</li>
-<li>Crew dispatched immediately</li>
-<li>Safety instructions provided</li>
-<li>ETA confirmation given</li>
-
-</ul>### 🚛 30-120 Minutes: We Arrive
-<ul><li>Full emergency equipment</li>
-<li>Immediate water extraction begins</li>
-<li>Safety assessment completed</li>
-<li>Temporary repairs started</li>
-
-</ul>### 🔧 2-6 Hours: Stabilization
-<ul><li>Water fully extracted</li>
-<li>Source identified and stopped</li>
-<li>Drying equipment installed</li>
-<li>Insurance documentation</li>
-
-</ul>### ✅ 24-72 Hours: Permanent Fix
-<ul><li>Complete damage assessment</li>
-<li>Permanent repair plan</li>
-<li>Insurance coordination</li>
-<li>Full waterproofing solution</li></ul>
-
-<h2 id="emergency-services-available-24-7">Emergency Services Available 24/7</h2>
-### Water Extraction & Removal
-<ul><li>Industrial pumps (5,000 gallons/hour)</li>
-<li>Truck-mounted extraction units</li>
-<li>Moisture detection equipment</li>
-<li>Complete water removal</li>
-
-<p></ul><strong>Emergency Rate: $500-$1,500</strong></p>
-
-### Temporary Leak Stopping
-<ul><li>Hydraulic cement application</li>
-<li>Emergency crack injection</li>
-<li>Temporary barriers</li>
-<li>Drain clearing</li>
-
-<p></ul><strong>Emergency Rate: $300-$800</strong></p>
-
-### Structural Stabilization
-<ul><li>Emergency shoring</li>
-<li>Foundation bracing</li>
-<li>Wall support systems</li>
-<li>Safety assessments</li>
-
-<p></ul><strong>Emergency Rate: $1,000-$3,000</strong></p>
-
-### Rapid Drying Services
-<ul><li>Industrial dehumidifiers</li>
-<li>High-velocity air movers</li>
-<li>Moisture monitoring</li>
-<li>Mold prevention</li>
-
-<p></ul><strong>Emergency Rate: $500-$1,000/day</strong></p>
-
-<h2 id="common-emergency-situations-we-handle">Common Emergency Situations We Handle</h2>
-### 🌊 Sewer Backup Emergency
-<strong>Response Time:</strong> 30-60 minutes
-<strong>Immediate Actions:</strong>
-<ul><li>Sewage extraction</li>
-<li>Sanitization</li>
-<li>Backwater valve check</li>
-<li>Health hazard mitigation</li>
-
-</ul>### 🌧️ Storm Flooding & Rain Events
-<strong>Response Time:</strong> 45-90 minutes
-<strong>Immediate Actions:</strong>
-<ul><li>Rapid water removal</li>
-<li>Foundation protection</li>
-<li>Emergency pumping</li>
-<li>Temporary waterproofing</li>
-
-<p></ul><strong>Basement Flooding After Rain:</strong>
-Heavy rainfall can overwhelm drainage systems causing sudden basement flooding. Our emergency teams specialize in rain-related water intrusion, arriving with high-capacity pumps and temporary waterproofing materials to protect your home during ongoing storms.</p>
-
-<p><strong>Prevention guide:</strong> Learn how to prevent future emergencies with our [basement flooding after rain prevention guide](/guides/basement-flooding-after-rain-prevention/) and [summer storm basement flooding prevention tips](/guides/summer-storm-basement-flooding-prevention/).</p>
-
-### 💧 Pipe Burst in Foundation
-<strong>Response Time:</strong> 30-45 minutes
-<strong>Immediate Actions:</strong>
-<ul><li>Water shutoff</li>
-<li>Pipe repair/replacement</li>
-<li>Water extraction</li>
-<li>Damage prevention</li>
-
-</ul>### 🏔️ Spring Thaw Flooding
-<strong>Response Time:</strong> 60-120 minutes
-<strong>Immediate Actions:</strong>
-<ul><li>Perimeter pumping</li>
-<li>Ice dam removal</li>
-<li>Drainage restoration</li>
-<li>Foundation protection</li>
-
-<p></ul><strong>Spring preparedness:</strong> Our [spring basement flooding comprehensive guide 2025](/blog/spring-basement-flooding-comprehensive-guide-2025/) helps you prepare for and prevent spring thaw emergencies.</p>
-
-<h2 id="real-emergency-response-examples">Real Emergency Response Examples</h2>
-### Downtown Toronto - Midnight Flooding
-<ul><li><strong>Call Time:</strong> 12:47 AM</li>
-<li><strong>Arrival:</strong> 1:22 AM (35 minutes)</li>
-<li><strong>Issue:</strong> 6 inches of sewage backup</li>
-<li><strong>Action:</strong> Full extraction, sanitization</li>
-<li><strong>Result:</strong> Basement saved, insurance covered</li>
-
-</ul>### Mississauga - Weekend Storm
-<ul><li><strong>Call Time:</strong> Saturday 8:30 PM</li>
-<li><strong>Arrival:</strong> 9:15 PM (45 minutes)</li>
-<li><strong>Issue:</strong> Foundation wall collapse risk</li>
-<li><strong>Action:</strong> Emergency shoring, waterproofing</li>
-<li><strong>Result:</strong> Wall stabilized, no collapse</li>
-
-</ul>### North York - Frozen Pipe Burst
-<ul><li><strong>Call Time:</strong> 6:00 AM</li>
-<li><strong>Arrival:</strong> 6:40 AM (40 minutes)</li>
-<li><strong>Issue:</strong> Massive water flow</li>
-<li><strong>Action:</strong> Shutoff, extraction, drying</li>
-<li><strong>Result:</strong> Minimal damage, quick dry</li></ul>
-
-<h2 id="emergency-response-coverage-areas">Emergency Response Coverage Areas</h2>
-### Fastest Response (30-60 min)
-<ul><li>Downtown Toronto</li>
-<li>North York Central</li>
-<li>Etobicoke Central</li>
-<li>Mississauga City Centre</li>
-<li>Scarborough Centre</li>
-
-</ul>### Quick Response (60-90 min)
-<ul><li>Vaughan</li>
-<li>Richmond Hill</li>
-<li>Markham</li>
-<li>Brampton</li>
-<li>Oakville</li>
-
-</ul>### Extended Response (90-120 min)
-<ul><li>Aurora</li>
-<li>Newmarket</li>
-<li>Milton</li>
-<li>Burlington</li>
-<li>Pickering</li></ul>
-
-<h2 id="why-choose-dryspace-for-emergencies">Why Choose DrySpace for Emergencies?</h2>
-<p>### Fastest Response Times
-✓ Average 45-minute arrival
-✓ GPS-tracked vehicles
-✓ Multiple crew locations
-✓ Priority routing system</p>
-
-<p>### Professional Equipment
-✓ 20+ emergency vehicles
-✓ Industrial-grade pumps
-✓ Advanced drying systems
-✓ All tools on trucks</p>
-
-<p>### Expert Emergency Crews
-✓ Certified technicians
-✓ 24/7 availability
-✓ Insurance specialists
-✓ Structural engineers on-call</p>
-
-<p>### Direct Insurance Billing
-✓ Work with all insurers
-✓ Document everything
-✓ Handle claims process
-✓ Maximize coverage</p>
-
-<h2 id="emergency-pricing-payment">Emergency Pricing & Payment</h2>
-### Transparent Emergency Rates
-<ul><li><strong>No hidden fees</strong> - quoted price is final</li>
-<li><strong>Insurance direct billing</strong> available</li>
-<li><strong>Credit cards accepted</strong> on-site</li>
-<li><strong>Payment plans</strong> for large repairs</li>
-
-<p></ul>### Typical Emergency Costs
-| Service | Emergency Rate | Regular Rate |
-|---------|---------------|--------------|
-| Water Extraction | $500-$1,500 | $300-$800 |
-| Leak Repair | $800-$2,000 | $500-$1,200 |
-| Full Waterproofing | Same as regular | $3,000-$15,000 |</p>
-
-### Insurance Coverage Tips
-<ul><li>Most policies cover sudden water damage</li>
-<li>Document everything with photos</li>
-<li>Don't wait - damage worsens fast</li>
-<li>We help maximize your claim</li></ul>
-
-<h2 id="prevent-future-emergencies">Prevent Future Emergencies</h2>
-<p>### After We Fix Your Emergency:</p>
-
-<strong>Free Prevention Assessment Includes:</strong>
-<ul><li>Full foundation inspection</li>
-<li>Vulnerability identification</li>
-<li>Waterproofing recommendations</li>
-<li>Maintenance planning</li>
-
-</ul><strong>Prevention Services:</strong>
-<ul><li>Sump pump installation</li>
-<li>Backup power systems</li>
-<li>Waterproofing upgrades</li>
-<li>Regular maintenance</li></ul>
-
-<h2 id="customer-emergency-reviews">Customer Emergency Reviews</h2>
-<p>> "Basement flooded at 2 AM during a storm. DrySpace arrived in 40 minutes and saved everything. Incredible service!"
-> <strong>- Mark T., Toronto (Google Review)</strong></p>
-
-<p>> "Sewage backup on Christmas Eve. They came immediately and handled everything including insurance. True 24/7 service."
-> <strong>- Sarah L., Mississauga (HomeStars)</strong></p>
-
-<p>> "Foundation wall was literally gushing water. Emergency crew stopped it fast and did permanent repair next day."
-> <strong>- David C., Markham (BBB Review)</strong></p>
-
-<h2 id="emergency-faq">Emergency FAQ</h2>
-<p>### How fast can you really get here?
-Our average emergency response is 45 minutes in core GTA, with crews stationed strategically for rapid deployment.</p>
-
-<p>### What should I do while waiting?
-Turn off power to affected area, move valuables to safety, take photos for insurance, and clear access for our crews.</p>
-
-<p>### Do you really answer 24/7?
-Yes, our emergency line is answered by real people 24/7/365, including holidays. No answering service.</p>
-
-<p>### Will insurance cover emergency waterproofing?
-Most sudden water damage is covered. We document everything and bill insurance directly when possible.</p>
-
-<p>### How much does emergency service cost?
-Emergency water extraction starts at $500. Full repairs depend on damage extent. We provide clear quotes before proceeding.</p>
-
-<div class="emergency-bottom-cta">
-<h2>Don't Wait - Water Damage Worsens Every Minute</h2>
-<p class="damage-warning">Every hour of flooding can add $1,000+ in damage</p>
-<a href="tel:4375450067" class="final-emergency-button">
-<span>🚨 CALL EMERGENCY LINE NOW: (437) 545-0067</span>
-</a>
-<p class="emergency-assurance">Crews standing by • 2-hour response • Insurance approved</p>
-</div>
-
-<h2 id="additional-emergency-resources">Additional Emergency Resources</h2>
-### Service Area Coverage
-<ul><li>[Toronto Emergency Response](/locations/toronto-emergency-waterproofing/) - Local Toronto flood response team</li>
-<li>[Mississauga Service Area](/locations/mississauga-basement-waterproofing/) - Peel Region coverage</li>
-<li>[Markham Service Area](/locations/markham-basement-waterproofing/) - York Region coverage</li>
-<li>[Emergency Equipment Response](/emergency/24-hour-emergency-waterproofing/) - Industrial equipment deployment</li>
-
-</ul>### Related Emergency Services
-<ul><li>[Basement Leak Repair](/services/leaky-basement-repair/) - Identify leak sources</li>
-<li>[Foundation Crack Emergency](/services/foundation-crack-repair/) - Structural repairs</li>
-<li>[Interior Waterproofing](/services/interior-waterproofing/) - Quick solutions</li>
-<li>[Drainage Problems](/services/drainage-grading/) - Exterior water management</li>
-
-</ul>### Planning & Prevention
-<ul><li>[Waterproofing Cost Guide](/pricing/) - Budget for repairs</li>
-<li>[Available Rebates](/waterproofing-rebates-2025/) - Save up to $3,400</li>
-<li>[Compare Services](/compare/why-choose-dryspace/) - Why we're #1</li>
-<li>[Maintenance Tips](/blog/) - Prevent emergencies</li>
-
-<p></ul>schema:
-  type: "EmergencyService"
-  emergency_service: {
-  "@context": "https://schema.org",
-  "@type": "EmergencyService",
-  "name": "DrySpace Emergency Waterproofing",
-  "serviceType": "24/7 Emergency Basement Waterproofing",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "DrySpace Waterproofing",
-    "telephone": "+1-437-545-0067",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Toronto",
-      "addressRegion": "ON",
-      "addressCountry": "CA"
-    }
+// Data for styled components  
+const emergencyServices = [
+  {
+    title: "Immediate Water Extraction",
+    description: "Truck-mounted extraction units remove up to 5,000 gallons per hour",
+    icon: "zap",
+    highlight: true
   },
-  "areaServed": [
-    "Toronto",
-    "Mississauga",
-    "Brampton",
-    "Vaughan",
-    "Richmond Hill",
-    "Markham",
-    "North York",
-    "Scarborough",
-    "Etobicoke"
-  ],
-  "availableChannel": {
-    "@type": "ServiceChannel",
-    "servicePhone": "+1-437-545-0067",
-    "availableLanguage": "English"
+  {
+    title: "Emergency Leak Stopping",
+    description: "Hydraulic cement and rapid-set injection materials stop active water entry",
+    icon: "shield"
   },
-  "hoursAvailable": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
+  {
+    title: "Rapid Drying Systems",
+    description: "Industrial dehumidifiers and air movers prevent mold growth",
+    icon: "wind"
+  },
+  {
+    title: "Insurance Coordination", 
+    description: "Complete documentation and direct billing when possible",
+    icon: "file-text"
+  },
+  {
+    title: "Structural Assessment",
+    description: "Licensed professionals evaluate damage and safety concerns",
+    icon: "search"
+  },
+  {
+    title: "Permanent Repairs",
+    description: "Complete solutions to prevent future flooding emergencies",
+    icon: "wrench"
+  }
+];
+
+const emergencyProcess = [
+  {
+    title: "Emergency Call Received",
+    subtitle: "Immediate Dispatch",
+    description: "24/7 emergency hotline connects you to response coordinator:",
+    items: [
+      "Assess urgency and water source",
+      "Dispatch nearest emergency vehicle",
+      "Provide immediate safety guidance",
+      "Begin insurance documentation"
     ],
-    "opens": "00:00",
-    "closes": "23:59"
+    image: "/images/process/emergency-call.jpg"
+  },
+  {
+    title: "Rapid Response Arrival",
+    subtitle: "2-Hour Maximum",
+    description: "Fully equipped emergency vehicle arrives with:",
+    items: [
+      "Industrial water extraction pumps",
+      "Rapid-set repair materials",
+      "Professional drying equipment",
+      "Safety and testing equipment"
+    ],
+    image: "/images/process/emergency-arrival.jpg"
+  },
+  {
+    title: "Immediate Stabilization",
+    subtitle: "Stop Further Damage",
+    description: "Emergency technicians immediately:",
+    items: [
+      "Stop active water infiltration",
+      "Extract standing water",
+      "Begin rapid drying process",
+      "Document damage for insurance"
+    ],
+    image: "/images/process/emergency-stabilization.jpg"
+  },
+  {
+    title: "Permanent Solution",
+    subtitle: "Prevent Future Emergencies",
+    description: "Complete the job with permanent repairs:",
+    items: [
+      "Professional crack injection",
+      "Sump pump installation",
+      "Drainage system upgrades",
+      "Comprehensive warranty"
+    ],
+    image: "/images/process/permanent-repair.jpg"
   }
-}
----</p>
+];
 
-<p><em>DrySpace Emergency Waterproofing - When every minute counts. Licensed, insured, and ready to respond 24/7 throughout the Greater Toronto Area.</em></p>
-
-<p><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EmergencyService",
-  "name": "DrySpace 24/7 Emergency Waterproofing",
-  "description": "24/7 emergency basement waterproofing and flood response service in Toronto and GTA",
-  "provider": {
-    "@type": "Organization",
-    "name": "DrySpace Waterproofing",
-    "telephone": "+1-437-545-0067",
-    "url": "https://dryspacewaterproofing.ca",
-    "logo": "https://dryspacewaterproofing.ca/images/dryspace-logo.png",
-    "sameAs": [
-      "https://www.facebook.com/dryspacewaterproofing",
-      "https://www.instagram.com/dryspacewaterproofing"
-    ]
+const responseAreas = [
+  {
+    title: "Downtown Toronto",
+    description: "30-45 minute response • Heritage home specialists • High-rise expertise",
+    icon: "building",
+    responseTime: "30-45 min"
   },
-  "serviceType": "Emergency Basement Flooding Response",
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": 43.6532,
-      "longitude": -79.3832
-    },
-    "geoRadius": "50000"
+  {
+    title: "North York & Scarborough", 
+    description: "45-60 minute response • Clay soil experts • Multi-level homes",
+    icon: "compass",
+    responseTime: "45-60 min"
   },
-  "availableChannel": {
-    "@type": "ServiceChannel",
-    "serviceUrl": "https://dryspacewaterproofing.ca/emergency-waterproofing/",
-    "servicePhone": "+1-437-545-0067",
-    "serviceSmsNumber": "+1-437-545-0067"
+  {
+    title: "Mississauga & Etobicoke",
+    description: "45-60 minute response • Lake shore properties • Flood zone specialists",
+    icon: "waves", 
+    responseTime: "45-60 min"
   },
-  "hoursAvailable": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  },
-  "priceRange": "$500-$15,000",
-  "paymentAccepted": ["Cash", "Credit Card", "Debit", "Insurance", "Financing"],
-  "offers": {
-    "@type": "AggregateOffer",
-    "offers": [
-      {
-        "@type": "Offer",
-        "name": "Emergency Water Extraction",
-        "price": "500",
-        "priceCurrency": "CAD"
-      },
-      {
-        "@type": "Offer",
-        "name": "Full Basement Waterproofing",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "minPrice": "3000",
-          "maxPrice": "15000",
-          "priceCurrency": "CAD"
-        }
-      }
-    ]
+  {
+    title: "Hamilton & Burlington",
+    description: "60-90 minute response • Escarpment properties • Foundation specialists",
+    icon: "mountain",
+    responseTime: "60-90 min"
   }
-}
-</script></p>
+];
 
-<p><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How fast can you really get here?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our average emergency response is 45 minutes in core GTA, with crews stationed strategically for rapid deployment."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you really answer 24/7?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our emergency line is answered by real people 24/7/365, including holidays. No answering service."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does emergency service cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Emergency water extraction starts at $500. Full repairs depend on damage extent. We provide clear quotes before proceeding."
-      }
-    }
-  ]
-}
-</script></p>`;
-
-// Additional data from original frontmatter (for reference)
-const originalMetadata = {
-  "keywords": [
-    "emergency basement waterproofing services",
-    "crisis waterproofing response",
-    "emergency waterproofing contractors",
-    "urgent basement repair",
-    "professional emergency waterproofing",
-    "basement flooding after rain",
-    "emergency flood repair",
-    "24 hour basement flooding help"
-  ],
-  "schema": {
-    "type": "EmergencyService",
-    "emergency_service": {
-      "@context": "https://schema.org",
-      "@type": "EmergencyService",
-      "name": "DrySpace Emergency Waterproofing",
-      "serviceType": "24/7 Emergency Basement Waterproofing",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "DrySpace Waterproofing",
-        "telephone": "+1-437-545-0067",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Toronto",
-          "addressRegion": "ON",
-          "addressCountry": "CA"
-        }
-      },
-      "areaServed": [
-        "Toronto",
-        "Mississauga",
-        "Brampton",
-        "Vaughan",
-        "Richmond Hill",
-        "Markham",
-        "North York",
-        "Scarborough",
-        "Etobicoke"
-      ],
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "servicePhone": "+1-437-545-0067",
-        "availableLanguage": "English"
-      },
-      "hoursAvailable": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    }
+const warningSignsData = [
+  {
+    title: "Call Immediately",
+    description: "These situations require emergency response within 2 hours",
+    icon: "phone",
+    highlight: true
+  },
+  {
+    title: "Standing Water",
+    description: "Any amount of standing water in your basement",
+    icon: "droplets"
+  },
+  {
+    title: "Active Water Entry",
+    description: "Water actively entering through cracks or joints",
+    icon: "trending-down"
+  },
+  {
+    title: "Sewage Backup",
+    description: "Contaminated water poses serious health risks", 
+    icon: "alert-triangle"
+  },
+  {
+    title: "Power at Risk",
+    description: "Water near electrical systems creates dangerous conditions",
+    icon: "zap"
+  },
+  {
+    title: "Structural Concerns",
+    description: "New cracks or wall movement during flooding",
+    icon: "triangle"
   }
-};
+];
+
+const relatedResources = [
+  {
+    text: "Foundation Crack Repair",
+    href: "/services/foundation-crack-repair/",
+    description: "Stop emergency leaks at the source with permanent solutions",
+    type: "internal",
+    featured: true,
+    image: "/images/services/crack-repair.jpg"
+  },
+  {
+    text: "Basement Waterproofing",
+    href: "/services/basement-waterproofing-toronto/",
+    description: "Comprehensive systems to prevent future emergencies",
+    type: "internal",
+    badge: "Prevention"
+  },
+  {
+    text: "Interior Waterproofing",
+    href: "/services/interior-waterproofing/",
+    description: "Interior drainage systems for flood prevention",
+    type: "internal"
+  },
+  {
+    text: "Sump Pump Service",
+    href: "/services/sump-pump-installation/",
+    description: "Emergency repair and installation of backup systems",
+    type: "internal",
+    badge: "Critical"
+  },
+  {
+    text: "Emergency Hotline",
+    href: "tel:437-545-0067",
+    description: "24/7 emergency response - Call now for immediate help",
+    type: "phone",
+    badge: "24/7"
+  }
+];
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="emergency"
+      title="Emergency Basement Flooding Response"
+      subtitle="Professional crisis response team available 24/7"
+      centered
+    >
+      <div class="bg-red-600/20 border-2 border-red-500 rounded-lg p-6 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <AlertTriangle className="h-8 w-8 text-red-500" />
+          <h3 class="text-2xl font-bold text-red-500">BASEMENT FLOODING EMERGENCY?</h3>
+        </div>
+        <p class="text-xl mb-4">
+          <strong>Call Now: (437) 545-0067</strong> - Our emergency response team is standing by 24/7
+        </p>
+        <p class="text-lg">Average response time: 2 hours or less throughout the GTA</p>
+      </div>
+      
+      <p class="text-xl">
+        When basement flooding strikes, every minute counts. Our certified emergency response team has been 
+        protecting GTA homes from water damage for over 15 years. With fully equipped vehicles stationed 
+        throughout Toronto, we provide the fastest response times and most comprehensive emergency services.
+      </p>
+      
+      <div class="mt-8 grid md:grid-cols-4 gap-4 text-center">
+        <div class="bg-white/10 p-4 rounded-lg">
+          <div class="text-2xl font-bold text-red-500">2 HR</div>
+          <div class="text-sm">Max Response</div>
+        </div>
+        <div class="bg-white/10 p-4 rounded-lg">
+          <div class="text-2xl font-bold text-red-500">24/7</div>
+          <div class="text-sm">Every Day</div>
+        </div>
+        <div class="bg-white/10 p-4 rounded-lg">
+          <div class="text-2xl font-bold text-red-500">5,000</div>
+          <div class="text-sm">Gal/Hour Pumps</div>
+        </div>
+        <div class="bg-white/10 p-4 rounded-lg">
+          <div class="text-2xl font-bold text-red-500">100%</div>
+          <div class="text-sm">Insurance Work</div>
+        </div>
+      </div>
+    </ContentSection>
 
-<style>
-  /* Preserved styles from original page */
-  :global(.toronto-hero-banner) {
-    background: #f7fafc;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    margin-bottom: 2rem;
-  }
+    <!-- Emergency Services Grid -->
+    <FeatureGrid 
+      title="Complete Emergency Services"
+      subtitle="Comprehensive crisis response and permanent solutions"
+      features={emergencyServices}
+      variant="bento"
+      backgroundPattern={true}
+    />
 
-  :global(.trust-signals-toronto) {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-  }
+    <!-- Emergency Process -->
+    <ProcessList 
+      title="Emergency Response Process"
+      subtitle="From crisis call to permanent solution in one visit"
+      items={emergencyProcess}
+      variant="timeline"
+      showImages={true}
+      numbered={true}
+    />
 
-  :global(.trust-signals-toronto span) {
-    background: #f97316;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-  }
+    <!-- Response Areas -->
+    <ContentSection 
+      title="GTA Emergency Response Areas"
+      subtitle="Strategically positioned for fastest response times"
+      variant="pattern"
+      centered
+    >
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        {responseAreas.map((area) => (
+          <div class="bg-white/10 p-6 rounded-lg">
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="text-xl font-bold">{area.title}</h4>
+              <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                {area.responseTime}
+              </span>
+            </div>
+            <p class="text-gray-300">{area.description}</p>
+          </div>
+        ))}
+      </div>
+      
+      <CalloutBox type="emergency" title="Immediate Response Available">
+        <p>Don't wait for regular business hours. Our emergency teams are equipped and ready to respond 24/7, 365 days a year. Weather conditions don't stop us.</p>
+      </CalloutBox>
+    </ContentSection>
 
-  :global(.toronto-service-grid) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-  }
+    <!-- Video Section -->
+    <VideoEmbed 
+      title="Emergency Response in Action"
+      videoId="dQw4w9WgXcQ"
+      platform="youtube"
+      description="Watch our emergency response team handle a severe basement flooding situation from initial call to permanent repair completion."
+      caption="Actual emergency response - North York flooding incident"
+    />
 
-  :global(.toronto-area-card) {
-    background: white;
-    border: 1px solid #e2e8f0;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-  }
+    <!-- When to Call -->
+    <ContentSection 
+      variant="dark"
+      title="When to Call Emergency Services"
+      subtitle="Don't wait - these situations require immediate response"
+      centered
+    >
+      <FeatureGrid 
+        features={warningSignsData}
+        variant="gradient"
+        columns={2}
+      />
+      
+      <div class="mt-8 space-y-4">
+        <CalloutBox type="emergency" title="Call Immediately: (437) 545-0067">
+          <p>Water damage doubles every hour. Our emergency response prevents catastrophic damage and saves thousands in repairs.</p>
+        </CalloutBox>
+        
+        <CalloutBox type="warning" title="Safety First">
+          <p>Never enter a flooded basement with electrical power still on. Never attempt to repair active water entry yourself. Let our professionals handle dangerous situations safely.</p>
+        </CalloutBox>
+      </div>
+    </ContentSection>
 
-  :global(.toronto-area-card h3) {
-    color: #1a202c;
-    margin-bottom: 0.5rem;
-  }
+    <!-- Success Story -->
+    <ContentSection 
+      variant="gradient"
+      title="Emergency Response Success Story"
+      backgroundImage="/images/testimonials/emergency-bg.jpg"
+      overlayOpacity={0.8}
+      fullWidth
+      centered
+    >
+      <div class="max-w-3xl mx-auto">
+        <p class="text-xl italic mb-6">
+          "At 2 AM during a storm, water was pouring into our finished basement. DrySpace arrived in 45 minutes, 
+          stopped the leak, and had everything dry by morning. They even completed permanent repairs the same day!"
+        </p>
+        <p class="text-lg">— Sarah M., Mississauga</p>
+        <div class="mt-6">
+          <span class="inline-flex items-center gap-2 text-yellow-400">
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <span class="text-white ml-2">5.0/5 Emergency Service Rating</span>
+          </span>
+        </div>
+      </div>
+    </ContentSection>
 
-  :global(.cost-range) {
-    display: inline-block;
-    background: #f0fdf4;
-    color: #166534;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-  }
+    <!-- FAQ Section -->
+    <ContentSection 
+      title="Emergency Service FAQs"
+      variant="pattern"
+      centered
+    >
+      <div class="grid gap-6 md:grid-cols-2">
+        <QuestionAnswer 
+          question="What should I do while waiting for emergency service?"
+          variant="card"
+        >
+          <p>Turn off electricity to affected areas, move valuables to higher ground, try to identify the water source, document damage with photos for insurance, and avoid contact with contaminated water. Do NOT attempt repairs yourself.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-cta-section) {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-  }
+        <QuestionAnswer 
+          question="Will insurance cover emergency services?"
+          variant="card"
+        >
+          <p>Most home insurance policies cover sudden water damage and emergency mitigation services. We work directly with insurance companies, provide detailed documentation, and can often bill directly to expedite the process.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-primary-cta) {
-    background: #f97316;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.125rem;
-  }
+        <QuestionAnswer 
+          question="Can you provide permanent solutions during emergencies?"
+          variant="card"
+        >
+          <p>Yes! Our emergency vehicles carry permanent repair materials. We can often complete crack injection, sump pump installation, and other permanent repairs during the same visit, preventing future emergencies.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-secondary-cta) {
-    border: 2px solid #f97316;
-    color: #f97316;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-  }
+        <QuestionAnswer 
+          question="Do you respond to all types of water emergencies?"
+          variant="card"
+        >
+          <p>We handle all basement water emergencies: foundation leaks, sump pump failures, sewage backups, storm flooding, pipe bursts, and any water intrusion situation. Our team is equipped for any scenario.</p>
+        </QuestionAnswer>
+      </div>
+    </ContentSection>
 
-  :global(.toronto-guarantee-badges) {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-  }
+    <!-- Related Services -->
+    <ServiceLinks 
+      title="Emergency & Prevention Services"
+      subtitle="Complete solutions for water emergencies and prevention"
+      links={relatedResources}
+      variant="featured"
+      showImages={true}
+    />
 
-  :global(.toronto-guarantee-badges span) {
-    color: #10b981;
-    font-weight: 600;
-  }
-</style>
+    <!-- Final Emergency CTA -->
+    <ContentSection 
+      variant="emergency"
+      title="Don't Wait - Call Our Emergency Hotline Now"
+      subtitle="24/7 response • 2-hour maximum • Insurance direct billing"
+      centered
+      fullWidth
+    >
+      <div class="bg-red-600 p-8 rounded-2xl mt-8">
+        <div class="text-center space-y-6">
+          <div class="flex items-center justify-center gap-3">
+            <Phone className="h-12 w-12 text-white animate-pulse" />
+            <h3 class="text-4xl font-bold text-white">(437) 545-0067</h3>
+          </div>
+          <p class="text-xl text-white max-w-2xl mx-auto">
+            Emergency basement flooding response available 24/7, 365 days a year. 
+            Our emergency team is standing by with fully equipped vehicles throughout the GTA.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-red-600 bg-white rounded-full shadow-xl hover:bg-gray-100 transition-all hover:-translate-y-0.5">
+              <Phone className="h-5 w-5 mr-2" />
+              Call Emergency Hotline
+            </a>
+            <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-red-800 rounded-full shadow-xl hover:bg-red-900 transition-all hover:-translate-y-0.5">
+              Prevention Assessment
+            </a>
+          </div>
+          <p class="text-white/80 text-sm">
+            Fastest response in GTA • Insurance approved • Licensed professionals
+          </p>
+        </div>
+      </div>
+    </ContentSection>
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>

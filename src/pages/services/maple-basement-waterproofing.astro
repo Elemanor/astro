@@ -3,10 +3,14 @@
 // Original file: /services/maple-basement-waterproofing/
 // Migration date: 2025-08-04T15:14:30.027Z
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import { Star, Phone, MapPin, Home } from 'lucide-react';
 
-// Service data extracted from original markdown
-const serviceData = {
+// Service data converted to V4 format
+const pageData = {
   serviceName: "Maple Basement Waterproofing",
   serviceTitle: "Maple Basement Waterproofing Vaughan | Family Home Foundation Protection",
   serviceSubtitle: "Reliable Waterproofing Solutions for Maple's Growing Family Community",
@@ -170,9 +174,51 @@ const originalMetadata = {
 };
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    <ContentSection 
+      variant="gradient"
+      title="Maple Basement Waterproofing Specialists"
+      subtitle="Local expertise for Vaughan area homes"
+      centered
+    >
+      <p class="text-xl">
+        Maple homes benefit from our specialized local waterproofing expertise. 
+        Our Vaughan team provides tailored solutions for the area's unique soil conditions.
+      </p>
+    </ContentSection>
+
+    <CalloutBox 
+      type="info" 
+      title="Local Maple Team"
+      animate={true}
+    >
+      <p>Our local team serves the Maple area with specialized waterproofing solutions for Vaughan soil conditions.</p>
+      <p class="mt-4"><strong>Local Maple Team: (437) 545-0067</strong></p>
+    </CalloutBox>
+
+    <ContentSection 
+      variant="gradient"
+      title="Protect Your Maple Home Today"
+      subtitle="Local expertise, lifetime protection"
+      centered
+      fullWidth
+    >
+      <div class="mt-8 space-y-6 text-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-full shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5">
+            <MapPin className="h-5 w-5 mr-2" />
+            Free Maple Assessment
+          </a>
+          <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-primary bg-white rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            <Phone className="h-5 w-5 mr-2" />
+            (437) 545-0067
+          </a>
+        </div>
+      </div>
+    </ContentSection>
+  </ServiceMainContent>
+</ServicePageTemplateV4>
 
 <style>
   /* Preserved styles from original page */

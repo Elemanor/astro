@@ -4,55 +4,174 @@ export interface ProcessItem {
   subtitle?: string;
   description?: string;
   items?: string[];
+  image?: string;
+  icon?: string;
 }
 
 export interface Props {
   title?: string;
+  subtitle?: string;
   items: ProcessItem[];
   numbered?: boolean;
+  variant?: 'default' | 'cards' | 'timeline' | 'grid';
+  showImages?: boolean;
   class?: string;
 }
 
 const { 
   title,
+  subtitle,
   items,
   numbered = true,
+  variant = 'default',
+  showImages = true,
   class: className = ''
 } = Astro.props;
 ---
 
-<div class={`process-list my-8 ${className}`}>
-  {title && <h3 class="text-2xl font-bold mb-6">{title}</h3>}
+<div class={`process-list my-12 ${className}`}>
+  {(title || subtitle) && (
+    <div class="text-center mb-12">
+      {title && <h3 class="text-3xl md:text-4xl font-bold mb-4">{title}</h3>}
+      {subtitle && <p class="text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>}
+    </div>
+  )}
   
-  <div class="space-y-6">
-    {items.map((item, index) => (
-      <div class="relative pl-8">
-        {numbered && (
-          <span class="absolute left-0 top-0 w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
-            {index + 1}
-          </span>
-        )}
-        
-        <div class="space-y-2">
-          <h4 class="text-xl font-semibold">{item.title}</h4>
-          
-          {item.subtitle && (
-            <p class="text-lg text-muted-foreground">{item.subtitle}</p>
+  {variant === 'default' && (
+    <div class="space-y-8">
+      {items.map((item, index) => (
+        <div class="relative pl-16 pb-8 last:pb-0">
+          {numbered && (
+            <div class="absolute left-0 top-0 w-12 h-12 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center text-lg font-bold shadow-lg">
+              {index + 1}
+            </div>
           )}
           
-          {item.description && (
-            <p class="text-base text-muted-foreground">{item.description}</p>
+          {index < items.length - 1 && (
+            <div class="absolute left-6 top-12 bottom-0 w-0.5 bg-gradient-to-b from-primary/30 to-transparent"></div>
           )}
           
-          {item.items && item.items.length > 0 && (
-            <ul class="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-              {item.items.map(subItem => (
-                <li>{subItem}</li>
-              ))}
-            </ul>
-          )}
+          <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow">
+            <div class="flex gap-6">
+              <div class="flex-1 space-y-3">
+                <h4 class="text-2xl font-semibold text-foreground">{item.title}</h4>
+                
+                {item.subtitle && (
+                  <p class="text-lg text-primary font-medium">{item.subtitle}</p>
+                )}
+                
+                {item.description && (
+                  <p class="text-base text-muted-foreground leading-relaxed">{item.description}</p>
+                )}
+                
+                {item.items && item.items.length > 0 && (
+                  <ul class="space-y-2 mt-4">
+                    {item.items.map(subItem => (
+                      <li class="flex items-start gap-2">
+                        <span class="text-primary mt-1">•</span>
+                        <span class="text-muted-foreground">{subItem}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              
+              {showImages && item.image && (
+                <div class="hidden md:block w-48 h-48 flex-shrink-0">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    class="w-full h-full object-cover rounded-lg shadow-md"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
         </div>
+      ))}
+    </div>
+  )}
+  
+  {variant === 'cards' && (
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {items.map((item, index) => (
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-1">
+          {showImages && item.image && (
+            <div class="h-48 overflow-hidden">
+              <img 
+                src={item.image} 
+                alt={item.title}
+                class="w-full h-full object-cover"
+              />
+            </div>
+          )}
+          
+          <div class="p-6">
+            {numbered && (
+              <div class="inline-flex items-center justify-center w-10 h-10 bg-primary/10 text-primary rounded-full mb-4 font-bold">
+                {index + 1}
+              </div>
+            )}
+            
+            <h4 class="text-xl font-semibold mb-2">{item.title}</h4>
+            
+            {item.subtitle && (
+              <p class="text-primary font-medium mb-2">{item.subtitle}</p>
+            )}
+            
+            {item.description && (
+              <p class="text-muted-foreground">{item.description}</p>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
+  
+  {variant === 'timeline' && (
+    <div class="relative">
+      <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block"></div>
+      
+      <div class="space-y-12">
+        {items.map((item, index) => (
+          <div class={`flex flex-col md:flex-row gap-8 items-center ${
+            index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+          }`}>
+            <div class="flex-1">
+              <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                <div class="flex items-center gap-4 mb-4">
+                  {numbered && (
+                    <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
+                      {index + 1}
+                    </div>
+                  )}
+                  <h4 class="text-2xl font-bold">{item.title}</h4>
+                </div>
+                
+                {item.subtitle && (
+                  <p class="text-lg text-primary font-medium mb-2">{item.subtitle}</p>
+                )}
+                
+                {item.description && (
+                  <p class="text-muted-foreground leading-relaxed">{item.description}</p>
+                )}
+              </div>
+            </div>
+            
+            <div class="hidden md:block w-6 h-6 bg-primary rounded-full shadow-lg ring-4 ring-white"></div>
+            
+            <div class="flex-1">
+              {showImages && item.image && (
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  class="w-full max-w-md mx-auto rounded-xl shadow-lg"
+                />
+              )}
+            </div>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
+    </div>
+  )}
 </div>

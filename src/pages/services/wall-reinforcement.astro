@@ -1,0 +1,670 @@
+---
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import ProcessList from '../../components/content/ProcessList.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import ComparisonTableV2 from '../../components/content/ComparisonTableV2.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import Timeline from '../../components/content/Timeline.astro';
+import QuestionAnswer from '../../components/content/QuestionAnswer.astro';
+import ServiceLinks from '../../components/content/ServiceLinks.astro';
+import { Star, Phone, Shield, Wrench, Award, Clock, AlertTriangle, TrendingUp, Zap, DollarSign } from 'lucide-react';
+
+// Service data
+const pageData = {
+  serviceName: "Wall Reinforcement Toronto",
+  serviceTitle: "Wall Reinforcement Toronto | Bowing Wall Repair & Stabilization",
+  serviceSubtitle: "Expert Solutions for Bowing, Cracking & Failing Foundation Walls",
+  serviceDescription: "Professional wall reinforcement for bowing, leaning basement walls in Toronto & GTA. Carbon fiber, wall anchors, I-beams. Stop wall movement permanently. Call: (437) 545-0067",
+  heroBadge: "Emergency Service",
+  heroImage: "/images/services/wall-reinforcement-hero.jpg",
+  heroFeatures: [
+    "10+ year warranty",
+    "Licensed engineers",
+    "Same-day assessment",
+    "Insurance assistance"
+  ],
+  startingPrice: "$3,000",
+  priceRange: "$3,000-$15,000",
+  processSteps: [
+    {
+      title: "Structural Assessment",
+      description: "Engineer evaluates wall movement and determines best solution",
+      icon: "search"
+    },
+    {
+      title: "Preparation",
+      description: "Clean and prepare walls for reinforcement system installation",
+      icon: "wrench"
+    },
+    {
+      title: "Installation",
+      description: "Install carbon fiber, anchors, or I-beams per engineering specs",
+      icon: "shield"
+    },
+    {
+      title: "Monitoring",
+      description: "Set up monitoring points and provide maintenance schedule",
+      icon: "chart"
+    }
+  ],
+  benefits: [
+    {
+      title: "Permanent Stabilization",
+      description: "Stop wall movement permanently with engineered solutions"
+    },
+    {
+      title: "Property Value Protection",
+      description: "Prevent 15-25% loss in home value from foundation issues"
+    },
+    {
+      title: "Insurance Compliance",
+      description: "Meet insurance requirements with certified repairs"
+    },
+    {
+      title: "Transferable Warranty",
+      description: "10-year warranty transfers to new homeowners"
+    }
+  ],
+  serviceFaqs: [
+    {
+      question: "How quickly do bowing walls need to be fixed?",
+      answer: "Wall movement is progressive and accelerates over time. A wall bowing 1 inch today could be at 2 inches within 6 months and at risk of collapse within 2 years. Immediate stabilization is recommended once any bowing is detected."
+    },
+    {
+      question: "Can wall reinforcement be done from inside?",
+      answer: "Yes, most wall reinforcement methods (carbon fiber straps, steel I-beams) are installed from inside your basement with minimal disruption. Wall anchors may require limited exterior excavation for anchor placement in stable soil."
+    },
+    {
+      question: "Will reinforcement straighten my walls?",
+      answer: "Carbon fiber and steel beams stabilize walls in their current position. Wall anchors can potentially straighten walls over time through periodic tightening. Complete straightening may require excavation and pushing walls back to position."
+    },
+    {
+      question: "How long does wall reinforcement last?",
+      answer: "Properly installed wall reinforcement is permanent. Carbon fiber straps have a 75+ year lifespan, steel systems last indefinitely with minimal maintenance, and all our solutions include 10-year transferable warranties."
+    },
+    {
+      question: "Does homeowners insurance cover wall reinforcement?",
+      answer: "Coverage varies by policy and cause. Gradual movement is typically excluded, but sudden damage from specific events (plumbing leaks, nearby construction) may be covered. We help document your case for insurance claims."
+    }
+  ],
+  relatedServices: [
+    {
+      title: "Foundation Crack Repair",
+      url: "/services/foundation-crack-repair/",
+      description: "Fix cracks before they become structural issues",
+      image: "/images/services/crack-repair.jpg"
+    },
+    {
+      title: "Basement Waterproofing",
+      url: "/services/basement-waterproofing/",
+      description: "Prevent water pressure that causes wall movement",
+      image: "/images/services/waterproofing.jpg"
+    },
+    {
+      title: "Underpinning Services",
+      url: "/services/underpinning-services/",
+      description: "Strengthen foundations from below",
+      image: "/images/services/underpinning.jpg"
+    }
+  ]
+};
+
+// Component data
+const wallFailureSigns = [
+  {
+    title: "Horizontal Cracks",
+    description: "Most serious - indicates lateral pressure from soil or water",
+    icon: "alert-triangle",
+    highlight: true
+  },
+  {
+    title: "Bowing/Bulging",
+    description: "Walls curving inward more than 1 inch need immediate attention",
+    icon: "trending",
+    highlight: true
+  },
+  {
+    title: "Stair-Step Cracks",
+    description: "Common in block walls, follows mortar joints",
+    icon: "zap"
+  },
+  {
+    title: "Wall Separation",
+    description: "Gap between wall and ceiling or floor indicates movement",
+    icon: "layers"
+  },
+  {
+    title: "Water Seepage",
+    description: "Water entering through cracks accelerates deterioration",
+    icon: "droplets"
+  },
+  {
+    title: "Efflorescence",
+    description: "White deposits indicate water movement through walls",
+    icon: "alert-circle"
+  }
+];
+
+const reinforcementMethods = [
+  {
+    title: "Carbon Fiber Straps",
+    subtitle: "For walls bowing < 2 inches",
+    description: "10x stronger than steel, invisible when painted",
+    items: [
+      "Epoxy-bonded to wall surface",
+      "No excavation required",
+      "Transfers load to structure above",
+      "Can be painted or finished over"
+    ],
+    price: "$300-500 per strap",
+    badge: "Most Popular"
+  },
+  {
+    title: "Wall Anchor System",
+    subtitle: "For walls bowing 2-4 inches",
+    description: "Adjustable system can straighten walls over time",
+    items: [
+      "Steel anchors in stable soil",
+      "Connected through wall with plates",
+      "Periodic tightening possible",
+      "Minimal interior disruption"
+    ],
+    price: "$500-700 per anchor",
+    badge: "Best Value"
+  },
+  {
+    title: "Steel I-Beam System",
+    subtitle: "For walls bowing > 4 inches",
+    description: "Maximum strength for severe movement",
+    items: [
+      "Galvanized steel beams",
+      "Secured to floor and joists",
+      "No exterior excavation",
+      "Immediate stabilization"
+    ],
+    price: "$700-900 per beam",
+    badge: "Maximum Strength"
+  }
+];
+
+const costBreakdown = [
+  {
+    category: "Early Intervention",
+    items: [
+      { item: "Carbon fiber (5 straps)", cost: "$3,000-$4,000" },
+      { item: "Minor crack repair", cost: "$500-$1,000" },
+      { item: "Drainage improvements", cost: "$2,000-$3,000" },
+      { item: "Total investment", cost: "$5,500-$8,000" }
+    ]
+  },
+  {
+    category: "Advanced Damage",
+    items: [
+      { item: "Wall anchors (8-10)", cost: "$6,000-$8,000" },
+      { item: "Excavation if needed", cost: "$3,000-$5,000" },
+      { item: "Waterproofing", cost: "$4,000-$6,000" },
+      { item: "Total investment", cost: "$13,000-$19,000" }
+    ]
+  },
+  {
+    category: "Wall Replacement",
+    items: [
+      { item: "Demolition & removal", cost: "$10,000-$15,000" },
+      { item: "New wall construction", cost: "$20,000-$30,000" },
+      { item: "Temporary shoring", cost: "$5,000-$10,000" },
+      { item: "Total cost", cost: "$35,000-$55,000" }
+    ]
+  }
+];
+
+const engineeringProcess = [
+  {
+    title: "Laser Measurement",
+    subtitle: "Precision Mapping",
+    description: "Document exact wall deflection:",
+    items: [
+      "Millimeter-precision measurements",
+      "3D wall profile creation",
+      "Movement tracking over time",
+      "Foundation settlement analysis"
+    ]
+  },
+  {
+    title: "Soil Analysis",
+    subtitle: "Pressure Calculation",
+    description: "Determine forces on walls:",
+    items: [
+      "Soil type identification",
+      "Moisture content testing",
+      "Lateral pressure calculation",
+      "Drainage assessment"
+    ]
+  },
+  {
+    title: "Load Calculation",
+    subtitle: "Structural Design",
+    description: "Engineer the solution:",
+    items: [
+      "Wall load capacity",
+      "Reinforcement requirements",
+      "Safety factor application",
+      "Code compliance verification"
+    ]
+  },
+  {
+    title: "Solution Design",
+    subtitle: "Custom Engineering",
+    description: "Tailored reinforcement plan:",
+    items: [
+      "Method selection",
+      "Spacing calculations",
+      "Connection details",
+      "Monitoring protocol"
+    ]
+  }
+];
+
+const urgencyIndicators = [
+  {
+    level: "Monitor",
+    movement: "< 0.5 inch",
+    timeframe: "Check quarterly",
+    action: "Document and monitor",
+    color: "green"
+  },
+  {
+    level: "Plan Repair",
+    movement: "0.5 - 1 inch",
+    timeframe: "Repair within 6 months",
+    action: "Schedule assessment",
+    color: "yellow"
+  },
+  {
+    level: "Urgent",
+    movement: "1 - 2 inches",
+    timeframe: "Repair within 30 days",
+    action: "Immediate consultation",
+    color: "orange"
+  },
+  {
+    level: "Emergency",
+    movement: "> 2 inches",
+    timeframe: "Immediate action",
+    action: "Call emergency service",
+    color: "red"
+  }
+];
+
+const propertyValueImpact = [
+  {
+    condition: "Visible Foundation Issues",
+    impact: "-15% to -25%",
+    details: "Average $75,000-$125,000 loss on $500K home"
+  },
+  {
+    condition: "Failed Home Inspection",
+    impact: "Deal cancellation",
+    details: "80% of buyers walk away"
+  },
+  {
+    condition: "Professional Repairs with Warranty",
+    impact: "Full market value",
+    details: "Transfers confidence to buyers"
+  },
+  {
+    condition: "Preventive Reinforcement",
+    impact: "+2% to +5%",
+    details: "Premium for maintained homes"
+  }
+];
+---
+
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="gradient"
+      title="Understanding Wall Failure in Toronto Homes"
+      subtitle="Critical structural issues require immediate professional attention"
+      centered
+    >
+      <p class="text-xl mb-4">
+        Foundation wall failure is a serious structural issue affecting thousands of Toronto homes, 
+        particularly those built before 1980. The combination of our expansive clay soils, extreme 
+        freeze-thaw cycles, and aging infrastructure creates perfect conditions for wall movement.
+      </p>
+      <CalloutBox type="warning">
+        <p class="text-lg font-semibold mb-2">⚠️ Critical Warning</p>
+        <p>When clay soils become saturated, they can expand up to 30%, exerting over 5,000 pounds 
+        per square foot of pressure on foundation walls. A wall bowing just 1 inch is already 
+        experiencing significant stress and can progress to catastrophic failure within 2-3 years.</p>
+      </CalloutBox>
+    </ContentSection>
+
+    <!-- Wall Failure Signs -->
+    <FeatureGrid 
+      title="Signs Your Walls Need Reinforcement"
+      subtitle="Early detection prevents catastrophic failure"
+      features={wallFailureSigns}
+      columns={3}
+      variant="cards"
+    />
+
+    <!-- Urgency Timeline -->
+    <ContentSection
+      variant="dark"
+      title="How Quickly Should You Act?"
+      subtitle="Wall movement accelerates exponentially"
+    >
+      <div class="grid md:grid-cols-4 gap-4 mb-8">
+        {urgencyIndicators.map((indicator) => (
+          <div class={`bg-white/10 backdrop-blur rounded-lg p-6 border-2 ${
+            indicator.color === 'green' ? 'border-green-500' :
+            indicator.color === 'yellow' ? 'border-yellow-500' :
+            indicator.color === 'orange' ? 'border-orange-500' :
+            'border-red-500 animate-pulse'
+          }`}>
+            <h3 class={`text-lg font-bold mb-2 ${
+              indicator.color === 'green' ? 'text-green-400' :
+              indicator.color === 'yellow' ? 'text-yellow-400' :
+              indicator.color === 'orange' ? 'text-orange-400' :
+              'text-red-400'
+            }`}>{indicator.level}</h3>
+            <p class="text-white font-semibold">{indicator.movement}</p>
+            <p class="text-sm text-gray-300 mt-2">{indicator.timeframe}</p>
+            <p class="text-sm font-semibold text-white mt-3">{indicator.action}</p>
+          </div>
+        ))}
+      </div>
+      <CalloutBox type="emergency" animate={true}>
+        <p class="text-lg">Walls moving more than 2 inches? This is a structural emergency.</p>
+        <p class="mt-2"><strong>Call Now: (437) 545-0067</strong> - 24/7 Emergency Response</p>
+      </CalloutBox>
+    </ContentSection>
+
+    <!-- Reinforcement Methods -->
+    <ContentSection
+      title="Professional Wall Reinforcement Solutions"
+      subtitle="Engineering-approved methods for every situation"
+    >
+      <div class="grid md:grid-cols-3 gap-8">
+        {reinforcementMethods.map((method) => (
+          <div class="bg-card rounded-lg p-6 border border-border hover:shadow-lg transition-shadow">
+            <span class="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full mb-4">
+              {method.badge}
+            </span>
+            <h3 class="text-2xl font-bold mb-2">{method.title}</h3>
+            <p class="text-muted-foreground mb-2">{method.subtitle}</p>
+            <p class="mb-4">{method.description}</p>
+            <ul class="space-y-2 mb-4">
+              {method.items.map((item) => (
+                <li class="flex items-start gap-2">
+                  <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" client:load />
+                  <span class="text-sm">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div class="pt-4 border-t border-border">
+              <p class="text-lg font-bold text-primary">{method.price}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </ContentSection>
+
+    <!-- Cost Analysis -->
+    <ContentSection
+      variant="muted"
+      title="Cost Analysis: Repair Now vs. Replace Later"
+      subtitle="The economics of early intervention"
+    >
+      <div class="mb-8">
+        <p class="text-lg text-center max-w-3xl mx-auto">
+          Early intervention with wall reinforcement prevents catastrophic failure and massive 
+          replacement costs. Insurance rarely covers gradual wall movement, making prevention crucial.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        {costBreakdown.map((category, index) => (
+          <div class={`bg-white rounded-lg p-6 shadow-lg ${
+            index === 2 ? 'border-2 border-red-500' : 'border border-border'
+          }`}>
+            <h3 class={`text-xl font-bold mb-4 ${
+              index === 2 ? 'text-red-600' : 'text-foreground'
+            }`}>{category.category}</h3>
+            <ul class="space-y-3">
+              {category.items.map((item, itemIndex) => (
+                <li class={`flex justify-between items-center ${
+                  itemIndex === category.items.length - 1 ? 'pt-3 border-t font-bold' : ''
+                }`}>
+                  <span class="text-sm">{item.item}</span>
+                  <span class={`text-sm ${
+                    itemIndex === category.items.length - 1 ? 'text-lg' : ''
+                  }`}>{item.cost}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <CalloutBox type="info" class="mt-8">
+        <h3 class="text-xl font-bold mb-2">Property Value Impact</h3>
+        <div class="grid md:grid-cols-2 gap-4 mt-4">
+          {propertyValueImpact.map((impact) => (
+            <div class="flex justify-between items-start p-3 bg-white/10 rounded">
+              <div>
+                <p class="font-semibold">{impact.condition}</p>
+                <p class="text-sm opacity-90">{impact.details}</p>
+              </div>
+              <span class={`font-bold text-lg ${
+                impact.impact.includes('-') ? 'text-red-400' : 'text-green-400'
+              }`}>{impact.impact}</span>
+            </div>
+          ))}
+        </div>
+      </CalloutBox>
+    </ContentSection>
+
+    <!-- Engineering Process -->
+    <ContentSection
+      title="Our Engineering-Based Approach"
+      subtitle="Every solution backed by professional structural analysis"
+    >
+      <p class="text-lg mb-8">
+        Every wall reinforcement project begins with a comprehensive structural assessment by our 
+        licensed engineers. We follow engineering best practices endorsed by Professional Engineers 
+        Ontario (PEO), ensuring your repairs meet all building codes and insurance requirements.
+      </p>
+      
+      <ProcessList 
+        items={engineeringProcess}
+        variant="detailed"
+      />
+      
+      <div class="mt-8 grid md:grid-cols-3 gap-6 text-center">
+        <div class="bg-primary/10 rounded-lg p-6">
+          <Award className="h-12 w-12 text-primary mx-auto mb-3" client:load />
+          <h3 class="font-bold text-lg">PEO Certified</h3>
+          <p class="text-sm mt-2">All designs stamped by licensed engineers</p>
+        </div>
+        <div class="bg-primary/10 rounded-lg p-6">
+          <Shield className="h-12 w-12 text-primary mx-auto mb-3" client:load />
+          <h3 class="font-bold text-lg">Code Compliant</h3>
+          <p class="text-sm mt-2">Meets Ontario Building Code requirements</p>
+        </div>
+        <div class="bg-primary/10 rounded-lg p-6">
+          <Clock className="h-12 w-12 text-primary mx-auto mb-3" client:load />
+          <h3 class="font-bold text-lg">Lifetime Design</h3>
+          <p class="text-sm mt-2">Engineered to last 75+ years</p>
+        </div>
+      </div>
+    </ContentSection>
+
+    <!-- Case Studies -->
+    <ContentSection
+      variant="white"
+      title="Real Toronto Wall Reinforcement Projects"
+      subtitle="Documented results from local homes"
+    >
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-card rounded-lg p-6 border border-border">
+          <h3 class="text-xl font-bold mb-3">High Park Victorian - 2023</h3>
+          <div class="space-y-2 mb-4">
+            <p><strong>Problem:</strong> 100-year-old stone foundation, 3" inward bow</p>
+            <p><strong>Solution:</strong> 12 carbon fiber straps + drainage upgrade</p>
+            <p><strong>Cost:</strong> $8,500 (vs. $65,000 rebuild quote)</p>
+            <p><strong>Result:</strong> Complete stabilization, sold 6 months later at full ask</p>
+          </div>
+          <div class="bg-green-50 text-green-800 p-3 rounded">
+            <p class="text-sm font-semibold">Saved: $56,500</p>
+          </div>
+        </div>
+        
+        <div class="bg-card rounded-lg p-6 border border-border">
+          <h3 class="text-xl font-bold mb-3">Scarborough Bungalow - 2024</h3>
+          <div class="space-y-2 mb-4">
+            <p><strong>Problem:</strong> Block foundation, horizontal cracks, 2" movement</p>
+            <p><strong>Solution:</strong> 8 wall anchors with annual adjustment plan</p>
+            <p><strong>Cost:</strong> $5,800 + $200/year monitoring</p>
+            <p><strong>Result:</strong> Wall straightened 1.5" in first year</p>
+          </div>
+          <div class="bg-green-50 text-green-800 p-3 rounded">
+            <p class="text-sm font-semibold">Property value preserved</p>
+          </div>
+        </div>
+      </div>
+    </ContentSection>
+
+    <!-- Warranty Information -->
+    <ContentSection
+      variant="gradient"
+      title="Industry-Leading Warranty Protection"
+      subtitle="Your investment is fully protected"
+      centered
+    >
+      <div class="grid md:grid-cols-4 gap-6 text-center">
+        <div class="bg-white/10 backdrop-blur rounded-lg p-6">
+          <h3 class="text-5xl font-bold text-white mb-2">10</h3>
+          <p class="text-white">Year Warranty</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-lg p-6">
+          <h3 class="text-5xl font-bold text-white mb-2">✓</h3>
+          <p class="text-white">Transferable</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-lg p-6">
+          <h3 class="text-5xl font-bold text-white mb-2">$2M</h3>
+          <p class="text-white">Insurance</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-lg p-6">
+          <h3 class="text-5xl font-bold text-white mb-2">24/7</h3>
+          <p class="text-white">Support</p>
+        </div>
+      </div>
+    </ContentSection>
+
+    <!-- FAQ Section -->
+    <ContentSection
+      title="Wall Reinforcement Questions"
+      subtitle="Expert answers to your concerns"
+    >
+      <div class="grid gap-4">
+        {pageData.serviceFaqs.map((faq) => (
+          <QuestionAnswer 
+            question={faq.question}
+            variant="card"
+          >
+            <p>{faq.answer}</p>
+          </QuestionAnswer>
+        ))}
+      </div>
+    </ContentSection>
+
+    <!-- Insurance Section -->
+    <ContentSection
+      variant="muted"
+      title="Insurance Claims Assistance"
+      subtitle="We help document your case"
+    >
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">What's Typically Covered</h3>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <Shield className="h-5 w-5 text-green-600 mt-0.5" client:load />
+              <span>Sudden damage from plumbing failures</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Shield className="h-5 w-5 text-green-600 mt-0.5" client:load />
+              <span>Damage from nearby construction/blasting</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Shield className="h-5 w-5 text-green-600 mt-0.5" client:load />
+              <span>Storm-related hydrostatic pressure</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Shield className="h-5 w-5 text-green-600 mt-0.5" client:load />
+              <span>City water main breaks</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Our Insurance Support</h3>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <Award className="h-5 w-5 text-primary mt-0.5" client:load />
+              <span>Detailed engineering reports</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Award className="h-5 w-5 text-primary mt-0.5" client:load />
+              <span>Photo documentation of damage</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Award className="h-5 w-5 text-primary mt-0.5" client:load />
+              <span>Cost estimates for adjusters</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Award className="h-5 w-5 text-primary mt-0.5" client:load />
+              <span>Direct adjuster communication</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ContentSection>
+
+    <!-- Final CTA -->
+    <CalloutBox 
+      type="call" 
+      title="Don't Wait for Wall Failure"
+    >
+      <div class="text-center">
+        <p class="text-xl mb-4">
+          Early intervention saves thousands. Our structural engineers provide free assessments 
+          to evaluate your wall condition and recommend the most cost-effective solution.
+        </p>
+        <div class="bg-white/20 backdrop-blur rounded-lg p-6 max-w-2xl mx-auto">
+          <p class="text-2xl font-bold mb-2">24/7 Emergency Response</p>
+          <p class="text-3xl font-bold mb-4">(437) 545-0067</p>
+          <p class="text-sm">
+            Average response time: 45 minutes in Toronto<br />
+            Free structural assessment • Insurance assistance • Financing available
+          </p>
+        </div>
+      </div>
+    </CalloutBox>
+
+    <!-- Related Services -->
+    <ServiceLinks 
+      title="Related Foundation Services"
+      subtitle="Comprehensive structural solutions"
+      links={pageData.relatedServices}
+      variant="featured"
+      showImages={true}
+    />
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>

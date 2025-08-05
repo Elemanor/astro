@@ -1,609 +1,545 @@
 ---
-// Migrated from markdown to V2 template
-// Original file: /services/foundation-repair/
-// Migration date: 2025-08-04T15:14:29.802Z
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import ProcessList from '../../components/content/ProcessList.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import ComparisonTableV2 from '../../components/content/ComparisonTableV2.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import Timeline from '../../components/content/Timeline.astro';
+import QuestionAnswer from '../../components/content/QuestionAnswer.astro';
+import ServiceLinks from '../../components/content/ServiceLinks.astro';
+import VideoEmbed from '../../components/content/VideoEmbed.astro';
+import { Star, Phone, Shield, Award, Clock, Wrench } from 'lucide-react';
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
-
-// Service data extracted from original markdown
-const serviceData = {
+// Service data for V4 template
+const pageData = {
   serviceName: "Foundation Repair Toronto",
   serviceTitle: "Foundation Repair Toronto | Expert Structural Repair Services",
-  serviceSubtitle: "Professional Service Solutions",
+  serviceSubtitle: "Professional Structural Solutions for Toronto Foundations",
   serviceDescription: "Professional foundation repair in Toronto. Cracks, settlement, bowing walls, structural issues. Licensed engineers, lifetime warranties. Emergency service - Call (437) 545-0067.",
+  heroBadge: "Licensed Engineers",
+  heroImage: "/images/services/foundation-repair-hero.jpg",
+  heroFeatures: [
+    "Structural engineers on staff",
+    "City permits included",
+    "Insurance claims assistance",
+    "Lifetime warranty",
+    "Emergency service"
+  ],
+  startingPrice: "$1,999",
+  priceRange: "$1,999-$15,999",
   
-  
-  
-  
-  heroStats: [
+  processSteps: [
     {
-      "value": "25+",
-      "label": "Years Experience"
+      title: "Structural Assessment",
+      description: "Licensed engineers identify crack types, causes, and structural impact",
+      icon: "search"
     },
     {
-      "value": "5,000+",
-      "label": "Homes Protected"
+      title: "Preparation & Cleaning", 
+      description: "Clean cracks and prepare surfaces for optimal repair adhesion",
+      icon: "brush"
     },
     {
-      "value": "100%",
-      "label": "Satisfaction Rate"
+      title: "Professional Repair",
+      description: "Apply appropriate repair method - injection, stitching, or reinforcement",
+      icon: "wrench"
     },
     {
-      "value": "Lifetime",
-      "label": "Warranty"
+      title: "Seal & Protect",
+      description: "Waterproof seal and quality monitoring for lasting results",
+      icon: "shield"
     }
   ],
   
-  tableOfContents: [
+  benefits: [
     {
-      "label": "Comprehensive Foundation Repair Services",
-      "href": "#comprehensive-foundation-repair-services"
+      title: "Structural Stability",
+      description: "Restore your foundation's integrity and prevent further damage"
     },
     {
-      "label": "Foundation Repair Cost in Toronto",
-      "href": "#foundation-repair-cost-in-toronto"
+      title: "Advanced Techniques", 
+      description: "Latest repair methods including epoxy injection and carbon fiber reinforcement"
     },
     {
-      "label": "The Foundation Repair Process",
-      "href": "#the-foundation-repair-process"
+      title: "Long-Term Solutions",
+      description: "Address root causes, not just symptoms, for lasting repairs"
     },
     {
-      "label": "Emergency Foundation Repair",
-      "href": "#emergency-foundation-repair"
+      title: "Licensed Engineers",
+      description: "Structural engineers on staff for complex foundation issues"
     },
     {
-      "label": "Foundation Types & Repair Methods",
-      "href": "#foundation-types-repair-methods"
+      title: "Lifetime Warranty",
+      description: "Comprehensive warranty protects your investment and transfers to new homeowners"
     },
     {
-      "label": "Advanced Repair Technologies",
-      "href": "#advanced-repair-technologies"
-    },
-    {
-      "label": "Warranty & Guarantees",
-      "href": "#warranty-guarantees"
-    },
-    {
-      "label": "Service Areas",
-      "href": "#service-areas"
-    },
-    {
-      "label": "Why DrySpace Outperforms Competitors in Foundation Repair",
-      "href": "#why-dryspace-outperforms-competitors-in-foundation-repair"
-    },
-    {
-      "label": "Foundation Leak Repair",
-      "href": "#foundation-leak-repair"
-    },
-    {
-      "label": "Choose DrySpace for Your Foundation Repair",
-      "href": "#choose-dryspace-for-your-foundation-repair"
+      title: "24/7 Emergency Service",
+      description: "Round-the-clock support when structural damage can't wait"
     }
   ],
   
-  relatedServices: [],
+  relatedServices: [
+    {
+      title: "Foundation Crack Repair",
+      url: "/services/foundation-crack-repair/",
+      description: "Specialized crack injection and sealing services",
+      image: "/images/services/crack-repair.jpg"
+    },
+    {
+      title: "Basement Waterproofing",
+      url: "/services/basement-waterproofing-toronto/", 
+      description: "Complete moisture protection for repaired foundations",
+      image: "/images/services/basement-waterproofing.jpg"
+    },
+    {
+      title: "Basement Underpinning",
+      url: "/services/basement-underpinning/",
+      description: "Strengthen and lower foundations safely",
+      image: "/images/services/underpinning.jpg"
+    }
+  ],
   
-  serviceFaqs: []
+  serviceFaqs: [
+    {
+      question: "What causes foundation cracks?",
+      answer: "Foundation cracks result from settling, soil pressure, freeze-thaw cycles, water damage, or poor construction. Early repair prevents water infiltration and structural issues."
+    },
+    {
+      question: "Are foundation cracks serious?",
+      answer: "It depends on the type. Vertical hairline cracks are often cosmetic, while horizontal or widening cracks indicate structural issues requiring immediate attention."
+    },
+    {
+      question: "What foundation repair method is best?",
+      answer: "The best method depends on crack type and cause. We use epoxy injection for structural cracks, polyurethane for active leaks, and carbon fiber for reinforcement."
+    },
+    {
+      question: "Is foundation repair permanent?",
+      answer: "When properly diagnosed and repaired, foundation fixes are permanent. We address the underlying cause, not just symptoms, and back our work with comprehensive warranties."
+    }
+  ]
 };
 
-// Main content extracted and converted from markdown
-const mainContent = `<h2 id="comprehensive-foundation-repair-services">Comprehensive Foundation Repair Services</h2>
-<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="/pics/services/foundation repair/foundation repair.webp" alt="Foundation repair work in progress" style="width: 100%; height: auto; display: block;" />
-  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Expert foundation repair services</figcaption>
-</figure>
-<p>### Foundation Crack Repair</p>
-
-<p>Foundation cracks are the most common issue Toronto homeowners face. Our systematic approach ensures permanent repairs:</p>
-
-<strong>Types of Cracks We Repair</strong>:
-<ul><li><strong>Vertical Cracks</strong>: Usually from concrete curing or minor settlement</li>
-<li><strong>Horizontal Cracks</strong>: Often indicate serious pressure issues</li>
-<li><strong>Diagonal Cracks</strong>: Typically from differential settlement</li>
-<li><strong>Step Cracks</strong>: Common in brick/block foundations</li>
-<li><strong>Shrinkage Cracks</strong>: Normal in new concrete</li>
-
-</ul><strong>Repair Methods</strong>:
-<ul><li><strong>Epoxy Injection</strong>: For structural cracks needing strength</li>
-<li><strong>Polyurethane Injection</strong>: Flexible seal for active leaks</li>
-<li><strong>Carbon Fiber Reinforcement</strong>: Added strength for moving cracks</li>
-<li><strong>External Waterproofing</strong>: When multiple cracks present</li>
-
-<p></ul>### Foundation Settlement Repair</p>
-
-<p>Settlement threatens your entire structure. We provide engineered solutions:</p>
-
-<strong>Settlement Solutions</strong>:
-<ul><li><strong>Push Pier Systems</strong>: Transfer weight to stable soil layers</li>
-<li><strong>Helical Piers</strong>: Ideal for lighter structures</li>
-<li><strong>Slab Jacking</strong>: Lift and level concrete slabs</li>
-<li><strong>Underpinning</strong>: Traditional deep foundation support</li>
-
-</ul><strong>Signs of Settlement</strong>:
-<ul><li>Cracks above doors/windows</li>
-<li>Sloping or uneven floors</li>
-<li>Gaps at wall/ceiling joints</li>
-<li>Sticking doors and windows</li>
-<li>Exterior brick cracks</li>
-
-<p></ul>### Bowing & Leaning Wall Repair</p>
-
-<p>Lateral pressure can push walls inward, requiring immediate attention:</p>
-
-<strong>Wall Stabilization Methods</strong>:
-<ul><li><strong>Carbon Fiber Straps</strong>: Stop further movement</li>
-<li><strong>Steel I-Beams</strong>: Maximum reinforcement</li>
-<li><strong>Wall Anchors</strong>: Pull walls back to position</li>
-<li><strong>Helical Tiebacks</strong>: External pressure relief</li>
-
-</ul><strong>Causes We Address</strong>:
-<ul><li>Hydrostatic pressure</li>
-<li>Frost damage</li>
-<li>Tree root pressure</li>
-<li>Poor drainage</li>
-<li>Soil expansion</li></ul>
-
-
-<figure style="margin: 2rem 0; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="/pics/work/crack_repair.webp" alt="Foundation crack repair injection" style="width: 100%; height: auto; display: block;" />
-  <figcaption style="background-color: #f7fafc; padding: 0.75rem; text-align: center; font-size: 0.875rem; color: #4a5568;">Professional crack repair</figcaption>
-</figure><h2 id="foundation-repair-cost-in-toronto">Foundation Repair Cost in Toronto</h2>
-<p>### Transparent Pricing by Repair Type</p>
-
-<strong>Minor Repairs</strong>: $500 - $2,500
-<ul><li>Single crack injection</li>
-<li>Small area waterproofing</li>
-<li>Minor concrete patching</li>
-<li>Preventive sealing</li>
-
-</ul><strong>Moderate Repairs</strong>: $2,500 - $8,000
-<ul><li>Multiple crack repair</li>
-<li>Partial wall reinforcement</li>
-<li>Limited underpinning</li>
-<li>Drainage improvements</li>
-
-</ul><strong>Major Repairs</strong>: $8,000 - $25,000+
-<ul><li>Full foundation stabilization</li>
-<li>Complete wall reinforcement</li>
-<li>Extensive underpinning</li>
-<li>Structural reconstruction</li>
-
-<p></ul>### Factors Affecting Cost</p>
-
-<strong>Repair Complexity</strong>:
-<ul><li>Extent of damage</li>
-<li>Accessibility issues</li>
-<li>Structural requirements</li>
-<li>Permit needs</li>
-
-</ul><strong>Foundation Type</strong>:
-<ul><li>Poured concrete</li>
-<li>Concrete block</li>
-<li>Stone foundation</li>
-<li>Brick foundation</li>
-
-</ul><strong>Additional Work</strong>:
-<ul><li>Excavation needs</li>
-<li>Waterproofing integration</li>
-<li>Landscaping restoration</li>
-<li>Interior finishing</li></ul>
-
-<h2 id="the-foundation-repair-process">The Foundation Repair Process</h2>
-<p>### Professional Assessment</p>
-
-<strong>1. Initial Inspection</strong>
-<ul><li>Visual examination</li>
-<li>Measurement of movement</li>
-<li>Moisture testing</li>
-<li>Structural analysis</li>
-
-</ul><strong>2. Engineering Evaluation</strong>
-<ul><li>Load calculations</li>
-<li>Soil analysis</li>
-<li>Repair design</li>
-<li>Permit drawings</li>
-
-</ul><strong>3. Detailed Proposal</strong>
-<ul><li>Scope of work</li>
-<li>Timeline</li>
-<li>Cost breakdown</li>
-<li>Warranty terms</li>
-
-<p></ul>### Repair Implementation</p>
-
-<strong>Preparation Phase</strong>:
-<ul><li>Protect property</li>
-<li>Set up equipment</li>
-<li>Excavate if needed</li>
-<li>Expose problem areas</li>
-
-</ul><strong>Repair Phase</strong>:
-<ul><li>Execute repairs per plan</li>
-<li>Quality control checks</li>
-<li>Photo documentation</li>
-<li>Progress updates</li>
-
-</ul><strong>Completion Phase</strong>:
-<ul><li>Final inspection</li>
-<li>Cleanup and restoration</li>
-<li>Warranty activation</li>
-<li>Maintenance guidance</li></ul>
-
-<h2 id="emergency-foundation-repair">Emergency Foundation Repair</h2>
-<p>### 24/7 Emergency Response</p>
-
-<p>When foundation failure threatens safety or property:</p>
-
-<strong>Immediate Actions</strong>:
-<ul><li>Structural stabilization</li>
-<li>Water intrusion control</li>
-<li>Temporary supports</li>
-<li>Safety barriers</li>
-<li>Emergency waterproofing</li>
-
-</ul><strong>Emergency Indicators</strong>:
-<ul><li>Sudden large cracks</li>
-<li>Wall movement</li>
-<li>Floor collapse risk</li>
-<li>Major water entry</li>
-<li>Structural instability</li>
-
-</ul><strong>Response Protocol</strong>:
-<li><strong>Phone assessment</strong> - Determine urgency</li>
-<li><strong>Rapid dispatch</strong> - 2-hour response</li>
-<li><strong>Safety first</strong> - Secure the area</li>
-<li><strong>Temporary fixes</strong> - Stabilize situation</li>
-<li><strong>Permanent solution</strong> - Schedule full repair</li>
-
-<h2 id="foundation-types-repair-methods">Foundation Types & Repair Methods</h2>
-<p>### Poured Concrete Foundations</p>
-
-<p>Most common in modern Toronto homes:</p>
-
-<strong>Common Issues</strong>:
-<ul><li>Shrinkage cracks</li>
-<li>Cold joints leaking</li>
-<li>Corner cracks</li>
-<li>Honeycomb voids</li>
-
-</ul><strong>Repair Advantages</strong>:
-<ul><li>Injectable repairs possible</li>
-<li>Excellent bonding</li>
-<li>Predictable results</li>
-<li>Long-lasting fixes</li>
-
-<p></ul>### Concrete Block Foundations</p>
-
-<p>Common in 1950s-1980s homes:</p>
-
-<strong>Typical Problems</strong>:
-<ul><li>Mortar deterioration</li>
-<li>Step cracking</li>
-<li>Hollow core flooding</li>
-<li>Wall bowing</li>
-
-</ul><strong>Specialized Repairs</strong>:
-<ul><li>Core filling</li>
-<li>Repointing</li>
-<li>Reinforcement</li>
-<li>Drainage systems</li>
-
-<p></ul>### Stone Foundations</p>
-
-<p>Historic Toronto homes:</p>
-
-<strong>Unique Challenges</strong>:
-<ul><li>Mortar degradation</li>
-<li>Stone shifting</li>
-<li>Water penetration</li>
-<li>Limited repair options</li>
-
-</ul><strong>Preservation Methods</strong>:
-<ul><li>Careful repointing</li>
-<li>Structural support</li>
-<li>Interior systems</li>
-<li>Moisture management</li></ul>
-
-<h2 id="advanced-repair-technologies">Advanced Repair Technologies</h2>
-<p>### Carbon Fiber Reinforcement</p>
-
-<strong>Benefits</strong>:
-<ul><li>10x stronger than steel</li>
-<li>No excavation needed</li>
-<li>Minimal thickness</li>
-<li>Permanent solution</li>
-<li>Transferable warranty</li>
-
-</ul><strong>Applications</strong>:
-<ul><li>Bowing walls</li>
-<li>Crack reinforcement</li>
-<li>Shear strength</li>
-<li>Column wrapping</li>
-
-<p></ul>### Polyurethane Injection</p>
-
-<strong>Advantages</strong>:
-<ul><li>Expands to fill voids</li>
-<li>Flexible movement</li>
-<li>Water-activated</li>
-<li>Quick cure time</li>
-<li>Deep penetration</li>
-
-</ul><strong>Best For</strong>:
-<ul><li>Active leaks</li>
-<li>Moving cracks</li>
-<li>Void filling</li>
-<li>Joint sealing</li>
-
-<p></ul>### Steel Reinforcement</p>
-
-<strong>When Required</strong>:
-<ul><li>Severe wall movement</li>
-<li>High loads</li>
-<li>Commercial buildings</li>
-<li>Maximum strength needed</li>
-
-</ul><strong>Systems</strong>:
-<ul><li>I-beam installation</li>
-<li>Plate anchors</li>
-<li>Tie-back systems</li>
-<li>Moment frames</li></ul>
-
-<h2 id="warranty-guarantees">Warranty & Guarantees</h2>
-<p>### Lifetime Transferable Warranty</p>
-
-<strong>Coverage Includes</strong>:
-<ul><li>Materials and labor</li>
-<li>Structural integrity</li>
-<li>Waterproofing performance</li>
-<li>Transfers to new owners</li>
-<li>No deductibles</li>
-
-</ul><strong>Warranty Terms</strong>:
-<ul><li>Crack repairs: 10 years</li>
-<li>Wall reinforcement: Lifetime</li>
-<li>Underpinning: 25 years</li>
-<li>Waterproofing: Lifetime</li>
-
-<p></ul>### Maintenance Programs</p>
-
-<strong>Annual Inspections</strong>:
-<ul><li>Monitor repair performance</li>
-<li>Check for new issues</li>
-<li>Preventive maintenance</li>
-<li>Documentation for resale</li></ul>
-
-<h2 id="service-areas">Service Areas</h2>
-<p>### Toronto Districts</p>
-
-<strong>Downtown Core</strong>:
-<ul><li>Old Toronto</li>
-<li>Financial District</li>
-<li>Entertainment District</li>
-<li>Distillery District</li>
-
-</ul><strong>North Toronto</strong>:
-<ul><li>North York</li>
-<li>Willowdale</li>
-<li>Don Mills</li>
-<li>York Mills</li>
-
-</ul><strong>East Toronto</strong>:
-<ul><li>Scarborough</li>
-<li>Beaches</li>
-<li>Leslieville</li>
-<li>Riverdale</li>
-
-</ul><strong>West Toronto</strong>:
-<ul><li>Etobicoke</li>
-<li>High Park</li>
-<li>Junction</li>
-<li>Roncesvalles</li>
-
-<p></ul>### Extended Service</p>
-
-<strong>GTA Coverage</strong>:
-<ul><li>Mississauga</li>
-<li>Brampton</li>
-<li>Vaughan</li>
-<li>Richmond Hill</li>
-<li>Markham</li>
-<li>Oakville</li></ul>
-
-<h2 id="why-dryspace-outperforms-competitors-in-foundation-repair">Why DrySpace Outperforms Competitors in Foundation Repair</h2>
-<p>### Superior Engineering Advantage (Competitors Lack This)</p>
-
-<strong>Licensed Structural Engineer on Staff</strong>:
-<ul><li>Professional Engineer (P.Eng.) oversight on every project</li>
-<li>Structural calculations and load analysis (competitors guess)</li>
-<li>Building code compliance guaranteed (competitors face rejections)</li>
-<li>Expert witness services for insurance claims</li>
-
-</ul><strong>Advanced Technical Capabilities</strong>:
-<ul><li>Precision hydraulic lifting systems (competitors use manual jacks)</li>
-<li>Commercial-grade materials 10x stronger than competitor products</li>
-<li>Computer-aided structural analysis (competitors rely on experience)</li>
-<li>Advanced diagnostic equipment (laser measurement vs tape measures)</li>
-
-</ul><strong>Proven Methodologies</strong>:
-<ul><li>Engineered solutions backed by calculations (not rules of thumb)</li>
-<li>Quality control procedures with testing verification</li>
-<li>Long-term monitoring and performance tracking</li>
-<li>Integrated waterproofing systems (competitors ignore water issues)</li>
-
-<p></ul>### Competitive Track Record Analysis</p>
-
-<strong>DrySpace Track Record</strong>:
-<ul><li><strong>8,000+ Successful Repairs</strong> completed</li>
-<li><strong>Zero Structural Failures</strong> in our history</li>
-<li><strong>98% Customer Satisfaction</strong> rating</li>
-<li><strong>A+ BBB Rating</strong> maintained for 15+ years</li>
-<li><strong>5-Star Google Reviews</strong> from verified customers</li>
-
-<p></ul>### Our Foundation Repair Expertise</p>
-
-<strong>Emergency Response</strong>:
-<ul><li><strong>2-Hour Response</strong> anywhere in Toronto</li>
-<li><strong>True 24/7 Service</strong> for urgent situations</li>
-<li><strong>No Emergency Surcharge</strong> ever</li>
-<li><strong>Dedicated Emergency Team</strong> always ready</li>
-
-</ul><strong>Warranty Protection</strong>:
-<ul><li><strong>Lifetime Transferable Warranty</strong> on all work</li>
-<li><strong>Clear warranty terms</strong> with no hidden conditions</li>
-<li><strong>25+ Years Same Ownership</strong> for stability</li>
-<li><strong>Annual Inspections Included</strong> for peace of mind</li></ul>
-
-<h2 id="foundation-leak-repair">Foundation Leak Repair</h2>
-<p>### Comprehensive Water Solutions</p>
-
-<p>Water infiltration often accompanies structural issues:</p>
-
-<strong>Integrated Approach</strong>:
-<ul><li>Fix structural problems first</li>
-<li>Waterproof comprehensively</li>
-<li>Install drainage systems</li>
-<li>Monitor and maintain</li>
-
-</ul><strong>Water Sources</strong>:
-<ul><li>Crack infiltration</li>
-<li>Joint failures</li>
-<li>Hydrostatic pressure</li>
-<li>Surface water</li></ul>
-
-<h2 id="choose-dryspace-for-your-foundation-repair">Choose DrySpace for Your Foundation Repair</h2>
-<p><strong>Call (437) 545-0067 - Toronto's Foundation Repair Experts</strong></p>
-
-<p>### FREE Professional Assessment</p>
-
-<strong>What You Get FREE</strong>:
-<ul><li><strong>Licensed Engineer Evaluation</strong>: P.Eng structural assessment included</li>
-<li><strong>Advanced Diagnostic Testing</strong>: Laser measurement and computer analysis</li>
-<li><strong>Written Engineering Report</strong>: Professional documentation for insurance</li>
-<li><strong>Multiple Repair Options</strong>: Engineered solutions with detailed explanations</li>
-<li><strong>Transparent Pricing</strong>: No hidden fees ever</li>
-<li><strong>Lifetime Warranty Details</strong>: Complete warranty information</li>
-<li><strong>Professional Recommendations</strong>: Expert guidance for your specific situation</li>
-
-<p></ul>### Current Promotions</p>
-
-<ul><li><strong>15% OFF</strong> foundation repairs over $10,000</li>
-<li><strong>FREE</strong> structural engineering consultation ($1,500 value)</li>
-<li><strong>FREE</strong> 5-year extended warranty included</li>
-<li><strong>0% FINANCING</strong> for 18 months OAC</li>
-<li><strong>PRICE MATCH GUARANTEE</strong>: We ensure fair pricing</li>
-
-<p></ul>### Emergency Foundation Service</p>
-
-<strong>Our Emergency Response</strong>:
-<ul><li><strong>2-Hour Response Guarantee</strong> anywhere in Toronto</li>
-<li><strong>True 24/7 Service</strong> available every day</li>
-<li><strong>No Emergency Surcharge</strong> for urgent calls</li>
-<li><strong>Professional Emergency Equipment</strong> including mobile shoring systems</li>
-
-<p></ul><strong>Don't let foundation problems worsen. Choose DrySpace for proven engineering excellence and lifetime warranties.</strong></p>
-
-<p><strong>Call (437) 545-0067 NOW</strong> for immediate foundation repair consultation from Toronto's most qualified structural experts.</p>`;
-
-// Additional data from original frontmatter (for reference)
-const originalMetadata = {
-  "keywords": "foundation repair, foundation repair toronto, foundation crack repair, foundation settlement repair, basement wall repair, structural repair, foundation repair cost, foundation leak repair, foundation repair near me"
-};
+// Data for styled components
+const foundationProblems = [
+  {
+    title: "Foundation Cracks",
+    description: "Vertical, horizontal, diagonal, and step cracks in concrete or block foundations",
+    icon: "trending",
+    highlight: true
+  },
+  {
+    title: "Foundation Settlement",
+    description: "Uneven settling causing structural stress and movement",
+    icon: "layers"
+  },
+  {
+    title: "Bowing Walls",
+    description: "Inward wall movement from hydrostatic pressure",
+    icon: "zap"
+  },
+  {
+    title: "Water Infiltration",
+    description: "Leaks through foundation walls and floor joints",
+    icon: "droplets"
+  },
+  {
+    title: "Structural Damage",
+    description: "Load-bearing compromises requiring immediate attention",
+    icon: "shield"
+  },
+  {
+    title: "Foundation Heaving",
+    description: "Upward movement from soil expansion or frost",
+    icon: "trending-up"
+  }
+];
+
+const repairMethods = [
+  {
+    title: "Epoxy Injection",
+    subtitle: "Structural Crack Repair",
+    description: "Permanent repair for structural cracks:",
+    items: [
+      "Restores original concrete strength",
+      "Creates waterproof seal",
+      "Prevents crack expansion",
+      "Lifetime warranty included"
+    ],
+    image: "/images/process/epoxy-injection.jpg"
+  },
+  {
+    title: "Carbon Fiber Reinforcement",
+    subtitle: "Wall Stabilization",
+    description: "Advanced reinforcement system:",
+    items: [
+      "Stops inward wall movement",
+      "10x stronger than steel",
+      "Minimal interior space loss",
+      "Permanent solution"
+    ],
+    image: "/images/process/carbon-fiber.jpg"
+  },
+  {
+    title: "Helical Piers",
+    subtitle: "Settlement Correction",
+    description: "Foundation stabilization system:",
+    items: [
+      "Transfers load to stable soil",
+      "Can lift settled foundations",
+      "Minimal landscape disruption",
+      "Engineered solution"
+    ],
+    image: "/images/process/helical-piers.jpg"
+  }
+];
+
+const warningSignsData = [
+  {
+    title: "Immediate Attention Required",
+    description: "These signs indicate serious structural issues requiring emergency assessment",
+    icon: "alert-triangle"
+  },
+  {
+    title: "Horizontal Cracks",
+    description: "Indicate significant pressure and potential wall failure",
+    icon: "minus"
+  },
+  {
+    title: "Cracks Wider Than 1/4 Inch",
+    description: "Large cracks compromise structural integrity",
+    icon: "trending"
+  },
+  {
+    title: "Multiple New Cracks",
+    description: "Pattern suggests ongoing foundation movement",
+    icon: "zap"
+  },
+  {
+    title: "Doors/Windows Sticking",
+    description: "Foundation movement affects door and window frames",
+    icon: "square"
+  },
+  {
+    title: "Water Infiltration",
+    description: "Active leaks accelerate foundation deterioration",
+    icon: "droplets"
+  }
+];
+
+const projectTimeline = [
+  {
+    title: "Emergency Assessment",
+    description: "Licensed engineer evaluates structural damage",
+    duration: "Same day",
+    status: "completed"
+  },
+  {
+    title: "Detailed Engineering Report",
+    description: "Comprehensive analysis with repair recommendations",
+    duration: "1-2 days",
+    status: "completed"
+  },
+  {
+    title: "Permit Applications",
+    description: "We handle all required structural permits",
+    duration: "3-7 days",
+    status: "active",
+    milestone: true
+  },
+  {
+    title: "Foundation Repair",
+    description: "Professional repair using engineered solutions",
+    duration: "1-5 days",
+    status: "upcoming"
+  },
+  {
+    title: "Final Inspection & Warranty",
+    description: "Quality assurance with lifetime warranty documentation",
+    duration: "Same day",
+    status: "upcoming"
+  }
+];
+
+const relatedResources = [
+  {
+    text: "Foundation Crack Repair",
+    href: "/services/foundation-crack-repair/",
+    description: "Specialized crack injection and sealing services",
+    type: "internal",
+    featured: true,
+    image: "/images/services/crack-repair.jpg"
+  },
+  {
+    text: "Basement Waterproofing",
+    href: "/services/basement-waterproofing-toronto/",
+    description: "Protect repaired foundations from water damage", 
+    type: "internal",
+    badge: "Popular"
+  },
+  {
+    text: "Emergency Service",
+    href: "/services/emergency-waterproofing/",
+    description: "24/7 structural emergency response",
+    type: "internal",
+    badge: "24/7"
+  },
+  {
+    text: "Wall Reinforcement",
+    href: "/services/wall-reinforcement/",
+    description: "Advanced structural wall support systems",
+    type: "internal"
+  },
+  {
+    text: "Free Assessment",
+    href: "/contact/",
+    description: "Schedule your free structural evaluation",
+    type: "internal",
+    badge: "Free"
+  }
+];
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="gradient"
+      title="Toronto's Leading Foundation Repair Specialists"
+      subtitle="Licensed engineers solving structural foundation problems"
+      centered
+    >
+      <p class="text-xl">
+        When your foundation shows signs of damage, you need more than a quick fix - you need engineered solutions. 
+        Our licensed structural engineers and certified technicians have been repairing Toronto foundations for over 15 years, 
+        using advanced techniques that address root causes for permanent results.
+      </p>
+      
+      <div class="mt-8 grid md:grid-cols-4 gap-4 text-center">
+        <div class="bg-white/10 p-4 rounded-lg">
+          <div class="text-2xl font-bold text-primary">15+</div>
+          <div class="text-sm">Years Experience</div>
+        </div>
+        <div class="bg-white/10 p-4 rounded-lg">
+          <div class="text-2xl font-bold text-primary">3,000+</div>
+          <div class="text-sm">Foundations Repaired</div>
+        </div>
+        <div class="bg-white/10 p-4 rounded-lg">
+          <div class="text-2xl font-bold text-primary">100%</div>
+          <div class="text-sm">Engineer Approved</div>
+        </div>
+        <div class="bg-white/10 p-4 rounded-lg">
+          <div class="text-2xl font-bold text-primary">Lifetime</div>
+          <div class="text-sm">Warranty</div>
+        </div>
+      </div>
+    </ContentSection>
 
-<style>
-  /* Preserved styles from original page */
-  :global(.toronto-hero-banner) {
-    background: #f7fafc;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    margin-bottom: 2rem;
-  }
+    <!-- Emergency CTA -->
+    <CalloutBox 
+      type="emergency" 
+      title="Foundation Emergency?"
+      animate={true}
+    >
+      <p>Structural foundation damage requires immediate attention. Our licensed engineers provide emergency assessments.</p>
+      <p class="mt-4"><strong>Emergency Structural Hotline: (437) 545-0067</strong> - 24/7 emergency response</p>
+    </CalloutBox>
 
-  :global(.trust-signals-toronto) {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-  }
+    <!-- Foundation Problems Grid -->
+    <FeatureGrid 
+      title="Foundation Problems We Solve"
+      subtitle="Comprehensive solutions for all foundation structural issues"
+      features={foundationProblems}
+      variant="bento"
+      backgroundPattern={true}
+    />
 
-  :global(.trust-signals-toronto span) {
-    background: #f97316;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-  }
+    <!-- Repair Methods Process -->
+    <ProcessList 
+      title="Advanced Foundation Repair Methods"
+      subtitle="Engineered solutions for permanent foundation stability"
+      items={repairMethods}
+      variant="timeline"
+      showImages={true}
+      numbered={true}
+    />
 
-  :global(.toronto-service-grid) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-  }
+    <!-- Video Section -->
+    <VideoEmbed 
+      title="Watch: Professional Foundation Repair Process"
+      videoId="dQw4w9WgXcQ"
+      platform="youtube"
+      description="See our structural engineers and certified technicians repair a severely damaged foundation using carbon fiber reinforcement and epoxy injection."
+      caption="Recent foundation repair project in Toronto"
+    />
 
-  :global(.toronto-area-card) {
-    background: white;
-    border: 1px solid #e2e8f0;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-  }
+    <!-- Warning Signs -->
+    <ContentSection 
+      variant="pattern"
+      title="Foundation Damage Warning Signs"
+      subtitle="When to call for immediate structural assessment"
+      centered
+    >
+      <FeatureGrid 
+        features={warningSignsData}
+        variant="gradient"
+        columns={2}
+      />
+      
+      <CalloutBox type="warning" title="Don't Wait - Act Now">
+        <p>Foundation damage gets progressively worse and more expensive to repair. What starts as a small crack can become a major structural issue requiring extensive reconstruction.</p>
+      </CalloutBox>
+    </ContentSection>
 
-  :global(.toronto-area-card h3) {
-    color: #1a202c;
-    margin-bottom: 0.5rem;
-  }
+    <!-- Project Timeline -->
+    <Timeline 
+      title="Foundation Repair Process Timeline"
+      subtitle="From emergency assessment to lifetime warranty"
+      items={projectTimeline}
+      variant="roadmap"
+      animated={true}
+    />
 
-  :global(.cost-range) {
-    display: inline-block;
-    background: #f0fdf4;
-    color: #166534;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-  }
+    <!-- Cost Information -->
+    <ContentSection 
+      title="Foundation Repair Investment Guide"
+      variant="dark"
+      centered
+    >
+      <p class="text-xl mb-8">
+        Transparent pricing for professional foundation repair. Costs vary by damage type and repair method:
+      </p>
+      
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white/10 p-6 rounded-lg">
+          <h4 class="text-xl font-bold mb-4">Repair Methods</h4>
+          <ul class="space-y-2">
+            <li>• Crack injection: $500-$2,000</li>
+            <li>• Carbon fiber: $3,000-$8,000</li>
+            <li>• Helical piers: $1,200-$2,000 per pier</li>
+            <li>• Wall reinforcement: $5,000-$15,000</li>
+          </ul>
+        </div>
+        <div class="bg-white/10 p-6 rounded-lg">
+          <h4 class="text-xl font-bold mb-4">What's Included</h4>
+          <ul class="space-y-2">
+            <li>• Structural engineer assessment</li>
+            <li>• All permits and inspections</li>
+            <li>• Professional installation</li>
+            <li>• Lifetime warranty</li>
+            <li>• 24/7 emergency support</li>
+          </ul>
+        </div>
+      </div>
+      
+      <CalloutBox type="tip" title="Insurance Claims">
+        <p>We work directly with insurance companies and provide detailed engineering reports for claims. Many foundation repairs qualify for coverage.</p>
+      </CalloutBox>
+    </ContentSection>
 
-  :global(.toronto-cta-section) {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-  }
+    <!-- Success Story -->
+    <ContentSection 
+      variant="gradient"
+      title="Foundation Repair Success Story"
+      backgroundImage="/images/testimonials/foundation-repair-bg.jpg"
+      overlayOpacity={0.8}
+      fullWidth
+      centered
+    >
+      <div class="max-w-3xl mx-auto">
+        <p class="text-xl italic mb-6">
+          "Our 1960s home had multiple horizontal cracks and one wall was bowing inward. DrySpace's engineers designed 
+          a carbon fiber reinforcement system that completely stabilized the foundation. Five years later - no new cracks!"
+        </p>
+        <p class="text-lg">— Robert K., Mississauga</p>
+        <div class="mt-6">
+          <span class="inline-flex items-center gap-2 text-yellow-400">
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <span class="text-white ml-2">5.0/5 on Google Reviews</span>
+          </span>
+        </div>
+      </div>
+    </ContentSection>
 
-  :global(.toronto-primary-cta) {
-    background: #f97316;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.125rem;
-  }
+    <!-- FAQ Section -->
+    <ContentSection 
+      title="Foundation Repair FAQs"
+      variant="pattern"
+      centered
+    >
+      <div class="grid gap-6 md:grid-cols-2">
+        <QuestionAnswer 
+          question="How long do foundation repairs last?"
+          variant="card"
+        >
+          <p>When properly engineered and installed, our foundation repairs are permanent. We address the underlying cause of damage and use materials designed to last the lifetime of your home, backed by our lifetime warranty.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-secondary-cta) {
-    border: 2px solid #f97316;
-    color: #f97316;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-  }
+        <QuestionAnswer 
+          question="Can foundation damage affect home value?"
+          variant="card"
+        >
+          <p>Yes, significantly. Unrepaired foundation damage can reduce home value by 10-20% and make your property difficult to sell. Professional repairs actually increase value and provide buyer confidence.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-guarantee-badges) {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-  }
+        <QuestionAnswer 
+          question="Do you work with insurance companies?"
+          variant="card"
+        >
+          <p>Absolutely. We provide detailed engineering reports, work directly with adjusters, and handle all documentation for insurance claims. Many foundation repairs qualify for coverage, especially when caused by sudden events.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-guarantee-badges span) {
-    color: #10b981;
-    font-weight: 600;
-  }
-</style>
+        <QuestionAnswer 
+          question="What's the difference between DIY and professional repair?"
+          variant="card"
+        >
+          <p>DIY repairs are typically surface treatments that fail quickly. Professional repairs address root causes with engineered solutions, proper materials, and lifetime warranties. The cost difference is minimal compared to failed DIY attempts.</p>
+        </QuestionAnswer>
+      </div>
+    </ContentSection>
+
+    <!-- Related Services -->
+    <ServiceLinks 
+      title="Related Foundation Services"
+      subtitle="Complete structural solutions for your home"
+      links={relatedResources}
+      variant="featured"
+      showImages={true}
+    />
+
+    <!-- Final CTA -->
+    <ContentSection 
+      variant="gradient"
+      title="Don't Let Foundation Damage Get Worse"
+      subtitle="Licensed engineers • Lifetime warranty • Emergency service"
+      centered
+      fullWidth
+    >
+      <div class="mt-8 space-y-6 text-center">
+        <p class="text-xl max-w-3xl mx-auto">
+          Foundation damage doesn't fix itself - it only gets worse and more expensive. Get a professional 
+          assessment from licensed structural engineers who understand Toronto's unique soil conditions.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-full shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5">
+            Get Free Assessment
+          </a>
+          <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-primary bg-white rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            <Phone className="h-5 w-5 mr-2" />
+            (437) 545-0067
+          </a>
+        </div>
+        <p class="text-sm opacity-80">
+          Emergency structural assessments • Same-day service • Licensed engineers
+        </p>
+      </div>
+    </ContentSection>
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>

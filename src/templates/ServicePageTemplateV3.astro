@@ -147,16 +147,22 @@ const steps = processSteps.length > 0 ? processSteps : defaultSteps;
   </Section>
   
   <!-- Main Content -->
-  <Section>
+  <Section background="white" className="py-16">
     <div class="max-w-4xl mx-auto">
       <div class="prose prose-lg max-w-none
         prose-headings:font-bold prose-headings:text-foreground
-        prose-p:text-foreground prose-p:leading-relaxed
+        prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-border prose-h2:pb-4
+        prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-primary
+        prose-p:text-foreground prose-p:leading-relaxed prose-p:mb-6
         prose-a:text-primary prose-a:underline-offset-4 hover:prose-a:underline
         prose-strong:text-foreground prose-strong:font-semibold
-        prose-ul:list-disc prose-ul:pl-6
-        prose-ol:list-decimal prose-ol:pl-6
-        prose-img:rounded-lg prose-img:shadow-lg
+        prose-ul:list-disc prose-ul:pl-6 prose-ul:my-6 prose-ul:space-y-2
+        prose-ol:list-decimal prose-ol:pl-6 prose-ol:my-6 prose-ol:space-y-2
+        prose-li:text-foreground prose-li:leading-relaxed
+        prose-img:rounded-lg prose-img:shadow-lg prose-img:my-8
+        prose-hr:border-border prose-hr:my-12
+        prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-6 prose-blockquote:italic
+        [&>h2]:first-of-type:mt-0
       ">
         <slot name="mainContent" />
       </div>
@@ -326,3 +332,54 @@ const steps = processSteps.length > 0 ? processSteps : defaultSteps;
     </div>
   </Section>
 </MainLayout>
+
+<style>
+  /* Enhanced styling for markdown content sections */
+  .prose h2 {
+    position: relative;
+    padding-left: 1rem;
+  }
+  
+  .prose h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background-color: hsl(var(--primary));
+    border-radius: 2px;
+  }
+  
+  /* Create visual sections with alternating backgrounds */
+  .prose > h2 {
+    margin-top: 4rem;
+    padding-top: 2rem;
+  }
+  
+  /* Style for better section separation */
+  .prose > h3 {
+    font-weight: 600;
+    color: hsl(var(--foreground));
+    margin-top: 2rem;
+  }
+  
+  /* Enhanced list styling */
+  .prose ul li::marker {
+    color: hsl(var(--primary));
+  }
+  
+  .prose ol li::marker {
+    color: hsl(var(--primary));
+    font-weight: 600;
+  }
+  
+  /* Card-like sections for certain content */
+  .prose blockquote {
+    background-color: hsl(var(--muted));
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+</style>

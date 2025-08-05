@@ -18,16 +18,19 @@ const pageData = {
   serviceTitle: "Foundation Crack Repair Toronto | Licensed Experts | Same-Day Service",
   serviceSubtitle: "Stop Water Leaks Permanently with Professional Crack Injection",
   serviceDescription: "Expert foundation crack repair in Toronto. Polyurethane & epoxy injection, 25-year warranty, same-day service. Stop leaks permanently. Call (437) 545-0067.",
-  heroBadge: "Licensed & Insured",
-  heroImage: "/images/services/crack-repair-hero.jpg",
-  heroFeatures: [
-    "Same-day service",
-    "25-year warranty", 
-    "Interior & exterior repairs",
-    "Free inspection"
-  ],
-  startingPrice: "$500",
-  priceRange: "$500-$1,500",
+  heroProps: {
+    serviceName: "Foundation Crack Repair",
+    subtitle: "Stop Water Infiltration at the Source",
+    description: "Professional crack injection services with 25-year warranty. Same-day emergency repairs available.",
+    image: "/images/services/crack-repair-hero.jpg",
+    badge: "Licensed & Insured",
+    features: [
+      "Same-day service",
+      "25-year warranty",
+      "Interior & exterior repairs",
+      "Free inspection"
+    ]
+  },
   processSteps: [
     {
       title: "Crack Assessment",
@@ -71,39 +74,36 @@ const pageData = {
   relatedServices: [
     {
       title: "Basement Waterproofing",
-      url: "/services/basement-waterproofing/",
-      description: "Complete moisture protection for your basement",
-      image: "/images/services/basement-waterproofing.jpg"
+      href: "/services/basement-waterproofing/",
+      description: "Complete moisture protection for your basement"
     },
     {
       title: "Foundation Repair",
-      url: "/services/foundation-repair/",
-      description: "Structural solutions for settling foundations",
-      image: "/images/services/foundation-repair.jpg"
+      href: "/services/foundation-repair/",
+      description: "Structural solutions for settling foundations"
     },
     {
       title: "Exterior Waterproofing",
-      url: "/services/exterior-waterproofing/",
-      description: "Comprehensive exterior water management",
-      image: "/images/services/exterior-waterproofing.jpg"
+      href: "/services/exterior-waterproofing/",
+      description: "Comprehensive exterior water management"
     }
   ],
   serviceFaqs: [
     {
-      question: "How do I know if a foundation crack is serious?",
-      answer: "Serious foundation cracks typically show these characteristics: Width greater than 1/4 inch, horizontal orientation (indicates pressure), active water leakage, visible wall movement or bowing, multiple cracks appearing suddenly. Any crack allowing water entry needs immediate attention to prevent mold growth and structural damage."
+      question: "How long does crack repair take?",
+      answer: "Most crack repairs are completed in 2-4 hours. The injection material cures within 24-48 hours for full strength."
     },
     {
-      question: "What causes foundation cracks?",
-      answer: "Common causes in Toronto homes include: Hydrostatic pressure from water-saturated soil, freeze-thaw cycles expanding and contracting soil, settlement from inadequate soil compaction, tree roots creating pressure or removing moisture, poor drainage directing water toward foundation. Our repair process includes identifying and addressing the root cause."
+      question: "What's the difference between polyurethane and epoxy?",
+      answer: "Polyurethane is flexible and ideal for active leaks and cracks that may move. Epoxy is rigid and best for structural repairs of dormant cracks."
     },
     {
-      question: "How long will the repair last?",
-      answer: "Our professional repairs are designed to last the lifetime of your home. Polyurethane injections remain flexible for 50+ years, epoxy repairs create permanent structural bonds, all repairs include lifetime transferable warranty, and proper drainage improvements prevent recurrence. DIY repairs typically fail within 1-2 years."
+      question: "Will the crack leak again?",
+      answer: "Our professional injection method comes with a 25-year warranty. When done correctly, the repair creates a permanent waterproof seal."
     },
     {
-      question: "Can I repair foundation cracks myself?",
-      answer: "While DIY kits exist, professional repair is strongly recommended because: Surface patches don't penetrate the full crack depth, improper materials can trap water inside walls, missing the root cause leads to new cracks, failed repairs often cost more to fix properly, no warranty protection for DIY attempts."
+      question: "Can you repair cracks from the outside?",
+      answer: "Yes, we offer both interior and exterior crack repair methods. We'll recommend the best approach based on your specific situation."
     }
   ]
 };
@@ -112,113 +112,120 @@ const pageData = {
 const crackTypes = [
   {
     title: "Vertical Cracks",
-    description: "Most common type caused by settlement. Polyurethane injection ideal. Same-day repair available.",
+    description: "Most common type, usually from settling or curing",
     icon: "trending",
     highlight: true
   },
   {
     title: "Horizontal Cracks",
-    description: "More serious structural concern from hydrostatic pressure. May require reinforcement.",
+    description: "May indicate serious pressure issues - urgent repair needed",
     icon: "zap"
   },
   {
     title: "Step Cracks",
-    description: "Common in block foundations following mortar joints. May indicate foundation movement.",
+    description: "Common in block foundations, following mortar joints",
     icon: "trending"
   },
   {
     title: "Diagonal Cracks",
-    description: "Indicate differential settlement, common in corners. Require proper diagnosis.",
+    description: "Often from differential settling of foundation",
     icon: "trending"
   },
   {
-    title: "Active Leaking Cracks",
-    description: "Water infiltration requiring immediate attention to prevent mold and structural damage.",
-    icon: "zap"
+    title: "Spider Web Cracks",
+    description: "Surface shrinkage cracks, usually not structural",
+    icon: "shield"
   },
   {
-    title: "Structural Cracks",
-    description: "Width greater than 1/4 inch or showing wall movement. Professional assessment critical.",
-    icon: "shield"
+    title: "Active Leaking Cracks",
+    description: "Require immediate attention to prevent damage",
+    icon: "zap"
   }
 ];
 
 const repairProcess = [
   {
-    title: "Professional Assessment",
-    subtitle: "Crack Diagnosis",
-    description: "Determine crack type and cause:",
+    title: "Initial Assessment",
+    subtitle: "Free Professional Inspection",
+    description: "Our certified technician examines the crack to determine:",
     items: [
-      "Measure width and depth",
-      "Check for active movement",
-      "Identify water sources",
-      "Assess structural impact"
+      "Crack type and severity",
+      "Active vs. dormant status",
+      "Best repair method",
+      "Accurate cost estimate"
     ],
     image: "/images/process/crack-inspection.jpg"
   },
   {
-    title: "Repair Method Selection",
-    subtitle: "Choose Appropriate Solution",
-    description: "Select best repair approach:",
+    title: "Crack Preparation",
+    subtitle: "Surface Treatment",
+    description: "Proper preparation ensures lasting repair:",
     items: [
-      "Polyurethane for active leaks",
-      "Epoxy for structural repair",
-      "Carbon fiber for reinforcement",
-      "Exterior excavation when needed"
+      "Clean crack of debris and loose concrete",
+      "Install injection ports along crack",
+      "Seal surface with hydraulic cement",
+      "Allow surface seal to cure"
     ],
     image: "/images/process/crack-preparation.jpg"
   },
   {
     title: "Injection Process",
-    subtitle: "Low-Pressure Application",
-    description: "Fill crack completely from bottom up:",
+    subtitle: "Professional Application",
+    description: "Low-pressure injection fills crack completely:",
     items: [
-      "Clean crack thoroughly",
-      "Install injection ports",
-      "Monitor material flow",
-      "Ensure complete penetration"
+      "Start injection from lowest port",
+      "Continue until material appears at next port",
+      "Ensure complete crack penetration",
+      "Cap ports and allow to cure"
     ],
     image: "/images/process/crack-injection.jpg"
   },
   {
-    title: "Finishing",
-    subtitle: "Seal & Protect",
-    description: "Complete the repair:",
+    title: "Finishing & Warranty",
+    subtitle: "Quality Assurance",
+    description: "Final steps ensure professional results:",
     items: [
-      "Remove ports",
-      "Seal surface smooth",
-      "Apply waterproof coating",
-      "Clean work area"
+      "Remove ports and smooth surface",
+      "Apply waterproof coating if needed",
+      "Test repair for leaks",
+      "Provide 25-year warranty certificate"
     ],
     image: "/images/process/crack-finished.jpg"
   }
 ];
 
-// Comparison data for crack repair methods
-const comparisonItems = [
-  // Project Requirements
-  { feature: "Excavation Required", category: "Project Requirements", options: [false, true, true] },
-  { feature: "Permits Needed", category: "Project Requirements", options: [false, true, true] },
-  { feature: "Disruption Level", category: "Project Requirements", options: ["Minimal", "Moderate", "Moderate"] },
-  { feature: "Project Duration", category: "Project Requirements", options: ["1-2 days", "3-5 days", "4-6 days"] },
+// Simplified comparison data
+const repairMethodsSimple = [
+  { feature: "Best For", icon: "🎯", options: ["Active water leaks", "Structural cracks", "Major foundation damage"] },
+  { feature: "Cost Range", icon: "💰", options: ["$500-$1,500", "$600-$1,800", "$3,000-$8,000"] },
+  { feature: "Time to Complete", icon: "⏱️", options: ["2-4 hours", "4-6 hours", "3-5 days"] },
+  { feature: "Disruption", icon: "🏠", options: ["Minimal", "Minimal", "Major excavation"] },
+  { feature: "Waterproofing", icon: "💧", options: [{ text: "Excellent", rating: 5 }, { text: "Good", rating: 4 }, { text: "Excellent", rating: 5 }] },
+  { feature: "Flexibility", icon: "🔄", options: [true, false, true] },
+  { feature: "Structural Repair", icon: "🏗️", options: [false, true, true] },
+  { feature: "Interior Work Only", icon: "🏠", options: [true, true, false] },
+  { feature: "Warranty Period", icon: "🛡️", options: ["25 years", "25 years", "Lifetime"] }
+];
+
+// Detailed method comparison for cards
+const repairMethods = [
+  // What You Get
+  { feature: "Stops active leaks", category: "What You Get", options: [true, true, true] },
+  { feature: "Permanent waterproofing", category: "What You Get", options: [true, true, true] },
+  { feature: "Structural reinforcement", category: "What You Get", options: [false, true, true] },
+  { feature: "Handles foundation movement", category: "What You Get", options: [true, false, true] },
+  { feature: "25+ year warranty", category: "What You Get", options: [true, true, true] },
   
-  // Cost & Value
-  { feature: "Initial Cost Range", category: "Cost & Value", options: ["$3,000-$8,000", "$8,000-$15,000", "$12,000-$20,000"] },
-  { feature: "City Rebates Available", category: "Cost & Value", options: [true, true, true] },
-  { feature: "Financing Options", category: "Cost & Value", options: ["Limited", "Full 0% APR", "Full 0% APR"] },
-  { feature: "ROI (Home Value)", category: "Cost & Value", options: ["+15%", "+30%", "+35%"] },
+  // Project Details
+  { feature: "Time to complete", category: "Project Details", options: ["2-4 hours", "4-6 hours", "3-5 days"] },
+  { feature: "Work location", category: "Project Details", options: ["Interior only", "Interior only", "Exterior excavation"] },
+  { feature: "Mess & disruption", category: "Project Details", options: ["Minimal", "Minimal", "Significant"] },
+  { feature: "Weather dependent", category: "Project Details", options: [false, false, true] },
   
-  // Performance
-  { feature: "Water Protection", category: "Performance", options: ["Good", "Excellent", "Superior"] },
-  { feature: "Mold Prevention", category: "Performance", options: [true, true, true] },
-  { feature: "Foundation Protection", category: "Performance", options: ["Partial", "Complete", "Complete"] },
-  { feature: "Drainage Improvement", category: "Performance", options: [false, true, true] },
-  
-  // Warranty & Support
-  { feature: "Warranty Period", category: "Warranty & Support", options: ["25 years", "Lifetime", "Lifetime"] },
-  { feature: "Transferable Warranty", category: "Warranty & Support", options: [false, true, true] },
-  { feature: "24/7 Emergency Support", category: "Warranty & Support", options: [true, true, true] },
-  { feature: "Annual Inspections", category: "Warranty & Support", options: [false, true, true] }
+  // Investment
+  { feature: "Starting price", category: "Investment", options: ["$500", "$600", "$3,000"] },
+  { feature: "Average project", category: "Investment", options: ["$800-$1,200", "$900-$1,400", "$5,000-$10,000"] },
+  { feature: "Payment options", category: "Investment", options: ["Cash/Credit/Finance", "Cash/Credit/Finance", "Cash/Credit/Finance"] }
 ];
 
 const projectTimeline = [
@@ -255,26 +262,52 @@ const projectTimeline = [
   }
 ];
 
+const comparisonItems = [
+  // Project Requirements
+  { feature: "Excavation Required", category: "Project Requirements", icon: "🏗️", options: [false, true, { text: "Yes", highlight: true }] },
+  { feature: "Permits Needed", category: "Project Requirements", icon: "📋", options: [false, true, true] },
+  { feature: "Disruption Level", category: "Project Requirements", icon: "🏠", options: ["Minimal", "Moderate", "Moderate"] },
+  { feature: "Project Duration", category: "Project Requirements", icon: "⏱️", options: ["1-2 days", "3-5 days", "4-6 days"] },
+  
+  // Cost & Value
+  { feature: "Initial Cost Range", category: "Cost & Value", icon: "💰", options: ["$3,000-$8,000", { text: "$8,000-$15,000", highlight: true }, "$12,000-$20,000"] },
+  { feature: "City Rebates Available", category: "Cost & Value", icon: "🎁", options: [true, true, true] },
+  { feature: "Financing Options", category: "Cost & Value", icon: "💳", options: ["Limited", "Full 0% APR", "Full 0% APR"] },
+  { feature: "ROI (Home Value)", category: "Cost & Value", icon: "📈", options: ["+15%", { text: "+30%", highlight: true }, { text: "+35%", highlight: true }] },
+  
+  // Performance
+  { feature: "Water Protection", category: "Performance", icon: "💧", options: [{ text: "Good", rating: 4 }, { text: "Excellent", rating: 5 }, { text: "Superior", rating: 5 }] },
+  { feature: "Mold Prevention", category: "Performance", icon: "🛡️", options: [true, true, true] },
+  { feature: "Foundation Protection", category: "Performance", icon: "🏗️", options: ["Partial", "Complete", "Complete"] },
+  { feature: "Drainage Improvement", category: "Performance", icon: "🌊", options: [false, true, true] },
+  
+  // Warranty & Support
+  { feature: "Warranty Period", category: "Warranty & Support", icon: "🛡️", options: ["25 years", { text: "Lifetime", highlight: true }, { text: "Lifetime", highlight: true }] },
+  { feature: "Transferable Warranty", category: "Warranty & Support", icon: "📄", options: [false, true, true] },
+  { feature: "24/7 Emergency Support", category: "Warranty & Support", icon: "🚨", options: [true, true, true] },
+  { feature: "Annual Inspections", category: "Warranty & Support", icon: "🔍", options: [false, true, true] }
+];
+
 const costFactors = [
   {
-    title: "Crack Length & Width",
-    description: "Longer and wider cracks require more injection material and preparation",
+    title: "Crack Length",
+    description: "Longer cracks require more injection material",
     icon: "trending"
   },
   {
-    title: "Accessibility",
-    description: "Hard-to-reach areas may increase labor time and complexity",
+    title: "Crack Width",
+    description: "Wider cracks may need special preparation",
+    icon: "zap"
+  },
+  {
+    title: "Location Access",
+    description: "Hard-to-reach areas may increase labor time",
     icon: "target"
   },
   {
-    title: "Repair Method Required",
-    description: "Polyurethane, epoxy, or carbon fiber reinforcement affects pricing",
-    icon: "wrench"
-  },
-  {
-    title: "Structural Concerns",
-    description: "Load-bearing walls or active movement require specialized solutions",
-    icon: "shield"
+    title: "Number of Cracks",
+    description: "Multiple crack discounts available",
+    icon: "users"
   }
 ];
 
@@ -328,9 +361,8 @@ const relatedResources = [
       centered
     >
       <p class="text-xl">
-        Foundation cracks are a serious concern that require immediate professional attention. Our certified technicians specialize in permanent 
-        crack repair solutions that address both the symptom and the underlying cause. Using advanced injection techniques and materials, 
-        we ensure your foundation remains structurally sound and watertight.
+        Foundation cracks are more than just cosmetic issues—they're entry points for water that can cause extensive damage to your home. 
+        Our professional injection repair services seal cracks permanently, preventing water infiltration and protecting your foundation.
       </p>
     </ContentSection>
 
@@ -363,16 +395,44 @@ const relatedResources = [
       numbered={true}
     />
 
+    <!-- Process List - Cards Variant -->
+    <ProcessList 
+      title="Process List - Cards Variant"
+      subtitle="Grid layout perfect for shorter process descriptions"
+      items={repairProcess.slice(0, 3)}
+      variant="cards"
+      showImages={true}
+      numbered={true}
+    />
 
     <!-- Video Section -->
     <VideoEmbed 
       title="Watch: Professional Crack Injection Process"
-      videoId="qKqYcDX7QuQ"
+      videoId="dQw4w9WgXcQ"
       platform="youtube"
       description="See exactly how we repair foundation cracks using polyurethane injection. This time-lapse shows a typical vertical crack repair from start to finish."
       caption="Actual repair performed in North York, ON"
     />
 
+    <!-- Quick Comparison -->
+    <ComparisonTable 
+      title="Quick Comparison"
+      subtitle="See all options at a glance"
+      headers={["Interior", "Exterior", "Hybrid"]}
+      items={comparisonItems}
+      highlightColumn={2}
+      variant="modern"
+    />
+    
+    <!-- Executive Summary Style Comparison -->
+    <ComparisonTable 
+      title="Executive Summary"
+      subtitle="Premium comparison view for decision makers"
+      headers={["Basic", "Professional", "Premium"]}
+      items={comparisonItems.slice(0, 10)}
+      highlightColumn={2}
+      variant="gradient"
+    />
 
     <!-- Cost Information with Pattern Background -->
     <ContentSection 
@@ -382,28 +442,9 @@ const relatedResources = [
       centered
     >
       <p class="mb-6 text-lg">
-        Foundation crack repair costs vary based on several factors:
+        Foundation crack repair costs vary based on several factors. Most repairs range from $500-$1,500, 
+        making it one of the most cost-effective waterproofing solutions available.
       </p>
-      <div class="grid md:grid-cols-2 gap-4 mb-6">
-        <div class="bg-white/50 p-4 rounded-lg">
-          <h4 class="font-bold mb-2">Typical Pricing</h4>
-          <ul class="space-y-1 text-sm">
-            <li>• Single vertical crack: $500-$1,000</li>
-            <li>• Multiple cracks: $1,500-$3,500</li>
-            <li>• Structural repairs: $2,000-$5,000</li>
-            <li>• Emergency service: Additional $200-$500</li>
-          </ul>
-        </div>
-        <div class="bg-white/50 p-4 rounded-lg">
-          <h4 class="font-bold mb-2">Repair Methods</h4>
-          <ul class="space-y-1 text-sm">
-            <li>• Polyurethane injection: $500-$1,500/crack</li>
-            <li>• Epoxy injection: $600-$1,800/crack</li>
-            <li>• Exterior excavation: $1,500-$3,500/crack</li>
-            <li>• Carbon fiber: $800-$2,000/crack</li>
-          </ul>
-        </div>
-      </div>
       
       <FeatureGrid 
         title="Factors Affecting Cost"
@@ -417,13 +458,22 @@ const relatedResources = [
       </CalloutBox>
     </ContentSection>
 
-    <!-- Project Timeline -->
+    <!-- Project Timeline - Roadmap View -->
     <Timeline 
-      title="Your Crack Repair Timeline"
-      subtitle="From first call to warranty in hand"
+      title="Project Timeline - Roadmap View"
+      subtitle="See how your waterproofing project unfolds"
       items={projectTimeline}
       variant="roadmap"
       animated={true}
+    />
+
+    <!-- Timeline - Card Layout -->
+    <Timeline 
+      title="Timeline - Card Layout"
+      subtitle="Visual progress tracking with status indicators"
+      items={projectTimeline}
+      variant="cards"
+      showImages={false}
     />
 
     <!-- Success Story -->
@@ -491,44 +541,49 @@ const relatedResources = [
       </div>
     </ContentSection>
 
-    <!-- When to Call Immediately -->
-    <ContentSection
-      variant="dark"
-      title="When to Call Immediately"
-      centered
+    <!-- Warning Signs -->
+    <CalloutBox 
+      type="warning" 
+      title="Don't Ignore These Warning Signs"
     >
-      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <CalloutBox 
-          type="warning" 
-          title="Urgent Warning Signs"
-        >
-          <ul class="space-y-2">
-            <li>• Active water leaking</li>
-            <li>• Crack wider than 1/4 inch</li>
-            <li>• Horizontal cracks</li>
-            <li>• Multiple new cracks</li>
-            <li>• Visible wall movement</li>
-          </ul>
-        </CalloutBox>
-        
-        <CalloutBox 
-          type="emergency" 
-          title="Emergency Service"
-          animate={true}
-        >
-          <p class="text-lg font-bold mb-2">(437) 545-0067</p>
-          <p>24/7 emergency response for active leaks and flooding. Average response time: 45 minutes.</p>
-        </CalloutBox>
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <ul class="space-y-2">
+          <li>• Water stains along crack lines</li>
+          <li>• Efflorescence (white powder) near cracks</li>
+          <li>• Cracks wider than 1/8 inch</li>
+          <li>• Multiple cracks in same area</li>
+        </ul>
+        <ul class="space-y-2">
+          <li>• Horizontal cracks (urgent!)</li>
+          <li>• Cracks that are growing</li>
+          <li>• Musty smell in basement</li>
+          <li>• Visible water during rain</li>
+        </ul>
       </div>
-    </ContentSection>
+    </CalloutBox>
 
-    <!-- Related Services -->
+    <!-- Featured Resources -->
     <ServiceLinks 
-      title="Related Services & Resources"
-      subtitle="Complete solutions for your foundation"
+      title="Featured Resources"
+      subtitle="Everything you need to make an informed decision"
       links={relatedResources}
       variant="featured"
       showImages={true}
+    />
+
+    <!-- Quick Links - Grid Layout -->
+    <ServiceLinks 
+      title="Quick Links - Grid Layout"
+      links={relatedResources.slice(1, 5)}
+      variant="grid"
+    />
+
+    <!-- Related Services -->
+    <ServiceLinks 
+      title="Related Services"
+      links={relatedResources.filter(l => l.type === 'internal')}
+      variant="cards"
+      showImages={false}
     />
 
     <!-- Final CTA -->

@@ -3,18 +3,75 @@
 // Original file: /services/basement-underpinning/
 // Migration date: 2025-08-04T15:14:29.365Z
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import ProcessList from '../../components/content/ProcessList.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import ComparisonTable from '../../components/content/ComparisonTable.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import Timeline from '../../components/content/Timeline.astro';
+import QuestionAnswer from '../../components/content/QuestionAnswer.astro';
+import ServiceLinks from '../../components/content/ServiceLinks.astro';
+import VideoEmbed from '../../components/content/VideoEmbed.astro';
+import { Star, Phone, Home, DollarSign } from 'lucide-react';
 
-// Service data extracted from original markdown
-const serviceData = {
-  serviceName: "Underpinning",
-  serviceTitle: "Underpinning Toronto | Basement Underpinning Cost & Professional Service",
-  serviceSubtitle: "Expert Underpinning Services - Transform Your Basement Into Valuable Living Space",
-  serviceDescription: "Expert underpinning services in Toronto. Professional basement underpinning, foundation underpinning, basement lowering. Licensed contractors, engineered solutions. Free consultation: (437) 545-0067",
-  
-  
-  
-  
+// Service data converted to V4 format
+const pageData = {
+  serviceName: "Basement Underpinning Toronto",
+  serviceTitle: "Basement Underpinning Toronto | Professional Foundation Lowering | Licensed Contractors",
+  serviceSubtitle: "Transform Your Basement Into Valuable Living Space",
+  serviceDescription: "Expert basement underpinning services in Toronto. Professional foundation lowering, basement height increase, structural strengthening. Licensed engineers, lifetime warranty. Free consultation: (437) 545-0067",
+  heroBadge: "Licensed Engineers",
+  heroImage: "/images/services/underpinning-hero.jpg",
+  heroFeatures: [
+    "Licensed structural engineers",
+    "Lifetime warranty", 
+    "All permits handled",
+    "Free structural assessment"
+  ],
+  startingPrice: "$350/linear foot",
+  priceRange: "$45,000-$85,000",
+  processSteps: [
+    {
+      title: "Structural Assessment",
+      description: "Licensed engineers evaluate feasibility and design underpinning plan",
+      icon: "search"
+    },
+    {
+      title: "Permits & Engineering",
+      description: "Handle all City of Toronto permits and structural drawings",
+      icon: "clipboard"
+    },
+    {
+      title: "Bench Pin Method",
+      description: "Systematic excavation and foundation strengthening process",
+      icon: "wrench"
+    },
+    {
+      title: "Quality Finishing",
+      description: "New floors, drainage, waterproofing for dry basement",
+      icon: "shield"
+    }
+  ],
+  benefits: [
+    {
+      title: "Add Living Space",
+      description: "Gain 600-1200 sq ft without expanding footprint"
+    },
+    {
+      title: "Rental Income Potential",
+      description: "Create legal basement apartments earning $1,800-2,500/month"
+    },
+    {
+      title: "Property Value Increase",
+      description: "Add $150,000-300,000 to your home's value"
+    },
+    {
+      title: "Structural Enhancement",
+      description: "Stronger foundation meeting modern building codes"
+    }
+  ],
   heroStats: [
     {
       "value": "25+",
@@ -33,7 +90,6 @@ const serviceData = {
       "label": "Warranty"
     }
   ],
-  
   tableOfContents: [
     {
       "label": "Why Choose Professional Underpinning?",
@@ -48,7 +104,6 @@ const serviceData = {
       "href": "#free-structural-assessment-financing-options-available"
     }
   ],
-  
   relatedServices: [
     {
       "url": "/services/exterior-waterproofing/",
@@ -71,7 +126,6 @@ const serviceData = {
       "image": "/pics/work/basement-walkout.webp"
     }
   ],
-  
   serviceFaqs: [
     {
       "question": "What is underpinning and when is it needed?",
@@ -224,99 +278,379 @@ const originalMetadata = {
 };
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="gradient"
+      title="Professional Basement Underpinning in Toronto"
+      subtitle="Transform your basement into valuable living space"
+      centered
+    >
+      <p class="text-xl">
+        Basement underpinning is the most effective way to increase your home's value and living space. Our licensed structural engineers 
+        and certified contractors specialize in transforming low-ceiling basements into full-height spaces perfect for legal basement 
+        apartments, recreation rooms, or additional bedrooms.
+      </p>
+    </ContentSection>
 
-<style>
-  /* Preserved styles from original page */
-  :global(.toronto-hero-banner) {
-    background: #f7fafc;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    margin-bottom: 2rem;
-  }
+    <!-- Emergency CTA -->
+    <CalloutBox 
+      type="warning" 
+      title="Foundation Settlement Emergency?"
+      animate={true}
+    >
+      <p>Visible cracks, doors not closing properly, or structural concerns? Our emergency team provides 24/7 foundation assessment and stabilization.</p>
+      <p class="mt-4"><strong>Emergency Line: (437) 545-0067</strong></p>
+    </CalloutBox>
 
-  :global(.trust-signals-toronto) {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-  }
+    <!-- Underpinning Benefits -->
+    <FeatureGrid 
+      title="Why Choose Professional Underpinning?"
+      subtitle="Immediate and long-term benefits for Toronto homeowners"
+      features={[
+        {
+          title: "Add 600-1200 sq ft",
+          description: "Increase living space without expanding footprint",
+          icon: "home",
+          highlight: true
+        },
+        {
+          title: "$1,800-2,500 Monthly Income",
+          description: "Legal basement apartments generate significant rental income",
+          icon: "dollarSign"
+        },
+        {
+          title: "$150K-300K Value Increase",
+          description: "70-100% return on investment in Toronto market",
+          icon: "trending"
+        },
+        {
+          title: "Structural Enhancement",
+          description: "Stronger foundation meeting current building codes",
+          icon: "shield"
+        },
+        {
+          title: "Solve Settlement Issues",
+          description: "Address foundation problems permanently",
+          icon: "wrench"
+        },
+        {
+          title: "Future-Proof Investment",
+          description: "Decades of enhanced living with lifetime warranty",
+          icon: "star"
+        }
+      ]}
+      variant="bento"
+      backgroundPattern={true}
+    />
 
-  :global(.trust-signals-toronto span) {
-    background: #f97316;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-  }
+    <!-- Process Overview -->
+    <ProcessList 
+      title="Our Proven Underpinning Process"
+      subtitle="Professional bench pin method with continuous structural support"
+      items={[
+        {
+          title: "Free Structural Assessment",
+          subtitle: "Professional Evaluation",
+          description: "Licensed engineers assess your property:",
+          items: [
+            "Foundation type and condition",
+            "Soil conditions analysis",
+            "Feasibility determination",
+            "Detailed cost estimates"
+          ],
+          image: "/images/process/underpinning-assessment.jpg"
+        },
+        {
+          title: "Engineering & Permits",
+          subtitle: "Complete Regulatory Approval",
+          description: "We handle all requirements:",
+          items: [
+            "Structural drawings and calculations",
+            "City of Toronto building permits",
+            "Committee of Adjustment applications",
+            "Neighbor agreements if required"
+          ],
+          image: "/images/process/underpinning-permits.jpg"
+        },
+        {
+          title: "Bench Pin Underpinning",
+          subtitle: "Systematic Foundation Work",
+          description: "Safe, proven methodology:",
+          items: [
+            "Sequential excavation in sections",
+            "Continuous structural monitoring",
+            "New concrete footings and walls",
+            "Waterproofing integration"
+          ],
+          image: "/images/process/underpinning-construction.jpg"
+        },
+        {
+          title: "Quality Finishing",
+          subtitle: "Complete Basement Transformation",
+          description: "Ready for your vision:",
+          items: [
+            "New concrete floor slab",
+            "Drainage systems installation",
+            "Waterproofing protection",
+            "Final inspections and warranty"
+          ],
+          image: "/images/process/underpinning-finished.jpg"
+        }
+      ]}
+      variant="timeline"
+      showImages={true}
+      numbered={true}
+    />
 
-  :global(.toronto-service-grid) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-  }
+    <!-- Cost Information -->
+    <ContentSection 
+      variant="pattern"
+      title="Understanding Underpinning Costs in Toronto"
+      subtitle="Transparent pricing with detailed breakdown"
+      centered
+    >
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white/80 p-6 rounded-lg shadow-sm">
+          <h4 class="font-bold mb-4 text-lg">Typical Project Costs</h4>
+          <ul class="space-y-3">
+            <li class="flex justify-between"><span>Per Linear Foot:</span><strong>$350-500</strong></li>
+            <li class="flex justify-between"><span>30x40 House (140 LF):</span><strong>$49K-70K</strong></li>
+            <li class="flex justify-between"><span>Permits & Engineering:</span><strong>$3K-5K</strong></li>
+            <li class="flex justify-between"><span>Total Investment:</span><strong>$52K-75K</strong></li>
+          </ul>
+        </div>
+        <div class="bg-white/80 p-6 rounded-lg shadow-sm">
+          <h4 class="font-bold mb-4 text-lg">Return on Investment</h4>
+          <ul class="space-y-3">
+            <li class="flex justify-between"><span>Property Value Increase:</span><strong>$150K-300K</strong></li>
+            <li class="flex justify-between"><span>ROI Percentage:</span><strong>70-100%</strong></li>
+            <li class="flex justify-between"><span>Rental Income/Month:</span><strong>$1,800-2,500</strong></li>
+            <li class="flex justify-between"><span>Payback Period:</span><strong>3-5 years</strong></li>
+          </ul>
+        </div>
+      </div>
+      
+      <CalloutBox type="tip" title="Financing Available" animate={true}>
+        <p>Most Toronto homeowners finance through HELOC or renovation loans. Banks understand underpinning adds significant value. We provide detailed quotes and progress certificates for lender requirements.</p>
+      </CalloutBox>
+    </ContentSection>
 
-  :global(.toronto-area-card) {
-    background: white;
-    border: 1px solid #e2e8f0;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-  }
+    <!-- Project Timeline -->
+    <Timeline 
+      title="Your Underpinning Project Timeline"
+      subtitle="From assessment to move-in ready basement"
+      items={[
+        {
+          title: "Initial Consultation",
+          description: "Free structural assessment and feasibility review",
+          duration: "Same day",
+          status: "completed"
+        },
+        {
+          title: "Engineering & Permits",
+          description: "Structural drawings and City of Toronto approvals",
+          duration: "2-3 weeks",
+          status: "active",
+          milestone: true
+        },
+        {
+          title: "Underpinning Construction",
+          description: "Bench pin method foundation work",
+          duration: "6-8 weeks",
+          status: "upcoming"
+        },
+        {
+          title: "Finishing Work",
+          description: "Floor slab, drainage, waterproofing",
+          duration: "2-3 weeks",
+          status: "upcoming"
+        },
+        {
+          title: "Final Inspection",
+          description: "City approval and warranty documentation",
+          duration: "1 week",
+          status: "upcoming"
+        }
+      ]}
+      variant="roadmap"
+      animated={true}
+    />
 
-  :global(.toronto-area-card h3) {
-    color: #1a202c;
-    margin-bottom: 0.5rem;
-  }
+    <!-- Soil Conditions Impact -->
+    <ContentSection 
+      title="How Toronto Soil Affects Your Project"
+      variant="light"
+    >
+      <FeatureGrid 
+        features={[
+          {
+            title: "Clay Soil (Scarborough, North York)",
+            description: "Stable excavation, slower progress. Cost impact: +10-15%",
+            icon: "mountain"
+          },
+          {
+            title: "Sandy Soil (Etobicoke, Downtown)",
+            description: "Quick excavation, may need shoring. Cost impact: +15-20%",
+            icon: "droplets"
+          },
+          {
+            title: "Rock/Shale Conditions",
+            description: "Requires breaking and removal. Cost impact: +25-40%",
+            icon: "zap"
+          },
+          {
+            title: "High Water Table",
+            description: "Dewatering systems needed. Cost impact: +20-30%",
+            icon: "shield"
+          }
+        ]}
+        variant="gradient"
+        columns={2}
+      />
+    </ContentSection>
 
-  :global(.cost-range) {
-    display: inline-block;
-    background: #f0fdf4;
-    color: #166534;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-  }
+    <!-- Success Story -->
+    <ContentSection 
+      variant="dark"
+      title="Recent Underpinning Success"
+      backgroundImage="/images/testimonials/underpinning-success-bg.jpg"
+      overlayOpacity={0.8}
+      fullWidth
+      centered
+    >
+      <div class="max-w-3xl mx-auto">
+        <p class="text-xl italic mb-6">
+          "DrySpace transformed our 6-foot basement into a beautiful 9-foot space. The process was smooth, 
+          all permits handled, and we now have a legal basement apartment generating $2,200 monthly. 
+          Best investment we've ever made!"
+        </p>
+        <p class="text-lg">— Michael & Sarah T., North York</p>
+        <div class="mt-6">
+          <span class="inline-flex items-center gap-2 text-yellow-400">
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <span class="text-white ml-2">5.0 on Google Reviews</span>
+          </span>
+        </div>
+      </div>
+    </ContentSection>
 
-  :global(.toronto-cta-section) {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-  }
+    <!-- FAQ Section -->
+    <ContentSection 
+      title="Frequently Asked Questions"
+      variant="gradient"
+      centered
+    >
+      <div class="grid gap-6 md:grid-cols-2">
+        <QuestionAnswer 
+          question="Can any Toronto house be underpinned?"
+          variant="card"
+        >
+          <p>Most Toronto homes can be underpinned. Feasibility depends on foundation type, soil conditions, neighboring structures, and access. Our structural assessment determines the best approach for your specific situation.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-primary-cta) {
-    background: #f97316;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.125rem;
-  }
+        <QuestionAnswer 
+          question="Is underpinning safe for my family?"
+          variant="card"
+        >
+          <p>Absolutely. The bench pin method maintains continuous structural support. We install monitoring equipment and maintain full liability insurance. Most families live comfortably in their homes during construction.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-secondary-cta) {
-    border: 2px solid #f97316;
-    color: #f97316;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-  }
+        <QuestionAnswer 
+          question="What permits are required?"
+          variant="card"
+        >
+          <p>Toronto underpinning requires building permits, engineered drawings, and potentially Committee of Adjustment approval. We handle all applications and coordinate with City inspectors throughout the process.</p>
+        </QuestionAnswer>
 
-  :global(.toronto-guarantee-badges) {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-  }
+        <QuestionAnswer 
+          question="How long does underpinning take?"
+          variant="card"
+        >
+          <p>Complete projects typically take 8-12 weeks: 2-3 weeks for permits, 6-8 weeks for construction, and 1-2 weeks for finishing. We provide detailed schedules with daily progress updates.</p>
+        </QuestionAnswer>
+      </div>
+    </ContentSection>
 
-  :global(.toronto-guarantee-badges span) {
-    color: #10b981;
-    font-weight: 600;
-  }
-</style>
+    <!-- Related Services -->
+    <ServiceLinks 
+      title="Complete Foundation Solutions"
+      subtitle="Maximize your underpinning investment"
+      links={[
+        {
+          text: "Exterior Waterproofing",
+          href: "/services/exterior-waterproofing/",
+          description: "Protect your underpinned foundation with comprehensive waterproofing",
+          type: "internal",
+          featured: true,
+          image: "/images/services/exterior-waterproofing.jpg"
+        },
+        {
+          text: "Basement Walkout",
+          href: "/services/basement-walkout/",
+          description: "Add separate entrance for rental income potential",
+          type: "internal",
+          badge: "Popular"
+        },
+        {
+          text: "Legal Basement Apartments",
+          href: "/services/legal-basement/",
+          description: "Complete guide to creating legal basement apartments",
+          type: "internal"
+        },
+        {
+          text: "Foundation Repair",
+          href: "/services/foundation-repair/",
+          description: "Address any foundation issues during underpinning",
+          type: "internal"
+        },
+        {
+          text: "Get Free Assessment",
+          href: "/contact/",
+          description: "Schedule your free structural assessment today",
+          type: "internal",
+          badge: "Free"
+        }
+      ]}
+      variant="featured"
+      showImages={true}
+    />
+
+    <!-- Final CTA -->
+    <ContentSection 
+      variant="gradient"
+      title="Transform Your Basement Today"
+      subtitle="Professional underpinning with lifetime warranty"
+      centered
+      fullWidth
+    >
+      <div class="mt-8 space-y-6 text-center">
+        <p class="text-xl max-w-2xl mx-auto">
+          Don't let a low-ceiling basement limit your home's potential. 
+          Our licensed engineers can assess your property and provide a detailed underpinning plan.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-full shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5">
+            <Home className="h-5 w-5 mr-2" />
+            Get Free Assessment
+          </a>
+          <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-primary bg-white rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            <Phone className="h-5 w-5 mr-2" />
+            (437) 545-0067
+          </a>
+        </div>
+        <p class="text-sm opacity-80">
+          Licensed structural engineers • All permits handled • Lifetime warranty
+        </p>
+      </div>
+    </ContentSection>
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>
+

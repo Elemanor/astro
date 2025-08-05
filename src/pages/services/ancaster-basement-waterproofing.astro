@@ -1,20 +1,75 @@
 ---
-// Migrated from markdown to V2 template
+// Migrated from markdown to V4 template
 // Original file: /services/ancaster-basement-waterproofing/
-// Migration date: 2025-08-04T15:14:29.223Z
+// Migration date: 2025-08-05T12:00:00.000Z
 
-import ServicePageTemplateV3 from '../../templates/ServicePageTemplateV3.astro';
+import ServicePageTemplateV4 from '../../templates/ServicePageTemplateV4.astro';
+import ServiceMainContent from '../../components/services/ServiceMainContent.astro';
+import ContentSection from '../../components/content/ContentSection.astro';
+import ProcessList from '../../components/content/ProcessList.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import CalloutBox from '../../components/content/CalloutBox.astro';
+import Timeline from '../../components/content/Timeline.astro';
+import QuestionAnswer from '../../components/content/QuestionAnswer.astro';
+import ServiceLinks from '../../components/content/ServiceLinks.astro';
+import { Star, Phone, MapPin, Home } from 'lucide-react';
 
-// Service data extracted from original markdown
-const serviceData = {
+// Service data converted to V4 format
+const pageData = {
   serviceName: "Ancaster Basement Waterproofing",
-  serviceTitle: "Ancaster Basement Waterproofing | Foundation Repair Hamilton Mountain",
-  serviceSubtitle: "Expert Solutions for Escarpment Properties and Heritage Homes",
-  serviceDescription: "Specialized basement waterproofing for Ancaster's unique escarpment properties and heritage homes. Expert in limestone foundations, spring water, and slope drainage. Local Hamilton team. Call (437) 545-0067.",
-  
-  
-  
-  
+  serviceTitle: "Ancaster Basement Waterproofing | Licensed Local Contractors | Hamilton Mountain",
+  serviceSubtitle: "Expert Solutions for Escarpment Properties & Heritage Homes",
+  serviceDescription: "Specialized basement waterproofing for Ancaster's unique escarpment properties and heritage homes. Expert in limestone foundations, spring water management, slope drainage. Licensed, insured, lifetime warranty. Call (437) 545-0067.",
+  heroBadge: "Escarpment Specialists",
+  heroImage: "/images/services/ancaster-waterproofing-hero.jpg",
+  heroFeatures: [
+    "Local Hamilton team",
+    "Spring water specialists", 
+    "Heritage home expertise",
+    "Lifetime warranty"
+  ],
+  startingPrice: "$10,000",
+  priceRange: "$10,000-$25,000",
+  processSteps: [
+    {
+      title: "Escarpment Assessment",
+      description: "Understanding Ancaster's unique spring water and slope challenges",
+      icon: "search"
+    },
+    {
+      title: "Heritage-Aware Design",
+      description: "Waterproofing solutions that preserve historical character",
+      icon: "clipboard"
+    },
+    {
+      title: "Spring Water Management",
+      description: "Professional installation of specialized spring interception systems",
+      icon: "wrench"
+    },
+    {
+      title: "Lifetime Protection",
+      description: "Ongoing support and lifetime warranty coverage for all systems",
+      icon: "shield"
+    }
+  ],
+  benefits: [
+    {
+      title: "Spring Water Expertise",
+      description: "Specialized management of natural springs from the Niagara Escarpment"
+    },
+    {
+      title: "Heritage Foundation Care",
+      description: "Expert treatment of limestone foundations without damaging character"
+    },
+    {
+      title: "Slope Drainage Solutions",
+      description: "Custom drainage for extreme slope conditions and erosion control"
+    },
+    {
+      title: "Local Hamilton Team",
+      description: "Fast response times and ongoing local support from Hamilton base"
+    }
+  ],
   heroStats: [
     {
       "value": "25+",
@@ -33,18 +88,16 @@ const serviceData = {
       "label": "Warranty"
     }
   ],
-  
   tableOfContents: [
     {
-      "label": "Protecting Ancaster Homes Since 2003",
-      "href": "#protecting-ancaster-homes-since-2003"
+      "label": "Why Ancaster Needs Specialized Waterproofing",
+      "href": "#why-ancaster-needs-specialized-waterproofing"
     },
     {
-      "label": "Ancaster Service Areas",
-      "href": "#ancaster-service-areas"
+      "label": "Service Areas",
+      "href": "#service-areas"
     }
   ],
-  
   relatedServices: [
     {
       "url": "/locations/hamilton-basement-waterproofing",
@@ -52,9 +105,9 @@ const serviceData = {
       "image": "/images/hamilton-waterproofing.jpg"
     },
     {
-      "url": "/services/foundation-stabilization",
-      "description": "Essential for escarpment properties",
-      "image": "/images/foundation-stabilization.jpg"
+      "url": "/services/foundation-crack-repair",
+      "description": "Essential for limestone foundations",
+      "image": "/images/foundation-crack-repair.jpg"
     },
     {
       "url": "/services/sump-pump-installation",
@@ -161,9 +214,313 @@ const originalMetadata = {
 };
 ---
 
-<ServicePageTemplateV3 {...serviceData}>
-  <div slot="mainContent" set:html={mainContent} />
-</ServicePageTemplateV3>
+<ServicePageTemplateV4 {...pageData}>
+  <ServiceMainContent slot="mainContent">
+    
+    <!-- Hero Content Section -->
+    <ContentSection 
+      variant="gradient"
+      title="Ancaster Basement Waterproofing Specialists"
+      subtitle="Expert solutions for escarpment properties & heritage homes"
+      centered
+    >
+      <p class="text-xl">
+        Ancaster properties face unique waterproofing challenges due to the Niagara Escarpment's natural springs, 
+        extreme slopes, and heritage limestone foundations. Our Hamilton-based team specializes in these specific 
+        conditions, providing tailored solutions that protect your investment while preserving historical character.
+      </p>
+    </ContentSection>
+
+    <!-- Local Expertise CTA -->
+    <CalloutBox 
+      type="info" 
+      title="Escarpment Spring Water Specialists"
+      animate={true}
+    >
+      <p>Ancaster's natural springs and slope drainage require specialized expertise. Our Hamilton team has decades of experience managing escarpment water challenges.</p>
+      <p class="mt-4"><strong>Local Hamilton Team: (437) 545-0067</strong></p>
+    </CalloutBox>
+
+    <!-- Ancaster-Specific Challenges -->
+    <FeatureGrid 
+      title="Ancaster Waterproofing Challenges We Solve"
+      subtitle="Specialized solutions for escarpment properties"
+      features={[
+        {
+          title: "Natural Spring Management",
+          description: "Continuous water flow from escarpment springs requires specialized interception",
+          icon: "droplets",
+          highlight: true
+        },
+        {
+          title: "Heritage Limestone Foundations",
+          description: "Preserve character while protecting Old Ancaster's historic foundations",
+          icon: "home"
+        },
+        {
+          title: "Extreme Slope Drainage",
+          description: "Managing water flow on steep escarpment properties",
+          icon: "mountain"
+        },
+        {
+          title: "Conservation Requirements",
+          description: "Working within Niagara Escarpment Commission guidelines",
+          icon: "shield"
+        },
+        {
+          title: "Bedrock Variations",
+          description: "Adapting to variable bedrock depths and compositions",
+          icon: "layers"
+        },
+        {
+          title: "Luxury Home Standards",
+          description: "Meeting Ancaster's high-end construction and finishing expectations",
+          icon: "star"
+        }
+      ]}
+      variant="bento"
+      backgroundPattern={true}
+    />
+
+    <!-- Local Process -->
+    <ProcessList 
+      title="Our Ancaster Waterproofing Process"
+      subtitle="Specialized approach for escarpment properties"
+      items={[
+        {
+          title: "Escarpment Site Assessment",
+          subtitle: "Spring & Slope Analysis",
+          description: "Comprehensive evaluation specific to Ancaster:",
+          items: [
+            "Natural spring location and flow rate analysis",
+            "Slope stability and drainage pattern assessment",
+            "Heritage foundation condition evaluation",
+            "Conservation authority requirement review"
+          ],
+          image: "/images/process/ancaster-assessment.jpg"
+        },
+        {
+          title: "Heritage-Aware Solution Design",
+          subtitle: "Preserving Character",
+          description: "Solutions designed for heritage properties:",
+          items: [
+            "Spring interception system design",
+            "Heritage-compatible waterproofing methods",
+            "Slope drainage and erosion control planning",
+            "Conservation authority coordination"
+          ],
+          image: "/images/process/ancaster-design.jpg"
+        },
+        {
+          title: "Specialized Installation",
+          subtitle: "Expert Escarpment Work",
+          description: "Professional installation by Hamilton specialists:",
+          items: [
+            "Spring interception system installation",
+            "Heritage foundation waterproofing",
+            "Slope drainage system construction",
+            "Landscape restoration and erosion control"
+          ],
+          image: "/images/process/ancaster-installation.jpg"
+        },
+        {
+          title: "Ongoing Hamilton Support",
+          subtitle: "Lifetime Ancaster Service",
+          description: "Continued protection and local support:",
+          items: [
+            "Spring system monitoring and maintenance",
+            "Fast Hamilton-based emergency response",
+            "Lifetime warranty on all systems",
+            "Seasonal maintenance reminders"
+          ],
+          image: "/images/process/ancaster-support.jpg"
+        }
+      ]}
+      variant="timeline"
+      showImages={true}
+      numbered={true}
+    />
+
+    <!-- Ancaster Neighborhoods Served -->
+    <ContentSection 
+      title="Ancaster Areas We Serve"
+      variant="light"
+    >
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-bold mb-3">Old Ancaster Village</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Wilson Street heritage area</li>
+            <li>• Rousseau Street historic homes</li>
+            <li>• Griffin House vicinity</li>
+            <li>• Historic limestone properties</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-bold mb-3">Meadowlands</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Golf course area properties</li>
+            <li>• Spring-fed basement challenges</li>
+            <li>• Luxury home waterproofing</li>
+            <li>• Slope drainage solutions</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-bold mb-3">Stone Church Mountain</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Escarpment edge properties</li>
+            <li>• Scenic Drive corridor</li>
+            <li>• Extreme slope management</li>
+            <li>• Conservation area proximity</li>
+          </ul>
+        </div>
+      </div>
+    </ContentSection>
+
+    <!-- Local Success Story -->
+    <ContentSection 
+      variant="dark"
+      title="Ancaster Success Story"
+      backgroundImage="/images/testimonials/ancaster-success-bg.jpg"
+      overlayOpacity={0.8}
+      fullWidth
+      centered
+    >
+      <div class="max-w-3xl mx-auto">
+        <p class="text-xl italic mb-6">
+          "Our heritage limestone home in Old Ancaster had constant spring water issues. DrySpace's team 
+          understood the historical requirements and installed a spring interception system that preserves 
+          our home's character while keeping it completely dry. Excellent heritage expertise!"
+        </p>
+        <p class="text-lg">— Margaret & David H., Old Ancaster Village</p>
+        <div class="mt-6">
+          <span class="inline-flex items-center gap-2 text-yellow-400">
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400" />
+            <span class="text-white ml-2">5.0 on Google Reviews</span>
+          </span>
+        </div>
+      </div>
+    </ContentSection>
+
+    <!-- FAQ for Ancaster -->
+    <ContentSection 
+      title="Ancaster Waterproofing FAQ"
+      variant="gradient"
+      centered
+    >
+      <div class="grid gap-6 md:grid-cols-2">
+        <QuestionAnswer 
+          question="How do you handle natural springs in Ancaster?"
+          variant="card"
+        >
+          <p>We install specialized spring interception systems including deep trenches, multiple pumps, and gravity drainage to manage continuous escarpment spring flow before it reaches your basement.</p>
+        </QuestionAnswer>
+
+        <QuestionAnswer 
+          question="Can you preserve limestone foundation character?"
+          variant="card"
+        >
+          <p>Yes! We specialize in heritage limestone foundations using compatible mortars, breathable waterproofing, and interior solutions that preserve Old Ancaster's historic appearance.</p>
+        </QuestionAnswer>
+
+        <QuestionAnswer 
+          question="What makes Ancaster waterproofing different?"
+          variant="card"
+        >
+          <p>The Niagara Escarpment creates unique challenges: natural springs, extreme slopes, variable bedrock, plus heritage requirements. We're specialists in these specific escarpment conditions.</p>
+        </QuestionAnswer>
+
+        <QuestionAnswer 
+          question="Do you work with conservation authorities?"
+          variant="card"
+        >
+          <p>Yes, we coordinate with the Niagara Escarpment Commission and Hamilton Conservation Authority for all required permits and ensure our work meets environmental guidelines.</p>
+        </QuestionAnswer>
+      </div>
+    </ContentSection>
+
+    <!-- Related Services -->
+    <ServiceLinks 
+      title="Complete Ancaster Home Solutions"
+      subtitle="Additional services for Ancaster homeowners"
+      links={[
+        {
+          text: "Foundation Crack Repair",
+          href: "/services/foundation-crack-repair/",
+          description: "Professional limestone foundation crack repair for heritage homes",
+          type: "internal",
+          featured: true,
+          image: "/images/services/foundation-crack-repair.jpg"
+        },
+        {
+          text: "Spring Water Management",
+          href: "/services/sump-pump-installation/",
+          description: "Specialized systems for continuous escarpment spring flow",
+          type: "internal",
+          badge: "Popular"
+        },
+        {
+          text: "Slope Stabilization",
+          href: "/services/structural-reinforcement/",
+          description: "Erosion control and slope drainage for escarpment properties",
+          type: "internal"
+        },
+        {
+          text: "Emergency Waterproofing",
+          href: "/services/emergency-waterproofing/",
+          description: "24/7 emergency response for Ancaster flooding",
+          type: "internal",
+          badge: "24/7"
+        },
+        {
+          text: "Get Free Assessment",
+          href: "/contact/",
+          description: "Schedule your free Ancaster waterproofing assessment",
+          type: "internal",
+          badge: "Free"
+        }
+      ]}
+      variant="featured"
+      showImages={true}
+    />
+
+    <!-- Final CTA -->
+    <ContentSection 
+      variant="gradient"
+      title="Protect Your Ancaster Heritage Home Today"
+      subtitle="Expert escarpment waterproofing with heritage preservation"
+      centered
+      fullWidth
+    >
+      <div class="mt-8 space-y-6 text-center">
+        <p class="text-xl max-w-2xl mx-auto">
+          Don't let natural springs and slope challenges damage your Ancaster property. 
+          Our Hamilton team specializes in heritage-aware waterproofing that preserves character while providing permanent protection.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-full shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5">
+            <MapPin className="h-5 w-5 mr-2" />
+            Free Ancaster Assessment
+          </a>
+          <a href="tel:437-545-0067" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-primary bg-white rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            <Phone className="h-5 w-5 mr-2" />
+            (437) 545-0067
+          </a>
+        </div>
+        <p class="text-sm opacity-80">
+          Local Hamilton team • Spring water specialists • Heritage preservation • Lifetime warranty
+        </p>
+      </div>
+    </ContentSection>
+
+  </ServiceMainContent>
+</ServicePageTemplateV4>
 
 <style>
   /* Preserved styles from original page */

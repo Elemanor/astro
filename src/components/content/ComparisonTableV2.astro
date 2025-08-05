@@ -1,0 +1,257 @@
+---
+import { Check, X, Star, TrendingUp, AlertCircle, DollarSign, Clock, Home, Shield } from 'lucide-react';
+
+export interface ComparisonItem {
+  feature: string;
+  category?: string;
+  icon?: string;
+  options: (string | boolean | { text: string; highlight?: boolean; rating?: number })[];
+}
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  headers: string[];
+  items: ComparisonItem[];
+  highlightColumn?: number;
+  variant?: 'simple' | 'detailed' | 'cards';
+  class?: string;
+}
+
+const { 
+  title,
+  subtitle,
+  headers,
+  items,
+  highlightColumn,
+  variant = 'simple',
+  class: className = ''
+} = Astro.props;
+
+// Group items by category
+const groupedItems = items.reduce((acc, item) => {
+  const category = item.category || 'General';
+  if (!acc[category]) acc[category] = [];
+  acc[category].push(item);
+  return acc;
+}, {} as Record<string, typeof items>);
+---
+
+<div class={`comparison-table-v2 my-12 ${className}`}>
+  {(title || subtitle) && (
+    <div class="text-center mb-8">
+      {title && <h3 class="text-3xl md:text-4xl font-bold mb-4">{title}</h3>}
+      {subtitle && <p class="text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>}
+    </div>
+  )}
+  
+  {variant === 'simple' && (
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+      {/* Header */}
+      <div class={`grid grid-cols-${headers.length + 1} bg-gray-50 border-b-2 border-gray-200`}>
+        <div class="p-6 font-bold text-gray-600">Compare Features</div>
+        {headers.map((header, index) => (
+          <div class={`p-6 text-center font-bold text-lg ${
+            highlightColumn === index 
+              ? 'bg-primary text-white relative' 
+              : 'text-gray-900'
+          }`}>
+            {highlightColumn === index && (
+              <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <div class="bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-bold shadow-lg flex items-center gap-1">
+                  <Star className="h-4 w-4" client:load />
+                  BEST CHOICE
+                </div>
+              </div>
+            )}
+            <div class="text-xl">{header}</div>
+          </div>
+        ))}
+      </div>
+      
+      {/* Body */}
+      {Object.entries(groupedItems).map(([category, categoryItems]) => (
+        <>
+          {/* Category Header */}
+          {Object.keys(groupedItems).length > 1 && (
+            <div class={`grid grid-cols-${headers.length + 1} bg-gray-100 border-y border-gray-200`}>
+              <div class="col-span-full px-6 py-3 font-semibold text-gray-700 flex items-center gap-2">
+                {category === 'Investment' && <DollarSign className="h-5 w-5" client:load />}
+                {category === 'Performance' && <TrendingUp className="h-5 w-5" client:load />}
+                {category === 'Warranty & Support' && <Shield className="h-5 w-5" client:load />}
+                {category !== 'Investment' && category !== 'Performance' && category !== 'Warranty & Support' && <AlertCircle className="h-5 w-5" client:load />}
+                {category}
+              </div>
+            </div>
+          )}
+          
+          {/* Items */}
+          {categoryItems.map((item, index) => (
+            <div class={`grid grid-cols-${headers.length + 1} border-b border-gray-200 hover:bg-gray-50 transition-colors ${
+              index % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'
+            }`}>
+              <div class="p-6 font-medium text-gray-900 flex items-center gap-3">
+                {item.icon && (
+                  <span class="text-2xl">{item.icon}</span>
+                )}
+                {item.feature}
+              </div>
+              {item.options.map((option, colIndex) => (
+                <div class={`p-6 ${
+                  highlightColumn === colIndex ? 'bg-primary/5' : ''
+                }`}>
+                  {/* Render value based on type */}
+                  {typeof option === 'boolean' ? (
+                    option ? (
+                      <div class="flex items-center justify-center">
+                        <Check className="h-6 w-6 text-green-600" strokeWidth={3} client:load />
+                      </div>
+                    ) : (
+                      <div class="flex items-center justify-center">
+                        <X className="h-6 w-6 text-gray-400" strokeWidth={2} client:load />
+                      </div>
+                    )
+                  ) : typeof option === 'object' && option.rating ? (
+                    <div class="flex flex-col items-center gap-1">
+                      <div class="flex gap-0.5">
+                        {[...Array(5)].map((_, i) => (
+                          <div class={`w-2 h-8 rounded-sm ${i < option.rating ? 'bg-primary' : 'bg-gray-200'}`}></div>
+                        ))}
+                      </div>
+                      <span class="text-sm font-medium">{option.text}</span>
+                    </div>
+                  ) : typeof option === 'object' ? (
+                    <div class="text-center">
+                      <div class={`font-semibold ${option.highlight ? 'text-primary text-lg' : ''}`}>
+                        {option.text}
+                      </div>
+                    </div>
+                  ) : item.feature.toLowerCase().includes('cost') || item.feature.toLowerCase().includes('price') ? (
+                    <div class="font-semibold text-lg text-center">{option}</div>
+                  ) : item.feature.toLowerCase().includes('time') || item.feature.toLowerCase().includes('duration') ? (
+                    <div class="flex items-center justify-center gap-2">
+                      <Clock className="h-4 w-4 text-gray-500" client:load />
+                      <span class="font-medium">{option}</span>
+                    </div>
+                  ) : (
+                    <div class="font-medium text-center">{option}</div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ))}
+        </>
+      ))}
+      
+      {/* Summary Row */}
+      <div class={`grid grid-cols-${headers.length + 1} bg-gray-100 font-bold`}>
+        <div class="p-6 text-gray-700">Best For:</div>
+        {headers.map((_, index) => (
+          <div class={`p-6 text-center ${
+            highlightColumn === index ? 'text-primary' : 'text-gray-700'
+          }`}>
+            {index === 0 && "Active Leaks"}
+            {index === 1 && "Structural"}
+            {index === 2 && "Major Damage"}
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+  
+  {variant === 'cards' && (
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      {headers.map((header, colIndex) => {
+        const isHighlighted = highlightColumn === colIndex;
+        return (
+          <div class={`relative ${isHighlighted ? 'lg:scale-110 z-10' : ''}`}>
+            <div class={`bg-white rounded-3xl shadow-2xl overflow-hidden h-full ${
+              isHighlighted ? 'ring-4 ring-primary/50' : ''
+            }`}>
+              {/* Header */}
+              <div class={`p-8 text-center relative ${
+                isHighlighted 
+                  ? 'bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-white py-12' 
+                  : 'bg-gradient-to-br from-gray-100 to-gray-50'
+              }`}>
+                {isHighlighted && (
+                  <div class="absolute top-0 left-0 w-full flex justify-center -mt-4">
+                    <div class="bg-yellow-400 text-gray-900 px-6 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
+                      <Star className="h-5 w-5" client:load />
+                      MOST POPULAR
+                    </div>
+                  </div>
+                )}
+                <h4 class="text-3xl font-bold mb-2">{header}</h4>
+                <p class="text-lg opacity-90">
+                  {colIndex === 0 && "Quick & Flexible"}
+                  {colIndex === 1 && "Strong & Permanent"}
+                  {colIndex === 2 && "Complete Solution"}
+                </p>
+              </div>
+              
+              {/* Key Stats */}
+              <div class="grid grid-cols-2 gap-4 p-6 bg-gray-50">
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-primary">
+                    {colIndex === 0 && "2-4"}
+                    {colIndex === 1 && "4-6"}
+                    {colIndex === 2 && "3-5"}
+                  </div>
+                  <div class="text-sm text-gray-600">Hours</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-primary">
+                    {colIndex === 0 && "$500+"}
+                    {colIndex === 1 && "$600+"}
+                    {colIndex === 2 && "$3K+"}
+                  </div>
+                  <div class="text-sm text-gray-600">Starting at</div>
+                </div>
+              </div>
+              
+              {/* Features List */}
+              <div class="p-8 space-y-4">
+                {items.map(item => {
+                  const value = item.options[colIndex];
+                  const isBoolean = typeof value === 'boolean';
+                  
+                  if (isBoolean && value) {
+                    return (
+                      <div class="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-600 flex-shrink-0" client:load />
+                        <span class="text-gray-700">{item.feature}</span>
+                      </div>
+                    );
+                  } else if (!isBoolean && typeof value !== 'boolean') {
+                    const displayValue = typeof value === 'object' ? value.text : value;
+                    if (item.feature !== 'Starting price' && item.feature !== 'Average project') {
+                      return (
+                        <div class="flex items-center justify-between gap-3">
+                          <span class="text-gray-700">{item.feature}:</span>
+                          <span class="font-semibold text-right">{displayValue}</span>
+                        </div>
+                      );
+                    }
+                  }
+                  return null;
+                })}
+              </div>
+              
+              {/* CTA */}
+              <div class="p-8 pt-0">
+                <button class={`w-full py-4 rounded-2xl font-bold text-lg transition-all transform hover:scale-105 ${
+                  isHighlighted 
+                    ? 'bg-primary text-white shadow-xl' 
+                    : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+                }`}>
+                  {isHighlighted ? 'Get Free Quote' : 'Learn More'}
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  )}
+</div>
