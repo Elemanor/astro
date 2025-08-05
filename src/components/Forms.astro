@@ -1,0 +1,422 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+import { Button } from './ui/button';
+
+export interface FormField {
+  name: string;
+  label: string;
+  type: 'text' | 'email' | 'tel' | 'textarea' | 'select' | 'radio' | 'checkbox' | 'date' | 'time';
+  placeholder?: string;
+  required?: boolean;
+  options?: string[] | { value: string; label: string }[]; // For select/radio
+  rows?: number; // For textarea
+  pattern?: string; // For validation
+  helperText?: string;
+  gridCols?: 1 | 2 | 'full'; // Layout control
+}
+
+export interface Props {
+  heading?: string;
+  headingAccent?: string;
+  subheading?: string;
+  fields: FormField[];
+  variant?: 'default' | 'minimal' | 'card' | 'split' | 'inline';
+  submitText?: string;
+  submitAction?: string;
+  method?: 'GET' | 'POST';
+  showLabels?: boolean;
+  requiredText?: string;
+  successMessage?: string;
+  privacyText?: string;
+  privacyLink?: string;
+  background?: 'white' | 'gray' | 'primary';
+  sideContent?: {
+    title?: string;
+    description?: string;
+    features?: string[];
+    image?: string;
+  };
+}
+
+const {
+  heading,
+  headingAccent,
+  subheading,
+  fields,
+  variant = 'default',
+  submitText = "Submit",
+  submitAction = "/api/contact",
+  method = "POST",
+  showLabels = true,
+  requiredText = "* indicates required field",
+  successMessage = "Thank you! We'll be in touch soon.",
+  privacyText = "We respect your privacy and will never share your information.",
+  privacyLink = "/privacy",
+  background = 'white',
+  sideContent
+} = Astro.props;
+
+const backgroundClasses = {
+  white: 'bg-white',
+  gray: 'bg-gray-50',
+  primary: 'bg-primary text-white'
+};
+
+// Organize fields by grid columns for layout
+const fullWidthFields = fields.filter(f => f.gridCols === 'full' || f.type === 'textarea');
+const halfWidthFields = fields.filter(f => f.gridCols !== 'full' && f.type !== 'textarea');
+---
+
+<section class={`py-12 sm:py-16 lg:py-24 ${backgroundClasses[background]}`}>
+  <div class={`${variant === 'split' ? 'max-w-7xl' : 'max-w-4xl'} mx-auto px-4 sm:px-6 lg:px-8`}>
+    {(heading || subheading) && variant !== 'inline' && (
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class={`text-center mb-8 sm:mb-12 ${variant === 'split' ? 'lg:text-left' : ''}`}>
+          {heading && (
+            <h2 class={`font-montserrat text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light ${
+              background === 'primary' ? 'text-white' : ''
+            }`}>
+              <span set:html={heading}></span>
+              {headingAccent && (
+                <>
+                  {' '}
+                  <span class="font-semibold">{headingAccent}</span>
+                </>
+              )}
+            </h2>
+          )}
+          {subheading && (
+            <p class={`mt-4 text-lg ${
+              background === 'primary' ? 'text-white/90' : 'text-gray-600'
+            } ${variant === 'split' ? '' : 'max-w-2xl mx-auto'}`}>
+              {subheading}
+            </p>
+          )}
+        </div>
+      </ScrollAnimation>
+    )}
+
+    {variant === 'split' && sideContent ? (
+      /* Split variant - form with side content */
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <ScrollAnimation animation="fadeLeft" client:visible>
+          <div class="lg:pr-8">
+            {sideContent.title && (
+              <h3 class="text-2xl font-semibold mb-4">{sideContent.title}</h3>
+            )}
+            {sideContent.description && (
+              <p class="text-gray-600 mb-6">{sideContent.description}</p>
+            )}
+            {sideContent.features && sideContent.features.length > 0 && (
+              <ul class="space-y-3 mb-8">
+                {sideContent.features.map((feature) => (
+                  <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {sideContent.image && (
+              <img 
+                src={sideContent.image} 
+                alt=""
+                class="rounded-lg shadow-lg w-full"
+              />
+            )}
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animation="fadeRight" delay={0.2} client:visible>
+          <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8">
+            <form method={method} action={submitAction} class="space-y-6 contact-form">
+              {renderFormFields()}
+              {renderSubmitSection()}
+            </form>
+          </div>
+        </ScrollAnimation>
+      </div>
+    ) : variant === 'card' ? (
+      /* Card variant - form in a card */
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="bg-white rounded-lg shadow-xl p-6 sm:p-8 lg:p-12 max-w-2xl mx-auto">
+          <form method={method} action={submitAction} class="space-y-6 contact-form">
+            {renderFormFields()}
+            {renderSubmitSection()}
+          </form>
+        </div>
+      </ScrollAnimation>
+    ) : variant === 'minimal' ? (
+      /* Minimal variant - no containers */
+      <form method={method} action={submitAction} class="space-y-4 contact-form max-w-xl mx-auto">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          {fields.map((field, index) => (
+            <div key={field.name}>
+              {renderField(field, false)}
+            </div>
+          ))}
+        </ScrollAnimation>
+        <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+          <Button type="submit" size="lg" className="w-full">
+            {submitText}
+          </Button>
+        </ScrollAnimation>
+      </form>
+    ) : variant === 'inline' ? (
+      /* Inline variant - horizontal form */
+      <form method={method} action={submitAction} class="contact-form">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <div class="flex flex-col sm:flex-row gap-4">
+            {fields.map((field) => (
+              <div class="flex-1">
+                {renderField(field, false)}
+              </div>
+            ))}
+            <Button type="submit" size="lg" className="sm:w-auto">
+              {submitText}
+            </Button>
+          </div>
+        </ScrollAnimation>
+      </form>
+    ) : (
+      /* Default variant */
+      <form method={method} action={submitAction} class="space-y-6 contact-form">
+        <ScrollAnimation animation="fadeUp" client:visible>
+          {renderFormFields()}
+        </ScrollAnimation>
+        <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+          {renderSubmitSection()}
+        </ScrollAnimation>
+      </form>
+    )}
+
+    {/* Success Message (hidden by default) */}
+    <div class="hidden success-message fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+      <div class="bg-white rounded-lg p-8 max-w-md text-center">
+        <svg class="w-16 h-16 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Success!</h3>
+        <p class="text-gray-600">{successMessage}</p>
+        <Button size="sm" className="mt-4" onclick="this.closest('.success-message').classList.add('hidden')">
+          Close
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Helper Functions */}
+{
+  function renderFormFields() {
+    return (
+      <div class="space-y-6">
+        {/* Two column fields */}
+        {halfWidthFields.length > 0 && (
+          <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
+            {halfWidthFields.map((field) => (
+              <div key={field.name}>
+                {renderField(field)}
+              </div>
+            ))}
+          </div>
+        )}
+        
+        {/* Full width fields */}
+        {fullWidthFields.map((field) => (
+          <div key={field.name}>
+            {renderField(field)}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  function renderField(field: FormField, showLabel = showLabels) {
+    const baseInputClasses = `w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors ${
+      background === 'primary' ? 'bg-white/10 border-white/30 text-white placeholder-white/60' : 'bg-white border-gray-300'
+    }`;
+
+    return (
+      <>
+        {showLabel && (
+          <label for={field.name} class={`block text-sm font-medium mb-2 ${
+            background === 'primary' ? 'text-white' : 'text-gray-700'
+          }`}>
+            {field.label}
+            {field.required && <span class="text-red-500 ml-1">*</span>}
+          </label>
+        )}
+        
+        {field.type === 'textarea' ? (
+          <textarea
+            id={field.name}
+            name={field.name}
+            rows={field.rows || 4}
+            class={baseInputClasses}
+            placeholder={field.placeholder || field.label}
+            required={field.required}
+          ></textarea>
+        ) : field.type === 'select' ? (
+          <select
+            id={field.name}
+            name={field.name}
+            class={baseInputClasses}
+            required={field.required}
+          >
+            <option value="">{field.placeholder || `Select ${field.label}`}</option>
+            {field.options?.map((option) => (
+              <option value={typeof option === 'string' ? option : option.value}>
+                {typeof option === 'string' ? option : option.label}
+              </option>
+            ))}
+          </select>
+        ) : field.type === 'radio' ? (
+          <div class="space-y-2">
+            {field.options?.map((option, index) => (
+              <label class="flex items-center gap-2">
+                <input
+                  type="radio"
+                  name={field.name}
+                  value={typeof option === 'string' ? option : option.value}
+                  required={field.required && index === 0}
+                  class="text-primary focus:ring-primary"
+                />
+                <span class={background === 'primary' ? 'text-white' : 'text-gray-700'}>
+                  {typeof option === 'string' ? option : option.label}
+                </span>
+              </label>
+            ))}
+          </div>
+        ) : field.type === 'checkbox' ? (
+          <label class="flex items-start gap-2">
+            <input
+              type="checkbox"
+              name={field.name}
+              required={field.required}
+              class="mt-1 text-primary focus:ring-primary"
+            />
+            <span class={`text-sm ${background === 'primary' ? 'text-white' : 'text-gray-700'}`}>
+              {field.label}
+            </span>
+          </label>
+        ) : (
+          <input
+            type={field.type}
+            id={field.name}
+            name={field.name}
+            class={baseInputClasses}
+            placeholder={field.placeholder || field.label}
+            required={field.required}
+            pattern={field.pattern}
+          />
+        )}
+        
+        {field.helperText && (
+          <p class={`text-sm mt-1 ${background === 'primary' ? 'text-white/80' : 'text-gray-500'}`}>
+            {field.helperText}
+          </p>
+        )}
+      </>
+    );
+  }
+
+  function renderSubmitSection() {
+    return (
+      <div class="space-y-4">
+        {requiredText && fields.some(f => f.required) && (
+          <p class={`text-sm ${background === 'primary' ? 'text-white/80' : 'text-gray-500'}`}>
+            {requiredText}
+          </p>
+        )}
+        
+        <Button type="submit" size="lg" className="w-full">
+          {submitText}
+        </Button>
+        
+        {privacyText && (
+          <p class={`text-sm text-center ${background === 'primary' ? 'text-white/80' : 'text-gray-500'}`}>
+            {privacyText}
+            {privacyLink && (
+              <>
+                {' '}
+                <a href={privacyLink} class="underline hover:no-underline">
+                  Privacy Policy
+                </a>
+              </>
+            )}
+          </p>
+        )}
+      </div>
+    );
+  }
+}
+
+<script>
+  // Simple form handling
+  document.addEventListener('DOMContentLoaded', () => {
+    const forms = document.querySelectorAll('.contact-form');
+    
+    forms.forEach(form => {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(form as HTMLFormElement);
+        const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+        const originalText = submitButton.textContent;
+        
+        // Show loading state
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+        
+        try {
+          // In production, replace with actual API endpoint
+          const response = await fetch(form.getAttribute('action') || '/api/contact', {
+            method: form.getAttribute('method') || 'POST',
+            body: formData
+          });
+          
+          if (response.ok) {
+            // Show success message
+            const successMessage = document.querySelector('.success-message');
+            if (successMessage) {
+              successMessage.classList.remove('hidden');
+            }
+            
+            // Reset form
+            (form as HTMLFormElement).reset();
+          } else {
+            throw new Error('Failed to submit form');
+          }
+        } catch (error) {
+          alert('Sorry, there was an error sending your message. Please try again or call us directly.');
+        } finally {
+          // Reset button
+          submitButton.disabled = false;
+          submitButton.textContent = originalText;
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  /* Custom focus styles for form elements */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+  
+  /* Custom checkbox and radio styles */
+  input[type="checkbox"],
+  input[type="radio"] {
+    border-radius: 0.25rem;
+  }
+  
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+</style>

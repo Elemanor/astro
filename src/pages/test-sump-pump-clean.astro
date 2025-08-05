@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+// Simple data - no nested objects
+const serviceName = "Sump Pump Installation";
+const serviceTitle = "Sump Pump Guide Toronto";
+const startingPrice = "$1,200";
+---
+
+<BaseLayout title={serviceName}>
+  <Header />
+  
+  <section class="hero-section">
+    <div class="container">
+      <h1>{serviceTitle}</h1>
+      <div class="price-box">
+        <span class="price-value">{startingPrice}</span>
+        <span class="price-label">Starting Price</span>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero-section {
+    padding: 4rem 0;
+    background-color: #f7fafc;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .price-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .price-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  .price-label {
+    display: block;
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+  }
+</style>

@@ -1,0 +1,102 @@
+---
+import { Image } from 'astro:assets';
+
+const problems = [
+  {
+    title: 'Foundation Cracks',
+    severity: 'Critical',
+    description: 'Structural integrity at risk. Professional injection provides permanent sealing.',
+    price: 'From $500',
+    image: 'https://images.unsplash.com/photo-1635321593217-40050ad13c74?w=600&h=400&fit=crop',
+    href: '/services/foundation-cracks',
+    severityColor: 'bg-red-600',
+    borderColor: 'border-red-200 hover:border-red-300',
+  },
+  {
+    title: 'Water Seepage',
+    severity: 'Urgent', 
+    description: 'Moisture destroys property value. Interior drainage eliminates water permanently.',
+    price: 'From $2,000',
+    image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&h=400&fit=crop',
+    href: '/services/water-seepage',
+    severityColor: 'bg-orange-600',
+    borderColor: 'border-blue-200 hover:border-blue-300',
+  },
+  {
+    title: 'Failed Sump Pump',
+    severity: 'Emergency',
+    description: 'One failure causes thousands in damage. Triple pump protection prevents disasters.',
+    price: 'From $1,200',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
+    href: '/services/sump-pump',
+    severityColor: 'bg-yellow-600',
+    borderColor: 'border-yellow-200 hover:border-yellow-300',
+  },
+  {
+    title: 'Exterior Drainage',
+    severity: 'Preventive',
+    description: 'Stop water before it enters. Professional grading redirects water permanently.',
+    price: 'From $3,000',
+    image: 'https://images.unsplash.com/photo-1625948515291-69613efd103f?w=600&h=400&fit=crop',
+    href: '/services/exterior-drainage',
+    severityColor: 'bg-green-600',
+    borderColor: 'border-green-200 hover:border-green-300',
+  },
+];
+---
+
+<section class="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="font-montserrat text-2xl sm:text-3xl lg:text-4xl font-light text-center mb-8 sm:mb-12 lg:mb-16">
+      Common Issues We <span class="font-semibold">Resolve</span>
+    </h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      {problems.map((problem) => (
+        <a 
+          href={problem.href}
+          class={`group block bg-white rounded-lg overflow-hidden border transition-all duration-300 hover:shadow-lg ${problem.borderColor}`}
+        >
+          <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden bg-gray-100">
+            <img 
+              src={problem.image}
+              alt={`${problem.title} - ${problem.description}`}
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            
+            <!-- Severity Badge -->
+            <div class="absolute top-2 left-2 sm:top-4 sm:left-4">
+              <span class={`inline-flex items-center px-2 py-1 sm:px-3 rounded-sm text-xs font-bold text-white ${problem.severityColor}`}>
+                {problem.severity}
+              </span>
+            </div>
+            
+            <!-- Title Overlay -->
+            <div class="absolute bottom-4 left-4 right-4">
+              <h3 class="text-xl font-bold text-white">{problem.title}</h3>
+            </div>
+          </div>
+          
+          <div class="p-4 sm:p-6">
+            <p class="text-sm text-gray-600 mb-4 min-h-[3rem]">
+              {problem.description}
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-900">{problem.price}</span>
+              <span class="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                Learn more
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

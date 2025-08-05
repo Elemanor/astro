@@ -1,0 +1,191 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+import { Button } from './ui/button';
+
+const trustIndicators = [
+  'Licensed & Insured',
+  'Same Day Service', 
+  'Lifetime Warranty',
+  '0% Financing'
+];
+
+const stats = [
+  { number: '12,847', label: 'Homes Protected' },
+  { number: '4.9★', label: 'Google Rating' },
+  { number: '<2hr', label: 'Response Time' }
+];
+---
+
+<section class="relative min-h-[100dvh] flex items-center bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden">
+  <!-- Background pattern -->
+  <div 
+    class="absolute inset-0 opacity-5" 
+    style="background-image: radial-gradient(circle at 1px 1px, black 1px, transparent 1px); background-size: 40px 40px;"
+  ></div>
+  
+  <!-- Video Background with lazy loading -->
+  <div class="absolute inset-0 w-full h-full">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <iframe 
+      id="hero-video"
+      class="absolute inset-0 w-full h-full object-cover scale-150 opacity-0 transition-opacity duration-1000"
+      style="pointer-events: none;"
+      data-src="https://www.youtube.com/embed/qKqYcDX7QuQ?autoplay=1&mute=1&controls=0&loop=1&playlist=qKqYcDX7QuQ&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&playsinline=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      title="Professional basement waterproofing"
+    ></iframe>
+  </div>
+  
+  <!-- Gradient overlays -->
+  <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-white/40 to-transparent"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+        
+        <!-- Hero Text -->
+        <div class="text-center lg:text-left">
+          <ScrollAnimation animation="fadeUp" client:visible>
+            <p class="text-primary text-xs sm:text-sm font-medium tracking-wider uppercase mb-4 sm:mb-6">
+              Foundation Protection Excellence
+            </p>
+          </ScrollAnimation>
+          
+          <ScrollAnimation animation="fadeUp" delay={0.1} client:visible>
+            <h1 class="font-montserrat text-3xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight">
+              <span class="font-light">Your Home's</span><br/>
+              <span class="font-bold relative inline-block">
+                Foundation
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary/50"></span>
+              </span><br/>
+              <span class="font-light text-2xl xs:text-3xl sm:text-4xl lg:text-5xl">Deserves Certainty</span>
+            </h1>
+          </ScrollAnimation>
+          
+          <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+            <p class="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0">
+              Every crack tells a story of risk. Every drop of water threatens value.
+              <span class="block mt-2 font-semibold text-gray-900">
+                Permanent solutions, not temporary fixes.
+              </span>
+            </p>
+          </ScrollAnimation>
+          
+          <!-- Trust Indicators - Desktop -->
+          <div class="hidden sm:grid grid-cols-2 gap-4 my-6 lg:my-8 max-w-lg mx-auto lg:mx-0">
+            {trustIndicators.map((item, index) => (
+              <ScrollAnimation animation="fadeLeft" delay={0.3 + index * 0.1} client:visible>
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="text-gray-700">{item}</span>
+                </div>
+              </ScrollAnimation>
+            ))}
+          </div>
+          
+          <!-- Mobile Trust Bar -->
+          <div class="sm:hidden flex gap-3 overflow-x-auto py-4 -mx-4 px-4 scrollbar-hide">
+            {trustIndicators.map((item) => (
+              <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-full whitespace-nowrap">
+                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-sm font-medium">{item.split(' ')[0]}</span>
+              </div>
+            ))}
+          </div>
+          
+          <!-- CTAs -->
+          <ScrollAnimation animation="fadeUp" delay={0.5} client:visible>
+            <div class="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-8 justify-center lg:justify-start">
+              <Button size="lg">
+                Get Free Assessment
+              </Button>
+              <Button size="lg" variant="outline">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Call Now
+              </Button>
+            </div>
+          </ScrollAnimation>
+          
+          <!-- Stats -->
+          <ScrollAnimation animation="zoomIn" delay={0.6} client:visible>
+            <div>
+              <p class="text-sm text-gray-600 mb-3 font-medium text-center lg:text-left">Why choose DrySpace?</p>
+              <div class="grid grid-cols-3 gap-4 sm:gap-6 max-w-md mx-auto lg:mx-0">
+                {stats.map((stat) => (
+                  <div class="text-center lg:text-left">
+                    <div class="text-xl xs:text-2xl sm:text-3xl font-light text-primary mb-1">{stat.number}</div>
+                    <div class="text-xs sm:text-sm text-gray-600">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </ScrollAnimation>
+        </div>
+        
+        <!-- Video Showcase -->
+        <ScrollAnimation animation="fadeRight" delay={0.3} className="hidden lg:block" client:visible>
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-2xl">
+            <div class="relative pb-[56.25%] bg-black">
+              <iframe 
+                src="https://www.youtube.com/embed/qKqYcDX7QuQ?rel=0&modestbranding=1&start=10" 
+                title="DrySpace Waterproofing Process"
+                class="absolute inset-0 w-full h-full"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="bg-gray-900 px-4 sm:px-6 py-3 sm:py-4 border-t border-gray-800">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-white font-medium text-sm sm:text-base">See Our 4-Hour Foundation Repair</p>
+                  <p class="text-gray-400 text-xs sm:text-sm">Watch how we fix issues permanently</p>
+                </div>
+                <span class="text-gray-500 text-xs sm:text-sm">2:47</span>
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<script>
+  // Lazy load hero video
+  const video = document.getElementById('hero-video') as HTMLIFrameElement;
+  if (video && video.dataset.src) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          video.src = video.dataset.src;
+          video.style.opacity = '0.2';
+          observer.unobserve(video);
+        }
+      });
+    });
+    observer.observe(video);
+  }
+</script>

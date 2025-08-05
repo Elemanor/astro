@@ -1,0 +1,324 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { Navigation } from '../components/Navigation';
+import Footer from '../components/Footer.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+import { ScrollAnimation } from '../components/ScrollAnimation';
+import { Button } from '../components/ui/button';
+import '../styles/globals.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  date: string;
+  author?: string;
+  image?: string;
+  imageAlt?: string;
+  category?: string;
+  tags?: string[];
+}
+
+const { 
+  title, 
+  description, 
+  date,
+  author = 'DrySpace Waterproofing Team',
+  image, 
+  imageAlt,
+  category,
+  tags = []
+} = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+
+const breadcrumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Blog', href: '/blog' },
+  { name: category || 'Article', href: '#' }
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <Navigation client:load />
+  
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-gray-50 to-white pt-24 pb-12 lg:pt-32 lg:pb-16">
+    <div class="absolute inset-0 opacity-5" 
+         style="background-image: radial-gradient(circle at 1px 1px, black 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
+    
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumbs -->
+      <nav class="mb-8">
+        <ol class="flex items-center space-x-2 text-sm">
+          {breadcrumbs.map((item, index) => (
+            <li class="flex items-center">
+              {index > 0 && (
+                <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              )}
+              {index < breadcrumbs.length - 1 ? (
+                <a href={item.href} class="text-gray-600 hover:text-primary transition-colors">
+                  {item.name}
+                </a>
+              ) : (
+                <span class="text-gray-900 font-medium">{item.name}</span>
+              )}
+            </li>
+          ))}
+        </ol>
+      </nav>
+      
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="text-center">
+          {category && (
+            <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
+              {category}
+            </span>
+          )}
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            {title}
+          </h1>
+          
+          <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            {description}
+          </p>
+          
+          <div class="flex items-center justify-center gap-6 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <span>{author}</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>{formattedDate}</span>
+            </div>
+          </div>
+        </div>
+      </ScrollAnimation>
+    </div>
+  </section>
+  
+  <!-- Featured Image -->
+  {image && (
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 mb-12">
+      <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+        <div class="rounded-lg overflow-hidden shadow-2xl">
+          <img src={image} alt={imageAlt || title} class="w-full h-auto" />
+        </div>
+      </ScrollAnimation>
+    </section>
+  )}
+  
+  <!-- Main Content -->
+  <section class="py-12 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <!-- Article Content -->
+        <article class="lg:col-span-2 prose prose-lg max-w-none">
+          <slot />
+        </article>
+        
+        <!-- Sidebar -->
+        <aside class="lg:col-span-1">
+          <div class="sticky top-24 space-y-8">
+            <!-- CTA Card -->
+            <div class="bg-primary/5 border border-primary/20 rounded-lg p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Need Professional Help?
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Get expert waterproofing solutions with lifetime warranty protection.
+              </p>
+              <Button class="w-full mb-3">
+                Get Free Assessment
+              </Button>
+              <a href="tel:4375450067" class="text-primary font-semibold text-sm hover:underline block text-center">
+                Call (437) 545-0067
+              </a>
+            </div>
+            
+            <!-- Related Services -->
+            <div class="bg-gray-50 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                Related Services
+              </h3>
+              <ul class="space-y-3">
+                <li>
+                  <a href="/services/sump-pump-installation-toronto" class="text-primary hover:underline">
+                    Sump Pump Installation
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/foundation-crack-repair" class="text-primary hover:underline">
+                    Foundation Crack Repair
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/interior-waterproofing" class="text-primary hover:underline">
+                    Interior Waterproofing
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/exterior-waterproofing" class="text-primary hover:underline">
+                    Exterior Waterproofing
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Tags -->
+            {tags.length > 0 && (
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                  Topics
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  {tags.map(tag => (
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Related Articles -->
+  <section class="bg-gray-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Related Articles
+        </h2>
+      </ScrollAnimation>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Placeholder for related articles - would be dynamic in real implementation -->
+        <ScrollAnimation animation="fadeUp" delay={0.1} client:visible>
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="h-48 bg-gray-300"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                <a href="#" class="hover:text-primary transition-colors">
+                  Understanding Basement Moisture
+                </a>
+              </h3>
+              <p class="text-gray-600">
+                Learn the common causes of basement moisture and how to prevent water damage.
+              </p>
+            </div>
+          </article>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="h-48 bg-gray-300"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                <a href="#" class="hover:text-primary transition-colors">
+                  Spring Waterproofing Checklist
+                </a>
+              </h3>
+              <p class="text-gray-600">
+                Essential maintenance tasks to protect your basement during Toronto's wet season.
+              </p>
+            </div>
+          </article>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animation="fadeUp" delay={0.3} client:visible>
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="h-48 bg-gray-300"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                <a href="#" class="hover:text-primary transition-colors">
+                  Insurance and Water Damage
+                </a>
+              </h3>
+              <p class="text-gray-600">
+                What Toronto homeowners need to know about insurance coverage for water damage.
+              </p>
+            </div>
+          </article>
+        </ScrollAnimation>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+  <StickyCTA />
+</BaseLayout>
+
+<style>
+  /* Prose customization for better readability */
+  .prose {
+    @apply text-gray-700;
+  }
+  
+  .prose h1 {
+    @apply text-4xl font-bold text-gray-900 mt-12 mb-6;
+  }
+  
+  .prose h2 {
+    @apply text-3xl font-bold text-gray-900 mt-12 mb-6;
+  }
+  
+  .prose h3 {
+    @apply text-2xl font-semibold text-gray-900 mt-8 mb-4;
+  }
+  
+  .prose h4 {
+    @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
+  }
+  
+  .prose a {
+    @apply text-primary hover:text-primary/80 transition-colors;
+  }
+  
+  .prose ul {
+    @apply my-6;
+  }
+  
+  .prose li {
+    @apply my-2;
+  }
+  
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-primary pl-6 italic my-8;
+  }
+  
+  .prose table {
+    @apply w-full my-8 border-collapse;
+  }
+  
+  .prose th {
+    @apply bg-gray-100 p-4 text-left font-semibold border border-gray-300;
+  }
+  
+  .prose td {
+    @apply p-4 border border-gray-300;
+  }
+  
+  .prose img {
+    @apply rounded-lg shadow-lg my-8;
+  }
+</style>

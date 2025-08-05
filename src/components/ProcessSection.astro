@@ -1,0 +1,115 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+
+const steps = [
+  {
+    number: '01',
+    title: 'Free Inspection',
+    description: 'Our certified experts assess your foundation issues with advanced diagnostic tools.',
+    icon: '🔍',
+    duration: '30-60 min'
+  },
+  {
+    number: '02',
+    title: 'Custom Solution',
+    description: 'We design a tailored waterproofing plan specific to your home\'s needs and budget.',
+    icon: '📋',
+    duration: 'Same day'
+  },
+  {
+    number: '03',
+    title: 'Professional Installation',
+    description: 'Our trained crews implement your solution with minimal disruption to your home.',
+    icon: '🔧',
+    duration: '1-3 days'
+  },
+  {
+    number: '04',
+    title: 'Lifetime Protection',
+    description: 'Enjoy peace of mind with our transferable lifetime warranty and ongoing support.',
+    icon: '🛡️',
+    duration: 'Forever'
+  }
+];
+---
+
+<section class="py-12 sm:py-16 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ScrollAnimation animation="fadeUp" client:visible>
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-light mb-4">
+          Our <span class="font-bold">Process</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          From inspection to installation, we make waterproofing simple and stress-free
+        </p>
+      </div>
+    </ScrollAnimation>
+
+    <!-- Desktop Timeline -->
+    <div class="hidden lg:block relative">
+      <!-- Connection Line -->
+      <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 -translate-y-1/2"></div>
+      
+      <div class="grid grid-cols-4 gap-8 relative">
+        {steps.map((step, index) => (
+          <ScrollAnimation animation="zoomIn" delay={index * 0.15} client:visible>
+            <div class="relative">
+              <!-- Step Circle -->
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center border-4 border-primary z-10">
+                <span class="text-xl">{step.icon}</span>
+              </div>
+              
+              <!-- Content Card -->
+              <div class="bg-white rounded-lg shadow-lg p-6 pt-16 hover:shadow-xl transition-shadow">
+                <div class="text-5xl font-bold text-gray-100 mb-2">{step.number}</div>
+                <h3 class="text-xl font-semibold mb-2">{step.title}</h3>
+                <p class="text-gray-600 text-sm mb-3">{step.description}</p>
+                <div class="flex items-center text-sm text-primary font-medium">
+                  <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {step.duration}
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    </div>
+
+    <!-- Mobile Timeline -->
+    <div class="lg:hidden space-y-6">
+      {steps.map((step, index) => (
+        <ScrollAnimation animation="fadeLeft" delay={index * 0.1} client:visible>
+          <div class="flex gap-4">
+            <!-- Step Number -->
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">
+                {step.number}
+              </div>
+              {index < steps.length - 1 && (
+                <div class="w-0.5 h-full bg-gray-300 mx-auto mt-2"></div>
+              )}
+            </div>
+            
+            <!-- Content -->
+            <div class="flex-1 bg-white rounded-lg shadow p-4 sm:p-6">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-2xl">{step.icon}</span>
+                <h3 class="text-lg font-semibold">{step.title}</h3>
+              </div>
+              <p class="text-gray-600 text-sm mb-2">{step.description}</p>
+              <div class="flex items-center text-sm text-primary font-medium">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {step.duration}
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
+      ))}
+    </div>
+  </div>
+</section>

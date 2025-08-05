@@ -1,0 +1,333 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+import { Card, CardContent } from './ui/card';
+
+export interface Resource {
+  title: string;
+  description: string;
+  type: 'guide' | 'video' | 'pdf' | 'tool' | 'article' | 'checklist';
+  link?: string;
+  downloadLink?: string;
+  image?: string;
+  duration?: string; // For videos
+  pages?: number; // For PDFs
+  author?: string;
+  date?: string;
+  featured?: boolean;
+  tags?: string[];
+}
+
+export interface Props {
+  heading?: string;
+  headingAccent?: string;
+  subheading?: string;
+  resources: Resource[];
+  columns?: 2 | 3 | 4;
+  variant?: 'default' | 'cards' | 'list' | 'minimal' | 'featured';
+  showFilters?: boolean;
+  filterTags?: string[];
+  ctaText?: string;
+  background?: 'white' | 'gray';
+}
+
+const {
+  heading = "Helpful",
+  headingAccent = "Resources",
+  subheading = "Expert guides and tools to protect your home",
+  resources,
+  columns = 3,
+  variant = 'default',
+  showFilters = false,
+  filterTags = [],
+  ctaText = "View Resource",
+  background = 'gray'
+} = Astro.props;
+
+const backgroundClasses = {
+  white: 'bg-white',
+  gray: 'bg-gray-50'
+};
+
+const gridClasses = {
+  2: 'sm:grid-cols-2',
+  3: 'sm:grid-cols-2 lg:grid-cols-3',
+  4: 'sm:grid-cols-2 lg:grid-cols-4'
+};
+
+const typeIcons = {
+  guide: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253',
+  video: 'M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+  pdf: 'M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z',
+  tool: 'M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4',
+  article: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z',
+  checklist: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4'
+};
+
+const typeColors = {
+  guide: 'bg-blue-100 text-blue-700',
+  video: 'bg-red-100 text-red-700',
+  pdf: 'bg-orange-100 text-orange-700',
+  tool: 'bg-purple-100 text-purple-700',
+  article: 'bg-green-100 text-green-700',
+  checklist: 'bg-indigo-100 text-indigo-700'
+};
+
+// Separate featured resources if using featured variant
+const featuredResources = variant === 'featured' ? resources.filter(r => r.featured) : [];
+const regularResources = variant === 'featured' ? resources.filter(r => !r.featured) : resources;
+---
+
+<section class={`py-12 sm:py-16 lg:py-24 ${backgroundClasses[background]}`}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ScrollAnimation animation="fadeUp" client:visible>
+      <div class="text-center mb-8 sm:mb-12 lg:mb-16">
+        <h2 class="font-montserrat text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light">
+          {heading} <span class="font-semibold">{headingAccent}</span>
+        </h2>
+        {subheading && (
+          <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            {subheading}
+          </p>
+        )}
+      </div>
+    </ScrollAnimation>
+
+    {/* Filters */}
+    {showFilters && filterTags.length > 0 && (
+      <ScrollAnimation animation="fadeUp" delay={0.1} client:visible>
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+          <button class="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium">
+            All Resources
+          </button>
+          {filterTags.map((tag) => (
+            <button class="px-4 py-2 rounded-full bg-white text-gray-700 text-sm hover:bg-gray-100 transition-colors">
+              {tag}
+            </button>
+          ))}
+        </div>
+      </ScrollAnimation>
+    )}
+
+    {/* Featured Resources */}
+    {variant === 'featured' && featuredResources.length > 0 && (
+      <div class="mb-12">
+        <h3 class="text-xl font-semibold mb-6 text-center">Featured Resources</h3>
+        <div class="grid sm:grid-cols-2 gap-6 mb-12">
+          {featuredResources.map((resource, index) => (
+            <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="grid md:grid-cols-2 h-full">
+                  {resource.image && (
+                    <div class="relative h-48 md:h-full">
+                      <img 
+                        src={resource.image} 
+                        alt={resource.title}
+                        class="w-full h-full object-cover"
+                      />
+                      <div class="absolute top-4 left-4">
+                        <span class={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${typeColors[resource.type]}`}>
+                          {resource.type}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                  <CardContent className="p-6">
+                    <h3 class="text-xl font-bold mb-2">{resource.title}</h3>
+                    <p class="text-gray-600 mb-4">{resource.description}</p>
+                    <div class="flex items-center justify-between">
+                      <div class="text-sm text-gray-500">
+                        {resource.duration && <span>{resource.duration}</span>}
+                        {resource.pages && <span>{resource.pages} pages</span>}
+                        {resource.date && <span>{resource.date}</span>}
+                      </div>
+                      {(resource.link || resource.downloadLink) && (
+                        <a 
+                          href={resource.link || resource.downloadLink} 
+                          class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
+                          download={resource.downloadLink ? true : undefined}
+                        >
+                          {resource.downloadLink ? 'Download' : ctaText}
+                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={resource.downloadLink ? 'M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' : 'M9 5l7 7-7 7'} />
+                          </svg>
+                        </a>
+                      )}
+                    </div>
+                  </CardContent>
+                </div>
+              </Card>
+            </ScrollAnimation>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {/* Resource Grid */}
+    {variant === 'cards' ? (
+      <div class={`grid grid-cols-1 ${gridClasses[columns]} gap-6`}>
+        {regularResources.map((resource, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
+              {resource.image && (
+                <div class="relative h-48">
+                  <img 
+                    src={resource.image} 
+                    alt={resource.title}
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <span class={`inline-flex items-center px-2 py-1 rounded text-xs font-medium ${typeColors[resource.type]}`}>
+                      {resource.type}
+                    </span>
+                  </div>
+                </div>
+              )}
+              <CardContent className="p-6">
+                <h3 class="text-lg font-bold mb-2">{resource.title}</h3>
+                <p class="text-sm text-gray-600 mb-4">{resource.description}</p>
+                {resource.tags && resource.tags.length > 0 && (
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    {resource.tags.map((tag) => (
+                      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                <div class="flex items-center justify-between">
+                  <div class="text-sm text-gray-500">
+                    {resource.duration && <span>{resource.duration}</span>}
+                    {resource.pages && <span>{resource.pages} pages</span>}
+                  </div>
+                  {(resource.link || resource.downloadLink) && (
+                    <a 
+                      href={resource.link || resource.downloadLink} 
+                      class="text-primary font-medium hover:text-primary/80 transition-colors"
+                      download={resource.downloadLink ? true : undefined}
+                    >
+                      {resource.downloadLink ? (
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      ) : (
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      )}
+                    </a>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : variant === 'list' ? (
+      <div class="space-y-4 max-w-4xl mx-auto">
+        {regularResources.map((resource, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.05} client:visible>
+            <div class="bg-white rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div class="flex items-start gap-4">
+                <div class={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 ${typeColors[resource.type].split(' ')[0]}`}>
+                  <svg class={`w-6 h-6 ${typeColors[resource.type].split(' ')[1]}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={typeIcons[resource.type]} />
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <div class="flex items-start justify-between mb-2">
+                    <h3 class="text-lg font-semibold">{resource.title}</h3>
+                    {(resource.link || resource.downloadLink) && (
+                      <a 
+                        href={resource.link || resource.downloadLink} 
+                        class="text-primary hover:text-primary/80 transition-colors ml-4"
+                        download={resource.downloadLink ? true : undefined}
+                      >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={resource.downloadLink ? 'M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' : 'M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'} />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
+                  <p class="text-gray-600 mb-3">{resource.description}</p>
+                  <div class="flex items-center gap-4 text-sm text-gray-500">
+                    <span class={`inline-flex items-center px-2 py-1 rounded text-xs font-medium ${typeColors[resource.type]}`}>
+                      {resource.type}
+                    </span>
+                    {resource.duration && <span>{resource.duration}</span>}
+                    {resource.pages && <span>{resource.pages} pages</span>}
+                    {resource.author && <span>By {resource.author}</span>}
+                    {resource.date && <span>{resource.date}</span>}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : variant === 'minimal' ? (
+      <div class={`grid grid-cols-1 ${gridClasses[columns]} gap-6`}>
+        {regularResources.map((resource, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.05} client:visible>
+            <div class="text-center">
+              <div class={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${typeColors[resource.type].split(' ')[0]}`}>
+                <svg class={`w-8 h-8 ${typeColors[resource.type].split(' ')[1]}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={typeIcons[resource.type]} />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">{resource.title}</h3>
+              <p class="text-sm text-gray-600 mb-3">{resource.description}</p>
+              {(resource.link || resource.downloadLink) && (
+                <a 
+                  href={resource.link || resource.downloadLink} 
+                  class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
+                  download={resource.downloadLink ? true : undefined}
+                >
+                  {resource.downloadLink ? 'Download' : ctaText}
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              )}
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : (
+      /* Default variant */
+      <div class={`grid grid-cols-1 ${gridClasses[columns]} gap-6`}>
+        {regularResources.map((resource, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <div class="bg-white rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div class={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${typeColors[resource.type].split(' ')[0]}`}>
+                <svg class={`w-6 h-6 ${typeColors[resource.type].split(' ')[1]}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={typeIcons[resource.type]} />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold mb-2">{resource.title}</h3>
+              <p class="text-sm text-gray-600 mb-4">{resource.description}</p>
+              <div class="flex items-center justify-between">
+                <div class="text-sm text-gray-500">
+                  {resource.duration && <span>{resource.duration}</span>}
+                  {resource.pages && <span>{resource.pages} pages</span>}
+                </div>
+                {(resource.link || resource.downloadLink) && (
+                  <a 
+                    href={resource.link || resource.downloadLink} 
+                    class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
+                    download={resource.downloadLink ? true : undefined}
+                  >
+                    {resource.downloadLink ? 'Download' : ctaText}
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={resource.downloadLink ? 'M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10' : 'M9 5l7 7-7 7'} />
+                    </svg>
+                  </a>
+                )}
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    )}
+  </div>
+</section>

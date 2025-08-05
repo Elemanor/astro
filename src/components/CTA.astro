@@ -1,0 +1,265 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+import { Button } from './ui/button';
+
+export interface Stat {
+  value: string;
+  label: string;
+}
+
+export interface CTAButton {
+  text: string;
+  href?: string;
+  onClick?: string;
+  variant?: 'default' | 'outline' | 'ghost';
+  icon?: string; // SVG path
+}
+
+export interface Props {
+  heading: string;
+  headingAccent?: string;
+  description?: string;
+  stats?: Stat[];
+  primaryCTA?: CTAButton;
+  secondaryCTA?: CTAButton;
+  trustIndicator?: string;
+  variant?: 'default' | 'minimal' | 'split' | 'banner';
+  background?: 'gradient' | 'solid' | 'image';
+  backgroundImage?: string;
+  backgroundColor?: string; // Tailwind color class
+  pattern?: boolean;
+  alignment?: 'left' | 'center' | 'right';
+}
+
+const {
+  heading,
+  headingAccent,
+  description,
+  stats,
+  primaryCTA = { text: 'Get Free Quote', href: '/quote' },
+  secondaryCTA,
+  trustIndicator,
+  variant = 'default',
+  background = 'gradient',
+  backgroundImage,
+  backgroundColor = 'bg-primary',
+  pattern = true,
+  alignment = 'center'
+} = Astro.props;
+
+const alignmentClasses = {
+  left: 'text-left',
+  center: 'text-center',
+  right: 'text-right'
+};
+
+const paddingClasses = {
+  default: 'py-16 sm:py-20 lg:py-24',
+  minimal: 'py-8 sm:py-12',
+  split: 'py-0',
+  banner: 'py-6 sm:py-8'
+};
+---
+
+<section class={`relative ${paddingClasses[variant]} overflow-hidden`}>
+  {/* Background */}
+  {background === 'gradient' && (
+    <div class="absolute inset-0 bg-gradient-to-br from-primary via-blue-600 to-primary"></div>
+  )}
+  {background === 'solid' && (
+    <div class={`absolute inset-0 ${backgroundColor}`}></div>
+  )}
+  {background === 'image' && backgroundImage && (
+    <>
+      <div class="absolute inset-0">
+        <img 
+          src={backgroundImage} 
+          alt="" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="absolute inset-0 bg-black/60"></div>
+    </>
+  )}
+  
+  {/* Pattern overlay */}
+  {pattern && (
+    <div 
+      class="absolute inset-0 opacity-10"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.4\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"
+    ></div>
+  )}
+  
+  <div class={`relative z-10 ${variant === 'split' ? '' : 'max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'} ${alignmentClasses[alignment]}`}>
+    {variant === 'split' ? (
+      /* Split variant - side by side layout */
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class={`${backgroundColor} text-white p-8 sm:p-12 lg:p-16 flex items-center`}>
+          <div class={`max-w-xl ${alignment === 'center' ? 'mx-auto' : ''}`}>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+              <span set:html={heading}></span>
+              {headingAccent && (
+                <>
+                  {' '}
+                  <span class="text-yellow-300">{headingAccent}</span>
+                </>
+              )}
+            </h2>
+            {description && (
+              <p class="text-lg opacity-90 mb-8">{description}</p>
+            )}
+            {stats && stats.length > 0 && (
+              <div class="grid grid-cols-2 gap-4 mb-8">
+                {stats.map((stat) => (
+                  <div>
+                    <div class="text-3xl font-bold">{stat.value}</div>
+                    <div class="text-sm opacity-80">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+        <div class="bg-gray-100 p-8 sm:p-12 lg:p-16 flex items-center">
+          <div class={`w-full max-w-md ${alignment === 'center' ? 'mx-auto' : ''}`}>
+            <div class="space-y-4">
+              {primaryCTA && (
+                <Button size="lg" className="w-full" asChild>
+                  <a href={primaryCTA.href}>{primaryCTA.text}</a>
+                </Button>
+              )}
+              {secondaryCTA && (
+                <Button size="lg" variant={secondaryCTA.variant || 'outline'} className="w-full" asChild>
+                  <a href={secondaryCTA.href}>
+                    {secondaryCTA.icon && (
+                      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={secondaryCTA.icon} />
+                      </svg>
+                    )}
+                    {secondaryCTA.text}
+                  </a>
+                </Button>
+              )}
+            </div>
+            {trustIndicator && (
+              <p class="text-gray-600 text-sm mt-6 text-center">{trustIndicator}</p>
+            )}
+          </div>
+        </div>
+      </div>
+    ) : variant === 'banner' ? (
+      /* Banner variant - horizontal compact layout */
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class={`${alignment === 'center' ? 'text-center sm:text-left' : ''}`}>
+          <h2 class="text-xl sm:text-2xl font-bold text-white mb-1">
+            <span set:html={heading}></span>
+            {headingAccent && (
+              <>
+                {' '}
+                <span class="text-yellow-300">{headingAccent}</span>
+              </>
+            )}
+          </h2>
+          {description && (
+            <p class="text-sm sm:text-base text-white/90">{description}</p>
+          )}
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3">
+          {stats && stats.length > 0 && (
+            <div class="flex items-center gap-4 text-white mr-4">
+              {stats.map((stat) => (
+                <div class="text-center">
+                  <div class="text-2xl sm:text-3xl font-bold">{stat.value}</div>
+                  <div class="text-xs sm:text-sm opacity-80">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          )}
+          {primaryCTA && (
+            <Button size="lg" className="bg-white text-primary hover:bg-gray-100" asChild>
+              <a href={primaryCTA.href}>{primaryCTA.text}</a>
+            </Button>
+          )}
+          {secondaryCTA && (
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+              <a href={secondaryCTA.href}>
+                {secondaryCTA.icon && (
+                  <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={secondaryCTA.icon} />
+                  </svg>
+                )}
+                {secondaryCTA.text}
+              </a>
+            </Button>
+          )}
+        </div>
+      </div>
+    ) : (
+      /* Default & Minimal variants */
+      <>
+        <ScrollAnimation animation="fadeUp" client:visible>
+          <h2 class={`text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 ${variant === 'minimal' ? 'mb-4' : ''}`}>
+            <span set:html={heading}></span>
+            {headingAccent && (
+              <>
+                <br />
+                <span class="text-yellow-300">{headingAccent}</span>
+              </>
+            )}
+          </h2>
+          {description && (
+            <p class={`text-lg sm:text-xl text-white/90 mb-8 max-w-2xl ${alignment === 'center' ? 'mx-auto' : ''} ${variant === 'minimal' ? 'mb-6 text-base sm:text-lg' : ''}`}>
+              {description}
+            </p>
+          )}
+        </ScrollAnimation>
+        
+        {/* Stats */}
+        {stats && stats.length > 0 && variant !== 'minimal' && (
+          <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+            <div class={`grid grid-cols-2 sm:grid-cols-${stats.length} gap-4 mb-10 max-w-3xl ${alignment === 'center' ? 'mx-auto' : ''}`}>
+              {stats.map((stat) => (
+                <div class="text-white">
+                  <div class="text-3xl font-bold mb-1">{stat.value}</div>
+                  <div class="text-sm opacity-90">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </ScrollAnimation>
+        )}
+        
+        {/* CTAs */}
+        <ScrollAnimation animation="zoomIn" delay={0.3} client:visible>
+          <div class={`flex flex-col sm:flex-row gap-4 ${alignment === 'center' ? 'justify-center' : alignment === 'right' ? 'justify-end' : 'justify-start'}`}>
+            {primaryCTA && (
+              <Button size="lg" className="bg-white text-primary hover:bg-gray-100" asChild>
+                <a href={primaryCTA.href}>{primaryCTA.text}</a>
+              </Button>
+            )}
+            {secondaryCTA && (
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                <a href={secondaryCTA.href}>
+                  {secondaryCTA.icon && (
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={secondaryCTA.icon} />
+                    </svg>
+                  )}
+                  {secondaryCTA.text}
+                </a>
+              </Button>
+            )}
+          </div>
+        </ScrollAnimation>
+        
+        {/* Trust indicator */}
+        {trustIndicator && (
+          <ScrollAnimation animation="fadeUp" delay={0.4} client:visible>
+            <p class="text-white/80 text-sm mt-8">
+              {trustIndicator}
+            </p>
+          </ScrollAnimation>
+        )}
+      </>
+    )}
+  </div>
+</section>

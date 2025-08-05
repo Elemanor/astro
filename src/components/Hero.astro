@@ -1,0 +1,238 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+import { Button } from './ui/button';
+
+export interface Props {
+  heading: string;
+  headingAccent?: string;
+  subheading?: string;
+  description?: string;
+  ctaPrimary?: {
+    text: string;
+    href: string;
+  };
+  ctaSecondary?: {
+    text: string;
+    href: string;
+  };
+  image?: string;
+  imageAlt?: string;
+  video?: string;
+  stats?: Array<{
+    number: string;
+    label: string;
+  }>;
+  trustIndicators?: string[];
+  backgroundPattern?: boolean;
+  variant?: 'default' | 'video' | 'gradient' | 'split';
+  alignment?: 'left' | 'center' | 'right';
+}
+
+const {
+  heading,
+  headingAccent,
+  subheading,
+  description,
+  ctaPrimary,
+  ctaSecondary,
+  image,
+  imageAlt,
+  video,
+  stats,
+  trustIndicators,
+  backgroundPattern = true,
+  variant = 'default',
+  alignment = 'left'
+} = Astro.props;
+
+const alignmentClasses = {
+  left: 'text-left',
+  center: 'text-center mx-auto',
+  right: 'text-right ml-auto'
+};
+
+const heroClasses = {
+  default: 'bg-gradient-to-br from-gray-50 via-white to-gray-50',
+  video: 'bg-gray-900',
+  gradient: 'bg-gradient-to-br from-primary via-primary-dark to-primary',
+  split: 'bg-white'
+};
+---
+
+<section class={`relative min-h-[80vh] lg:min-h-[100vh] flex items-center overflow-hidden ${heroClasses[variant]}`}>
+  <!-- Background Pattern -->
+  {backgroundPattern && (
+    <div 
+      class="absolute inset-0 opacity-5" 
+      style="background-image: radial-gradient(circle at 1px 1px, black 1px, transparent 1px); background-size: 40px 40px;"
+    ></div>
+  )}
+  
+  <!-- Video Background -->
+  {video && variant === 'video' && (
+    <div class="absolute inset-0 w-full h-full">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <iframe 
+        class="absolute inset-0 w-full h-full object-cover scale-150"
+        src={video}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="Background video"
+        style="pointer-events: none;"
+      ></iframe>
+      <!-- Gradient overlays for video -->
+      <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-white/40 to-transparent"></div>
+    </div>
+  )}
+  
+  <!-- Content -->
+  <div class="relative z-10 w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class={`grid grid-cols-1 ${image || variant === 'split' ? 'lg:grid-cols-2' : ''} gap-8 lg:gap-12 xl:gap-16 items-center`}>
+        
+        <!-- Text Content -->
+        <div class={`${alignmentClasses[alignment]} ${!image && alignment === 'center' ? 'max-w-3xl' : ''}`}>
+          <!-- Subheading -->
+          {subheading && (
+            <ScrollAnimation animation="fadeUp" client:visible>
+              <p class={`text-primary text-xs sm:text-sm font-medium tracking-wider uppercase mb-4 sm:mb-6 ${variant === 'gradient' ? 'text-white/80' : ''}`}>
+                {subheading}
+              </p>
+            </ScrollAnimation>
+          )}
+          
+          <!-- Main Heading -->
+          <ScrollAnimation animation="fadeUp" delay={0.1} client:visible>
+            <h1 class={`font-montserrat text-3xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight ${variant === 'gradient' ? 'text-white' : ''}`}>
+              <span class="font-light" set:html={heading}></span>
+              {headingAccent && (
+                <>
+                  <br/>
+                  <span class="font-bold relative inline-block">
+                    {headingAccent}
+                    <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary/50"></span>
+                  </span>
+                </>
+              )}
+            </h1>
+          </ScrollAnimation>
+          
+          <!-- Description -->
+          {description && (
+            <ScrollAnimation animation="fadeUp" delay={0.2} client:visible>
+              <p class={`mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl ${variant === 'gradient' ? 'text-white/90' : 'text-gray-700'} ${alignment === 'center' ? 'max-w-2xl mx-auto' : 'max-w-xl'}`}>
+                {description}
+              </p>
+            </ScrollAnimation>
+          )}
+          
+          <!-- Trust Indicators -->
+          {trustIndicators && trustIndicators.length > 0 && (
+            <>
+              <!-- Desktop -->
+              <div class="hidden sm:grid grid-cols-2 gap-4 my-6 lg:my-8 max-w-lg">
+                {trustIndicators.map((item, index) => (
+                  <ScrollAnimation animation="fadeLeft" delay={0.3 + index * 0.1} client:visible>
+                    <div class="flex items-center gap-3">
+                      <svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class={`${variant === 'gradient' ? 'text-white' : 'text-gray-700'}`}>{item}</span>
+                    </div>
+                  </ScrollAnimation>
+                ))}
+              </div>
+              
+              <!-- Mobile -->
+              <div class="sm:hidden flex gap-3 overflow-x-auto py-4 -mx-4 px-4 scrollbar-hide">
+                {trustIndicators.map((item) => (
+                  <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-full whitespace-nowrap">
+                    <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-sm font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+          
+          <!-- CTAs -->
+          {(ctaPrimary || ctaSecondary) && (
+            <ScrollAnimation animation="fadeUp" delay={0.5} client:visible>
+              <div class={`flex flex-col sm:flex-row gap-4 mb-6 sm:mb-8 ${alignment === 'center' ? 'justify-center' : alignment === 'right' ? 'justify-end' : 'justify-start'}`}>
+                {ctaPrimary && (
+                  <Button size="lg" asChild>
+                    <a href={ctaPrimary.href}>{ctaPrimary.text}</a>
+                  </Button>
+                )}
+                {ctaSecondary && (
+                  <Button size="lg" variant="outline" asChild>
+                    <a href={ctaSecondary.href}>
+                      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      {ctaSecondary.text}
+                    </a>
+                  </Button>
+                )}
+              </div>
+            </ScrollAnimation>
+          )}
+          
+          <!-- Stats -->
+          {stats && stats.length > 0 && (
+            <ScrollAnimation animation="zoomIn" delay={0.6} client:visible>
+              <div>
+                <p class={`text-sm ${variant === 'gradient' ? 'text-white/80' : 'text-gray-600'} mb-3 font-medium ${alignmentClasses[alignment]}`}>
+                  Why choose us?
+                </p>
+                <div class={`grid grid-cols-3 gap-4 sm:gap-6 ${alignment === 'center' ? 'max-w-md mx-auto' : 'max-w-md'}`}>
+                  {stats.map((stat) => (
+                    <div class={alignmentClasses[alignment]}>
+                      <div class={`text-xl xs:text-2xl sm:text-3xl font-light ${variant === 'gradient' ? 'text-white' : 'text-primary'} mb-1`}>
+                        {stat.number}
+                      </div>
+                      <div class={`text-xs sm:text-sm ${variant === 'gradient' ? 'text-white/80' : 'text-gray-600'}`}>
+                        {stat.label}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </ScrollAnimation>
+          )}
+        </div>
+        
+        <!-- Image/Video Content -->
+        {image && (
+          <ScrollAnimation animation="fadeRight" delay={0.3} className="hidden lg:block" client:visible>
+            <div class="relative">
+              <img 
+                src={image} 
+                alt={imageAlt || heading}
+                class="rounded-lg shadow-2xl w-full h-auto"
+              />
+              <!-- Optional overlay or badge -->
+              <div class="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow-lg">
+                Trusted Since 1998
+              </div>
+            </div>
+          </ScrollAnimation>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+</style>

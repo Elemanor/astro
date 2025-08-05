@@ -1,0 +1,223 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+
+export interface Stat {
+  value: string;
+  label: string;
+  prefix?: string;
+  suffix?: string;
+  icon?: string; // SVG path
+  highlight?: boolean;
+}
+
+export interface Props {
+  heading?: string;
+  headingAccent?: string;
+  subheading?: string;
+  stats: Stat[];
+  columns?: 2 | 3 | 4 | 5 | 6; // Number of columns on desktop
+  variant?: 'default' | 'cards' | 'minimal' | 'centered' | 'banner';
+  background?: 'white' | 'gray' | 'primary' | 'gradient';
+  textColor?: string; // Tailwind text color class
+  showDividers?: boolean;
+}
+
+const {
+  heading,
+  headingAccent,
+  subheading,
+  stats,
+  columns = 4,
+  variant = 'default',
+  background = 'primary',
+  textColor,
+  showDividers = false
+} = Astro.props;
+
+const backgroundClasses = {
+  white: 'bg-white',
+  gray: 'bg-gray-50',
+  primary: 'bg-primary text-white',
+  gradient: 'bg-gradient-to-br from-primary via-blue-600 to-primary text-white'
+};
+
+const defaultTextColor = {
+  white: 'text-gray-900',
+  gray: 'text-gray-900',
+  primary: 'text-white',
+  gradient: 'text-white'
+};
+
+const gridClasses = {
+  2: 'grid-cols-2',
+  3: 'grid-cols-2 md:grid-cols-3',
+  4: 'grid-cols-2 md:grid-cols-4',
+  5: 'grid-cols-2 md:grid-cols-3 lg:grid-cols-5',
+  6: 'grid-cols-2 md:grid-cols-3 lg:grid-cols-6'
+};
+
+const paddingClasses = {
+  default: 'py-12 sm:py-16',
+  cards: 'py-16 sm:py-20 lg:py-24',
+  minimal: 'py-8 sm:py-12',
+  centered: 'py-16 sm:py-20 lg:py-24',
+  banner: 'py-6 sm:py-8'
+};
+
+const finalTextColor = textColor || defaultTextColor[background];
+---
+
+<section class={`${paddingClasses[variant]} ${backgroundClasses[background]} ${background === 'gradient' ? 'relative overflow-hidden' : ''}`}>
+  {background === 'gradient' && (
+    /* Pattern overlay for gradient background */
+    <div 
+      class="absolute inset-0 opacity-5"
+      style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 1px); background-size: 40px 40px;"
+    ></div>
+  )}
+  
+  <div class={`${background === 'gradient' ? 'relative z-10' : ''} max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`}>
+    {(heading || subheading) && (
+      <ScrollAnimation animation="fadeUp" client:visible>
+        <div class="text-center mb-8 sm:mb-12">
+          {subheading && (
+            <p class={`text-sm font-medium tracking-wider uppercase mb-4 ${
+              background === 'primary' || background === 'gradient' ? 'text-white/80' : 'text-primary'
+            }`}>
+              {subheading}
+            </p>
+          )}
+          {heading && (
+            <h2 class={`font-montserrat text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light ${finalTextColor}`}>
+              <span set:html={heading}></span>
+              {headingAccent && (
+                <>
+                  {' '}
+                  <span class="font-bold">{headingAccent}</span>
+                </>
+              )}
+            </h2>
+          )}
+        </div>
+      </ScrollAnimation>
+    )}
+    
+    {variant === 'cards' ? (
+      /* Cards variant */
+      <div class={`grid ${gridClasses[columns]} gap-6 lg:gap-8`}>
+        {stats.map((stat, index) => (
+          <ScrollAnimation animation="zoomIn" delay={index * 0.1} client:visible>
+            <div class={`bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow ${
+              stat.highlight ? 'ring-2 ring-primary transform scale-105' : ''
+            }`}>
+              {stat.icon && (
+                <div class="w-12 h-12 mx-auto mb-4 text-primary">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={stat.icon} />
+                  </svg>
+                </div>
+              )}
+              <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                {stat.prefix}{stat.value}{stat.suffix}
+              </div>
+              <div class="text-gray-600">{stat.label}</div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : variant === 'minimal' ? (
+      /* Minimal variant */
+      <div class={`flex flex-wrap justify-center gap-8 sm:gap-12 lg:gap-16`}>
+        {stats.map((stat, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <div class="text-center">
+              <div class={`text-2xl sm:text-3xl font-light mb-1 ${finalTextColor}`}>
+                {stat.prefix}{stat.value}{stat.suffix}
+              </div>
+              <div class={`text-sm ${
+                background === 'primary' || background === 'gradient' ? 'opacity-90' : 'text-gray-600'
+              }`}>
+                {stat.label}
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : variant === 'banner' ? (
+      /* Banner variant - horizontal layout */
+      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-8">
+        {stats.map((stat, index) => (
+          <>
+            <div class="flex items-center gap-3">
+              {stat.icon && (
+                <div class={`w-8 h-8 ${finalTextColor}`}>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={stat.icon} />
+                  </svg>
+                </div>
+              )}
+              <div>
+                <div class={`text-xl sm:text-2xl font-bold ${finalTextColor}`}>
+                  {stat.prefix}{stat.value}{stat.suffix}
+                </div>
+                <div class={`text-xs sm:text-sm ${
+                  background === 'primary' || background === 'gradient' ? 'opacity-80' : 'text-gray-600'
+                }`}>
+                  {stat.label}
+                </div>
+              </div>
+            </div>
+            {showDividers && index < stats.length - 1 && (
+              <div class={`hidden sm:block h-12 w-px ${
+                background === 'primary' || background === 'gradient' ? 'bg-white/30' : 'bg-gray-300'
+              }`}></div>
+            )}
+          </>
+        ))}
+      </div>
+    ) : variant === 'centered' ? (
+      /* Centered variant with larger numbers */
+      <div class={`grid ${gridClasses[columns]} gap-8 text-center max-w-5xl mx-auto`}>
+        {stats.map((stat, index) => (
+          <ScrollAnimation animation="zoomIn" delay={index * 0.1} client:visible>
+            <div>
+              {stat.icon && (
+                <div class={`w-16 h-16 mx-auto mb-4 ${finalTextColor}`}>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={stat.icon} />
+                  </svg>
+                </div>
+              )}
+              <div class={`text-4xl sm:text-5xl lg:text-6xl font-light mb-2 ${finalTextColor}`}>
+                <span class="font-bold">{stat.prefix}{stat.value}</span>{stat.suffix}
+              </div>
+              <div class={`text-sm sm:text-base ${
+                background === 'primary' || background === 'gradient' ? 'opacity-90' : 'text-gray-600'
+              }`}>
+                {stat.label}
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : (
+      /* Default variant */
+      <div class={`grid ${gridClasses[columns]} gap-8 text-center`}>
+        {stats.map((stat, index) => (
+          <ScrollAnimation animation="zoomIn" delay={index * 0.1} client:visible>
+            <div>
+              <div class={`text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 ${finalTextColor}`}>
+                {stat.prefix}{stat.value}{stat.suffix}
+              </div>
+              <div class={`text-sm sm:text-base ${
+                background === 'primary' || background === 'gradient' ? 'opacity-90' : 'text-gray-600'
+              }`}>
+                {stat.label}
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    )}
+  </div>
+</section>

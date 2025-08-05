@@ -1,0 +1,769 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WhyChooseUs from '../../components/WhyChooseUs.astro';
+import ProcessSteps from '../../components/ProcessSteps.astro';
+import FAQ from '../../components/FAQ.astro';
+import ReviewsSection from '../../components/ReviewsSection.astro';
+import EmergencyCTA from '../../components/EmergencyCTA.astro';
+import TrustSignals from '../../components/TrustSignals.astro';
+
+// Service data - all flattened
+const serviceName = "Sump Pump Installation";
+const serviceTitle = "Sump Pump Guide Toronto | Installation, Repair & Maintenance Experts";
+const serviceSubtitle = "Professional Sump Pump Installation & Emergency Repair Service";
+const serviceDescription = "Complete sump pump guide for Toronto homeowners. Learn types, installation, maintenance + get professional service. 25+ years experience, 3,500+ installations. Free assessment - (437) 545-0067";
+const startingPrice = "$1,200";
+const priceRange = "$1,200 - $4,500";
+
+// Related services
+const relatedServices = [
+  {
+    title: "Interior Waterproofing Systems",
+    url: "/services/interior-waterproofing",
+    description: "Complete interior drainage systems that channel water directly to your sump pump for maximum flood protection",
+    image: "/pics/work/interior-waterproofing.webp"
+  },
+  {
+    title: "Emergency Waterproofing",
+    url: "/services/emergency-waterproofing",
+    description: "24/7 emergency sump pump replacement and basement flooding response throughout Toronto",
+    image: "/pics/work/sump-pump.webp"
+  },
+  {
+    title: "French Drain Installation",
+    url: "/services/french-drain-installation",
+    description: "Professional French drain systems that work with sump pumps for complete water management",
+    image: "/pics/work/exterior-waterproofing-membrane.webp"
+  }
+];
+---
+
+<BaseLayout title={serviceName + " Toronto | Professional Installation | DrySpace"} description={serviceDescription}>
+  <Header />
+  
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li aria-current="page">Sump Pump Installation</li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Service Hero Section -->
+  <section class="service-hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">{serviceTitle}</h1>
+        <p class="hero-subtitle">{serviceSubtitle}</p>
+        <p class="hero-description">{serviceDescription}</p>
+        
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-value">{startingPrice}</span>
+            <span class="stat-label">Starting Price</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">3,500+</span>
+            <span class="stat-label">Installations</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">25+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">Lifetime</span>
+            <span class="stat-label">Warranty</span>
+          </div>
+        </div>
+        
+        <div class="hero-cta">
+          <a href="/quote" class="btn btn-primary">Get Free Quote</a>
+          <a href="tel:4375450067" class="btn btn-outline">📞 (437) 545-0067</a>
+        </div>
+        
+        <div class="trust-badges">
+          <span class="badge">✓ Free Assessment</span>
+          <span class="badge">✓ Licensed Plumbers</span>
+          <span class="badge">✓ Same Day Service</span>
+          <span class="badge">✓ 24/7 Emergency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table of Contents -->
+  <section class="table-of-contents">
+    <div class="container">
+      <div class="toc-card">
+        <h2>What's Covered in This Complete Guide</h2>
+        <ul>
+          <li><a href="#experts">Toronto's #1 Sump Pump Installation Experts</a></li>
+          <li><a href="#why-toronto">Why Toronto Homes Need Professional Sump Pump Installation</a></li>
+          <li><a href="#installation-process">Our Proven 7-Step Installation Process</a></li>
+          <li><a href="#pump-types">Types of Sump Pumps We Install</a></li>
+          <li><a href="#warning-signs">10 Warning Signs You Need a Sump Pump</a></li>
+          <li><a href="#emergency-service">24/7 Emergency Sump Pump Replacement</a></li>
+          <li><a href="#common-problems">Common Problems & Solutions</a></li>
+          <li><a href="#maintenance">Sump Pump Maintenance Guide</a></li>
+          <li><a href="#water-management">Complete Water Management Systems</a></li>
+          <li><a href="#buying-guide">Sump Pump Buying Guide</a></li>
+          <li><a href="#pricing">Toronto Installation Pricing</a></li>
+          <li><a href="#choose-system">How to Choose the Perfect System</a></li>
+          <li><a href="#emergency-prep">Emergency Preparedness</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details Section -->
+  <section class="service-details">
+    <div class="container">
+      <div class="content-grid">
+        <div class="main-content">
+          <!-- Section 1: Toronto's #1 Experts -->
+          <h2 id="experts">Toronto's #1 Sump Pump Installation Experts - 25+ Years Experience</h2>
+          <p><strong>Why 2,800+ Toronto homeowners trust DrySpace for sump pump installation</strong></p>
+          
+          <p>When basement flooding threatens your Toronto home, a professionally installed sump pump is your first and most critical line of defense. But here's what most homeowners don't realize - <strong>90% of sump pump failures are due to improper installation, not equipment failure.</strong></p>
+          
+          <p>Since 1999, we've installed over 3,500 sump pump systems across the Greater Toronto Area. From the high water tables in Etobicoke's lakefront neighborhoods to the spring flood zones near the Don Valley, we understand Toronto's unique water challenges better than anyone.</p>
+          
+          <div class="service-features">
+            <h3>Our Complete Sump Pump Installation Services</h3>
+            <ul>
+              <li>✓ <strong>Professional system design</strong> - Custom-sized for your specific water volume</li>
+              <li>✓ <strong>Primary & backup pump installation</strong> - Dual protection when you need it most</li>
+              <li>✓ <strong>Battery backup systems</strong> - Operates during power outages (when flooding is most likely)</li>
+              <li>✓ <strong>Proper discharge routing</strong> - Code-compliant drainage away from your foundation</li>
+              <li>✓ <strong>Sealed pit installation</strong> - Prevents odors, moisture, and radon infiltration</li>
+              <li>✓ <strong>24/7 emergency replacement</strong> - Same-day service when your pump fails</li>
+              <li>✓ <strong>Annual maintenance programs</strong> - Preventive care to avoid emergency situations</li>
+              <li>✓ <strong>Integration with waterproofing</strong> - Complete basement water management systems</li>
+            </ul>
+          </div>
+          
+          <div class="installation-includes">
+            <h3>Every DrySpace sump pump installation includes</h3>
+            <ul>
+              <li><strong>Free on-site assessment</strong> - We calculate your exact water volume needs</li>
+              <li><strong>Licensed technician installation</strong> - All work meets Ontario Building Code</li>
+              <li><strong>Lifetime warranty on workmanship</strong> - Transferable to future homeowners</li>
+              <li><strong>10-year pump warranty</strong> - Premium components that last</li>
+              <li><strong>24/7 emergency support</strong> - We're here when you need us most</li>
+            </ul>
+          </div>
+
+          <!-- Section 2: Why Toronto Needs Sump Pumps -->
+          <h2 id="why-toronto">Why Toronto Homes NEED Professional Sump Pump Installation</h2>
+          <p><strong>Toronto's Unique Water Challenges Make Sump Pumps Essential</strong></p>
+          
+          <h3>High Water Tables Throughout the GTA</h3>
+          <p>Neighborhoods like The Beaches, Long Branch, and parts of Mississauga sit on water tables just 3-6 feet below ground. During spring thaw and heavy rains, this groundwater pushes against your foundation with tremendous force. Without a properly sized sump pump, hydrostatic pressure will find every crack and joint in your foundation.</p>
+          
+          <h3>Clay Soil = Natural Water Bowl</h3>
+          <p>Toronto's notorious clay soil is both a blessing and a curse. While it provides excellent foundation support, it acts like an impermeable bowl around your home. Rain and snowmelt can't drain naturally, creating persistent moisture problems that only worsen over time. Professional sump pump installation is the only reliable solution to manage this trapped water.</p>
+          
+          <h3>Extreme Weather is the New Normal</h3>
+          <p>Climate change has intensified Toronto's weather patterns:</p>
+          <ul>
+            <li><strong>Summer storms</strong> now regularly dump 50mm+ of rain in under an hour</li>
+            <li><strong>Spring thaws</strong> release massive volumes of water in days, not weeks</li>
+            <li><strong>Flash flooding</strong> occurs even in traditionally "safe" neighborhoods</li>
+            <li><strong>Urban heat island effect</strong> increases localized storm intensity</li>
+          </ul>
+          
+          <h3>Aging Infrastructure Can't Keep Up</h3>
+          <p>Toronto's storm sewer system was designed for the city of 1960, not today's mega-city. Combined sewers in older neighborhoods regularly overflow during heavy rains. While the city upgrades infrastructure, homeowners need independent protection NOW.</p>
+          
+          <h3>Insurance Requirements Are Changing</h3>
+          <p>Many Toronto insurance companies now require:</p>
+          <ul>
+            <li>Proof of functioning sump pump for basement coverage</li>
+            <li>Annual maintenance records for claims processing</li>
+            <li>Battery backup systems for full protection</li>
+            <li>Professional installation certificates</li>
+          </ul>
+          
+          <div class="cost-warning">
+            <h3>The Cost of Inaction</h3>
+            <p>We've seen too many Toronto families face:</p>
+            <ul>
+              <li>$15,000-$50,000 in flood damage cleanup</li>
+              <li>$5,000-$15,000 in mold remediation costs</li>
+              <li>Months in temporary housing during repairs</li>
+              <li>Lost family heirlooms and irreplaceable items</li>
+              <li>Decreased property values from flood history</li>
+            </ul>
+            <p class="highlight">A professional sump pump installation costing $2,000-$4,000 prevents ALL of these disasters.</p>
+          </div>
+
+          <!-- Section 3: Installation Process -->
+          <h2 id="installation-process">Our Proven 7-Step Sump Pump Installation Process</h2>
+          <p><strong>Why Professional Installation Makes All the Difference</strong></p>
+          
+          <p>After 25+ years and 3,500+ installations, we've perfected our sump pump installation process. Here's exactly what happens when you choose DrySpace:</p>
+          
+          <div class="process-steps">
+            <div class="step">
+              <h3>Step 1 - Comprehensive Site Assessment (FREE)</h3>
+              <p>Our licensed technicians perform detailed evaluation:</p>
+              <ul>
+                <li><strong>Water volume calculations</strong> - We measure actual flow rates during wet conditions</li>
+                <li><strong>Soil analysis</strong> - Clay content affects drainage and pit design</li>
+                <li><strong>Foundation inspection</strong> - Identify potential water entry points</li>
+                <li><strong>Electrical assessment</strong> - Ensure adequate power for pump and backup systems</li>
+                <li><strong>Discharge planning</strong> - Map optimal routing to comply with Toronto bylaws</li>
+                <li><strong>Budget consultation</strong> - Transparent pricing with multiple options</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 2 - Permit Acquisition & Planning</h3>
+              <p>We handle all bureaucracy:</p>
+              <ul>
+                <li>Building permit applications</li>
+                <li>Electrical permit coordination</li>
+                <li>City of Toronto discharge approvals</li>
+                <li>Utility locates and marking</li>
+                <li>Material ordering and scheduling</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 3 - Premium Component Selection</h3>
+              <p>We use only the highest quality materials:</p>
+              <ul>
+                <li><strong>Reinforced polymer pits</strong> - Won't crack or shift like cheap alternatives</li>
+                <li><strong>Cast iron or stainless steel pumps</strong> - Sized 20% above calculated needs</li>
+                <li><strong>Professional check valves</strong> - Prevent backflow and water hammer</li>
+                <li><strong>Schedule 40 PVC discharge pipes</strong> - Rigid pipes that won't collapse</li>
+                <li><strong>GFCI electrical connections</strong> - Code-compliant safety features</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 4 - Expert Installation</h3>
+              <p>Our certified technicians ensure reliability:</p>
+              <ul>
+                <li><strong>Precise pit excavation</strong> - Laser-level accuracy for proper drainage</li>
+                <li><strong>Proper pit depth</strong> - Optimized for your specific pump cycling</li>
+                <li><strong>Secure pump mounting</strong> - Prevents vibration and premature wear</li>
+                <li><strong>Professional electrical work</strong> - Licensed electricians handle all connections</li>
+                <li><strong>Freeze-resistant discharge</strong> - Prevents winter blockages</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 5 - Battery Backup Integration</h3>
+              <p>Essential protection during storms (when power fails most):</p>
+              <ul>
+                <li><strong>Marine-grade batteries</strong> - Deep cycle batteries that last</li>
+                <li><strong>Automatic switching</strong> - Seamless transition during outages</li>
+                <li><strong>High-capacity pumping</strong> - 4-8 hours of continuous operation</li>
+                <li><strong>Status monitoring</strong> - Audible alarms and indicator lights</li>
+                <li><strong>Annual replacement program</strong> - We handle all maintenance</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 6 - Complete System Testing</h3>
+              <p>We don't leave until everything works perfectly:</p>
+              <ul>
+                <li><strong>Primary pump testing</strong> - Multiple cycling under load</li>
+                <li><strong>Backup system verification</strong> - Power interruption simulation</li>
+                <li><strong>Discharge flow confirmation</strong> - Proper drainage away from foundation</li>
+                <li><strong>Electrical safety testing</strong> - GFCI and grounding verification</li>
+                <li><strong>Customer education</strong> - We show you how everything works</li>
+              </ul>
+            </div>
+            
+            <div class="step">
+              <h3>Step 7 - Ongoing Support & Maintenance</h3>
+              <p>Your installation includes:</p>
+              <ul>
+                <li><strong>Lifetime warranty on workmanship</strong> - Transferable to future owners</li>
+                <li><strong>10-year pump warranty</strong> - Premium components that last</li>
+                <li><strong>Annual maintenance programs</strong> - Keep your system ready</li>
+                <li><strong>24/7 emergency support</strong> - We're always here when you need us</li>
+                <li><strong>Insurance documentation</strong> - Proper certificates for claims</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="compliance-note">
+            <p><strong>Every installation meets or exceeds:</strong></p>
+            <ul>
+              <li>Ontario Building Code requirements</li>
+              <li>Electrical Safety Authority standards</li>
+              <li>City of Toronto municipal bylaws</li>
+              <li>Manufacturer specifications</li>
+              <li>Insurance company requirements</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sticky-sidebar">
+            <div class="quote-form">
+              <h3>Get Your Free Quote</h3>
+              <p>Professional assessment with no obligation</p>
+              <a href="/quote" class="btn btn-primary w-full">Request Quote</a>
+            </div>
+            
+            <div class="emergency-box">
+              <h3>⚠️ Emergency Service</h3>
+              <p>Sump pump failure? We offer 24/7 emergency service</p>
+              <a href="tel:4375450067" class="btn btn-destructive w-full">Call Emergency Line</a>
+            </div>
+
+            <div class="price-box">
+              <h3>Investment Range</h3>
+              <p class="price-range">{priceRange}</p>
+              <ul class="price-factors">
+                <li>Type of pump selected</li>
+                <li>Battery backup system</li>
+                <li>Pit depth required</li>
+                <li>Discharge complexity</li>
+              </ul>
+              <p class="financing">0% Financing Available</p>
+            </div>
+
+            <div class="trust-indicators">
+              <h3>Why Trust DrySpace?</h3>
+              <ul>
+                <li>✓ Licensed & Insured</li>
+                <li>✓ 5,000+ Pumps Installed</li>
+                <li>✓ Lifetime Warranty</li>
+                <li>✓ 24/7 Emergency Service</li>
+                <li>✓ Free Inspections</li>
+                <li>✓ BBB A+ Rating</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Breadcrumb */
+  .breadcrumb {
+    background: #f7fafc;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .breadcrumb ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  .breadcrumb li:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.5rem;
+    color: #cbd5e0;
+  }
+  
+  .breadcrumb a {
+    color: #4a5568;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    color: #f97316;
+  }
+
+  /* Table of Contents */
+  .table-of-contents {
+    padding: 2rem 0;
+    background: #f7fafc;
+  }
+  
+  .toc-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .toc-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a202c;
+  }
+  
+  .toc-card ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .toc-card li {
+    padding: 0.5rem;
+  }
+  
+  .toc-card a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .toc-card a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hero Section */
+  .service-hero {
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    padding: 6rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .hero-content {
+    max-width: 800px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: #f97316;
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f97316;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    display: block;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .trust-badges {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  /* Main Content */
+  .service-details {
+    padding: 4rem 0;
+    background: #fff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @media (min-width: 1024px) {
+    .content-grid {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  .main-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem;
+    color: #1a202c;
+  }
+  
+  .main-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    color: #1a202c;
+  }
+
+  .main-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .main-content ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .main-content li {
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+
+  /* Service Features */
+  .service-features {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  .installation-includes {
+    background: #e0f2fe;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  /* Cost Warning */
+  .cost-warning {
+    background: #fef2f2;
+    border: 2px solid #dc2626;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  .cost-warning .highlight {
+    font-weight: 700;
+    color: #dc2626;
+    font-size: 1.125rem;
+  }
+
+  /* Process Steps */
+  .process-steps {
+    margin: 2rem 0;
+  }
+  
+  .step {
+    background: #f7fafc;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid #f97316;
+  }
+  
+  .step h3 {
+    color: #1a202c;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .compliance-note {
+    background: #e0f2fe;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  /* Sidebar */
+  .sticky-sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+
+  .quote-form,
+  .emergency-box,
+  .price-box,
+  .trust-indicators {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .emergency-box {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+  }
+
+  .price-box {
+    background: #fff;
+    border: 2px solid #f97316;
+  }
+
+  .quote-form h3,
+  .emergency-box h3,
+  .price-box h3,
+  .trust-indicators h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #1a202c;
+  }
+
+  .quote-form p,
+  .emergency-box p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .price-range {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #f97316;
+    margin-bottom: 1rem;
+  }
+
+  .price-factors {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+  }
+
+  .price-factors li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+  }
+
+  .financing {
+    text-align: center;
+    font-weight: 600;
+    color: #10b981;
+    margin-top: 1rem;
+  }
+
+  .trust-indicators ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .trust-indicators li {
+    padding: 0.5rem 0;
+    color: #4a5568;
+    font-size: 0.875rem;
+  }
+
+  /* Utility Classes */
+  .w-full {
+    width: 100%;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .btn-primary {
+    background-color: #f97316;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #ea580c;
+  }
+
+  .btn-outline {
+    border: 2px solid white;
+    color: white;
+  }
+
+  .btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-destructive {
+    background-color: #dc2626;
+    color: white;
+  }
+
+  .btn-destructive:hover {
+    background-color: #b91c1c;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .hero-description {
+      font-size: 1rem;
+    }
+    
+    .stat-value {
+      font-size: 1.5rem;
+    }
+    
+    .main-content h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,232 @@
+---
+import { Navigation } from '../components/Navigation';
+import Footer from '../components/Footer.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+import '../styles/globals.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  image?: string;
+  noStickyCTA?: boolean;
+}
+
+const { 
+  title, 
+  description = "DrySpace Waterproofing - Toronto's trusted basement waterproofing experts. Lifetime warranty, same-day service, 0% financing available.",
+  keywords = "basement waterproofing Toronto, foundation repair, sump pump installation, waterproofing contractors",
+  image = "/og-image.jpg",
+  noStickyCTA = false
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.url);
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content={Astro.generator} />
+  
+  <!-- SEO Meta Tags -->
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content={keywords} />
+  <link rel="canonical" href={canonicalURL} />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={image.startsWith('http') ? image : new URL(image, Astro.url).href} />
+  <meta property="og:site_name" content="DrySpace Waterproofing" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={canonicalURL} />
+  <meta property="twitter:title" content={title} />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content={image.startsWith('http') ? image : new URL(image, Astro.url).href} />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0066CC" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "DrySpace Waterproofing",
+      "description": "Professional basement waterproofing services in Toronto and GTA",
+      "url": "https://dryspacewaterproofing.ca",
+      "telephone": "+14375450067",
+      "email": "info@dryspacewaterproofing.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "addressCountry": "CA",
+        "postalCode": "M5V"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.653226,
+        "longitude": -79.3831843
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$",
+      "image": "https://dryspacewaterproofing.ca/images/dryspace-logo.png",
+      "sameAs": [
+        "https://www.facebook.com/dryspacewaterproofing",
+        "https://twitter.com/dryspaceto",
+        "https://www.instagram.com/dryspacewaterproofing",
+        "https://www.youtube.com/dryspacewaterproofing"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Waterproofing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Basement Waterproofing",
+              "description": "Complete interior and exterior waterproofing solutions"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Foundation Crack Repair",
+              "description": "Professional crack injection and sealing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sump Pump Installation",
+              "description": "Professional sump pump installation with battery backup"
+            }
+          }
+        ]
+      }
+    }
+  </script>
+</head>
+<body class="font-open-sans bg-white text-gray-900 min-h-screen flex flex-col">
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-50">
+    Skip to main content
+  </a>
+  
+  <!-- Navigation Header -->
+  <Navigation client:load />
+  
+  <!-- Main Content Area -->
+  <main id="main-content" class="flex-grow">
+    <slot />
+  </main>
+  
+  <!-- Footer -->
+  <Footer />
+  
+  <!-- Sticky Mobile CTA (conditional) -->
+  {!noStickyCTA && <StickyCTA />}
+  
+  <!-- Global Scripts -->
+  <script>
+    // Smooth scroll polyfill for Safari
+    if (!('scrollBehavior' in document.documentElement.style)) {
+      import('smoothscroll-polyfill').then(module => {
+        module.polyfill();
+      });
+    }
+    
+    // Google Analytics (replace with your ID)
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  
+  <!-- Google Analytics Script -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  
+  <!-- Schema Markup for Breadcrumbs (if applicable) -->
+  <script type="application/ld+json" id="breadcrumb-schema"></script>
+</body>
+</html>
+
+<style>
+  /* Global styles that apply to all pages */
+  :root {
+    --color-primary: theme('colors.primary');
+    --color-primary-dark: theme('colors.primary-dark');
+  }
+  
+  /* Ensure smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus styles for accessibility */
+  *:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  
+  /* Custom scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Print styles */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+</style>

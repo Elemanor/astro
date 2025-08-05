@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+// Test with longer strings containing colons
+const service = {
+  name: "Sump Pump Installation",
+  title: "Sump Pump Guide Toronto | Installation, Repair & Maintenance Experts",
+  description: "Complete sump pump guide for Toronto homeowners. Learn types, installation, maintenance + get professional service. 25+ years experience, 3,500+ installations. Free assessment (437) 545-0067",
+  price: {
+    starting: "$1,200",
+    range: "$1,200 - $4,500"
+  }
+};
+
+// Test FAQ with colon in answer
+const faqs = [
+  {
+    question: "What are the main types of sump pumps available?",
+    answer: "There are four main types: 1) Submersible pumps (most popular) - sit underwater in the pit, quieter and more efficient. 2) Pedestal pumps - motor above water, less expensive but noisier. 3) Battery backup pumps - activate during power outages when flooding risk is highest. 4) Water-powered backup pumps - use city water pressure, no electricity needed."
+  }
+];
+
+const startingPrice = service.price.starting;
+---
+
+<BaseLayout title={service.name}>
+  <Header />
+  
+  <section class="hero-section">
+    <div class="container">
+      <h1>{service.title}</h1>
+      <p>{service.description}</p>
+      <div class="price-box">
+        <span class="price-value">{startingPrice}</span>
+        <span class="price-label">Starting Price</span>
+      </div>
+    </div>
+  </section>
+  
+  <section class="faq-section">
+    <div class="container">
+      <h2>FAQs</h2>
+      {faqs.map((faq) => (
+        <div class="faq-item">
+          <h3>{faq.question}</h3>
+          <p>{faq.answer}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero-section {
+    padding: 4rem 0;
+    background-color: #f7fafc;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .price-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .price-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  .price-label {
+    display: block;
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+  }
+  
+  .faq-section {
+    padding: 4rem 0;
+    background-color: #f7fafc;
+  }
+  
+  .faq-item {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+</style>

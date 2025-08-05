@@ -1,0 +1,216 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+  category?: string;
+  image?: string;
+  expanded?: boolean;
+}
+
+export interface Props {
+  heading?: string;
+  headingAccent?: string;
+  subheading?: string;
+  faqs: FAQItem[];
+  variant?: 'default' | 'minimal' | 'cards' | 'grouped' | 'two-column';
+  showImages?: boolean;
+  showCategories?: boolean;
+  expandedByDefault?: boolean;
+  ctaText?: string;
+  ctaLink?: string;
+  background?: 'white' | 'gray';
+}
+
+const {
+  heading = "Common",
+  headingAccent = "Questions",
+  subheading = "Get answers to your frequently asked questions",
+  faqs,
+  variant = 'default',
+  showImages = false,
+  showCategories = false,
+  expandedByDefault = false,
+  ctaText = "Have more questions?",
+  ctaLink = "/contact",
+  background = 'gray'
+} = Astro.props;
+
+const backgroundClasses = {
+  white: 'bg-white',
+  gray: 'bg-gray-50'
+};
+
+// Group FAQs by category if needed
+const groupedFAQs = showCategories && variant === 'grouped' 
+  ? faqs.reduce((acc, faq) => {
+      const category = faq.category || 'General';
+      if (!acc[category]) acc[category] = [];
+      acc[category].push(faq);
+      return acc;
+    }, {} as Record<string, FAQItem[]>)
+  : null;
+
+// Generate unique IDs for accordion functionality
+const faqsWithIds = faqs.map((faq, index) => ({
+  ...faq,
+  id: `faq-${index}`
+}));
+---
+
+<section class={`py-12 sm:py-16 lg:py-24 ${backgroundClasses[background]}`}>
+  <div class={`${variant === 'two-column' ? 'max-w-7xl' : 'max-w-4xl'} mx-auto px-4 sm:px-6 lg:px-8`}>
+    <ScrollAnimation animation="fadeUp" client:visible>
+      <div class="text-center mb-8 sm:mb-12">
+        <h2 class="font-montserrat text-2xl sm:text-3xl lg:text-4xl font-light mb-4">
+          {heading} <span class="font-semibold">{headingAccent}</span>
+        </h2>
+        {subheading && (
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            {subheading}
+          </p>
+        )}
+      </div>
+    </ScrollAnimation>
+
+    {variant === 'grouped' && groupedFAQs ? (
+      /* Grouped variant - FAQs organized by category */
+      <div class="space-y-12">
+        {Object.entries(groupedFAQs).map(([category, categoryFaqs], categoryIndex) => (
+          <div key={category}>
+            <ScrollAnimation animation="fadeUp" delay={categoryIndex * 0.1} client:visible>
+              <h3 class="text-xl font-semibold mb-6 text-gray-900">{category}</h3>
+            </ScrollAnimation>
+            <div class="space-y-4">
+              {categoryFaqs.map((faq, index) => (
+                <ScrollAnimation animation="fadeUp" delay={(categoryIndex * 0.1) + (index * 0.05)} client:visible>
+                  <details class="group bg-white rounded-lg shadow-sm">
+                    <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors">
+                      <span class="text-base sm:text-lg font-medium pr-4">{faq.question}</span>
+                      <svg class="w-5 h-5 text-gray-500 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div class="px-6 pb-4">
+                      <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  </details>
+                </ScrollAnimation>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : variant === 'cards' ? (
+      /* Cards variant - each FAQ as a card */
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {faqsWithIds.map((faq, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <div class="bg-white rounded-lg shadow-lg p-6 h-full">
+              <h3 class="text-lg font-semibold mb-3 text-gray-900">{faq.question}</h3>
+              <p class="text-gray-600">{faq.answer}</p>
+              {showCategories && faq.category && (
+                <span class="inline-block mt-4 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  {faq.category}
+                </span>
+              )}
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : variant === 'minimal' ? (
+      /* Minimal variant - simple Q&A format */
+      <div class="space-y-8">
+        {faqsWithIds.map((faq, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.05} client:visible>
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-gray-900">{faq.question}</h3>
+              <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : variant === 'two-column' ? (
+      /* Two column variant - FAQ with optional images */
+      <div class="space-y-6">
+        {faqsWithIds.map((faq, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <details class="group bg-white rounded-lg shadow-sm overflow-hidden">
+              <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors">
+                <span class="text-base sm:text-lg font-medium pr-4">{faq.question}</span>
+                <svg class="w-5 h-5 text-gray-500 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-6 pb-4">
+                <div class={`${showImages && faq.image ? 'grid gap-4 sm:grid-cols-2' : ''}`}>
+                  <div class="prose prose-sm max-w-none">
+                    <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  </div>
+                  {showImages && faq.image && (
+                    <div class="relative h-48 sm:h-full min-h-[12rem] rounded-lg overflow-hidden bg-gray-100">
+                      <img 
+                        src={faq.image}
+                        alt=""
+                        class="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  )}
+                </div>
+              </div>
+            </details>
+          </ScrollAnimation>
+        ))}
+      </div>
+    ) : (
+      /* Default variant - accordion style using details/summary */
+      <div class="space-y-4">
+        {faqsWithIds.map((faq, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.05} client:visible>
+            <details class="group bg-white rounded-lg shadow-sm" open={expandedByDefault}>
+              <summary class="flex items-center justify-between px-4 sm:px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors">
+                <span class="text-base sm:text-lg font-medium pr-4">{faq.question}</span>
+                <svg class="w-5 h-5 text-gray-500 transition-transform duration-200 group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-4 sm:px-6 pb-4">
+                <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+              </div>
+            </details>
+          </ScrollAnimation>
+        ))}
+      </div>
+    )}
+
+    {/* CTA */}
+    {ctaText && ctaLink && (
+      <ScrollAnimation animation="fadeUp" delay={0.5} client:visible>
+        <div class="mt-8 text-center">
+          <p class="text-gray-600 mb-4">{ctaText}</p>
+          <a 
+            href={ctaLink} 
+            class="inline-flex items-center text-primary hover:text-primary/80 font-medium"
+          >
+            Contact our experts
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </ScrollAnimation>
+    )}
+  </div>
+</section>
+
+<style>
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details summary {
+    list-style: none;
+  }
+</style>
