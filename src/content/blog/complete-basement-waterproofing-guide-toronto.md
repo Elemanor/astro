@@ -8,7 +8,7 @@ imageAlt: "Professional basement waterproofing installation in Toronto"
 category: "Waterproofing Guides"
 tags: ["basement waterproofing", "foundation repair", "water damage prevention", "Toronto homes"]
 featured: true
-layout: ../../layouts/BlogLayout.astro
+
 ---
 
 # Complete Basement Waterproofing Guide for Toronto Homes

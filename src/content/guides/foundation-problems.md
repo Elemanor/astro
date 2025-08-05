@@ -5,7 +5,7 @@ category: "Foundation Care"
 readTime: "10 min read"
 lastUpdated: "January 2025"
 author: "DrySpace Foundation Experts"
-layout: ../../layouts/GuideLayout.astro
+
 ---
 
 # Identifying Foundation Problems: A Homeowner's Guide

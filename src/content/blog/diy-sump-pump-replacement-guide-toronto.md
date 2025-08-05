@@ -8,7 +8,7 @@ imageAlt: "DIY sump pump replacement in Toronto basement"
 category: "DIY Guides"
 tags: ["sump pump", "DIY", "basement waterproofing", "home maintenance"]
 featured: true
-layout: ../../layouts/BlogLayout.astro
+
 ---
 
 # DIY Sump Pump Replacement Guide for Toronto Homeowners
