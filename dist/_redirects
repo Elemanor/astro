@@ -1,0 +1,43 @@
+# Redirects for DrySpace Waterproofing
+
+# Redirect old service URLs to new ones
+/foundation-crack-repair /services/foundation-crack-repair/ 301
+/foundation-settlement-repair /services/foundation-settlement-repair/ 301
+/wall-reinforcement /services/wall-reinforcement/ 301
+/basement-underpinning /services/basement-underpinning/ 301
+/exterior-waterproofing /services/exterior-waterproofing/ 301
+/interior-waterproofing /services/interior-waterproofing/ 301
+/emergency-waterproofing /services/emergency-waterproofing/ 301
+/legal-basement /services/legal-basement/ 301
+/concrete-works /services/concrete-works/ 301
+/drainage-grading /services/drainage-grading/ 301
+/leaky-basement-repair /services/leaky-basement-repair/ 301
+
+# Redirect basement-waterproofing-cost from root to services
+/basement-waterproofing-cost /services/basement-waterproofing-cost/ 301
+
+# Redirect old blog URLs that get traffic but no clicks
+/blog/basement-waterproofing-cost-factors.html /basement-waterproofing-cost-factors/ 301
+/blog/basement-waterproofing-cost-factors /basement-waterproofing-cost-factors/ 301
+
+# High-traffic old pages redirect to optimized new pages
+/mississauga-waterproofing.html /locations/mississauga-basement-waterproofing/ 301
+/markham-waterproofing.html /locations/markham-basement-waterproofing/ 301
+/brampton-waterproofing.html /locations/brampton-basement-waterproofing/ 301
+/foundation-crack-repair.html /services/foundation-crack-repair/ 301
+/backwater-valve-installation.html /services/backwater-valve-installation/ 301
+/exterior-waterproofing.html /services/exterior-waterproofing/ 301
+/interior-waterproofing.html /services/interior-waterproofing/ 301
+/cost-calculator.html /tools/waterproofing-cost-calculator/ 301
+
+# Fix rental guide link
+/rental-guide /services/legal-basement/ 301
+
+# Fix location links from footer
+/toronto-basement-waterproofing/ /locations/toronto-basement-waterproofing/ 301
+/mississauga-basement-waterproofing/ /locations/mississauga-basement-waterproofing/ 301
+/markham-basement-waterproofing/ /locations/markham-basement-waterproofing/ 301
+
+# Handle blog/guide URLs without trailing slashes
+/blog/basement-waterproofing-guide /blog/basement-waterproofing-guide/ 301
+/guides/spring-foundation-maintenance-guide /guides/spring-foundation-maintenance-guide/ 301

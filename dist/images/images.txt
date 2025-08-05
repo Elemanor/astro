@@ -1,0 +1,11 @@
+Place the following images in this directory:
+
+- foundation-repair-hero.jpg - Main hero image showing foundation repair work
+- damage-1.jpg - Foundation crack example
+- damage-2.jpg - Wall damage example  
+- damage-3.jpg - Basement leak example
+- damage-4.jpg - Structural damage example
+- foundation-inspection.jpg - Foundation repair specialist inspecting basement (for process steps section)
+- foundation-inspection-mobile.jpg - Mobile version of foundation inspection image (600px width)
+
+The original HTML used Pexels stock images. Replace with your own images.

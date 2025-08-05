@@ -1,0 +1,19 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Test Tailwind" description="Testing Tailwind CSS">
+  <div class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold text-primary mb-4">Tailwind Test</h1>
+    <p class="text-lg text-muted-foreground mb-4">If you can see styled text, Tailwind is working.</p>
+    <div class="bg-primary text-white p-4 rounded-lg">
+      This should be orange with white text
+    </div>
+    <div class="mt-4 bg-secondary text-white p-4 rounded-lg">
+      This should be green with white text
+    </div>
+    <div class="mt-4 bg-muted p-4 rounded-lg">
+      This should have a muted background
+    </div>
+  </div>
+</MainLayout>

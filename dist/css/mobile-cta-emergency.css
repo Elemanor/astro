@@ -1,0 +1,221 @@
+/* Emergency Mobile CTA Improvements for Higher CTR */
+
+/* Sticky Emergency Call Button */
+.emergency-call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: linear-gradient(135deg, #ff4444, #cc0000);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(255, 68, 68, 0.4);
+    animation: pulse-emergency 2s infinite;
+    border: 2px solid white;
+    text-align: center;
+    min-width: 140px;
+}
+
+.emergency-call-button:hover {
+    background: linear-gradient(135deg, #cc0000, #990000);
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 68, 68, 0.6);
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes pulse-emergency {
+    0% {
+        box-shadow: 0 4px 12px rgba(255, 68, 68, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(255, 68, 68, 0.8);
+        transform: scale(1.02);
+    }
+    100% {
+        box-shadow: 0 4px 12px rgba(255, 68, 68, 0.4);
+    }
+}
+
+/* Enhanced Hero CTA */
+.hero-cta-enhanced {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    box-shadow: 0 4px 15px rgba(247, 147, 30, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-cta-enhanced:hover {
+    background: linear-gradient(135deg, #f7931e, #e6851a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(247, 147, 30, 0.6);
+    color: white;
+    text-decoration: none;
+}
+
+/* Urgent Banner */
+.urgent-banner {
+    background: linear-gradient(90deg, #ff4444, #ff6666);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.urgent-banner::before {
+    content: "⚠️";
+    margin-right: 10px;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.3; }
+}
+
+/* Mobile Specific Improvements */
+@media (max-width: 768px) {
+    .emergency-call-button {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 16px;
+        font-size: 13px;
+        min-width: 120px;
+    }
+    
+    .hero-cta-enhanced {
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin: 15px auto;
+        font-size: 16px;
+        padding: 16px 30px;
+    }
+    
+    .urgent-banner {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Click-to-Call Links */
+.phone-link {
+    color: #007cba;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.phone-link:hover {
+    color: #005a87;
+    text-decoration: underline;
+}
+
+.phone-link::before {
+    content: "📞";
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .phone-link {
+        background: #007cba;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 5px 0;
+    }
+    
+    .phone-link:hover {
+        background: #005a87;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+/* Trust Signals Enhancement */
+.trust-signals-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.trust-signal-item {
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+    margin: 5px;
+}
+
+.trust-signal-item .icon {
+    font-size: 24px;
+    color: #28a745;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.trust-signal-item .text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Urgency Elements */
+.urgency-text {
+    color: #ff4444;
+    font-weight: bold;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.7; }
+}
+
+/* Form Enhancements */
+.contact-form-mobile {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.form-cta-button {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-cta-button:hover {
+    background: linear-gradient(135deg, #20c997, #17a2b8);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}

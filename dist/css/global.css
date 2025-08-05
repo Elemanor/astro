@@ -1,0 +1,108 @@
+/* Global CSS Variables and Base Styles */
+:root {
+    --primary: #003db7;
+    --primaryLight: #1e40af;
+    --secondary: #001F5C;
+    --secondaryLight: #FFBA43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4a4a4a;
+    --bodyTextColorWhite: #fafbfc;
+    --smoke: #f6f7fa;
+    --dark: #1a1a1a;
+    --medium: #2a2a2a;
+    --topperFontSize: clamp(0.8125rem, 1.3vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--bodyTextColor);
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* Main Content Area */
+main {
+    padding-top: 4rem;
+    min-height: calc(100vh - 4rem);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--headerColor);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primaryLight);
+    text-decoration: none;
+}
+
+/* Ensure links in content areas are properly styled */
+main a:not([class]),
+section a:not([class]) {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main a:not([class]):hover,
+section a:not([class]):hover {
+    color: var(--primaryLight);
+    text-decoration: underline;
+}
+
+/* Fix button links */
+a.cs-button-solid,
+a.about-button-solid,
+a[class*="button"] {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+a.cs-button-solid:hover,
+a.about-button-solid:hover,
+a[class*="button"]:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Utility Classes */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

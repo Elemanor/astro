@@ -1,0 +1,36 @@
+/* ============================================ 
+   TRUST SIGNALS POSITION ADJUSTMENT
+   ============================================ */
+
+/* Move trust signals section down by 5% */
+#trust-signals,
+.trust-signals {
+    position: relative !important;
+    transform: translateY(5%) !important;
+    margin-top: 1rem !important;
+    transition: transform 0.3s ease;
+}
+
+/* Add some spacing after hero section */
+.hero + #trust-signals,
+.hero + .trust-signals {
+    margin-top: 2rem !important;
+}
+
+/* Mobile adjustments */
+@media only screen and (max-width: 47.9375rem) {
+    #trust-signals,
+    .trust-signals {
+        transform: translateY(4%) !important;
+        margin-top: 0.75rem !important;
+    }
+}
+
+/* Tablet adjustments */
+@media only screen and (min-width: 48rem) and (max-width: 63.9375rem) {
+    #trust-signals,
+    .trust-signals {
+        transform: translateY(4.5%) !important;
+        margin-top: 1rem !important;
+    }
+}

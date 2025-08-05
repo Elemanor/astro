@@ -1,0 +1,184 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+
+// Get all guides
+const guides = await getCollection('guides');
+
+// Sort alphabetically by title
+const sortedGuides = guides.sort((a, b) => 
+  a.data.title.localeCompare(b.data.title)
+);
+
+// Group guides by type/category
+const guideTypes = {
+  'Seasonal Maintenance': [],
+  'Waterproofing Methods': [],
+  'Foundation Protection': [],
+  'Emergency Response': [],
+  'Cost & Planning': [],
+  'Technical Guides': []
+};
+
+// Categorize guides based on keywords in title or content
+sortedGuides.forEach(guide => {
+  const title = guide.data.title.toLowerCase();
+  const description = (guide.data.description || '').toLowerCase();
+  
+  if (title.includes('winter') || title.includes('spring') || title.includes('summer') || title.includes('fall') || title.includes('seasonal')) {
+    guideTypes['Seasonal Maintenance'].push(guide);
+  } else if (title.includes('waterproofing') || title.includes('membrane') || title.includes('drainage')) {
+    guideTypes['Waterproofing Methods'].push(guide);
+  } else if (title.includes('foundation') || title.includes('crack') || title.includes('structural')) {
+    guideTypes['Foundation Protection'].push(guide);
+  } else if (title.includes('emergency') || title.includes('flood') || title.includes('leak')) {
+    guideTypes['Emergency Response'].push(guide);
+  } else if (title.includes('cost') || title.includes('warranty') || title.includes('roi')) {
+    guideTypes['Cost & Planning'].push(guide);
+  } else {
+    guideTypes['Technical Guides'].push(guide);
+  }
+});
+---
+
+<MainLayout 
+  title="Waterproofing Guides - Expert Resources | DrySpace" 
+  description="Comprehensive guides for basement waterproofing, foundation protection, and home maintenance. Learn from Toronto's waterproofing experts."
+>
+  <div class="container mx-auto px-4 py-12">
+    <!-- Hero Section -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Expert Waterproofing Guides</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        In-depth resources to help you understand, maintain, and protect your home's foundation
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="bg-blue-50 rounded-lg p-6 mb-12">
+      <h2 class="text-xl font-bold mb-4">🔥 Most Popular Guides</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/guides/seasonal-waterproofing-preparation/" class="flex items-center text-blue-600 hover:text-blue-800">
+          <span class="mr-2">📅</span>
+          <span class="font-medium">Seasonal Waterproofing Preparation Guide</span>
+        </a>
+        <a href="/guides/interior-vs-exterior-waterproofing/" class="flex items-center text-blue-600 hover:text-blue-800">
+          <span class="mr-2">⚖️</span>
+          <span class="font-medium">Interior vs Exterior Waterproofing Comparison</span>
+        </a>
+        <a href="/guides/basement-waterproofing-warranty-guide/" class="flex items-center text-blue-600 hover:text-blue-800">
+          <span class="mr-2">📋</span>
+          <span class="font-medium">Understanding Waterproofing Warranties</span>
+        </a>
+        <a href="/guides/toronto-spring-basement-protection-handbook-2025/" class="flex items-center text-blue-600 hover:text-blue-800">
+          <span class="mr-2">🌷</span>
+          <span class="font-medium">Spring 2025 Basement Protection Handbook</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Guides by Category -->
+    {Object.entries(guideTypes).map(([category, categoryGuides]) => {
+      if (categoryGuides.length === 0) return null;
+      
+      return (
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold mb-6 flex items-center">
+            {category === 'Seasonal Maintenance' && <span class="mr-3">🗓️</span>}
+            {category === 'Waterproofing Methods' && <span class="mr-3">💧</span>}
+            {category === 'Foundation Protection' && <span class="mr-3">🏠</span>}
+            {category === 'Emergency Response' && <span class="mr-3">🚨</span>}
+            {category === 'Cost & Planning' && <span class="mr-3">💰</span>}
+            {category === 'Technical Guides' && <span class="mr-3">🔧</span>}
+            {category}
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {categoryGuides.map(guide => {
+              const url = guide.data.url || `/guides/${guide.id}/`;
+              
+              return (
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
+                  <h3 class="text-lg font-semibold mb-2">
+                    <a href={url} class="hover:text-blue-600 transition-colors">
+                      {guide.data.title}
+                    </a>
+                  </h3>
+                  {guide.data.description && (
+                    <p class="text-gray-600 mb-3 text-sm">
+                      {guide.data.description}
+                    </p>
+                  )}
+                  <a href={url} class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                    Read Guide →
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    })}
+
+    <!-- Resource Hub -->
+    <div class="mt-16 bg-gray-100 rounded-lg p-8">
+      <h2 class="text-2xl font-bold mb-6 text-center">Additional Resources</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg p-6 text-center">
+          <div class="text-3xl mb-3">🧮</div>
+          <h3 class="font-bold mb-2">Cost Calculators</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Estimate your project costs with our interactive tools
+          </p>
+          <a href="/tools/" class="text-blue-600 hover:text-blue-800 font-medium">
+            View Calculators →
+          </a>
+        </div>
+        
+        <div class="bg-white rounded-lg p-6 text-center">
+          <div class="text-3xl mb-3">📹</div>
+          <h3 class="font-bold mb-2">Video Tutorials</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Visual guides for common waterproofing procedures
+          </p>
+          <a href="/videos/" class="text-blue-600 hover:text-blue-800 font-medium">
+            Watch Videos →
+          </a>
+        </div>
+        
+        <div class="bg-white rounded-lg p-6 text-center">
+          <div class="text-3xl mb-3">📞</div>
+          <h3 class="font-bold mb-2">Expert Consultation</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Get personalized advice from our waterproofing experts
+          </p>
+          <a href="/contact/" class="text-blue-600 hover:text-blue-800 font-medium">
+            Contact Us →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emergency CTA -->
+    <div class="mt-12 bg-red-50 border-2 border-red-200 rounded-lg p-6 text-center">
+      <h3 class="text-xl font-bold mb-2 text-red-800">🚨 Emergency Water Issues?</h3>
+      <p class="text-red-700 mb-4">
+        Don't wait! Water damage gets worse by the hour. Get immediate help.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="tel:437-545-0067" 
+          class="inline-flex items-center justify-center px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors"
+        >
+          📞 Call (437) 545-0067
+        </a>
+        <a 
+          href="/emergency/" 
+          class="inline-flex items-center justify-center px-6 py-3 bg-white text-red-600 font-semibold rounded-lg border-2 border-red-600 hover:bg-red-50 transition-colors"
+        >
+          View Emergency Services
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>

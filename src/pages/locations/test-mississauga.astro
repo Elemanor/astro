@@ -1,0 +1,301 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import Services from '../../components/Services.astro';
+import FeatureGrid from '../../components/content/FeatureGrid.astro';
+import ServiceAreas from '../../components/ServiceAreas.astro';
+import TrustSignals from '../../components/TrustSignals.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import FAQ from '../../components/FAQ.astro';
+import EmergencyCTA from '../../components/EmergencyCTA.astro';
+import ProcessSteps from '../../components/ProcessSteps.astro';
+
+// Mississauga-specific data
+const location = {
+  city: "Mississauga",
+  region: "Ontario",
+  population: "717K",
+  established: "Serving since 2001",
+  responseTime: "< 45 min",
+  heroImage: "/images/locations/mississauga-skyline.jpg"
+};
+
+const localServices = [
+  {
+    title: "Basement Waterproofing",
+    description: "Complete waterproofing solutions for Mississauga homes. Interior and exterior systems tailored to local conditions.",
+    price: "From $3,500",
+    icon: "💧",
+    iconType: "emoji" as const,
+    image: "/images/services/basement-waterproofing.jpg",
+    link: "/services/basement-waterproofing",
+    badge: { text: "Most Popular", color: "primary" as const }
+  },
+  {
+    title: "Foundation Crack Repair",
+    description: "Expert repair for Mississauga's clay soil conditions. Permanent solutions for settling and cracks.",
+    price: "From $500",
+    icon: "🔧",
+    iconType: "emoji" as const,
+    image: "/images/services/foundation-cracks.jpg",
+    link: "/services/foundation-crack-repair"
+  },
+  {
+    title: "Sump Pump Installation",
+    description: "Essential for homes near Credit River and Lake Ontario. Battery backup systems included.",
+    price: "From $2,800",
+    icon: "⚡",
+    iconType: "emoji" as const,
+    image: "/images/services/sump-pump.jpg",
+    link: "/services/sump-pump-installation-toronto"
+  },
+  {
+    title: "Window Well Drainage",
+    description: "Prevent window well flooding common in Mississauga's newer subdivisions.",
+    price: "From $1,200",
+    icon: "🪟",
+    iconType: "emoji" as const,
+    image: "/images/services/window-well.jpg",
+    link: "/services/window-well-drainage"
+  }
+];
+
+const localStats = [
+  { value: "2,847", label: "Mississauga Homes Protected" },
+  { value: "< 45min", label: "Average Response Time" },
+  { value: "4.9★", label: "Local Google Rating" },
+  { value: "23", label: "Years in Mississauga" }
+];
+
+const whyChooseLocal = [
+  {
+    title: "Mississauga Expertise",
+    description: "Deep knowledge of local challenges from Credit River flooding to clay soil issues",
+    icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+  },
+  {
+    title: "Rapid Response",
+    description: "Local crews in Mississauga mean faster service and lower costs",
+    icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+  },
+  {
+    title: "Community Reputation",
+    description: "Recommended by Mississauga contractors and real estate professionals",
+    icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+  }
+];
+
+const nearbyAreas = [
+  { name: "Port Credit", serviceTime: "15 min", featured: true },
+  { name: "Streetsville", serviceTime: "20 min", featured: true },
+  { name: "Meadowvale", serviceTime: "25 min", featured: true },
+  { name: "Cooksville", serviceTime: "10 min" },
+  { name: "Lorne Park", serviceTime: "20 min" },
+  { name: "Clarkson", serviceTime: "15 min" },
+  { name: "Erin Mills", serviceTime: "20 min" },
+  { name: "Malton", serviceTime: "25 min" },
+  { name: "Lisgar", serviceTime: "25 min" },
+  { name: "Churchill Meadows", serviceTime: "30 min" },
+  { name: "Central Erin Mills", serviceTime: "20 min" },
+  { name: "Sheridan", serviceTime: "15 min" }
+];
+
+const commonProblems = [
+  {
+    title: "Credit River Valley Water Issues",
+    description: "Homes near the Credit River face high water tables and flooding risks",
+    icon: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+  },
+  {
+    title: "Clay Soil Expansion",
+    description: "Mississauga's heavy clay soil expands and contracts, causing foundation stress",
+    icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+  },
+  {
+    title: "New Construction Settling",
+    description: "Many newer subdivisions experience foundation settling in the first 5-10 years",
+    icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+  }
+];
+
+const localTestimonials = [
+  {
+    name: "Sarah Thompson",
+    location: "Mississauga - Port Credit",
+    rating: 5,
+    text: "Living near the lake, we always worried about water issues. DrySpace installed a complete system that's handled every storm perfectly. Their knowledge of Port Credit's unique challenges was impressive.",
+    service: "Basement Waterproofing"
+  },
+  {
+    name: "Ahmed Hassan",
+    location: "Mississauga - Meadowvale",
+    rating: 5,
+    text: "Fast response when our sump pump failed. They understood exactly what our newer home needed and installed a better system the same day. Great local service!",
+    service: "Sump Pump Installation"
+  },
+  {
+    name: "Lisa Chang",
+    location: "Mississauga - Streetsville",
+    rating: 5,
+    text: "Our 100-year-old Streetsville home had unique challenges. DrySpace preserved the character while solving our water problems permanently. True professionals.",
+    service: "Foundation Repair"
+  }
+];
+
+const localFaqs = [
+  {
+    question: "How quickly can you respond to emergencies in Mississauga?",
+    answer: "We maintain crews throughout Mississauga with average response times under 45 minutes. For Port Credit, Cooksville, and central areas, we often arrive within 30 minutes. Our dispatchers know Mississauga's neighborhoods and traffic patterns to get help to you fast."
+  },
+  {
+    question: "Do you understand Mississauga's specific waterproofing challenges?",
+    answer: "Absolutely. We've served Mississauga for 23 years and understand local challenges like Credit River valley water tables, clay soil issues in newer subdivisions, and the unique needs of older homes in Streetsville and Port Credit."
+  },
+  {
+    question: "What areas of Mississauga do you service?",
+    answer: "We service all of Mississauga including Port Credit, Streetsville, Meadowvale, Cooksville, Lorne Park, Clarkson, Erin Mills, and all surrounding neighborhoods. No Mississauga address is too far."
+  },
+  {
+    question: "Why are basements in Mississauga prone to water problems?",
+    answer: "Mississauga faces several challenges: proximity to Lake Ontario raises water tables, Credit River can overflow, heavy clay soil retains water, and rapid development has altered natural drainage patterns. These factors make professional waterproofing essential."
+  },
+  {
+    question: "Do you handle the City of Mississauga permit requirements?",
+    answer: "Yes, we're fully licensed in Mississauga and handle all permit applications and inspections. We're familiar with Mississauga's building department requirements and ensure all work meets or exceeds local codes."
+  }
+];
+
+const processSteps = [
+  {
+    title: "Local Mississauga Inspection",
+    description: "Free assessment by technicians who know Mississauga's neighborhoods",
+    icon: "🏠",
+    duration: "Same day"
+  },
+  {
+    title: "Mississauga-Specific Solution",
+    description: "Tailored to local soil conditions and water table levels",
+    icon: "📐",
+    duration: "24 hours"
+  },
+  {
+    title: "Fast Local Installation",
+    description: "Mississauga-based crews mean faster, more affordable service",
+    icon: "👷",
+    duration: "1-3 days"
+  },
+  {
+    title: "Ongoing Local Support",
+    description: "Lifetime warranty with local Mississauga service team",
+    icon: "🤝",
+    duration: "Forever"
+  }
+];
+---
+
+<BaseLayout 
+  title="Waterproofing Mississauga - Local Experts, Lifetime Warranty | DrySpace"
+  description="Professional basement waterproofing in Mississauga, ON. Fast local response, expert knowledge of Mississauga conditions, lifetime warranty. Serving Port Credit to Meadowvale since 2001."
+  keywords="waterproofing mississauga, basement waterproofing mississauga, foundation repair mississauga, mississauga contractors"
+>
+  <!-- Hero Section -->
+  <Hero
+    heading="Waterproofing Mississauga"
+    headingAccent="Local Experts Since 2001"
+    description="Protecting Mississauga homes from Port Credit to Meadowvale. Fast response, proven solutions, and lifetime warranty from your trusted local waterproofing experts."
+    ctaPrimary={{ text: "Get Free Mississauga Quote", href: "/quote" }}
+    ctaSecondary={{ text: "Call (437) 545-0067", href: "tel:4375450067" }}
+    stats={[
+      { number: location.population, label: "Population Served" },
+      { number: location.responseTime, label: "Response Time" },
+      { number: location.established, label: "" }
+    ]}
+    trustIndicators={[
+      "Licensed in Mississauga",
+      "24/7 Local Service",
+      "Free Inspections",
+      "Insurance Approved"
+    ]}
+    variant="default"
+  />
+
+  <!-- Local Services -->
+  <Services
+    heading="Waterproofing Services in"
+    headingAccent={location.city}
+    subheading="Comprehensive solutions for Mississauga's unique water challenges"
+    services={localServices}
+    variant="image-overlay"
+    columns={4}
+    showPrices={true}
+    background="white"
+  />
+
+  <!-- Why Choose Local -->
+  <FeatureGrid
+    heading="Why Mississauga Homeowners"
+    headingAccent="Choose DrySpace"
+    subheading="Local expertise you can trust"
+    features={whyChooseLocal}
+    variant="cards"
+    columns={3}
+    background="gray"
+  />
+
+  <!-- Common Local Problems -->
+  <FeatureGrid
+    heading="Mississauga's Water"
+    headingAccent="Challenges"
+    features={commonProblems}
+    variant="minimal"
+    columns={3}
+    background="white"
+  />
+
+  <!-- Service Process -->
+  <ProcessSteps
+    heading="Our Mississauga"
+    headingAccent="Service Process"
+    subheading="Fast, local service from inspection to protection"
+    steps={processSteps}
+    variant="cards"
+    background="gray"
+  />
+
+  <!-- Local Stats -->
+  <TrustSignals />
+
+  <!-- Service Areas -->
+  <ServiceAreas
+    heading="Serving All"
+    headingAccent="Mississauga Neighborhoods"
+    subheading="Quick response times throughout the city"
+    areas={nearbyAreas}
+    variant="default"
+    columns={4}
+    showServiceTime={true}
+    background="white"
+  />
+
+  <!-- Local Testimonials -->
+  <Testimonials
+    heading="Mississauga Homeowners"
+    headingAccent="Trust DrySpace"
+    testimonials={localTestimonials}
+    variant="default"
+    columns={3}
+    background="gray"
+  />
+
+  <!-- Local FAQs -->
+  <FAQ
+    heading="Mississauga Waterproofing"
+    headingAccent="Questions"
+    faqs={localFaqs}
+    variant="default"
+    background="white"
+  />
+
+  <!-- Location-Specific CTA -->
+  <EmergencyCTA />
+</BaseLayout>
