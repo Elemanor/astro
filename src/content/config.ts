@@ -57,4 +57,18 @@ const testimonials = defineCollection({
   }),
 });
 
-export const collections = { services, blog, guides, testimonials };
+const locations = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    city: z.string(),
+    province: z.string().optional(),
+    serviceArea: z.array(z.string()).optional(),
+    featured: z.boolean().optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+  }),
+});
+
+export const collections = { services, blog, guides, testimonials, locations };
