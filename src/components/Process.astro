@@ -1,4 +1,5 @@
 ---
+import { Fragment } from 'astro/jsx-runtime';
 import { ScrollAnimation } from './ScrollAnimation';
 
 export interface ProcessStep {
@@ -70,7 +71,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
 
     {variant === 'timeline' ? (
       /* Timeline variant - horizontal on desktop, vertical on mobile */
-      <>
+      <Fragment>
         {/* Desktop Timeline */}
         <div class="hidden lg:block relative">
           {connectionLine && (
@@ -167,7 +168,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
             </ScrollAnimation>
           ))}
         </div>
-      </>
+      </Fragment>
     ) : variant === 'vertical' ? (
       /* Vertical variant - always vertical with connection line */
       <div class="max-w-3xl mx-auto">
