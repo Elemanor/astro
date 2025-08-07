@@ -1,0 +1,13 @@
+import { b as createAstro, c as createComponent, m as maybeRenderHead, r as renderComponent, a as renderTemplate, d as addAttribute } from './astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { S as ScrollAnimation } from './ScrollAnimation_DokyVXDc.mjs';
+
+const $$Astro = createAstro("http://localhost:4321");
+const $$RelatedServices = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$RelatedServices;
+  const { services, title = "Related Services" } = Astro2.props;
+  return renderTemplate`${maybeRenderHead()}<section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> ${renderComponent($$result, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result2) => renderTemplate` <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12"> ${title} </h2> ` })} <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"> ${services.map((service, index) => renderTemplate`${renderComponent($$result, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "delay": index * 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result2) => renderTemplate` <a${addAttribute(service.url, "href")} class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"> ${service.image && renderTemplate`<div class="aspect-video overflow-hidden bg-gray-100"> <img${addAttribute(service.image, "src")}${addAttribute(service.title, "alt")} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy"> </div>`} <div class="p-6"> <h3 class="text-xl font-semibold text-gray-900 group-hover:text-primary transition-colors"> ${service.title} </h3> <div class="mt-4 flex items-center gap-2 text-primary font-semibold"> <span>Learn More</span> <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </div> </div> </a> ` })}`)} </div> </div> </section>`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/RelatedServices.astro", void 0);
+
+export { $$RelatedServices as $ };

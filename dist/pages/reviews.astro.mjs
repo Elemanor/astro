@@ -1,0 +1,90 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_Dgea6w5L.mjs';
+import { S as ScrollAnimation } from '../chunks/ScrollAnimation_DokyVXDc.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Reviews = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Reviews & Testimonials - DrySpace Waterproofing Toronto", "description": "Read what Toronto homeowners say about DrySpace. 4.9\u2605 rating from 500+ verified reviews. Real stories from real customers." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="py-12"> <div class="container mx-auto px-4"> <!-- Hero Section --> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="text-center mb-12"> <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+What Toronto Homeowners Say About Us
+</h1> <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+Over 5,000 satisfied customers across the GTA. Read their stories and see why we're Toronto's most trusted waterproofing company.
+</p> <!-- Overall Rating --> <div class="inline-flex items-center gap-4 bg-yellow-50 px-6 py-4 rounded-xl"> <div class="text-center"> <div class="text-4xl font-bold text-gray-900">4.9</div> <div class="flex text-yellow-400 text-xl"> ${"\u2605\u2605\u2605\u2605\u2605".split("").map((_) => renderTemplate`<span>★</span>`)} </div> </div> <div class="text-left"> <div class="font-semibold text-gray-900">Excellent Rating</div> <div class="text-sm text-gray-600">Based on 673 reviews</div> </div> </div> </div> ` })} <!-- Review Platforms --> <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"> ${[
+    { platform: "Google", rating: "4.9", reviews: "287" },
+    { platform: "HomeStars", rating: "4.8", reviews: "156" },
+    { platform: "BBB", rating: "A+", reviews: "89" },
+    { platform: "Facebook", rating: "4.9", reviews: "141" }
+  ].map((platform, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "delay": index * 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="bg-white rounded-lg shadow p-4 text-center"> <h3 class="font-bold text-gray-900">${platform.platform}</h3> <div class="text-2xl font-bold text-primary my-2">${platform.rating}</div> <div class="text-sm text-gray-600">${platform.reviews} reviews</div> </div> ` })}`)} </div> <!-- Featured Reviews --> <div class="mb-16"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Reviews</h2> ` })} <div class="space-y-8"> ${[
+    {
+      name: "Sarah M.",
+      location: "Rosedale",
+      date: "November 2024",
+      rating: 5,
+      service: "Interior Waterproofing",
+      review: "DrySpace saved our 120-year-old Victorian home! They understood the unique challenges of heritage properties and implemented a solution that preserved our home's character while completely eliminating our water issues. The team was professional, punctual, and cleaned up perfectly. Worth every penny!",
+      verified: true
+    },
+    {
+      name: "David & Lisa Chen",
+      location: "North York",
+      date: "October 2024",
+      rating: 5,
+      service: "Sump Pump Installation",
+      review: "After dealing with spring flooding for years, we finally called DrySpace. They installed a triple-pump system with battery backup in just one day. The difference is incredible - we've had zero water issues through two major storms. Their lifetime warranty gives us complete peace of mind.",
+      verified: true
+    },
+    {
+      name: "Mike Thompson",
+      location: "Scarborough",
+      date: "September 2024",
+      rating: 5,
+      service: "Foundation Crack Repair",
+      review: "Professional from start to finish. The inspection was thorough, the quote was fair and detailed, and the work was completed exactly as promised. They even helped us with the insurance claim. I've already recommended them to three neighbors.",
+      verified: true
+    },
+    {
+      name: "Maria G.",
+      location: "Etobicoke",
+      date: "August 2024",
+      rating: 5,
+      service: "Exterior Waterproofing",
+      review: "Major project but handled brilliantly. They excavated around our entire foundation, installed new drainage, and waterproofed everything. Despite the scope, they minimized disruption and protected our landscaping. Five months later, our basement is still bone dry!",
+      verified: true
+    }
+  ].map((review, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": index % 2 === 0 ? "fadeLeft" : "fadeRight", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow"> <div class="flex flex-wrap items-center justify-between mb-4"> <div> <h3 class="font-bold text-lg text-gray-900">${review.name}</h3> <p class="text-sm text-gray-600">${review.location} • ${review.date}</p> </div> <div class="flex items-center gap-2"> <div class="flex text-yellow-400"> ${Array(review.rating).fill("\u2605").map((_) => renderTemplate`<span>★</span>`)} </div> ${review.verified && renderTemplate`<span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
+✓ Verified
+</span>`} </div> </div> <div class="mb-3"> <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full"> ${review.service} </span> </div> <p class="text-gray-700 leading-relaxed">${review.review}</p> </div> ` })}`)} </div> </div> <!-- Video Testimonials --> <div class="bg-gray-50 rounded-xl p-8 mb-16"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Video Testimonials</h2> <div class="grid md:grid-cols-3 gap-6"> ${[
+    { name: "John K.", location: "Downtown Toronto", thumbnail: "/images/testimonial-1.jpg" },
+    { name: "Patricia L.", location: "Mississauga", thumbnail: "/images/testimonial-2.jpg" },
+    { name: "Robert S.", location: "Vaughan", thumbnail: "/images/testimonial-3.jpg" }
+  ].map((video, index) => renderTemplate`${renderComponent($$result3, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "delay": index * 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result4) => renderTemplate` <div class="relative group cursor-pointer"> <img${addAttribute(video.thumbnail, "src")}${addAttribute(`${video.name} testimonial`, "alt")} class="rounded-lg w-full"> <div class="absolute inset-0 bg-black/50 rounded-lg flex items-center justify-center group-hover:bg-black/60 transition-colors"> <div class="text-center text-white"> <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-2 mx-auto group-hover:scale-110 transition-transform"> <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"> <path d="M8 5v14l11-7z"></path> </svg> </div> <p class="font-semibold">${video.name}</p> <p class="text-sm opacity-90">${video.location}</p> </div> </div> </div> ` })}`)} </div> ` })} </div> <!-- Recent Reviews --> <div class="mb-16"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Recent Reviews</h2> ` })} <div class="grid md:grid-cols-2 gap-6"> ${[
+    { name: "Jennifer R.", date: "1 week ago", rating: 5, review: "Excellent service from start to finish. Fair pricing and quality work." },
+    { name: "Tom H.", date: "2 weeks ago", rating: 5, review: "They fixed our leaking basement in just 2 days. Highly recommend!" },
+    { name: "Anna M.", date: "3 weeks ago", rating: 5, review: "Professional team, clean work, and our basement is finally dry." },
+    { name: "Chris D.", date: "1 month ago", rating: 5, review: "Best waterproofing company in Toronto. Worth every penny!" },
+    { name: "Linda S.", date: "1 month ago", rating: 5, review: "Amazing customer service and the lifetime warranty is unbeatable." },
+    { name: "Paul K.", date: "2 months ago", rating: 5, review: "They saved us thousands by catching issues early. True professionals." }
+  ].map((review, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "delay": index * 0.05, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow"> <div class="flex items-center justify-between mb-3"> <h4 class="font-semibold">${review.name}</h4> <span class="text-sm text-gray-500">${review.date}</span> </div> <div class="flex text-yellow-400 mb-2"> ${Array(review.rating).fill("\u2605").map((_) => renderTemplate`<span>★</span>`)} </div> <p class="text-gray-700">${review.review}</p> </div> ` })}`)} </div> </div> <!-- CTA Section --> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="text-center bg-primary text-white rounded-xl p-8"> <h2 class="text-3xl font-bold mb-4">
+Join Our 5,000+ Happy Customers
+</h2> <p class="text-xl mb-6 opacity-90">
+Experience the service that Toronto homeowners trust
+</p> <div class="flex flex-col sm:flex-row gap-4 justify-center"> <a href="tel:4375450067" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+Call Now: (437) 545-0067
+</a> <a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+Get Your Free Estimate
+</a> </div> </div> ` })} </div> </section> ` })}`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/reviews.astro", void 0);
+
+const $$file = "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/reviews.astro";
+const $$url = "/reviews";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Reviews,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

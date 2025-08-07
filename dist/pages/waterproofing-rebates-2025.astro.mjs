@@ -1,0 +1,107 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../chunks/Layout_CpUiY3mq.mjs';
+import { $ as $$Hero } from '../chunks/Hero_C4_3RV_b.mjs';
+import { $ as $$CTASection } from '../chunks/CTASection_C6tRvETi.mjs';
+import { $ as $$FAQ } from '../chunks/FAQ_EWOLvXs_.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$WaterproofingRebates2025 = createComponent(($$result, $$props, $$slots) => {
+  const pageTitle = "Waterproofing Rebates 2025 Ontario - Up to $3,400 Municipal + $2,000 Provincial | Complete Guide";
+  const pageDescription = "FREE MONEY! Get $5,400 waterproofing rebates in 2025 - we handle all paperwork! Toronto $3,400 + Ontario $2,000 = maximum savings. Don't miss deadline - call approved contractor (437) 545-0067!";
+  const municipalRebates = [
+    {
+      city: "Toronto",
+      program: "Basement Flooding Protection Subsidy",
+      maxRebate: "$3,400",
+      items: [
+        { service: "Backwater Valve", amount: "Up to $1,250" },
+        { service: "Sump Pump System", amount: "Up to $1,750" },
+        { service: "Pipe Severance", amount: "Up to $500" },
+        { service: "Camera Inspection", amount: "$200" }
+      ],
+      fundsRemaining: "72%",
+      processingTime: "4-6 weeks"
+    },
+    {
+      city: "Mississauga/Peel",
+      program: "Basement Flooding Subsidy Program",
+      maxRebate: "$3,000",
+      items: [
+        { service: "Backwater Valve", amount: "Up to $1,500" },
+        { service: "Sump Pump", amount: "Up to $1,500" },
+        { service: "Weeping Tile", amount: "Up to $2,000" }
+      ],
+      fundsRemaining: "80%",
+      processingTime: "3-4 weeks"
+    },
+    {
+      city: "Oakville/Halton",
+      program: "Basement Flooding Prevention Subsidy",
+      maxRebate: "$3,000",
+      items: [
+        { service: "Protective Devices", amount: "Up to $3,000" },
+        { service: "50% of costs covered", amount: "" }
+      ],
+      fundsRemaining: "85%",
+      processingTime: "2-3 weeks"
+    }
+  ];
+  const faqData = [
+    {
+      question: "Can I get rebates if I haven't flooded?",
+      answer: "Yes! 2025 programs now cover preventive installations in high-risk areas. All GTA municipalities offer rebates for protective installations without requiring flooding history."
+    },
+    {
+      question: "How long does rebate approval take?",
+      answer: "Typically 2-6 weeks depending on municipality. Toronto: 4-6 weeks, Mississauga: 3-4 weeks, Oakville: 2-3 weeks. Emergency situations can be fast-tracked to 48-72 hours."
+    },
+    {
+      question: "What is the maximum rebate available in 2025?",
+      answer: "Up to $5,400 total combining municipal rebates (Toronto $3,400 max) plus new provincial Climate Resilience Program ($2,000) plus federal tax credits up to $1,500."
+    },
+    {
+      question: "Are rebates taxable?",
+      answer: "No, municipal and provincial rebates are not considered taxable income. Federal tax credits reduce your tax liability."
+    },
+    {
+      question: "Can I get rebates for multiple properties?",
+      answer: "Yes! Each property is eligible for the full rebate amount. Investment properties and rental units qualify in most GTA municipalities."
+    },
+    {
+      question: "What happens if municipal rebate funds run out?",
+      answer: "Alternative funding is available through provincial programs, federal tax credits, and utility company rebates. We monitor all program budgets and help access alternative funding sources."
+    },
+    {
+      question: "Do I need a licensed contractor for rebates?",
+      answer: "Yes, all municipalities require work to be completed by licensed, insured contractors. DIY installations do not qualify for rebates. Professional installation also ensures maximum rebate approval rates (94% vs 67% DIY)."
+    },
+    {
+      question: "How do I know which rebate programs I qualify for?",
+      answer: "Eligibility depends on your property location, type, and flood risk. We provide free rebate assessments to determine all available programs and calculate maximum rebate potential for your specific situation."
+    }
+  ];
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": pageTitle, "description": pageDescription }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Hero", $$Hero, { "title": "Waterproofing Rebates 2025", "subtitle": "Get Up to $5,400 Back on Waterproofing Projects", "description": "Combining municipal rebates up to $3,400 plus NEW provincial funding up to $2,000. We handle all rebate applications and guarantee maximum refund.", "ctaText": "Get Free Rebate Assessment", "ctaPhone": "(437) 545-0067", "emergency": false })} ${maybeRenderHead()}<section class="py-16 bg-red-50"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <div class="bg-red-100 border-2 border-red-500 p-8 rounded-lg"> <h2 class="text-2xl font-bold text-red-700 mb-4">⚡ URGENT UPDATE: 2025 Rebate Status</h2> <p class="text-lg text-red-600 mb-6">
+2025 rebate budgets are 75% allocated + NEW $45M provincial program launches March 2025 - apply now to secure both municipal and provincial funding
+</p> <div class="grid md:grid-cols-3 gap-4"> <div class="bg-white p-4 rounded"> <p class="font-semibold text-gray-700">Toronto</p> <p class="text-2xl font-bold text-red-600">72% Allocated</p> <p class="text-sm text-gray-600">$1.06M remaining</p> </div> <div class="bg-white p-4 rounded"> <p class="font-semibold text-gray-700">Mississauga</p> <p class="text-2xl font-bold text-orange-600">65% Allocated</p> <p class="text-sm text-gray-600">$875K remaining</p> </div> <div class="bg-white p-4 rounded"> <p class="font-semibold text-gray-700">Oakville</p> <p class="text-2xl font-bold text-yellow-600">58% Allocated</p> <p class="text-sm text-gray-600">$630K remaining</p> </div> </div> </div> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <div class="max-w-5xl mx-auto"> <h2 class="text-3xl font-bold mb-12 text-center">2025 Municipal Waterproofing Rebates</h2> <div class="space-y-8"> ${municipalRebates.map((municipality) => renderTemplate`<div class="bg-gray-50 p-8 rounded-lg border border-gray-200"> <div class="flex justify-between items-start mb-6"> <div> <h3 class="text-2xl font-semibold mb-2">${municipality.city}</h3> <p class="text-gray-600">${municipality.program}</p> </div> <div class="text-right"> <p class="text-3xl font-bold text-green-600">${municipality.maxRebate}</p> <p class="text-sm text-gray-600">Maximum Rebate</p> </div> </div> <div class="grid md:grid-cols-2 gap-4 mb-6"> ${municipality.items.map((item) => renderTemplate`<div class="flex justify-between bg-white p-3 rounded"> <span class="font-medium">${item.service}</span> <span class="text-green-600 font-semibold">${item.amount}</span> </div>`)} </div> <div class="flex justify-between text-sm"> <span class="text-gray-600">Funds Remaining: <strong class="text-orange-600">${municipality.fundsRemaining}</strong></span> <span class="text-gray-600">Processing Time: <strong>${municipality.processingTime}</strong></span> </div> </div>`)} </div> </div> </div> </section> <section class="py-16 bg-blue-50"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8 text-center">🆕 NEW FOR 2025: Enhanced Rebate Features</h2> <div class="grid md:grid-cols-3 gap-8"> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">1. Increased Coverage</h3> <ul class="space-y-2 text-gray-600"> <li>✅ Battery backup systems now included</li> <li>✅ Smart sump pumps qualify</li> <li>✅ Weeping tile connections covered</li> <li>✅ Cleanout access included</li> </ul> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">2. Simplified Process</h3> <ul class="space-y-2 text-gray-600"> <li>✅ No upfront payment required</li> <li>✅ Digital application submission</li> <li>✅ Faster approval (2-3 weeks)</li> <li>✅ Direct deposit available</li> </ul> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">3. Expanded Eligibility</h3> <ul class="space-y-2 text-gray-600"> <li>✅ Condos and townhomes qualify</li> <li>✅ Rental properties eligible</li> <li>✅ No flooding history required</li> <li>✅ Multi-unit properties (up to 6)</li> </ul> </div> </div> <div class="mt-12 bg-green-100 p-8 rounded-lg"> <h3 class="text-2xl font-semibold mb-4">🏛️ Provincial Climate Resilience Program (Launching March 2025)</h3> <ul class="grid md:grid-cols-2 gap-4"> <li class="flex items-start"> <span class="text-green-600 mr-2">•</span> <span>Additional $2,000 available for comprehensive waterproofing</span> </li> <li class="flex items-start"> <span class="text-green-600 mr-2">•</span> <span>Stackable with municipal rebates for up to $5,400 total</span> </li> <li class="flex items-start"> <span class="text-green-600 mr-2">•</span> <span>Focus on climate change adaptation</span> </li> <li class="flex items-start"> <span class="text-green-600 mr-2">•</span> <span>Pre-registration now open</span> </li> </ul> </div> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8 text-center">How We Handle Your Rebate Application</h2> <div class="grid md:grid-cols-4 gap-6"> <div class="text-center"> <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"> <span class="text-2xl font-bold text-blue-600">1</span> </div> <h3 class="font-semibold mb-2">Free Assessment</h3> <p class="text-sm text-gray-600">Rebate eligibility confirmation and maximum rebate calculation</p> </div> <div class="text-center"> <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"> <span class="text-2xl font-bold text-blue-600">2</span> </div> <h3 class="font-semibold mb-2">Documentation</h3> <p class="text-sm text-gray-600">We gather all required documents and permits</p> </div> <div class="text-center"> <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"> <span class="text-2xl font-bold text-blue-600">3</span> </div> <h3 class="font-semibold mb-2">Application</h3> <p class="text-sm text-gray-600">Submit to all eligible programs for maximum rebates</p> </div> <div class="text-center"> <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"> <span class="text-2xl font-bold text-blue-600">4</span> </div> <h3 class="font-semibold mb-2">Follow-up</h3> <p class="text-sm text-gray-600">Handle all communication and ensure approval</p> </div> </div> <div class="mt-12 bg-yellow-50 p-8 rounded-lg border-2 border-yellow-400"> <h3 class="text-xl font-semibold mb-4">Why Choose DrySpace for Rebate Projects?</h3> <div class="grid md:grid-cols-2 gap-6"> <div> <h4 class="font-semibold mb-2">Registered & Approved</h4> <ul class="space-y-1 text-gray-600"> <li>✅ Approved contractor for all GTA rebate programs</li> <li>✅ Direct billing agreements in place</li> <li>✅ 500+ successful rebate applications</li> <li>✅ Maximum rebate guarantee</li> </ul> </div> <div> <h4 class="font-semibold mb-2">We Handle Everything</h4> <ul class="space-y-1 text-gray-600"> <li>✅ Complete application preparation</li> <li>✅ All required photos and documentation</li> <li>✅ Municipal liaison and follow-up</li> <li>✅ Appeal assistance if needed</li> </ul> </div> </div> </div> </div> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <div class="max-w-5xl mx-auto"> <h2 class="text-3xl font-bold mb-8 text-center">Rebate-Eligible Services & Your Costs</h2> <div class="grid md:grid-cols-2 gap-8"> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Backwater Valve Installation</h3> <p class="text-gray-600 mb-3">Prevents sewage backup into your basement</p> <div class="space-y-2"> <div class="flex justify-between"> <span>Average Cost:</span> <span class="font-semibold">$2,500-$4,000</span> </div> <div class="flex justify-between"> <span>Typical Rebate:</span> <span class="font-semibold text-green-600">$1,250-$1,500</span> </div> <div class="flex justify-between border-t pt-2"> <span>Your Cost After Rebate:</span> <span class="font-bold">$1,250-$2,500</span> </div> </div> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Sump Pump System</h3> <p class="text-gray-600 mb-3">Removes groundwater from your basement</p> <div class="space-y-2"> <div class="flex justify-between"> <span>Average Cost:</span> <span class="font-semibold">$2,000-$3,500</span> </div> <div class="flex justify-between"> <span>Typical Rebate:</span> <span class="font-semibold text-green-600">$1,500-$1,750</span> </div> <div class="flex justify-between border-t pt-2"> <span>Your Cost After Rebate:</span> <span class="font-bold">$500-$1,750</span> </div> </div> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Weeping Tile Disconnection</h3> <p class="text-gray-600 mb-3">Redirects water away from sewers</p> <div class="space-y-2"> <div class="flex justify-between"> <span>Average Cost:</span> <span class="font-semibold">$1,500-$3,000</span> </div> <div class="flex justify-between"> <span>Typical Rebate:</span> <span class="font-semibold text-green-600">$400-$2,000</span> </div> <div class="flex justify-between border-t pt-2"> <span>Your Cost After Rebate:</span> <span class="font-bold">$1,000-$1,100</span> </div> </div> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Complete Protection Package</h3> <p class="text-gray-600 mb-3">All services combined for maximum protection</p> <div class="space-y-2"> <div class="flex justify-between"> <span>Average Cost:</span> <span class="font-semibold">$6,000-$10,000</span> </div> <div class="flex justify-between"> <span>Maximum Rebate:</span> <span class="font-semibold text-green-600">$3,000-$3,400</span> </div> <div class="flex justify-between border-t pt-2"> <span>Your Cost After Rebate:</span> <span class="font-bold">$3,000-$6,600</span> </div> </div> </div> </div> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8 text-center">Success Stories: Real Rebate Examples</h2> <div class="grid md:grid-cols-3 gap-6"> <div class="bg-blue-50 p-6 rounded-lg"> <h3 class="font-semibold mb-2">Toronto Homeowner - East York</h3> <p class="text-sm text-gray-600 mb-3">Backwater valve + sump pump</p> <div class="space-y-1 text-sm"> <p>Total Cost: <strong>$4,200</strong></p> <p>Rebate Received: <strong class="text-green-600">$3,000</strong></p> <p>Out of Pocket: <strong>$1,200</strong></p> <p class="text-lg font-bold text-blue-600 mt-2">Savings: 71%</p> </div> </div> <div class="bg-green-50 p-6 rounded-lg"> <h3 class="font-semibold mb-2">Mississauga Family - Port Credit</h3> <p class="text-sm text-gray-600 mb-3">Full basement waterproofing</p> <div class="space-y-1 text-sm"> <p>Total Cost: <strong>$8,500</strong></p> <p>Rebate Received: <strong class="text-green-600">$3,000</strong></p> <p>Out of Pocket: <strong>$5,500</strong></p> <p class="text-lg font-bold text-green-600 mt-2">Savings: 35%</p> </div> </div> <div class="bg-yellow-50 p-6 rounded-lg"> <h3 class="font-semibold mb-2">Oakville Resident - Glen Abbey</h3> <p class="text-sm text-gray-600 mb-3">Preventive installation</p> <div class="space-y-1 text-sm"> <p>Total Cost: <strong>$5,800</strong></p> <p>Rebate Received: <strong class="text-green-600">$2,900</strong></p> <p>Out of Pocket: <strong>$2,900</strong></p> <p class="text-lg font-bold text-yellow-600 mt-2">Savings: 50%</p> </div> </div> </div> </div> </div> </section> ${renderComponent($$result2, "FAQ", $$FAQ, { "title": "Frequently Asked Questions About 2025 Rebates", "faqs": faqData })} ${renderComponent($$result2, "CTASection", $$CTASection, { "title": "\u{1F6A8} Don't Miss Out - Get Your 2025 Rebates Before Funds Run Out", "description": "Free rebate assessment with eligibility confirmation within 24 hours. We handle all applications and guarantee maximum rebates. Average client saves $4,200 in combined rebates!", "ctaText": "Get Free Rebate Assessment", "ctaPhone": "(437) 545-0067", "emergency": true, "features": [
+    "Approved contractor for all GTA programs",
+    "Direct billing agreements - pay only your portion",
+    "500+ successful rebate applications",
+    "94% approval rate with our assistance",
+    "Appeal support if initially denied"
+  ] })} ` })}`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/waterproofing-rebates-2025.astro", void 0);
+
+const $$file = "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/waterproofing-rebates-2025.astro";
+const $$url = "/waterproofing-rebates-2025";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$WaterproofingRebates2025,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

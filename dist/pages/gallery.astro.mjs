@@ -1,0 +1,86 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_Dgea6w5L.mjs';
+import { S as ScrollAnimation } from '../chunks/ScrollAnimation_DokyVXDc.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Gallery = createComponent(($$result, $$props, $$slots) => {
+  const projects = [
+    {
+      category: "Basement Waterproofing",
+      images: [
+        { src: "/images/gallery/basement-before.jpg", alt: "Basement flooding before waterproofing", caption: "Before: Severe water damage" },
+        { src: "/images/gallery/basement-after.jpg", alt: "Dry basement after waterproofing", caption: "After: Completely dry and protected" },
+        { src: "/images/gallery/interior-system.jpg", alt: "Interior drainage system installation", caption: "Interior drainage system" },
+        { src: "/images/gallery/sump-pump-install.jpg", alt: "Sump pump installation", caption: "Triple pump protection system" }
+      ]
+    },
+    {
+      category: "Foundation Repair",
+      images: [
+        { src: "/images/gallery/foundation-crack.jpg", alt: "Foundation crack before repair", caption: "Major foundation crack" },
+        { src: "/images/gallery/crack-injection.jpg", alt: "Crack injection process", caption: "Professional injection repair" },
+        { src: "/images/gallery/foundation-sealed.jpg", alt: "Sealed foundation crack", caption: "Permanently sealed crack" },
+        { src: "/images/gallery/exterior-excavation.jpg", alt: "Exterior foundation excavation", caption: "Full exterior waterproofing" }
+      ]
+    },
+    {
+      category: "Commercial Projects",
+      images: [
+        { src: "/images/gallery/parking-garage.jpg", alt: "Parking garage waterproofing", caption: "Underground parking protection" },
+        { src: "/images/gallery/office-building.jpg", alt: "Office building foundation", caption: "Commercial foundation work" },
+        { src: "/images/gallery/plaza-deck.jpg", alt: "Plaza deck waterproofing", caption: "Plaza deck membrane system" },
+        { src: "/images/gallery/industrial-floor.jpg", alt: "Industrial floor coating", caption: "Chemical-resistant flooring" }
+      ]
+    }
+  ];
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Project Gallery - DrySpace Waterproofing Toronto", "description": "View our waterproofing project gallery. Before and after photos of basement waterproofing, foundation repair, and commercial projects across Toronto." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="py-12"> <div class="container mx-auto px-4"> <!-- Hero Section --> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="text-center mb-12"> <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+Our Work Speaks for Itself
+</h1> <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Browse through our gallery of completed waterproofing projects across Toronto and the GTA
+</p> </div> ` })} <!-- Stats --> <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"> ${[
+    { number: "5,000+", label: "Projects Completed" },
+    { number: "25+", label: "Years Experience" },
+    { number: "98%", label: "Success Rate" },
+    { number: "4.9\u2605", label: "Customer Rating" }
+  ].map((stat, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "delay": index * 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="bg-gray-50 rounded-lg p-4 text-center"> <div class="text-2xl font-bold text-primary">${stat.number}</div> <div class="text-sm text-gray-600">${stat.label}</div> </div> ` })}`)} </div> <!-- Gallery Categories --> <div class="mb-8"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="flex flex-wrap justify-center gap-4"> ${["All Projects", "Basement Waterproofing", "Foundation Repair", "Commercial Projects"].map((cat, index) => renderTemplate`<button${addAttribute(`px-6 py-2 rounded-full font-semibold transition-colors ${index === 0 ? "bg-primary text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`, "class")}> ${cat} </button>`)} </div> ` })} </div> <!-- Gallery Grid --> ${projects.map((category, catIndex) => renderTemplate`<div class="mb-16"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <h2 class="text-2xl font-bold text-gray-900 mb-6">${category.category}</h2> ` })} <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"> ${category.images.map((image, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "delay": index * 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="group cursor-pointer"> <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"> <div class="aspect-square bg-gray-200"> <img${addAttribute(image.src, "src")}${addAttribute(image.alt, "alt")} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"> </div> <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"> <div class="absolute bottom-0 left-0 right-0 p-4 text-white"> <p class="text-sm font-semibold">${image.caption}</p> </div> </div> </div> </div> ` })}`)} </div> </div>`)} <!-- Before/After Showcase --> <div class="bg-gray-50 rounded-xl p-8 mb-12"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Dramatic Transformations</h2> ` })} <div class="grid md:grid-cols-2 gap-8"> ${[
+    {
+      title: "Flooded Basement to Family Room",
+      description: "Complete interior waterproofing transformed this constantly flooding basement into a beautiful living space.",
+      before: "/images/gallery/transform-1-before.jpg",
+      after: "/images/gallery/transform-1-after.jpg"
+    },
+    {
+      title: "Cracked Foundation Restoration",
+      description: "Multiple foundation cracks repaired and sealed, preventing water infiltration and structural damage.",
+      before: "/images/gallery/transform-2-before.jpg",
+      after: "/images/gallery/transform-2-after.jpg"
+    }
+  ].map((transform, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": index === 0 ? "fadeLeft" : "fadeRight", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div> <h3 class="font-bold text-lg mb-2">${transform.title}</h3> <p class="text-gray-600 mb-4">${transform.description}</p> <div class="grid grid-cols-2 gap-4"> <div> <div class="bg-red-100 text-red-800 text-xs font-semibold px-2 py-1 rounded mb-2 inline-block">BEFORE</div> <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden"> <img${addAttribute(transform.before, "src")} alt="Before waterproofing" class="w-full h-full object-cover"> </div> </div> <div> <div class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded mb-2 inline-block">AFTER</div> <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden"> <img${addAttribute(transform.after, "src")} alt="After waterproofing" class="w-full h-full object-cover"> </div> </div> </div> </div> ` })}`)} </div> </div> <!-- Video Gallery --> <div class="mb-12"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Project Videos</h2> ` })} <div class="grid md:grid-cols-3 gap-6"> ${[
+    { title: "Sump Pump Installation Process", thumbnail: "/images/video-thumb-1.jpg", duration: "3:45" },
+    { title: "Foundation Crack Repair", thumbnail: "/images/video-thumb-2.jpg", duration: "2:30" },
+    { title: "Complete Basement Transformation", thumbnail: "/images/video-thumb-3.jpg", duration: "5:12" }
+  ].map((video, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "delay": index * 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="group cursor-pointer"> <div class="relative aspect-video bg-gray-200 rounded-lg overflow-hidden"> <img${addAttribute(video.thumbnail, "src")}${addAttribute(video.title, "alt")} class="w-full h-full object-cover"> <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors"> <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform"> <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24"> <path d="M8 5v14l11-7z"></path> </svg> </div> </div> <div class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded"> ${video.duration} </div> </div> <h3 class="mt-3 font-semibold text-gray-900">${video.title}</h3> </div> ` })}`)} </div> </div> <!-- CTA Section --> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="text-center bg-primary text-white rounded-xl p-8"> <h2 class="text-3xl font-bold mb-4">
+Ready to Transform Your Space?
+</h2> <p class="text-xl mb-6 opacity-90">
+Let us add your project to our gallery of success stories
+</p> <div class="flex flex-col sm:flex-row gap-4 justify-center"> <a href="tel:4375450067" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+Call Now: (437) 545-0067
+</a> <a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all">
+Get Free Estimate
+</a> </div> </div> ` })} </div> </section> ` })}`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/gallery.astro", void 0);
+
+const $$file = "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/gallery.astro";
+const $$url = "/gallery";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Gallery,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

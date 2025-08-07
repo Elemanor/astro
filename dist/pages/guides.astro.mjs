@@ -1,0 +1,119 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout, N as Navigation, a as $$StickyCTA } from '../chunks/BaseLayout_Dgea6w5L.mjs';
+import { S as ScrollAnimation } from '../chunks/ScrollAnimation_DokyVXDc.mjs';
+import { B as Button } from '../chunks/button_DLabDoza.mjs';
+import { g as getCollection } from '../chunks/_astro_content_DypdcfYy.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Index = createComponent(async ($$result, $$props, $$slots) => {
+  const guides = await getCollection("guides");
+  const sortedGuides = guides.sort((a, b) => {
+    return a.data.title.localeCompare(b.data.title);
+  });
+  const categorizeGuides = () => {
+    const foundationGuides = guides.filter(
+      (g) => g.slug.includes("foundation") || g.slug.includes("crack") || g.slug.includes("concrete")
+    );
+    const waterproofingGuides = guides.filter(
+      (g) => g.slug.includes("waterproofing") || g.slug.includes("membrane") || g.slug.includes("moisture") || g.slug.includes("dampproofing")
+    );
+    const maintenanceGuides = guides.filter(
+      (g) => g.slug.includes("maintenance") || g.slug.includes("seasonal") || g.slug.includes("spring") || g.slug.includes("summer") || g.slug.includes("fall") || g.slug.includes("winter")
+    );
+    const emergencyGuides = guides.filter(
+      (g) => g.slug.includes("flood") || g.slug.includes("emergency") || g.slug.includes("leak") || g.slug.includes("rain")
+    );
+    return {
+      foundation: foundationGuides.slice(0, 3),
+      waterproofing: waterproofingGuides.slice(0, 3),
+      maintenance: maintenanceGuides.slice(0, 3),
+      emergency: emergencyGuides.slice(0, 3)
+    };
+  };
+  const categorizedGuides = categorizeGuides();
+  const categories = [
+    {
+      name: "Foundation Care",
+      icon: "foundation",
+      description: "Identify and prevent foundation problems",
+      guides: categorizedGuides.foundation.map((g) => ({
+        title: g.data.title.substring(0, 50) + (g.data.title.length > 50 ? "..." : ""),
+        link: `/guides/${g.slug}`
+      }))
+    },
+    {
+      name: "Waterproofing Methods",
+      icon: "water",
+      description: "Complete waterproofing solutions and methods",
+      guides: categorizedGuides.waterproofing.map((g) => ({
+        title: g.data.title.substring(0, 50) + (g.data.title.length > 50 ? "..." : ""),
+        link: `/guides/${g.slug}`
+      }))
+    },
+    {
+      name: "Maintenance",
+      icon: "tools",
+      description: "Keep your basement dry year-round",
+      guides: categorizedGuides.maintenance.map((g) => ({
+        title: g.data.title.substring(0, 50) + (g.data.title.length > 50 ? "..." : ""),
+        link: `/guides/${g.slug}`
+      }))
+    },
+    {
+      name: "Emergency Help",
+      icon: "alert",
+      description: "What to do in water emergencies",
+      guides: categorizedGuides.emergency.map((g) => ({
+        title: g.data.title.substring(0, 50) + (g.data.title.length > 50 ? "..." : ""),
+        link: `/guides/${g.slug}`
+      }))
+    }
+  ];
+  const featuredGuide = guides.find((g) => g.slug === "foundation-problems") || guides[0];
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Waterproofing Guides & Resources | Expert Help for Toronto Homeowners", "description": "Comprehensive guides on basement waterproofing, foundation repair, and water damage prevention. Expert advice for Toronto homeowners." }, { "default": async ($$result2) => renderTemplate` ${renderComponent($$result2, "Navigation", Navigation, { "client:load": true, "client:component-hydration": "load", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/Navigation", "client:component-export": "Navigation" })}  ${maybeRenderHead()}<section class="relative bg-gradient-to-br from-blue-50 to-white pt-24 pb-12 lg:pt-32 lg:pb-20"> <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 1px 1px, blue 1px, transparent 1px); background-size: 40px 40px;"></div> <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <div class="text-center max-w-3xl mx-auto"> <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+Expert Waterproofing Guides
+</h1> <p class="text-xl text-gray-600 mb-8">
+Everything you need to know about protecting your Toronto home from water damage. Written by professionals, designed for homeowners.
+</p> <div class="flex flex-col sm:flex-row gap-4 justify-center"> ${renderComponent($$result3, "Button", Button, { "size": "lg", "class": "text-lg px-8" }, { "default": async ($$result4) => renderTemplate`
+Download All Guides (PDF)
+` })} ${renderComponent($$result3, "Button", Button, { "size": "lg", "variant": "outline", "class": "text-lg px-8" }, { "default": async ($$result4) => renderTemplate`
+Get Expert Help
+` })} </div> </div> ` })} </div> </section>  <section class="py-12 -mt-8"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <div class="bg-white rounded-lg shadow-xl overflow-hidden"> <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-2 text-center"> <span class="text-sm font-semibold">📚 Most Popular Guide</span> </div> <div class="p-8 lg:p-12"> <div class="grid lg:grid-cols-2 gap-8 items-center"> <div> <h2 class="text-3xl font-bold text-gray-900 mb-4"> ${featuredGuide.data.title} </h2> <p class="text-gray-600 mb-6"> ${featuredGuide.data.description} </p> <div class="flex items-center gap-6 mb-6 text-sm text-gray-500"> <span class="flex items-center gap-1"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg> ${featuredGuide.data.readTime || "10 min read"} </span> <span class="flex items-center gap-1"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path> </svg>
+15,847 downloads
+</span> </div> <a${addAttribute(`/guides/${featuredGuide.slug}`, "href")} class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+Read Guide
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </a> </div> <div class="relative"> <img src="/images/guides/foundation-cracks.jpg" alt="Foundation crack types" class="rounded-lg shadow-lg"> <div class="absolute -bottom-4 -right-4 bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold shadow-lg">
+Save $1000s with early detection!
+</div> </div> </div> </div> </div> ` })} </div> </section>  <section class="py-16 lg:py-24"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+Browse Guides by Category
+</h2> ` })} <div class="grid md:grid-cols-2 gap-8"> ${categories.map((category, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "delay": index * 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow"> <div class="flex items-start gap-4 mb-6"> <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"> <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path> </svg> </div> <div class="flex-1"> <h3 class="text-2xl font-bold text-gray-900 mb-2">${category.name}</h3> <p class="text-gray-600 mb-4">${category.description}</p> <ul class="space-y-3"> ${category.guides.map((guide) => renderTemplate`<li> <a${addAttribute(guide.link, "href")} class="flex items-center justify-between group"> <span class="text-blue-600 group-hover:text-blue-700 font-medium"> ${guide.title} </span> <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </a> </li>`)} </ul> </div> </div> </div> ` })}`)} </div> </div> </section>  <section class="bg-gray-50 py-16 lg:py-24"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+Quick Reference Guides
+</h2> ` })} <div class="grid md:grid-cols-3 gap-6"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "delay": 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <a href="/guides/water-leaking-into-basement-after-heavy-rain" class="block bg-red-50 border-2 border-red-200 rounded-lg p-6 hover:border-red-300 transition-colors"> <div class="flex items-center gap-3 mb-3"> <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path> </svg> <h3 class="text-xl font-bold text-red-900">Emergency Water Leak</h3> </div> <p class="text-red-700">What to do when water enters your basement</p> </a> ` })} ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "delay": 0.2, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <a href="/guides/basement-waterproofing-cost" class="block bg-green-50 border-2 border-green-200 rounded-lg p-6 hover:border-green-300 transition-colors"> <div class="flex items-center gap-3 mb-3"> <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path> </svg> <h3 class="text-xl font-bold text-green-900">Cost Guide</h3> </div> <p class="text-green-700">Estimate your waterproofing project costs</p> </a> ` })} ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "delay": 0.3, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <a href="/guides/diy-vs-professional-waterproofing" class="block bg-blue-50 border-2 border-blue-200 rounded-lg p-6 hover:border-blue-300 transition-colors"> <div class="flex items-center gap-3 mb-3"> <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg> <h3 class="text-xl font-bold text-blue-900">DIY vs Professional</h3> </div> <p class="text-blue-700">When to tackle it yourself vs calling experts</p> </a> ` })} </div> </div> </section>  <section class="py-16 lg:py-24"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+All Expert Guides (${guides.length} Total)
+</h2> ` })} <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> ${sortedGuides.map((guide, index) => renderTemplate`${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "delay": index * 0.05, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <a${addAttribute(`/guides/${guide.slug}`, "href")} class="block bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6"> <div class="flex items-start justify-between mb-3"> <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded"> ${guide.data.category || "Guide"} </span> <span class="text-xs text-gray-500">${guide.data.readTime || "10 min"}</span> </div> <h3 class="font-bold text-gray-900 mb-2 line-clamp-2"> ${guide.data.title} </h3> <p class="text-sm text-gray-600 line-clamp-3"> ${guide.data.description} </p> <div class="mt-4 flex items-center text-primary font-semibold text-sm">
+Read Guide
+<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </div> </a> ` })}`)} </div> </div> </section>  <section class="bg-primary text-white py-16 lg:py-24"> <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": async ($$result3) => renderTemplate` <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+Get New Guides & Tips Monthly
+</h2> <p class="text-xl mb-8 opacity-90">
+Join 5,000+ Toronto homeowners staying informed about basement protection
+</p> <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"> <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-3 rounded-lg text-gray-900" required> ${renderComponent($$result3, "Button", Button, { "type": "submit", "variant": "secondary", "size": "lg" }, { "default": async ($$result4) => renderTemplate`
+Subscribe Free
+` })} </form> <p class="mt-4 text-sm opacity-75">
+Unsubscribe anytime. We never share your email.
+</p> ` })} </div> </section> ${renderComponent($$result2, "StickyCTA", $$StickyCTA, {})} ` })}`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/guides/index.astro", void 0);
+
+const $$file = "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/guides/index.astro";
+const $$url = "/guides";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Index,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

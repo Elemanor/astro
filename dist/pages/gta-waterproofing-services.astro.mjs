@@ -1,0 +1,132 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../chunks/Layout_CpUiY3mq.mjs';
+import { $ as $$Hero } from '../chunks/Hero_C4_3RV_b.mjs';
+import { $ as $$Features } from '../chunks/Features_Ddsam9kx.mjs';
+import { $ as $$CTASection } from '../chunks/CTASection_C6tRvETi.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$GtaWaterproofingServices = createComponent(($$result, $$props, $$slots) => {
+  const pageTitle = "GTA Waterproofing & Foundation Services | Greater Toronto Area Coverage";
+  const pageDescription = "Professional GTA waterproofing & foundation repair. Serving Toronto, Mississauga, Brampton, Vaughan, Markham. 24/7 emergency service: (437) 545-0067";
+  const serviceHubs = [
+    {
+      title: "Central Operations",
+      location: "Toronto Headquarters",
+      areas: ["Downtown Toronto", "North York", "East York", "York"],
+      icon: "\u{1F3E2}"
+    },
+    {
+      title: "Eastern Hub",
+      location: "Scarborough",
+      areas: ["Scarborough", "Markham", "Pickering", "Ajax"],
+      icon: "\u{1F3D7}\uFE0F"
+    },
+    {
+      title: "Western Hub",
+      location: "Mississauga",
+      areas: ["Mississauga", "Oakville", "Burlington", "Milton"],
+      icon: "\u{1F3ED}"
+    },
+    {
+      title: "Northern Hub",
+      location: "Vaughan",
+      areas: ["Vaughan", "Richmond Hill", "Aurora", "Newmarket"],
+      icon: "\u{1F3D8}\uFE0F"
+    },
+    {
+      title: "Northwest Hub",
+      location: "Brampton",
+      areas: ["Brampton", "Caledon", "Georgetown", "Bolton"],
+      icon: "\u{1F3E1}"
+    }
+  ];
+  const regionalServices = [
+    {
+      title: "Downtown Toronto & Central",
+      challenges: [
+        "Century-old foundations",
+        "Shared walls in row houses",
+        "High water tables",
+        "Limited access properties"
+      ],
+      solutions: [
+        "Heritage foundation preservation",
+        "Interior waterproofing systems",
+        "Minimal disruption techniques",
+        "Permit expediting"
+      ]
+    },
+    {
+      title: "Suburban GTA",
+      challenges: [
+        "Clay soil expansion",
+        "Poor subdivision drainage",
+        "Newer home settling",
+        "Ravine lot challenges"
+      ],
+      solutions: [
+        "Exterior excavation and waterproofing",
+        "French drain installation",
+        "Sump pump systems",
+        "Foundation crack repair"
+      ]
+    },
+    {
+      title: "Rural GTA Properties",
+      challenges: [
+        "Well water management",
+        "Septic system coordination",
+        "Agricultural drainage",
+        "Large property solutions"
+      ],
+      solutions: [
+        "Comprehensive drainage plans",
+        "Natural grade preservation",
+        "Environmental compliance",
+        "Extended warranty options"
+      ]
+    }
+  ];
+  const services = [
+    {
+      title: "Emergency Services (24/7)",
+      items: ["Flood response", "Sump pump failures", "Foundation emergencies", "Storm damage"],
+      icon: "\u{1F6A8}"
+    },
+    {
+      title: "Waterproofing Services",
+      items: ["Interior waterproofing systems", "Exterior membrane installation", "French drain systems", "Crack injection"],
+      icon: "\u{1F4A7}"
+    },
+    {
+      title: "Foundation Services",
+      items: ["Foundation repair", "Underpinning", "Wall reinforcement", "Settlement correction"],
+      icon: "\u{1F3D7}\uFE0F"
+    },
+    {
+      title: "Preventive Maintenance",
+      items: ["Annual inspections", "Sump pump servicing", "Drainage cleaning", "Warranty checkups"],
+      icon: "\u{1F527}"
+    }
+  ];
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": pageTitle, "description": pageDescription }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Hero", $$Hero, { "title": "Greater Toronto Area Waterproofing & Foundation Services", "subtitle": "Complete GTA Coverage with Local Expertise", "description": "DrySpace Waterproofing has been the Greater Toronto Area's trusted waterproofing and foundation specialist since 1999. With multiple crews stationed throughout the GTA, we provide fast, professional service to every community.", "ctaText": "Get Free Quote", "ctaPhone": "(437) 545-0067" })} ${maybeRenderHead()}<section class="py-16 bg-white"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8 text-center">Why GTA-Wide Coverage Matters</h2> <div class="bg-blue-50 p-8 rounded-lg mb-12"> <h3 class="text-xl font-semibold mb-4">One Company, Complete Solutions:</h3> <ul class="space-y-3"> <li class="flex items-start"> <span class="text-blue-600 mr-3">✓</span> <span>Consistent quality standards across all locations</span> </li> <li class="flex items-start"> <span class="text-blue-600 mr-3">✓</span> <span>Unified warranty coverage for all properties</span> </li> <li class="flex items-start"> <span class="text-blue-600 mr-3">✓</span> <span>Single point of contact for multiple properties</span> </li> <li class="flex items-start"> <span class="text-blue-600 mr-3">✓</span> <span>Coordinated service for property managers</span> </li> <li class="flex items-start"> <span class="text-blue-600 mr-3">✓</span> <span>Standardized pricing throughout the GTA</span> </li> </ul> </div> </div> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-12 text-center">Our GTA Service Network</h2> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"> ${serviceHubs.map((hub) => renderTemplate`<div class="bg-white p-6 rounded-lg shadow-md"> <div class="text-3xl mb-3">${hub.icon}</div> <h3 class="text-xl font-semibold mb-2">${hub.title}</h3> <p class="text-blue-600 font-medium mb-3">${hub.location}</p> <ul class="text-gray-600 space-y-1"> ${hub.areas.map((area) => renderTemplate`<li>• ${area}</li>`)} </ul> </div>`)} </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-12 text-center">Specialized Services by Region</h2> <div class="space-y-12 max-w-5xl mx-auto"> ${regionalServices.map((region) => renderTemplate`<div class="bg-gray-50 p-8 rounded-lg"> <h3 class="text-2xl font-semibold mb-6">${region.title}</h3> <div class="grid md:grid-cols-2 gap-8"> <div> <h4 class="font-semibold mb-3 text-red-600">Unique Challenges:</h4> <ul class="space-y-2"> ${region.challenges.map((challenge) => renderTemplate`<li class="flex items-start"> <span class="text-red-500 mr-2">•</span> <span class="text-gray-700">${challenge}</span> </li>`)} </ul> </div> <div> <h4 class="font-semibold mb-3 text-green-600">Our Solutions:</h4> <ul class="space-y-2"> ${region.solutions.map((solution) => renderTemplate`<li class="flex items-start"> <span class="text-green-500 mr-2">✓</span> <span class="text-gray-700">${solution}</span> </li>`)} </ul> </div> </div> </div>`)} </div> </div> </section> ${renderComponent($$result2, "Features", $$Features, { "title": "Complete Service Offering Across the GTA", "description": "From emergency response to preventive maintenance, we provide comprehensive waterproofing and foundation services throughout the Greater Toronto Area", "features": services.map((service) => ({
+    title: service.title,
+    description: service.items.join(", "),
+    icon: service.icon
+  })) })} <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <div class="max-w-5xl mx-auto"> <h2 class="text-3xl font-bold mb-12 text-center">Why Choose DrySpace for GTA-Wide Service</h2> <div class="grid md:grid-cols-3 gap-8 mb-12"> <div class="text-center"> <div class="text-4xl font-bold text-blue-600 mb-2">50+</div> <p class="text-gray-600">Certified Technicians</p> </div> <div class="text-center"> <div class="text-4xl font-bold text-blue-600 mb-2">15+</div> <p class="text-gray-600">Specialized Crews</p> </div> <div class="text-center"> <div class="text-4xl font-bold text-blue-600 mb-2">25</div> <p class="text-gray-600">Years of GTA Experience</p> </div> </div> <div class="bg-white p-8 rounded-lg shadow-md"> <h3 class="text-2xl font-semibold mb-6">Response Times Across the GTA</h3> <div class="space-y-4"> <div class="flex justify-between items-center pb-3 border-b"> <span class="font-medium">Urban Core</span> <span class="text-green-600 font-semibold">30-60 minutes</span> </div> <div class="flex justify-between items-center pb-3 border-b"> <span class="font-medium">Suburban Areas</span> <span class="text-yellow-600 font-semibold">60-90 minutes</span> </div> <div class="flex justify-between items-center pb-3 border-b"> <span class="font-medium">Rural Properties</span> <span class="text-orange-600 font-semibold">90-120 minutes</span> </div> </div> </div> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <div class="max-w-5xl mx-auto"> <h2 class="text-3xl font-bold mb-12 text-center">Investment Protection Across the GTA</h2> <div class="overflow-x-auto"> <table class="w-full bg-white rounded-lg shadow-md"> <thead class="bg-blue-600 text-white"> <tr> <th class="py-3 px-4 text-left">Region</th> <th class="py-3 px-4 text-left">Avg Home Value</th> <th class="py-3 px-4 text-left">Waterproofing ROI</th> <th class="py-3 px-4 text-left">Protection Value</th> </tr> </thead> <tbody> <tr class="border-b"> <td class="py-3 px-4">Toronto Central</td> <td class="py-3 px-4">$1.2-2.5M</td> <td class="py-3 px-4">8-12%</td> <td class="py-3 px-4">$96,000-300,000</td> </tr> <tr class="border-b bg-gray-50"> <td class="py-3 px-4">North York</td> <td class="py-3 px-4">$1.0-1.8M</td> <td class="py-3 px-4">7-10%</td> <td class="py-3 px-4">$70,000-180,000</td> </tr> <tr class="border-b"> <td class="py-3 px-4">Mississauga</td> <td class="py-3 px-4">$900K-1.5M</td> <td class="py-3 px-4">6-9%</td> <td class="py-3 px-4">$54,000-135,000</td> </tr> <tr class="border-b bg-gray-50"> <td class="py-3 px-4">Vaughan</td> <td class="py-3 px-4">$1.1-2.0M</td> <td class="py-3 px-4">7-11%</td> <td class="py-3 px-4">$77,000-220,000</td> </tr> <tr> <td class="py-3 px-4">Oakville</td> <td class="py-3 px-4">$1.2-2.2M</td> <td class="py-3 px-4">8-12%</td> <td class="py-3 px-4">$96,000-264,000</td> </tr> </tbody> </table> </div> </div> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <div class="max-w-5xl mx-auto"> <h2 class="text-3xl font-bold mb-12 text-center">Service Area Details</h2> <div class="grid md:grid-cols-2 gap-8"> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">City of Toronto</h3> <p class="text-gray-600 mb-3">Neighborhoods Served:</p> <ul class="text-sm text-gray-600 space-y-1"> <li>• The Annex, Yorkville, Rosedale</li> <li>• Beaches, Leslieville, Riverdale</li> <li>• High Park, Bloor West, Etobicoke</li> <li>• North York (all areas)</li> <li>• Scarborough (all areas)</li> <li>• Downtown core</li> </ul> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Peel Region</h3> <p class="text-gray-600 mb-3"><strong>Mississauga:</strong></p> <p class="text-sm text-gray-600 mb-3">Port Credit, Clarkson, Lorne Park, Streetsville, Meadowvale, Erin Mills</p> <p class="text-gray-600 mb-3"><strong>Brampton:</strong></p> <p class="text-sm text-gray-600 mb-3">Downtown, Bramalea, Heart Lake, Springdale, Fletcher's Meadows</p> <p class="text-gray-600 mb-3"><strong>Caledon:</strong></p> <p class="text-sm text-gray-600">Bolton, Caledon East, Inglewood, rural properties</p> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">York Region</h3> <ul class="text-sm text-gray-600 space-y-2"> <li><strong>Vaughan:</strong> Woodbridge, Maple, Thornhill, Kleinburg, Concord</li> <li><strong>Richmond Hill:</strong> All neighborhoods</li> <li><strong>Markham:</strong> Unionville, Cornell, Berczy, Cathedraltown</li> <li><strong>Newmarket:</strong> Historic downtown, newer subdivisions</li> <li><strong>Aurora:</strong> All areas</li> </ul> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Halton Region</h3> <ul class="text-sm text-gray-600 space-y-2"> <li><strong>Oakville:</strong> Bronte, Glen Abbey, Joshua Creek, Clearview</li> <li><strong>Burlington:</strong> Aldershot, Downtown, Millcroft, Tyandaga</li> <li><strong>Milton:</strong> All neighborhoods</li> <li><strong>Halton Hills:</strong> Georgetown, Acton</li> </ul> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Durham Region</h3> <ul class="text-sm text-gray-600 space-y-2"> <li><strong>Pickering:</strong> All neighborhoods</li> <li><strong>Ajax:</strong> Waterfront, downtown, all subdivisions</li> <li><strong>Whitby:</strong> Brooklin, downtown, all areas</li> <li><strong>Oshawa:</strong> Coverage for special projects</li> </ul> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Commercial Properties</h3> <ul class="text-sm text-gray-600 space-y-1"> <li>• Multi-unit residential</li> <li>• Office buildings</li> <li>• Retail spaces</li> <li>• Industrial facilities</li> <li>• Institutional properties</li> </ul> </div> </div> </div> </div> </section> <section class="py-16 bg-blue-600 text-white"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto text-center"> <h2 class="text-3xl font-bold mb-8">GTA-Wide Warranty Program</h2> <div class="grid md:grid-cols-2 gap-8 mb-12"> <div class="bg-white/10 p-6 rounded-lg"> <h3 class="text-xl font-semibold mb-4">Comprehensive Coverage</h3> <ul class="space-y-2 text-left"> <li>• 25-year transferable warranty</li> <li>• All locations covered equally</li> <li>• Single warranty for multiple properties</li> <li>• Commercial warranty options</li> <li>• Extended coverage available</li> </ul> </div> <div class="bg-white/10 p-6 rounded-lg"> <h3 class="text-xl font-semibold mb-4">Warranty Benefits</h3> <ul class="space-y-2 text-left"> <li>• Peace of mind across properties</li> <li>• Increased resale value</li> <li>• Transfer to new owners</li> <li>• Annual inspection options</li> <li>• Emergency response included</li> </ul> </div> </div> </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, { "title": "Contact Our GTA Team", "description": "With over 25 years serving the Greater Toronto Area, DrySpace Waterproofing combines the resources of a large company with the care of a local contractor. One number for all GTA locations.", "ctaText": "Book Free GTA Consultation", "ctaPhone": "(437) 545-0067" })} ` })}`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/gta-waterproofing-services.astro", void 0);
+
+const $$file = "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/gta-waterproofing-services.astro";
+const $$url = "/gta-waterproofing-services";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$GtaWaterproofingServices,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

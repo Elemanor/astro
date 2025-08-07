@@ -1,0 +1,120 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../chunks/Layout_CpUiY3mq.mjs';
+import { $ as $$Hero } from '../chunks/Hero_C4_3RV_b.mjs';
+import { $ as $$CTASection } from '../chunks/CTASection_C6tRvETi.mjs';
+import { $ as $$FAQ } from '../chunks/FAQ_EWOLvXs_.mjs';
+import { $ as $$Process } from '../chunks/Process_Byod7r58.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$TorontoSumpPumpRebate = createComponent(($$result, $$props, $$slots) => {
+  const pageTitle = "City of Toronto Sump Pump Rebate Program 2024 | Get Up to $1,750";
+  const pageDescription = "Get up to $1,750 from City of Toronto sump pump rebate program. Complete guide to basement flooding protection subsidy program, eligibility, and application process.";
+  const faqData = [
+    {
+      question: "What is the City of Toronto sump pump rebate amount?",
+      answer: "The City of Toronto sump pump rebate provides up to $1,750 for eligible homeowners through the basement flooding protection subsidy program. This includes $1,250 for sump pump installation plus an additional $500 if you also install a backwater valve. The program helps offset sump pump installation Toronto costs."
+    },
+    {
+      question: "Who qualifies for the Toronto sump pump rebate?",
+      answer: "To qualify for the City of Toronto basement flooding protection subsidy program, you must: own a single-family, duplex, or triplex home in Toronto; have experienced basement flooding or be at risk; hire a licensed plumber for installation; apply within 6 months of work completion. Both the sump pump and backwater valve Toronto rebate require proper permits."
+    },
+    {
+      question: "How do I apply for the basement flooding protection subsidy?",
+      answer: "Apply for the City of Toronto sump pump rebate online through the city's website. You'll need: proof of ownership, licensed plumber's invoice, plumbing permit, before/after photos, and completed application form. The basement flooding protection subsidy program processes applications within 8-12 weeks."
+    },
+    {
+      question: "Can I get both sump pump and backwater valve rebates?",
+      answer: "Yes! The City of Toronto basement flooding protection program offers $1,250 for sump pump installation and $500 for backwater valve installation, totaling $1,750. Many homeowners install both for maximum protection and rebates. The backwater valve Toronto rebate stacks with the sump pump subsidy."
+    },
+    {
+      question: "What are the deadlines for the Toronto flooding subsidy?",
+      answer: "You must apply for the City of Toronto sump pump rebate within 6 months of installation. The basement flooding protection subsidy program runs year-round but funding is limited. Apply as soon as work is complete to ensure you receive your rebate before annual funding runs out."
+    }
+  ];
+  const processSteps = [
+    {
+      step: 1,
+      title: "Assess Your Risk",
+      description: "Check if your property is in flood-prone areas, has history of flooding, or lacks modern drainage systems."
+    },
+    {
+      step: 2,
+      title: "Hire Licensed Contractors",
+      description: "Work with licensed plumbers who understand City of Toronto requirements and can handle permits."
+    },
+    {
+      step: 3,
+      title: "Professional Installation",
+      description: "Get code-compliant sump pump and/or backwater valve installation with proper documentation."
+    },
+    {
+      step: 4,
+      title: "Apply for Rebate",
+      description: "Submit online application with all documentation within 6 months for your rebate."
+    }
+  ];
+  const rebateAmounts = [
+    {
+      service: "Sump Pump Installation",
+      amount: "$1,250",
+      description: "Professional sump pump with battery backup",
+      icon: "\u{1F4A7}"
+    },
+    {
+      service: "Backwater Valve",
+      amount: "$500",
+      description: "Prevent sewage backup into basement",
+      icon: "\u{1F6B0}"
+    },
+    {
+      service: "Pipe Severance",
+      amount: "$500",
+      description: "Disconnect and cap drain connections",
+      icon: "\u{1F527}"
+    },
+    {
+      service: "Total Available",
+      amount: "$1,750",
+      description: "Maximum rebate with combined services",
+      icon: "\u{1F4B0}"
+    }
+  ];
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": pageTitle, "description": pageDescription }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Hero", $$Hero, { "title": "City of Toronto Sump Pump Rebate", "subtitle": "Get Up to $1,750 in Flood Protection Subsidies", "description": "Complete guide to Toronto's basement flooding protection subsidy program. Professional installation, rebate application assistance, and guaranteed eligibility.", "ctaText": "Get Rebate Help", "ctaPhone": "(437) 545-0067" })} ${maybeRenderHead()}<section class="py-16 bg-white"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8">Understanding the City of Toronto Sump Pump Rebate Program</h2> <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8"> <p class="text-lg text-gray-700 mb-4">
+The City of Toronto's basement flooding protection subsidy program helps homeowners protect their properties from costly water damage. With climate change bringing more intense storms to Toronto, basement flooding has become a major concern. The city's sump pump rebate program makes flood prevention more affordable.
+</p> </div> <h3 class="text-2xl font-semibold mb-6">Current Rebate Amounts (2024)</h3> <div class="grid md:grid-cols-2 gap-6 mb-8"> ${rebateAmounts.map((rebate) => renderTemplate`<div class="bg-gray-50 p-6 rounded-lg border border-gray-200"> <div class="text-3xl mb-3">${rebate.icon}</div> <h4 class="text-xl font-semibold mb-2">${rebate.service}</h4> <p class="text-3xl font-bold text-green-600 mb-2">${rebate.amount}</p> <p class="text-gray-600">${rebate.description}</p> </div>`)} </div> <p class="text-gray-700">
+This basement flooding protection subsidy covers approximately 50-80% of typical sump pump installation Toronto costs, making professional flood protection accessible to more homeowners. The program has already helped thousands of Toronto residents protect their basements.
+</p> </div> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8">Eligibility for Toronto's Basement Flooding Subsidies</h2> <div class="grid md:grid-cols-2 gap-8"> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Property Requirements</h3> <p class="text-gray-700 mb-3">The City of Toronto sump pump rebate applies to:</p> <ul class="space-y-2 text-gray-600"> <li>✓ Single-family homes</li> <li>✓ Semi-detached homes</li> <li>✓ Duplexes and triplexes</li> <li>✓ Homes connected to city storm or combined sewers</li> </ul> <p class="text-sm text-red-600 mt-4"> <strong>Not eligible:</strong> Condos, apartments, commercial properties, or homes built after 2009
+</p> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Installation Requirements</h3> <p class="text-gray-700 mb-3">To qualify for the subsidy:</p> <ul class="space-y-2 text-gray-600"> <li>✓ Must use a licensed plumber</li> <li>✓ Obtain proper plumbing permits</li> <li>✓ Install approved equipment</li> <li>✓ Complete work to plumbing code</li> <li>✓ Submit application within 6 months</li> </ul> </div> <div class="bg-white p-6 rounded-lg shadow-md md:col-span-2"> <h3 class="text-xl font-semibold mb-4">Documentation Needed</h3> <div class="grid md:grid-cols-2 gap-4"> <ul class="space-y-2 text-gray-600"> <li>📄 Proof of property ownership</li> <li>📄 Licensed plumber's detailed invoice</li> <li>📄 Copy of plumbing permit</li> </ul> <ul class="space-y-2 text-gray-600"> <li>📷 Before and after photos</li> <li>✅ Completed rebate application form</li> <li>📋 Installation compliance certificate</li> </ul> </div> </div> </div> </div> </div> </section> ${renderComponent($$result2, "Process", $$Process, { "title": "How the Basement Flooding Protection Subsidy Works", "steps": processSteps })} <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8">Maximizing Your Toronto Flooding Protection Rebate</h2> <div class="bg-green-50 p-8 rounded-lg mb-8"> <h3 class="text-2xl font-semibold mb-4">Combine Services for Maximum Savings</h3> <p class="text-gray-700 mb-4">Install both sump pump and backwater valve to:</p> <ul class="grid md:grid-cols-2 gap-3"> <li class="flex items-start"> <span class="text-green-600 mr-2">✓</span> <span>Receive full $1,750 rebate</span> </li> <li class="flex items-start"> <span class="text-green-600 mr-2">✓</span> <span>Get comprehensive flood protection</span> </li> <li class="flex items-start"> <span class="text-green-600 mr-2">✓</span> <span>Save on combined installation costs</span> </li> <li class="flex items-start"> <span class="text-green-600 mr-2">✓</span> <span>Protect against groundwater and sewer backup</span> </li> </ul> </div> <div class="grid md:grid-cols-2 gap-8"> <div class="bg-blue-50 p-6 rounded-lg"> <h3 class="text-xl font-semibold mb-3">Insurance Premium Reductions</h3> <p class="text-gray-700">
+Many insurers offer 10-15% discounts for flood prevention devices. The City of Toronto sump pump rebate combined with insurance savings can pay for installation within 2-3 years.
+</p> </div> <div class="bg-yellow-50 p-6 rounded-lg"> <h3 class="text-xl font-semibold mb-3">Prevent Costly Damage</h3> <p class="text-gray-700">
+Average basement flood costs $15,000-25,000 in damages. The basement flooding protection subsidy program helps prevent these losses for a fraction of the cost.
+</p> </div> </div> <div class="mt-8 p-6 bg-gray-100 rounded-lg"> <h3 class="text-xl font-semibold mb-4">Work with Rebate-Experienced Contractors</h3> <p class="text-gray-700 mb-3">Choose contractors who:</p> <ul class="space-y-2 text-gray-600"> <li>• Understand City of Toronto requirements</li> <li>• Provide proper documentation</li> <li>• Use approved equipment</li> <li>• Handle permit applications</li> <li>• Guarantee rebate eligibility</li> </ul> </div> </div> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8">Toronto Sump Pump Installation Requirements</h2> <div class="grid md:grid-cols-2 gap-8"> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Sump Pump Requirements</h3> <p class="text-gray-700 mb-3">The City of Toronto requires:</p> <ul class="space-y-2 text-gray-600"> <li>• Minimum 1/3 HP pump capacity</li> <li>• Battery backup system</li> <li>• Proper discharge location (not to sanitary sewer)</li> <li>• Check valve installation</li> <li>• Sealed sump pit cover</li> </ul> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <h3 class="text-xl font-semibold mb-4">Backwater Valve Requirements</h3> <p class="text-gray-700 mb-3">Installation must include:</p> <ul class="space-y-2 text-gray-600"> <li>• Normally open backwater valve</li> <li>• Installed on main sanitary line</li> <li>• Accessible for maintenance</li> <li>• Proper permits obtained</li> <li>• Professional installation only</li> </ul> </div> </div> <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-500 p-6"> <h3 class="text-xl font-semibold mb-2">Processing Time</h3> <p class="text-gray-700">
+The basement flooding protection subsidy program typically processes applications in 8-12 weeks. Ensure all documentation is complete to avoid delays.
+</p> </div> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto"> <h2 class="text-3xl font-bold mb-8">Why Act Now on Flood Protection</h2> <div class="grid md:grid-cols-3 gap-6"> <div class="text-center"> <div class="text-4xl mb-4">🌧️</div> <h3 class="text-xl font-semibold mb-3">Climate Change Impact</h3> <p class="text-gray-600">
+Toronto is experiencing more frequent intense storms, overwhelmed sewer systems, and rising groundwater levels.
+</p> </div> <div class="text-center"> <div class="text-4xl mb-4">⏰</div> <h3 class="text-xl font-semibold mb-3">Limited Annual Funding</h3> <p class="text-gray-600">
+The rebate program has limited annual funding. Once depleted, you must wait until the next fiscal year.
+</p> </div> <div class="text-center"> <div class="text-4xl mb-4">🏠</div> <h3 class="text-xl font-semibold mb-3">Property Value Protection</h3> <p class="text-gray-600">
+Homes with flood protection sell faster, command higher prices, and have lower insurance costs.
+</p> </div> </div> </div> </div> </section> ${renderComponent($$result2, "FAQ", $$FAQ, { "title": "Frequently Asked Questions", "faqs": faqData })} ${renderComponent($$result2, "CTASection", $$CTASection, { "title": "Get Your Sump Pump Rebate Today", "description": "Take advantage of the City of Toronto sump pump rebate program. Get up to $1,750 back through the basement flooding protection subsidy program while protecting your home from costly water damage.", "ctaText": "Free Consultation", "ctaPhone": "(437) 545-0067", "features": [
+    "Licensed Plumbers",
+    "Rebate Application Assistance",
+    "Guaranteed Eligible Installation",
+    "Complete Documentation Provided"
+  ] })} ` })}`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/toronto-sump-pump-rebate.astro", void 0);
+
+const $$file = "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/toronto-sump-pump-rebate.astro";
+const $$url = "/toronto-sump-pump-rebate";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$TorontoSumpPumpRebate,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

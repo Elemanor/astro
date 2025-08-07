@@ -1,0 +1,79 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_Dgea6w5L.mjs';
+import { S as ScrollAnimation } from '../chunks/ScrollAnimation_DokyVXDc.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Contact = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Contact Us - DrySpace Waterproofing Toronto", "description": "Get your free waterproofing estimate today. Call (437) 545-0067 or fill out our form for same-day response. 24/7 emergency service available." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="py-12"> <div class="container mx-auto px-4"> <!-- Hero Section --> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="text-center mb-12"> <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+Get Your Free Waterproofing Estimate
+</h1> <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Contact Toronto's most trusted waterproofing experts. Same-day response guaranteed.
+</p> </div> ` })} <!-- Contact Options --> <div class="grid md:grid-cols-3 gap-6 mb-12"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <a href="tel:4375450067" class="bg-red-50 hover:bg-red-100 rounded-xl p-6 text-center transition-colors group"> <div class="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"> <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path> </svg> </div> <h3 class="text-xl font-bold text-gray-900 mb-2">Emergency? Call Now</h3> <p class="text-2xl font-bold text-red-600 mb-2">(437) 545-0067</p> <p class="text-sm text-gray-600">24/7 Emergency Service</p> </a> ` })} ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "delay": 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="bg-blue-50 rounded-xl p-6 text-center"> <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-4"> <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path> </svg> </div> <h3 class="text-xl font-bold text-gray-900 mb-2">Email Us</h3> <a href="mailto:info@dryspacewaterproofing.ca" class="text-blue-600 hover:underline">
+info@dryspacewaterproofing.ca
+</a> <p class="text-sm text-gray-600 mt-2">Response within 2 hours</p> </div> ` })} ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "zoomIn", "delay": 0.2, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="bg-green-50 rounded-xl p-6 text-center"> <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4"> <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> </div> <h3 class="text-xl font-bold text-gray-900 mb-2">Visit Our Office</h3> <p class="text-gray-700">123 Main Street<br>Toronto, ON M5V 3A5</p> <p class="text-sm text-gray-600 mt-2">Mon-Sat: 7AM-7PM</p> </div> ` })} </div> <!-- Contact Form and Map --> <div class="grid md:grid-cols-2 gap-12"> <!-- Contact Form --> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeLeft", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div class="bg-white rounded-xl shadow-lg p-8"> <h2 class="text-2xl font-bold text-gray-900 mb-6">Request Your Free Estimate</h2> <form class="space-y-4"> <div class="grid md:grid-cols-2 gap-4"> <div> <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">
+First Name *
+</label> <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"> </div> <div> <label for="lastName" class="block text-sm font-medium text-gray-700 mb-1">
+Last Name *
+</label> <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"> </div> </div> <div> <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+Email *
+</label> <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"> </div> <div> <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+Phone *
+</label> <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"> </div> <div> <label for="address" class="block text-sm font-medium text-gray-700 mb-1">
+Property Address
+</label> <input type="text" id="address" name="address" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"> </div> <div> <label for="service" class="block text-sm font-medium text-gray-700 mb-1">
+Service Needed
+</label> <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"> <option value="">Select a service</option> <option value="basement-waterproofing">Basement Waterproofing</option> <option value="foundation-repair">Foundation Repair</option> <option value="sump-pump">Sump Pump Installation</option> <option value="french-drain">French Drain Installation</option> <option value="emergency">Emergency Water Removal</option> <option value="inspection">Free Inspection</option> <option value="other">Other</option> </select> </div> <div> <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+Tell us about your water problem
+</label> <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"></textarea> </div> <div> <label class="flex items-center gap-2"> <input type="checkbox" name="emergency" class="rounded border-gray-300 text-primary focus:ring-primary"> <span class="text-sm text-gray-700">This is an emergency (we'll call within 30 minutes)</span> </label> </div> <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+Get My Free Estimate
+</button> <p class="text-xs text-gray-600 text-center">
+By submitting, you agree to receive communications from DrySpace. We respect your privacy.
+</p> </form> </div> ` })} <!-- Map and Info --> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeRight", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <div> <!-- Map Placeholder --> <div class="bg-gray-200 rounded-xl h-64 mb-6 flex items-center justify-center"> <p class="text-gray-600">Interactive Map</p> </div> <!-- Service Areas --> <div class="bg-gray-50 rounded-xl p-6 mb-6"> <h3 class="font-bold text-lg mb-4">Service Areas</h3> <div class="grid grid-cols-2 gap-2 text-sm"> ${[
+    "Toronto",
+    "North York",
+    "Scarborough",
+    "Etobicoke",
+    "East York",
+    "York",
+    "Mississauga",
+    "Brampton",
+    "Vaughan",
+    "Richmond Hill",
+    "Markham",
+    "Pickering"
+  ].map((area) => renderTemplate`<div class="flex items-center gap-1"> <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> </svg> <span>${area}</span> </div>`)} </div> </div> <!-- Business Hours --> <div class="bg-blue-50 rounded-xl p-6"> <h3 class="font-bold text-lg mb-4">Business Hours</h3> <div class="space-y-2 text-sm"> <div class="flex justify-between"> <span>Monday - Friday</span> <span class="font-semibold">7:00 AM - 7:00 PM</span> </div> <div class="flex justify-between"> <span>Saturday</span> <span class="font-semibold">8:00 AM - 5:00 PM</span> </div> <div class="flex justify-between"> <span>Sunday</span> <span class="font-semibold">Emergency Only</span> </div> <div class="pt-3 mt-3 border-t border-blue-200"> <p class="text-red-600 font-semibold">
+🚨 24/7 Emergency Service Available
+</p> </div> </div> </div> </div> ` })} </div> <!-- FAQ Section --> <div class="mt-16 bg-gray-50 rounded-xl p-8"> ${renderComponent($$result2, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result3) => renderTemplate` <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Frequently Asked Questions</h2> <div class="grid md:grid-cols-2 gap-6"> ${[
+    {
+      q: "How quickly can you come for an estimate?",
+      a: "We offer same-day estimates for most Toronto areas. Emergency services are available 24/7."
+    },
+    {
+      q: "Is the estimate really free?",
+      a: "Yes! Our comprehensive inspection and written estimate are 100% free with no obligation."
+    },
+    {
+      q: "Do you offer financing?",
+      a: "Yes, we offer flexible financing options including 0% interest for qualified customers."
+    },
+    {
+      q: "How long does the estimate take?",
+      a: "Our thorough inspection typically takes 45-60 minutes, and you'll receive your written quote the same day."
+    }
+  ].map((faq, index) => renderTemplate`${renderComponent($$result3, "ScrollAnimation", ScrollAnimation, { "animation": "fadeUp", "delay": index * 0.1, "client:visible": true, "client:component-hydration": "visible", "client:component-path": "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/components/ScrollAnimation", "client:component-export": "ScrollAnimation" }, { "default": ($$result4) => renderTemplate` <div> <h3 class="font-semibold text-gray-900 mb-2">${faq.q}</h3> <p class="text-gray-700">${faq.a}</p> </div> ` })}`)} </div> ` })} </div> </div> </section> ` })}`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/contact.astro", void 0);
+
+const $$file = "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/contact.astro";
+const $$url = "/contact";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Contact,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

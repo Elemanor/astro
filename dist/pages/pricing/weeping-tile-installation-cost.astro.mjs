@@ -1,0 +1,188 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_DRM_B0B9.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_Dgea6w5L.mjs';
+import { $ as $$HeroSection, a as $$FAQSection } from '../../chunks/FAQSection_kT1TEjBS.mjs';
+import { $ as $$CTASection } from '../../chunks/CTASection_C6tRvETi.mjs';
+export { renderers } from '../../renderers.mjs';
+
+const $$WeepingTileInstallationCost = createComponent(($$result, $$props, $$slots) => {
+  const pageTitle = "Weeping Tile Installation Cost Toronto 2025 | Complete Pricing Guide";
+  const pageDescription = "Complete weeping tile installation cost guide for Toronto & GTA. Detailed pricing for interior/exterior systems, excavation, materials, and installation. Free quotes: 416-893-5000.";
+  const quickSummary = [
+    {
+      type: "Interior Weeping Tile",
+      price: "$15,000 - $25,000",
+      features: [
+        "Perimeter excavation inside basement",
+        "New drainage tile installation",
+        "Waterproof membrane application",
+        "Floor restoration included"
+      ]
+    },
+    {
+      type: "Exterior Weeping Tile",
+      price: "$25,000 - $45,000",
+      features: [
+        "Full foundation excavation",
+        "Complete drainage system replacement",
+        "Waterproofing membrane",
+        "Landscaping restoration"
+      ]
+    },
+    {
+      type: "Partial Exterior System",
+      price: "$8,000 - $15,000",
+      features: [
+        "Targeted problem areas",
+        "Limited excavation",
+        "Spot drainage repairs",
+        "Selective waterproofing"
+      ]
+    }
+  ];
+  const systemPackages = [
+    {
+      name: "Basic Interior Protection",
+      price: "$15,000 - $20,000",
+      includes: [
+        "Full perimeter interior weeping tile",
+        'Standard 4" perforated pipe',
+        "Basic waterproof membrane",
+        "Concrete floor restoration",
+        "Sump pump connection",
+        "10-year warranty"
+      ],
+      bestFor: [
+        "Newer homes (less than 20 years)",
+        "Minor moisture issues",
+        "Preventive maintenance",
+        "Budget-conscious homeowners"
+      ]
+    },
+    {
+      name: "Standard Exterior System",
+      price: "$25,000 - $32,000",
+      includes: [
+        "Complete exterior excavation",
+        'Premium 6" drainage pipe',
+        "Quality waterproof membrane",
+        "Proper backfill and grading",
+        "Landscape restoration",
+        "15-year warranty"
+      ],
+      bestFor: [
+        "Moderate foundation issues",
+        "Older homes needing upgrades",
+        "Long-term protection",
+        "Standard Toronto properties"
+      ]
+    },
+    {
+      name: "Premium Dual System",
+      price: "$35,000 - $50,000",
+      includes: [
+        "Both interior and exterior systems",
+        "High-capacity drainage",
+        "Advanced waterproofing",
+        "Foundation repairs included",
+        "Complete restoration",
+        "25-year warranty"
+      ],
+      bestFor: [
+        "Severe water problems",
+        "Century homes",
+        "High water table areas",
+        "Maximum protection desired"
+      ]
+    },
+    {
+      name: "Ultimate Foundation Protection",
+      price: "$50,000 - $75,000",
+      includes: [
+        "Complete foundation rehabilitation",
+        "Advanced drainage systems",
+        "Premium waterproofing",
+        "Structural improvements",
+        "Lifetime warranty coverage",
+        "Annual maintenance program"
+      ],
+      bestFor: [
+        "Major foundation issues",
+        "Commercial properties",
+        "Historic home preservation",
+        "Investment properties"
+      ]
+    }
+  ];
+  const laborCostsByRegion = [
+    { region: "Toronto (Downtown Core)", excavation: "$125 - $175/linear ft", installation: "$75 - $125/linear ft", total: "$200 - $300/linear ft" },
+    { region: "Mississauga/Brampton", excavation: "$100 - $150/linear ft", installation: "$60 - $100/linear ft", total: "$160 - $250/linear ft" },
+    { region: "Oakville/Burlington", excavation: "$110 - $160/linear ft", installation: "$65 - $110/linear ft", total: "$175 - $270/linear ft" },
+    { region: "York Region", excavation: "$105 - $155/linear ft", installation: "$65 - $105/linear ft", total: "$170 - $260/linear ft" },
+    { region: "Scarborough/Etobicoke", excavation: "$95 - $145/linear ft", installation: "$55 - $95/linear ft", total: "$150 - $240/linear ft" }
+  ];
+  const faqs = [
+    {
+      question: "What's the average weeping tile installation cost in Toronto?",
+      answer: "Most Toronto homeowners invest $20,000-$35,000 for a complete exterior system or $15,000-$25,000 for interior installation, depending on foundation size and complexity."
+    },
+    {
+      question: "How long does weeping tile installation take?",
+      answer: "Interior systems typically require 5-8 days, while exterior installations need 7-14 days depending on weather, access, and complexity."
+    },
+    {
+      question: "Is weeping tile installation worth the cost?",
+      answer: "Yes - weeping tile systems provide 30-50 year protection, prevent $15,000-$50,000+ in flood damage, and increase property value by $15,000-$35,000."
+    },
+    {
+      question: "Do I need interior or exterior weeping tile?",
+      answer: "Exterior systems provide superior protection but cost more. Interior systems work well for newer homes with minor issues. A professional assessment determines the best approach."
+    },
+    {
+      question: "How long do weeping tile systems last?",
+      answer: "Properly installed modern weeping tile systems last 30-50 years with minimal maintenance, making them an excellent long-term investment."
+    },
+    {
+      question: "Can weeping tile be installed in winter?",
+      answer: "Yes, but costs increase 30-50% due to ground conditions and weather challenges. Spring and summer installations are more cost-effective."
+    },
+    {
+      question: "What maintenance do weeping tile systems require?",
+      answer: "Minimal maintenance - annual inspections, keeping discharge areas clear, and occasional flushing every 10-15 years."
+    },
+    {
+      question: "Will weeping tile installation damage my landscaping?",
+      answer: "Exterior installation requires temporary landscape removal, but professional restoration is included. Most landscaping is fully restored within 4-6 weeks."
+    },
+    {
+      question: "How do I know if my existing weeping tile needs replacement?",
+      answer: "Warning signs include basement moisture, foundation cracks, drainage system backups, or systems over 25 years old. A professional inspection can assess condition."
+    },
+    {
+      question: "Are there rebates available for weeping tile installation?",
+      answer: "Yes - Toronto offers up to $3,400 in basement flooding protection subsidies, plus additional provincial and insurance incentives may apply."
+    }
+  ];
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": pageTitle, "description": pageDescription }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "HeroSection", $$HeroSection, { "title": "Weeping Tile Installation Cost: 2025 Complete Pricing Guide", "subtitle": "Understanding Weeping Tile System Costs - One of the most effective long-term investments in foundation protection", "ctaText": "Get Free Quote", "ctaLink": "tel:4168935000", "image": "/pics/work/weeping-tile-installation.jpg" })} ${maybeRenderHead()}<section class="py-16 bg-white"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Quick Cost Summary</h2> <div class="grid md:grid-cols-3 gap-6"> ${quickSummary.map((item) => renderTemplate`<div class="bg-gray-50 p-6 rounded-lg"> <h3 class="text-xl font-semibold mb-2">${item.type}</h3> <p class="text-2xl font-bold text-blue-600 mb-4">${item.price}</p> <ul class="space-y-1"> ${item.features.map((feature) => renderTemplate`<li class="text-sm">" ${feature}</li>`)} </ul> </div>`)} </div> <p class="mt-8 text-lg">
+Weeping tile installation is one of the most effective long-term investments in foundation protection. 
+        This comprehensive guide breaks down all costs associated with weeping tile systems in Toronto and the GTA, 
+        helping you make informed decisions about protecting your home's foundation.
+</p> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Detailed Cost Breakdown</h2> <div class="grid md:grid-cols-2 gap-8"> <div> <h3 class="text-2xl font-semibold mb-6">1. Interior Weeping Tile Systems</h3> <div class="bg-white p-6 rounded shadow mb-6"> <h4 class="text-lg font-semibold mb-3">Standard Interior Installation: $15,000 - $22,000</h4> <ul class="text-sm space-y-1 mb-4"> <li>" Cost per linear foot: $150 - $220</li> <li>" Includes: Excavation, drainage tile, membrane, restoration</li> <li>" Timeline: 5-8 days</li> <li>" Coverage: Full basement perimeter</li> </ul> </div> <div class="bg-white p-6 rounded shadow mb-6"> <h4 class="text-lg font-semibold mb-3">Premium Interior System: $22,000 - $30,000</h4> <ul class="text-sm space-y-1"> <li>" Cost per linear foot: $220 - $300</li> <li>" Includes: High-grade materials, enhanced waterproofing</li> <li>" Advanced drainage connections</li> <li>" Upgraded floor finishing</li> </ul> </div> <div class="bg-blue-50 p-6 rounded"> <h4 class="font-semibold mb-3">Component Breakdown:</h4> <ul class="text-sm space-y-1"> <li>" Excavation (interior): $50 - $75 per linear foot</li> <li>" Weeping tile (4" perforated): $15 - $25 per linear foot</li> <li>" Gravel bed preparation: $20 - $30 per linear foot</li> <li>" Waterproof membrane: $25 - $40 per linear foot</li> <li>" Floor restoration: $30 - $50 per linear foot</li> <li>" Sump pump connection: $500 - $1,000</li> </ul> </div> </div> <div> <h3 class="text-2xl font-semibold mb-6">2. Exterior Weeping Tile Systems</h3> <div class="bg-white p-6 rounded shadow mb-6"> <h4 class="text-lg font-semibold mb-3">Standard Exterior Installation: $25,000 - $35,000</h4> <ul class="text-sm space-y-1 mb-4"> <li>" Cost per linear foot: $250 - $350</li> <li>" Full foundation depth excavation</li> <li>" New drainage system installation</li> <li>" Basic waterproofing membrane</li> <li>" Standard backfill and grading</li> </ul> </div> <div class="bg-white p-6 rounded shadow mb-6"> <h4 class="text-lg font-semibold mb-3">Premium Exterior System: $35,000 - $50,000</h4> <ul class="text-sm space-y-1"> <li>" Cost per linear foot: $350 - $500</li> <li>" Deep excavation to footer level</li> <li>" Premium drainage materials</li> <li>" Advanced waterproofing systems</li> <li>" Enhanced protection layers</li> </ul> </div> <div class="bg-blue-50 p-6 rounded"> <h4 class="font-semibold mb-3">Component Breakdown:</h4> <ul class="text-sm space-y-1"> <li>" Machine excavation: $75 - $125 per linear foot</li> <li>" Hand excavation (tight areas): $150 - $225 per linear foot</li> <li>" Weeping tile (6" perforated): $20 - $35 per linear foot</li> <li>" Filter fabric: $8 - $12 per linear foot</li> <li>" Clear stone backfill: $35 - $50 per linear foot</li> <li>" Waterproof membrane: $40 - $65 per linear foot</li> <li>" Protective board: $25 - $35 per linear foot</li> <li>" Backfill and grading: $40 - $65 per linear foot</li> </ul> </div> </div> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Material Costs</h2> <div class="grid md:grid-cols-3 gap-6"> <div class="bg-gray-50 p-6 rounded"> <h3 class="text-lg font-semibold mb-4">Drainage Pipe Options</h3> <ul class="text-sm space-y-1"> <li>" 4" Perforated PVC: $8 - $12 per foot</li> <li>" 6" Perforated PVC: $12 - $18 per foot</li> <li>" 4" Flexible Corrugated: $6 - $10 per foot</li> <li>" 6" Flexible Corrugated: $10 - $15 per foot</li> <li>" High-Flow Drain Tile: $15 - $25 per foot</li> </ul> </div> <div class="bg-gray-50 p-6 rounded"> <h3 class="text-lg font-semibold mb-4">Waterproofing Materials</h3> <ul class="text-sm space-y-1"> <li>" Modified Bitumen Membrane: $3 - $5 per sq ft</li> <li>" Liquid Applied Membrane: $4 - $7 per sq ft</li> <li>" Bentonite Clay Panels: $6 - $10 per sq ft</li> <li>" Spray-Applied Waterproofing: $5 - $8 per sq ft</li> <li>" Dimple Membrane Board: $2 - $4 per sq ft</li> </ul> </div> <div class="bg-gray-50 p-6 rounded"> <h3 class="text-lg font-semibold mb-4">Aggregate Materials</h3> <ul class="text-sm space-y-1"> <li>" Clear Stone (3/4"): $45 - $65 per ton</li> <li>" Pea Gravel: $40 - $55 per ton</li> <li>" Filter Sand: $35 - $50 per ton</li> <li>" Geotextile Fabric: $1.50 - $3 per sq ft</li> <li>" Pipe Bedding Stone: $50 - $70 per ton</li> </ul> </div> </div> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Labor Costs by Region</h2> <div class="overflow-x-auto"> <table class="min-w-full bg-white rounded shadow"> <thead> <tr class="bg-gray-100"> <th class="px-4 py-2 text-left">Region</th> <th class="px-4 py-2 text-left">Excavation</th> <th class="px-4 py-2 text-left">Installation</th> <th class="px-4 py-2 text-left">Total Labor</th> </tr> </thead> <tbody> ${laborCostsByRegion.map((region) => renderTemplate`<tr class="border-b"> <td class="px-4 py-2 font-semibold">${region.region}</td> <td class="px-4 py-2">${region.excavation}</td> <td class="px-4 py-2">${region.installation}</td> <td class="px-4 py-2 font-semibold">${region.total}</td> </tr>`)} </tbody> </table> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Complete System Packages</h2> <div class="grid md:grid-cols-2 gap-6"> ${systemPackages.map((pkg) => renderTemplate`<div class="bg-gray-50 p-6 rounded-lg"> <div class="flex justify-between items-start mb-4"> <h3 class="text-xl font-semibold">${pkg.name}</h3> <span class="text-2xl font-bold text-blue-600">${pkg.price}</span> </div> <div class="mb-4"> <h4 class="font-semibold mb-2">Includes:</h4> <ul class="text-sm space-y-1"> ${pkg.includes.map((item) => renderTemplate`<li>" ${item}</li>`)} </ul> </div> <div> <h4 class="font-semibold mb-2">Best For:</h4> <ul class="text-sm space-y-1"> ${pkg.bestFor.map((item) => renderTemplate`<li>" ${item}</li>`)} </ul> </div> </div>`)} </div> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Factors Affecting Installation Cost</h2> <div class="grid md:grid-cols-3 gap-8"> <div> <h3 class="text-xl font-semibold mb-4">Foundation Depth and Access</h3> <div class="space-y-4"> <div> <h4 class="font-semibold">Shallow Foundations (4-6 feet):</h4> <ul class="text-sm space-y-1"> <li>" Standard pricing applies</li> <li>" Easier excavation</li> <li>" Faster installation</li> <li>" Lower risk factors</li> </ul> </div> <div> <h4 class="font-semibold">Deep Foundations (7-10 feet):</h4> <ul class="text-sm space-y-1"> <li>" +25-40% cost increase</li> <li>" Requires specialized equipment</li> <li>" Extended timeline</li> <li>" Additional safety measures</li> </ul> </div> <div> <h4 class="font-semibold">Very Deep Foundations (10+ feet):</h4> <ul class="text-sm space-y-1"> <li>" +50-75% cost increase</li> <li>" Heavy machinery required</li> <li>" Extensive shoring needed</li> <li>" Complex logistics</li> </ul> </div> </div> </div> <div> <h3 class="text-xl font-semibold mb-4">Soil and Site Conditions</h3> <div class="space-y-4"> <div> <h4 class="font-semibold">Clay Soil:</h4> <ul class="text-sm space-y-1"> <li>" Standard excavation rates</li> <li>" Good compaction properties</li> <li>" Moderate drainage requirements</li> <li>" Stable working conditions</li> </ul> </div> <div> <h4 class="font-semibold">Sandy Soil:</h4> <ul class="text-sm space-y-1"> <li>" -10-15% excavation cost</li> <li>" Excellent drainage</li> <li>" Requires extra support</li> <li>" Faster water infiltration</li> </ul> </div> <div> <h4 class="font-semibold">Rocky/Hardpan Soil:</h4> <ul class="text-sm space-y-1"> <li>" +30-50% excavation cost</li> <li>" Requires rock breaking</li> <li>" Specialized equipment</li> <li>" Extended timeline</li> </ul> </div> <div> <h4 class="font-semibold">High Water Table:</h4> <ul class="text-sm space-y-1"> <li>" +20-35% overall cost</li> <li>" Dewatering required</li> <li>" Waterproofing challenges</li> <li>" Specialized techniques</li> </ul> </div> </div> </div> <div> <h3 class="text-xl font-semibold mb-4">Property Characteristics</h3> <div class="space-y-4"> <div> <h4 class="font-semibold">Lot Size and Access:</h4> <ul class="text-sm space-y-1"> <li>" Standard Access: Base pricing</li> <li>" Limited Access: +15-25%</li> <li>" No Machine Access: +40-60%</li> <li>" Tight Urban Lots: +20-30%</li> </ul> </div> <div> <h4 class="font-semibold">Existing Landscaping:</h4> <ul class="text-sm space-y-1"> <li>" Minimal Landscaping: Base cost</li> <li>" Established Gardens: +$2,000-$5,000</li> <li>" Mature Trees: +$3,000-$8,000</li> <li>" Hardscaping (decks/patios): +$5,000-$15,000</li> </ul> </div> <div> <h4 class="font-semibold">Utility Conflicts:</h4> <ul class="text-sm space-y-1"> <li>" Standard Clearance: No extra cost</li> <li>" Minor Conflicts: +$500-$2,000</li> <li>" Major Relocations: +$2,000-$8,000</li> <li>" Multiple Utilities: +$3,000-$10,000</li> </ul> </div> </div> </div> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Return on Investment Analysis</h2> <div class="grid md:grid-cols-2 gap-8"> <div> <h3 class="text-xl font-semibold mb-4">Home Value Impact</h3> <div class="bg-gray-50 p-6 rounded mb-4"> <h4 class="font-semibold mb-3">Property Value Increase:</h4> <ul class="space-y-1"> <li>" Interior system: +$8,000 - $15,000</li> <li>" Exterior system: +$15,000 - $25,000</li> <li>" Complete system: +$20,000 - $35,000</li> <li>" ROI: 60-80% immediate return</li> </ul> </div> <div class="bg-gray-50 p-6 rounded"> <h4 class="font-semibold mb-3">Insurance Benefits:</h4> <ul class="space-y-1"> <li>" Premium reduction: $300 - $800 annually</li> <li>" Deductible protection: $2,500 - $5,000 savings</li> <li>" Claims prevention: $15,000 - $50,000 potential</li> <li>" Insurability improvement: Priceless</li> </ul> </div> </div> <div> <h3 class="text-xl font-semibold mb-4">Long-Term Savings</h3> <div class="bg-gray-50 p-6 rounded mb-4"> <h4 class="font-semibold mb-3">Prevented Damage Costs:</h4> <ul class="space-y-1"> <li>" Basement flooding: $15,000 - $50,000</li> <li>" Foundation repairs: $10,000 - $30,000</li> <li>" Mold remediation: $5,000 - $15,000</li> <li>" Content replacement: $10,000 - $25,000</li> </ul> </div> <div class="bg-gray-50 p-6 rounded"> <h4 class="font-semibold mb-3">Maintenance Savings:</h4> <ul class="space-y-1"> <li>" Reduced basement humidity</li> <li>" Lower HVAC costs</li> <li>" Prevented structural issues</li> <li>" Extended foundation life</li> </ul> </div> </div> </div> </div> </section> <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Warning Signs You Need Weeping Tile Replacement</h2> <div class="grid md:grid-cols-2 gap-8"> <div> <h3 class="text-xl font-semibold mb-4">Immediate Concerns</h3> <div class="bg-red-50 p-6 rounded mb-4"> <h4 class="font-semibold mb-3">Active Water Issues:</h4> <ul class="text-sm space-y-1"> <li>" Standing water in basement</li> <li>" Wet basement walls</li> <li>" Musty odors and humidity</li> <li>" Efflorescence on walls</li> <li>" Mold growth visible</li> </ul> </div> <div class="bg-red-50 p-6 rounded"> <h4 class="font-semibold mb-3">Foundation Problems:</h4> <ul class="text-sm space-y-1"> <li>" New or growing cracks</li> <li>" Bowing or shifting walls</li> <li>" Uneven floors developing</li> <li>" Doors/windows sticking</li> <li>" Stair-step crack patterns</li> </ul> </div> </div> <div> <h3 class="text-xl font-semibold mb-4">Gradual Deterioration</h3> <div class="bg-yellow-50 p-6 rounded mb-4"> <h4 class="font-semibold mb-3">Drainage System Failure:</h4> <ul class="text-sm space-y-1"> <li>" Clogged or slow drainage</li> <li>" Backups during heavy rain</li> <li>" Landscaping water pooling</li> <li>" Foundation settling issues</li> <li>" Repeated basement moisture</li> </ul> </div> <div class="bg-yellow-50 p-6 rounded"> <h4 class="font-semibold mb-3">Age-Related Concerns:</h4> <ul class="text-sm space-y-1"> <li>" System over 25 years old</li> <li>" Clay tile deterioration</li> <li>" Tree root infiltration</li> <li>" Pipe separation or collapse</li> <li>" Inadequate original installation</li> </ul> </div> </div> </div> </div> </section> <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">2025 Market Trends and Pricing</h2> <div class="grid md:grid-cols-3 gap-8"> <div class="bg-gray-50 p-6 rounded"> <h3 class="text-lg font-semibold mb-4">Material Cost Increases</h3> <ul class="space-y-1"> <li>" PVC pipe: +8-12% from 2024</li> <li>" Waterproofing materials: +10-15%</li> <li>" Aggregate costs: +5-8%</li> <li>" Overall materials: +8-12%</li> </ul> </div> <div class="bg-gray-50 p-6 rounded"> <h3 class="text-lg font-semibold mb-4">Labor Market Changes</h3> <ul class="space-y-1"> <li>" Skilled labor shortage: +12-18%</li> <li>" Insurance costs: +5-8%</li> <li>" Equipment costs: +10-15%</li> <li>" Overall labor: +12-16%</li> </ul> </div> <div class="bg-gray-50 p-6 rounded"> <h3 class="text-lg font-semibold mb-4">Total 2025 Increases</h3> <ul class="space-y-1"> <li>" Interior systems: +10-14% from 2024</li> <li>" Exterior systems: +12-15% from 2024</li> <li>" Complex installations: +15-18%</li> </ul> </div> </div> <div class="mt-8"> <h3 class="text-2xl font-semibold mb-4">Technology Improvements</h3> <div class="grid md:grid-cols-2 gap-6"> <div class="bg-blue-50 p-6 rounded"> <h4 class="font-semibold mb-3">Advanced Materials:</h4> <ul class="text-sm space-y-1"> <li>" High-flow drainage pipes</li> <li>" Self-sealing membranes</li> <li>" Smart monitoring systems</li> <li>" Eco-friendly options</li> <li>" Extended warranty products</li> </ul> </div> <div class="bg-blue-50 p-6 rounded"> <h4 class="font-semibold mb-3">Installation Innovations:</h4> <ul class="text-sm space-y-1"> <li>" Trenchless repair methods</li> <li>" Advanced excavation equipment</li> <li>" Precision drainage design</li> <li>" Digital documentation systems</li> <li>" Real-time quality monitoring</li> </ul> </div> </div> </div> </div> </section> ${renderComponent($$result2, "FAQSection", $$FAQSection, { "faqs": faqs })} ${renderComponent($$result2, "CTASection", $$CTASection, { "title": "Schedule Your Free Assessment", "description": "Get a comprehensive weeping tile installation quote tailored to your property. DrySpace Waterproofing provides free comprehensive assessments, detailed written estimates, multiple system options, transparent pricing, professional installation, and extended warranty coverage.", "primaryButton": { text: "Call Now: 416-893-5000", link: "tel:4168935000" }, "secondaryButton": { text: "Get Online Quote", link: "/contact" } })} <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <h2 class="text-3xl font-bold mb-8">Related Cost Guides & Services</h2> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> <a href="/cost/french-drain-cost-toronto/" class="block p-4 border rounded hover:bg-gray-50"> <h3 class="font-semibold mb-2">French Drain Cost Toronto</h3> <p class="text-sm text-gray-600">Comprehensive drainage system pricing</p> </a> <a href="/cost/sump-pump-installation-cost/" class="block p-4 border rounded hover:bg-gray-50"> <h3 class="font-semibold mb-2">Sump Pump Installation Cost</h3> <p class="text-sm text-gray-600">Essential component pricing for complete systems</p> </a> <a href="/cost/foundation-repair-cost-toronto/" class="block p-4 border rounded hover:bg-gray-50"> <h3 class="font-semibold mb-2">Foundation Repair Cost Toronto</h3> <p class="text-sm text-gray-600">Complementary foundation protection services</p> </a> <a href="/services/weeping-tile-installation/" class="block p-4 border rounded hover:bg-gray-50"> <h3 class="font-semibold mb-2">Professional Weeping Tile Installation</h3> <p class="text-sm text-gray-600">Expert installation services and process</p> </a> <a href="/services/french-drain-vs-weeping-tile/" class="block p-4 border rounded hover:bg-gray-50"> <h3 class="font-semibold mb-2">French Drain vs Weeping Tile</h3> <p class="text-sm text-gray-600">Understanding the differences and best applications</p> </a> <a href="/basement-waterproofing/" class="block p-4 border rounded hover:bg-gray-50"> <h3 class="font-semibold mb-2">Complete Guide to Toronto Basement Waterproofing</h3> <p class="text-sm text-gray-600">Comprehensive foundation protection systems</p> </a> </div> </div> </section> <section class="py-8 bg-gray-100 text-center"> <div class="container mx-auto px-4"> <p class="text-sm italic">
+DrySpace Waterproofing - Transparent weeping tile installation pricing for Toronto and GTA homeowners. 
+        Protecting foundations with lifetime warranties since 1998.
+</p> </div> </section> ` })}`;
+}, "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/pricing/weeping-tile-installation-cost.astro", void 0);
+
+const $$file = "C:/Users/Pavel/Desktop/New folder/dryspace-astro/src/pages/pricing/weeping-tile-installation-cost.astro";
+const $$url = "/pricing/weeping-tile-installation-cost";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$WeepingTileInstallationCost,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
