@@ -78,7 +78,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
             <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 -translate-y-1/2"></div>
           )}
           
-          <div class={`grid grid-cols-${stepsWithNumbers.length} gap-8 relative`}>
+          <div class={`grid ${stepsWithNumbers.length === 3 ? 'grid-cols-3' : stepsWithNumbers.length === 4 ? 'grid-cols-4' : stepsWithNumbers.length === 5 ? 'grid-cols-5' : 'grid-cols-2'} gap-8 relative`}>
             {stepsWithNumbers.map((step, index) => (
               <ScrollAnimation animation="zoomIn" delay={index * 0.15} client:visible>
                 <div class="relative">
