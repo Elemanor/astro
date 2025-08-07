@@ -29,6 +29,7 @@ const areas = [
 ];
 
 const resources = [
+  { name: 'Expert Guides', link: '/guides', featured: true },
   { name: 'DIY Sump Pump Guide', link: '/blog/diy-sump-pump-replacement-guide-toronto' },
   { name: 'Waterproofing Guide', link: '/blog/complete-basement-waterproofing-guide-toronto' },
   { name: 'Cost Calculator', link: '/tools/waterproofing-cost-calculator' },
@@ -164,9 +165,13 @@ const company = [
             <li>
               <a 
                 href={resource.link} 
-                class="text-gray-400 hover:text-white text-sm transition-colors block py-0.5"
+                class={`text-sm transition-colors block py-0.5 ${
+                  resource.featured 
+                    ? 'text-yellow-400 hover:text-yellow-300 font-semibold' 
+                    : 'text-gray-400 hover:text-white'
+                }`}
               >
-                {resource.name}
+                {resource.featured && <span>📚 </span>}{resource.name}
               </a>
             </li>
           ))}

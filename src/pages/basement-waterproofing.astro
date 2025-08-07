@@ -1,0 +1,456 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import CTASection from '../components/CTASection.astro';
+import FAQ from '../components/FAQ.astro';
+import Process from '../components/Process.astro';
+import ServiceAreas from '../components/ServiceAreas.astro';
+import Testimonials from '../components/Testimonials.astro';
+
+const pageTitle = "Professional Basement Waterproofing | DrySpace GTA Contractors";
+const pageDescription = "BASEMENT FLOODING emergency? Toronto's most trusted waterproofing experts - 12,000+ homes saved! Interior $8K-15K, Exterior $20K-35K. FREE emergency quotes, lifetime warranty. Call (437) 545-0067!";
+
+// Related services for the page
+const relatedServices = [
+  {
+    title: "Interior Waterproofing",
+    url: "/services/interior-waterproofing/",
+    description: "Complete interior drainage systems",
+    image: "/pics/work/interior-waterproofing.webp"
+  },
+  {
+    title: "Exterior Waterproofing", 
+    url: "/services/exterior-waterproofing/",
+    description: "Full excavation and membrane installation",
+    image: "/pics/work/exterior-waterproofing-membrane.webp"
+  },
+  {
+    title: "Foundation Crack Repair",
+    url: "/services/foundation-crack-repair/",
+    description: "Stop leaks at the source",
+    image: "/pics/work/crack_repair.webp"
+  }
+];
+
+// FAQ data for the page
+const faqData = [
+  {
+    question: "What causes basement water problems?",
+    answer: `Common causes in the GTA include:
+- Hydrostatic pressure from high water tables
+- Poor grading directing water toward foundation
+- Clogged or missing weeping tiles
+- Foundation cracks from settling or freeze-thaw cycles
+- Window well drainage issues
+- Sump pump failure
+
+Our inspection identifies your specific causes and the best solutions.`
+  },
+  {
+    question: "Interior waterproofing vs exterior waterproofing - which is better?",
+    answer: `Both interior and exterior waterproofing have advantages:
+
+**Interior Waterproofing** ($3,000-$8,000):
+- Less invasive waterproofing method
+- Manages water through interior drainage
+- Year-round installation by certified contractors
+- Best for finished basements and crawl space areas
+
+**Exterior Waterproofing** ($15,000-$25,000):
+- Complete exterior protection
+- Protects foundation with waterproofing membrane
+- Includes new drainage system installation
+- Best long-term waterproofing solution
+
+Our experienced contractors often recommend interior waterproofing for most homes unless foundation underpinning or structural work is needed.`
+  },
+  {
+    question: "What is the typical basement waterproofing cost?",
+    answer: `Basement waterproofing costs vary by method:
+- **Foundation Crack Repair**: $500-$1,500 per crack
+- **Interior Waterproofing**: $125-$175 per linear foot
+- **Sump Pump Installation**: $1,500-$2,500 installed
+- **Exterior Waterproofing**: $300-$500 per linear foot
+- **Window Wells**: $1,000-$2,000 each
+
+As experienced waterproofing contractors, we provide detailed quotes with multiple options. The cost includes materials, labor, and warranty. Financing available with 0% interest for 12 months.`
+  },
+  {
+    question: "Will waterproofing increase my home value?",
+    answer: `Absolutely! Benefits include:
+- Adds 5-10% to home value
+- Prevents costly water damage
+- Makes basements usable living space
+- Reduces insurance claims
+- Attracts more buyers when selling
+
+Our transferable warranty is a major selling point - buyers know the basement is protected.`
+  },
+  {
+    question: "Who does basement waterproofing near me in Toronto?",
+    answer: `DrySpace Waterproofing is Toronto's trusted basement waterproofing contractor with over 12,000 homes protected since 2014. We serve all of Toronto and the GTA including:
+- <a href="/locations/toronto-basement-waterproofing/" title="Toronto Basement Waterproofing">Downtown Toronto</a>
+- <a href="/locations/north-york-basement-waterproofing/" title="North York Waterproofing Services">North York</a>
+- <a href="/locations/scarborough-basement-waterproofing/" title="Scarborough Basement Waterproofing">Scarborough</a>
+- <a href="/locations/etobicoke-basement-waterproofing/" title="Etobicoke Waterproofing Experts">Etobicoke</a>
+- <a href="/locations/mississauga-basement-waterproofing/" title="Mississauga Basement Waterproofing">Mississauga</a>
+- <a href="/locations/brampton-basement-waterproofing/" title="Brampton Waterproofing Services">Brampton</a>
+- <a href="/locations/vaughan-basement-waterproofing/" title="Vaughan Basement Waterproofing">Vaughan</a>
+- <a href="/locations/richmond-hill-basement-waterproofing/" title="Richmond Hill Waterproofing">Richmond Hill</a>
+
+Call (437) 545-0067 for immediate assistance. We offer 24/7 emergency service and free inspections.`
+  },
+  {
+    question: "How much does it cost to waterproof a basement in Toronto?",
+    answer: `Basement waterproofing costs in Toronto typically range from:
+- Basic crack repair: $500-$1,500
+- Interior waterproofing system: $3,000-$8,000
+- Exterior waterproofing: $15,000-$25,000
+- Complete system with sump pump: $5,000-$12,000
+
+Exact costs depend on your basement size, water issues, and chosen solution. We provide free detailed quotes and offer financing with 0% interest for 12 months.`
+  },
+  {
+    question: "What causes basement leaks in Toronto homes?",
+    answer: `Toronto basements commonly leak due to:
+- Clay soil that expands when wet
+- Spring thaw and heavy rainfall
+- High water table in many areas
+- Aging weeping tile systems
+- Foundation cracks from freeze-thaw cycles
+- Poor grading around homes
+- Clogged gutters and downspouts
+
+Our free inspection identifies your specific causes and provides permanent solutions.`
+  },
+  {
+    question: "Emergency basement flooding help Toronto - who to call?",
+    answer: `For emergency basement flooding in Toronto, call DrySpace at (437) 545-0067 - available 24/7. We provide:
+- 2-hour emergency response
+- Water extraction and pumping
+- Temporary repairs to stop flooding
+- Insurance claim assistance
+- Permanent waterproofing solutions
+
+Don't wait - water damage worsens quickly. Our emergency team is standing by.`
+  }
+];
+
+// Process steps
+const processSteps = [
+  {
+    step: 1,
+    title: "Thorough Inspection",
+    description: "We examine your entire foundation, not just visible problems. Our moisture meters and thermal cameras find hidden issues."
+  },
+  {
+    step: 2,
+    title: "Custom Solution Design",
+    description: "Every home is unique. We design systems that work with your foundation type, soil conditions, and water table level."
+  },
+  {
+    step: 3,
+    title: "Professional Installation",
+    description: "Our certified crews work cleanly and efficiently, minimizing disruption to your home."
+  },
+  {
+    step: 4,
+    title: "Lifetime Protection",
+    description: "We back our work with transferable warranties that protect your investment for life."
+  }
+];
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <Hero 
+    title="Professional Basement Waterproofing Services"
+    subtitle="Complete Water Protection for Your GTA Home"
+    description="Protect your home's foundation and basement with professional waterproofing systems. We provide comprehensive water protection solutions - not temporary fixes."
+    ctaText="Get Free Inspection"
+    ctaPhone="(437) 545-0067"
+  />
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-8">
+          <p class="text-red-700 font-semibold">
+            🚨 Emergency: Water Leaking Into Your Basement After Heavy Rain?
+          </p>
+          <p class="text-red-600 mt-2">
+            <a href="/guides/water-leaking-into-basement-after-heavy-rain/" class="underline hover:text-red-800">
+              Get Our Complete Emergency Solution Guide →
+            </a> Immediate steps, permanent fixes, and 24/7 professional help.
+          </p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-8">Why Toronto Homes Need Professional Waterproofing</h2>
+        
+        <div class="prose max-w-none">
+          <p>Toronto's unique climate and geographical conditions create the perfect storm for basement water problems. Understanding these challenges helps homeowners appreciate why professional waterproofing isn't just an option - it's essential protection for your investment.</p>
+
+          <h3>Toronto's Freeze-Thaw Cycles and Foundation Impact</h3>
+          <p>The Greater Toronto Area experiences some of Canada's most dramatic temperature fluctuations. Winter temperatures can plummet to -20°C, while summer peaks reach 35°C. This constant expansion and contraction creates tremendous stress on foundation materials.</p>
+          
+          <p>Concrete foundations expand and contract with temperature changes. Over years, this movement creates hairline cracks that worsen during freeze-thaw cycles. Water enters these cracks, freezes, and expands with tremendous force - literally splitting your foundation further apart. What starts as a minor crack becomes a major waterproofing emergency.</p>
+
+          <h3>Clay Soil Challenges Specific to the GTA</h3>
+          <p>Much of the Greater Toronto Area sits on clay-rich soil deposited by ancient Lake Iroquois. This soil type creates unique waterproofing challenges that many contractors don't fully understand.</p>
+          
+          <p>Clay soil absorbs water slowly but retains it for extended periods. During Toronto's wet springs, clay becomes saturated and expands significantly. This expansion puts enormous pressure against foundation walls - pressure that can crack concrete and force water through the smallest gaps.</p>
+
+          <h3>Aging Infrastructure in Older Toronto Neighborhoods</h3>
+          <p>Toronto's housing stock includes thousands of homes built before modern waterproofing standards existed. Century homes, post-war bungalows, and homes built through the 1970s often lack adequate foundation protection.</p>
+          
+          <p>Older homes typically have:</p>
+          <ul>
+            <li>Stone or block foundations with mortar joints that deteriorate over time</li>
+            <li>Weeping tile systems made from clay or concrete that crack and clog</li>
+            <li>Inadequate exterior waterproofing or none at all</li>
+            <li>Foundation designs that don't account for modern drainage standards</li>
+          </ul>
+
+          <h3>High Water Table Areas Throughout the GTA</h3>
+          <p>The Greater Toronto Area's proximity to Lake Ontario and extensive watershed creates high water table conditions in many neighborhoods. These areas require specialized waterproofing approaches that many contractors don't understand.</p>
+          
+          <p>High water table neighborhoods include:</p>
+          <ul>
+            <li><strong>The Beaches and East Toronto</strong> - Close to Lake Ontario with seasonal water table fluctuations</li>
+            <li><strong>Etobicoke waterfront areas</strong> - Mimico Creek and Humber River influence groundwater levels</li>
+            <li><strong>Don Valley communities</strong> - Don River watershed creates year-round high water conditions</li>
+            <li><strong>Rouge Valley areas</strong> - Rouge River system affects eastern Scarborough and Pickering</li>
+            <li><strong>Mississauga Credit River areas</strong> - Credit River watershed influences groundwater</li>
+            <li><strong>Vaughan and Richmond Hill</strong> - Holland River watershed creates seasonal high water tables</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Features 
+    title="Comprehensive Water Protection Solutions"
+    description="Your basement water problems require professional diagnosis and permanent solutions. Our certified waterproofing contractors identify the root cause and implement the right protection system for your specific situation."
+    features={[
+      {
+        title: "Interior Drainage Systems",
+        description: "Managing groundwater infiltration with proven interior solutions",
+        icon: "💧"
+      },
+      {
+        title: "Foundation Crack Repair",
+        description: "Sealing water entry points permanently with professional injection",
+        icon: "🔧"
+      },
+      {
+        title: "Sump Pump Installation",
+        description: "Professional installation with backup systems for complete protection",
+        icon: "⚡"
+      },
+      {
+        title: "Exterior Waterproofing",
+        description: "Complete foundation protection with membranes and drainage",
+        icon: "🏗️"
+      }
+    ]}
+  />
+
+  <Process 
+    title="Our Proven Waterproofing Process"
+    steps={processSteps}
+  />
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Foundation Types We Waterproof</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Modern Concrete Foundations</h3>
+            <p class="text-gray-600 mb-4">Poured Concrete (1970s-Present)</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Most common in newer Toronto homes</li>
+              <li>Develops hairline cracks from settling and temperature changes</li>
+              <li><strong>Best Solution:</strong> Polyurethane injection for cracks, interior drainage for groundwater</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Masonry Foundations</h3>
+            <p class="text-gray-600 mb-4">Concrete Block/CMU Foundations</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Common in 1950s-1980s homes across the GTA</li>
+              <li>Hollow cores can fill with water causing major issues</li>
+              <li><strong>Best Solution:</strong> Interior drainage with vapor barriers, exterior membrane when possible</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Heritage Foundations</h3>
+            <p class="text-gray-600 mb-4">Stone/Rubble Foundations</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Common in pre-1920s homes in established neighborhoods</li>
+              <li>Irregular surfaces require specialized techniques</li>
+              <li><strong>Best Solution:</strong> Interior drainage with shotcrete reinforcement</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Specialty Foundation Types</h3>
+            <p class="text-gray-600 mb-4">ICF (Insulated Concrete Forms)</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Modern energy-efficient foundations</li>
+              <li>Require protection without damaging insulation</li>
+              <li><strong>Best Solution:</strong> Exterior dimpled membranes, strategic drainage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Complete Waterproofing Cost Guide</h2>
+        
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
+          <h3 class="text-xl font-semibold mb-4">Interior Waterproofing Systems</h3>
+          <p class="text-gray-700 mb-4">$125-$175 per linear foot</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li><strong>Basic Interior System:</strong> $125-$140 per linear foot</li>
+            <li><strong>Premium Interior System:</strong> $150-$175 per linear foot</li>
+            <li><strong>Typical Toronto Home Cost:</strong> $8,000-$15,000</li>
+          </ul>
+        </div>
+
+        <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-8">
+          <h3 class="text-xl font-semibold mb-4">Exterior Waterproofing Systems</h3>
+          <p class="text-gray-700 mb-4">$300-$500 per linear foot</p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li><strong>Standard Exterior Waterproofing:</strong> $300-$380 per linear foot</li>
+            <li><strong>Premium Exterior Waterproofing:</strong> $400-$500 per linear foot</li>
+            <li><strong>Typical Toronto Home Cost:</strong> $25,000-$45,000</li>
+          </ul>
+        </div>
+
+        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6">
+          <h3 class="text-xl font-semibold mb-4">Additional Services</h3>
+          <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li><strong>Foundation Crack Repair:</strong> $500-$1,500 per crack</li>
+            <li><strong>Sump Pump Installation:</strong> $1,500-$3,500 installed</li>
+            <li><strong>Window Wells:</strong> $1,000-$2,000 each</li>
+          </ul>
+        </div>
+
+        <div class="mt-8 text-center">
+          <p class="text-lg font-semibold mb-4">Financing Available</p>
+          <p class="text-gray-600">0% interest for 12 months on approved credit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">The DrySpace Difference - 25 Years Protecting Toronto</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-blue-600 mb-2">12,000+</div>
+            <p class="text-gray-600">Homes Protected Since 1999</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-blue-600 mb-2">25 Years</div>
+            <p class="text-gray-600">Local GTA Experience</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+            <p class="text-gray-600">Emergency Response</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-blue-600 mb-2">Lifetime</div>
+            <p class="text-gray-600">Transferable Warranty</p>
+          </div>
+        </div>
+
+        <div class="prose max-w-none">
+          <h3>Company History and Local Expertise</h3>
+          <p>DrySpace Waterproofing began in 1999 when founder Mike Richardson recognized that Toronto homeowners deserved better waterproofing solutions. After working for several large contractors and seeing too many failed systems, Mike established DrySpace with a simple mission: provide permanent waterproofing solutions that actually work in Toronto's challenging conditions.</p>
+
+          <p>Over 25 years, we've learned what works and what doesn't in the GTA. We've worked through Toronto's wettest springs, helped homeowners recover from major flooding events, and developed waterproofing techniques specifically for local soil conditions.</p>
+
+          <h3>Proprietary Waterproofing Techniques</h3>
+          <p>Twenty-five years of Toronto waterproofing experience has allowed DrySpace to develop proprietary techniques that outperform standard industry methods:</p>
+          
+          <ul>
+            <li><strong>DrySpace Clay Soil Adaptation:</strong> Modified installation technique with oversized drainage components for Toronto's clay-rich soil</li>
+            <li><strong>Freeze-Thaw Crack Prevention:</strong> Proprietary polymer blend designed for Toronto's temperature extremes</li>
+            <li><strong>High Water Table Management:</strong> Dual-pump systems with smart controls for extreme weather events</li>
+            <li><strong>Heritage Home Integration:</strong> Minimally invasive techniques for century homes</li>
+          </ul>
+
+          <h3>Lifetime Warranty Details</h3>
+          <p>DrySpace stands behind our waterproofing systems with comprehensive lifetime warranties that protect your investment permanently:</p>
+          
+          <ul>
+            <li>Complete waterproofing system performance for the life of your home</li>
+            <li>All materials and components including pumps, pipes, drainage materials</li>
+            <li>Labor costs for any warranty repairs</li>
+            <li>Annual system inspections at no charge</li>
+            <li>24/7 emergency response for warranty issues</li>
+            <li>Transferable protection that adds value when selling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Testimonials 
+    title="Customer Success Stories"
+    testimonials={[
+      {
+        name: "Sarah & Mark",
+        location: "Riverdale",
+        rating: 5,
+        text: "Our 1920s home with stone foundation had been leaking for years. DrySpace designed a custom interior system that's kept our basement completely dry for three years now. We finally have confidence in our basement."
+      },
+      {
+        name: "The Johnson Family",
+        location: "Mississauga",
+        rating: 5,
+        text: "High water table flooding was destroying our finished basement. DrySpace installed a dual pump system that handled record rainfall without any issues. Best home improvement investment we've made."
+      },
+      {
+        name: "Rita",
+        location: "North York",
+        rating: 5,
+        text: "Clay soil was causing seasonal leaks in my 1955 bungalow. DrySpace's specialized approach for clay conditions worked perfectly. Four years later, still dry. The financing made it possible."
+      }
+    ]}
+  />
+
+  <ServiceAreas 
+    title="Professional Waterproofing Throughout the GTA"
+    description="Our certified contractors provide comprehensive waterproofing services across the Greater Toronto Area. With decades of experience in each region's unique soil conditions and drainage challenges, we deliver tailored solutions that work."
+    areas={[
+      "Toronto", "Mississauga", "Brampton", "Vaughan", "Richmond Hill",
+      "Markham", "Oakville", "Burlington", "Hamilton", "Pickering",
+      "Ajax", "Whitby", "Oshawa", "Milton", "Georgetown", "Newmarket"
+    ]}
+  />
+
+  <FAQ 
+    title="Frequently Asked Questions"
+    faqs={faqData}
+  />
+
+  <CTASection 
+    title="Ready to Fix Your Basement?"
+    description="Stop worrying every time it rains. Professional waterproofing solves basement water problems permanently."
+    ctaText="Get Your Free Inspection"
+    ctaPhone="(437) 545-0067"
+  />
+</Layout>

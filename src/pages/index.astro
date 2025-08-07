@@ -8,8 +8,50 @@ import { FAQSection } from '../components/FAQSection';
 import CTASection from '../components/CTASection.astro';
 import Footer from '../components/Footer.astro';
 import StickyCTA from '../components/StickyCTA.astro';
+import Resources from '../components/Resources.astro';
 import { ScrollAnimation } from '../components/ScrollAnimation';
 import '../styles/globals.css';
+
+// Featured resources for homepage
+const featuredResources = [
+  {
+    title: 'Emergency Water Leak Guide',
+    description: 'Step-by-step instructions when water enters your basement',
+    type: 'guide' as const,
+    link: '/guides/water-leaking-into-basement-after-heavy-rain',
+    featured: true
+  },
+  {
+    title: 'DIY vs Professional',
+    description: 'Complete cost-benefit analysis to help you decide',
+    type: 'guide' as const,
+    link: '/guides/diy-vs-professional-waterproofing'
+  },
+  {
+    title: 'Warning Signs Checklist',
+    description: 'Identify foundation problems before they become expensive',
+    type: 'checklist' as const,
+    link: '/guides/warning-signs-basement-needs-waterproofing'
+  },
+  {
+    title: 'Cost Calculator',
+    description: 'Estimate your waterproofing project costs',
+    type: 'tool' as const,
+    link: '/tools/waterproofing-cost-calculator'
+  },
+  {
+    title: 'Toronto Building Codes',
+    description: 'Requirements and permits for basement waterproofing',
+    type: 'article' as const,
+    link: '/guides/toronto-building-code-basement-waterproofing'
+  },
+  {
+    title: 'Insurance Coverage Guide',
+    description: 'What water damage is covered by insurance',
+    type: 'guide' as const,
+    link: '/guides/waterproofing-insurance-claims'
+  }
+];
 ---
 
 <BaseLayout 
@@ -111,6 +153,18 @@ import '../styles/globals.css';
     
     <!-- Testimonials Section -->
     <TestimonialsSection />
+    
+    <!-- Resources Section -->
+    <Resources 
+      heading="Expert"
+      headingAccent="Resources & Guides"
+      subheading="Free guides to help protect your Toronto home from water damage"
+      resources={featuredResources}
+      columns={3}
+      variant="default"
+      background="white"
+      ctaText="Read Guide"
+    />
     
     <!-- Service Areas -->
     <section class="py-12 sm:py-16 lg:py-24 bg-gray-100">
