@@ -1,0 +1,71 @@
+---
+import { ScrollAnimation } from './ScrollAnimation';
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
+export interface Props {
+  faqs: FAQ[];
+  title?: string;
+  subheading?: string;
+}
+
+const { 
+  faqs, 
+  title = "Frequently Asked Questions",
+  subheading = "Get answers to common questions about our services"
+} = Astro.props;
+---
+
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <ScrollAnimation animation="fadeUp" client:visible>
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          {title}
+        </h2>
+        {subheading && (
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            {subheading}
+          </p>
+        )}
+      </div>
+    </ScrollAnimation>
+
+    <div class="max-w-3xl mx-auto">
+      <div class="space-y-4">
+        {faqs.map((faq, index) => (
+          <ScrollAnimation animation="fadeUp" delay={index * 0.1} client:visible>
+            <details class="group bg-white rounded-lg shadow-md">
+              <summary class="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
+                <h3 class="text-lg font-semibold text-gray-900 pr-4">
+                  {faq.question}
+                </h3>
+                <svg 
+                  class="w-5 h-5 text-gray-500 transform transition-transform group-open:rotate-180" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" 
+                    d="M19 9l-7 7-7-7" 
+                  />
+                </svg>
+              </summary>
+              <div class="px-6 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            </details>
+          </ScrollAnimation>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

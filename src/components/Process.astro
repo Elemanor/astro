@@ -52,6 +52,11 @@ const stepsWithNumbers = steps.map((step, index) => ({
 
 // Default icons if none provided
 const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
+
+// Helper function to determine if we should show emoji
+const shouldShowEmoji = (step) => {
+  return step.iconType === 'emoji' || (!step.iconType && step.icon && step.icon.length <= 2);
+};
 ---
 
 <section class={`py-12 sm:py-16 lg:py-24 ${backgroundClasses[background]}`}>
@@ -84,7 +89,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
                 <div class="relative">
                   {/* Step Circle */}
                   <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center border-4 border-primary z-10">
-                    {step.iconType === 'emoji' || (!step.iconType && step.icon && step.icon.length <= 2) ? (
+                    {shouldShowEmoji(step) ? (
                       <span class="text-xl">{step.icon || defaultIcons[index % defaultIcons.length]}</span>
                     ) : step.icon ? (
                       <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -128,7 +133,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
                 <div class="flex-shrink-0">
                   <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">
                     {showNumbers ? step.number : (
-                      step.iconType === 'emoji' || (!step.iconType && step.icon && step.icon.length <= 2) ? (
+                      shouldShowEmoji(step) ? (
                         <span>{step.icon || defaultIcons[index % defaultIcons.length]}</span>
                       ) : (
                         <span>{defaultIcons[index % defaultIcons.length]}</span>
@@ -143,7 +148,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
                 {/* Content */}
                 <div class="flex-1 bg-white rounded-lg shadow p-4 sm:p-6">
                   <div class="flex items-center gap-2 mb-2">
-                    {step.iconType === 'emoji' || (!step.iconType && step.icon && step.icon.length <= 2) ? (
+                    {shouldShowEmoji(step) ? (
                       <span class="text-2xl">{step.icon || defaultIcons[index % defaultIcons.length]}</span>
                     ) : step.icon ? (
                       <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -186,7 +191,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
                       step.highlight ? 'bg-primary text-white' : 'bg-white border-4 border-primary text-primary'
                     }`}>
                       {showNumbers ? step.number : (
-                        step.iconType === 'emoji' || (!step.iconType && step.icon && step.icon.length <= 2) ? (
+                        shouldShowEmoji(step) ? (
                           <span class="text-2xl">{step.icon || defaultIcons[index % defaultIcons.length]}</span>
                         ) : (
                           <span class="text-2xl">{defaultIcons[index % defaultIcons.length]}</span>
@@ -203,7 +208,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
                           <p class="text-sm text-primary font-medium mt-1">{step.duration}</p>
                         )}
                       </div>
-                      {step.iconType === 'emoji' || (!step.iconType && step.icon && step.icon.length <= 2) ? (
+                      {shouldShowEmoji(step) ? (
                         <span class="text-3xl">{step.icon || defaultIcons[index % defaultIcons.length]}</span>
                       ) : step.icon ? (
                         <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -245,7 +250,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
                 {showNumbers && (
                   <span class="text-4xl font-bold text-gray-200">{step.number}</span>
                 )}
-                {step.iconType === 'emoji' || (!step.iconType && step.icon && step.icon.length <= 2) ? (
+                {shouldShowEmoji(step) ? (
                   <span class="text-3xl">{step.icon || defaultIcons[index % defaultIcons.length]}</span>
                 ) : step.icon ? (
                   <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -327,7 +332,7 @@ const defaultIcons = ['🔍', '📋', '🔧', '🛡️'];
                     </div>
                   )}
                 </div>
-                {step.iconType === 'emoji' || (!step.iconType && step.icon && step.icon.length <= 2) ? (
+                {shouldShowEmoji(step) ? (
                   <span class="text-4xl hidden sm:block">{step.icon || defaultIcons[index % defaultIcons.length]}</span>
                 ) : step.icon ? (
                   <svg class="w-12 h-12 text-gray-400 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
