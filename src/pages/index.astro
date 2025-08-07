@@ -52,6 +52,29 @@ const featuredResources = [
     link: '/guides/waterproofing-insurance-claims'
   }
 ];
+
+const faqs = [
+  {
+    question: "How much does basement waterproofing cost in Toronto?",
+    answer: "Basement waterproofing costs in Toronto typically range from $3,000 to $25,000. Interior waterproofing averages $3,000-$8,000, while exterior waterproofing ranges from $10,000-$25,000. The exact cost depends on your basement size, the severity of water issues, and the chosen solution."
+  },
+  {
+    question: "What's the best waterproofing method for Toronto homes?",
+    answer: "The best method depends on your specific situation. Exterior waterproofing provides the most comprehensive protection but is more invasive. Interior waterproofing with a sump pump system is effective for most homes and can be installed year-round. We recommend a free inspection to determine the ideal solution for your home."
+  },
+  {
+    question: "How long does basement waterproofing take?",
+    answer: "Interior waterproofing typically takes 1-3 days, while exterior waterproofing can take 3-5 days depending on the home's perimeter. We work efficiently to minimize disruption, and interior work can be done in any weather condition."
+  },
+  {
+    question: "Is basement waterproofing covered by insurance?",
+    answer: "Most insurance policies don't cover waterproofing itself, but they may cover water damage if you have proper coverage. Waterproofing can actually lower your insurance premiums by reducing claim risk. We can help document the work for insurance purposes."
+  },
+  {
+    question: "Do you offer warranties and financing?",
+    answer: "Yes! We provide a lifetime warranty on materials and a 25-year warranty on labor. We also offer flexible financing options including 0% interest for 12 months, making it easier to protect your home without financial stress."
+  }
+];
 ---
 
 <BaseLayout 
@@ -194,9 +217,7 @@ const featuredResources = [
     </section>
     
     <!-- FAQ Section -->
-    <ScrollAnimation animation="fadeUp" client:visible>
-      <FAQSection client:visible />
-    </ScrollAnimation>
+    <FAQSection faqs={faqs} />
     
     <!-- Final CTA Section -->
     <CTASection />
